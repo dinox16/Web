@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Program For Student</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="auth-container" id="container">
+        <!-- Đăng ký -->
+        <div class="form-container sign-up-container">
+            <form method="POST" action="{{ url_for('register_route') }}" id="signup-form">
+                <h1><i class="fas fa-user-plus"></i> Đăng ký</h1>
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="username" placeholder="Tên đăng nhập" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="passwd" placeholder="Mật khẩu" required>
+                </div>
+                <button type="submit">Đăng ký</button>
+            </form>
+        </div>
+        <!-- Đăng nhập -->
+        <div class="form-container sign-in-container">
+            <form method="POST" action="{{ url_for('login_route') }}" id="signin-form">
+                <h1><i class="fas fa-sign-in-alt"></i> Đăng nhập</h1>
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="username" placeholder="Tên đăng nhập" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="passwd" placeholder="Mật khẩu" required>
+                </div>
+                <button type="submit">Đăng nhập</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h2>Xin chào bạn mới</h2>
+                    <p>Đã có tài khoản? Đăng nhập ngay.</p>
+                    <button class="ghost" id="signIn"><i class="fas fa-sign-in-alt"></i> Đăng nhập</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h2>Chào mừng bạn trở lại!</h2>
+                    <p>Chưa có tài khoản? Đăng ký ngay.</p>
+                    <button class="ghost" id="signUp"><i class="fas fa-user-plus"></i> Đăng ký</button>
+                </div>
+            </div>
+        </div>
+        <!-- Dialog Modal -->
+        <div id="dialog" class="dialog-backdrop" style="display:none;">
+            <div class="dialog-content">
+                <div class="dialog-message" id="dialog-message"></div>
+                <button class="dialog-btn" id="dialog-close">OK</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <span>© 2025 - Thiết kế bởi <b>TKMxDino</b></span>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script>
+        function showDialog(message) {
+            document.getElementById('dialog-message').textContent = message;
+            document.getElementById('dialog').style.display = 'flex';
+        }
+        document.getElementById('dialog-close').onclick = function() {
+            document.getElementById('dialog').style.display = 'none';
+        };
+        {% if error %}
+            showDialog("{{ error }}");
+        {% endif %}
+    </script>
+</body>
+</html>

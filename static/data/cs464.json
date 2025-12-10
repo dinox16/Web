@@ -1,0 +1,994 @@
+[
+  {
+    "id": "1",
+    "q": "Các ứng dụng của .NET chạy trên những ngôn ngữ nào?",
+    "opts": {
+      "A": "C#",
+      "B": "Basic",
+      "C": "C++",
+      "D": "Cả 3 ý trên"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": "2",
+    "q": "Thư viện nào liên quan đến xử lý tập hợp?",
+    "opts": {
+      "A": "System.Collections",
+      "B": "System.Data",
+      "C": "System.Drawing",
+      "D": "System.Net"
+    },
+    "type" : "mcq",
+  "ans": "A"
+  },
+  {
+    "id": "3",
+    "q": "LinQ là tính năng xuất hiện từ phiên bản nào?",
+    "opts": {
+      "A": ".NET Framework 3.0",
+      "B": ".NET Framework 3.5",
+      "C": ".NET Framework 4.0",
+      "D": ".NET Framework 4.5"
+    },
+    "type" : "mcq",
+  "ans": "B"
+  },
+  {
+    "id": "4",
+    "q": ".NET Framework có các thành phần nào sau đây?",
+    "opts": {
+      "A": "Common Language Runtime",
+      "B": "NET Framework Base classes",
+      "C": "Giao diện người dùng",
+      "D": "Cả 3 ý kiên trên"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": "5",
+    "q": "Khái niệm composition xác định rằng bạn có thể?",
+    "opts": {
+      "A": "Biên soạn code tốt với C#",
+      "B": "Sử dụng một lớp chứa đối tượng lớp khác",
+      "C": "Giảm lỗi bằng cách viết lại trong quá trình lập trình",
+      "D": "Tất cả các đáp án trên"
+    },
+    "type" : "mcq",
+  "ans": "B"
+  },
+  {
+    "id": "6",
+    "q": "Các lớp .NET có phăn nào trong các phần sau?",
+    "opts": {
+      "A": "Hỗ trợ Win GUI và Control",
+      "B": "WebForm (ASP.NET)",
+      "C": "Data Access (ADO.NET)",
+      "D": "Cả 3 ý trên"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": "7",
+    "q": "Thư viện nào liên quan đến xử lý tập hợp?",
+    "opts": {
+      "A": "System.Collections",
+      "B": "System.Data",
+      "C": "System.Drawing",
+      "D": "System.Net"
+    },
+    "type" : "mcq",
+  "ans": "A"
+  },
+  {
+    "id": "8",
+    "q": "Thư viện nào liên quan đến các lớp thực thi chức năng GUI?",
+    "opts": {
+      "A": "System.IO",
+      "B": "System.Drawing",
+      "C": "System.Web",
+      "D": "System.Xml"
+    },
+    "type" : "mcq",
+  "ans": "B"
+  },
+  {
+    "id": "9",
+    "q": "Thư viện nào liên quan đến các lớp toán học, chuyển đổi dữ liệu?",
+    "opts": {
+      "A": "System.Threading",
+      "B": "System.Data",
+      "C": "System.Math",
+      "D": "System.lO"
+    },
+    "type" : "mcq",
+  "ans": "C"
+  },
+  {
+    "id": "10",
+    "q": "(?) Ngôn ngữ nào ra đời cùng với .NET?",
+    "opts": {
+      "A": "C++",
+      "B": "C#",
+      "C": "C++ và Java",
+      "D": "Cả 3 ý kiến trên"
+    },
+    "type" : "mcq",
+  "ans": "B"
+  },
+  {
+    "id": "11",
+    "q": "Kiểu Object có mối quan hệ gì với tất cả các kiểu?",
+    "opts": {
+      "A": "Cha",
+      "B": "Con",
+      "C": "Public",
+      "D": "Private"
+    },
+    "type" : "mcq",
+  "ans": "A"
+  },
+  {
+    "id": "12",
+    "q": "Vai trò C# trong .NET Framework?",
+    "opts": {
+      "A": ".NET runtime sẽ phổ biến và được cài đặt trong máy",
+      "B": "C# tạo cơ hội cho tổ chức xây dựng các App Client/Server n_tier.",
+      "C": "Kết nối ADO.NET cho phép truy cập nhanh chóng và dễ dàng với SQLServer, Oracle....",
+      "D": "Cả 3 ý trên"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": "13",
+    "q": "Trong C#, để chú thích (//, comment) nhiều dòng cùng 1 lúc thì kết hợp các tổ hợp phím nào sau đây?",
+    "opts": {
+      "A": "Ctrl + L + C",
+      "B": "Ctrl + K + V",
+      "C": "Ctrl + K + U",
+      "D": "Ctrl + K + C"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": "14",
+    "q": "Trong C#, để hủy chú thích (//, comment) nhiều dòng cùng 1 lúc thì kết hợp các tổ hợp phím nào sau đây?",
+    "opts": {
+      "A": "Ctrl + L + C",
+      "B": "Ctrl + K + V",
+      "C": "Ctrl + K + U",
+      "D": "Ctrl + K + C"
+    },
+    "type" : "mcq",
+  "ans": "C"
+  },
+  {
+    "id": "15",
+    "q": "C# không có mục nào trong các mục dưới đây?",
+    "opts": {
+      "A": "Hướng đối tượng",
+      "B": "An toàn kiểu",
+      "C": "Một lớp được kết thừa từ nhiều lớp cha cùng kiểu",
+      "D": "Là ngôn ngữ được sử dụng"
+    },
+    "type" : "mcq",
+  "ans": "C"
+  },
+  {
+    "id": "16",
+    "q": "(?) Một phương thức ... một ngoại lệ khi phương thức phát hiện có vấn đề xảy ra.",
+    "opts": {
+      "A": "Try",
+      "B": "Catch",
+      "C": "Throw",
+      "D": "A và B"
+    },
+    "type" : "mcq",
+  "ans": "A"
+  },
+  {
+    "id": "17",
+    "q": "Các đối tượng ngoại lệ được bắt nguồn từ class ... .",
+    "opts": {
+      "A": "Try",
+      "B": "Catch",
+      "C": "Exception",
+      "D": "Event"
+    },
+    "type" : "mcq",
+  "ans": "C"
+  },
+  {
+    "id": "18",
+    "q": "(?) Một khối ... kèm theo code có thể throw một ngoại lệ.",
+    "opts": {
+      "A": "Try",
+      "B": "Catch",
+      "C": "Exception",
+      "D": "A và B"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": "19",
+    "q": "Cho biết các lệnh rẽ nhánh có điều kiện?",
+    "opts": {
+      "A": "If, goto, switch, break",
+      "B": "If, switch, break, for",
+      "C": "Return, switch, break",
+      "D": "Tất cả đều sai"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": "20",
+    "q": "Các đối tượng ngoại lệ được bắt nguồn từ class?",
+    "opts": {
+      "A": "Try",
+      "B": "Catch",
+      "C": "Exception",
+      "D": "Event"
+    },
+    "type" : "mcq",
+  "ans": "C"
+  },
+  {
+    "id": "21",
+    "q": "Trong C#, kiểu dữ liệu nào sau đây không phải là kiều dữ liệu tham chiếu?",
+    "opts": {
+      "A": "Lớp (class)",
+      "B": "Giao diện (Interface)",
+      "C": "Đại diện (delegate)",
+      "D": "Primitive type (double, char, int, float)"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": "22",
+    "q": "Trong C#, kiểu dữ liệu nào sau đây không phải là kiểu dữ liệu giá trị?",
+    "opts": {
+      "A": "Primitive type (double, char, int, float)",
+      "B": "Enum",
+      "C": "Class",
+      "D": "Struct"
+    },
+    "type" : "mcq",
+  "ans": "C"
+  },
+  {
+    "id": "23",
+    "q": "Trong C#, từ nào sau đây là từ khóa?",
+    "opts": {
+      "A": "do",
+      "B": "if",
+      "C": "partial",
+      "D": "Cả 3 từ trên"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": "24",
+    "q": "Trong C#, từ khóa nào sau đây mang kiểu dữ liệu giá trị?",
+    "opts": {
+      "A": "string",
+      "B": "char",
+      "C": "class",
+      "D": "new"
+    },
+    "type" : "mcq",
+  "ans": "B"
+  },
+  {
+    "id": "25",
+    "q": "(?) Trong C#, từ khóa \"this\" mang ý nghĩa gì?",
+    "opts": {
+      "A": "Đại diện cho thuộc tính",
+      "B": "Đại diện cho trường",
+      "C": "Đại diện cho lớp (đang làm việc)",
+      "D": "Đại diện cho phương thức"
+    },
+    "type" : "mcq",
+  "ans": "C"
+  },
+  {
+    "id": "26",
+    "q": "Trong C#, điều kiện trong switch là đặt ở đâu?",
+    "opts": {
+      "A": "bên cạnh (bên phải) case",
+      "B": "bên cạnh (bên phải) switch",
+      "C": "bên cạnh (bên phải) break",
+      "D": "bên cạnh (bên phải) default"
+    },
+    "type" : "mcq",
+  "ans": "B"
+  },
+  {
+    "id": "27",
+    "q": "Biểu thức switch bao gồm những gì sau đây?",
+    "opts": {
+      "A": "kiểu số",
+      "B": "ký tự",
+      "C": "enum và chuỗi",
+      "D": "Tất cả các ý trên"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": "28",
+    "q": "Lệnh break dùng để làm gì?",
+    "opts": {
+      "A": "Thoát khỏi vòng lặp kế",
+      "B": "Qua bước",
+      "C": "Nhảy đến nhãn",
+      "D": "Cả 3 ý trên"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": "29",
+    "q": "Lệnh return dùng để làm gì, câu trả lời nào sau đây là sai?",
+    "opts": {
+      "A": "Thoát khỏi hàm void",
+      "B": "Trả về 1 giá trị của hàm",
+      "C": "Thoát khỏi vòng lặp",
+      "D": "Câu A và B đúng"
+    },
+    "type" : "mcq",
+  "ans": "C"
+  },
+  {
+    "id": "30",
+    "q": "Trong vòng lặp foreach, số lần lặp phụ thuộc vào gì sau đây?",
+    "opts": {
+      "A": "vào biến n (n > 0) nhập vào trước đó",
+      "B": "vào biến i chạy từ 0 đến n (n > 0) nhập ở câu A",
+      "C": "vào số lượng các phần tử có trong danh sách",
+      "D": "Cả 3 ý trên"
+    },
+    "type" : "mcq",
+  "ans": "C"
+  },
+  {
+    "id": "31",
+    "q": "Trong mảng một chiều, vị trí phần tử đầu tiên nằm ở đâu?",
+    "opts": {
+      "A": "Vị trí số 0",
+      "B": "Vị trí số 1",
+      "C": "Vị trí phụ thuộc vào biến i nhập vào",
+      "D": "Vị trí phụ thuộc vào biến n nhập vào"
+    },
+    "type" : "mcq",
+  "ans": "A"
+  },
+  {
+    "id": "32",
+    "q": "Nếu muốn chương trình chạy ít nhất một lần vòng lặp mà không cần quan tâm tới điều kiện thỏa vòng lặp thì dùng vòng lặp nào?",
+    "opts": {
+      "A": "For",
+      "B": "While",
+      "C": "Do-While",
+      "D": "Cả 3 ý trên"
+    },
+    "type" : "mcq",
+  "ans": "C"
+  },
+  {
+    "id": "33",
+    "q": "Trong C#, phát biểu nào sau đây là sai?",
+    "opts": {
+      "A": "Một lớp con chỉ có thể kế thừa từ 1 lớp cha",
+      "B": "Một lớp con có thể kế thừa từ nhiều Interface",
+      "C": "Một lớp con có thể kế thừa từ nhiều lớp cha",
+      "D": "Interface có thể kế thừa từ nhiều Interface"
+    },
+    "type" : "mcq",
+  "ans": "C"
+  },
+  {
+    "id": "34",
+    "q": "Một ngôn ngữ được gọi là hướng đối tượng khi nó thoả mãn đặc trưng nào sau đây?",
+    "opts": {
+      "A": "Tính đóng gói (encapsulation)",
+      "B": "Tính kế thừa (inheritance)",
+      "C": "Tính đa hình (polymorphism)",
+      "D": "Tất cả đều đúng"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": "35",
+    "q": "Phạm vi truy cập mặc định của lớp khi chúng ta không khai báo là gì?",
+    "opts": {
+      "A": "Public",
+      "B": "Private",
+      "C": "Internal",
+      "D": "Không có phạm vi truy cập"
+    },
+    "type" : "mcq",
+  "ans": "C"
+  },
+  {
+    "id": "36",
+    "q": "Phát biểu nào sau đây là sai?",
+    "opts": {
+      "A": "AbstractClass là lựa chọn thích hợp khi vừa khai báo các phương thức thông thường vừa khai báo các phương thức trừu tượng",
+      "B": "Interface thích hợp cho việc khai báo duy nhất các phương thức trừu tượng",
+      "C": "Có thể khởi tạo đối tượng từ AbstractClass và Interface",
+      "D": "AbstractClass và Interface đều khai báo các phương thức nhưng không sử dụng chúng"
+    },
+    "type" : "mcq",
+  "ans": "C"
+  },
+  {
+    "id": "37",
+    "q": "Phạm vi truy cập mặc định của các thành phần trong lớp khi chúng ta không khai báo là gì?",
+    "opts": {
+      "A": "Public",
+      "B": "Private",
+      "C": "Internal",
+      "D": "Không có phạm vi truy cập"
+    },
+    "type" : "mcq",
+  "ans": "B"
+  },
+  {
+    "id": "38",
+    "q": "(sus) Đa hình phương thức trong C# là gì?",
+    "opts": {
+      "A": "Là các phương thức cùng tên",
+      "B": "Là các phương thức có cùng kiểu trả về",
+      "C": "Là các phương thức có cùng tham số",
+      "D": "Cả 3 ý kiến trên"
+    },
+    "type" : "mcq",
+  "ans": "A"
+  },
+  {
+    "id": "39",
+    "q": "Để class sử dụng interface nó phải?",
+    "opts": {
+      "A": "Kế thừa các đặc tính của interface",
+      "B": "Chứa các phương thức giống như interface",
+      "C": "Tạo một interface object",
+      "D": "Tất cả các đáp án trên"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": "40",
+    "q": "Trong Form sự kiện FormClosing là gì?",
+    "opts": {
+      "A": "Xảy ra khi form đang đóng",
+      "B": "Xảy ra khi form đã đóng",
+      "C": "Chỉ có sự kiện FormClosed",
+      "D": "Xảy ra khi xóa một Control trên Form"
+    },
+    "type" : "mcq",
+  "ans": "A"
+  },
+  {
+    "id": "41",
+    "q": "Một điều khiển DataAdapter dùng phương thức nào dưới đây để nạp một DataSet",
+    "opts": {
+      "A": "Fill()",
+      "B": "ExecuteQuery()",
+      "C": "Read()",
+      "D": "Update()"
+    },
+    "type" : "mcq",
+  "ans": "A"
+  },
+  {
+    "id": "42",
+    "q": "Khi chạy chương trình, Control nào sẽ hiện ra danh sách các phần tử có trong Control đó khi người dùng click vào Control đó?",
+    "opts": {
+      "A": "ListBox",
+      "B": "CheckBox",
+      "C": "GroupBox",
+      "D": "Combobox"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": "43",
+    "q": "Thuộc tính nào sau đây mà MonthCalendar không có?",
+    "opts": {
+      "A": "MinDate",
+      "B": "MinDate",
+      "C": "MaxSelectionCount",
+      "D": "Format"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": "44",
+    "q": "Thuộc tính nào sau đây không phải của đối tượng command?",
+    "opts": {
+      "A": "Connection",
+      "B": "CommandText",
+      "C": "CommandType",
+      "D": "State"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": "45",
+    "q": "Giả sử ta có lớp SinhVien(), cú pháp tạo đối tượng sinh viên (sv) nào sau đây là đúng?",
+    "opts": {
+      "A": "SinhVien() sv = new SinhVien;",
+      "B": "SinhVien sv = new SinhVien();",
+      "C": "SinhVien() new sv = SinhVien;",
+      "D": "SinhVien new sv = SinhVien();"
+    },
+    "type" : "mcq",
+  "ans": "B"
+  },
+  {
+    "id": "46",
+    "q": "Khi hiệu chỉnh các Control thông qua cửa sổ Properties thì đoạn Code sẽ thay đổi như thế nào?",
+    "opts": {
+      "A": "Chỉ thay đổi ở giao diện",
+      "B": "Thay đổi code ở lớp.Designer.cs",
+      "C": "Không thay đổi Code",
+      "D": "Không thể thay đổi thông qua cửa sổ Properties"
+    },
+    "type" : "mcq",
+  "ans": "B"
+  },
+  {
+    "id": "47",
+    "q": "Đoạn code này có nghĩa là gì? this.Controls.Add(title)",
+    "opts": {
+      "A": "Thêm Control title vào Form",
+      "B": "Thêm thuộc tính title vào Form",
+      "C": "Thêm một đối tượng title vào Control",
+      "D": "Thêm thuộc tính title vào Control"
+    },
+    "type" : "mcq",
+  "ans": "A"
+  },
+  {
+    "id": "48",
+    "q": "Trong C#, ta có phương thức TinhThanhTien() là phương thức chỉ có ở lớp con là lớp XeChoHang, lớp cha là lớp Xe thì không có phương thức này. Khi ở lớp DanhSach, muốn lớp XeChoHang lấy được phương thức TinhThanhTien() thì ép kiểu theo cách nào sau đây là đúng?",
+    "opts": {
+      "A": "(Xe.XeChoHang).TinhThanhTien",
+      "B": "((Xe)XeChoHang).TinhThanhTien",
+      "C": "((XeChoHang)Xe).TinhThanhTien",
+      "D": "(XeChoHang.Xe).TinhThanhTien"
+    },
+    "type" : "mcq",
+  "ans": "C"
+  },
+  {
+    "id": "49",
+    "q": "Trong một ứng dụng Winform, khi dùng đối tượng SqlCommand để lấy ra danh sách các khách hàng có những đơn hàng trị giá trên 50 triệu từ CSDL trong MS SQL Server 2012, chúng ta gọi phương thức:",
+    "opts": {
+      "A": "ExecuteReader",
+      "B": "ExecuteNonQuery",
+      "C": "ExecuteMyReader",
+      "D": "ExecuteScalar"
+    },
+    "type" : "mcq",
+  "ans": "A"
+  },
+  {
+    "id": "50",
+    "q": "Dùng phương thức nào để thực hiện lệnh Select Count, Min, Max dữ liệu",
+    "opts": {
+      "A": "ExecuteNonQuery",
+      "B": "ExecuteReader",
+      "C": "ExecuteScalar",
+      "D": "ExecuteReadOnly"
+    },
+    "type" : "mcq",
+  "ans": "C"
+  },
+  {
+    "id": "51",
+    "q": "Khai báo một mảng như sau: int[,] numbers = new int[3, 2] { { 1, 2 }, { 3, 4 }, { 5, 6 } }. câu lệnh: numbers.Length cho kết quả là",
+    "opts": {
+      "A": "3",
+      "B": "2",
+      "C": "5",
+      "D": "6"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": "52",
+    "q": "Giả sử ta có lớp Form1, khi ta kéo thả một Control từ cửa sổ vào Form1 thì đoạn code được sinh ra ở đâu?",
+    "opts": {
+      "A": "Được sinh ra ở lớp Form1.cs",
+      "B": "Được sinh ra ở lớp Form1.Designer.cs",
+      "C": "Không có code được sinh ra",
+      "D": "Không thể kéo thả một Control vào Form"
+    },
+    "type" : "mcq",
+  "ans": "B"
+  },
+  {
+    "id": "53",
+    "q": "AcceptButton là thuộc tính gì của Form?",
+    "opts": {
+      "A": "Không có thuộc tính này",
+      "B": "Thiết lập button là click khi user nhấn Enter",
+      "C": "Thiết lập button là click khi user nhấn Caps",
+      "D": "Thiết lập button là click khi user nhấn Esc"
+    },
+    "type" : "mcq",
+  "ans": "B"
+  },
+  {
+    "id": "54",
+    "q": "Ứng dụng Winform có kết nối với SQL Server 2012 trên một máy tính có tên là PhiLong. CSDL cần kết nối là DSinhVien. User được phép kết nối đến CSDL này là admin và mật khẩu là 123456. Connection String nào sau đây có thể dùng cho kết nối SqlConnection này:",
+    "opts": {
+      "A": "DataSource= PhiLong; Initial Catalog= DSinhVien; Uid = admin; Pwd = 123456",
+      "B": "DataSource= PhiLong; Database= DSinhVien; Uid = admin; Pasword = 123456",
+      "C": "DataSource= PhiLong; Database = DSinhVien; Uid = admin; Pwd = 123456",
+      "D": "DataSource= PhiLong; Initial Catalog= DSinhVien; Uid = admin; Pasword = 123456"
+    },
+    "type" : "mcq",
+  "ans": "A"
+  },
+  {
+    "id": "55",
+    "q": "Trong C#, đâu là điểm khác nhau giữa lớp Trừu Tượng và Interface?",
+    "opts": {
+      "A": "Đều không thể tạo đối tượng bên trong được",
+      "B": "Đều khai báo phương thức nhưng không sử dụng chúng",
+      "C": "Đều có thể kế thừa từ lớp",
+      "D": "Đều có thể kế thừa từ nhiều Interface"
+    },
+    "type" : "mcq",
+  "ans": "C"
+  },
+  {
+    "id": "56",
+    "q": "Trong C#, từ khóa base có chức năng gì trong các đáp án sau?",
+    "opts": {
+      "A": "Gọi phương thức của lớp con",
+      "B": "Gọi phương thức của lớp cha",
+      "C": "Gọi phương thức lớp Interface",
+      "D": "Cả 3 đáp án trên"
+    },
+    "type" : "mcq",
+  "ans": "B"
+  },
+  {
+    "id": "57",
+    "q": "Khai báo nào sau đây là sai?",
+    "opts": {
+      "A": "Khai báo hằng dùng từ khoá constant",
+      "B": "Khai báo biến thành viên dùng từ khoá property",
+      "C": "Khai báo sự kiện dùng từ khoá event",
+      "D": "Khai báo chỉ mục dùng từ khoá indexer"
+    },
+    "type" : "mcq",
+  "ans": "B"
+  },
+  {
+    "id": "58",
+    "q": "Khi nào bắt buộc phải Get... và Set.... Cho các biến?",
+    "opts": {
+      "A": "Để các lớp kế thừa truy cập được",
+      "B": "Để các phương thức trong lớp chứa các biến đó truy cập được",
+      "C": "Để chỉ duy nhất lớp Program truy cập được",
+      "D": "Để các lớp khác truy cập được các thuộc tính tạo ra từ các biến"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": "59",
+    "q": "Từ nào sau đây được hiểu là \"Bảng thiết kế của một lớp\"?",
+    "opts": {
+      "A": "Abstract class",
+      "B": "Virtual",
+      "C": "Delegate",
+      "D": "Interface"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": "60",
+    "q": ".Net Data Provider chứa thành phần nào sau đây?",
+    "opts": {
+      "A": "Conection, DataReader, DataAdapter",
+      "B": "Conection, Command, DataAdapter",
+      "C": "Conection, Command, DataReader, DataAdapter",
+      "D": "Conection, Command, DataReader"
+    },
+    "type" : "mcq",
+  "ans": "C"
+  },
+  {
+    "id": "61",
+    "q": "Để thực thi giá trị đơn, ta dùng phương thức nào sao đây của đối tượng command:",
+    "opts": {
+      "A": "ExecuteReader()",
+      "B": "ExecuteScalar()",
+      "C": "ExecuteXmlReader()",
+      "D": "ExecuteNoneQuery()"
+    },
+    "type" : "mcq",
+  "ans": "B"
+  },
+  {
+    "id": "62",
+    "q": "Thành phần nào không phải là thuộc tính của đối tượng Data Adapter :",
+    "opts": {
+      "A": "SQLCommand",
+      "B": "DeleteCommand",
+      "C": "UpdateCommand",
+      "D": "InsertCommand"
+    },
+    "type" : "mcq",
+  "ans": "A"
+  },
+  {
+    "id": "63",
+    "q": "Phương thức Read của đối tượng DataReader để làm gì?",
+    "opts": {
+      "A": "Di chuyển và trỏ đến bản ghi kế tiếp, nếu hết bản ghi phương thức trả về false.",
+      "B": "Di chuyển và trỏ đến bản ghi kế tiếp, nếu hết bản ghi thì quay về từ đầu.",
+      "C": "Di chuyển và trỏ đến bản ghi kế tiếp, nếu hết bản ghi thì đóng.",
+      "D": "Di chuyển và trỏ đến bản ghi kế tiếp, nếu hết bản ghi thì thông báo hết."
+    },
+    "type" : "mcq",
+  "ans": "A"
+  },
+  {
+    "id": "64",
+    "q": "Đối tượng nào là cầu nối của DataSet với Cơ sở dữ liệu",
+    "opts": {
+      "A": "Conection",
+      "B": "Command",
+      "C": "DataReader",
+      "D": "DataAdapter"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": "65",
+    "q": "Phương thức nào sau đây của DataSet dùng để cập nhật dữ liệu:",
+    "opts": {
+      "A": "Fill()",
+      "B": "ExecuteQuery()",
+      "C": "Read()",
+      "D": "Update()"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": "66",
+    "q": "Các phương thức của đối tượng command nào sau đây là không đúng?",
+    "opts": {
+      "A": "ExecuteReader",
+      "B": "ExcuteNoneQuery",
+      "C": "ExcuteScalar",
+      "D": "SqlReader"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": "67",
+    "q": "Dùng phương thức nào để thực hiện lệnh thêm, xóa, sửa... dữ liệu",
+    "opts": {
+      "A": "ExecuteNonQuery",
+      "B": "ExecuteReader",
+      "C": "ExecuteScalar",
+      "D": "ExecuteReadOnly"
+    },
+    "type" : "mcq",
+  "ans": "A"
+  },
+  {
+    "id": "68",
+    "q": "Trong một trang ASP.Net có đoạn code cần tính tổng số tiền nợ của khách hàng từ CSDL với đối tượng SqlCommand. Ta phải dùng phương thức nào để truy vấn CSDL có kết quả đúng và tốt nhất.",
+    "opts": {
+      "A": "Read",
+      "B": "ExecuteNonQuery",
+      "C": "ExecuteScalar",
+      "D": "ExecuteReader"
+    },
+    "type" : "mcq",
+  "ans": "C"
+  },
+  {
+    "id": "69",
+    "q": "Đa hình xảy ra khi các phương thức của lớp con",
+    "opts": {
+      "A": "Ghi đè các phương thức của lớp cha nhưng vẫn duy trì việc triển khai.",
+      "B": "Duy trì cũng kiểu trả về và các tham số như lớp cha, nhưng cách thực hiện khác nhau.",
+      "C": "Có kiểu trả về và tham số khác với lớp cha.",
+      "D": "Là ảo"
+    },
+    "type" : "mcq",
+  "ans": "B"
+  },
+  {
+    "id": "70",
+    "q": "Để xuất giá trị của mảng đa chiều, Console.WriteLines(___):",
+    "opts": {
+      "A": "myArray[1][3];",
+      "B": "myArray[1,3];",
+      "C": "myArray{1}{3};",
+      "D": "myArray(1),(3);"
+    },
+    "type" : "mcq",
+  "ans": "A"
+  },
+  {
+    "id": "71",
+    "q": "Tất cả các phương thức trong lớp cơ sở trừu tượng phải được khai báo trừu tượng.",
+    "opts": {
+      "A": "Đúng",
+      "B": "Sai"
+    },
+    "type" : "mcq",
+  "ans": "B"
+  },
+  {
+    "id": "72",
+    "q": "Các phương thức được khai báo trừu tượng trong lớp cơ sở phải hiển thị việc triển khai tại thời điểm khai báo.",
+    "opts": {
+      "A": "Đúng",
+      "B": "Sai"
+    },
+    "type" : "mcq",
+  "ans": "B"
+  },
+  {
+    "id": "73",
+    "q": "Giả sử rằng: public class B : A {public B(int i) :base (i) { } } biên dịch và chạy đúng, chúng ta có thể kết luận gì về các constructor trong lớp A?",
+    "opts": {
+      "A": "Một constructor lấy tham số có kiểu i.",
+      "B": "Đây chỉ là constructor mặc định.",
+      "C": "Một constructor lấy tham số có kiểu là int.",
+      "D": "A và B"
+    },
+    "type" : "mcq",
+  "ans": "C"
+  },
+  {
+    "id": "74",
+    "q": "Một lớp trừu tượng...",
+    "opts": {
+      "A": "Có thể chứa các biến instance",
+      "B": "Có thể chứa constructor",
+      "C": "Có thể mở rộng class khác",
+      "D": "Tất cả các đáp án trên"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": "75",
+    "q": "Header đúng cho một class dự định dùng là:",
+    "opts": {
+      "A": "class MyClass IFace",
+      "B": "class MyClass ; IFace",
+      "C": "class MyClass : IFace",
+      "D": "class MyClass {IFace}"
+    },
+    "type" : "mcq",
+  "ans": "C"
+  },
+  {
+    "id": "76",
+    "q": "Mọi class đều trực tiếp hoặc gián tiếp mở rộng lớp nào sau đây:",
+    "opts": {
+      "A": "System",
+      "B": "Object",
+      "C": "Drawing",
+      "D": "Console"
+    },
+    "type" : "mcq",
+  "ans": "B"
+  },
+  {
+    "id": "77",
+    "q": "Phát biểu nào sau đây là sai?",
+    "opts": {
+      "A": "AbstractClass phù hợp cho phương thức thường và trừu tượng",
+      "B": "Interface chỉ khai báo phương thức trừu tượng",
+      "C": "Có thể khởi tạo từ AbstractClass và Interface",
+      "D": "Cả hai đều khai báo phương thức"
+    },
+    "ans": "C",
+    "type" : "mcq"
+  },
+  {
+    "id": "78",
+    "q": "CLR cung cấp gì",
+    "opts": {
+      "A": "Bộ nhớ tự động, tương thích ngôn ngữ",
+      "B": "Tương thích ngôn ngữ, an ninh, kiểu an toàn",
+      "C": "Quản lý an ninh",
+      "D": "Tất cả đúng"
+    },
+    "ans": "D",
+    "type" : "mcq"
+  },
+  {
+    "id": "79",
+    "q": "Thư viện kết nối SQL Server",
+    "opts": {
+      "A": "System.Data.OracleClient",
+      "B": "System.Data.OleDb",
+      "C": "System.Data.SqlClient",
+      "D": "System.Linq"
+    },
+    "ans": "C",
+    "type" : "mcq"
+  },
+  {
+    "id": "80",
+    "q": "IsMdiChild dùng làm gì",
+    "opts": {
+      "A": "Xác định Form con",
+      "B": "Biết có là Child không",
+      "C": "Trả mảng Form con",
+      "D": "Hiển thị Form con"
+    },
+    "ans": "A",
+    "type" : "mcq"
+  },
+  {
+    "id": "81",
+    "q": " Vì sao dùng try-catch",
+    "opts": {
+      "A": "Tự động nhập lại nếu sai kiểu",
+      "B": "Tự động nhập lại nếu trùng mã Dictionary",
+      "C": "Để chương trình không bị đứng",
+      "D": "Cả 3 sai"
+    },
+    "ans": "C",
+    "type" : "mcq"
+  },
+  {
+    "id": "82",
+    "q": "Thư viện nào không liên quan đến xử lý tập hợp",
+    "opts": {
+      "A": "System.Data",
+      "B": "System.Collections",
+      "C": "System.Linq",
+      "D": "System.Collections.Generic"
+    },
+    "ans": "A",
+    "type" : "mcq"
+  },
+  {
+    "id": "83",
+    "q": "Một phương thức ... một ngoại lệ khi phát hiện vấn đề",
+    "opts": {
+      "A": "Try",
+      "B": "Catche",
+      "C": "Throw",
+      "D": "A và B"
+    },
+    "ans": "C",
+    "type" : "mcq"
+  }
+]

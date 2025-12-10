@@ -1,0 +1,928 @@
+[  
+    {
+        
+        "id": 1,
+        "q": "Thế nào là cơ sở dữ liệu quan hệ?",
+        "type": "mcq",
+    "op" : {
+            "A": "Là cơ sở dữ liệu được xây dựng dựa trên mô hình dữ liệu quan hệ",
+            "B": "Là ứng dụng tạo lập, cập nhật và khai thác CSDL quan hệ",
+            "C": "Là phần mềm khai thác CSDL quan hệ",
+            "D": "Là hệ thống phép toán đại số quan hệ"
+        },
+        "a": "A"
+    },
+    {
+        "id": 2,
+        "q": "Trong các phần mềm sau đây, phần mềm nào không phải là hệ quản trị CSDL quan hệ?",
+        "type": "mcq",
+    "op" : {
+            "A": "Oracle",
+            "B": "Microsoft Access",
+            "C": "Microsoft SQL server",
+            "D": "Microsoft Excel"
+        },
+        "a": "D"
+    },
+    {
+        "id": 3,
+        "q": "Hệ quản trị CSDL DBMS (DataBase Management System) là?",
+        "type": "mcq",
+    "op" : {
+            "A": "Tạo cấu trúc dữ liệu tương ứng với mô hình dữ liệu",
+            "B": "Cập nhật, chèn thêm, loại bỏ hay sửa đổi dữ liệu mức tệp",
+            "C": "Hệ thống phần mềm điều khiển các chiến lược lưu trữ, khai thác cơ sở dữ liệu",
+            "D": "Đảm bảo an toàn, bảo mật dữ liệu và tính toàn vẹn dữ liệu"
+        },
+        "a": "C"
+    },
+    {
+        "id": 4,
+        "q": "Từ khóa để thiết lập trường khóa chính:",
+        "type": "mcq",
+    "op" : {
+            "A": "Single Key",
+            "B": "Unique Key",
+            "C": "First Key",
+            "D": "Primary Key"
+        },
+        "a": "D"
+    },
+    {
+        "id": 5,
+        "q": "SQL là tên viết tắt của:",
+        "type": "mcq",
+    "op" : {
+            "A": "Structured Query Language",
+            "B": "Query Structured Language",
+            "C": "Structured Question Language",
+            "D": "Structured Query Location"
+        },
+        "a": "A"
+    },
+    {
+        "id": 6,
+        "q": "Tiêu chí nào sau đây thường được dùng để chọn khóa chính?",
+        "type": "mcq",
+    "op" : {
+            "A": "Khóa có ít thuộc tính nhất",
+            "B": "Không chứa các thuộc tính thay đổi theo thời gian",
+            "C": "Khóa bất kì",
+            "D": "Chỉ là khóa có một thuộc tính"
+        },
+        "a": "A"
+    },
+    {
+        "id": 7,
+        "q": "Tập thực thể là?",
+        "type": "mcq",
+    "op" : {
+            "A": "Đối tượng có thực",
+            "B": "Tập hợp các đối tượng có thuộc tính tương tự nhau",
+            "C": "Các mối liên kết giữa các đối tượng",
+            "D": "Các đối tượng và mối liên kết giữa các đối tượng"
+        },
+        "a": "B"
+    },
+    {
+        "id": 8,
+        "q": "Thuộc tính là gì?",
+        "type": "mcq",
+    "op" : {
+            "A": "Đặc điểm hoặc tính chất cần quản lý của đối tượng",
+            "B": "Giá trị số hoặc chữ",
+            "C": "Tên của một thực thể cần quản lý",
+            "D": "Là những thông tin có giá trị khác nhau"
+        },
+        "a": "A"
+    },
+    {
+        "id": 9,
+        "q": "Lược đồ quan hệ là gì?",
+        "type": "mcq",
+    "op" : {
+            "A": "Là tập hợp các thuộc tính có liên quan về một đối tượng",
+            "B": "Là tập hợp tất cả các thuộc tính cần quản lý",
+            "C": "Là tập hợp giá trị trong một bảng",
+            "D": "Là các dòng dữ liệu trong bảng"
+        },
+        "a": "A"
+    },
+    {
+        "id": 10,
+        "q": "Lược đồ cơ sở dữ liệu là gì?",
+        "type": "mcq",
+    "op" : {
+            "A": "Gồm có nhiều lược đồ quan hệ",
+            "B": "Gồm có nhiều bảng dữ liệu",
+            "C": "Là tập hợp các lược đồ quan hệ về cùng một vấn đề quản lý",
+            "D": "Là tập hợp các thuộc tính có liên quan về một đối tượng"
+        },
+        "a": "C"
+    },
+    {
+        "id": 11,
+        "q": "Lựa chọn nào sau đây là đúng cho khái niệm “Bộ”",
+        "type": "mcq",
+    "op" : {
+            "A": "Tập hợp giá trị liên quan đến tất cả các thuộc tính của một lược đồ quan hệ",
+            "B": "“Le Hoa”, #10/3/90#, nữ, Quảng Nam",
+            "C": "Là tất cả các giá trị trong 1 bảng",
+            "D": "Là các dữ liệu trên một cột của bảng"
+        },
+        "a": "A"
+    },
+    {
+        "id": 12,
+        "q": "Thế nào là một quan hệ",
+        "type": "mcq",
+    "op" : {
+            "A": "Là sự thể hiện về mặt dữ liệu của lược đồ ở thời điểm nhất định",
+            "B": "Là tập hợp tất cả các thuộc tính cần quản lý",
+            "C": "Là tập hợp các thuộc tính có liên quan về một đối tượng",
+            "D": "Là các dòng dữ liệu trong bảng"
+        },
+        "a": "A"
+    },
+    {
+        "id": 13,
+        "q": "Để lấy các một số thuộc tính được yêu cầu trong lược đồ quan hệ, ta thực hiện phép toán nào sau đây",
+        "type": "mcq",
+    "op" : {
+            "A": "Phép chiếu",
+            "B": "Phép chọn",
+            "C": "Phép kết nối",
+            "D": "Phép tích đề các"
+        },
+        "a": "A"
+    },
+    {
+        "id": 14,
+        "q": "Điều kiện để thực hiện được phép hợp trên 2 quan hệ là",
+        "type": "mcq",
+    "op" : {
+            "A": "2 quan hệ có số thuộc tính bằng nhau",
+            "B": "2 quan hệ có một số thuộc tính chung",
+            "C": "2 quan hệ có cùng cập thuộc tính",
+            "D": "2 quan hệ có thể kết nối tự nhiên được"
+        },
+        "a": "C"
+    },
+    {
+        "id": 15,
+        "q": "Phép kết nối tự nhiên là",
+        "type": "mcq",
+    "op" : {
+            "A": "Phép kết nối = trên thuộc tính chung",
+            "B": "Phép tích đề các có điều kiện",
+            "C": "Phép kết nối có điều kiện",
+            "D": "Phép chọn trên 1 tập thuộc tính bất kỳ"
+        },
+        "a": "A"
+    },
+    {
+        "id": 16,
+        "q": "Phát biểu đúng nhất về 'Ràng buộc toàn vẹn' trong cơ sở dữ liệu là gì?",
+        "type": "mcq",
+    "op" : {
+            "A": "Là những qui định thực tế mà CSDL phải thỏa mãn",
+            "B": "Là những yêu cầu thống kê của người dùng đưa vào CSDL",
+            "C": "Là qui tắc khi nhập dữ liệu",
+            "D": "Cả a, b, c đều sai"
+        },
+        "a": "A"
+    },
+    {
+        "id": 17,
+        "q": "Ràng buộc thường được biểu diễn bằng những cách nào?",
+        "type": "mcq",
+    "op" : {
+            "A": "Bằng lời, kí hiệu toán học, ghi chú",
+            "B": "Bằng lời, kí hiệu toán học, phụ thuộc hàm",
+            "C": "Bằng tân từ, phụ thuộc hàm, bao đóng",
+            "D": "Bằng ghi chú, bằng tân từ, khóa"
+        },
+        "a": "B"
+    },
+    {
+        "id": 18,
+        "q": "Ràng buộc được phân loại theo những cách nào?",
+        "type": "mcq",
+    "op" : {
+            "A": "Ràng buộc nội và ràng buộc ngoại",
+            "B": "Ràng buộc liên bộ và ràng buộc miền giá trị",
+            "C": "Ràng buộc liên thuộc tính và ràng buộc tham chiếu",
+            "D": "RB khóa chính và và ràng buộc khóa ngoại"
+        },
+        "a": "A"
+    },
+    {
+        "id": 19,
+        "q": "Ràng buộc ngayden <=ngaydi trong lược đồ datphong(makh, map, ngayden, ngaydi) là loại ràng buộc nào?",
+        "type": "mcq",
+    "op" : {
+            "A": "Ràng buộc miền giá trị",
+            "B": "Ràng buộc liên bộ",
+            "C": "Ràng buộc liên thuộc tính",
+            "D": "Ràng buộc liên thuộc tính liên quan hệ"
+        },
+        "a": "C"
+    },
+    {
+        "id": 20,
+        "q": "Ràng buộc SLdat =SLxuat trong 2 lược đồ Dathang(MADH, MAH, SLdat) và XuatHang(MAPX, MAHD, MAH, SLxuat) là ràng buộc",
+        "type": "mcq",
+    "op" : {
+            "A": "Ràng buộc liên thuộc tính",
+            "B": "Ràng buộc miền giá trị",
+            "C": "Ràng buộc liên bộ",
+            "D": "Ràng buộc liên thuộc tính liên quan hệ"
+        },
+        "a": "D"
+    },
+    {
+        "id": 21,
+        "q": "Ràng buộc nào sau đây là ràng buộc miền giá trị",
+        "type": "mcq",
+    "op" : {
+            "A": "ngayhd<=date()",
+            "B": "Phai là nam hoặc nữ",
+            "C": "Soluong>=0",
+            "D": "Tất cả a, b, c đều đúng"
+        },
+        "a": "D"
+    },
+    {
+        "id": 22,
+        "q": "Ràng buộc sinhvien.malop phải thuộc lop.malop là loại ràng buộc nào sau đây",
+        "type": "mcq",
+    "op" : {
+            "A": "Ràng buộc khóa chính",
+            "B": "Ràng buộc liên bộ",
+            "C": "Ràng buộc tham chiếu",
+            "D": "Tất cả các loại ràng buộc trên"
+        },
+        "a": "C"
+    },
+    {
+        "id": 23,
+        "q": "Cho R(ABCDEGH). F ={ A -> BC, D -> BE, A -> H). Bao đóng của A là",
+        "type": "mcq",
+    "op" : {
+            "A": "ABC",
+            "B": "ABCD",
+            "C": "ABCH",
+            "D": "ABCDEGH"
+        },
+        "a": "C"
+    },
+    {
+        "id": 24,
+        "q": "Cho R(ABCDEGH). F ={ A -> BC, C -> D, D -> BE, GE -> H). Phụ thuộc hàm nào được suy diễn từ F",
+        "type": "mcq",
+    "op" : {
+            "A": "A -> G",
+            "B": "A -> H",
+            "C": "A -> E",
+            "D": "C -> H"
+        },
+        "a": "C"
+    },
+    {
+        "id": 25,
+        "q": "Cho R (MNOPQ), F={ N ->M, OP -> Q, MO -> Q}. Phụ thuộc hàm NO -> Q được suy diễn nhờ vào luật nào sau đây?",
+        "type": "mcq",
+    "op" : {
+            "A": "Luật thêm",
+            "B": "Luật hợp",
+            "C": "Luật bắc cầu",
+            "D": "Luật tựa bắc cầu"
+        },
+        "a": "D"
+    },
+    {
+        "id": 26,
+        "q": "Cho R (MNOPQ), F={ N ->M, M -> OPQ, N -> Q}. Phụ thuộc hàm nào thừa trong F?",
+        "type": "mcq",
+    "op" : {
+            "A": "N -> M",
+            "B": "M -> OPQ",
+            "C": "N -> Q",
+            "D": "Không phụ hàm nào thừa"
+        },
+        "a": "C"
+    },
+    {
+        "id": 27,
+        "q": "Cho R (MNOPQ), F={ N ->M, MO -> PQ, NMO -> Q}. Phụ thuộc hàm nào có thuộc tính ở vế trái thừa",
+        "type": "mcq",
+    "op" : {
+            "A": "N -> M",
+            "B": "MO -> PQ",
+            "C": "NMO -> Q",
+            "D": "Không có thuộc tính ở vế trái nào thừa"
+        },
+        "a": "C"
+    },
+    {
+        "id": 28,
+        "q": "Cho R(ABCDE) F={AB -> CD, D -> EB}. Chỉ ra 1 khóa của lược đồ",
+        "type": "mcq",
+    "op" : {
+            "A": "AB",
+            "B": "D",
+            "C": "ABC",
+            "D": "ABCD"
+        },
+        "a": "A"
+    },
+    {
+        "id": 29,
+        "q": "Cho R(ABCD) F={AB -> C, B -> D}. Dạng chuẫn cao nhất của R là",
+        "type": "mcq",
+    "op" : {
+            "A": "1NF",
+            "B": "2NF",
+            "C": "3NF",
+            "D": "BCNF"
+        },
+        "a": "A"
+    },
+    {
+        "id": 30,
+        "q": "Cho R(ABCDE) F={AB -> CD, D -> EB}. Tập tất cả các khóa của R là",
+        "type": "mcq",
+    "op" : {
+            "A": "k1=A, K2=D",
+            "B": "k2=AB, K2=D",
+            "C": "K1=AB, K2=AD",
+            "D": "K1=ABD"
+        },
+        "a": "C"
+    },
+    {
+        "id": 31,
+        "q": "Để xóa cột diachi có kiểu text ra khỏi bảng khachhang, ta chọn câu lệnh nào sau đây?",
+        "type": "mcq",
+    "op" : {
+            "A": "Alter table khachhang drop column diachi",
+            "B": "Alter table khachhang drop column diachi text",
+            "C": "Alter table khachhang delete column diachi",
+            "D": "Alter table khachhang delete column diachi text"
+        },
+        "a": "A"
+    },
+    {
+        "id": 32,
+        "q": "Muốn cập nhật tăng 1 điểm cho các sinh viên trong kq(masv, mamh, diem), câu lệnh nào là đúng?",
+        "type": "mcq",
+    "op" : {
+            "A": "Update kq set diem=2",
+            "B": "Update kq set diem=diem+1",
+            "C": "Update kq set diem=diem+1 where masv='s1'",
+            "D": "Update kq diem=diem+1"
+        },
+        "a": "B"
+    },
+    {
+        "id": 33,
+        "q": "Để thêm cột phai có kiểu text vào bảng khachhang, ta chọn câu lệnh nào sau đây?",
+        "type": "mcq",
+    "op" : {
+            "A": "Alter table khachhang drop column phai text",
+            "B": "Alter table khachhang change column phai text",
+            "C": "Alter table khachhang add column phai",
+            "D": "Alter table khachhang add column phai text"
+        },
+        "a": "D"
+    },
+    {
+        "id": 34,
+        "q": "Muốn lấy ra mahang, tenhang trong bảng Hang(mahang, tenhang, dvt, mancc). Câu lệnh nào là đúng?",
+        "type": "mcq",
+    "op" : {
+            "A": "Select * from hang",
+            "B": "Select mahang, tenhang from hang",
+            "C": "Select mahang, tenhang from hang order by mahang",
+            "D": "Select top 1 mahang, tenhang from hang"
+        },
+        "a": "B"
+    },
+    {
+        "id": 35,
+        "q": "Khái niệm Siêu khóa của lược đồ là gì?",
+        "type": "mcq",
+    "op" : {
+            "A": "Là tập thuộc tính có chứa khóa",
+            "B": "Là tập thuộc tính bất kỳ của lược đồ",
+            "C": "Là tập tất cả các thuộc tính của lược đồ",
+            "D": "Là một thuộc tính dùng để phân biệt các dòng trong bảng"
+        },
+        "a": "A"
+    },
+    {
+        "id": 36,
+        "q": "Để sắp xếp dữ liệu tăng dần cho 1 trường dữ liệu, trong câu lệnh select ta dùng từ khóa nào?",
+        "type": "mcq",
+    "op" : {
+            "A": "Top 1",
+            "B": "Distinct",
+            "C": "Order by tencot",
+            "D": "Sort by tencot"
+        },
+        "a": "C"
+    },
+    {
+        "id": 37,
+        "q": "Để liệt kê các khách hàng phái nữ có sinh nhật trong tháng 4. Dữ liệu lấy từ bảng khachhang(makh, holot, tenkhachhang, ngaysinh, phai). Cú pháp lệnh nào là đúng?",
+        "type": "mcq",
+    "op" : {
+            "A": "Select * from khachhang where thang=4 and phai='nu'",
+            "B": "Select * from khachhang where month(ngaysinh)=4 and phai='nu'",
+            "C": "Select makh, tenkhachhang, month(ngaysinh) as thang from khachhang where thang=4 and phai='nu'",
+            "D": "Select makh, tenkhachhang, month(ngaysinh) as thang from khachhang where month(ngaysinh)=4"
+        },
+        "a": "B"
+    },
+    {
+        "id": 38,
+        "q": "Để lấy tất cả các cột trong bảng, ta chọn kí hiệu nào sau đây sau từ khóa select?",
+        "type": "mcq",
+    "op" : {
+            "A": "*",
+            "B": "?",
+            "C": ">",
+            "D": "<"
+        },
+        "a": "A"
+    },
+    {
+        "id": 39,
+        "q": "Muốn lấy ra mặt hàng có đơn giá thấp nhất từ bảng chitiethoadon(mahd, mahang, soluong, dongia). Cú pháp nào sau đây là đúng?",
+        "type": "mcq",
+    "op" : {
+            "A": "Select * from chitiethoadon where dongia=min",
+            "B": "Select top 1 * from chitiethoadon",
+            "C": "Select top 1 * from chitiethoadon order by dongia asc",
+            "D": "Select top 1 * from chitiethoadon order by dongia desc"
+        },
+        "a": "C"
+    },
+    {
+        "id": 40,
+        "q": "Để đổi kiểu dữ liệu cho cột diem trong bảng ketqua từ kiểu số nguyên sang kiểu số thực ta chọn lệnh",
+        "type": "mcq",
+    "op" : {
+            "A": "Alter table ketqua alter column diem number",
+            "B": "Alter table ketqua alter column diem single",
+            "C": "Alter table ketqua alter column diem integer single",
+            "D": "Alter table ketqua change column diem single"
+        },
+        "a": "B"
+    },
+    {
+        "id": 41,
+        "q": "Để liệt kê mahd, mahang, thanhtien. trong đó THANHTIEN=SOLUONG * DONGIA lấy dữ liệu từ 2 bảng hoadon(mahd, ngayhd, makh, loaihd); chitiethoadon(mahd, mahang, soluong, dongia). Câu lệnh nào sau đây là đúng?",
+        "type": "mcq",
+    "op" : {
+            "A": "Select mahd, mahang, thanhtien from hoadon a, chitiethoadon b where (a.mahd=b.mahd)",
+            "B": "Select mahd, mahang, soluong* dongia as thanhtien from hoadon a, chitiethoadon b where (a.mahd=b.mahd)",
+            "C": "Select a.mahd, mahang, soluong* dongia as thanhtien from hoadon a, chitiethoadon b where (a.mahd=b.mahd)",
+            "D": "Select hoadon.mahd, mahang, soluong* dongia as thanhtien from hoadon a, chitiethoadon b where (a.mahd=b.mahd)"
+        },
+        "a": "C"
+    },
+    {
+        "id": 42,
+        "q": "Cho R(ABCDEGH). F ={ A -> BC, D -> BE, GE -> H). Bao đóng của AD là",
+        "type": "mcq",
+    "op" : {
+            "A": "ABCD",
+            "B": "ABCDE",
+            "C": "ABCDEG",
+            "D": "ABCDEGH"
+        },
+        "a": "B"
+    },
+    {
+        "id": 43,
+        "q": "Cho R(ABCDEGH). F ={ A -> BC, D -> BE, GE -> H). Bao đóng của AG là",
+        "type": "mcq",
+    "op" : {
+            "A": "ABCG",
+            "B": "ABCDE",
+            "C": "ABCDEG",
+            "D": "ABCDEGH"
+        },
+        "a": "A"
+    },
+    {
+        "id": 44,
+        "q": "Cho R(ABCDEGH). F ={ A -> BC, D -> BE, GE -> H). Bao đóng của ADG là",
+        "type": "mcq",
+    "op" : {
+            "A": "ADG",
+            "B": "ABCDE",
+            "C": "ABCDEG",
+            "D": "ABCDEGH"
+        },
+        "a": "D"
+    },
+    {
+        "id": 45,
+        "q": "Thuộc tính là gì?",
+        "type": "mcq",
+    "op" : {
+            "A": "Đặc điểm hoặc tính chất của đối tượng",
+            "B": "Giá trị số hoặc chữ",
+            "C": "Tên của một thực thể cần quản lý",
+            "D": "Là những thông tin có giá trị khác nhau"
+        },
+        "a": "A"
+    },
+    {
+        "id": 46,
+        "q": "Để lấy các một số thuộc tính được yêu cầu trong lược đồ quan hệ, ta thực hiện phép toán nào sau đây",
+        "type": "mcq",
+    "op" : {
+            "A": "Phép chiếu",
+            "B": "Phép chọn",
+            "C": "Phép kết nối",
+            "D": "Phép tích đề các"
+        },
+        "a": "A"
+    },
+    {
+        "id": 47,
+        "q": "Để thiết lập cho masv là khóa chính, ta dùng từ khóa nào sau đây?",
+        "type": "mcq",
+    "op" : {
+            "A": "Foreign key",
+            "B": "Primary key",
+            "C": "Set Index",
+            "D": "Unique key"
+        },
+        "a": "B"
+    },
+    {
+        "id": 48,
+        "q": "Để xóa những môn học có sotinchi =0 ra khỏi bảng monhọc, ta dùng lệnh",
+        "type": "mcq",
+    "op" : {
+            "A": "Delete from monhoc where sotinchi=0",
+            "B": "Delete * from monhoc",
+            "C": "Delete from monhoc where sotinchi is null",
+            "D": "Delete * from monhoc where sotinchi is null"
+        },
+        "a": "A"
+    },
+    {
+        "id": 49,
+        "q": "Đâu là thuộc tính của đối tượng “sinh viên”",
+        "type": "mcq",
+    "op" : {
+            "A": "Họtên",
+            "B": "“02/20/1990”",
+            "C": "Nam/ Nữ",
+            "D": "“Đà Nẵng”"
+        },
+        "a": "A"
+    },
+    {
+        "id": 50,
+        "q": "Cách ghi một lược đồ quan hệ nào sau đây là đúng",
+        "type": "mcq",
+    "op" : {
+            "A": "“Le Hoa”, #10/3/90#, nữ, Quảng Nam",
+            "B": "Sinhvien(hoten, nggaysinh, phái, quequan)",
+            "C": "Phong ban(p01, “Phòng kỹ thuật”)",
+            "D": "Nhanvien(manhanvien: n01, Hoten: Le Thu Ha)"
+        },
+        "a": "B"
+    },
+  {
+    "id": 51,
+    "q": "Cơ sở dữ liệu được thiết kế sao cho có thể bổ sung, cập nhật hay xóa dữ liệu trong cơ sở dữ liệu không ảnh hưởng đến các chương trình ứng dụng. Điều này thể hiện đặc tính nào của cơ sở dữ liệu?",
+    "type": "mcq",
+    "op" : {
+      "A": "Tính đa khung nhìn",
+      "B": "Tính nhất quán",
+      "C": "Tính độc lập",
+      "D": "Tính tự mô tả"
+    },
+    "a": "C"
+  },
+  {
+    "id": 52,
+    "q": "Vai trò của người thiết kế cơ sở dữ liệu?",
+    "type": "mcq",
+    "op" : {
+      "A": "Quyết định những dữ liệu cần được lưu trữ trong hệ thống",
+      "B": "Cấp quyền sử dụng cơ sở dữ liệu",
+      "C": "Đảm bảo hoạt động của máy tính và hệ thống mạng máy tính của tổ chức",
+      "D": "Phát triển ứng dụng và hệ thống phần mềm"
+    },
+    "a": "A"
+  },
+  {
+    "id": 53,
+    "q": "Trong sơ đồ thực thể liên kết, Tập thực thể Lớp chỉ thuộc một khoa ở trong trường và tập thực thể khoa có nhiều lớp khác nhau. Vậy mối liên kết giữa tập thực thể Khoa và tập thực thể Lớp là mối liên kết gì?",
+    "type": "mcq",
+    "op" : {
+      "A": "Mối liên kết 1-1",
+      "B": "Mối liên kết n – n",
+      "C": "Mối liên kết 1- n",
+      "D": "Mối liên kết n - m"
+    },
+    "a": "C"
+  },
+  {
+    "id": 54,
+    "q": "Lược đồ quan hệ là gì?",
+    "type": "mcq",
+    "op" : {
+      "A": "Là các dòng dữ liệu trong bảng",
+      "B": "Là tập hợp tất cả các thuộc tính cần quản lý",
+      "C": "Là tập hợp giá trị trong một bảng",
+      "D": "Là tập hợp các thuộc tính có liên quan về một đối tượng"
+    },
+    "a": "D"
+  },
+  {
+    "id": 55,
+    "q": "Cho quan hệ BANDOC (MaBD, Hoten, Ngaysinh, Lop, Sodienthoai, Anhdaidien). Muốn hiển thị danh sách các bạn đọc lớp K28TPM gồm các thông tin MaBD, Hoten, Lop thì sử dụng phép toán nào?",
+    "type": "mcq",
+    "op" : {
+      "A": "Phép chọn",
+      "B": "Phép chiếu kết hợp phép nối",
+      "C": "Phép chọn kết hợp với phép chiếu",
+      "D": "Phép nối"
+    },
+    "a": "C"
+  },
+  {
+    "id": 56,
+    "q": "Để liệt kê các khách hàng phái nữ có sinh nhật trong tháng 4. Dữ liệu lấy từ bảng khachhang(makh, holot, tenkhachhang, ngaysinh, phai). Cú pháp lệnh nào là đúng?",
+    "type": "mcq",
+    "op" : {
+      "A": "Select * from khachhangwhere thang=4 and phai=\"nu\"",
+      "B": "Select * from khachhang where month(ngaysinh)=4 and phai=\"nu\"",
+      "C": "Select makh, tenkhachhang, month(ngaysinh) as thang from khachhang where thang=4 and phai=\"nu\"",
+      "D": "Select makh, tenkhachhang, month(ngaysinh) as thang from khachhang where month(ngaysinh)=4"
+    },
+    "a": "B"
+  },
+  {
+    "id": 57,
+    "q": "Cho quan hệ R gồm các thuộc tính: K# mã thuê bao, TB tên thuê bao, SDT số điện thoại, DC địa chỉ. Chọn câu đúng sau đây khi tính tổng các thuê bao có cùng tên là Lê Ngọc Hà?",
+    "type": "mcq",
+    "op" : {
+      "A": "SELECT COUNT(*) FROM R WHERE TB = \"Lê Ngọc Hà\"",
+      "B": "SELECT TB, DC FROM R WHERE TB = \"Lê Ngọc Hà\"",
+      "C": "SELECT * FROM R WHERE TB = \"Lê Ngọc Hà\"",
+      "D": "SELECT * FROM R WHERE TB = \"Lê Ngọc Hà\" GROUP BY TB"
+    },
+    "a": "A"
+  },
+  {
+    "id": 58,
+    "q": "Các phép toán gộp nhóm được sử dụng sau mệnh đề?",
+    "type": "mcq",
+    "op" : {
+      "A": "SELECT",
+      "B": "FROM",
+      "C": "WHERE",
+      "D": "GROUP BY"
+    },
+    "a": "D"
+  },
+  {
+    "id": 59,
+    "q": "Ràng buộc được phân loại theo những cách nào?",
+    "type": "mcq",
+    "op" : {
+      "A": "Ràng buộc nội và ràng buộc ngoại",
+      "B": "Ràng buộc liên bộ và ràng buộc miền giá trị",
+      "C": "Ràng buộc liên thuộc tính và ràng buộc tham chiếu",
+      "D": "RB khóa chính và và ràng buộc khóa ngoại"
+    },
+    "a": "A"
+  },
+  {
+    "id": 60,
+    "q": "Ràng buộc Ngaykhoicong <= Ngayhoanthanh trong lược đồ CONGTRINH (MaCT, TenCT, Diadiem, NgayKC, NgayHT) là loại ràng buộc nào?",
+    "type": "mcq",
+    "op" : {
+      "A": "Ràng buộc miền giá trị",
+      "B": "Ràng buộc liên bộ",
+      "C": "Ràng buộc liên thuộc tính",
+      "D": "Ràng buộc liên thuộc tính liên quan hệ"
+    },
+    "a": "C"
+  },
+  {
+    "id": 61,
+    "q": "Ràng buộc toàn vẹn tham chiếu chính là ràng buộc",
+    "type": "mcq",
+    "op" : {
+      "A": "Khóa chính",
+      "B": "Khóa ngoại với khóa chính",
+      "C": "Siêu khóa",
+      "D": "Thực thể"
+    },
+    "a": "B"
+  },
+  {
+    "id": 62,
+    "q": "Phụ thuộc hàm A->B là?",
+    "type": "mcq",
+    "op" : {
+      "A": "Mỗi giá trị thuộc A thì suy ra nhiều giá trị thuộc B",
+      "B": "Mỗi giá trị thuộc A thì suy ra một giá trị thuộc B",
+      "C": "Mỗi giá trị thuộc A thì suy ra không có giá trị thuộc B",
+      "D": "Mỗi giá trị thuộc B thì suy ra một giá trị thuộc A"
+    },
+    "a": "B"
+  },
+  {
+    "id": 63,
+    "q": "Bao đóng tập thuộc tính X+ đối với tập phụ thuộc hàm F là gì?",
+    "type": "mcq",
+    "op" : {
+      "A": "Tập các thuộc tính thuộc X",
+      "B": "Tập các thuộc tính không thuộc X",
+      "C": "Tập các thuộc tính suy diễn từ X nhờ tập phụ thuộc hàm F",
+      "D": "Tập các thuộc tính không suy diễn từ X"
+    },
+    "a": "C"
+  },
+  {
+    "id": 64,
+    "q": "QI095: Cho R(ABCDE) F={AB -> CD, D -> EB}. Chỉ ra 1 khóa của lược đồ",
+    "type": "mcq",
+    "op" : {
+      "A": "AB",
+      "B": "D",
+      "C": "ABC",
+      "D": "ABCD"
+    },
+    "a": "A"
+  },
+  {
+    "id": 65,
+    "q": "Cho p(U,F) với U(A1, A2,…, An) và hai phụ thuộc hàm F, G; Hai phụ thuộc hàm F, G gọi là phụ thuộc hàm tương đương khi:",
+    "type": "mcq",
+    "op" : {
+      "A": "F+ = G+",
+      "B": "F+ >= G+",
+      "C": "F+ <= G+",
+      "D": "F+ ≠ G+"
+    },
+    "a": "A"
+  },
+  {
+    "id": 66,
+    "q": "Mô hình ngoài là?",
+    "type": "mcq",
+    "op" : {
+      "A": "Nội dung thông tin của toàn bộ CSDL",
+      "B": "Nội dung thông tin của toàn bộ CSDL dưới cách nhìn của người sử dụng",
+      "C": "Nội dung thông tin của một phần cơ sở dữ liệu",
+      "D": "Nội dung thông tin của một phần dữ liệu dưới cách nhìn của người sử dụng"
+    },
+    "a": "D"
+  },
+  {
+    "id": 67,
+    "q": "Mô hình trong là?",
+    "type": "mcq",
+    "op" : {
+      "A": "Một trong các mô hình biểu diễn CSDL dưới dạng lưu trữ vật lý",
+      "B": "Mô hình biểu diễn cơ sở dữ liệu trừu tượng ở mức quan niệm",
+      "C": "Có nhiều cách biểu diễn CSDL dưới dạng lưu trữ vật lý",
+      "D": "Mô hình lưu trữ vật lý dữ liệu"
+    },
+    "a": "D"
+  },
+  {
+    "id": 68,
+    "q": "Người sử dụng có thể truy cập?",
+    "type": "mcq",
+    "op" : {
+      "A": "Toàn bộ cơ sở dữ liệu",
+      "B": "Hạn chế",
+      "C": "Một phần cơ sở dữ liệu",
+      "D": "Phụ thuộc vào quyền truy nhập"
+    },
+    "a": "D"
+  },
+  {
+    "id": 69,
+    "q": "Quan hệ một – một giữa hai tập thực thể là?",
+    "type": "mcq",
+    "op" : {
+      "A": "Là một thực thể ở tập này liên kết với nhiều thực thể ở tập kia và ngược lại",
+      "B": "Là một thực thể ở tập này liên kết với nhiều thực thể ở tập kia và một thực thể ở tập kia chỉ liên kết với một thực thể ở tập này.",
+      "C": "Là một thực thể ở tập này liên kết với một thực thể ở tập kia và ngược lại",
+      "D": "Là nhiều thực thể ở tập này liên kết với nhiều thực thể ở tập kia"
+    },
+    "a": "C"
+  },
+  {
+    "id": 70,
+    "q": "Quan hệ một - nhiều giữa hai tập thực thể:",
+    "type": "mcq",
+    "op" : {
+      "A": "Là một thực thể ở tập này liên kết với nhiều thực thể ở tập kia và ngược lại",
+      "B": "Là một thực thể ở tập này liên kết với nhiều thực thể ở tập kia và một thực thể ở tập kia chỉ liên kết với một thực thể ở tập này.",
+      "C": "Là một thực thể ở tập này liên kết với một thực thể ở tập kia và ngược lại",
+      "D": "Là nhiều thực thể ở tập này liên kết với nhiều thực thể ở tập kia"
+    },
+    "a": "B"
+  },
+  {
+    "id": 71,
+    "q": "Quan hệ nhiều - nhiều giữa hai tập thực thể:",
+    "type": "mcq",
+    "op" : {
+      "A": "Là một thực thể ở tập này liên kết với nhiều thực thể ở tập kia và ngược lại",
+      "B": "Là một thực thể ở tập này liên kết với nhiều thực thể ở tập kia và một thực thể ở tập kia chỉ liên kết với một thực thể ở tập này.",
+      "C": "Là một thực thể ở tập này liên kết với một thực thể ở tập kia và ngược lại",
+      "D": "Là nhiều thực thể ở tập này liên kết với nhiều thực thể ở tập kia."
+    },
+    "a": "D"
+  },
+
+  {
+    "id": 100,
+    "q": "Anh/Chị hãy cho biết quy trình thiết kế cơ sở dữ liệu gồm những giai đoạn nào?",
+    "type": "short",
+    "keywords": ["Thiết kế quan niệm", "thiết kế logic", "thiết kế vật lý"]
+  },
+  {
+    "id": 101,
+    "q": "Anh/ Chị hãy cho biết kiến trúc của hệ quản trị cơ sở dữ liệu bao gồm những mức nào?",
+    "type": "short",
+    "keywords": ["mức ngoài", "mức quan niệm", "mức vật lý"]
+  },
+  {
+    "id": 102,
+    "q": "Anh/Chị hãy cho biết lợi ích của việc quản lý dữ liệu bằng cơ sở dữ liệu?",
+    "type": "short",
+    "keywords": ["hiệu quả", "bảo mật", "chính xác", "Giảm thiểu","rủi ro", "chi phí"]
+  },
+  {
+    "id": 103,
+    "q": "Anh/Chị hãy cho biết Khóa ngoại là gì? ",
+    "type": "short",
+    "keywords": ["là 1 hoặc một tập thuộc tính trong quan hệ R nhưng là khóa chính trong quan hệ Q"]
+  },
+  {
+    "id": 104,
+    "q": "Theo Anh/Chị thế nào là mô hình quan hệ",
+    "type": "short",
+    "keywords":["Là một bảng chứa dữ liệu","nhiều cột và nhiều dòng","dữ liệu phải thỏa","các ràng buộc liên quan tới quan hệ đó"]
+  },
+  {
+    "id": 105,
+    "q": "Anh/Chị hãy cho biết Thế nào là phép kết nối tự nhiên",
+    "type": "short",
+    "keywords":["Phép kết nối bằng trên thuộc tính chung"]
+  },
+  {
+    "id": 106,
+    "q": "Anh/Chị hãy cho biết Miền giá trị là gì?",
+    "type":"short",
+    "keywords": ["Là tập hợp các giá trị nguyên tố gắn liền với thuộc tính"]
+  },
+  {
+    "id": 107,
+    "q":"Theo Anh/Chị thế nào là hai tập phụ thuộc hàm tương đương?",
+    "type":"short",
+    "keywords":["Hai tập phụ thuộc hàm tương đương khi chúng tạo ra cùng một tập các phụ thuộc hàm suy diễn từ chúng"]
+  },
+  {
+    "id":108,
+    "q":"Anh/Chị cho biết Thế nào là siêu khóa",
+    "type":"short",
+    "keywords":["Là tập thuộc tính có chứa khóa"]
+  },
+  {
+    "id":109,
+    "q":"Phụ thuộc hàm nguyên tố là gì ?",
+    "type":"short",
+    "keywords":["là phụ thuộc hàm mà vế phải là thuộc tính khóa chính hoặc một phần của khóa chính trong quan hệ"]
+  },
+  {
+    "id":110,
+    "q":"Một quan hệ gồm?",
+    "type":"short",
+    "keywords":["tên quan hệ","thuộc tính","bộ"]
+  },
+  {
+    "id":111,
+    "q":"ERD là cụm từ viết tắt của",
+    "type":"short",
+    "keywords":["Entity Relationship Diagram"]
+  }
+]

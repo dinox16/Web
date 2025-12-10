@@ -1,0 +1,434 @@
+[
+  {
+    "id": 1,
+    "q": "Một cách tổng quát, hệ thống bộ nhớ của máy tính có thể chia thành 2 nhóm, đó là:",
+    "opts": {
+      "A": "Bộ nhớ Cache và bộ nhớ ngoài",
+      "B": "Bộ nhớ ngoài và bộ nhớ ROM",
+      "C": "Bộ nhớ trong và Bộ nhớ thiết bị",
+      "D": "Bộ nhớ trong và Bộ nhớ ngoài"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": 2,
+    "q": "Liên quan đến bộ nhớ ROM, phát biểu nào sau đây là đúng?",
+    "opts": {
+      "A": "Có thể dùng điện để xoá thông tin trong PROM",
+      "B": "PROM là loại ROM có thể xoá và ghi (thông tin) lại nhiều lần",
+      "C": "EPROM là loại ROM có thể xoá và ghi (thông tin) lại nhiều lần",
+      "D": "Có thể dùng điện để xoá thông tin trong EEPROM"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": 3,
+    "q": "CPU trong máy tính John Von Neumann dựa vào …………….. để biết được lệnh (Instruction) tiếp theo đang chứa ở main memory mà nó phải thực hiện?",
+    "opts": {
+      "A": "Thanh ghi bộ đếm chương trình (Program Counter)",
+      "B": "Thanh ghi con trỏ chương trình",
+      "C": "Thanh ghi mã lệnh chương trình",
+      "D": "Thanh ghi địa chỉ lệnh chương trình"
+    },
+    "type" : "mcq",
+  "ans": "A"
+  },
+  {
+    "id": 4,
+    "q": "Trong máy tính John Von Neumann, một chu kỳ lệnh gồm 3 bước chính, đó là:",
+    "opts": {
+      "A": "Nhận lệnh từ main memory; Giải mã lệnh và Thực thi lệnh",
+      "B": "Nhận lệnh từ main memory; Giải mã lệnh và Ghi kết quả về lại main memory",
+      "C": "Giải mã lệnh; Thực thi lệnh và Ghi kết quả về lại memory",
+      "D": "Nhận lệnh từ main memory; Thực thi lệnh và Ghi kết quả về lại memory"
+    },
+    "type" : "mcq",
+  "ans": "A"
+  },
+  {
+    "id": 5,
+    "q": "Hiện tượng phân mảnh (fragmentation) trên main memory có 2 tác động tiêu cực với hệ thống: Gây lãng phí không gian lưu trữ của main memory và ảnh hưởng đến tốc độ nạp ……………. vào main memory.",
+    "opts": {
+      "A": "Program",
+      "B": "Processor",
+      "C": "Process",
+      "D": "Thread"
+    },
+    "type" : "mcq",
+  "ans": "C"
+  },
+  {
+    "id": 6,
+    "q": "Hiện tượng phân mảnh (fragmentation) trên main memory có thể gây lãng phí không gian lưu trữ của nơi này. Trong khi đó, hiện tượng phân mảnh trên đĩa không những lãng phí không gian lưu trữ của đĩa (disk) mà còn làm chậm quá trình ghi/đọc ............... ở nơi đây.",
+    "opts": {
+      "A": "Thư mục",
+      "B": "Tập tin",
+      "C": "Chương trình",
+      "D": "Tiến trình"
+    },
+    "type" : "mcq",
+  "ans": "B"
+  },
+  {
+    "id": 7,
+    "q": "Thuật toán nào sau đây KHÔNG phải là thuật toán “thay thế trang\" (Page Replacement)?",
+    "opts": {
+      "A": "First-In First-Out (FIFO)",
+      "B": "First-Come First-Serve (FCFS)",
+      "C": "Least Recently Used (LRU)",
+      "D": "Most Recently Used (MRU)"
+    },
+    "type" : "mcq",
+  "ans": "B"
+  },
+  {
+    "id": 8,
+    "q": "Thuật toán nào sau đây là thuật toán \"thay thế trang\" (Page Replacement)?",
+    "opts": {
+      "A": "First-Come First-Serve (FCFS)",
+      "B": "Round Robin (RR)",
+      "C": "First-In First-Out (FIFO)",
+      "D": "Shortest Job First (SJF)"
+    },
+    "type" : "mcq",
+  "ans": "C"
+  },
+  {
+    "id": 9,
+    "q": "Theo nguyên lý máy John Von Neumann, khi cần truy xuất đến một ô nhớ nào đó trên bộ nhớ, CPU sử dụng (hay sinh ra) loại địa chỉ ô nhớ nào?",
+    "opts": {
+      "A": "Địa chỉ Segment",
+      "B": "Địa chỉ Offset",
+      "C": "Địa chỉ Logic",
+      "D": "Địa chỉ Physical"
+    },
+    "type" : "mcq",
+  "ans": "C"
+  },
+  {
+    "id": 10,
+    "q": "Theo nguyên lý máy John Von Neumann, CPU nhận lệnh (Fetch Instruction) từ main memory dựa vào giá trị của thanh ghi nào?",
+    "opts": {
+      "A": "Program Counter Register",
+      "B": "Instruction Counter Register",
+      "C": "Program Pointer Register",
+      "D": "Stack Pointer Register"
+    },
+    "type" : "mcq",
+  "ans": "A"
+  },
+  {
+    "id": 11,
+    "q": "Với hệ điều hành, mục tiêu chính của đồng bộ hoá tiến trình (process synchronization) là đảm bảo sao cho khi có nhiều tiến trình đồng thời truy cập đến tài nguyên chia sẻ, thì việc truy cập tài nguyên chia sẻ của tiến trình này không cản trở việc truy cập của tiến trình kia; và ngăn chặn được hiện tượng ......... dữ liệu do truy cập đồng thời gây ra.",
+    "opts": {
+      "A": "Không nhất quán (inconsistent)",
+      "B": "Không thể cập nhật (unable to update)",
+      "C": "Không thể bảo vệ (cannot protect)",
+      "D": "Không đồng bộ (asynchronous)"
+    },
+    "type" : "mcq",
+  "ans": "A"
+  },
+  {
+    "id": 12,
+    "q": "Trong môi trường hệ điều hành đa tiến trình (Multi process), việc đồng bộ hoá tiến trình là cần thiết, nó đảm bảo tính nhất quán và tính toàn vẹn của dữ liệu, đồng thời tránh được nguy cơ xảy ra ……… trong hệ thống và những vấn đề đồng bộ hoá khác.",
+    "opts": {
+      "A": "Tắc nghẽn (Deadlock)",
+      "B": "Xung đột (Conflict)",
+      "C": "Tranh chấp (Disputes)",
+      "D": "Tình trạng tranh đoạt (Race Conditions)"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": 13,
+    "q": "Trong môi trường hệ điều hành đa tiến trình (Multi process), việc đồng bộ hoá tiến trình là cần thiết, nó đảm bảo tính nhất quán và tính toàn vẹn của dữ liệu, đồng thời tránh được nguy cơ xảy ra ……… trong hệ thống và những vấn đề đồng bộ hoá khác.",
+    "opts": {
+      "A": "Tắc nghẽn (Deadlock)",
+      "B": "Xung đột (Conflict)",
+      "C": "Tranh chấp (Disputes)",
+      "D": "Tình trạng tranh đoạt (Race Conditions)"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": 14,
+    "q": "Liên quan đến vấn đề tổ chức \"đồng bộ hoá tiến trình\" (process synchronization) của hệ điều hành, hệ điều hành chia các tiến trình trong hệ thống thành 2 nhóm, đó là:",
+    "opts": {
+      "A": "Independent Process và Dependent Process",
+      "B": "Dependent Process và Cooperative Process",
+      "C": "Independent Process và Cooperative Process",
+      "D": "Preemptive Process và Non-Preemptive Process"
+    },
+    "type" : "mcq",
+  "ans": "C"
+  },
+  {
+    "id": 15,
+    "q": "Cái nào sau đây KHÔNG phải là thành phần của một hệ thống tập tin (File System) trên thiết bị lưu trữ (storage device) của hệ điều hành?",
+    "opts": {
+      "A": "File System Structure",
+      "B": "File Allocation",
+      "C": "Data Processing",
+      "D": "Data Retrieval"
+    },
+    "type" : "mcq",
+  "ans": "C"
+  },
+  {
+    "id": 16,
+    "q": "Trong môi trường mạng máy tính, người sử dụng, nếu được phép, thì họ có thể truy cập, chia sẻ, v.v. các tập tin, thư mục được lưu trữ trên các ổ đĩa của các máy tính khác nhau trên mạng. Điều này được hỗ trợ bởi loại File system (hệ thống tập tin) nào?",
+    "opts": {
+      "A": "Common File System (CFS)",
+      "B": "Shared File System (SFS)",
+      "C": "Computer File System (CFS)",
+      "D": "Network File System (NFS)"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": 17,
+    "q": "Theo thuật toán điều phối tiến trình SJF (Shortest Job First), tiến trình được chọn để cấp Processor là tiến trình có số đơn vị thời gian cần processor để thực thi là ít nhất trong số các tiến trình đang ở danh sách ........... Thuật toán này làm giảm đáng kể thời gian đợi ……………. của các tiến trình đợi thực thi.",
+    "opts": {
+      "A": "ready list; trung bình",
+      "B": "ready list; tối thiểu",
+      "C": "execution list; trung bình",
+      "D": "execution list; tối đa"
+    },
+    "type" : "mcq",
+  "ans": "A"
+  },
+  {
+    "id": 18,
+    "q": "Bộ phận điều phối tiến trình của hệ điều hành có tên là Dispatcher. Dispatcher đóng vai trò quan trọng trong việc quản lý tài nguyên của hệ thống và đảm bảo sự thực thi hiệu quả của các …………………. trên main memory.",
+    "opts": {
+      "A": "Chương trình",
+      "B": "Tiến trình",
+      "C": "Tiểu trình",
+      "D": "Đoạn mã lệnh"
+    },
+    "type" : "mcq",
+  "ans": "B"
+  },
+  {
+    "id": 19,
+    "q": "Trong các lệnh Assembly sau đây, hãy cho biết dòng lệnh nào sai?",
+    "opts": {
+      "A": "MOV AL, 10",
+      "B": "MOV AL, [SI]",
+      "C": "MOV AL, ES:[SI]",
+      "D": "MOV 400, BX"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": 20,
+    "q": "Trong các lệnh Assembly sau đây, hãy cho biết dòng lệnh nào sai?",
+    "opts": {
+      "A": "Mov AL, 3",
+      "B": "Mov AL, BX",
+      "C": "Mov AL, [SI]",
+      "D": "Mov [SI], BX"
+    },
+    "type" : "mcq",
+  "ans": "B"
+  },
+  {
+    "id": 21,
+    "q": "Trong hệ điều hành, thuật toán nào sau đây thuộc nhóm thuật toán lập lịch CPU (điều phối tiến trình)?",
+    "opts": {
+      "A": "Last In First Out",
+      "B": "Short Remaining Time",
+      "C": "Least Recently Used",
+      "D": "First Come First Serve"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": 22,
+    "q": "Thuật toán nào sau đây là thuật toán lập lịch CPU (CPU Scheduling)?",
+    "opts": {
+      "A": "Shortest Remaining Time (SRT)",
+      "B": "Most Recently Used (MRU)",
+      "C": "Least Recently Used (LRU)",
+      "D": "Optimal Page Replacement (OPR)"
+    },
+    "type" : "mcq",
+  "ans": "A"
+  },
+  {
+    "id": 23,
+    "q": "Thuật toán nào sau đây KHÔNG phải là thuật toán “thay thế trang\" (Page Replacement)?",
+    "opts": {
+      "A": "First-In First-Out (FIFO)",
+      "B": "First-Come First-Serve (FCFS)",
+      "C": "Least Recently Used (LRU)",
+      "D": "Most Recently Used (MRU)"
+    },
+    "type" : "mcq",
+  "ans": "B"
+  },
+  {
+    "id": 24,
+    "q": "Thuật toán nào sau đây là thuật toán “thay thế trang\" (Page Replacement)?",
+    "opts": {
+      "A": "First-Come First-Serve (FCFS)",
+      "B": "Round Robin (RR)",
+      "C": "First-In First-Out (FIFO)",
+      "D": "Shortest Job First (SJF)"
+    },
+    "type" : "mcq",
+  "ans": "C"
+  },
+  {
+    "id": 25,
+    "q": "Địa chỉ của bảng trang trong bộ nhớ được chứa ở thanh ghi nào?",
+    "opts": {
+      "A": "Thanh ghi con trỏ lệnh (Instruction Register)",
+      "B": "Thanh ghi con ngăn xếp (Stack Register)",
+      "C": "Thanh ghi bảng trang (Page Table Register)",
+      "D": "Thanh ghi cơ sở bảng trang (Page Table Base Register)"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": 26,
+    "q": "Địa chỉ của bảng đoạn trong bộ nhớ được chứa ở thanh ghi nào?",
+    "opts": {
+      "A": "Thanh ghi con trỏ lệnh (Instruction Register)",
+      "B": "Thanh ghi con ngăn xếp (Stack Register)",
+      "C": "Thanh ghi bảng đoạn (Segment Table Register)",
+      "D": "Thanh ghi cơ sở bảng đoạn (Segmentation Table Base Register)"
+    },
+    "type" : "mcq",
+  "ans": "C"
+  },
+  {
+    "id": 27,
+    "q": "Theo nguyên lý máy John Von Neumann, khi cần truy xuất đến một ô nhớ nào đó trên bộ nhớ, CPU sử dụng (hay sinh ra) loại địa chỉ ô nhớ nào?",
+    "opts": {
+      "A": "Địa chỉ Segment",
+      "B": "Địa chỉ Offset",
+      "C": "Địa chỉ Logic",
+      "D": "Địa chỉ Physical"
+    },
+    "type" : "mcq",
+  "ans": "C"
+  },
+  {
+    "id": 28,
+    "q": "Theo nguyên lý máy John Von Neumann, CPU nhận lệnh (Fetch Instruction) từ main memory dựa vào giá trị của thanh ghi nào?",
+    "opts": {
+      "A": "Program Counter Register",
+      "B": "Instruction Counter Register",
+      "C": "Program Pointer Register",
+      "D": "Stack Pointer Register"
+    },
+    "type" : "mcq",
+  "ans": "A"
+  },
+  {
+    "id": 29,
+    "q": "Bên trong CPU của máy tính John Von Neumann, có 3 đơn vị chức năng chính, đó là:",
+    "opts": {
+      "A": "CU, ALU và MAR",
+      "B": "CU, ALU và MBR",
+      "C": "CU, ALU và MDR",
+      "D": "CU, ALU và REGISTER"
+    },
+    "type" : "mcq",
+  "ans": "D"
+  },
+  {
+    "id": 30,
+    "q": "Máy tính John Von Neumann sử dụng thanh ghi mã lệnh (IR) để chứa:",
+    "opts": {
+      "A": "Địa chỉ của lệnh vừa được nhận (Fetch) về từ main memory",
+      "B": "Mã của lệnh vừa được nhận (Fetch) về từ main memory",
+      "C": "Độ lớn của lệnh vừa được nhận (Fetch) về từ main memory",
+      "D": "Kiểu (Type) của lệnh vừa được nhận (Fetch) về từ main memory"
+    },
+    "type" : "mcq",
+  "ans": "B"
+  },
+  {
+    "id": 31,
+    "q": "Hạn chế chung của kỹ thuật bộ nhớ phân trang đơn và phân đoạn đơn là gì?",
+    "opts": {
+      "A": "Nạp tất cả trang/đoạn của tiến trình vào main memory",
+      "B": "Chỉ nạp các trang/đoạn chính của tiến trình vào main memory",
+      "C": "Nạp tất cả trang/đoạn của chương trình vào main memory",
+      "D": "Chỉ nạp các trang/đoạn chính của chương trình vào main memory"
+    },
+    "type" : "mcq",
+  "ans": "C"
+  },
+  {
+    "id": 32,
+    "q": "Các tiến trình ở trạng thái Ready thì được bộ phận điều phối tiến trình đưa ra vào Ready list. Trong khi đó, các tiến trình ở trạng thái Blocked thì được đưa vào ………………………",
+    "opts": {
+      "A": "Waiting list",
+      "B": "Suspend list",
+      "C": "Blocked list",
+      "D": "Running list"
+    },
+    "type" : "mcq",
+  "ans": "C"
+  },
+  {
+    "id": 33,
+    "q": "Theo thuật toán điều phối tiến trình SJF, tiến trình được chọn để cấp Processor là tiến trình có số đơn vị thời gian cần processor để thực thi là ít nhất trong số các tiến trình đang ở danh sách …………. Thuật toán này làm giảm đáng kể thời gian đợi ……………… của các tiến trình đợi thực thi.",
+    "opts": {
+      "A": "ready list; trung bình",
+      "B": "ready list; tối thiểu",
+      "C": "execution list; trung bình",
+      "D": "execution list; tối đa"
+    },
+    "type" : "mcq",
+  "ans": "A"
+  },
+  {
+    "id": 34,
+    "q": "Bộ phận điều phối tiến trình của hệ điều hành có tên là Dispatcher. Dispatcher đóng vai trò quan trọng trong việc quản lý tài nguyên của hệ thống và đảm bảo sự thực thi hiệu quả của các ………………..... trên main memory.",
+    "opts": {
+      "A": "Chương trình",
+      "B": "Tiến trình",
+      "C": "Tiểu trình",
+      "D": "Đoạn mã lệnh"
+    },
+    "type" : "mcq",
+  "ans": "B"
+  },
+  {
+    "id": 35,
+    "q": "Lập lịch CPU, hay còn gọi là điều phối tiến trình, là một trong những nhiệm vụ quan trọng của hệ điều hành. Hệ điều hành phải đưa ra quyết định chính xác khi nào thì cho dừng tiến trình hiện tại để thu hồi …………….. và khi có được ……………….. thì cấp nó cho tiến trình nào trong số các tiến trình đang ở trạng thái Ready (sẵn sàng).",
+    "opts": {
+      "A": "Logic Processor; Physical Processor",
+      "B": "Processor; Processor",
+      "C": "Memory space; Memory space",
+      "D": "Memory space; Processor"
+    },
+    "type" : "mcq",
+  "ans": "B"
+  },
+  {
+    "id": 36,
+    "q": "Theo thuật toán điều phối tiến trình Round Robin, tiến trình được chọn để cấp Processor là tiến trình ở đầu Ready list. Nhưng khi tiến trình sử dụng đủ thời gian .................... bị thu hồi Processor. Khi đó, nếu tiến trình chưa kết thúc thì bộ phận điều phối sẽ đưa tiến trình về …………….. Ready list để đợi được cấp Processor lần thứ 2, hay thứ 3, thứ 4, v.v..",
+    "opts": {
+      "A": "Quantum; Đầu",
+      "B": "Quantum; Cuối",
+      "C": "Đầu; Quantum",
+      "D": "Cuối; Quantum"
+    },
+    "type" : "mcq",
+  "ans": "B"
+  }
+]

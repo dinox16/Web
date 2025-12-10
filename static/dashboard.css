@@ -1,0 +1,352 @@
+/* Ocean Breeze palette - Xanh dương, Tươi mát & Hiện đại */
+:root {
+    /* Nền trang: Chuyển sang tông xám xanh nhạt lạnh */
+    --bg-start: #f0f4f8;
+    --bg-end: #e2e8f0;
+
+    /* Màu chính: Xanh dương đậm (Royal Blue) */
+    --primary: #1e293b;       /* Slate 800 - Dùng cho tiêu đề */
+    --primary-600: #2563eb;   /* Blue 600 - Dùng cho điểm nhấn đậm */
+    
+    /* Màu nhấn: Xanh da trời sáng (Sky Blue) */
+    --accent: #0ea5e9;        /* Sky 500 */
+    
+    /* Màu chữ phụ */
+    --muted: #64748b;         /* Slate 500 */
+    
+    /* Card & Shadows */
+    --card-bg: #ffffff;
+    --card-radius: 14px;
+    --card-shadow: 0 4px 20px rgba(148, 163, 184, 0.15); /* Bóng màu xám xanh */
+    --soft-shadow: 0 2px 10px rgba(148, 163, 184, 0.1);
+    
+    --transition-fast: 200ms;
+    --transition-medium: 320ms;
+    
+    --text: #334155;          /* Slate 700 */
+    --success: #10b981;       /* Emerald */
+    --danger: #ef4444;        /* Red */
+    
+    --max-width: 1200px;
+    --sidebar-width: 240px;   /* Tăng nhẹ chiều rộng sidebar cho thoáng */
+    --radius-sm: 10px;
+}
+
+/* Page */
+body {
+    margin: 0;
+    font-family: 'Inter', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, var(--bg-start) 0%, var(--bg-end) 100%);
+    min-height: 100vh;
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.5;
+}
+
+/* Layout */
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+    align-items: stretch;
+    gap: 28px;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 28px 20px;
+    box-sizing: border-box;
+}
+
+/* Sidebar - Đổi sang màu Xanh Đen (Navy) */
+.sidebar {
+    width: var(--sidebar-width);
+    background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%); /* Slate 900 -> Slate 800 */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-shadow: 4px 0 24px rgba(15, 23, 42, 0.15);
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Sidebar title / logo */
+.sidebar-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 24px 14px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+/* Logo placeholder */
+.sidebar-title::before{
+    content: "";
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #38bdf8, #2563eb); /* Logo màu xanh sáng */
+    box-shadow: 0 2px 10px rgba(37, 99, 235, 0.3);
+}
+
+/* Navigation */
+.sidebar ul {
+    list-style: none;
+    padding: 16px;
+    margin: 0;
+    flex: 1;
+}
+
+.sidebar ul li {
+    padding: 12px 16px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: all var(--transition-fast);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    position: relative;
+    color: #94a3b8; /* Slate 400 */
+    font-weight: 500;
+}
+
+/* Icon placeholder */
+.sidebar ul li .icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    background: rgba(255,255,255,0.05);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    font-size: 1rem;
+}
+
+/* Active / hover states */
+.sidebar ul li:hover {
+    background: rgba(255,255,255,0.05);
+    color: #f1f5f9;
+    transform: translateX(4px); /* Hiệu ứng đẩy nhẹ sang phải */
+}
+
+.sidebar ul li.active {
+    background: #2563eb; /* Blue 600 */
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}
+
+.sidebar ul li.active .icon {
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+}
+
+/* Main content */
+.dashboard-main {
+    flex: 1;
+    padding: 12px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Header */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.dashboard-header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: var(--primary);
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.user-info {
+    font-size: 0.95rem;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+    background: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    box-shadow: var(--soft-shadow);
+}
+
+/* Cards grid */
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 1100px){
+    .dashboard-cards { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 820px){
+    .dashboard-cards { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px){
+    .dashboard-cards { grid-template-columns: 1fr; }
+}
+
+/* Single card */
+.card {
+    background: var(--card-bg);
+    border-radius: var(--card-radius);
+    box-shadow: var(--card-shadow);
+    padding: 24px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+    cursor: pointer;
+    border: 1px solid #e2e8f0; /* Viền mỏng màu xám */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-color: transparent;
+}
+
+/* Card icon - Đổi sang nền xanh nhạt */
+.card .card-icon {
+    min-width: 56px;
+    min-height: 56px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e0f2fe; /* Sky 100 */
+    color: #0284c7;      /* Sky 600 */
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.card .card-body {
+    flex: 1;
+    text-align: left;
+}
+.card-title {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-bottom: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.card-value {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 1.2;
+}
+
+/* Table block */
+.dashboard-table {
+    background: var(--card-bg);
+    border-radius: 16px;
+    box-shadow: var(--soft-shadow);
+    padding: 24px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+.dashboard-table h2 {
+    margin: 0 0 20px 0;
+    font-size: 1.15rem;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+/* Table */
+.dashboard-table table {
+    width: 100%;
+    border-collapse: separate; /* Để bo góc hàng */
+    border-spacing: 0;
+    font-size: 0.95rem;
+    min-width: 600px;
+}
+
+/* Header Table - Đổi sang màu xám lạnh */
+.dashboard-table thead th {
+    padding: 14px 16px;
+    text-align: left;
+    background: #f8fafc;
+    color: #64748b;
+    font-weight: 600;
+    border-bottom: 2px solid #e2e8f0;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+}
+
+.dashboard-table tbody td {
+    padding: 16px;
+    color: var(--text);
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.dashboard-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.dashboard-table tbody tr:hover td {
+    background: #f8fafc;
+}
+
+/* Status chips */
+.status {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 99px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.status.ok { background: #d1fae5; color: #059669; } /* Green 100 bg, Green 600 text */
+.status.warn { background: #fef3c7; color: #d97706; } /* Amber */
+.status.err { background: #fee2e2; color: #dc2626; } /* Red */
+
+/* Responsive */
+@media (max-width: 900px) {
+    .dashboard-container { flex-direction: column; padding: 16px; gap: 20px; }
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+        min-height: auto;
+        border-radius: 12px;
+        padding: 0;
+    }
+    .sidebar-title { display: none; }
+    .sidebar ul { 
+        display: flex; 
+        flex-direction: row; 
+        gap: 8px; 
+        overflow-x: auto; 
+        padding: 10px;
+    }
+    .sidebar ul li { 
+        white-space: nowrap; 
+        margin: 0; 
+        padding: 10px 16px;
+    }
+    .dashboard-main { padding: 0; }
+}

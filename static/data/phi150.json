@@ -1,0 +1,499 @@
+[
+    {
+        "q": "Vai trò của Triết học Mác - Lênin là:",
+        "opts": {
+            "A": "Giải thích cấu trúc của thế giới",
+            "B": "Xây dựng phương pháp luận cho các khoa học",
+            "C": "Thế giới quan, phương pháp luận khoa học và cách mạng cho con người trong nhận thức và thực tiễn",
+            "D": "Hướng tới việc cải tạo thế giới"
+        },
+        "ans": "C",
+        "type": "mcq",
+        "id": 1
+    },
+    {
+        "q": "Khẳng định nào sau đây là đúng:",
+        "opts": {
+            "A": "Phép biện chứng của Hêghen là phép biện chứng duy vật",
+            "B": "Phép biện chứng của Hêghen là phép biện chứng tự phát",
+            "C": "Phép biện chứng của Hêghen là phép biện chứng duy tâm khách quan",
+            "D": "Phép biện chứng của Hêghen là phép biện chứng tiệm nghiệm chủ quan"
+        },
+        "ans": "C",
+        "type": "mcq",
+        "id": 2
+    },
+    {
+        "q": "Cấp độ phát triển cao nhất của thế giới quan là:",
+        "opts": {
+            "A": "Thế giới quan Thần thoại",
+            "B": "Thế giới quan Tôn giáo",
+            "C": "Thế giới quan Duy Vật Biện chứng",
+            "D": "Thế giới quan Kinh nghiệm"
+        },
+        "ans": "C",
+        "type": "mcq",
+        "id": 3
+    },
+    {
+        "q": "Các bộ phận lý luận cơ bản cấu thành chủ nghĩa Mác - Lênin:",
+        "opts": {
+            "A": "Triết học, Nghệ thuật, Chính trị",
+            "B": "Triết học, Chính trị, Tôn giáo",
+            "C": "Triết học Mác - Lênin; Kinh tế chính trị học Mác - Lênin; Chủ nghĩa xã hội khoa học",
+            "D": "Cả A và B"
+        },
+        "ans": "C",
+        "type": "mcq",
+        "id": 4
+    },
+    {
+        "q": "Triết học Mác ra đời trong khoảng thời gian:",
+        "opts": {
+            "A": "Những năm 30 của thế kỷ XIX",
+            "B": "Những năm 40 của thế kỷ XIX",
+            "C": "Những năm 50 của thế kỷ XIX",
+            "D": "Những năm 60 của thế kỷ XIX"
+        },
+        "ans": "B",
+        "type": "mcq",
+        "id": 5
+    },
+    {
+        "q": "Cơ sở chủ yếu của thế giới quan tôn giáo là gì?",
+        "opts": {
+            "A": "Giáo lý",
+            "B": "Lòng tin",
+            "C": "Lý trí",
+            "D": "Tất cả đáp án trên"
+        },
+        "ans": "B",
+        "type": "mcq",
+        "id": 6
+    },
+    {
+        "q": "Câu ca dao: 'Một cây làm chẳng nên non / Ba cây chụm lại thành hòn núi cao' thể hiện nội dung quy luật nào của phép biện chứng duy vật?",
+        "opts": {
+            "A": "Quy luật từ những thay đổi về lượng dẫn đến những thay đổi về chất và ngược lại",
+            "B": "Quy luật thống nhất và đấu tranh của các mặt đối lập",
+            "C": "Quy luật phủ định của phủ định",
+            "D": "Cả B và C"
+        },
+        "ans": "A",
+        "type": "mcq",
+        "id": 7
+    },
+    {
+        "q": "“Muốn thực sự hiểu được sự vật cần phải nhìn bao quát và nghiên cứu tất cả các mặt, tất cả các mối liên hệ và quan hệ gián tiếp của sự vật đó.” Quan điểm trên thể hiện quan điểm nào trong nhận thức?",
+        "opts": {
+            "A": "Quan điểm khách quan",
+            "B": "Quan điểm toàn diện",
+            "C": "Quan điểm lịch sử - cụ thể",
+            "D": "Quan điểm phát triển"
+        },
+        "ans": "B",
+        "type": "mcq",
+        "id": 8
+    },
+    {
+        "q": "Quy luật nào yêu cầu trong phát triển cần phải 'kế thừa', 'chọn lọc'?",
+        "opts": {
+            "A": "Quy luật từ những thay đổi về lượng dẫn đến những thay đổi về chất và ngược lại",
+            "B": "Quy luật thống nhất và đấu tranh của các mặt đối lập",
+            "C": "Quy luật phủ định của phủ định",
+            "D": "Quy luật cung – cầu"
+        },
+        "ans": "C",
+        "type": "mcq",
+        "id": 9
+    },
+    {
+        "q": "Theo quy luật phủ định của phủ định, khuynh hướng của phát triển là:",
+        "opts": {
+            "A": "Đi lên theo hướng từ thấp đến cao, từ chưa hoàn thiện đến hoàn thiện hơn và có tính kế thừa",
+            "B": "Phát triển theo hướng từ thấp đến cao, từ chưa hoàn thiện đến hoàn thiện hơn và do tinh thần thế giới quyết định",
+            "C": "Vận động đa dạng, có thể thụt lùi so với cái ban đầu",
+            "D": "Dừng im, hoặc vận động đa dạng, có thể thụt lùi so với cái ban đầu"
+        },
+        "ans": "A",
+        "type": "mcq",
+        "id": 10
+    },
+    {
+        "q": "Các bộ phận cấu thành thực tiễn là:",
+        "opts": {
+            "A": "Hoạt động vật chất – cảm tính, mang tính lịch sử – xã hội của con người",
+            "B": "Hoạt động sản xuất vật chất, Hoạt động chính trị xã hội",
+            "C": "Hoạt động sản xuất vật chất, hoạt động chính trị xã hội, hoạt động thực nghiệm khoa học",
+            "D": "Hoạt động vật chất và hoạt động tinh thần của con người"
+        },
+        "ans": "C",
+        "type": "mcq",
+        "id": 11
+    },
+    {
+        "q": "Quan điểm phát triển giúp chúng ta khắc phục được tư tưởng nào?",
+        "opts": {
+            "A": "Nôn nóng, tả khuynh",
+            "B": "Giáo điều, ngụy biện",
+            "C": "Phiến diện, siêu hình",
+            "D": "Bảo thủ, trì trệ, định kiến"
+        },
+        "ans": "D",
+        "type": "mcq",
+        "id": 12
+    },
+    {
+        "q": "Đặc trưng bản chất nhất của ý thức là:",
+        "opts": {
+            "A": "Phản ánh sáng tạo trên cơ sở thực tiễn",
+            "B": "Khả năng tiếp nhận thông tin",
+            "C": "Lưu giữ thông tin",
+            "D": "Phản ánh thế giới một cách bị động"
+        },
+        "ans": "A",
+        "type": "mcq",
+        "id": 13
+    },
+    {
+        "q": "Theo quan điểm duy vật lịch sử, để giải thích đúng đắn và triệt để các hiện tượng trong đời sống xã hội, trước tiên cần phải xuất phát từ:",
+        "opts": {
+            "A": "Nền sản xuất vật chất của xã hội",
+            "B": "Quan điểm chính trị của giai cấp nắm quyền lực nhà nước",
+            "C": "Truyền thống văn hóa của xã hội",
+            "D": "Ý chí của mọi thành viên trong cộng đồng xã hội"
+        },
+        "ans": "A",
+        "type": "mcq",
+        "id": 14
+    },
+    {
+        "q": "Chính trị, pháp quyền, đạo đức là những yếu tố thuộc phạm trù nào sau đây?",
+        "opts": {
+            "A": "Cơ sở hạ tầng",
+            "B": "Quan hệ sản xuất",
+            "C": "Lực lượng sản xuất",
+            "D": "Kiến trúc thượng tầng"
+        },
+        "ans": "D",
+        "type": "mcq",
+        "id": 15
+    },
+    {
+        "q": "Theo quan điểm của triết học Mác - Lênin, bản chất của con người được quyết định bởi?",
+        "opts": {
+            "A": "Nỗ lực của cá nhân",
+            "B": "Nền giáo dục của mỗi gia đình",
+            "C": "Các quan hệ xã hội",
+            "D": "Đời sống kinh tế"
+        },
+        "ans": "C",
+        "type": "mcq",
+        "id": 16
+    },
+    {
+        "q": "Yếu tố nào được Mác dự báo sẽ trở thành lực lượng sản xuất trực tiếp?",
+        "opts": {
+            "A": "Khoa học",
+            "B": "Đối tượng lao động",
+            "C": "Công cụ lao động",
+            "D": "Nhà xưởng, kho chứa, bến bãi"
+        },
+        "ans": "A",
+        "type": "mcq",
+        "id": 17
+    },
+    {
+        "q": "Quan niệm cho rằng: “suy nghĩ của những người sống trong túp lều tranh luôn luôn khác với suy nghĩ của những người sống trong cung điện” là quan niệm của:",
+        "opts": {
+            "A": "Chủ nghĩa duy tâm khách quan",
+            "B": "Chủ nghĩa duy vật siêu hình",
+            "C": "Chủ nghĩa duy tâm chủ quan",
+            "D": "Chủ nghĩa duy vật lịch sử"
+        },
+        "ans": "D",
+        "type": "mcq",
+        "id": 18
+    },
+    {
+        "q": "Khái niệm “cách mạng xã hội” trong chủ nghĩa duy vật lịch sử được hiểu là:",
+        "opts": {
+            "A": "Sự tiến bộ, tiến hóa mọi lĩnh vực trong một xã hội nhất định.",
+            "B": "Sự thay thế chế độ xã hội này bằng một chế độ xã hội khác.",
+            "C": "Sự thay thế thể chế kinh tế này bằng một thể chế kinh tế khác.",
+            "D": "Sự thay thế hình thái kinh tế – xã hội này bằng hình thái kinh tế – xã hội khác cao hơn."
+        },
+        "ans": "D",
+        "type": "mcq",
+        "id": 19
+    },
+    {
+        "q": "Phương pháp luận triết học của Mác là gì?",
+        "opts": {
+            "A": "Phương pháp biện chứng tự phát",
+            "B": "Phương pháp biện chứng duy vật",
+            "C": "Phương pháp biện chứng duy tâm",
+            "D": "Phương pháp siêu hình"
+        },
+        "ans": "B",
+        "type": "mcq",
+        "id": 20
+    },
+    {
+        "q": "Triết học ra đời trong điều kiện nào?",
+        "opts": {
+            "A": "Xã hội phân chia thành giai cấp",
+            "B": "Xuất hiện tầng lớp lao động trí óc",
+            "C": "Tư duy của con người đạt trình độ tư duy khái quát cao, xã hội phân chia thành giai cấp và xuất hiện tầng lớp lao động trí óc",
+            "D": "Xuất hiện giai cấp tư sản"
+        },
+        "ans": "C",
+        "type": "mcq",
+        "id": 21
+    },
+    {
+        "q": "Các bộ phận lý luận cơ bản cấu thành chủ nghĩa Mác – Lênin gồm:",
+        "opts": {
+            "A": "Triết học, Nghệ thuật, Chính trị",
+            "B": "Triết học, Chính trị, Tôn giáo",
+            "C": "Triết học Mác – Lênin; Kinh tế chính trị học Mác – Lênin; Chủ nghĩa xã hội khoa học",
+            "D": "Cả A và B"
+        },
+        "ans": "C",
+        "type": "mcq",
+        "id": 22
+    },
+    {
+        "q": "Mác và Ăngghen đã kế thừa trực tiếp học thuyết triết học của ai để xây dựng học thuyết của mình?",
+        "opts": {
+            "A": "Schelling và Fichte",
+            "B": "Phơ bách và Hêghen",
+            "C": "Hium và Phơ bách",
+            "D": "Canto và Hopxo"
+        },
+        "ans": "B",
+        "type": "mcq",
+        "id": 23
+    },
+    {
+        "q": "Cơ sở chủ yếu của thế giới quan tôn giáo là?",
+        "opts": {
+            "A": "Giáo lý",
+            "B": "Lòng tin",
+            "C": "Lý trí",
+            "D": "Tất cả đáp án trên"
+        },
+        "ans": "B",
+        "type": "mcq",
+        "id": 24
+    },
+    {
+        "q": "Tính giai cấp của triết học được thể hiện như thế nào?",
+        "opts": {
+            "A": "Là sự phân chia giai cấp giữa các nhà triết học",
+            "B": "Mỗi tư tưởng triết học đều thuộc về và phục vụ cho một tầng lớp nhất định trong xã hội",
+            "C": "Quan điểm về giai cấp của các nhà triết học",
+            "D": "Tất cả đáp án trên"
+        },
+        "ans": "B",
+        "type": "mcq",
+        "id": 25
+    },
+    {
+        "q": "Quan điểm triết học nào sau đây là quan điểm của Chủ nghĩa Duy vật?",
+        "opts": {
+            "A": "Vật chất có trước, ý thức có sau, vật chất quyết định ý thức",
+            "B": "Ý thức có trước, vật chất có sau, ý thức quyết định vật chất",
+            "C": "Vật chất và ý thức tồn tại độc lập",
+            "D": "Vật chất và ý thức không nằm trong quan hệ sản sinh, cũng không nằm trong quan hệ quyết định nhau"
+        },
+        "ans": "A",
+        "type": "mcq",
+        "id": 26
+    },
+    {
+        "q": "Lênin đã đưa ra định nghĩa khoa học về phạm trù vật chất trong tác phẩm nào?",
+        "opts": {
+            "A": "Chủ nghĩa duy vật và chủ nghĩa kinh nghiệm phê phán",
+            "B": "Thế nào là người bạn dân?",
+            "C": "Nhà nước và Cách mạng",
+            "D": "Bút ký triết học"
+        },
+        "ans": "A",
+        "type": "mcq",
+        "id": 27
+    },
+    {
+        "q": "Phép biện chứng duy vật bao gồm những nguyên lý, quy luật cơ bản nào?",
+        "opts": {
+            "A": "1 nguyên lý, 1 quy luật",
+            "B": "2 nguyên lý, 2 quy luật",
+            "C": "2 nguyên lý, 3 quy luật",
+            "D": "3 nguyên lý, 3 quy luật"
+        },
+        "ans": "C",
+        "type": "mcq",
+        "id": 28
+    },
+    {
+        "q": "Quy luật nào của phép biện chứng vạch ra nguồn gốc, động lực của sự phát triển?",
+        "opts": {
+            "A": "Quy luật nhận thức",
+            "B": "Quy luật từ những thay đổi về lượng dẫn đến thay đổi về chất và ngược lại",
+            "C": "Quy luật phủ định của phủ định",
+            "D": "Quy luật thống nhất và đấu tranh của các mặt đối lập"
+        },
+        "ans": "D",
+        "type": "mcq",
+        "id": 29
+    },
+    {
+        "q": "Theo quan điểm duy vật lịch sử, để giải thích đúng đắn và triệt để các hiện tượng trong đời sống xã hội, trước tiên cần phải xuất phát từ:",
+        "opts": {
+            "A": "Nền sản xuất vật chất của xã hội",
+            "B": "Quan điểm chính trị của giai cấp nắm quyền lực nhà nước",
+            "C": "Truyền thống văn hóa của xã hội",
+            "D": "Ý chí của mọi thành viên trong cộng đồng xã hội"
+        },
+        "ans": "A",
+        "type": "mcq",
+        "id": 30
+    },
+    {
+        "q": "Nhân tố quyết định trong lực lượng sản xuất là:",
+        "opts": {
+            "A": "Tư liệu sản xuất",
+            "B": "Người lao động",
+            "C": "Công cụ lao động",
+            "D": "Tri thức"
+        },
+        "ans": "B",
+        "type": "mcq",
+        "id": 31
+    },
+    {
+        "q": "Tiền đề xuất phát của quan điểm duy vật lịch sử là:",
+        "opts": {
+            "A": "Con người hiện thực",
+            "B": "Con người tư tưởng",
+            "C": "Con người hành động",
+            "D": "Con người duy lý"
+        },
+        "ans": "A",
+        "type": "mcq",
+        "id": 32
+    },
+    {
+        "q": "Chính trị, pháp quyền, đạo đức là những yếu tố thuộc phạm trù nào sau đây?",
+        "opts": {
+            "A": "Cơ sở hạ tầng",
+            "B": "Quan hệ sản xuất",
+            "C": "Lực lượng sản xuất",
+            "D": "Kiến trúc thượng tầng"
+        },
+        "ans": "D",
+        "type": "mcq",
+        "id": 33
+    },
+    {
+        "q": "Theo quan điểm của triết học Mác - Lênin, bản chất của con người được quyết định bởi?",
+        "opts": {
+            "A": "Nỗ lực của cá nhân",
+            "B": "Nền giáo dục của mỗi gia đình",
+            "C": "Các quan hệ xã hội",
+            "D": "Đời sống kinh tế"
+        },
+        "ans": "C",
+        "type": "mcq",
+        "id": 34
+    },
+    {
+        "q": "Trong mối quan hệ giữa tồn tại xã hội và ý thức xã hội thì:",
+        "opts": {
+            "A": "Xét đến cùng, tồn tại xã hội quyết định ý thức xã hội.",
+            "B": "Xét đến cùng, ý thức xã hội quyết định tồn tại xã hội.",
+            "C": "Tồn tại và ý thức mối quan hệ phụ thuộc vào nhau, không cái nào quyết định cái nào.",
+            "D": "Tồn tại song song, không phụ thuộc nhau."
+        },
+        "ans": "A",
+        "type": "mcq",
+        "id": 35
+    },
+    {
+        "q": "Thực tiễn có vai trò như thế nào đối với nhận thức của con người.",
+        "type": "short",
+        "keyword": [
+            "cơ sở",
+            "mục đích",
+            "động lực",
+            "của nhận thức"
+        ],
+        "id": 36
+    },
+    {
+        "q": "Bản chất của ý thức là gì?",
+        "type": "short",
+        "keyword": [
+            "hình ảnh chủ quan của thế giới khách quan",
+            "quá trình phản ánh tích cực",
+            "sáng tạo hiện thực khách quan của óc người"
+        ],
+        "id": 37
+    },
+    {
+        "q": "Trong quan hệ giữa LLSX và QHSX thì yếu tố nào quyết định?",
+        "type": "short",
+        "keyword": "lực lượng sản xuất",
+        "id": 38
+    },
+    {
+        "q": "Phủ định biện chứng là gì?",
+        "type": "short",
+        "keyword": [
+            "khái niệm chỉ sự ra đời của cái mới một cách tự thân",
+            "có tính kế thừa",
+            "chọn lọc cái cũ"
+        ],
+        "id": 39
+    },
+    {
+        "q": "Giữa kinh tế và chính trị thì yếu tố nào giữ vai trò quyết định?",
+        "type": "short",
+        "keyword": "Kinh tế",
+        "id": 40
+    },
+    {
+        "q": "Phép biện chứng duy vật do ai xây dựng, ai bổ sung phát triển?",
+        "type": "short",
+        "keyword": [
+            "c. mác và ăng ghen xây dựng ",
+            "vl.lenin phát triển , bổ sung"
+        ],
+        "id": 41
+    },
+    {
+        "q": "Những yếu tố cấu thành lực lượng sản xuất ?",
+        "type": "short",
+        "keyword": [
+            "Người lao động",
+            "tư liệu sản xuất",
+            "khoa học và công nghệ"
+        ],
+        "id": 42
+    },
+    {
+        "q": "Xu hướng của phát triển diễn ra như thế nào?",
+        "type": "short",
+        "keyword": [
+            "Đi lên",
+            "ngày càng hoàn thiện"
+        ],
+        "id": 43
+    },
+    {
+        "q": "Trong các yếu tố cấu thành của ý thức (tri thức, tình cảm, niềm tin, ...) thì yếu tố nào là quan trọng nhất?",
+        "type": "short",
+        "keyword": "tri thức",
+        "id": 44
+    }
+]

@@ -1,0 +1,541 @@
+[
+  {
+    "id": "1",
+    "q": "Điều nào sau đây KHÔNG đúng về phát triển lặp lại?",
+    "opts": {
+      "A": "Đó là một cơ chế để đối phó với tình trạng thiếu khả năng dự đoán.",
+      "B": "Nó tập trung vào việc sản xuất thường xuyên các phiên bản làm việc của một hệ thống.",
+      "C": "Nó cung cấp thông tin phản hồi cho khách hàng.",
+      "D": "Phản hồi không được cung cấp cho nhà phát triển và khách hàng."
+    },
+    "ans": "D"
+  },
+  {
+    "id": "2",
+    "q": "Số thực thể tham gia vào một quan hệ (mối kết hợp) được gọi là:",
+    "opts": {
+      "A": "Bậc của quan hệ",
+      "B": "Bản số",
+      "C": "Khóa",
+      "D": "Tất cả đều sai"
+    },
+    "ans": "A"
+  },
+  {
+    "id": "3",
+    "q": "“Test nhằm bảo đảm hệ thống đáp ứng nhu cầu của tổ chức” được gọi là:",
+    "opts": {
+      "A": "Test đơn vị",
+      "B": "Test hệ thống",
+      "C": "Test từng phần",
+      "D": "Test chấp nhận"
+    },
+    "ans": "D"
+  },
+  {
+    "id": "4",
+    "q": "Bước nào sau đây KHÔNG PHẢI là bước quan trọng trong thiết kế và lập mô hình cơ sở dữ liệu logic?",
+    "opts": {
+      "A": "Kết hợp các yêu cầu dữ liệu chuẩn hóa từ tất cả các giao diện người dùng vào một mô hình cơ sở dữ liệu logic hợp nhất.",
+      "B": "So sánh thiết kế cơ sở dữ liệu logic hợp nhất với mô hình E-R đã dịch và sản xuất, thông qua tích hợp chế độ xem, một thiết kế cơ sở dữ liệu logic cuối cùng cho ứng dụng.",
+      "C": "Mô hình hóa cách thức luồng dữ liệu qua hệ thống thông tin, mối quan hệ giữa các luồng dữ liệu và cách dữ liệu được lưu trữ tại các vị trí cụ thể.",
+      "D": "Dịch mô hình dữ liệu E-R khái niệm cho ứng dụng thành các yêu cầu dữ liệu chuẩn hóa."
+    },
+    "ans": "C"
+  },
+  {
+    "id": "5",
+    "q": "________ liên quan đến việc xác định những gì cần được kiểm tra và thu tập dữ liệu kiểm tra.",
+    "opts": {
+      "A": "Lập kế hoạch",
+      "B": "Phân tích",
+      "C": "Thiết kế",
+      "D": "Thử nghiệm"
+    },
+    "ans": "D"
+  },
+  {
+    "id": "6",
+    "q": "Nếu mỗi nhân viên có thể có nhiều hơn một kỹ năng, thì KỸ NĂNG được gọi là:",
+    "opts": {
+      "A": "thuộc tính đơn trị",
+      "B": "thuộc tính đa trị",
+      "C": "thuộc tính không duy nhất",
+      "D": "thuộc tính lặp lại"
+    },
+    "ans": "B"
+  },
+  {
+    "id": "8",
+    "q": "“Hệ thống có thể cần để hoạt động với các thiết bị cầm tay” là một:",
+    "opts": {
+      "A": "Yêu cầu về tốc độ",
+      "B": "Yêu cầu về dung lượng",
+      "C": "Yêu cầu về chính trị",
+      "D": "Yêu cầu về khả năng chuyển đổi"
+    },
+    "ans": "D"
+  },
+  {
+    "id": "9",
+    "q": "Để cuộc phỏng vấn đạt được hiệu quả tốt nhất thì công việc cần làm trước nhất là gì?",
+    "opts": {
+      "A": "Chuẩn bị một danh sách kiểm tra",
+      "B": "Đặt lịch hẹn",
+      "C": "Ghi chép",
+      "D": "Chuẩn bị câu hỏi"
+    },
+    "ans": "D"
+  },
+  {
+    "id": "10",
+    "q": "Một quy trình có:",
+    "opts": {
+      "A": "nhãn đại từ",
+      "B": "nhãn tính từ",
+      "C": "nhãn cụm động từ",
+      "D": "nhãn cụm danh từ"
+    },
+    "ans": "C"
+  },
+  {
+    "id": "11",
+    "q": "________ là quá trình theo đó các đặc điểm thiết kế vật lý do nhóm phân tích tạo ra được nhóm lập trình chuyển thành mã máy tính hoạt động.",
+    "opts": {
+      "A": "Thử nghiệm",
+      "B": "Mã hóa",
+      "C": "Đào tạo",
+      "D": "Cài đặt"
+    },
+    "ans": "B"
+  },
+  {
+    "id": "12",
+    "q": "Dữ liệu không thể di chuyển trực tiếp từ kho dữ liệu này sang kho dữ liệu khác. Dữ liệu phải được di chuyển bằng ________.",
+    "opts": {
+      "A": "Một biểu đồ lưu lượng",
+      "B": "Thủ tục",
+      "C": "Quy trình",
+      "D": "Nguồn dữ liệu"
+    },
+    "ans": "C"
+  },
+  {
+    "id": "13",
+    "q": "Một hệ thống phần mềm bao gồm các chức năng cơ bản nào sau đây:",
+    "opts": {
+      "A": "Lưu trữ dữ liệu (data storage), Logic ứng dụng (application logic)",
+      "B": "Logic ứng dụng (application logic), Logic truy xuất dữ liệu (data access logic)",
+      "C": "Logic biểu diễn (presentation logic), Logic ứng dụng (application logic)",
+      "D": "Lưu trữ dữ liệu (data storage), Logic truy xuất dữ liệu (data access logic), Logic ứng dụng (application logic), Logic biểu diễn (presentation logic)"
+    },
+    "ans": "D"
+  },
+  {
+    "id": "14",
+    "q": "Công cụ nào sau đây dùng để đặc tả các chức năng hệ thống:",
+    "opts": {
+      "A": "Biểu đồ luồng dữ liệu",
+      "B": "Lưu đồ chứng từ",
+      "C": "Sơ đồ khối",
+      "D": "Lược đồ thực thể-kết hợp"
+    },
+    "ans": "A"
+  },
+  {
+    "id": "15",
+    "q": "Thành phần của bảng quyết định liệt kê các điều kiện liên quan đến quyết định được gọi là:",
+    "opts": {
+      "A": "Các hành động",
+      "B": "Tổ hợp các điều kiện",
+      "C": "danh sách điều kiện",
+      "D": "Các luật"
+    },
+    "ans": "B"
+  },
+  {
+    "id": "16",
+    "q": "Để đánh giá khả năng sử dụng, thông tin có thể được thu thập bằng cách:",
+    "opts": {
+      "A": "quan sát",
+      "B": "phỏng vấn",
+      "C": "nghiên cứu tài liệu",
+      "D": "Tất cả những điều trên"
+    },
+    "ans": "D"
+  },
+  {
+    "id": "17",
+    "q": "________ KHÔNG PHẢI là sản phẩm của mô hình hóa quy trình.",
+    "opts": {
+      "A": "DFD theo ngữ cảnh",
+      "B": "DFD của hệ thống",
+      "C": "Mô tả chi tiết về từng thành phần DFD",
+      "D": "Sơ đồ phân rã không đầy đủ"
+    },
+    "ans": "D"
+  },
+  {
+    "id": "18",
+    "q": "Quá trình nào có thể bắt đầu ngay sau khi hệ thống được cài đặt?",
+    "opts": {
+      "A": "Thiết kế",
+      "B": "Lập kế hoạch",
+      "C": "Phân tích",
+      "D": "Bảo trì"
+    },
+    "ans": "D"
+  },
+  {
+    "id": "19",
+    "q": "Trong giai đoạn nào của SDLC hệ thống thông tin được mã hóa, thử nghiệm, cài đặt và hỗ trợ trong tổ chức?",
+    "opts": {
+      "A": "Triển khai",
+      "B": "Phân tích",
+      "C": "Thiết kế",
+      "D": "Lập kế hoạch"
+    },
+    "ans": "A"
+  },
+  {
+    "id": "20",
+    "q": "Định dạng phổ biến nhất được sử dụng để lập mô hình dữ liệu là sơ đồ ______.",
+    "opts": {
+      "A": "lớp thực thể",
+      "B": "Thực thể - đối tượng",
+      "C": "Chủ thể - thực thể",
+      "D": "quan hệ thực thể"
+    },
+    "ans": "D"
+  },
+  {
+    "id": "21",
+    "q": "Việc tính lương của một nhân viên được biểu diễn trên sơ đồ luồng dữ liệu như là:",
+    "opts": {
+      "A": "luồng dữ liệu",
+      "B": "nguồn",
+      "C": "kho dữ liệu",
+      "D": "quy trình"
+    },
+    "ans": "D"
+  },
+  {
+    "id": "22",
+    "q": "Trong phần nào của giai đoạn thiết kế SDLC, các đặc tả logic của hệ thống từ thiết kế logic được chuyển thành các chi tiết công nghệ cụ thể mà từ đó có thể hoàn thành tất cả việc lập trình và xây dựng hệ thống?",
+    "opts": {
+      "A": "Triển khai",
+      "B": "Mô hình hóa đối tượng",
+      "C": "Thiết kế vật lý",
+      "D": "Thiết kế logic"
+    },
+    "ans": "C"
+  },
+  {
+    "id": "23",
+    "q": "________ là một hình ảnh về sự di chuyển của dữ liệu giữa các thực thể bên ngoài và các quá trình và kho dữ liệu trong một hệ thống.",
+    "opts": {
+      "A": "Sơ đồ quy trình",
+      "B": "Sơ đồ luồng dữ liệu",
+      "C": "Sơ đồ dữ liệu",
+      "D": "Sơ đồ thủ tục"
+    },
+    "ans": "B"
+  },
+  {
+    "id": "24",
+    "q": "Trong các kỹ thuật chuyển đổi hệ thống từ cũ sang mới, kỹ thuật nào có nhiều rủi ro nhất:",
+    "opts": {
+      "A": "Chuyển đổi song song",
+      "B": "Chyển đổi tức thời",
+      "C": "Chuyển đổi từng phần",
+      "D": "Chuyển đổi theo giai đoạn"
+    },
+    "ans": "B"
+  },
+  {
+    "id": "25",
+    "q": "Khi áp dụng kỹ thuật phỏng vấn để thu thập dữ liệu, ta cần phải thực hiện các công việc nào sau đây:",
+    "opts": {
+      "A": "Lập lịch phỏng vấn",
+      "B": "Chọn người phỏng vấn",
+      "C": "Xây dựng câu hỏi phỏng vấn",
+      "D": "Tất cả các công việc trên"
+    },
+    "ans": "D"
+  },
+  {
+    "id": "26",
+    "q": "Các chương trình máy tính giúp dễ sử dụng và các lợi ích kỹ thuật và tuân thủ trung thực các hướng dẫn của phương pháp luận phát triển tổng thể là gì?",
+    "opts": {
+      "A": "Công cụ",
+      "B": "Kỹ thuật",
+      "C": "Luồng dữ liệu",
+      "D": "Phương pháp luận"
+    },
+    "ans": "A"
+  },
+  {
+    "id": "27",
+    "q": "Trong biểu đồ luồng dữ liệu, yếu tố nào sau đây có thể vẽ lặp lại nhiều lần:",
+    "opts": {
+      "A": "Tác nhân ngoài và luồng dữ liệu",
+      "B": "Tác nhân ngoài và kho dữ liệu",
+      "C": "Quy trình xử lý",
+      "D": "Luồng dữ liệu"
+    },
+    "ans": "B"
+  },
+  {
+    "id": "28",
+    "q": "Các công việc cần thực hiện sau khi chuyển đổi hệ thống:",
+    "opts": {
+      "A": "Hỗ trợ người dùng",
+      "B": "Sửa lỗi và cung cấp các cải tiến",
+      "C": "Đánh giá dự án",
+      "D": "Hỗ trợ người dùng, Sửa lỗi và cung cấp các cải tiến, Đánh giá dự án"
+    },
+    "ans": "D"
+  },
+  {
+    "id": "29",
+    "q": "“Tối đa 100-200 người dùng đồng thời tại thời gian cao điểm” là một:",
+    "opts": {
+      "A": "Yêu cầu về tốc độ",
+      "B": "Yêu cầu về dung lượng",
+      "C": "Yêu cầu về chính trị",
+      "D": "Yêu cầu về khả năng chuyển đổi"
+    },
+    "ans": "B"
+  },
+  {
+    "id": "30",
+    "q": "Trong khi cấu trúc các yêu cầu:",
+    "opts": {
+      "A": "mô hình E-R đại diện cho các yêu cầu dữ liệu khái niệm cho một hệ thống cụ thể",
+      "B": "mô hình dữ liệu E-R khái niệm được tinh chỉnh trước khi nó được dịch sang một định dạng logic mà từ đó định nghĩa cơ sở dữ liệu và thiết kế cơ sở dữ liệu vật lý được thực hiện",
+      "C": "một mô hình dữ liệu toàn doanh nghiệp với các danh mục dữ liệu rất rộng và ít chi tiết được chuẩn bị",
+      "D": "một mô hình E-R cụ thể được xây dựng để giúp giải thích phạm vi của nỗ lực thiết kế và phân tích hệ thống cụ thể."
+    },
+    "ans": "B"
+  },
+  {
+    "id": "31",
+    "q": "Người trong tổ chức chịu trách nhiệm chính về phân tích và thiết kế hệ thống là:",
+    "opts": {
+      "A": "nhà phân tích hệ thống",
+      "B": "người dùng cuối",
+      "C": "đánh giá viên nội bộ",
+      "D": "giám đốc kinh doanh"
+    },
+    "ans": "A"
+  },
+  {
+    "id": "32",
+    "q": "Thuộc tính nào sau đây dùng để phân biệt thực thể này với thực thể kia:",
+    "opts": {
+      "A": "Thuộc tính lặp",
+      "B": "Thuộc tính phức hợp",
+      "C": "Thuộc tính tên gọi",
+      "D": "Thuộc tính định danh"
+    },
+    "ans": "D"
+  },
+  {
+    "id": "33",
+    "q": "Đâu KHÔNG phải là một thành phần của ký hiệu sơ đồ luồng dữ liệu.",
+    "opts": {
+      "A": "Quy trình",
+      "B": "Kho dữ liệu",
+      "C": "Luồng dữ liệu",
+      "D": "Chương trình dữ liệu"
+    },
+    "ans": "D"
+  },
+  {
+    "id": "34",
+    "q": "Trong giai đoạn đầu của ________, các kế hoạch đào tạo được hoàn thiện và bắt đầu đào tạo về cách sử dụng hệ thống.",
+    "opts": {
+      "A": "Triển khai",
+      "B": "Phân tích",
+      "C": "Thiết kế",
+      "D": "Lập kế hoạch"
+    },
+    "ans": "A"
+  },
+  {
+    "id": "35",
+    "q": "Trong giai đoạn thiết kế nào của SDLC, tất cả các tính năng chức năng của hệ thống được chọn để phát triển trong phân tích được mô tả độc lập với bất kỳ nền tảng máy tính nào?",
+    "opts": {
+      "A": "Thiết kế logic",
+      "B": "Thiết kế vật lý",
+      "C": "Thiết kế ý tưởng",
+      "D": "Thiết kế cấp cao"
+    },
+    "ans": "A"
+  },
+  {
+    "id": "36",
+    "q": "Câu nào sau đây là đúng về kho dữ liệu?",
+    "opts": {
+      "A": "Dữ liệu có thể di chuyển trực tiếp từ kho dữ liệu này sang kho dữ liệu khác.",
+      "B": "Dữ liệu có thể di chuyển trực tiếp từ thực thể đến kho dữ liệu.",
+      "C": "Một kho dữ liệu có nhãn cụm danh từ.",
+      "D": "Dữ liệu có thể di chuyển từ nguồn bên ngoài vào kho dữ liệu."
+    },
+    "ans": "C"
+  },
+  {
+    "id": "37",
+    "q": "Điều nào sau đây là đúng đối với thiết kế logic?",
+    "opts": {
+      "A": "Tất cả các chức năng của hệ thống được chọn để phát triển trong phân tích được mô tả độc lập với bất kỳ nền tảng máy tính nào.",
+      "B": "Thiết kế logic không tập trung vào các khía cạnh nghiệp vụ của hệ thống.",
+      "C": "Thiết kế logic gắn liền với một nền tảng phần cứng và phần mềm cụ thể.",
+      "D": "Các thông số kỹ thuật được phát triển."
+    },
+    "ans": "A"
+  },
+  {
+    "id": "38",
+    "q": "Trong quá trình thiết kế vật lý, cần xem xét:",
+    "opts": {
+      "A": "định nghĩa của từng thuộc tính",
+      "B": "mô tả về vị trí và thời điểm dữ liệu được nhập, truy xuất, xóa và cập nhật",
+      "C": "kỳ vọng về thời gian phản hồi và tính toàn vẹn của dữ liệu",
+      "D": "Tất cả những điều trên"
+    },
+    "ans": "D"
+  },
+  {
+    "id": "39",
+    "q": "________ là một thuộc tính (hoặc tổ hợp các thuộc tính) có giá trị là duy nhất trên tất cả các lần xuất hiện của một quan hệ.",
+    "opts": {
+      "A": "Khóa tổng hợp",
+      "B": "Khóa chính",
+      "C": "Định danh",
+      "D": "Chỉ số"
+    },
+    "ans": "B"
+  },
+  {
+    "id": "40",
+    "q": "Điều nào sau đây KHÔNG phải là một phần của quá trình bắt đầu dự án?",
+    "opts": {
+      "A": "Tạo nhóm bắt đầu dự án",
+      "B": "Thiết lập các thủ tục quản lý",
+      "C": "Tạo ngân sách dự án",
+      "D": "Xây dựng điều lệ dự án"
+    },
+    "ans": "C"
+  },
+  {
+    "id": "41",
+    "q": "Hệ thống thông tin được sửa chữa và cải tiến một cách có hệ thống trong giai đoạn nào của SDLC?",
+    "opts": {
+      "A": "Triển khai",
+      "B": "Phân tích",
+      "C": "Thiết kế",
+      "D": "Bảo trì"
+    },
+    "ans": "D"
+  },
+  {
+    "id": "42",
+    "q": "Thành phần của bảng quyết định liên kết các điều kiện với hành động là phần có chứa:",
+    "opts": {
+      "A": "câu lệnh hành động",
+      "B": "luật",
+      "C": "điều kiện",
+      "D": "các quyết định"
+    },
+    "ans": "B"
+  },
+  {
+    "id": "43",
+    "q": "Các thành phần chính của một hệ thống thông tin là:",
+    "opts": {
+      "A": "Máy tính, dữ liệu",
+      "B": "Dữ liệu, quy trình xử lý, con người và máy móc thực hiện quy trình",
+      "C": "Con người, quy trình xử lý",
+      "D": "Tất cả đều sai"
+    },
+    "ans": "B"
+  },
+  {
+    "id": "44",
+    "q": "Trong các kỹ thuật thu yêu cầu sau, kỹ thuật nào có phạm vi điều tra rộng nhất:",
+    "opts": {
+      "A": "Phỏng vấn",
+      "B": "Phiếu hỏi",
+      "C": "Phân tích tài liệu",
+      "D": "Quan sát"
+    },
+    "ans": "D"
+  },
+  {
+    "id": "45",
+    "q": "“Thời gian đáp ứng một giao dịch trên mạng phải nhỏ hơn hoặc bằng 7 giây” là một:",
+    "opts": {
+      "A": "Yêu cầu về dung lượng",
+      "B": "Yêu cầu về văn hóa",
+      "C": "Yêu cầu về tốc độ",
+      "D": "Yêu cầu về tính sẵn sàng và tin cậy của hệ thống"
+    },
+    "ans": "C"
+  },
+  {
+    "id": "46",
+    "q": "Giả sử chúng ta có ba điều kiện. Điều kiện một có hai giá trị; điều kiện hai có ba giá trị; điều kiện ba có ba giá trị. Cần bao nhiêu luật?",
+    "opts": {
+      "A": "8",
+      "B": "6",
+      "C": "5",
+      "D": "18"
+    },
+    "ans": "D"
+  },
+  {
+    "id": "47",
+    "q": "Công cụ nào sau đây dùng để mô tả dữ liệu của hệ thống:",
+    "opts": {
+      "A": "Biểu đồ luồng dữ liệu",
+      "B": "Lưu đồ chứng từ",
+      "C": "Sơ đồ khối",
+      "D": "Lược đồ thực thể-kết hợp"
+    },
+    "ans": "D"
+  },
+  {
+    "id": "48",
+    "q": "Các sản phẩm chính từ việc xác định yêu cầu bao gồm:",
+    "opts": {
+      "A": "tập hợp các biểu mẫu, báo cáo và mô tả công việc",
+      "B": "bảng tổng hợp các cuộc phỏng vấn",
+      "C": "ghi chú từ quan sát và từ tài liệu phân tích",
+      "D": "Tất cả những điều trên"
+    },
+    "ans": "D"
+  },
+  {
+    "id": "49",
+    "q": "Các phương pháp thu thập yêu cầu hệ thống truyền thống bao gồm:",
+    "opts": {
+      "A": "phỏng vấn cá nhân",
+      "B": "quan sát",
+      "C": "phỏng vấn nhóm",
+      "D": "Tất cả những điều trên"
+    },
+    "ans": "D"
+  },
+  {
+    "id": "50",
+    "q": "Ai chịu trách nhiệm chính về việc thiết kế và phân tích hệ thống thông tin?",
+    "opts": {
+      "A": "Nhà phân tích hệ thống",
+      "B": "Kỹ sư phần mềm",
+      "C": "Nhân viên",
+      "D": "Nhà phát triển ứng dụng"
+    },
+    "ans": "A"
+  }
+]

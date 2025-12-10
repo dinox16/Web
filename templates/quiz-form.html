@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ subject_name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='aptx.css') }}">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-title">Bài kiểm tra: <span id="subject-title">{{ subject_name }}</span></div>
+        <div class="progress-bar"><div class="progress"></div></div>
+        <div class="question-area"></div>
+        <div class="navigation">
+            <button class="nav-btn" id="prevBtn" disabled>Trước</button>
+            <button class="nav-btn" id="nextBtn">Tiếp</button>
+        </div>
+        <div class="score-area" style="display:none;"></div>
+        <div id="dialog" class="dialog-backdrop" style="display:none;">
+            <div class="dialog-content">
+                <div class="dialog-message" id="dialog-message"></div>
+                <button class="dialog-btn" id="dialog-close">OK</button>
+            </div>
+        </div>
+    </div>
+    < <script>
+        let QUESTIONS_URL = "{{ json_url }}";
+        let SUBMIT_URL = "{{ submit_url }}";
+    </script>
+    <script src="{{ url_for('static', filename='aptx.js') }}"></script>
+</body>
+</html>

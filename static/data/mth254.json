@@ -1,0 +1,914 @@
+[
+    {
+        "q": " Tập nào dưới đây là tập con của {1, 2, 3, 4} ?",
+        "type": "mcq",
+        "opts": {
+            "A": "{1, 2}",
+            "B": "{1, 2, 3}",
+            "C": "{1}",
+            "D": "Tất cả đều đúng."
+        },
+        "ans": "D",
+        "id": 1
+    },
+    {
+        "q": "Nếu tập A = {1, 2} và tập B = {a, b} thì tích Cartesian của hai tập A và B là:",
+        "type": "mcq",
+        "opts": {
+            "A": " {(1, a), (1, b), (2, a), (b, b)}",
+            "B": "{(1, 1), (2, 2), (a, a), (b, b)}",
+            "C": "{(1, a), (2, a), (1, b), (2, b)}",
+            "D": "{(1, 1), (a, a), (2, a), (1, b)}"
+        },
+        "ans": "C",
+        "id": 2
+    },
+    {
+        "q": "Cho tập S = {a, b, c}. Số tập con của tập S là:",
+        "type": "mcq",
+        "opts": {
+            "A": "3",
+            "B": "9",
+            "C": "6",
+            "D": "8"
+        },
+        "ans": "D",
+        "id": 3
+    },
+    {
+        "q": "Số số nguyên dương không lớn hơn 1000 chia hết cho 7 hoặc 11 là:",
+        "type": "mcq",
+        "opts": {
+            "A": "232",
+            "B": "230",
+            "C": "220",
+            "D": "Tất cả đều sai."
+        },
+        "ans": "C",
+        "id": 4
+    },
+    {
+        "q": "Một bình đựng 5 viên bi xanh và 4 viên bi đỏ. Lần thứ nhất lấy ngẫu nhiên một viên bi và không bỏ vào lại bình, lần thứ hai lấy ngẫu nhiên một viên bi. Xác suất để lần đầu lấy 1 bi xanh và lần hai lấy 1 bi đỏ là:",
+        "type": "mcq",
+        "opts": {
+            "A": "0.2996",
+            "B": "0.3124",
+            "C": " 0.2778",
+            "D": "0.3112"
+        },
+        "ans": "C",
+        "id": 5
+    },
+    {
+        "q": "Phương trình sau có bao nhiêu nghiệm nguyên không âm?x + y + z = 11",
+        "type": "mcq",
+        "opts": {
+            "A": "33",
+            "B": "78",
+            "C": "190",
+            "D": "A,B,C đều sai"
+        },
+        "ans": "B",
+        "id": 6
+    },
+    {
+        "q": "Số xâu nhị phân độ dài 10 bắt đầu bằng 3 bit 0 hoặc kết thúc bằng 2 bit 0 là:",
+        "type": "mcq",
+        "opts": {
+            "A": "352",
+            "B": "1024",
+            "C": "512",
+            "D": "A, B, C đều sai"
+        },
+        "ans": "A",
+        "id": 7
+    },
+    {
+        "q": "Phương trình x + y + z = 15 có số nghiệm nguyên không âm và x>=1 là:",
+        "type": "mcq",
+        "opts": {
+            "A": "100",
+            "B": "136",
+            "C": "120",
+            "D": "45"
+        },
+        "ans": "C",
+        "id": 8
+    },
+    {
+        "q": " Mỗi thành viên trong câu lạc bộ thể thao có quê ở 1 trong 20 tỉnh thành. Hỏi cần phải tuyển bao nhiêu thành viên để đảm bảo có ít nhất 4 người cùng quê ?",
+        "type": "mcq",
+        "opts": {
+            "A": "81",
+            "B": "80",
+            "C": "101",
+            "D": "A, B, C đều sai"
+        },
+        "ans": "D",
+        "id": 9
+    },
+    {
+        "q": "Số xâu gồm ba chữ số thập phân, bắt đầu chữ số lẻ là:",
+        "type": "mcq",
+        "opts": {
+            "A": "1000",
+            "B": "550",
+            "C": "500",
+            "D": "Tất cả đều sai.A, B, C đều sai"
+        },
+        "ans": "C",
+        "id": 10
+    },
+    {
+        "q": "Một hộp đựng 4 bi xanh và 5 bi đỏ. Xác suất lấy ngẫu nhiên 1 viên bi xanh từ hộp là:",
+        "type": "mcq",
+        "opts": {
+            "A": "4/5",
+            "B": "5/9",
+            "C": "4/9",
+            "D": "Tất cả đều sai."
+        },
+        "ans": "C",
+        "id": 11
+    },
+    {
+        "q": "Câu 15: Số hàm đơn ánh từ tập có 5 phần tử đến tập có 7 phần tử là:",
+        "type": "mcq",
+        "opts": {
+            "A": "35",
+            "B": "78125",
+            "C": "16807",
+            "D": "2520"
+        },
+        "ans": "C",
+        "id": 12
+    },
+    {
+        "q": "Phải chọn ít nhất bao nhiêu quân bài trong bộ bài để luôn có được 3 quân bài cùngnước (cơ, rô, chuồn, bích)?",
+        "type": "mcq",
+        "opts": {
+            "A": "3",
+            "B": "9",
+            "C": "7",
+            "D": "13"
+        },
+        "ans": "B",
+        "id": 13
+    },
+    {
+        "q": "Công thức nào sau đây có thể tạo ra chuỗi 5, 9, 13, 17, 21, . . .",
+        "type": "mcq",
+        "opts": {
+            "A": "an = 2n + 1.",
+            "B": "an = 4n + 1.",
+            "C": "an = 4n + 3.",
+            "D": "an = 4n - 1."
+        },
+        "ans": "B",
+        "id": 14
+    },
+    {
+        "q": "Chuỗi nhị phân liền sau chuỗi 11011111 là:",
+        "type": "mcq",
+        "opts": {
+            "A": "11011110",
+            "B": "10111111",
+            "C": "11111111",
+            "D": "11100000"
+        },
+        "ans": "D",
+        "id": 15
+    },
+    {
+        "q": "Hoán vị kế tiếp của dãy 5 4 6 3 2 1 là:",
+        "type": "mcq",
+        "opts": {
+            "A": "4 5 6 3 2 1",
+            "B": "5 6 4 3 2 1",
+            "C": "5 6 1 2 3 4",
+            "D": "6 5 1 2 3 4"
+        },
+        "ans": "B",
+        "id": 16
+    },
+    {
+        "q": "Đồ thị G liên thông, gồm n đỉnh thì số thành phần liên thông của đồ thị là:",
+        "type": "mcq",
+        "opts": {
+            "A": "n",
+            "B": "0",
+            "C": "1",
+            "D": "Tất cả đều sai."
+        },
+        "ans": "C",
+        "id": 17
+    },
+    {
+        "q": "Dùng thuật toán Prim, chúng ta có thể:",
+        "type": "mcq",
+        "opts": {
+            "A": "Tìm cây khung nhỏ nhất của đồ thị",
+            "B": "Tìm được đường đi ngắn nhất giữa các đỉnh trong đồ thị",
+            "C": "Kiểm tra tính liên thông của đồ thị",
+            "D": "Câu A và câu C đúng"
+        },
+        "ans": "A",
+        "id": 18
+    },
+    {
+        "q": "Số đỉnh bậc lẻ trong đồ thị luôn là:",
+        "type": "mcq",
+        "opts": {
+            "A": "2",
+            "B": "4",
+            "C": "Số chẵn",
+            "D": "Tất cả đều sai."
+        },
+        "ans": "C",
+        "id": 19
+    },
+    {
+        "q": "Mệnh đề: Cho biết phát biểu 1>3 là gì? ",
+        "type": "mcq",
+        "opts": {
+            "A": "Là một mệnh đề ",
+            "B": "Không phải là một mệnh đề ",
+            "C": "Là một phép toán",
+            "D": "Là một câu hỏi"
+        },
+        "ans": "A",
+        "id": 20
+    },
+    {
+        "q": "Phát biểu nào sau đây là một mệnh đề?",
+        "type": "mcq",
+        "opts": {
+            "A": "Đề nghị các em trật tự!",
+            "B": "Số 3 là số nguyên tố.",
+            "C": "Có phải 3! là 6? ",
+            "D": "X+a=0"
+        },
+        "ans": "B",
+        "id": 21
+    },
+    {
+        "q": "X?Y là True, khi ít nhất X hay Y là True. Vậy dấu hỏi là phép gì?",
+        "type": "mcq",
+        "opts": {
+            "A": "Tuyển",
+            "B": "Hội",
+            "C": "Phủ định",
+            "D": "Kéo theo"
+        },
+        "ans": "A",
+        "id": 22
+    },
+    {
+        "q": "X?Y là True, khi phải cả hai X, Y là True. Vậy dấu hỏi là phép gì?",
+        "type": "mcq",
+        "opts": {
+            "A": "Tuyển",
+            "B": "Hội",
+            "C": "Phủ định",
+            "D": "Kéo theo"
+        },
+        "ans": "B",
+        "id": 23
+    },
+    {
+        "q": " X?Y là False, khi ít nhất X hay Y là False. Vậy dấu hỏi là phép gì?",
+        "type": "mcq",
+        "opts": {
+            "A": "Tuyển",
+            "B": "Hội",
+            "C": "Phủ định",
+            "D": "Kéo theo"
+        },
+        "ans": "B",
+        "id": 24
+    },
+    {
+        "q": "Tập hợp: với A ⸦ U, ta có xU và xA. Đây là phép toán nào?",
+        "type": "mcq",
+        "opts": {
+            "A": "Hội A",
+            "B": "Giao A",
+            "C": "Hiệu A",
+            "D": "Bù A"
+        },
+        "ans": "D",
+        "id": 25
+    },
+    {
+        "q": "Tập hợp: ta có A={1,2,3,4} và B={3,4,5,6}. Cho biết kết quả của AUB?",
+        "type": "mcq",
+        "opts": {
+            "A": "{3,4}",
+            "B": "{1,2,3,4,5,6}",
+            "C": "{1,2}",
+            "D": "{5,6}"
+        },
+        "ans": "B",
+        "id": 26
+    },
+    {
+        "q": "Có 2 ôtô, 3 môtô, vậy có mấy cách chọn xe đi học ở DTU ? ",
+        "type": "mcq",
+        "opts": {
+            "A": "6",
+            "B": "5",
+            "C": "1",
+            "D": "2/3"
+        },
+        "ans": "B",
+        "id": 27
+    },
+    {
+        "q": " Có 2 áo, 3 quần, ? có mấy cách chọn đồ đi học ở DTU ?",
+        "type": "mcq",
+        "opts": {
+            "A": "5",
+            "B": "2/3",
+            "C": "3/2",
+            "D": "6"
+        },
+        "ans": "D",
+        "id": 28
+    },
+    {
+        "q": "Pn=n!, đây là công thức đếm của loại nào sau đây ?",
+        "type": "mcq",
+        "opts": {
+            "A": "Hoán vị lặp ",
+            "B": "Hoán vị không lặp",
+            "C": "Chỉnh không hợp lặp",
+            "D": "Chỉnh hợp lặp"
+        },
+        "ans": "C",
+        "id": 29
+    },
+    {
+        "q": "deg(u)=0, u được gọi là đỉnh gì ?",
+        "type": "mcq",
+        "opts": {
+            "A": "Đỉnh treo",
+            "B": " Đình kề",
+            "C": "Đỉnh đa cạnh",
+            "D": "Đỉnh cô lập"
+        },
+        "ans": "D",
+        "id": 30
+    },
+    {
+        "q": "deg(u)=1, u được gọi là đỉnh gì ?",
+        "type": "mcq",
+        "opts": {
+            "A": "Đỉnh treo",
+            "B": "Đỉnh kề",
+            "C": "Đỉnh đa cạnh",
+            "D": "Đỉnh cô lập"
+        },
+        "ans": "A",
+        "id": 31
+    },
+    {
+        "q": "Công thức nào sau đây đúng ?",
+        "type": "mcq",
+        "opts": {
+            "A": "Sum(deg(u))= Sum(e)",
+            "B": "2 x Sum(deg(u))=2 x Sum(e) ",
+            "C": "Sum(deg(u)) = 2 x Sum(e)",
+            "D": "2 x Sum(deg(u))=Sum(e) "
+        },
+        "ans": "B",
+        "id": 32
+    },
+    {
+        "q": "công thức nào sau đây đúng ?",
+        "type": "mcq",
+        "opts": {
+            "A": "Sum(deg+(u)) + Sum(deg-(u)) =e",
+            "B": "Sum(deg+(u)) = Sum(deg-(u)) = e ",
+            "C": "Sum(deg+(u)) x Sum(deg-(u)) = 2 x e",
+            "D": "Sum(deg+(u))  Sum(deg-(u))  = e"
+        },
+        "ans": "A",
+        "id": 33
+    },
+    {
+        "q": "bậc của cạnh khuyên được tính bao nhiêu ? ",
+        "type": "mcq",
+        "opts": {
+            "A": "2 x deg(u)",
+            "B": "deg(u) / 2",
+            "C": "deg(u) ",
+            "D": "deg(u) - 1"
+        },
+        "ans": "A",
+        "id": 34
+    },
+    {
+        "q": "Sắc số (số màu tối thiểu để tô các đỉnh) của đồ thị dưới đây là:",
+        "type": "mcq",
+        "opts": {
+            "A": "2",
+            "B": "3",
+            "C": "4",
+            "D": "6"
+        },
+        "ans": "D",
+        "id": 35
+    },
+    {
+        "q": "Số xâu gồm ba chữ số thập phân, bắt đầu chữ số lẻ là: 1 3 5 7 9 = 5",
+        "type": "mcq",
+        "opts": {
+            "A": "1000",
+            "B": "550",
+            "C": "500",
+            "D": "Tất cả đều sai."
+        },
+        "ans": "C",
+        "id": 36
+    },
+    {
+        "q": "Phương trình x + y + z = 15 có số nghiệm nguyên không âm và x>=1 là:",
+        "type": "mcq",
+        "opts": {
+            "A": "100",
+            "B": "136",
+            "C": "120",
+            "D": "45"
+        },
+        "ans": "C",
+        "id": 37
+    },
+    {
+        "q": "Có 1 nhóm 10 sinh viên, cần chọn ra 3 bạn để làm vệ sinh lớp học. Hỏi có bao nhiêu cách chọn",
+        "type": "mcq",
+        "opts": {
+            "A": "Tổ hợp chập 3 của 10",
+            "B": "3 * 10",
+            "C": "Chỉnh hợp chập 3 của 10",
+            "D": "Chỉnh hợp lặp chập 3 của 10 "
+        },
+        "ans": "A",
+        "id": 38
+    },
+    {
+        "q": "từ tập {1, 2, 3, 4 }. có thể lập bao nhiêu số tự nhiên có 4 chữ số khác nhau",
+        "type": "mcq",
+        "opts": {
+            "A": "24",
+            "B": "12",
+            "C": "16",
+            "D": "32"
+        },
+        "ans": "A",
+        "id": 39
+    },
+    {
+        "q": " Dãy bit tiếp sau của dãy 10010011 trong thuật toán liệt kê tất cả các xâu nhị phân có độ dài 8bằng phương pháp sinh.",
+        "type": "mcq",
+        "opts": {
+            "A": "10010100",
+            "B": "10011000",
+            "C": "10110011",
+            "D": "10010111"
+        },
+        "ans": "A",
+        "id": 40
+    },
+    {
+        "q": "Hoán vị tiếp sau của hoán vị 564321 trong thuật toán liệt kê các hoán vị 6 số tự nhiên đầu tiên bằng phương pháp sinh.",
+        "type": "mcq",
+        "opts": {
+            "A": "612345",
+            "B": "512346",
+            "C": "654321",
+            "D": "614325"
+        },
+        "ans": "A",
+        "id": 41
+    },
+    {
+        "q": "Câu nào sau đây là mệnh đề",
+        "type": "mcq",
+        "opts": {
+            "A": "Số 12 là số lẻ ",
+            "B": "Bạn đi đâu?",
+            "C": "Bạn học trường nào?",
+            "D": "Hoa hồng đẹp qúa"
+        },
+        "ans": "A",
+        "id": 42
+    },
+    {
+        "q": "cho tập A={3,5,7,4}. Hãy tìm tập con tiếp theo của tập {5,4} trong thuật toán liệt kê tất cả cáctập con khác rỗng bằng phương pháp sinh (dựa trên phương pháp liệt kê tất cả các dãy nhị phân 4 bit) ",
+        "type": "mcq",
+        "opts": {
+            "A": "{5,7}",
+            "B": "{3,5}",
+            "C": "{7, 3, 5} ",
+            "D": "{3,7}"
+        },
+        "ans": "A",
+        "id": 43
+    },
+    {
+        "q": " Có bao nhiêu số có 4 chữ số chia hết 5",
+        "type": "mcq",
+        "opts": {
+            "A": "1800",
+            "B": "2000",
+            "C": "1600",
+            "D": "1900"
+        },
+        "ans": "A",
+        "id": 44
+    },
+    {
+        "q": "Tập hợp {Ø, {1}, {{2}}, {1, {2}}} là tập lũy thừa của tập nào sau đây?",
+        "type": "mcq",
+        "opts": {
+            "A": "{1, 2}",
+            "B": "{1, {2}}",
+            "C": "{{1}, 2} ",
+            "D": "{{1,2}}"
+        },
+        "ans": "B",
+        "id": 45
+    },
+    {
+        "q": "Có bao nhiêu cách chọn ba bạn sinh viên trong số 7 bạn đi dự hội thảo?",
+        "type": "mcq",
+        "opts": {
+            "A": "45",
+            "B": "35",
+            "C": "50",
+            "D": "30"
+        },
+        "ans": "B",
+        "id": 46
+    },
+    {
+        "q": "Hoán vị nào sau đây đứng liền sau hoán vị 1 2 4 3 theo thuật toán sinh",
+        "type": "mcq",
+        "opts": {
+            "A": "2145",
+            "B": "2143",
+            "C": "1342",
+            "D": "1324"
+        },
+        "ans": "D",
+        "id": 47
+    },
+    {
+        "q": "Dãy 1235 là tổ hợp chập 4 của 6 phần tử, cấu hình đứng liền trước của dãy này theo thuật toán sinh là:",
+        "type": "mcq",
+        "opts": {
+            "A": "1234",
+            "B": "2134",
+            "C": "1243",
+            "D": "2145"
+        },
+        "ans": "C",
+        "id": 48
+    },
+    {
+        "q": " Cho tập A gồm 5 phần tử. Số tập con của tập A là",
+        "type": "mcq",
+        "opts": {
+            "A": "32",
+            "B": "16",
+            "C": "36",
+            "D": "64"
+        },
+        "ans": "A",
+        "id": 49
+    },
+    {
+        "q": "Một dãy XYY. Trong đó X có thể gán một trong 10 chữ số thập phân. Y có thể gán một trong26 chữ cái. Có bao nhiêu dãy được thành lập theo cách trên: ",
+        "type": "mcq",
+        "opts": {
+            "A": "6760",
+            "B": "6762",
+            "C": "6765",
+            "D": "6767"
+        },
+        "ans": "A",
+        "id": 50
+    },
+    {
+        "q": "Có bao nhiêu cách biểu diễn khác nhau đối với xâu nhị phân có độ dài 8 bit ",
+        "type": "mcq",
+        "opts": {
+            "A": "64",
+            "B": "128",
+            "C": "512",
+            "D": "256"
+        },
+        "ans": "D",
+        "id": 51
+    },
+    {
+        "q": "Để có 5 bạn sinh viên có cùng 1 điểm thi (điểm nguyên). Hỏi phải cần tối thiểu bao nhiêu sinhviên tham dự thi",
+        "type": "mcq",
+        "opts": {
+            "A": "50",
+            "B": "55",
+            "C": "40",
+            "D": "41"
+        },
+        "ans": "A",
+        "id": 52
+    },
+    {
+        "q": "Biểu thức rút gọn của f(x,y,z) = xyz + XYz + xYZ + XYZ + xYz ( với Z là bù z) ",
+        "type": "mcq",
+        "opts": {
+            "A": "x + Yz",
+            "B": "Xz + Y",
+            "C": "xz + Y",
+            "D": "XYz"
+        },
+        "ans": "A",
+        "id": 53
+    },
+    {
+        "q": "Giả sử A = (3,7,5,4) là một hoán vị hiên tại của tập {3,5,7,4}, bộ nào sau đây là hoán vị tiếp theo của hoán vị A trong thuật toán liệt kê hoán vị bằng phương pháp sinh.",
+        "type": "mcq",
+        "opts": {
+            "A": "(3,5,7,4)",
+            "B": " (3,4,7,5)",
+            "C": " (3,7,4,5)",
+            "D": "(3,4,5,7)"
+        },
+        "ans": "C",
+        "id": 54
+    },
+    {
+        "q": "Đồ thị đủ Kn là đồ thị đơn vô hướng có n đỉnh. Bậc của mỗi đỉnh là: ",
+        "type": "mcq",
+        "opts": {
+            "A": "n + 1",
+            "B": "n - 1",
+            "C": "2(n+1)",
+            "D": "2n"
+        },
+        "ans": "B",
+        "id": 55
+    },
+    {
+        "q": "Biểu thức rút gọn của f(x,y) = xY + Xy + XY ( với Z là bù z)",
+        "type": "mcq",
+        "opts": {
+            "A": "x + y",
+            "B": "X + y ",
+            "C": "x + Y",
+            "D": "X + Y"
+        },
+        "ans": "D",
+        "id": 56
+    },
+    {
+        "q": "Cho tập E = {2, 4, 6, 8}. Giả sử tập con A = {2, 4, 6} là cấu hình hiện tại trong thuật toán liệt kê tổ hợp chập 3 của 5 phần tử trên E bằng phương pháp sinh. Tập con nào sau đây là tập sinh kế tiếp sau A.",
+        "type": "mcq",
+        "opts": {
+            "A": "{2, 4, 8}",
+            "B": "{4, 6, 8}",
+            "C": "{6, 2, 4}",
+            "D": "{2, 6, 8}"
+        },
+        "ans": "D",
+        "id": 57
+    },
+    {
+        "q": "Giả sử A = (3, 7, 5, 9) là một hoán vị hiên tại của tập {3, 5, 7, 9}, bộ nào sau đây là hoán vị tiếptheo của hoán vị A trong thuật toán liệt kê hoán vị bằng phương pháp sinh.",
+        "type": "mcq",
+        "opts": {
+            "A": "(3, 9, 7, 5)",
+            "B": "(3, 5, 9, 7) ",
+            "C": "(3, 7, 9, 5) ",
+            "D": "(3, 9, 5, 7)"
+        },
+        "ans": "C",
+        "id": 58
+    },
+    {
+        "q": "Dãy bit tiếp sau của dãy 10010111 trong thuật toán liệt kê tất cả các xâu nhị phân có độ dài 8bằng phương pháp sinh. ",
+        "type": "mcq",
+        "opts": {
+            "A": "10010100",
+            "B": "10011000",
+            "C": "10110011",
+            "D": "10011000"
+        },
+        "ans": "B",
+        "id": 59
+    },
+    {
+        "q": " Công thức truy hồi nào sau đây có thể tạo ra chuỗi 7, 11, 15, 19, 23, … với n là một số nguyêndương.",
+        "type": "mcq",
+        "opts": {
+            "A": "10010100",
+            "B": "10011000 ",
+            "C": "10110011",
+            "D": "10011000"
+        },
+        "ans": "B",
+        "id": 60
+    },
+    {
+        "q": "Công thức truy hồi nào sau đây có thể tạo ra chuỗi 7, 11, 15, 19, 23, … với n là một số nguyêndương.",
+        "type": "mcq",
+        "opts": {
+            "A": "a(n) = 2n + 5.",
+            "B": "a(n) = 4n + 3.",
+            "C": " a(n) = 4n + 1.",
+            "D": " a(n) = 4n - 1."
+        },
+        "ans": "B",
+        "id": 61
+    },
+    {
+        "q": " Có năm loại học bổng khác nhau. Hỏi rằng phải có ít nhất bao nhiêu sinh viên để chắc chắn rằng có ít nhất là 7 người cùng nhận học bổng như nhau.",
+        "type": "mcq",
+        "opts": {
+            "A": "32",
+            "B": "30",
+            "C": "31",
+            "D": "35"
+        },
+        "ans": "D",
+        "id": 62
+    },
+    {
+        "q": "Cho đồ thị vô hướng G=(V, E) có n đỉnh, mỗi đỉnh đều có cạnh nối đến các đỉnh còn lại, phát biểu nào sau đây là đúng nhất: ",
+        "type": "mcq",
+        "opts": {
+            "A": "Ma trận kề biểu diễn đồ thị G là một ma trận vuông kích thước 2n.",
+            "B": "Tổng số cạnh của đồ thị là n(n-1)/2. ",
+            "C": "Các giá trị trên đường chéo chính của ma trận kề biểu diễn đồ thị G luôn bằng 1.",
+            "D": "Đồ thị G là đồ thị không liên thông"
+        },
+        "ans": "B",
+        "id": 63
+    },
+    {
+        "q": "Tập A={1, 2, 3, 4, 5, 8} có bao nhiêu tập con",
+        "type": "mcq",
+        "opts": {
+            "A": "64",
+            "B": "8",
+            "C": "32",
+            "D": "128"
+        },
+        "ans": "A",
+        "id": 64
+    },
+    {
+        "q": "Đồ thị đủ Kn là đồ thị đơn vô hướng có n đỉnh. Bậc của mỗi đỉnh là:",
+        "type": "mcq",
+        "opts": {
+            "A": "2n",
+            "B": "n + 1",
+            "C": "n – 1",
+            "D": "2(n+1)"
+        },
+        "ans": "C",
+        "id": 65
+    },
+    {
+        "q": "Có bao nhiêu cách lấy ra 7 viên bi từ 3 loại bi xanh, bi đỏ, và bi vàng. Mỗi loại hiện có nhiều hơn 7 viên bi.",
+        "type": "mcq",
+        "opts": {
+            "A": "36",
+            "B": "45",
+            "C": "50",
+            "D": "65"
+        },
+        "ans": "A",
+        "id": 66
+    },
+    {
+        "q": "Có bao nhiêu cách biểu diễn khác nhau đối với xâu nhị phân độ dài 10 bit",
+        "type": "mcq",
+        "opts": {
+            "A": "512",
+            "B": "2048",
+            "C": "1024",
+            "D": "256"
+        },
+        "ans": "C",
+        "id": 67
+    },
+    {
+        "q": " Dãy 1-3-4-5 là tổ hợp chập 4 của 6 phần tử trong tập {1, 2, 3, 4, 5, 6} , cấu hình đứng liền trước của dãy này theo thuật toán sinh là:",
+        "type": "mcq",
+        "opts": {
+            "A": "2-1-3-4",
+            "B": "1-2-4-3 ",
+            "C": "2-1-4-3",
+            "D": "3-1-4-2"
+        },
+        "ans": "B",
+        "id": 68
+    },
+    {
+        "q": "Một nhóm có 9 bạn sinh viên gồm 4 nữ và 5 nam. Hỏi có bao nhiêu cách chọn 3 bạn đi dự hộithảo?Biết rằng trong số 3 bạn đi dự có ít nhất một nam. ",
+        "type": "mcq",
+        "opts": {
+            "A": "75",
+            "B": "80",
+            "C": "85",
+            "D": "90"
+        },
+        "ans": "B",
+        "id": 69
+    },
+    {
+        "q": " Một nhóm có 8 bạn sinh viên gồm 3 nữ và 5 nam. Hỏi có bao nhiêu cách bầu một trưởng nhóm, một phó nhóm và một thủ quĩ ? Không ai trong các bạn được bầu giũ chức danh kiêm nhiệm.",
+        "type": "mcq",
+        "opts": {
+            "A": "336",
+            "B": "312",
+            "C": "432",
+            "D": "286"
+        },
+        "ans": "A",
+        "id": 70
+    },
+    {
+        "q": " Có bao nhiêu cách chọn ba bạn sinh viên trong số 7 bạn đi dự hội thảo?",
+        "type": "mcq",
+        "opts": {
+            "A": "45",
+            "B": "50",
+            "C": "30",
+            "D": "35"
+        },
+        "ans": "D",
+        "id": 71
+    },
+    {
+        "q": "Có bao nhiêu cách bầu một trưởng đoàn, một phó đoàn và một thủ quỹ từ một nhóm có 6 người? Không ai trong số những người được bầu có chức danh kiêm nhiệm.",
+        "type": "mcq",
+        "opts": {
+            "A": "115",
+            "B": "120",
+            "C": "130",
+            "D": "135"
+        },
+        "ans": "B",
+        "id": 72
+    },
+    {
+        "q": "Đồ thị đơn G = (V, E) có n đỉnh và m cạnh, ma trận kề biểu diễn đồ thị G có kích thước",
+        "type": "mcq",
+        "opts": {
+            "A": "m x m",
+            "B": "m x n",
+            "C": "n x n",
+            "D": "2(m + n) "
+        },
+        "ans": "C",
+        "id": 73
+    },
+    {
+        "q": "Cho x, y, z là các biến logic và x', y', z' là các giá trị bù của 3 biến đó. Chọn phát biểu ĐÚNG:",
+        "type": "mcq",
+        "opts": {
+            "A": "xy + x' = x",
+            "B": "(x + y)' = x' + y'",
+            "C": "(x.y)' = x' + y'",
+            "D": "xy + zy = x + z' + y"
+        },
+        "ans": "C",
+        "id": 74
+    },
+    {
+        "q": "Chọn phát biểu SAI:",
+        "type": "mcq",
+        "opts": {
+            "A": "Đồ thị đầy đủ Kn là đồ thị Haminton.",
+            "B": "Đồ thị Haminton là đồ thị có chu trình đi qua mỗi đỉnh của đồ thị một lần.",
+            "C": "Đồ thị vòng n đỉnh Cn có bậc của mỗi đỉnh là 2.",
+            "D": "Đồ thị Euler là đồ thị có đường đi qua mỗi cạnh của đồ thị một lần."
+        },
+        "ans": "C",
+        "id": 75
+    },
+    {
+        "q": "Chọn phát biểu ĐÚNG:",
+        "type": "mcq",
+        "opts": {
+            "A": "Giải thuật duyệt đồ thị theo chiều rộng (BFS) không thể giúp tìm ra đường đi giữa 2 đỉnh của đồ thị liên thông.",
+            "B": "Giải thuật Dijkstra là giải thuật kiểm tra đồ thị có phải là đồ thị nửa Euler",
+            "C": "Cây khung tối thiểu có thể tìm được bằng giải thuật duyệt theo chiều sâu (DFS)",
+            "D": "Có thể tìm ra đường đi giữa 2 đỉnh bằng giải thuật duyệt theo chiều sâu (DFS)"
+        },
+        "ans": "D",
+        "id": 76
+    }
+]

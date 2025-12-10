@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>PFS-Trang chủ</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <style>
+        .dashboard-cards .card {
+            cursor: pointer;
+            transition: box-shadow 0.2s, transform 0.16s;
+        }
+        .dashboard-cards .card:hover {
+            box-shadow: 0 8px 32px #1976d233;
+            transform: translateY(-2px) scale(1.03);
+            background: #f3f7ff;
+        }
+        .card-icon {z
+            font-size: 2.6rem;
+            margin-bottom: 10px;
+            color: #1976d2;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-title">Program For Student</div>
+            <ul>
+                <li class="active"><i class="fa fa-house"></i> Trang chủ</li>
+                <li onclick="window.location.href='{{ url_for('logout_route') }}'"><i class="fa fa-sign-out-alt"></i> Đăng xuất</li>
+            </ul>
+        </aside>
+        <main class="dashboard-main">
+            <header class="dashboard-header">
+                <h1>Lựa chọn môn để ôn tập</h1>
+                <div class="user-info">
+                    <i class="fa fa-user-circle"></i> {{ session.get('username', 'Khách') }}
+                </div>
+            </header>
+            <section class="dashboard-cards">
+                {% for mon in subjects %}
+                <a href="{{ url_for('subject_detail_route', subject_slug=mon.slug) }}" class="card" style="text-decoration:none">
+                    <div class="card-icon"><i class="{{ mon.icon }}"></i></div>
+                    <div class="card-title">{{ mon.name }}</div>
+                </a>
+                {% endfor %}
+            </section>
+        </main>
+    </div>
+</body>
+</html>

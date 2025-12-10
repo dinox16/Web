@@ -1,0 +1,606 @@
+[
+  {
+    "q": "Đối với một hệ thống, nếu ta có y(n) là đáp ứng ứng với kích thích x(n) và y(n-k) là đáp ứng ứng với kích thích x(n-k) thì hệ thống đó được gọi là:",
+    "opts": {
+      "A": "Hệ thống ổn định",
+      "B": "Hệ thống tuyến tính",
+      "C": "Hệ thống bất biến",
+      "D": "Hệ thống nhân quả"
+    },
+    "ans": "C",
+    "type": "mcq",
+    "id": "1"
+  },
+  {
+    "q": "Một tín hiệu tương tự x(t) có tần số cao nhất Fmax thì sau khi lấy mẫu x(t) có thể được phục hồi một cách chính xác từ giá trị các mẫu của nó nếu tốc độ lấy mẫu Fs thỏa mãn:",
+    "opts": {
+      "A": "Fs ≥ 2Fmax",
+      "B": "Fs ≤ 2Fmax",
+      "C": "Fs ≥ Fmax",
+      "D": "Fs ≤ Fmax"
+    },
+    "ans": "A",
+    "type": "mcq",
+    "id": "2"
+  },
+  {
+    "q": "Cho tín hiệu tương tự: xa(t) = 3 cos100πt + 10 sin400πt - cos200πt. Hãy xác định tần số lấy mẫu Nyquist đối với tín hiệu này:",
+    "opts": {
+      "A": "FN = 100Hz",
+      "B": "FN = 200Hz",
+      "C": "FN = 300Hz",
+      "D": "FN = 400Hz"
+    },
+    "ans": "D",
+    "type": "mcq",
+    "id": "3"
+  },
+  {
+    "q": "Phép tổng chập được sử dụng để làm nhiệm vụ gì?",
+    "opts": {
+      "A": "Phân tích tín hiệu trong miền rời rạc",
+      "B": "Xác định đáp ứng ra của hệ thống khi biết tín hiệu vào và đáp ứng xung",
+      "C": "Tính năng lượng của tín hiệu",
+      "D": "Xác định đáp ứng xung khi biết đầu vào và đầu ra của hệ thống"
+    },
+    "ans": "B",
+    "type": "mcq",
+    "id": "4"
+  },
+  {
+    "q": "Hệ thống rời rạc thỏa mãn nguyên lý xếp chồng T[a.x1(n) + b.x2(n)] = a.T[x1(n)] + b.T[x2(n)] thì hệ thống được gọi là:",
+    "opts": {
+      "A": "Hệ thống ổn định",
+      "B": "Hệ thống tuyến tính",
+      "C": "Hệ thống bất biến",
+      "D": "Hệ thống nhân quả"
+    },
+    "ans": "B",
+    "type": "mcq",
+    "id": "5"
+  },
+  {
+    "q": "Để hệ thống rời rạc ổn định BIBO, điều kiện nào sau đây là đúng?",
+    "opts": {
+      "A": "Hàm truyền của hệ thống phải là dương",
+      "B": "Tín hiệu đầu ra phải là hàm tuần hoàn",
+      "C": "Đáp ứng xung phải tuyệt đối hội tụ",
+      "D": "Đáp ứng xung phải bằng không khi n < 0"
+    },
+    "ans": "C",
+    "type": "mcq",
+    "id": "6"
+  },
+  {
+    "q": "Hệ thống nhân quả là hệ thống mà:",
+    "opts": {
+      "A": "Đáp ứng ra chỉ phụ thuộc vào tín hiệu vào hiện tại và quá khứ",
+      "B": "Đáp ứng ra phụ thuộc cả vào tín hiệu vào tương lai",
+      "C": "Tín hiệu vào không ảnh hưởng đến tín hiệu ra",
+      "D": "Hệ thống có đáp ứng xung bằng không với mọi n > 0"
+    },
+    "ans": "A",
+    "type": "mcq",
+    "id": "7"
+  },
+  {
+    "q": "Hàm truyền H(z) = 1 / (1 - 0.5z⁻¹) có cực tại:",
+    "opts": {
+      "A": "z = 0.5",
+      "B": "z = 1",
+      "C": "z = ∞",
+      "D": "z = -0.5"
+    },
+    "ans": "A",
+    "type": "mcq",
+    "id": "8"
+  },
+  {
+    "q": "Vùng hội tụ (ROC) của H(z) = z / (z - 0.8) là:",
+    "opts": {
+      "A": "|z| > 0.8",
+      "B": "|z| < 0.8",
+      "C": "|z| = 0.8",
+      "D": "Tất cả các giá trị z"
+    },
+    "ans": "A",
+    "type": "mcq",
+    "id": "9"
+  },
+  {
+    "q": "Phép biến đổi Z nghịch là gì?",
+    "opts": {
+      "A": "Chuyển tín hiệu rời rạc về miền liên tục",
+      "B": "Tính lại tín hiệu thời gian từ biểu thức H(z)",
+      "C": "Tính tần số Nyquist của tín hiệu",
+      "D": "Tính năng lượng tín hiệu"
+    },
+    "ans": "B",
+    "type": "mcq",
+    "id": "10"
+  },
+  {
+    "q": "Biểu thức biến đổi Z của một dãy x(n) là X(z) = 1 / (1 - az⁻¹). Vậy x(n) là:",
+    "opts": {
+      "A": "x(n) = aⁿ u(n)",
+      "B": "x(n) = aⁿ u(−n)",
+      "C": "x(n) = δ(n−a)",
+      "D": "x(n) = δ(n+a)"
+    },
+    "ans": "A",
+    "type": "mcq",
+    "id": "11"
+  },
+  {
+    "q": "Tín hiệu rời rạc x(n) chẵn khi nào?",
+    "opts": {
+      "A": "x(n) = x(−n)",
+      "B": "x(n) = −x(−n)",
+      "C": "x(n) ≥ 0",
+      "D": "x(n) < 0"
+    },
+    "ans": "A",
+    "type": "mcq",
+    "id": "12"
+  },
+  {
+    "q": "Một hệ thống rời rạc có hàm truyền H(z) = 1 / (1 − z⁻¹). Vậy đáp ứng xung h(n) của hệ thống là:",
+    "opts": {
+      "A": "h(n) = u(n)",
+      "B": "h(n) = δ(n)",
+      "C": "h(n) = aⁿ u(n)",
+      "D": "h(n) = 0"
+    },
+    "ans": "A",
+    "type": "mcq",
+    "id": "13"
+  },
+  {
+    "q": "Điều kiện để biến đổi Z tồn tại là gì?",
+    "opts": {
+      "A": "Tín hiệu có biên độ không đổi",
+      "B": "Tín hiệu có giá trị tuyệt đối hội tụ",
+      "C": "Tín hiệu là hàm delta",
+      "D": "Tín hiệu tuần hoàn"
+    },
+    "ans": "B",
+    "type": "mcq",
+    "id": "14"
+  },
+  {
+    "q": "Biến đổi Z của tín hiệu δ(n−k) là gì?",
+    "opts": {
+      "A": "z⁻ᵏ",
+      "B": "zᵏ",
+      "C": "δ(k−n)",
+      "D": "1"
+    },
+    "ans": "A",
+    "type": "mcq",
+    "id": "15"
+  },
+  {
+    "q": "Khi biểu diễn tín hiệu rời rạc trong miền Z, phép dịch thời gian tương ứng với:",
+    "opts": {
+      "A": "Nhân với zⁿ",
+      "B": "Nhân với z⁻ⁿ",
+      "C": "Lấy đạo hàm theo z",
+      "D": "Lấy tích phân theo z"
+    },
+    "ans": "B",
+    "type": "mcq",
+    "id": "16"
+  },
+  {
+    "q": "Đáp ứng xung h(n) = (−1)ⁿ u(n) có biến đổi Z là:",
+    "opts": {
+      "A": "1 / (1 + z⁻¹)",
+      "B": "1 / (1 − z⁻¹)",
+      "C": "z / (z + 1)",
+      "D": "z / (z − 1)"
+    },
+    "ans": "C",
+    "type": "mcq",
+    "id": "17"
+  },
+  {
+    "q": "Phát biểu nào sau đây là đúng về tín hiệu năng lượng?",
+    "opts": {
+      "A": "Có tổng bình phương hữu hạn",
+      "B": "Có tổng trị tuyệt đối hữu hạn",
+      "C": "Có giá trị trung bình khác 0",
+      "D": "Chỉ tồn tại trong miền âm"
+    },
+    "ans": "A",
+    "type": "mcq",
+    "id": "18"
+  },
+  {
+    "q": "Tín hiệu x(n) = δ(n) + δ(n−1) là loại tín hiệu gì?",
+    "opts": {
+      "A": "Tín hiệu ngẫu nhiên",
+      "B": "Tín hiệu đơn vị",
+      "C": "Tín hiệu hữu hạn",
+      "D": "Tín hiệu xung kép"
+    },
+    "ans": "D",
+    "type": "mcq",
+    "id": "19"
+  },
+  {
+    "q": "Biến đổi Z (2 phía) của tín hiệu x(n) được định nghĩa như sau:",
+    "opts": {
+      "A": "<img src='/static/pic/opts-id20a.png' alt='A' style='max-width:400px;'>",
+      "B": "<img src='/static/pic/opts-id20b.png' alt='B' style='max-width:400px;'>",
+      "C": "<img src='/static/pic/opts-id20c.png' alt='C' style='max-width:400px;'>",
+      "D": "<img src='/static/pic/opts-id20d.png' alt='D' style='max-width:400px;'>"
+    },
+    "ans": "D",
+    "type": "mcq",
+    "id": "20"
+  },
+  {
+    "q": "Đáp ứng xung của hệ thống tuyến tính bất biến thời gian (LTI) xác định hoàn toàn:",
+    "opts": {
+      "A": "Tín hiệu đầu vào",
+      "B": "Tín hiệu đầu ra",
+      "C": "Tính chất nhân quả",
+      "D": "Hàm truyền H(z)"
+    },
+    "ans": "B",
+    "type": "mcq",
+    "id": "21"
+  },
+  {
+    "q": "Khi nhân tín hiệu với (−1)ⁿ thì điều gì xảy ra trong phổ tần số?",
+    "opts": {
+      "A": "Dịch sang phải",
+      "B": "Dịch sang trái",
+      "C": "Đảo phổ",
+      "D": "Làm rộng phổ"
+    },
+    "ans": "C",
+    "type": "mcq",
+    "id": "22"
+  },
+  {
+    "q": "Tín hiệu x(n) có biến đổi Z X(z), thì biến đổi Z của x(−n) là:",
+    "opts": {
+      "A": "X(z⁻¹)",
+      "B": "X(−z)",
+      "C": "X(z)",
+      "D": "Không xác định"
+    },
+    "ans": "A",
+    "type": "mcq",
+    "id": "23"
+  },
+  {
+    "q": "Tín hiệu delta Dirac δ(n) có biến đổi Z là:",
+    "opts": {
+      "A": "0",
+      "B": "1",
+      "C": "z",
+      "D": "z⁻¹"
+    },
+    "ans": "B",
+    "type": "mcq",
+    "id": "24"
+  },
+  {
+    "q": "Hàm truyền H(z) = (1 − z⁻¹)/(1 − 0.5z⁻¹), vậy đáp ứng xung h(n) là:",
+    "opts": {
+      "A": "δ(n) − δ(n−1) + 0.5ⁿ u(n)",
+      "B": "δ(n) − δ(n−1) + 0.5ⁿ u(n−1)",
+      "C": "0.5ⁿ u(n) − δ(n−1)",
+      "D": "δ(n) − 1.5δ(n−1)"
+    },
+    "ans": "B",
+    "type": "mcq",
+    "id": "25"
+  },
+  {
+    "q": "Đáp ứng xung của hệ thống tuyến tính bất biến thời gian (LTI) xác định hoàn toàn:",
+    "opts": {
+      "A": "Tín hiệu đầu vào",
+      "B": "Tín hiệu đầu ra",
+      "C": "Tính chất nhân quả",
+      "D": "Hàm truyền H(z)"
+    },
+    "ans": "B",
+    "type": "mcq",
+    "id": "26"
+  },
+  {
+    "q": "Khi nhân tín hiệu với (−1)ⁿ thì điều gì xảy ra trong phổ tần số?",
+    "opts": {
+      "A": "Dịch sang phải",
+      "B": "Dịch sang trái",
+      "C": "Đảo phổ",
+      "D": "Làm rộng phổ"
+    },
+    "ans": "C",
+    "type": "mcq",
+    "id": "27"
+  },
+  {
+    "q": "Tín hiệu x(n) có biến đổi Z X(z), thì biến đổi Z của x(−n) là:",
+    "opts": {
+      "A": "X(z⁻¹)",
+      "B": "X(−z)",
+      "C": "X(z)",
+      "D": "Không xác định"
+    },
+    "ans": "A",
+    "type": "mcq",
+    "id": "28"
+  },
+  {
+    "q": "Tín hiệu delta Dirac δ(n) có biến đổi Z là:",
+    "opts": {
+      "A": "0",
+      "B": "1",
+      "C": "z",
+      "D": "z⁻¹"
+    },
+    "ans": "B",
+    "type": "mcq",
+    "id": "29"
+  },
+  {
+    "q": "Hàm truyền H(z) = (1 − z⁻¹)/(1 − 0.5z⁻¹), vậy đáp ứng xung h(n) là:",
+    "opts": {
+      "A": "δ(n) − δ(n−1) + 0.5ⁿ u(n)",
+      "B": "δ(n) − δ(n−1) + 0.5ⁿ u(n−1)",
+      "C": "0.5ⁿ u(n) − δ(n−1)",
+      "D": "δ(n) − 1.5δ(n−1)"
+    },
+    "ans": "B",
+    "type": "mcq",
+    "id": "30"
+  },
+  {
+    "q": "Biến đổi Fourier rời rạc (DFS) của tín hiệu tuần hoàn có bao nhiêu hệ số?",
+    "opts": {
+      "A": "Vô hạn",
+      "B": "Bằng chiều dài chu kỳ",
+      "C": "Bằng 2 lần chu kỳ",
+      "D": "Không xác định"
+    },
+    "ans": "B",
+    "type": "mcq",
+    "id": "31"
+  },
+  {
+    "q": "Biến đổi Fourier rời rạc (DTFT) có miền tần số liên tục trong khoảng nào?",
+    "opts": {
+      "A": "[−π, π]",
+      "B": "[0, ∞)",
+      "C": "[−∞, ∞]",
+      "D": "[0, π]"
+    },
+    "ans": "A",
+    "type": "mcq",
+    "id": "32"
+  },
+  {
+    "q": "Phép nhân trong miền thời gian tương ứng với phép gì trong miền tần số?",
+    "opts": {
+      "A": "Nhân",
+      "B": "Tích chập",
+      "C": "Chia",
+      "D": "Lũy thừa"
+    },
+    "ans": "B",
+    "type": "mcq",
+    "id": "33"
+  },
+  {
+    "q": "Nếu x(n) là tín hiệu thực thì DTFT của nó có tính chất gì?",
+    "opts": {
+      "A": "Là tín hiệu thực",
+      "B": "Đối xứng chẵn",
+      "C": "Đối xứng Hermite",
+      "D": "Đối xứng lẻ"
+    },
+    "ans": "C",
+    "type": "mcq",
+    "id": "34"
+  },
+  {
+    "q": "Tín hiệu x(n) = cos(πn) là tín hiệu:",
+    "opts": {
+      "A": "Tuần hoàn",
+      "B": "Không tuần hoàn",
+      "C": "Biến thiên nhanh",
+      "D": "Ngẫu nhiên"
+    },
+    "ans": "A",
+    "type": "mcq",
+    "id": "35"
+  },
+  {
+    "q": "Khi dịch pha của phổ tín hiệu xảy ra, điều gì sẽ bị ảnh hưởng trong miền thời gian?",
+    "opts": {
+      "A": "Biên độ thay đổi",
+      "B": "Tín hiệu bị méo",
+      "C": "Tín hiệu bị trễ",
+      "D": "Tín hiệu không đổi"
+    },
+    "ans": "C",
+    "type": "mcq",
+    "id": "36"
+  },
+  {
+    "q": "Phép lấy mẫu tín hiệu tương tự là quá trình:",
+    "opts": {
+      "A": "Làm trơn tín hiệu",
+      "B": "Chuyển từ tín hiệu rời rạc sang liên tục",
+      "C": "Chuyển từ tín hiệu liên tục sang rời rạc",
+      "D": "Phân tích tần số"
+    },
+    "ans": "C",
+    "type": "mcq",
+    "id": "37"
+  },
+  {
+    "q": "Để tránh méo aliasing khi lấy mẫu, ta cần:",
+    "opts": {
+      "A": "Tăng biên độ tín hiệu",
+      "B": "Giảm tần số lấy mẫu",
+      "C": "Lấy mẫu với tần số ít nhất gấp đôi tần số lớn nhất của tín hiệu",
+      "D": "Dùng bộ lọc cao tần"
+    },
+    "ans": "C",
+    "type": "mcq",
+    "id": "38"
+  },
+  {
+    "q": "Tín hiệu sin(2πf₀t) sau khi lấy mẫu với Fs = 2f₀ sẽ cho kết quả:",
+    "opts": {
+      "A": "Tín hiệu đúng",
+      "B": "Tín hiệu bị triệt tiêu",
+      "C": "Tín hiệu bị dịch tần",
+      "D": "Tín hiệu aliasing"
+    },
+    "ans": "B",
+    "type": "mcq",
+    "id": "39"
+  },
+  {
+    "q": "Khi phân tích phổ tín hiệu rời rạc, ta thường dùng:",
+    "opts": {
+      "A": "DFT (Biến đổi Fourier rời rạc)",
+      "B": "Laplace",
+      "C": "Biến đổi Z",
+      "D": "Chuỗi Taylor"
+    },
+    "ans": "A",
+    "type": "mcq",
+    "id": "40"
+  },
+  {
+    "q": "Biến đổi Fourier rời rạc (DFT) và biến đổi Fourier rời rạc theo thời gian (DTFT) khác nhau ở điểm nào?",
+    "opts": {
+      "A": "DFT dùng cho tín hiệu liên tục, DTFT cho tín hiệu rời rạc",
+      "B": "DFT là biến đổi liên tục, DTFT là biến đổi rời rạc",
+      "C": "DFT cho kết quả hữu hạn, DTFT cho kết quả vô hạn",
+      "D": "Chúng giống nhau"
+    },
+    "ans": "C",
+    "type": "mcq",
+    "id": "41"
+  },
+  {
+    "q": "Tín hiệu x(n) được gọi là năng lượng hữu hạn nếu:",
+    "opts": {
+      "A": "Tổng x(n)² là hữu hạn",
+      "B": "Tổng |x(n)| là hữu hạn",
+      "C": "Tổng x(n) là hữu hạn",
+      "D": "x(n) là hàm delta"
+    },
+    "ans": "A",
+    "type": "mcq",
+    "id": "42"
+  },
+  {
+    "q": "Một tín hiệu ổn định trong hệ thống LTI phải có điều kiện gì?",
+    "opts": {
+      "A": "Đáp ứng xung hội tụ tuyệt đối",
+      "B": "Đầu vào bằng không thì đầu ra cũng bằng không",
+      "C": "Có miền ROC chứa đường tròn đơn vị",
+      "D": "Đầu ra tỷ lệ với đầu vào"
+    },
+    "ans": "A",
+    "type": "mcq",
+    "id": "43"
+  },
+  {
+    "q": "Tín hiệu có phổ biên độ hẹp gọi là:",
+    "opts": {
+      "A": "Tín hiệu dải rộng",
+      "B": "Tín hiệu dải hẹp",
+      "C": "Tín hiệu ngẫu nhiên",
+      "D": "Tín hiệu không xác định"
+    },
+    "ans": "B",
+    "type": "mcq",
+    "id": "44"
+  },
+  {
+    "q": "Trong phân tích hệ thống rời rạc, biến đổi Z được dùng để:",
+    "opts": {
+      "A": "Biến đổi tín hiệu về miền thời gian",
+      "B": "Giải tích tín hiệu ngẫu nhiên",
+      "C": "Phân tích hệ thống tuyến tính bất biến",
+      "D": "Tính năng lượng tín hiệu"
+    },
+    "ans": "C",
+    "type": "mcq",
+    "id": "45"
+  },
+  {
+    "q": "Cho tín hiệu được biểu diễn như hình vẽ. Hãy cho biết phát biểu nào sau đây đúng?",
+    "img": "/static/pic/anh-tin-hieu-tuan-hoan.png",
+    "opts": {
+      "A": "Tín hiệu tuần hoàn có chu kỳ N=3",
+      "B": "Tín hiệu tuần hoàn có chu kỳ N=4",
+      "C": "Tín hiệu tuần hoàn có chu kỳ N=5",
+      "D": "Tín hiệu không tuần hoàn."
+    },
+    "ans": "C",
+    "type": "mcq",
+    "id": "46"
+  },
+  {
+    "q": "Hãy cho biết hình nào sau đây là mô hình xử lý tín hiệu số trong thực tế:",
+    "img": "/static/pic/mo-hinh-xu-li-tin-hieu.png",
+    "opts": {
+      "A": "",
+      "B": "",
+      "C": "",
+      "D": ""
+    },
+    "ans": "A",
+    "type":"mcq",
+    "id": "47"
+  },
+  {
+    "q": "Biểu diễn tín hiệu bằng dãy số như sau. Cho chúng ta biết các giá trị gì ?",
+    "img":"/static/pic/day-so-tin-hieu.png",
+    "opts": {
+      "A": "x(-2) = 1; x(-1) = 2; x(0) = 1/2; x(1) = 1/4",
+      "B": "x(0) = 1; x(1) = 2; x(2) = 1/2; x(3) = 1/4",
+      "C": "x(1) = 1; x(2) = 2; x(3) = 1/2; x(4) = 1/2 ",
+      "D": "x(-1) = 1; x(0) = 2; x(1) = 1/2; x(2) = 1/4"
+    },
+    "ans":"D",
+    "type":"mcq",
+    "id": "48" 
+  },
+   {
+    "q": "Hệ thống là hệ FIR được mô tả bởi phương trình sai phân:",
+    "img":"/static/pic/FIR-phuong-trinh.png",
+    "opts": {
+      "A": " Bậc N < 0",
+      "B": "Bậc N ≥ 0",
+      "C": "Bậc N = 0",
+      "D": "Bậc N ≤ 0"
+    },
+    "ans":"C",
+    "type":"mcq",
+    "id": "49" 
+  },
+  {
+    "q": "Trong miền thời gian rời rạc n, hàm bậc đơn vị sớm 5 mẫu được biểu diễn bằng biểu thức:",
+    "opts": {
+      "A": "<img src='/static/pic/opts-id50a.png' alt='A' style='max-width:400px;'>",
+      "B": "<img src='/static/pic/opts-id50b.png' alt='B' style='max-width:400px;'>",
+      "C": "<img src='/static/pic/opts-id50c.png' alt='C' style='max-width:400px;'>",
+      "D": "<img src='/static/pic/opts-id50d.png' alt='D' style='max-width:400px;'>"
+    },
+    "ans":"A" ,
+    "type":"mcq",
+    "id":"50"
+  }
+]

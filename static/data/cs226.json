@@ -1,0 +1,708 @@
+[
+    {
+        "q": "Hãy cho biết định dạng các dòng trong tập tin /etc/fstab?",
+        "type": "mcq",
+        "opts": {
+            "A": "/etc/default/useradd",
+            "B": "/etc/login.defs",
+            "C": "/etc/skel/",
+            "D": "Cả 3 đáp án"
+        },
+        "ans": "D",
+        "id": 1
+    },
+    {
+        "q": "Cú pháp trên Linux Shell để tính x = 5/3 và lấy 4 chữ số thập phân?",
+        "type": "mcq",
+        "opts": {
+            "A": "x = $(printf \"%.4f\" $(echo \"scale = 4; 5/3\" | bc))",
+            "B": "x = 5/3 $(printf \"%.4f\")",
+            "C": "x = 5/3",
+            "D": "float x = 5/3 printf(\"%.4f\",x)"
+        },
+        "ans": "A",
+        "id": 2
+    },
+    {
+        "q": "Viết 1 dòng lập lịch trong bảng Cron chạy /shellscript/checksys.sh theo chu kỳ 30 phút?",
+        "type": "mcq",
+        "opts": {
+            "A": "*/30 * * * * /shellscript/checksys.sh",
+            "B": "*/30*/shellscript/checksys.sh",
+            "C": "*/30**/shellscript/checksys.sh",
+            "D": "*/30***/shellscript/checksys.sh"
+        },
+        "ans": "A",
+        "id": 3
+    },
+    {
+        "q": "Ý nghĩa của cột số 1 trong file /etc/fstab?",
+        "type": "mcq",
+        "opts": {
+            "A": "Tên của UUID",
+            "B": "Kiểu dữ liệu",
+            "C": "Cột này chứa đường dẫn thiết bị hoặc UUID của phân vùng mà hệ thống sẽ mount",
+            "D": "Cột này chứa đường dẫn thiết bị hoặc UUID của phân vùng của hệ thống"
+        },
+        "ans": "C",
+        "id": 4
+    },
+    {
+        "q": "Viết câu lệnh Linux để tạo user và group: \n- Tạo group: KillNcovi \n- Tạo user: covid19 \n- Chuyển user vào group KillNcovi \n- Thay đổi password cho user vừa tạo.",
+        "type": "mcq",
+        "opts": {
+            "A": "groupadd KillNcovi useradd -m -g KillNcovi covid19 passwd covid19",
+            "B": "roupadd KillNcovi useradd -m -g KillNcovi covid19 passwd covid19",
+            "C": "group KillNcovi useradd -m -g KillNcovi covid19 passwd covid19",
+            "D": "groupadd KillNcovi userad -m -g KillNcovi covid19 passwd covid19"
+        },
+        "ans": "A",
+        "id": 5
+    },
+    {
+        "q": "Viết câu lệnh lập lịch với 'at': \nChạy các câu lệnh trong checksys.sh vào 7:00 AM, 3 ngày tiếp theo?",
+        "type": "mcq",
+        "opts": {
+            "A": "at 07:00 + 3 days < /path/to/checksys.sh",
+            "B": "for i = 1:3; do echo \"bash /path/to/checksys.sh\" | at 07:00 +${i} days; done",
+            "C": "echo \"bash /path/to/checksys.sh\" | at 07:00 + 3 days",
+            "D": "at 07:00 + 3 days checksys.sh"
+        },
+        "ans": "C",
+        "id": 6
+    },
+    {
+        "q": "Ý nghĩa của file /dev/sdc2?",
+        "type": "mcq",
+        "opts": {
+            "A": "Giao diện driver cho ổ đĩa SCSI thứ 3, chỉ phân vùng thứ 2 trên ổ cứng.",
+            "B": "Giao diện driver cho ổ đĩa SCSI thứ 3, chỉ phân vùng thứ 1 trên ổ cứng.",
+            "C": "Giao diện driver cho ổ đĩa SCSI thứ 3, chỉ vị trí thứ 2 trên ổ cứng.",
+            "D": "Giao diện driver cho ổ đĩa SCSI thứ 3, chỉ giá trị thứ 2 trên ổ cứng."
+        },
+        "ans": "A",
+        "id": 7
+    },
+    {
+        "q": "Lệnh nào dùng để đọc bản ghi lấy giá tiền của sách trong khoảng từ 300 đến 499, biết rằng giá trị nằm ở cột thứ 5?",
+        "type": "mcq",
+        "opts": {
+            "A": "awk -F':' '$5 >= 300 && $5 <= 499'",
+            "B": "awk -f':' '$5 >= 300 && $5 <= 499'",
+            "C": "awk -F':' '$4 >= 300 && $4 <= 499'",
+            "D": "awk -f':' '$4 >= 300 && $4 <= 499'"
+        },
+        "ans": "A",
+        "id": 8
+    },
+    {
+        "q": "Viết lệnh kiểm tra số người dùng đang đăng nhập vào hệ thống?",
+        "type": "mcq",
+        "opts": {
+            "A": "who | wc -l",
+            "B": "who",
+            "C": "whoami",
+            "D": "grep user | wc -l"
+        },
+        "ans": "A",
+        "id": 9
+    },
+    {
+        "q": "Linux Kernel là gì?",
+        "type": "mcq",
+        "opts": {
+            "A": "Là thành phần trung tâm của hệ điều hành Linux, quản lý tài nguyên hệ thống",
+            "B": "Là một loại của hệ điều hành Linux",
+            "C": "Là một chương trình quản lý host của Linux",
+            "D": "Là một chương trình quản lý các gói tài nguyên đã được cài đặt"
+        },
+        "ans": "A",
+        "id": 10
+    },
+    {
+        "q": "Quan sát file /etc/shadow ta thấy dòng sau: sinhvien:\n $6$3WWbKfr1$4vblknvGr6FcDeF92R5xF/n3mskfdnEnnWNtLdl.\nEtq5oLVqj.UVhoWJKF4.FstCXcrj4SkARtpAigfRm1:15747:0:90:5:30:16018:\nHãy cho biết thuật toán dùng mã hóa mật khẩu ở đây là gì?",
+        "type": "mcq",
+        "opts": {
+            "A": "SHA256",
+            "B": "SHA512",
+            "C": "MD5",
+            "D": "DES"
+        },
+        "ans": "A",
+        "id": 11
+    },
+    {
+        "q": "Mã khởi động (boot code) của Grub nằm ở đâu trên HDD?",
+        "type": "mcq",
+        "opts": {
+            "A": "/boot/grub/grub.conf",
+            "B": "Boot ROM",
+            "C": "/boot",
+            "D": "MBR"
+        },
+        "ans": "C",
+        "id": 12
+    },
+    {
+        "q": "Câu lệnh nào sau đây được dùng để kiểm tra cấp chạy hiện tại?",
+        "type": "mcq",
+        "opts": {
+            "A": "level",
+            "B": "rlevel",
+            "C": "runlevel",
+            "D": "showlevel"
+        },
+        "ans": "C",
+        "id": 13
+    },
+    {
+        "q": "Lệnh nào sau đây được dùng để hiển thị tất cả các biến môi trường?",
+        "type": "mcq",
+        "opts": {
+            "A": "show",
+            "B": "show var",
+            "C": "varlist",
+            "D": "set"
+        },
+        "ans": "D",
+        "id": 14
+    },
+    {
+        "q": "Quyền truy cập của file khi mới được tạo bằng bao nhiêu nếu umask là 027?",
+        "type": "mcq",
+        "opts": {
+            "A": "640",
+            "B": "027",
+            "C": "641",
+            "D": "750"
+        },
+        "ans": "A",
+        "id": 15
+    },
+    {
+        "q": "Để xem và thiết lập địa chỉ IP cho một máy Linux ta sử dụng lệnh nào trong các lệnh sau đây?",
+        "type": "mcq",
+        "opts": {
+            "A": "ifconfig",
+            "B": "route",
+            "C": "netstat",
+            "D": "ipconfig"
+        },
+        "ans": "A",
+        "id": 16
+    },
+    {
+        "q": "Hãy cho biết quyền truy cập mặc định của tập tin /etc/shadow trên hệ thống Redhat?",
+        "type": "mcq",
+        "opts": {
+            "A": "440",
+            "B": "642",
+            "C": "400",
+            "D": "644"
+        },
+        "ans": "C",
+        "id": 17
+    },
+    {
+        "q": "Để kiểm tra gói phần mềm openssh-3.6.i386.rpm đã được cài đặt chưa, ta dùng lệnh nào sau đây?",
+        "type": "mcq",
+        "opts": {
+            "A": "rpm –qa openssh-3.6.i386.rpm",
+            "B": "rpm –e openssh-3.6.i386.rpm",
+            "C": "rpm –ivh openssh3.6.i386.rpm",
+            "D": "rpm –qi openssh3.6.i386.rpm"
+        },
+        "ans": "D",
+        "id": 18
+    },
+    {
+        "q": "Khi sử dụng lệnh “ls –l” thì ký tự đầu mỗi dòng cho biết:",
+        "type": "mcq",
+        "opts": {
+            "A": "Loại tập tin",
+            "B": "Thư mục",
+            "C": "Tên tập tin",
+            "D": "Tập tin"
+        },
+        "ans": "A",
+        "id": 19
+    },
+    {
+        "q": "Ý nghĩa của Sticky bit (bit dính) được gán cho thư mục là gì?",
+        "type": "mcq",
+        "opts": {
+            "A": "Người sử dụng với quyền ghi trong thư mục này.",
+            "B": "Không có nghĩa. Sticky bit chỉ sử dụng cho các file thường.",
+            "C": "Bất kỳ người sử dụng nào cũng có thể xóa các file trong thư mục này, thậm chí nếu anh ta không phải là chủ sở hữu của file.",
+            "D": "Người sử dụng với quyền ghi trong thư mục này nhưng không thể xóa (remove) các file trong thư mục đó nếu anh ta không phải là chủ sở hữu (hoặc root) của file."
+        },
+        "ans": "D",
+        "id": 20
+    },
+    {
+        "q": "Tổ hợp lệnh nào sau đây đếm số USER đang đăng nhập vào hệ thống LINUX?",
+        "type": "mcq",
+        "opts": {
+            "A": "who | cut -d' ' -f1 | uniq | wc -l | sort -r",
+            "B": "who | cut -d' ' -f1 | sort -r | wc -l | uniq",
+            "C": "who | cut -d' ' -f1 | sort -r | uniq | wc -l",
+            "D": "who | sort -r | uniq | wc -l | cut -d' ' -f1"
+        },
+        "ans": "C",
+        "id": 21
+    },
+    {
+        "q": "Để xem nội dung một tập tin văn bản trong Linux ta có thể dùng lệnh nào sau đây?",
+        "type": "mcq",
+        "opts": {
+            "A": "more",
+            "B": "CAT",
+            "C": "touch",
+            "D": "LESS"
+        },
+        "ans": "A",
+        "id": 22
+    },
+    {
+        "q": "Một user có username là Jerry và home directory của anh ta là /home/Jerry. Để trở về thư mục chủ của anh ta 1 cách nhanh nhất, anh ta phải dùng lệnh:",
+        "type": "mcq",
+        "opts": {
+            "A": "cd Jerry",
+            "B": "cd /home/Jerry",
+            "C": "cd / ; cd home ; cd Jerry",
+            "D": "cd ~Jerry"
+        },
+        "ans": "D",
+        "id": 23
+    },
+    {
+        "q": "Trong thế giới Linux, Web Server gì thường được sử dụng hiện nay?",
+        "type": "mcq",
+        "opts": {
+            "A": "Foo",
+            "B": "WU-TTPD",
+            "C": "Apache",
+            "D": "Squid"
+        },
+        "ans": "C",
+        "id": 24
+    },
+    {
+        "q": "Bạn muốn quyền truy cập mặc định của tập tin là: rw-r----- Vậy bạn sẽ thiết lập giá trị umask bằng bao nhiêu?",
+        "type": "mcq",
+        "opts": {
+            "A": "027",
+            "B": "047",
+            "C": "038",
+            "D": "640"
+        },
+        "ans": "A",
+        "id": 25
+    },
+    {
+        "q": "Lệnh gì sẽ gửi dữ liệu ra của cmd1 làm dữ liệu vào cho cmd2?",
+        "type": "mcq",
+        "opts": {
+            "A": "cmd1 && cmd2",
+            "B": "cmd1;cmd2",
+            "C": "cmd1 || cmd2",
+            "D": "cmd1 | cmd2"
+        },
+        "ans": "D",
+        "id": 26
+    },
+    {
+        "q": "Lệnh sau đây tương đương lệnh nào: chmod u=rwxs,g=r,o=- baitap.txt?",
+        "type": "mcq",
+        "opts": {
+            "A": "chmod 6740 baitap.txt",
+            "B": "chmod 4747 baitap.txt",
+            "C": "chmod 2740 baitap.txt",
+            "D": "chmod 4740 baitap.txt"
+        },
+        "ans": "A",
+        "id": 27
+    },
+    {
+        "q": "Tập tin sau đây có thuộc tính như thế nào: rwx--x-wx danhsach.xls?",
+        "type": "mcq",
+        "opts": {
+            "A": "710",
+            "B": "713",
+            "C": "644",
+            "D": "755"
+        },
+        "ans": "A",
+        "id": 28
+    },
+    {
+        "q": "File quản lý thiết bị đĩa mềm trên Linux có thể là file nào sau đây?",
+        "type": "mcq",
+        "opts": {
+            "A": "/dev/fd2",
+            "B": "/dev/fd0",
+            "C": "/dev/fa0"
+        },
+        "ans": "B",
+        "id": 29
+    },
+    {
+        "q": "Trong tập tin cấu hình GRUB có dòng sau: root (hd1, 2). Hãy cho biết tên thiết bị trên hệ thống Linux?",
+        "type": "mcq",
+        "opts": {
+            "A": "/dev/hdb4",
+            "B": "/dev/hda4",
+            "C": "/dev/hdb3",
+            "D": "/dev/hda3"
+        },
+        "ans": "B",
+        "id": 30
+    },
+    {
+        "q": "Lệnh nào cho phép chỉnh sửa bảng cron của người dùng?",
+        "type": "mcq",
+        "opts": {
+            "A": "cronedit",
+            "B": "vi crontab",
+            "C": "crontab -e",
+            "D": "vi /var/spool/cron/root"
+        },
+        "ans": "C",
+        "id": 31
+    },
+    {
+        "q": "Để xử lý chương trình myprogram hàng ngày vào lúc 6:15am, sử dụng một dòng trong tập tin crontab như thế nào?",
+        "type": "mcq",
+        "opts": {
+            "A": "6 15 * * * myprogram",
+            "B": "15 6 * * * myprogram",
+            "C": "* 6 15 * * myprogram",
+            "D": "* * 15 6 * myprogram"
+        },
+        "ans": "B",
+        "id": 32
+    },
+    {
+        "q": "Giao thức nào có thể được dùng để login từ xa qua mạng vào một server Linux?",
+        "type": "mcq",
+        "opts": {
+            "A": "Dùng ssh",
+            "B": "Dùng ssl",
+            "C": "Dùng login"
+        },
+        "ans": "A",
+        "id": 33
+    },
+    {
+        "q": "Hãy cho biết ý nghĩa của dấu chấm vị trí (2)?",
+        "type": "mcq",
+        "opts": {
+            "A": "Chỉ là 1 ký tự trong filename",
+            "B": "File/Folder có thuộc tính ẩn",
+            "C": "Lệnh chấm (.)",
+            "D": "Current Dir"
+        },
+        "ans": "B",
+        "id": 34
+    },
+    {
+        "q": "Lệnh nào có thể được sử dụng để tìm kiếm một từ trong một file văn bản mà không mở file?",
+        "type": "mcq",
+        "opts": {
+            "A": "vi",
+            "B": "grep",
+            "C": "find",
+            "D": "less"
+        },
+        "ans": "B",
+        "id": 35
+    },
+    {
+        "q": "Để backup cơ sở dữ liệu vào 11:00 & 16:00 hàng ngày ta cấu hình trong bảng cron như thế nào?",
+        "type": "mcq",
+        "opts": {
+            "A": "11,16 0 * * * /home/perl/backup.pl",
+            "B": "11 0 16 0 * /home/perl/backup.pl",
+            "C": "0 11-16 * * * /home/perl/backup.pl",
+            "D": "0 11,16 * * * /home/perl/backup.pl"
+        },
+        "ans": "D",
+        "id": 36
+    },
+    {
+        "q": "Bạn là Admin, sau khi Tom rời khỏi công ty, bạn dùng lệnh userdel Tom để xoá user này. Làm thế nào để khẳng định home directory cũng đã bị xoá?",
+        "type": "mcq",
+        "opts": {
+            "A": "userdel –r Tom",
+            "B": "userdel –l Tom",
+            "C": "userdel –u Tom",
+            "D": "userdel –m Tom"
+        },
+        "ans": "A",
+        "id": 37
+    },
+    {
+        "q": "Chương trình soạn thảo văn bản nào phổ biến nhất trong hệ điều hành Linux?",
+        "type": "mcq",
+        "opts": {
+            "A": "Emacs",
+            "B": "Pico",
+            "C": "Word",
+            "D": "vi"
+        },
+        "ans": "D",
+        "id": 38
+    },
+    {
+        "q": "Trong vi, để thoát không cần lưu ta dùng lệnh nào?",
+        "type": "mcq",
+        "opts": {
+            "A": "ESC:wq!",
+            "B": "ESC:w!",
+            "C": "ESC:!",
+            "D": "ESC:q!"
+        },
+        "ans": "D",
+        "id": 39
+    },
+    {
+        "q": "Cho biết kết quả của lệnh sau: date > lich.txt",
+        "type": "mcq",
+        "opts": {
+            "A": "Hiển thị nội dung tập tin lich.txt",
+            "B": "Kết quả của lệnh date sẽ được lưu đè vào file lich.txt",
+            "C": "Trên màn hình sẽ hiển thị ngày giờ hiện tại",
+            "D": "Trên màn hình sẽ xuất hiện thông báo nhập liệu cho tập tin lich.txt"
+        },
+        "ans": "B",
+        "id": 40
+    },
+    {
+        "q": "Tiền thân của hệ điều hành Linux là gì?",
+        "type": "mcq",
+        "opts": {
+            "A": "Solaris",
+            "B": "Windows",
+            "C": "Unix",
+            "D": "Mac OS"
+        },
+        "ans": "C",
+        "id": 41
+    },
+    {
+        "q": "Tạo mới 1 user có tên student bằng lệnh useradd student. Theo mặc định, user này thuộc group nào?",
+        "type": "mcq",
+        "opts": {
+            "A": "everyone",
+            "B": "student",
+            "C": "superuser",
+            "D": "users"
+        },
+        "ans": "D",
+        "id": 42
+    },
+    {
+        "q": "Công cụ nào thực hiện tính toán số học?",
+        "type": "mcq",
+        "opts": {
+            "A": "bc",
+            "B": "BC -L",
+            "C": "cal",
+            "D": "calculator"
+        },
+        "ans": "A",
+        "id": 43
+    },
+    {
+        "q": "Tập tin điều quản thiết bị?",
+        "type": "mcq",
+        "opts": {
+            "A": "/etc/device",
+            "B": "/dev/device",
+            "C": "/etc/fstab",
+            "D": "/device/fstab"
+        },
+        "ans": "B",
+        "id": 44
+    },
+    {
+        "q": "Lệnh nào dùng để đọc nội dung của biến môi trường PATH trong bash shell?",
+        "type": "mcq",
+        "opts": {
+            "A": "echo $PATH",
+            "B": "echo %PATH%",
+            "C": "print $PATH",
+            "D": "echo PATH"
+        },
+        "ans": "A",
+        "id": 45
+    },
+    {
+        "q": "Câu lệnh nào dùng để xem số lượng khối (blocks) tự do trên phân vùng /dev/sda2?",
+        "type": "mcq",
+        "opts": {
+            "A": "dm -i /dev/sda2",
+            "B": "ls -i /dev/sda2",
+            "C": "du -b /dev/sda2",
+            "D": "df /dev/sda2"
+        },
+        "ans": "D",
+        "id": 46
+    },
+    {
+        "q": "Các tiến trình bắt đầu bởi một người dùng thường có giá trị 'nice number' là bao nhiêu?",
+        "type": "mcq",
+        "opts": {
+            "A": "1",
+            "B": "19",
+            "C": "0",
+            "D": "-20"
+        },
+        "ans": "B",
+        "id": 47
+    },
+    {
+        "q": "Lập lịch với crontab: Muốn lập lịch vào lúc 17h30, thứ 6 và thứ 7 hàng tuần, với nhiệm vụ là SHUTDOWN máy, sử dụng một dòng trong tập tin crontab như thế nào?",
+        "type": "mcq",
+        "opts": {
+            "A": "30 17 * * 6,7 init 0",
+            "B": "30 17 * * 6,7 shutdown",
+            "C": "30 17 * * 5,6 init 0",
+            "D": "30 17 * * 4,5 shutdown"
+        },
+        "ans": "C",
+        "id": 48
+    },
+    {
+        "q": "Để tạo tài khoản người dùng 'Tom' là thành viên của nhóm 'admin', ta dùng lệnh?",
+        "type": "mcq",
+        "opts": {
+            "A": "useradd –m admin Tom",
+            "B": "useradd –G admin Tom",
+            "C": "useradd admin Tom",
+            "D": "useradd –g admin Tom"
+        },
+        "ans": "D",
+        "id": 49
+    },
+    {
+        "q": "Câu lệnh nào cho biết chủ sở hữu của thư mục /home/ktm?",
+        "type": "mcq",
+        "opts": {
+            "A": "ls -ld /home/ktm | tr -s \" \" | cut -d' ' -f3",
+            "B": "ls -l /home/ktm | tr -s \" \" | cut -d' ' -f3",
+            "C": "ls -l /home/ktm | tr -s \" \" | cut -d' ' -f2",
+            "D": "ls -ld /home/ktm | tr -s \" \" | cut -d' ' -f4"
+        },
+        "ans": "A",
+        "id": 50
+    },
+    {
+        "q": "Trong các bản phân phối Linux có phiên bản nhân 2.6.x thì số lượng tối đa tài khoản người dùng là:",
+        "type": "mcq",
+        "opts": {
+            "A": "65535",
+            "B": "2^32",
+            "C": "2^10",
+            "D": "2^16"
+        },
+        "ans": "B",
+        "id": 51
+    },
+    {
+        "q": "File nào trong số các file dưới đây chứa các biến môi trường khi sử dụng Bash Shell?",
+        "type": "mcq",
+        "opts": {
+            "A": "~/bash",
+            "B": "/etc/profile",
+            "C": "/bash",
+            "D": "~/.profile"
+        },
+        "ans": "B",
+        "id": 52
+    },
+    {
+        "q": "Để kiểm tra 2 số a có lớn hơn b không ta dùng cú pháp nào sau đây (Chọn 1 đáp án đúng nhất)?",
+        "type": "mcq",
+        "opts": {
+            "A": "test a -gt b",
+            "B": "[a -gt b]",
+            "C": "test $a -gt $b",
+            "D": "[ a > b ]"
+        },
+        "ans": "C",
+        "id": 53
+    },
+    {
+        "q": "Hãy cho biết lệnh nào sau đây thực hiện gán nice number là -2 cho tiến trình 'top'?",
+        "type": "mcq",
+        "opts": {
+            "A": "[...]#nice --2 top",
+            "B": "[...]#nice -2 top",
+            "C": "[...]$nice -n -2 top",
+            "D": "[...]$nice --2 top"
+        },
+        "ans": "C",
+        "id": 54
+    },
+    {
+        "q": "Trong các bản phân phối Linux có phiên bản nhân 2.4.x thì số lượng tối đa tài khoản người dùng là:",
+        "type": "mcq",
+        "opts": {
+            "A": "2^16",
+            "B": "2^10",
+            "C": "65535",
+            "D": "2^32"
+        },
+        "ans": "C",
+        "id": 55
+    },
+    {
+        "q": "Tên file điều khiển thiết bị cho đĩa logic thứ 2 trên ổ đĩa cứng SCSI thứ 2 là:",
+        "type": "mcq",
+        "opts": {
+            "A": "/dev/sda6",
+            "B": "/dev/sdb6",
+            "C": "/dev/sdb2",
+            "D": "/dev/sda5"
+        },
+        "ans": "B",
+        "id": 56
+    },
+    {
+        "q": "Mỗi tiến trình chạy trong hệ thống Linux được đặc trưng bởi:",
+        "type": "mcq",
+        "opts": {
+            "A": "PID",
+            "B": "GUID",
+            "C": "PUID",
+            "D": "PGUID"
+        },
+        "ans": "A",
+        "id": 57
+    },
+    {
+        "q": "Lệnh nào cho phép tạo một người dùng mới trên hệ thống Linux?",
+        "type": "mcq",
+        "opts": {
+            "A": "Lệnh passwd",
+            "B": "Lệnh newuser",
+            "C": "Lệnh useradd",
+            "D": "Lệnh newacct"
+        },
+        "ans": "C",
+        "id": 58
+    },
+    {
+        "q": "Máy tính của bạn có 1 ổ cứng và bạn đang chuẩn bị cài Linux. Bạn muốn có 5 partitions khác nhau và đã tạo ra được 4 partitions. Còn partition thứ 5 không cách nào tạo ra được. Điều gì đã xảy ra?",
+        "type": "mcq",
+        "opts": {
+            "A": "Trên 1 đĩa cứng vật lý không cho phép tạo quá 4 Partitions",
+            "B": "Ổ cứng của bạn không đủ dung lượng để tạo hơn 4 partition",
+            "C": "Bạn phải tạo swap partition",
+            "D": "Linux không cho phép tạo hơn 4 partitions"
+        },
+        "ans": "A",
+        "id": 59
+    }
+]

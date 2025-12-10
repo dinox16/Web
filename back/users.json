@@ -1,0 +1,12 @@
+[
+    {
+        "username": "admin2",
+        "email": "aaa@gmail.com",
+        "passwd": "pbkdf2:sha256:600000$GnWCrCvK5V5KZDZH$29e8476aaf5a3ac48d0c503ebcb0f5e7db4ffa45efeb8c3a1c96ec2d0137ae34"
+    },
+    {
+        "username": "ad123",
+        "email": "12312qsdasd@gmail.com",
+        "passwd": "scrypt:32768:8:1$qgie9RHXoysX6HgQ$3a1ae3eac9658d7fc0ed108e1d3a6624677b1ca44890e980d22a7981eee8b39ea77ff88e96d3b64607449b36ac400330389fa30416a9d69c5d50558c2cd4eb73"
+    }
+]

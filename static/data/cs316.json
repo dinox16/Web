@@ -1,0 +1,519 @@
+[
+    {
+        "q": "Nhân tố nào là nhân tố chính ảnh hưởng đến thời gian thực hiện của một giải thuật?",
+        "opts": {
+            "A": "Kích thước dữ liệu đầu vào",
+            "B": "Máy tính",
+            "C": "Thuật toán",
+            "D": "Chương trình dịch"
+        },
+        "ans": "A",
+        "id": 1
+    },
+    {
+        "q": "Theo cách tiếp cận của lập trình có cấu trúc, Niklaus Wirth đưa ra công thức thể hiện được mối liên hệ giữa cấu trúc dữ liệu và giải thuật như sau:",
+        "opts": {
+            "A": "Thuật toán + dữ liệu đầu vào = chương trình",
+            "B": "Thuật toán + cấu trúc dữ liệu = chương trình",
+            "C": "Kỹ thuật lập trình + cấu trúc dữ liệu = Kết quả đầu ra.",
+            "D": "Tất cả đều đúng"
+        },
+        "ans": "B",
+        "id": 2
+    },
+    {
+        "q": "Giải thuật là … câu lệnh chặt chẽ, rõ ràng và xác định các thao tác trên các đối tượng dữ liệu.",
+        "opts": {
+            "A": "Một",
+            "B": "Hai",
+            "C": "Nhiều",
+            "D": "Dãy"
+        },
+        "ans": "D",
+        "id": 3
+    },
+    {
+        "q": "Kiểu dữ liệu trừu tượng là…",
+        "opts": {
+            "A": "Kiểu dữ liệu mà người lập trình phải tự xây dựng dựa trên các kiểu dữ liệu cơ bản được cung cấp từ ngôn ngữ này.",
+            "B": "Kiểu dữ liệu mà người lập trình phải tự xây dựng dựa trên kiểu dữ liệu không cơ bản được cung cấp từ ngôn ngữ lập trình",
+            "C": "Kiểu dữ liệu mà người lập trình phải tự xây dựng trên các kiểu dữ liệu cơ bản được cung cấp từ ngôn ngữ lập trình",
+            "D": "Kiểu dữ liệu mà người lập trình tự xây dựng không dựa trên kiểu dữ liệu cơ bản được cung cấp từ ngôn ngữ lập trình"
+        },
+        "ans": "C",
+        "id": 4
+    },
+    {
+        "q": "Hàm đệ quy sau thực hiện công việc gì?\nint F(int n){\n    if(n==0) return 1;\n    return F(n-1) + F(n-1) + F(n-1);\n}",
+        "opts": {
+            "A": "3n",
+            "B": "n^3",
+            "C": "3^n",
+            "D": "3n^2"
+        },
+        "ans": "C",
+        "id": 5
+    },
+    {
+        "q": "Cho hàm đệ quy sau:\nint F(int n){\n    if(n==0) return 1;\n    return F(n-1) + F(n-1);\n} Vậy F(5) = ?",
+        "opts": {
+            "A": "F(5) = 32",
+            "B": "F(5) = 10",
+            "C": "F(5) = 25 ",
+            "D": "F(5) = 5"
+        },
+        "ans": "A",
+        "id": 6
+    },
+    {
+        "q": "Chọn phát biểu đúng nhất",
+        "opts": {
+            "A": "Một chương trình gọi là đệ quy nếu trong chương trình có lời gọi đến một chương trình đệ quy khác.",
+            "B": "Một chương trình đệ quy là chương trình lặp đi lặp lại với số lần lặp không biết trước.",
+            "C": "Một đối tượng được gọi là đệ quy nếu nó hoặc một phần của nó được định nghĩa thông qua khái niệm về chính nó.",
+            "D": "Một chương trình đệ quy là chương trình có chứa hàm main."
+        },
+        "ans": "C",
+        "id": 7
+    },
+    {
+        "q": "Đánh giá độ phức tạp của giải thuật là việc xác định ……và…… mà giải thuật cần để thưc hiện giải một bài toán",
+        "opts": {
+            "A": "Khoảng thời gian, độ khó",
+            "B": "Khoảng thời gian, độ phức tạp",
+            "C": "Khoảng thời gian, dung lượng bộ nhớ máy tính",
+            "D": "Độ khó, dung lượng bộ nhớ máy tính"
+        },
+        "ans": "C",
+        "id": 8
+    },
+    {
+        "q": "Các kiểu dữ liệu cơ bản là……",
+        "opts": {
+            "A": "Các kiểu dữ liệu mà người lập trình được cung cấp sẵn từ máy tính",
+            "B": "Các kiểu dữ liệu mà người lập trình được cung cấp sẵn từ ngôn ngữ tự nhiên",
+            "C": "Các kiểu dữ liệu mà người lập trình được cung cấp sẵn từ ngôn ngữ lập trình",
+            "D": "Các kiểu dữ liệu mà người lập trình được cung cấp sẵn từ ngôn ngữ này"
+        },
+        "ans": "C",
+        "id": 9
+    },
+    {
+        "q": "Chỉ ra kiểu dữ liệu cơ bản:",
+        "opts": {
+            "A": "Sinh viên",
+            "B": "float",
+            "C": "Hoten",
+            "D": "Ngày sinh"
+        },
+        "ans": "B",
+        "id": 10
+    },
+    {
+        "q": "Cài đặt danh sách bằng mảng có nghĩa là",
+        "opts": {
+            "A": "Dùng bản ghi có hai thành phần để lưu trữ các phần tử của danh sách",
+            "B": "Dùng biến con trỏ lưu trữ các phần tử của danh sách.",
+            "C": "Tất cả đều đúng.",
+            "D": "Dùng một mảng (array) để lưu trữ liên tiếp các phần tử của danh sách bắt đầu từ vị trí đầu tiên của mảng."
+        },
+        "ans": "D",
+        "id": 11
+    },
+    {
+        "q": "Tư tưởng của giải thuật tìm kiếm nhị phân:",
+        "opts": {
+            "A": "So sánh X lần lượt với các phần tử thứ nhất, thứ hai,… của dãy cho đến khi gặp phần tử có khoá cần tìm.",
+            "B": "Lần lượt chia dãy thành hai dãy con dựa vào phần tử khoá, sau đó thực hiện việc tìm kiếm trên hai đoạn đã chia.",
+            "C": "Tại mỗi bước tiến hành so sánh X với phần tử ở giữa của dãy, dựa vào bước so sánh này quyết định giới hạn dãy tìm kiếm nằm ở nửa trên, hay nửa dưới của dãy hiện hành.",
+            "D": "Tìm kiếm dựa vào cây nhị tìm kiếm."
+        },
+        "ans": "C",
+        "id": 12
+    },
+    {
+        "q": "Tư tưởng của giải thuật tìm kiếm tuần tự",
+        "opts": {
+            "A": "So sánh X lần lượt với các phần tử thứ nhất, thứ hai,... của dãy cho đến khi gặp phần tử có khoá cần tìm.",
+            "B": "Tìm kiếm dựa vào cây nhị tìm kiếm: Nếu giá trị cần tìm nhỏ hơn gốc thì thực hiện tìm kiếm trên cây con trái, ngược lại ta việc tìm kiếm được thực hiện trên cây con phải.",
+            "C": "Tại mỗi bước tiến hành so sánh X với phần tử ở giữa của dãy, Dựa vào bước so sánh này quyết định giới hạn dãy tìm kiếm nằm ở nửa trên, hay nửa dưới của dãy hiện hành.",
+            "D": "Lần lượt chia dãy thành hai dãy con dựa vào phần tử khoá, sau đó thực hiện việc tìm kiếm trên hai đoạn đã chia."
+        },
+        "ans": "A",
+        "id": 13
+    },
+    {
+        "q": "Danh sách Đặc là:",
+        "opts": {
+            "A": "Một tập hợp mà không cần khai báo trước số lượng phần tử khi sử dụng",
+            "B": "Một tập hợp có thứ tự gồm một số xác định n phần tử cùng kiểu dữ liệu liên tục trong bộ nhớ và có cùng một tên (với n được gọi là độ dài hay kích thước của mảng).",
+            "C": "Một các phần từ được xác định trước, có cùng kiểu dữ liệu và nằm rài rác trong vùng nhớ",
+            "D": "Một tập các hợp phần tử có cùng kiểu dữ liệu và được sắp xếp theo thứ tự tăng dần."
+        },
+        "ans": "B",
+        "id": 14
+    },
+    {
+        "q": "Ý tưởng phương pháp sắp xếp nổi bọt (bubble sort) là:",
+        "opts": {
+            "A": "Phân đoạn dãy thành nhiều dãy con và lần lượt trộn hai dãy con thành dãy lớn hơn, cho đến khi thu được dãy ban đầu đã được sắp xếp.",
+            "B": "Chọn phần tử bé nhất xếp vào vị trí thứ nhất bằng cách đổi chổ phần tử bé nhất với phần tử thứ nhấ; Tương tự đối với phần tử nhỏ thứ hai, ba...",
+            "C": "Lần lượt lấy phần tử của danh sách chèn vị trí thích hợp của nó trong dãy bằng cách đẩy các phần tử lớn hơn xuống.",
+            "D": "Bắt đầu từ cuối dãy đến đầu dãy, ta lần lượt so sánh hai phần tử kế tiếp nhau, nếu phần tử nào nhỏ hơn được đứng vị trí trên."
+        },
+        "ans": "A",
+        "id": 15
+    },
+    {
+        "q": "Ý tưởng phương pháp sắp xếp nhanh (Quick sort) là:",
+        "opts": {
+            "A": "Lần lượt chia dãy phần tử thành hai dãy con bởi một phần tử khoá (dãy con trước khoá gồm các phần tử nhỏ hơn khoá và dãy còn lại gồm các phần tử lớn hơn khoá).",
+            "B": "Chọn phần tử bé nhất xếp vào vị trí thứ nhất bằng cách đổi chổ phần tử bé nhất với phần tử thứ nhất; Tương tự đối với phần tử nhỏ thứ hai, ba...",
+            "C": "Phân đoạn dãy thành nhiều dãy con và lần lượt trộn hai dãy con thành dãy lớn hơn, cho đến khi thu được dãy ban đầu đã được sắp xếp.",
+            "D": "Bắt đầu từ cuối dãy đến đầu dãy, ta lần lượt so sánh hai phần tử kế tiếp nhau, nếu phần tử nào nhỏ hơn được đứng vị trí trên."
+        },
+        "ans": "A",
+        "id": 16
+    },
+    {
+        "q": "Trong các giải thuật sắp xếp, giải thuật nào áp dụng phương pháp 'Chia để trị'?",
+        "opts": {
+            "A": "Quick sort, Bubble sort",
+            "B": "Qucick sort, Insert sort",
+            "C": "Quick sort, Merge sort",
+            "D": "Quick sort, Heap sort"
+        },
+        "ans": "C",
+        "id": 17
+    },
+    {
+        "q": "Cho dãy số {6 1 3 0 5 7 9 2 8 4}. Áp dụng phương pháp sắp xếp lựa chọn (Select sort) sau lần lặp đầu tiên của giải thuật ta có kết quả: {0 1 3 6 5 7 9 2 8 4}. Dãy số thu được sau lần lặp thứ năm là:",
+        "opts": {
+            "A": "{0 1 2 3 5 7 9 4 8 6}",
+            "B": "{0 1 2 3 6 5 7 9 8 4}",
+            "C": "{0 1 2 3 4 7 9 6 8 5}",
+            "D": "{0 1 2 3 4 5 6 7 8 9}"
+        },
+        "ans": "C",
+        "id": 18
+    },
+    {
+        "q": "Trong thuật toán sắp xếp nổi bọt kết thúc khi nào?",
+        "opts": {
+            "A": "Khi các phần tử đã nằm đúng thứ tự mong muốn.",
+            "B": "Không còn bất kì cặp liền kề trái thứ tự mong muốn",
+            "C": "Không còn xảy ra đổi chỗ lần nào nữa",
+            "D": "Cả A, B và C đều đúng"
+        },
+        "ans": "D",
+        "id": 19
+    },
+    {
+        "q": "Định nghĩa đúng nhất về danh sách liên kết:",
+        "opts": {
+            "A": "Danh sách liên kết là tập hợp các phần từ mà giữa chúng có sự nối kết với nhau thông qua vùng liên kết của chúng",
+            "B": "Danh sách liên kế là cấu trúc dữ liệu dạng cây",
+            "C": "Danh sách liên kết là cấu trúc dữ liệu tự định nghĩa",
+            "D": "Danh sách liên kết là tập hợp các phần từ liên tục trong vùng nhớ"
+        },
+        "ans": "A",
+        "id": 20
+    },
+    {
+        "q": "Dấu hiệu nào dưới đây cho biết danh sách liên kết đơn rỗng:",
+        "opts": {
+            "A": "(p->right==NULL);",
+            "B": "(p->info==NULL);",
+            "C": "(p==NULL);",
+            "D": "(p->next==NULL);"
+        },
+        "ans": "C",
+        "id": 21
+    },
+    {
+        "q": "Chọn câu nói đúng nhất về danh sách liên kết đôi:",
+        "opts": {
+            "A": "Vùng liên kết của 1 phần từ trong danh sách liên kết có 2 mối liên kết với 2 phần tử trước và sau nó trong danh sách",
+            "B": "Vùng liên kết của 1 phần từ trong danh sách liên kết có 2 mối liên kết với 1 phần tử khác",
+            "C": "Vùng liên kết của 1 phần từ trong danh sách liên kết có 1 mối liên kết với 2 phần tử khác",
+            "D": "Vùng liên kết của 1 phần từ trong danh sách liên kết có 2 mối liên kết với 2 phần tử khác trong danh sách"
+        },
+        "ans": "A",
+        "id": 22
+    },
+    {
+        "q": "Định nghĩa cấu trúc dữ liệu dạng danh sách (LIST):",
+        "opts": {
+            "A": "danh sách là kiểu con trỏ",
+            "B": "danh sách là tập hợp các phần tử khác kiểu",
+            "C": "danh sách là kiểu dữ liệu mảng",
+            "D": "danh sách là một tập hợp các phần tử có cùng một kiểu mà ta gọi là kiểu phần tử (ElementType)."
+        },
+        "ans": "D",
+        "id": 23
+    },
+    {
+        "q": "Dấu hiệu nào dưới đây cho biết node p của một danh sách liên kết đơn là node cuối cùng bên phải:",
+        "opts": {
+            "A": "(p->info!=NULL);",
+            "B": "(p->info==NULL);",
+            "C": "(p->next!=NULL);",
+            "D": "(p->next==NULL)"
+        },
+        "ans": "D",
+        "id": 24
+    },
+    {
+        "q": "Cho p trỏ vào nút giữa của một DSLK đôi trỏ bởi con trỏ đầu pHead và con trỏ cuối pTail, danh sách chỉ gồm 3 nút. Để tách p ra khỏi danh sách mà danh sách vẫn nối đúng, thực hiện những câu lệnh nào sau đây:",
+        "opts": {
+            "A": "p->Next->Pre=p->Next; p->Pre->Next=p->Pre;",
+            "B": "p->Pre->Next=p->Pre; p->Next->Pre=p->Next",
+            "C": "pHead->Next=pTail; pTail->Pre=pHead;",
+            "D": "Tất cả đều đúng."
+        },
+        "ans": "C",
+        "id": 25
+    },
+    {
+        "q": "Để xóa con trỏ p đang trỏ vào một nút không phải là vị trí đầu trong danh sách liên kết đơn có nhiều hơn một nút, ta cần xác định con trỏ q trỏ vào vị trí nào sau đây:",
+        "opts": {
+            "A": "Trỏ vào vị trí đầu danh sách.",
+            "B": "Trỏ vào vị trí cuối danh sách.",
+            "C": "Trỏ vào nút bên trái của p và gần p nhất.",
+            "D": "Trỏ vào nút bên phải của p và gần p nhất."
+        },
+        "ans": "C",
+        "id": 26
+    },
+    {
+        "q": "Để nối 1 node vào danh sách liên kết đơn thì các câu lệnh cần thực hiện là gì?",
+        "opts": {
+            "A": "q = (listnode) malloc(sizeof(struct node)); q->item = x; q->next=*p;",
+            "B": "q->next=*p; q = (listnode) malloc(sizeof(struct node)); q->item = x;",
+            "C": "q = (listnode) malloc(sizeof(struct node)); q->next=*p; q->item = x;",
+            "D": "q->item = x;"
+        },
+        "ans": "A",
+        "id": 27
+    },
+    {
+        "q": "Phát biểu nào sau đây là đúng?",
+        "opts": {
+            "A": "Mỗi nút trong DSLK đơn chứa thành phần kết nối và một số nguyên hoặc dữ liệu của nút đó",
+            "B": "Thành phần kết nối của một nút trong DSLK đơn luôn chứa địa chỉ của nút kết tiếp.",
+            "C": "Trong DSLK đơn nối vòng thành phần kết nối của mỗi nút luôn trỏ vào nó.",
+            "D": "Mỗi nút trong DSLK đôi chứa hai thành phần kết nối và thành phần dữ liệu."
+        },
+        "ans": "A",
+        "id": 28
+    },
+    {
+        "q": "Cơ chế nào dưới đây được cài đặt cho Stack?",
+        "opts": {
+            "A": "LIFO",
+            "B": "Tuần tự",
+            "C": "Round Robin",
+            "D": "FIFO"
+        },
+        "ans": "A",
+        "id": 29
+    },
+    {
+        "q": "Định nghĩa cấu trúc dữ liệu Stack:",
+        "opts": {
+            "A": "Stack là danh sách kết nối.",
+            "B": "Stack là một danh sách đặc biệt mà phép thêm vào được thực hiện ở một đầu, và phép loại bỏ được thực hiện ở phần kia của stack.",
+            "C": "Stack là một danh sách đặc biệt mà phép thêm vào hoặc loại bỏ một phần tử chỉ thực hiện tại một đầu gọi là đỉnh (Top) của Stack.",
+            "D": "Stack là cấu trúc dữ liệu được cài đặt bằng con trỏ"
+        },
+        "ans": "C",
+        "id": 30
+    },
+    {
+        "q": "Trong việc xây dựng các hàm cho danh sách hạn chế hàm sau viết ra để làm gì\nbool FunctionEmpty(Queue pHead){return (pHead==NULL);}",
+        "opts": {
+            "A": "Khởi tạo hàng đợi rỗng",
+            "B": "Khởi tạo ngăn xếp rỗng",
+            "C": "Kiểm tra ngăn xếp hoặc hàng đợi đầy",
+            "D": "Kiểm tra hàng đợi hoặc ngăn xếp rỗng."
+        },
+        "ans": "A",
+        "id": 31
+    },
+    {
+        "q": "Cơ chế nào dưới đây được cài đặt cho hàng đợi:",
+        "opts": {
+            "A": "FIFO",
+            "B": "Round Robin",
+            "C": "Tuần tự",
+            "D": "FILO"
+        },
+        "ans": "A",
+        "id": 32
+    },
+    {
+        "q": "Cho biểu thức sau: A + B – C * D + F thì biểu thức hậu tố là:",
+        "opts": {
+            "A": "AB+CD*-F+",
+            "B": "AB+CD-*F+",
+            "C": "ABCD+*-F+",
+            "D": "AB+CDF*-+"
+        },
+        "ans": "A",
+        "id": 33
+    },
+    {
+        "q": "Cho biểu thức trung tố sau P = a * (b + c), biểu thức nào sau đây là biểu thức hậu tố P?",
+        "opts": {
+            "A": "ab+c*",
+            "B": "a*bc+",
+            "C": "ab*c",
+            "D": "abc+*"
+        },
+        "ans": "D",
+        "id": 34
+    },
+    {
+        "q": "Để cài đặt Stack ta có thể dùng phương pháp nào sau đây:",
+        "opts": {
+            "A": "Bằng con trỏ",
+            "B": "Bằng mảng",
+            "C": "Bằng con trỏ và bằng mảng",
+            "D": "Các phương án khác đều sai"
+        },
+        "ans": "C",
+        "id": 35
+    },
+    {
+        "q": "Tính chất của hàng đợi là gì?",
+        "opts": {
+            "A": "Vào trước - ra trước\" - FIFO: First In First Out.",
+            "B": "Vào sau - ra trước\" - LIFO: Last In First Out.",
+            "C": "Vào trước - ra sau\" - FILO: First In Last Out.",
+            "D": "Các phương án khác đều sai"
+        },
+        "ans": "A",
+        "id": 36
+    },
+    {
+        "q": "Chọn định nghĩa đúng nhất về hàng đợi (Queue):",
+        "opts": {
+            "A": "Hàng đợi là 1 danh sách, trong đó việc thêm và bớt phần tử được thực hiện ở 2 đầu khác nhau",
+            "B": "Hàng đợi là 1 danh sách, trong đó việc thêm và bớt phần tử được thực hiện ở cùng 1 đầu",
+            "C": "Hàng đợi là 1 danh sách liên kết đơn",
+            "D": "Hàng đợi là 1 danh sách hoạt động theo cơ chế FILO (First In Last Out)"
+        },
+        "ans": "A",
+        "id": 37
+    },
+    {
+        "q": "Cho biểu thức trung tố sau P = (a + b)^2 + c, biểu thức hậu tố (Q) nào sau đây là kết quả của biểu thức P?",
+        "opts": {
+            "A": "ab+2^c+",
+            "B": "ab2+^c+",
+            "C": "ab+2^+c",
+            "D": "ab+2c^+"
+        },
+        "ans": "D",
+        "id": 38
+    },
+    {
+        "q": "Một cây nhị phân được gọi là đúng nếu:",
+        "opts": {
+            "A": "Node gốc và tất cả các node trung gian đều có 2 node con",
+            "B": "Giá trị khóa của node gốc bao giờ cũng lớn hơn giá trị các khóa của nhánh cây con bên phải",
+            "C": "Giá trị khóa của node gốc bao giờ cũng lớn hơn giá trị các khóa của nhánh cây con bên trái",
+            "D": "Node gốc và các node trung gian đều có 2 node con và các node lá đều có mức giống nhau"
+        },
+        "ans": "A",
+        "id": 39
+    },
+    {
+        "q": "Chọn định nghĩa đúng nhất về cây nhị phân tìm kiếm (BST: Binary Search Tree)",
+        "opts": {
+            "A": "BST là cây mà với mọi nút không phải là Lá có giá trị lớn hơn mọi giá trị của các nút trên cây con trái và nhỏ hơn mọi giá trị của các nút trên cây con phải",
+            "B": "BST là cây mà với mọi nút không phải là Lá có giá trị lớn hơn giá trị của nút trên cây con trái và nhỏ hơn giá trị của nút con phải",
+            "C": "BST là cây mà với mọi nút không phải là Lá có giá trị lớn hơn mọi giá trị của các nút trên cây con phải và nhỏ hơn mọi giá trị của các nút trên cây con trái",
+            "D": "BST là cây nhị phân mà giá trị các nút trên cây khác nhau từng đôi một"
+        },
+        "ans": "A",
+        "id": 40
+    },
+    {
+        "q": "Chọn phát biểu đúng về cây nhị phân:",
+        "opts": {
+            "A": "Cây nhị phân là cây phải có hai nhánh con",
+            "B": "Cây nhị phân là cây mà các cây con của nó phải có hai nút",
+            "C": "Cây nhị phân là cây mà mọi nút trên cây chỉ có tối đa hai nhánh con",
+            "D": "Tất cả đều đúng"
+        },
+        "ans": "D",
+        "id": 41
+    },
+    {
+        "q": "Một cây nhị phân được gọi là đúng nếu:",
+        "opts": {
+            "A": "Node gốc và các node trung gian đều có 2 node con và các node lá đều có mức giống nhau",
+            "B": "Giá trị khóa của node gốc bao giờ cũng lớn hơn giá trị các khóa của nhánh cây con bên trái",
+            "C": "Giá trị khóa của node gốc bao giờ cũng lớn hơn giá trị các khóa của nhánh cây con bên phải",
+            "D": "Node gốc và tất cả các node trung gian đều có tối đa 2 node con"
+        },
+        "ans": "D",
+        "id": 42
+    },
+    {
+        "q": "Chiều cao của cây là gì?",
+        "opts": {
+            "A": "Cấp lớn nhất của nút",
+            "B": "Mức lớn nhất của cây",
+            "C": "Số cây con của cây",
+            "D": "Số lượng nút của cây"
+        },
+        "ans": "B",
+        "id": 43
+    },
+    {
+        "q": "Cây nhị phân đầy đủ là?",
+        "opts": {
+            "A": "Là cây nhị phân mà nút gốc và các nút con có tối đa hai cây con.",
+            "B": "Là cây nhị phân mà nút gốc và tất cả các node trung gian có đúng hai node con.",
+            "C": "Là cây nhị phân mà nút gốc có đúng hai cây con.",
+            "D": "Là cây nhị phân mà tất cả các nút trung gian có đúng hai node con."
+        },
+        "ans": "B",
+        "id": 44
+    },
+    {
+        "q": "Cây nhị phân tìm kiếm là:",
+        "opts": {
+            "A": "Cây rỗng.",
+            "B": "Cây có một nút gốc",
+            "C": "Với mọi Node: Node có tối đa hai cây con. Nội dung node cha lớn hơn nội dung node con bên trái và nhỏ hơn nội dung node con bên phải.",
+            "D": "Tất cả đều đúng"
+        },
+        "ans": "C",
+        "id": 45
+    },
+    {
+        "q": "Chọn phát biểu đúng",
+        "opts": {
+            "A": "Cây nhị phân là cây phải có hai nhánh con",
+            "B": "Cây nhị phân là cây mà các cây con của nó phải có hai nút",
+            "C": "Cây nhị phân là cây mà mọi nút trên cây chỉ có tối đa hai nhánh con",
+            "D": "Tất cả đều đúng"
+        },
+        "ans": "D",
+        "id": 46
+    },
+    {
+        "q": "Cây nhị phân cân bằng (AVL Tree) là:",
+        "opts": {
+            "A": "Là cây nhị phân có số node thuộc nhánh cây con trái và số node thuộc nhánh cây con phải cân bằng nhau",
+            "B": "Cây nhị phân có số node thuộc nhánh cây con trái và số node thuộc nhánh cây con phải chênh lệch nhau không quá 1.",
+            "C": "Cây nhị phân có số node thuộc nhánh cây con trái và số node thuộc nhánh cây con phải không được chênh lệch nhau.",
+            "D": "Là cây nhị phân mà nút gốc và tất cả các node trung gian có đúng hai node con"
+        },
+        "ans": "B",
+        "id": 47
+    }
+]
