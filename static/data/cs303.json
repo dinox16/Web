@@ -8,7 +8,8 @@
       "C": "Nó cung cấp thông tin phản hồi cho khách hàng.",
       "D": "Phản hồi không được cung cấp cho nhà phát triển và khách hàng."
     },
-    "ans": "D"
+    "type" : "mcq",
+  "ans": "D"
   },
   {
     "id": "2",
@@ -19,7 +20,8 @@
       "C": "Khóa",
       "D": "Tất cả đều sai"
     },
-    "ans": "A"
+    "type" : "mcq",
+  "ans": "A"
   },
   {
     "id": "3",
@@ -30,7 +32,8 @@
       "C": "Test từng phần",
       "D": "Test chấp nhận"
     },
-    "ans": "D"
+    "type" : "mcq",
+  "ans": "D"
   },
   {
     "id": "4",
@@ -41,7 +44,8 @@
       "C": "Mô hình hóa cách thức luồng dữ liệu qua hệ thống thông tin, mối quan hệ giữa các luồng dữ liệu và cách dữ liệu được lưu trữ tại các vị trí cụ thể.",
       "D": "Dịch mô hình dữ liệu E-R khái niệm cho ứng dụng thành các yêu cầu dữ liệu chuẩn hóa."
     },
-    "ans": "C"
+    "type" : "mcq",
+  "ans": "C"
   },
   {
     "id": "5",
@@ -52,7 +56,8 @@
       "C": "Thiết kế",
       "D": "Thử nghiệm"
     },
-    "ans": "D"
+    "type" : "mcq",
+  "ans": "D"
   },
   {
     "id": "6",
@@ -63,7 +68,8 @@
       "C": "thuộc tính không duy nhất",
       "D": "thuộc tính lặp lại"
     },
-    "ans": "B"
+    "type" : "mcq",
+  "ans": "B"
   },
   {
     "id": "8",
@@ -74,7 +80,8 @@
       "C": "Yêu cầu về chính trị",
       "D": "Yêu cầu về khả năng chuyển đổi"
     },
-    "ans": "D"
+    "type" : "mcq",
+  "ans": "D"
   },
   {
     "id": "9",
@@ -85,7 +92,8 @@
       "C": "Ghi chép",
       "D": "Chuẩn bị câu hỏi"
     },
-    "ans": "D"
+    "type" : "mcq",
+  "ans": "D"
   },
   {
     "id": "10",
@@ -96,7 +104,8 @@
       "C": "nhãn cụm động từ",
       "D": "nhãn cụm danh từ"
     },
-    "ans": "C"
+    "type" : "mcq",
+  "ans": "C"
   },
   {
     "id": "11",
@@ -107,7 +116,8 @@
       "C": "Đào tạo",
       "D": "Cài đặt"
     },
-    "ans": "B"
+    "type" : "mcq",
+  "ans": "B"
   },
   {
     "id": "12",
@@ -118,7 +128,8 @@
       "C": "Quy trình",
       "D": "Nguồn dữ liệu"
     },
-    "ans": "C"
+    "type" : "mcq",
+  "ans": "C"
   },
   {
     "id": "13",
@@ -129,7 +140,8 @@
       "C": "Logic biểu diễn (presentation logic), Logic ứng dụng (application logic)",
       "D": "Lưu trữ dữ liệu (data storage), Logic truy xuất dữ liệu (data access logic), Logic ứng dụng (application logic), Logic biểu diễn (presentation logic)"
     },
-    "ans": "D"
+    "type" : "mcq",
+  "ans": "D"
   },
   {
     "id": "14",
@@ -140,7 +152,8 @@
       "C": "Sơ đồ khối",
       "D": "Lược đồ thực thể-kết hợp"
     },
-    "ans": "A"
+    "type" : "mcq",
+  "ans": "A"
   },
   {
     "id": "15",
@@ -151,7 +164,8 @@
       "C": "danh sách điều kiện",
       "D": "Các luật"
     },
-    "ans": "B"
+    "type" : "mcq",
+  "ans": "B"
   },
   {
     "id": "16",
@@ -162,7 +176,8 @@
       "C": "nghiên cứu tài liệu",
       "D": "Tất cả những điều trên"
     },
-    "ans": "D"
+    "type" : "mcq",
+  "ans": "D"
   },
   {
     "id": "17",
@@ -173,7 +188,8 @@
       "C": "Mô tả chi tiết về từng thành phần DFD",
       "D": "Sơ đồ phân rã không đầy đủ"
     },
-    "ans": "D"
+    "type" : "mcq",
+  "ans": "D"
   },
   {
     "id": "18",
@@ -184,7 +200,8 @@
       "C": "Phân tích",
       "D": "Bảo trì"
     },
-    "ans": "D"
+    "type" : "mcq",
+  "ans": "D"
   },
   {
     "id": "19",
@@ -195,7 +212,8 @@
       "C": "Thiết kế",
       "D": "Lập kế hoạch"
     },
-    "ans": "A"
+    "type" : "mcq",
+  "ans": "A"
   },
   {
     "id": "20",
@@ -206,7 +224,8 @@
       "C": "Chủ thể - thực thể",
       "D": "quan hệ thực thể"
     },
-    "ans": "D"
+    "type" : "mcq",
+  "ans": "D"
   },
   {
     "id": "21",
@@ -217,7 +236,8 @@
       "C": "kho dữ liệu",
       "D": "quy trình"
     },
-    "ans": "D"
+    "type" : "mcq",
+  "ans": "D"
   },
   {
     "id": "22",
@@ -228,7 +248,8 @@
       "C": "Thiết kế vật lý",
       "D": "Thiết kế logic"
     },
-    "ans": "C"
+    "type" : "mcq",
+  "ans": "C"
   },
   {
     "id": "23",
@@ -239,7 +260,8 @@
       "C": "Sơ đồ dữ liệu",
       "D": "Sơ đồ thủ tục"
     },
-    "ans": "B"
+    "type" : "mcq",
+  "ans": "B"
   },
   {
     "id": "24",
@@ -250,7 +272,8 @@
       "C": "Chuyển đổi từng phần",
       "D": "Chuyển đổi theo giai đoạn"
     },
-    "ans": "B"
+    "type" : "mcq",
+  "ans": "B"
   },
   {
     "id": "25",
@@ -261,7 +284,8 @@
       "C": "Xây dựng câu hỏi phỏng vấn",
       "D": "Tất cả các công việc trên"
     },
-    "ans": "D"
+    "type" : "mcq",
+  "ans": "D"
   },
   {
     "id": "26",
@@ -272,7 +296,8 @@
       "C": "Luồng dữ liệu",
       "D": "Phương pháp luận"
     },
-    "ans": "A"
+    "type" : "mcq",
+  "ans": "A"
   },
   {
     "id": "27",
@@ -283,7 +308,8 @@
       "C": "Quy trình xử lý",
       "D": "Luồng dữ liệu"
     },
-    "ans": "B"
+    "type" : "mcq",
+  "ans": "B"
   },
   {
     "id": "28",
@@ -294,7 +320,8 @@
       "C": "Đánh giá dự án",
       "D": "Hỗ trợ người dùng, Sửa lỗi và cung cấp các cải tiến, Đánh giá dự án"
     },
-    "ans": "D"
+    "type" : "mcq",
+  "ans": "D"
   },
   {
     "id": "29",
@@ -305,7 +332,8 @@
       "C": "Yêu cầu về chính trị",
       "D": "Yêu cầu về khả năng chuyển đổi"
     },
-    "ans": "B"
+    "type" : "mcq",
+  "ans": "B"
   },
   {
     "id": "30",
@@ -316,7 +344,8 @@
       "C": "một mô hình dữ liệu toàn doanh nghiệp với các danh mục dữ liệu rất rộng và ít chi tiết được chuẩn bị",
       "D": "một mô hình E-R cụ thể được xây dựng để giúp giải thích phạm vi của nỗ lực thiết kế và phân tích hệ thống cụ thể."
     },
-    "ans": "B"
+    "type" : "mcq",
+  "ans": "B"
   },
   {
     "id": "31",
@@ -327,7 +356,8 @@
       "C": "đánh giá viên nội bộ",
       "D": "giám đốc kinh doanh"
     },
-    "ans": "A"
+    "type" : "mcq",
+  "ans": "A"
   },
   {
     "id": "32",
@@ -338,7 +368,8 @@
       "C": "Thuộc tính tên gọi",
       "D": "Thuộc tính định danh"
     },
-    "ans": "D"
+    "type" : "mcq",
+  "ans": "D"
   },
   {
     "id": "33",
@@ -349,7 +380,8 @@
       "C": "Luồng dữ liệu",
       "D": "Chương trình dữ liệu"
     },
-    "ans": "D"
+    "type" : "mcq",
+  "ans": "D"
   },
   {
     "id": "34",
@@ -360,7 +392,8 @@
       "C": "Thiết kế",
       "D": "Lập kế hoạch"
     },
-    "ans": "A"
+    "type" : "mcq",
+  "ans": "A"
   },
   {
     "id": "35",
@@ -371,7 +404,8 @@
       "C": "Thiết kế ý tưởng",
       "D": "Thiết kế cấp cao"
     },
-    "ans": "A"
+    "type" : "mcq",
+  "ans": "A"
   },
   {
     "id": "36",
@@ -382,7 +416,8 @@
       "C": "Một kho dữ liệu có nhãn cụm danh từ.",
       "D": "Dữ liệu có thể di chuyển từ nguồn bên ngoài vào kho dữ liệu."
     },
-    "ans": "C"
+    "type" : "mcq",
+  "ans": "C"
   },
   {
     "id": "37",
@@ -393,7 +428,8 @@
       "C": "Thiết kế logic gắn liền với một nền tảng phần cứng và phần mềm cụ thể.",
       "D": "Các thông số kỹ thuật được phát triển."
     },
-    "ans": "A"
+    "type" : "mcq",
+  "ans": "A"
   },
   {
     "id": "38",
@@ -404,7 +440,8 @@
       "C": "kỳ vọng về thời gian phản hồi và tính toàn vẹn của dữ liệu",
       "D": "Tất cả những điều trên"
     },
-    "ans": "D"
+    "type" : "mcq",
+  "ans": "D"
   },
   {
     "id": "39",
@@ -415,7 +452,8 @@
       "C": "Định danh",
       "D": "Chỉ số"
     },
-    "ans": "B"
+    "type" : "mcq",
+  "ans": "B"
   },
   {
     "id": "40",
@@ -426,7 +464,8 @@
       "C": "Tạo ngân sách dự án",
       "D": "Xây dựng điều lệ dự án"
     },
-    "ans": "C"
+    "type" : "mcq",
+  "ans": "C"
   },
   {
     "id": "41",
@@ -437,7 +476,8 @@
       "C": "Thiết kế",
       "D": "Bảo trì"
     },
-    "ans": "D"
+    "type" : "mcq",
+  "ans": "D"
   },
   {
     "id": "42",
@@ -448,7 +488,8 @@
       "C": "điều kiện",
       "D": "các quyết định"
     },
-    "ans": "B"
+    "type" : "mcq",
+  "ans": "B"
   },
   {
     "id": "43",
@@ -459,7 +500,8 @@
       "C": "Con người, quy trình xử lý",
       "D": "Tất cả đều sai"
     },
-    "ans": "B"
+    "type" : "mcq",
+  "ans": "B"
   },
   {
     "id": "44",
@@ -470,7 +512,8 @@
       "C": "Phân tích tài liệu",
       "D": "Quan sát"
     },
-    "ans": "D"
+    "type" : "mcq",
+  "ans": "D"
   },
   {
     "id": "45",
@@ -481,7 +524,8 @@
       "C": "Yêu cầu về tốc độ",
       "D": "Yêu cầu về tính sẵn sàng và tin cậy của hệ thống"
     },
-    "ans": "C"
+    "type" : "mcq",
+  "ans": "C"
   },
   {
     "id": "46",
@@ -492,7 +536,8 @@
       "C": "5",
       "D": "18"
     },
-    "ans": "D"
+    "type" : "mcq",
+  "ans": "D"
   },
   {
     "id": "47",
@@ -503,7 +548,8 @@
       "C": "Sơ đồ khối",
       "D": "Lược đồ thực thể-kết hợp"
     },
-    "ans": "D"
+    "type" : "mcq",
+  "ans": "D"
   },
   {
     "id": "48",
@@ -514,7 +560,8 @@
       "C": "ghi chú từ quan sát và từ tài liệu phân tích",
       "D": "Tất cả những điều trên"
     },
-    "ans": "D"
+    "type" : "mcq",
+  "ans": "D"
   },
   {
     "id": "49",
@@ -525,7 +572,8 @@
       "C": "phỏng vấn nhóm",
       "D": "Tất cả những điều trên"
     },
-    "ans": "D"
+    "type" : "mcq",
+  "ans": "D"
   },
   {
     "id": "50",
@@ -536,6 +584,7 @@
       "C": "Nhân viên",
       "D": "Nhà phát triển ứng dụng"
     },
-    "ans": "A"
+    "type" : "mcq",
+  "ans": "A"
   }
 ]
