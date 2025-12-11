@@ -60,7 +60,7 @@ async function loadQuestions() {
     const mcqList = allQuestions.filter(q => q.type === "mcq");
     const shortList = allQuestions.filter(q => q.type === "short");
 
-    const mcqs = getRandomItems(mcqList, 10);
+    const mcqs = getRandomItems(mcqList, 20);
     const shorts = getRandomItems(shortList, 5);
 
     questions = [...mcqs, ...shorts];
