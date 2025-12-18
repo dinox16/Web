@@ -15,6 +15,7 @@ subjects = [
     {"name": "Nền tảng hệ thống máy tính", "slug": "cr250", "icon": "fa-solid fa-microchip"},
     {"name":"Lập trình ứng dụng NET", "slug": "cs464", "icon": "fa-brands fa-windows"},
     {"name":"Phân tích và thiết kế hệ thống", "slug": "cs303", "icon": "fa-solid fa-project-diagram"},
+    {"name": "Perl & Python", "slug": "cs466", "icon": "fa-brands fa-python"}
 ]
 
 def nocache_response(resp):

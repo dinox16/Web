@@ -1,0 +1,603 @@
+[
+    {
+      "id": "1",
+      "q": "Biến nào dưới đây không phải là biến số trong Python?",
+      "opts": {
+        "A": "integer",
+        "B": "string",
+        "C": "float",
+        "D": "list"
+      },
+      "ans": "D",
+       "type": "mcq"
+    },
+    {
+      "id": "2",
+      "q": "Đoạn mã sau đây thực hiện điều gì?\n\nwith open(\"example.txt\", \"a\") as file:\n    file.write(\"Hello, World!\")",
+      "opts": {
+        "A": " Đọc nội dung của tệp \"example.txt\".",
+        "B": " Xóa nội dung của tệp \"example.txt\" và sau đó ghi \"Hello, World!\" vào tệp.",
+        "C": " Ghi \"Hello, World!\" vào tệp \"example.txt\" mà không làm mất nội dung hiện có.",
+        "D": "Tạo một tệp mới có tên \"example.txt\" và ghi \"Hello, World!\" vào tệp đó."
+      },
+      "ans": "C",
+       "type": "mcq"
+    },
+    {
+      "id": "3",
+      "q": "Trong Python, đoạn mã sau đây thực hiện chức năng gì? \nstring.lstrip() \nprint(new_string)",
+      "opts": {
+        "A": "Loại bỏ tất cả các khoảng trắng từ đầu chuỗi string.",
+        "B": "Thêm các ký tự vào đầu chuỗi",
+        "C": " Đảo ngược chuỗi.",
+        "D": " Kiểm tra xem chuỗi có bắt đầu bằng “ ” hay không."
+      },
+      "ans": "A",
+       "type": "mcq"
+    },
+    {
+      "id": "4",
+      "q": "Để tạo một danh sách rỗng trong Python, bạn sử dụng cú pháp nào sau đây?",
+      "opts": {
+        "A": " lst()",
+        "B": " []",
+        "C": " empty_list()",
+        "D": " create_list()"
+      },
+      "ans": "B",
+       "type": "mcq"
+    },
+    {
+      "id": "5",
+      "q": "Trong Python, đoạn mã sau đây in ra kết quả gì? set1 = {'a', 'b', 'c'} set2 = {'b', 'c', 'd', 'e'} difference_set = set1.difference(set2) print(difference_set)",
+      "opts": {
+        "A": "{'a'}",
+        "B": "{'d', 'e'}",
+        "C": "{'b', 'c'}",
+        "D": "{'a', 'd', 'e'}"
+      },
+      "ans": "A",
+       "type": "mcq"
+    },
+    {
+    "id": "6",
+    "q": "Trong Python, đoạn mã sau đây in ra kết quả gì?\n\ndict1 = {'a': 1, 'b': 2}\ndict2 = {'b': 3, 'c': 4}\nresult = {**dict1, **dict2}\nprint(result)",
+    "opts": {
+      "A": "{'a': 1, 'b': 3, 'c': 4}",
+      "B": "{'a': 1, 'b': 2, 'c': 4}",
+      "C": "{'a': 1, 'b': 2}",
+      "D": "{'b': 2, 'c': 4}"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "7",
+    "q": "Trong Python, đoạn mã dưới đây cho kết quả là gì?\n\nmy_list = [1, -4, 7, -7, 9]\nresult = list(filter(lambda x: x > 0, my_list))\nprint(result)",
+    "opts": {
+      "A": "[1, 7, 9]",
+      "B": "[-4, -7]",
+      "C": "[]",
+      "D": "Error"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "8",
+    "q": "Trong Python, đoạn mã sau đây thực hiện chức năng gì?\n\ndef result(a, b):\n    if b == 0:\n        return a\n    return result(b, a % b)",
+    "opts": {
+      "A": "Tìm ước số chung lớn nhất (USCLN) của hai số a và b",
+      "B": "Tìm ước số chung nhỏ nhất (USCN) của hai số a và b",
+      "C": "Tính tổng của hai số a và b",
+      "D": "Tính hiệu của hai số a và b"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "9",
+    "q": "Để định nghĩa một hàm trong Python, bạn sử dụng từ khoá nào sau đây?",
+    "opts": {
+      "A": "function",
+      "B": "define",
+      "C": "def",
+      "D": "func"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "10",
+    "q": "Phương thức nào sau đây kiểm tra một chuỗi mà các ký tự trong chuỗi đều là chữ số?",
+    "opts": {
+      "A": "isalpha()",
+      "B": "isdigit()",
+      "C": "isascii()",
+      "D": "isprintable()"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "11",
+    "q": "Kiểu dữ liệu nào được sử dụng để biểu diễn chuỗi ký tự trong Python?",
+    "opts": {
+      "A": "char",
+      "B": "text",
+      "C": "str",
+      "D": "string"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "12",
+    "q": "Tên biến nào sau đây không đúng cú pháp trong Python?",
+    "opts": {
+      "A": "_variable = 1",
+      "B": "__variable__ = 1",
+      "C": "1_variable = 1",
+      "D": "Không có đáp án nào"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "13",
+    "q": "Trong Python, để tạo một server socket ta sử dụng phương thức nào của socket?",
+    "opts": {
+      "A": "bind()",
+      "B": "connect()",
+      "C": "accept()",
+      "D": "listen()"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": "14",
+    "q": "Khi sử dụng câu lệnh \"with\" để mở một tệp, tại sao không cần phải đóng tệp bằng tay?",
+    "opts": {
+      "A": "Vì đóng tệp tự động xảy ra khi khối \"with\" kết thúc",
+      "B": "Đóng tệp bằng tay vẫn cần thiết khi sử dụng \"with\"",
+      "C": "\"with\" không thể được sử dụng để mở tệp",
+      "D": "Đóng tệp tự động xảy ra chỉ khi sử dụng chế độ \"a\""
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "15",
+    "q": "Trong Python, đoạn mã sau đây thực hiện chức năng gì?\n\nn = int(input(\"Nhập n:\"))\n\ndef result(n):\n    if n == 1:\n        return 1\n    else:\n        return n * result(n - 1)\n\nprint(result(n))",
+    "opts": {
+      "A": "Tính giai thừa của số n và in ra kết quả",
+      "B": "Tính tổng các số từ 1 đến n và in ra kết quả",
+      "C": "Tính lũy thừa của số n với số m nhập vào",
+      "D": "Kiểm tra n có phải số nguyên tố hay không"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "16",
+    "q": "Trong Python, đoạn mã sau đây sẽ in ra kết quả gì?\n\ns = \"Perl & Python\"\nresult = lambda s: s[::-1]\nprint(\"Result:\", result(s))",
+    "opts": {
+      "A": "nohtyP & lreP",
+      "B": "Python & Perl",
+      "C": "nohtyP & Perl",
+      "D": "Python & lreP"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "17",
+    "q": "Đoạn code sau đây làm gì?\n\nfile = open(\"example.txt\", \"r\")\ncontent = file.read()\nfile.close()",
+    "opts": {
+      "A": "Tạo một tệp mới và ghi dữ liệu vào tệp",
+      "B": "Mở tệp để đọc nội dung và lưu vào biến content",
+      "C": "Ghi nội dung của biến content vào tệp",
+      "D": "Xóa tệp khỏi hệ thống"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "18",
+    "q": "Trong Python, từ khoá \"global\" được sử dụng để làm gì?",
+    "opts": {
+      "A": "Định nghĩa biến cục bộ",
+      "B": "Định nghĩa hàm cục bộ",
+      "C": "Định nghĩa biến toàn cục",
+      "D": " Đánh dấu biến toàn cục trong một hàm"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  
+  {
+    "id": "19",
+    "q": "Cho đoạn code sau:\n\nmy_list = [1, 2, 3, 4, 5]\nresult = my_list[1:3]\nprint(result)\n\nGiá trị của biến result là gì?",
+    "opts": {
+      "A": "[2, 3]",
+      "B": "[1, 2]",
+      "C": "[2, 3]",
+      "D": "[1, 2, 3]"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "20",
+    "q": "Trong Python, đoạn mã sau đây sẽ in ra kết quả gì?\n\nnumbers = [10, 5, 15, 50, 100]\nresult = max(numbers, key=lambda x: -x)\nprint(\"result:\", result)",
+    "opts": {
+      "A": "5",
+      "B": "10",
+      "C": "50",
+      "D": "100"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "21",
+    "q": "Đâu là cách thích hợp để đọc nội dung của một tệp văn bản dài hơn một dòng trong Python?",
+    "opts": {
+      "A": "file.read_all()",
+      "B": "file.read_line()",
+      "C": "file.readlines()",
+      "D": "file.readtext()"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "22",
+    "q": "Trong Python, đoạn mã dưới đây cho kết quả là gì?\n\ndef question(lst):\n    for i in range(len(lst) - 1, -1, -1):\n        if lst[i] > 0:\n            return i\n    return -1\n\npython = [32, 44, -9, 4, 8, 47, 10, -10]\nresult = question(python)\nprint(result)",
+    "opts": {
+      "A": "6",
+      "B": "5",
+      "C": "1",
+      "D": "-1"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "23",
+    "q": "Trong Python, đoạn mã sau đây cho kết quả là gì?\n\nfor i, u in enumerate(['P','y','t','h','o','n']):\n    print(i, u, sep='_', end=';')",
+    "opts": {
+      "A": "0_P;1_y;2_t;3_h;4_o;5_n;",
+      "B": "0-'P';1-'y';2-'t';3-'h';4-'o';5-'n';",
+      "C": "0-python;",
+      "D": "python-5;"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "24",
+    "q": "Để gửi và nhận dữ liệu qua một kết nối socket trong Python, sử dụng phương thức nào?",
+    "opts": {
+      "A": "socket.send(), socket.recv()",
+      "B": "socket.transfer()",
+      "C": "socket.write(), socket.read()",
+      "D": "socket.transmit()"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "25",
+    "q": "Cho đoạn code sau:\n\nx = 10\ny = \"20\"\nresult = x + y\nprint(result)\n\nGiá trị của biến result là gì?",
+    "opts": {
+      "A": "30",
+      "B": "\"1020\"",
+      "C": "\"2010\"",
+      "D": "Lỗi"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": "26",
+    "q": "Trong Python, cấu trúc dữ liệu nào cho phép lưu trữ các phần tử không trùng lặp và không có thứ tự?",
+    "opts": {
+      "A": "Set",
+      "B": "Tuple",
+      "C": "List",
+      "D": "Dictionary"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "27",
+    "q": "Lệnh nào sau đây khi thực thi sẽ bị lỗi?",
+    "opts": {
+      "A": "float('inf')",
+      "B": "float('nan')",
+      "C": "float('2019' + '2021')",
+      "D": "float('2019 + 2021')"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": "28",
+    "q": "Trong Python, đoạn mã sau đây in ra kết quả gì?\n\nlist1 = [1, 2, 3]\nlist2 = [4, 5, 6]\nresult = list1 + list2\nprint(result)",
+    "opts": {
+      "A": "[1, 2, 3, 4, 5, 6]",
+      "B": "[1, 2, 3, 4, 5]",
+      "C": "[4, 5, 6]",
+      "D": "[1, 2, 3]"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "29",
+    "q": "Trong Python, biến nào sau đây là biến toàn cục (global variable)?",
+    "opts": {
+      "A": "Biến được khai báo trong hàm",
+      "B": "Biến được khai báo bên ngoài tất cả các hàm",
+      "C": "Biến được khai báo trong hàm nhưng dùng bên ngoài",
+      "D": "Biến được khai báo trong hàm và truy cập bằng tên hàm"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "30",
+    "q": "Cho đoạn code sau:\n\nlst = ['python', 'C#', 100, 'C++', 'Java']\nprint((lst[0] + '-' + lst[-1]).title())\n\nKết quả sẽ là gì?",
+    "opts": {
+      "A": "Thông báo lỗi",
+      "B": "python",
+      "C": "Java",
+      "D": "Python-Java"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": "31",
+    "q": "Đâu là cách để nhập một module trong Python?",
+    "opts": {
+      "A": "use module",
+      "B": "import module",
+      "C": "include module",
+      "D": "require module"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "32",
+    "q": "Cho đoạn code sau:\n\nds = [10, 20, 30, 40, 50, 60]\nprint(ds[-4:-1])\n\nKết quả hiển thị là gì?",
+    "opts": {
+      "A": "[10, 20, 30, 40, 50, 60]",
+      "B": "[30, 40, 50]",
+      "C": "[10, 20, 30, 40, 50]",
+      "D": "Thông báo lỗi"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "33",
+    "q": "Sinh viên hãy cho biết kết quả của phép toán 3^5.",
+    "opts": {
+      "A": "15",
+      "B": "243",
+      "C": "6",
+      "D": "35"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "34",
+    "q": "Cho đoạn code sau:\n\ntpNums = (5, 6, 7, 8, 9)\nprint(tpNums[0] ** 2)\n\nKết quả sẽ là gì?",
+    "opts": {
+      "A": "25",
+      "B": "(25, 36, 49, 64, 81)",
+      "C": "(5) ** 2",
+      "D": "Thông báo lỗi"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "35",
+    "q": "Câu lệnh return trong một hàm Python có ý nghĩa gì?",
+    "opts": {
+      "A": "Hiển thị thông báo lỗi",
+      "B": "Kết thúc chương trình",
+      "C": "In ra một giá trị",
+      "D": "Trả về giá trị từ hàm"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": "36",
+    "q": "Phương thức nào sau đây trả về True nếu tất cả các ký tự của một chuỗi là chữ hoa?",
+    "opts": {
+      "A": "isflower()",
+      "B": "isupper()",
+      "C": "islower()",
+      "D": "isuper()"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "37",
+    "q": "Cho đoạn code sau:\n\nstr1 = \"Python-for-Network-2.0\"\nstr2 = str1.replace(\"Network\", \"Image-Processing\")\nprint(str2 * 1)\n\nKết quả hiển thị là gì?",
+    "opts": {
+      "A": "Thông báo lỗi",
+      "B": "[Python-for-Image-Processing-2.0]",
+      "C": "Python-for-Image-Processing-2.0",
+      "D": "strNew*1"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "38",
+    "q": "Câu lệnh nào sau đây dùng để gọi một hàm và lưu kết quả vào một biến?",
+    "opts": {
+      "A": "result = call_function()",
+      "B": "result(call_function())",
+      "C": "call_function() -> result",
+      "D": "result = function_name()"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": "39",
+    "q": "Để kiểm tra một biến thuộc kiểu dữ liệu nào trong Python, dùng hàm nào?",
+    "opts": {
+      "A": "typeof()",
+      "B": "type()",
+      "C": "check_type()",
+      "D": "data_type()"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "40",
+    "q": "Hàm nào sau đây được sử dụng để tính giá trị tuyệt đối của một số?",
+    "opts": {
+      "A": "abs_value()",
+      "B": "absolute()",
+      "C": "abs()",
+      "D": "positive()"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "41",
+    "q": "Để lấy độ dài của một danh sách (list) trong Python, sử dụng hàm nào?",
+    "opts": {
+      "A": "length()",
+      "B": "size()",
+      "C": "len()",
+      "D": "count()"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "42",
+    "q": "Trong Python, đoạn mã sau đây in ra kết quả gì?\n\nn = 10\nfor i in range(n, 1, -1):\n    if i % 2 == 0:\n        print(i, end=\" \")",
+    "opts": {
+      "A": "8 6 4 2",
+      "B": "10 9 8 7 6 5 4 3 2 1",
+      "C": "10 8 6 4 2",
+      "D": "10 8 6 4E"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "43",
+    "q": "Câu lệnh nào dùng để thêm thiết bị mới 'Firewall' với IP '192.168.0.3' vào dictionary devices?",
+    "opts": {
+      "A": "devices['Firewall'] = '192.168.0.3'",
+      "B": "insert devices, 'Firewall', '192.168.0.3'",
+      "C": "add devices 'Firewall', '192.168.0.3'",
+      "D": "push devices, 'Firewall', '192.168.0.3'"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "44",
+    "q": "Thư viện nào trong Python thường được dùng để gửi yêu cầu HTTP và xử lý phản hồi?",
+    "opts": {
+      "A": "urllib",
+      "B": "socket",
+      "C": "json",
+      "D": "requests"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": "45",
+    "q": "Sự khác biệt chính về cú pháp giữa Perl và Python là gì?",
+    "opts": {
+      "A": "Perl sử dụng thụt lề để định nghĩa khối",
+      "B": "Python yêu cầu dấu chấm phẩy",
+      "C": "Python dùng thụt lề để định nghĩa khối, Perl thì không",
+      "D": "Perl yêu cầu khai báo biến trước"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "46",
+    "q": "Câu lệnh nào dùng để xóa phần tử tại chỉ số 2 trong list ip_addresses?",
+    "opts": {
+      "A": "ip_addresses.delete(2)",
+      "B": "del ip_addresses[2]",
+      "C": "remove ip_addresses(2)",
+      "D": "pop ip_addresses[2]"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "47",
+    "q": "Phương thức nào được dùng để lấy phần tử cuối cùng của một list?",
+    "opts": {
+      "A": "get_last()",
+      "B": "pop()",
+      "C": "remove()",
+      "D": "del"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "48",
+    "q": "Trong Python, đoạn mã sau đây in ra kết quả gì?\n\nmy_list = [1, 2, 3, 4, 5]\nresult = my_list[-2:]\nprint(result)",
+    "opts": {
+      "A": "[4, 5]",
+      "B": "[3, 4, 5]",
+      "C": "[2, 3, 4, 5]",
+      "D": "[2, 3, 4]"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "49",
+    "q": "Lợi thế chính của tuple so với list khi lưu trữ địa chỉ IP cố định là gì?",
+    "opts": {
+      "A": "Tuple có thể thay đổi",
+      "B": "Tuple cho phép trùng lặp",
+      "C": "Tuple nhanh hơn và không thể thay đổi",
+      "D": "Tuple chứa nhiều phần tử hơn"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "50",
+    "q": "Phương thức nào được dùng để kiểm tra sự tồn tại của một giá trị trong Set network_devices?",
+    "opts": {
+      "A": "in",
+      "B": "contains()",
+      "C": "check()",
+      "D": "exists()"
+    },
+    "ans": "A",
+    "type": "mcq"
+  }
+]

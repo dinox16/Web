@@ -430,5 +430,17 @@
     },
     "type" : "mcq",
   "ans": "B"
+  },
+  {
+    "id": "37",
+    "q": "Mục tiêu chính của các thuật toán thay thế trang là gì:",
+    "opts": {
+      "A": "Tăng số lượng lỗi trang",
+      "B": "Giảm số lượng lỗi trang",
+      "C": "Tăng tốc độ thay thế trang",
+      "D": "Giảm tốc độ thay thế trang"
+    },
+    "ans": "B",
+    "type" : "mcq"
   }
 ]
