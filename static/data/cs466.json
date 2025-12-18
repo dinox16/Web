@@ -599,5 +599,186 @@
     },
     "ans": "A",
     "type": "mcq"
-  }
+  },
+  {
+    "id": "51",
+    "q": "Cho đoạn code sau:\n\ndef result(*args):\n    n = len(args)\n    m = args[n-1]\n    return n * m\n\nprint(result(2, 2, 1, 3))\n\nKết quả in ra là gì?",
+    "opts": {
+      "A": "8",
+      "B": "Error",
+      "C": "10",
+      "D": "12"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": "52",
+    "q": "Trong Python, cho đoạn code sau:\n\ndictSt = {}\ndictSt[\"Good bye\"] = \"Tạm biệt\"\ndictSt[\"How are you?\"] = \"Bạn khỏe không\"\nprint(dictSt[1])\n\nKết quả hiển thị trên màn hình là gì?",
+    "opts": {
+      "A": "{\"Good bye\": \"Tạm biệt\"}",
+      "B": "\"Tạm biệt\"",
+      "C": "\"Xin chào\"",
+      "D": "Thông báo lỗi"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+  "id": "53",
+  "q": "Trong Python, độ dài tối đa khi khai báo tên biến là bao nhiêu?",
+  "opts": {
+    "A": "20 kí tự",
+    "B": "100 kí tự",
+    "C": "256 kí tự",
+    "D": "Không có đáp án nào (không có giới hạn)"
+  },
+  "ans": "D",
+  "type": "mcq"
+},
+{
+  "id": "54",
+  "q": "Trong Python, cho đoạn code sau:\n\ncars = ['bmw', 'audi', 'toyota', 'subaru']\nprint(cars[len(cars) - 1])\n\nKết quả sẽ là gì?",
+  "opts": {
+    "A": "Thông báo lỗi",
+    "B": "'toyota'",
+    "C": "'subaru'",
+    "D": "['bmw', 'audi', 'toyota']"
+  },
+  "ans": "C",
+  "type": "mcq"
+},
+{
+    "id": "55",
+    "q": "Trong Python, hàm nào được sử dụng để đảo ngược danh sách (list)?",
+    "opts": {
+      "A": "invert()",
+      "B": "rotate()",
+      "C": "reverse()",
+      "D": "None of the above"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "56",
+    "q": "Trong Python, đoạn mã sau đây thực hiện chức năng gì?\n\nS = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)",
+    "opts": {
+      "A": "Nhận dữ liệu từ client và trả về cùng với địa chỉ của client",
+      "B": "Tạo một đối tượng socket với IPv4 và giao thức UDP",
+      "C": "Tạo một đối tượng socket với IPv4 và giao thức TCP",
+      "D": "Gán địa chỉ và cổng cho socket để lắng nghe kết nối"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "57",
+    "q": "Đoạn mã nào sau đây tạo một danh sách (list) trong Python?",
+    "opts": {
+      "A": "my_list = (1, 2, 3)",
+      "B": "my_list = <1, 2, 3>",
+      "C": "my_list = {1, 2, 3}",
+      "D": "my_list = [1, 2, 3]"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": "58",
+    "q": "Trong Python, đoạn mã sau đây in ra kết quả gì?\n\nx = 10  # int\ny = '20'  # str\nresult = x + y\nprint(result)",
+    "opts": {
+      "A": "Error (Lỗi vì cộng hai kiểu dữ liệu khác nhau)",
+      "B": "30",
+      "C": "\"1020\"",
+      "D": "\"2010\""
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "59",
+    "q": "Đoạn nào sau đây dùng để tạo một từ điển (dictionary) trong Python?",
+    "opts": {
+      "A": "my_dict = {1, 2, 3, 4}",
+      "B": "my_dict = {1: 'a', 2: 'b'}",
+      "C": "my_dict = [1, 'a', 2, 'b']",
+      "D": "my_dict = (1, 'a', 2, 'b')"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+  "id": "60",
+  "q": "Trong Python, phương thức nào của socket cho phép thiết lập kết nối với một địa chỉ IP và cổng?",
+  "opts": {
+    "A": "accept()",
+    "B": "connect()",
+    "C": "bind()",
+    "D": "listen()"
+  },
+  "ans": "B",
+  "type": "mcq"
+},
+{
+  "id": "61",
+  "q": "Trong Python, câu lệnh pip install Django thực hiện chức năng gì?",
+  "opts": {
+    "A": "Cài đặt Framework Django từ Python Package Index (PyPI)",
+    "B": "Tạo một project Django mới",
+    "C": "Khởi động server cho ứng dụng Django",
+    "D": "Tạo một ứng dụng Django mới"
+  },
+  "ans": "A",
+  "type": "mcq"
+},
+{
+  "id": "62",
+  "q": "Cho đoạn code sau: tupleString = (\"Chống\", \"Dịch\", \"Covid-19\"); print(\"Chung_Tay\" + tupleString). Kết quả hiển thị ra màn hình là gì?",
+  "opts": {
+    "A": "\"Chung_Tay Chống Dịch Covid-19\"",
+    "B": "\"Chung_TayChốngDịchCovid-19\"",
+    "C": "Thông báo lỗi (TypeError: không thể cộng str với tuple)",
+    "D": "\"Chung_Tay\" (\"Chống\", \"Dịch\", \"Covid-19\")"
+  },
+  "ans": "C",
+  "type": "mcq"
+},
+{
+  "id": "63",
+  "q": "lst chứa giá trị nào sau khi thực hiện các lệnh sau? lst = [1, 4, 3]; lst.insert(2, 2)",
+  "opts": {
+    "A": "[1, 2, 3, 4]",
+    "B": "[1, 4, 2, 3]",
+    "C": "[1, 4, 3, 2]",
+    "D": "[2, 1, 4, 3]"
+  },
+  "ans": "B",
+  "type": "mcq"
+},
+{
+  "id": "64",
+  "q": "Đầu ra của lệnh sau là gì? str = '20'; print(str * 2)",
+  "opts": {
+    "A": "2020",
+    "B": "40",
+    "C": "Thông báo lỗi",
+    "D": "Tất cả đáp đều sai"
+  },
+  "ans": "A",
+  "type": "mcq"
+},
+{
+  "id": "65",
+  "q": "Cho đoạn code sau: d = {}; d['jon'] = 22; d['bob'] = 27; d['tom'] = 53; d['rob'] = 87; print(len(d))",
+  "opts": {
+    "A": "{22, 27, 53, 87}",
+    "B": "{'jon': 44, 'bob': 27, 'tom': 53, 'rob': 87}",
+    "C": "4",
+    "D": "{'jon', 'bob', 'tom', 'rob'}"
+  },
+  "ans": "C",
+  "type": "mcq"
+}
+
 ]
