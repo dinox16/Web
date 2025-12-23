@@ -990,5 +990,101 @@
     },
     "ans": "C",
     "type" : "mcq"
+  },
+  {
+    "id": "84",
+    "q": "Từ khóa kiểm tra kiểu đối tượng trước khi downcasting?",
+    "opts": {
+      "A": "as",
+      "B": "in",
+      "C": "is",
+      "D": "if"
+    },
+    "ans": "C",
+     "type": "mcq"
+  },
+  {
+    "id": "85",
+    "q": "Kiểu nào không phải tham chiếu?",
+    "opts": {
+      "A": "Lớp (class)",
+      "B": "Giao diện",
+      "C": "Delegate",
+      "D": "Primitive type"
+    },
+    "ans": "D",
+     "type": "mcq"
+  },
+  {
+    "id": "86",
+    "q": "Từ nào không là từ khóa?",
+    "opts": {
+      "A": "do",
+      "B": "if",
+      "C": "partial",
+      "D": "conn"
+    },
+    "ans": "D",
+     "type": "mcq"
+  },
+  {
+    "id": "87",
+    "q": "Phạm vi sau khi dùng get/set?",
+    "opts": {
+      "A": "Public",
+      "B": "Private",
+      "C": "delegate",
+      "D": "Primitive"
+    },
+    "ans": "D",
+     "type": "mcq"
+  },
+  {
+    "id": "88",
+    "q": "Interface có thể khai báo gì?",
+    "opts": {
+      "A": "Interface",
+      "B": "Phương thức trừu tượng",
+      "C": "Biến",
+      "D": "Cả 3"
+    },
+    "ans": "",
+     "type": "mcq"
+  },
+  {
+    "id": "89",
+    "q": "Kế thừa hợp lệ trong C#?",
+    "opts": {
+      "A": "inherits",
+      "B": "extends",
+      "C": ".",
+      "D": ":"
+    },
+    "ans": "D",
+     "type": "mcq"
+  },
+  {
+    "id": "90",
+    "q": "Control nhập nhiều dòng?",
+    "opts": {
+      "A": "TextBox",
+      "B": "RichTextBox",
+      "C": "Label",
+      "D": "ListBox"
+    },
+    "ans": "B",
+     "type": "mcq"
+  },
+  {
+    "id": "91",
+    "q": "Control cho phép nhập liệu?",
+    "opts": {
+      "A": "Button",
+      "B": "RadioButton",
+      "C": "TextBox",
+      "D": "Label"
+    },
+    "ans": "C",
+     "type": "mcq"
   }
 ]
