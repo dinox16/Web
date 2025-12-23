@@ -1086,5 +1086,485 @@
     },
     "ans": "C",
      "type": "mcq"
+  },
+  {
+    "id":  "92",
+    "q":  "Trong C#, kiểu dữ liệu nào sau đây thuộc reference type?",
+    "opts": {
+      "A": "int",
+      "B": "double",
+      "C": "string",
+      "D": "bool"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "93",
+    "q": "Từ khóa nào dùng để ép kiểu tường minh?",
+    "opts": {
+      "A": "auto",
+      "B": "cast",
+      "C": "(type)",
+      "D": "convert"
+    },
+    "ans":  "C",
+    "type":  "mcq"
+  },
+  {
+    "id": "94",
+    "q": "Thuộc tính nào lấy chiều dài chuỗi?",
+    "opts": {
+      "A": "Length",
+      "B": "Count",
+      "C": "Size",
+      "D": "Total"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "95",
+    "q": "Trong C#, biến được khai báo nhưng chưa gán giá trị sẽ?",
+    "opts": {
+      "A": "Tự động gán 0",
+      "B": "Sinh lỗi biên dịch",
+      "C":  "Gán giá trị rác",
+      "D":  "Tự chuyển sang null"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "96",
+    "q": "ToUpper() dùng để?",
+    "opts": {
+      "A": "Tách chuỗi",
+      "B": "Chuyển thành chữ thường",
+      "C":  "Chuyển thành chữ hoa",
+      "D": "Xóa khoảng trắng"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "97",
+    "q": "Lệnh nào dùng để hiển thị chuỗi và xuống dòng?",
+    "opts": {
+      "A": "Console. Write()",
+      "B": "Console.WriteLine()",
+      "C": "Console.Print()",
+      "D": "Console.Display()"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "98",
+    "q": "Trong C#, string là kiểu:",
+    "opts": {
+      "A": "Value type",
+      "B": "Arithmetic type",
+      "C": "Reference type",
+      "D": "Pointer type"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "99",
+    "q": "Để thoát hàm và trả về giá trị ta dùng:",
+    "opts": {
+      "A": "break",
+      "B": "exit",
+      "C": "goto",
+      "D": "return"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": "100",
+    "q": "Chỉ số của mảng C# bắt đầu từ:",
+    "opts":  {
+      "A": "–1",
+      "B":  "0",
+      "C":  "1",
+      "D":  "Tùy loại mảng"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "101",
+    "q": "Mảng jagged là?",
+    "opts": {
+      "A": "Mảng hai chiều",
+      "B": "Mảng đa chiều cố định",
+      "C": "Mảng của mảng (không đồng nhất độ dài)",
+      "D": "Mảng chỉ chứa số nguyên"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "102",
+    "q": "Lớp nào quản lý danh sách theo cặp key–value? ",
+    "opts": {
+      "A": "List",
+      "B": "Queue",
+      "C": "Stack",
+      "D": "Dictionary"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": "103",
+    "q": "Collection nào hoạt động theo nguyên tắc FIFO? ",
+    "opts": {
+      "A": "Stack",
+      "B": "Queue",
+      "C": "List",
+      "D": "Hashtable"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id":  "104",
+    "q":  "Phương thức Remove(key) thuộc lớp nào?",
+    "opts": {
+      "A": "List",
+      "B": "SortedList",
+      "C": "ArrayList",
+      "D": "Stack"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "105",
+    "q": "Thành phần nào bắt buộc cùng tên với lớp?",
+    "opts": {
+      "A": "Property",
+      "B": "Method",
+      "C": "Constructor",
+      "D": "Destructor"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "106",
+    "q": "Tính đóng gói (Encapsulation) nghĩa là?",
+    "opts":  {
+      "A": "Kế thừa nhiều lớp",
+      "B":  "Che giấu dữ liệu qua property",
+      "C": "Thay đổi cách chạy runtime",
+      "D":  "Tự động quản lý bộ nhớ"
+    },
+    "ans":  "B",
+    "type":  "mcq"
+  },
+  {
+    "id": "107",
+    "q": "Destructor trong C#:",
+    "opts": {
+      "A": "Có tham số",
+      "B": "Có thể overload",
+      "C": "Không có tham số, bắt đầu bằng ~",
+      "D": "Không tồn tại"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "108",
+    "q": "Property dùng để:",
+    "opts": {
+      "A": "Truy cập biến private an toàn",
+      "B":  "Tạo mảng",
+      "C": "Tạo đối tượng",
+      "D": "Gọi hàm"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "109",
+    "q": "Một lớp có thể có bao nhiêu constructor?",
+    "opts": {
+      "A": "1",
+      "B": "2",
+      "C": "Không giới hạn",
+      "D": "Tối đa 5"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "110",
+    "q": "Truy cập biến thành viên từ đối tượng dùng ký hiệu:",
+    "opts": {
+      "A": "->",
+      "B": "::",
+      "C": ". (dấu chấm)",
+      "D": "#"
+    },
+    "ans":  "C",
+    "type":  "mcq"
+  },
+  {
+    "id": "111",
+    "q": "C# hỗ trợ kiểu kế thừa nào?",
+    "opts": {
+      "A": "Đa kế thừa lớp",
+      "B":  "Đơn kế thừa lớp",
+      "C":  "Không hỗ trợ kế thừa",
+      "D": "Kế thừa từ nhiều class như C++"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id":  "112",
+    "q":  "Từ khóa override dùng cho:",
+    "opts": {
+      "A": "Ẩn phương thức",
+      "B": "Ghi đè phương thức ảo",
+      "C": "Tạo constructor",
+      "D": "Tạo property"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "113",
+    "q": "Interface có thể chứa? ",
+    "opts": {
+      "A": "Phương thức có nội dung",
+      "B": "Field private",
+      "C": "Khai báo phương thức không có thân",
+      "D": "Constructor"
+    },
+    "ans":  "C",
+    "type": "mcq"
+  },
+  {
+    "id": "114",
+    "q": "XAML là gì?",
+    "opts": {
+      "A": "Ngôn ngữ lập trình",
+      "B": "Ngôn ngữ khai báo giao diện",
+      "C": "Ngôn ngữ truy vấn",
+      "D": "Ngôn ngữ máy"
+    },
+    "ans":  "B",
+    "type":  "mcq"
+  },
+  {
+    "id": "115",
+    "q": "Control dùng để hiển thị dữ liệu dạng bảng:",
+    "opts": {
+      "A": "ListBox",
+      "B": "DataGrid",
+      "C":  "WrapPanel",
+      "D":  "Menu"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id":  "116",
+    "q":  "StackPanel sắp xếp control theo:",
+    "opts": {
+      "A": "Lưới",
+      "B":  "Cạnh màn hình",
+      "C": "Dọc hoặc ngang",
+      "D": "Tự động xuống dòng"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "117",
+    "q": "Event SelectionChanged thuộc control nào?",
+    "opts": {
+      "A": "TextBox",
+      "B": "Menu",
+      "C": "Button",
+      "D": "ListBox / ComboBox / DataGrid"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": "118",
+    "q": "Grid. ColumnSpan dùng để:",
+    "opts": {
+      "A": "Tạo nhiều cột",
+      "B": "Chiếm nhiều cột",
+      "C": "Chiếm nhiều dòng",
+      "D":  "Tạo khoảng cách"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "119",
+    "q": "Page dùng để:",
+    "opts": {
+      "A":  "Hiển thị cửa sổ độc lập",
+      "B": "Dùng trong Navigation, chuyển trang",
+      "C": "Chứa logic xử lý",
+      "D": "Hiển thị menu"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "120",
+    "q": "Code First bắt đầu từ đâu?",
+    "opts": {
+      "A": "Tạo database thủ công",
+      "B":  "Tạo class → EF sinh database",
+      "C": "Thiết kế giao diện",
+      "D": "Tạo edmx"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "121",
+    "q": "DbSet trong EF dùng để? ",
+    "opts": {
+      "A": "Tạo giao diện",
+      "B": "Lưu file",
+      "C": "Đại diện bảng trong CSDL",
+      "D": "Gọi API"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id":  "122",
+    "q":  "Trong MVVM, Command giúp:",
+    "opts": {
+      "A": "Viết sự kiện trong code-behind",
+      "B": "Tách logic khỏi View, xử lý hành động trong ViewModel",
+      "C":  "Gọi SQL trực tiếp",
+      "D": "Tạo model"
+    },
+    "ans":  "B",
+    "type":  "mcq"
+  },
+  {
+    "id": "123",
+    "q": "DataAnnotations dùng để:",
+    "opts": {
+      "A": "Tạo DataGrid",
+      "B": "Quy định mapping và ràng buộc dữ liệu",
+      "C": "Gửi request API",
+      "D": "Tăng tốc chương trình"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "124",
+    "q": "Thuộc tính [Required] nghĩa là:",
+    "opts": {
+      "A":  "Không được null",
+      "B": "Tự động tăng",
+      "C": "Khóa chính",
+      "D": "Phải là số"
+    },
+    "ans":  "A",
+    "type": "mcq"
+  },
+  {
+    "id": "125",
+    "q": "Navigation Property dùng để:",
+    "opts": {
+      "A":  "Điều hướng UI",
+      "B": "Liên kết bảng trong CSDL",
+      "C": "Tạo khóa chính",
+      "D": "Sinh UI tự động"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "126",
+    "q": "Lệnh nào tạo database khi chưa tồn tại?",
+    "opts": {
+      "A": "db.Create()",
+      "B": "db.Database.CreateIfNotExists()",
+      "C": "db.Generate()",
+      "D": "db.Init()"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "127",
+    "q": "ML. NET là gì?",
+    "opts": {
+      "A": "Framework deep learning của Python",
+      "B": "Thư viện machine learning cho . NET",
+      "C": "Công cụ thiết kế UI",
+      "D": "Mô hình AI thương mại"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "128",
+    "q": "ONNX là gì?",
+    "opts": {
+      "A": "Ngôn ngữ lập trình AI",
+      "B": "Định dạng mô hình AI dùng chung cho nhiều nền tảng",
+      "C": "Framework huấn luyện mô hình",
+      "D": "Công cụ tạo UI"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "129",
+    "q": "DbContext trong Database First dùng để:",
+    "opts": {
+      "A": "Tạo UI",
+      "B": "Kết nối và thao tác CSDL",
+      "C": "Tạo báo cáo",
+      "D": "Chuyển đổi ảnh"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "130",
+    "q": "Sự kiện phổ biến của Button là:",
+    "opts": {
+      "A": "Loaded",
+      "B": "Changed",
+      "C": "Click",
+      "D": "Submit"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "131",
+    "q": "DataGrid.AutoGenerateColumns = False nghĩa là:",
+    "opts": {
+      "A":  "DataGrid tự tạo cột",
+      "B": "Lập trình viên phải tự khai báo cột",
+      "C": "Không hiển thị dữ liệu",
+      "D": "Chỉ đọc dữ liệu"
+    },
+    "ans": "B",
+    "type": "mcq"
   }
 ]
