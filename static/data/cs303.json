@@ -856,11 +856,11 @@
     "q": "Thành phần của bảng quyết định liệt kê các điều kiện liên quan đến quyết định được gọi là:",
     "opts": {
       "A": "Các hành động",
-      "B": "Tổ hợp các điều kiện / studoc",
-      "C": "Danh sách điều kiện / mạng",
+      "B": "Tổ hợp các điều kiện",
+      "C": "Danh sách điều kiện",
       "D": "Các luật"
     },
-    "ans": "C",
+    "ans": "B",
     "type": "mcq"
   },
   {
@@ -1400,7 +1400,7 @@
       "C": "Các đặc điểm về dữ liệu là luôn hợp lý",
       "D": "Tất cả đều đúng"
     },
-    "ans": "B",
+    "ans": "D",
     "type": "mcq"
   },
   {
