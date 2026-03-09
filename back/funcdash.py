@@ -13,9 +13,10 @@ subjects = [
     {"name": "Cấu Trúc Dữ Liệu Và Giải Thuật", "slug": "cs316", "icon": "fas fa-sitemap"},
     {"name": "Triết Học Mác - Lênin", "slug" : "phi150", "icon": "fas fa-university"},
     {"name": "Nền tảng hệ thống máy tính", "slug": "cr250", "icon": "fa-solid fa-microchip"},
-    {"name":"Lập trình ứng dụng NET", "slug": "cs464", "icon": "fa-brands fa-windows"},
-    {"name":"Phân tích và thiết kế hệ thống", "slug": "cs303", "icon": "fa-solid fa-project-diagram"},
-    {"name": "Perl & Python", "slug": "cs466", "icon": "fa-brands fa-python"}
+    {"name": "Lập trình ứng dụng NET", "slug": "cs464", "icon": "fa-brands fa-windows"},
+    {"name": "Phân tích và thiết kế hệ thống", "slug": "cs303", "icon": "fa-solid fa-project-diagram"},
+    {"name": "Perl & Python", "slug": "cs466", "icon": "fa-brands fa-python"},
+    {"name": "Hệ Quản Trị Cơ Sở Dữ Liệu", "slug":"is401","icon":"fa-server"}
 ]
 
 def nocache_response(resp):
