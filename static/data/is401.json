@@ -1,0 +1,770 @@
+[
+  {
+    "id": "1",
+    "q": "Kích thước kiểu CHAR là:",
+    "opts": {
+      "A": "2 bytes",
+      "B": "8 bytes",
+      "C": "1 bytes",
+      "D": "4 bytes"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "2",
+    "q": "Câu lệnh nào dưới đây trả về số lượng nhân viên trong một công ty:",
+    "opts": {
+      "A": "Select count(Emp_Code) from Employee",
+      "B": "Select sum(Emp_Code) from Employee",
+      "C": "Select max(Emp_Code) from Employee",
+      "D": "Select Emp_Code from Employee where count(employee) >0"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "3",
+    "q": "Câu lệnh đúng để xem các bản ghi về khách hàng có số điện thoại:",
+    "opts": {
+      "A": "SELECT * from customer where phone IS NOT NULL",
+      "B": "SELECT * from customer where phone = NOT NULL",
+      "C": "SELECT * from customer where phone NOT NULL",
+      "D": "SELECT * from customer where HAVING phone NOT NULL"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "4",
+    "q": "Câu lệnh nào dưới đây hiển thị điểm cao nhất của môn mà học sinh nhận được:",
+    "opts": {
+      "A": "SELECT Student_Name, Student_Subject, Max(Marks) FROM Student_Acads GROUP BY Student_Subject",
+      "B": "SELECT Student_Subject, FROM Student_Acads GROUP BY Student_Subject WHERE Max(Marks)",
+      "C": "SELECT Student_Subject, Max(Marks) FROM Student_Acads GROUP BY Student_Subject",
+      "D": "SELECT Student_Subject, Max(Marks) FROM Student_Acads WHERE Mac(Marks) GROUP BY Student_Subject"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "5",
+    "q": "Bạn sử dụng câu lệnh nào để xóa bảng Employee mà không tốn tài nguyên của hệ thống và không ghi trong các bản nhật ký giao dịch (transaction log):",
+    "opts": {
+      "A": "DROP",
+      "B": "TRUNCATE",
+      "C": "DELETE",
+      "D": "Không thể dùng câu lệnh nào như trên"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "6",
+    "q": "Câu lệnh nào sẽ trả về các mặt hàng như là sô-cô-la (chocolate) hoặc bánh nhân Chocopie?",
+    "opts": {
+      "A": "Select * from eatables where item_desc LIKE 'CHOCO*'",
+      "B": "Select from eatables where item_desc = 'CHOCO%'",
+      "C": "Select * from eatables where item_desc LIKE 'CHOCO%'",
+      "D": "Select * from eatables where item_desc LIKE '%CHOCO?'"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "7",
+    "q": "__________ đảm bảo rằng mối quan hệ được định nghĩa giữa các bảng là đúng đắn và hiện tượng xóa / sửa không hợp lệ không được xảy ra:",
+    "opts": {
+      "A": "Toàn vẹn thực thể",
+      "B": "Toàn vẹn do người dùng định nghĩa",
+      "C": "Toàn vẹn tham chiếu",
+      "D": "Toàn vẹn miền"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "8",
+    "q": "Để xem trường regis_dt với các giá trị từ 10/02/2004 đến 12/02/2004, bạn dùng câu lệnh nào dưới đây:",
+    "opts": {
+      "A": "SELECT * FROM Student WHERE regis_dt BETWEEN '10/02/2004' AND '12/02/2004'",
+      "B": "SELECT * FROM Student WHERE regis_dt BETWEEN #10/02/2004# AND #12/02/2004#",
+      "C": "SELECT * FROM Student WHERE regis_dt NOT BETWEEN #10/02/2004# AND #12/02/2004#",
+      "D": "SELECT * FROM Student WHERE regis_dt = #10/02/2004# AND regis_dt #12/02/2004#"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "9",
+    "q": "Câu lệnh nào dưới đây trả về tên của nhân viên (employee) có lương cao nhất trong mỗi phòng (department):",
+    "opts": {
+      "A": "SELECT Emp_Name, Dep_Code, Salary FROM Employee WHERE Employee.Salary = (Select Max(Salary) from Employee GROUP BY Dep_Code);",
+      "B": "SELECT Emp_Name, Dep_Code, Salary FROM Employee WHERE Employee.Salary In (Select Max(Salary) from Employee GROUP BY Dep_Code HAVING Max(Salary));",
+      "C": "SELECT Emp_Name, Dep_Code, Salary FROM Employee WHERE Employee.Salary In (Select Max(Salary) from Employee GROUP BY Dep_Code);",
+      "D": "SELECT Emp_Name, Dep_Code, Salary FROM Employee WHERE Employee.Salary In (Select Salary from Employee GROUP BY Dep_Code HAVING Max(Salary));"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "10",
+    "q": "Bạn muốn kiểm tra xem tiền lương của tất cả nhân viên của mình trong trường hợp cơ bản tăng 10%, bạn sẽ dùng câu lệnh nào dưới đây:",
+    "opts": {
+      "A": "Select emp_code, basic*.10 from employee order by emp_code",
+      "B": "Select emp_code, basic+basic*.01 from employee order by emp_code",
+      "C": "Select emp_code, basic+10 from employee order by emp_code",
+      "D": "Select emp_code, basic+basic*.10 from employee order by emp_code"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": "11",
+    "q": "Chỉ ra câu lệnh đồng loạt tăng giá sách lên 10%:",
+    "opts": {
+      "A": "UPDATE BookDetails SET Book_Price*10/100",
+      "B": "UPDATE BookDetails SET Book_Price=Book_Price*10/100",
+      "C": "UPDATE Book_Price=Book_Price+Book_Price*10/100 FROM BookDetails",
+      "D": "UPDATE BookDetails SET Book_Price=Book_Price+Book_Price*10/100"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": "12",
+    "q": "Update Employee set Sal = Sal + (Sal * .20) where Sal between 2000 and 4000. Câu lệnh trên sẽ cho ra kết quả như thế nào?",
+    "opts": {
+      "A": "Câu truy vấn sẽ tăng 20% lương cho các nhân viên có lương trong khoảng từ 2000 đến 4000",
+      "B": "Câu truy vấn sẽ tăng 20% lương (sal - viết tắt của salary) cho các nhân viên (employee) có lương trong khoảng từ 2000 đến 4000. Đồng thời, nó cũng tăng lương cho các nhân viên có lương 2000 và 4000.",
+      "C": "Câu truy vấn sẽ tăng 20% lương cho các nhân viên có lương trong khoảng từ 2000 đến 4000, trừ những người có mức lương 2000 và 4000.",
+      "D": "Câu lệnh truy vấn sẽ cập nhật cột lương là 20% cho mỗi nhân viên"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "13",
+    "q": "Dùng câu lệnh nào để xóa tất cả các dòng trong một bảng:",
+    "opts": {
+      "A": "DROP TABLE",
+      "B": "DELETE TABLE",
+      "C": "DELETE ROWS",
+      "D": "TRUNCATE TABLE"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": "14",
+    "q": "Bạn muốn kiểm tra xem tiền lương của tất cả nhân viên của mình trong trường hợp cơ bản tăng 10%, bạn sẽ dùng câu lệnh nào dưới đây:",
+    "opts": {
+      "A": "Select emp_code, basic*.10 from employee order by emp_code",
+      "B": "Select emp_code, basic+basic*.01 from employee order by emp_code",
+      "C": "Select emp_code, basic+10 from employee order by emp_code",
+      "D": "Select emp_code, basic+basic*.10 from employee order by emp_code"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": "15",
+    "q": "Câu lệnh SQL nào được dùng để cập nhật dữ liệu từ database:",
+    "opts": {
+      "A": "Update",
+      "B": "Save as",
+      "C": "Modify",
+      "D": "Save"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "16",
+    "q": "Hãy chọn phương án ứng với cú pháp câu lệnh xóa dữ liệu trong các phương án dưới đây:",
+    "opts": {
+      "A": "DROP",
+      "B": "DELETE WHERE",
+      "C": "DROP WHERE",
+      "D": "DELETE"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "17",
+    "q": "Hãy chọn phương án ứng với ý nghĩa của nhóm lệnh BEGIN TRAN KHỐI LỆNH COMMIT:",
+    "opts": {
+      "A": "Để thực hiện mở transaction bằng lệnh BEGIN TRAN và kết thúc bằng lệnh COMMIT – sau lệnh này những cập nhật dữ liệu sẽ được xác nhận vào trong database, transaction được đóng lại và các khóa (lock) trên các bảng được cập nhật được thả ra ta thực hiện lệnh",
+      "B": "Không có lệnh này trong SQL SERVER",
+      "C": "Để thực hiện mở transaction bằng lệnh COMMIT và kết thúc bằng lệnh BEGIN – sau lệnh này những cập nhật dữ liệu sẽ được xác nhận vào trong database, transaction được đóng lại và các khóa (lock) trên các bảng được cập nhật được thả ra ta thực hiện lệnh",
+      "D": "Để thực hiện đóng transaction bằng lệnh BEGIN TRAN và mở bảng lệnh COMMIT – sau lệnh này những cập nhật dữ liệu sẽ được xác nhận vào trong database, transaction được đóng lại và các khóa (lock) trên các bảng được cập nhật được thả ra ta thực hiện lệnh"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "18",
+    "q": "Hãy chọn câu lệnh Select thực hiện đúng trong các câu lệnh Select dưới đây:",
+    "opts": {
+      "A": "SELECT * FROM t1 ORDER BY id DESC",
+      "B": "SELECT * FROM t1 WHERE BY id",
+      "C": "SELECT * WHERE t1 ORDER BY id ASC",
+      "D": "SELECT % FROM t1 WHERE BY id"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "19",
+    "q": "Cơ sở dữ liệu 'QuanLyTuyenSinh' có bảng: DiemKhoiA(SoBaoDanh Nvarchar(50), DiemToan Float, DiemLy Float, DiemHoa Float, DiemUuTien Float, TongDiem Float, KetQua Nvarchar(50)). Hãy chọn câu lệnh đếm tổng số thí sinh có kết quả 'đỗ':",
+    "opts": {
+      "A": "Select count(KetQua) From QuanLyTuyenSinh Where KetQua = 'Đỗ'",
+      "B": "Select count(KetQua) From QuanLyTuyenSinh Order KetQua = 'Đỗ'",
+      "C": "Select count(KetQua) From QuanLyTuyenSinh Having KetQua = 'Đỗ'",
+      "D": "Select count(KetQua) From QuanLyTuyenSinh Where KetQua = 'TRƯỢT'"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "20",
+    "q": "Trong câu lệnh Select, sau từ khoá 'Having' là gì? Hãy chọn phương án đúng trong các phương án dưới đây:",
+    "opts": {
+      "A": "Biểu thức điều kiện của lệnh select",
+      "B": "Biểu thức điều kiện của nhóm",
+      "C": "Ràng buộc cột trong nhóm",
+      "D": "Ràng buộc bản ghi trong bảng"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "21",
+    "q": "Trong lệnh Create trigger, sau mệnh đề ON là gì?",
+    "opts": {
+      "A": "Là một kết nối của các bảng mà trigger cần tạo sẽ tác động đến",
+      "B": "Là tên của bảng mà trigger cần tạo sẽ tác động đến",
+      "C": "Là tên của cơ sở dữ liệu mà trigger cần tạo sẽ tác động đến",
+      "D": "Là tên của bảng mà trigger cần tạo sẽ không tác động đến"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "22",
+    "q": "Sau khi tạo Trigger, bảng Deleted được tạo:",
+    "opts": {
+      "A": "Được Tạo Bởi Sau Khi Chạy Trigger Bởi Lệnh Exec",
+      "B": "Tự Động Sau Khi Biên Dịch Trigger Vừa Tạo",
+      "C": "Bởi Lệnh create Delete",
+      "D": "Bởi Lệnh Create Trigger"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "23",
+    "q": "Để gán giá trị cho biến ta thực hiện lệnh:",
+    "opts": {
+      "A": "Set @biến = giá trị Hoặc Select @biến = tên_cột From tên_bảng",
+      "B": "Set @biến = giá trị Hoặc Select @biến = tên_cột From tên_bảng",
+      "C": "Gán @biến = giá trị Hoặc Select @biến = tên_cột From tên_bảng",
+      "D": "Set @biến = giá trị Hoặc Sel @biến = tên_cột From tên_bảng"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "24",
+    "q": "Cho biết phương án nào sau đây là cú pháp câu lệnh khai báo tham số?",
+    "opts": {
+      "A": "@@",
+      "B": "@",
+      "C": "declare @",
+      "D": "var @"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "25",
+    "q": "Cho biết phương án nào sau đây là cú pháp câu lệnh thêm một cột vào bảng trong SQL?",
+    "opts": {
+      "A": "add [ràng buộc]",
+      "B": "insert table [ràng buộc]",
+      "C": "alter table Add [ràng buộc]",
+      "D": "add table [ràng buộc]"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "26",
+    "q": "Tạo cấu trúc bảng trong SQL, nếu tại mục Data Type của cột tương ứng người dùng chọn kiểu 'Nvarchar(50)' thì dữ liệu của cột đó nhận giá trị ở dạng nào trong các phương án sau?",
+    "opts": {
+      "A": "Chuỗi với độ dài chính xác .Vntime",
+      "B": "Chuỗi với độ dài cố định",
+      "C": "Chuỗi với độ dài chính xác hỗ trợ Unicode",
+      "D": "Chuỗi với độ dài cố định hỗ trợ Unicode"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "27",
+    "q": "Mệnh đề ORDER BY có thể được sử dụng kèm với:",
+    "opts": {
+      "A": "DESC",
+      "B": "ASC",
+      "C": "Không có gì cả",
+      "D": "Tất cả đều đúng"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": "28",
+    "q": "Giao dịch là gì?",
+    "opts": {
+      "A": "Tập các thao tác không thể chia nhỏ ra thực hiện được",
+      "B": "Là mức độ cô lập giao dịch",
+      "C": "Tập các thao tác có thể chia nhỏ ra thực hiện",
+      "D": "Mức độ cô lập giao dịch dữ liệu không thể sửa"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "29",
+    "q": "Hai thao tác thực hiện đồng thời cũng có kết quả như thực hiện tuần tự Oi, Oj hoặc Oj, Oi",
+    "opts": {
+      "A": "Tính hoán vị",
+      "B": "Tính tương thích",
+      "C": "Phép tính chiều",
+      "D": "Phép tính chia"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "30",
+    "q": "Các bảng ảo được tạo ra khi thực hiện update trigger?",
+    "opts": {
+      "A": "inserted",
+      "B": "inserted và deleted",
+      "C": "deleted",
+      "D": "updated"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "31",
+    "q": "Phân mảnh dọc trong dữ liệu phân tán thực hiện như thế nào",
+    "opts": {
+      "A": "Phép giao",
+      "B": "Phép chọn",
+      "C": "Phép chiều",
+      "D": "Phép chia"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "32",
+    "q": "Cho bảng Khoa gồm (makhoa char(10), tenkhoa char(30), dienthoai char(11)). Để tạo bảng GiangVien gồm (magv int, hotengv char(30), luong decimal(5,2), makhoa char(10)) trong đó magv là khóa chính, makhoa là khóa phụ ta thực hiện lệnh nào dưới đây:",
+    "opts": {
+      "A": "Create table GiangVien (magv int not null primary key, hotengv char(30), luong decimal(5,2), makhoa char(10), constraint fk_makhoa foreign key (makhoa) references Khoa(makhoa))",
+      "B": "Create table GiangVien (magv int not null, hotengv char(30), luong decimal(5,2), makhoa char(10), constraint fk_makhoa khoaphu (makhoa) references Khoa(makhoa))",
+      "C": "Create table GiangVien (magv not null primary key, hotengv char(30), luong decimal(5,2), makhoa char(10), constraint fk_makhoa primary key(makhoa) references Khoa(makhoa))",
+      "D": "Create table GiangVien (magv int not null primary key, hotengv char(30), luong decimal(5,2), makhoa char(10), constraint fk_makhoa foreign key(makhoa) references Giangvien(makhoa))"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "33",
+    "q": "Hãy chọn phương án ứng với tác dụng của câu lệnh ALTER TABLE trong các phương án sau:",
+    "opts": {
+      "A": "Xóa một bảng trong một cơ sở dữ liệu",
+      "B": "Tất cả đáp án đều đúng",
+      "C": "Chỉnh sửa cấu trúc của Table đã được tạo trước đó",
+      "D": "Tạo ra một bảng trong một cơ sở dữ liệu"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "34",
+    "q": "Giao dịch từ xa là gì?",
+    "opts": {
+      "A": "tập hợp 1 yêu cầu từ xa chỉ truy cập đến 1 database",
+      "B": "tập hợp nhiều yêu cầu từ xa chỉ truy cập đến 1 database",
+      "C": "tập hợp dữ liệu chỉ xóa dữ liệu không sửa dữ liệu",
+      "D": "tập hợp nhiều yêu cầu từ xa chỉ truy cập đến nhiều database"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "35",
+    "q": "Cho biết phương án nào sau đây là cú pháp câu lệnh cập nhật (hoặc sửa) dữ liệu trong Table?",
+    "opts": {
+      "A": "MODIFY table_name SET column1 = value1 WHERE condition",
+      "B": "UPDATE table_name SET column1 = value1 WHERE condition",
+      "C": "CHANGE table_name SET column1 = value1 WHERE condition",
+      "D": "ALTER table_name SET column1 = value1 WHERE condition"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "36",
+    "q": "Cho biết phương án nào sau đây là cú pháp câu lệnh khai báo biến?",
+    "opts": {
+      "A": "var",
+      "B": "declare @",
+      "C": "var @",
+      "D": "@"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "37",
+    "q": "Mệnh đề Where dùng để:",
+    "opts": {
+      "A": "Khai báo điều kiện lọc dữ liệu",
+      "B": "Khai báo điều kiện kết nối các bảng",
+      "C": "A và B đúng",
+      "D": "Tất cả đều sai"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "38",
+    "q": "Khôi phục dữ liệu gồm",
+    "opts": {
+      "A": "Dữ liệu bị mất do sự cố giao dịch",
+      "B": "Khôi phục dữ liệu bị mất do sự cố giao dịch",
+      "C": "Dữ liệu không mất do sự cố giao dịch",
+      "D": "Khôi phục dữ liệu bị mất do sự cố giao dịch, sự cố hệ thống và sự cố vị trí"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": "39",
+    "q": "Trong khai báo thủ tục, thân thủ tục chính bắt đầu sau từ khoá nào trong các phương án sau?",
+    "opts": {
+      "A": "create procedure",
+      "B": "begin",
+      "C": "create",
+      "D": "as"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": "40",
+    "q": "Câu lệnh SQL nào được dùng để chèn thêm dữ liệu vào database",
+    "opts": {
+      "A": "Add record",
+      "B": "Insert on",
+      "C": "Insert Into",
+      "D": "Add new"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "41",
+    "q": "Cho biết phương án nào sau đây là cú pháp câu lệnh sửa thủ tục?",
+    "opts": {
+      "A": "alter table",
+      "B": "alter stored procedure []",
+      "C": "alter procedures []",
+      "D": "alter procedure []"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": "42",
+    "q": "Tính chất chuyển CSDL từ tình trạng nhất quán này sang tình trạng nhất quán khác.",
+    "opts": {
+      "A": "Tính cô lập",
+      "B": "Tính nhất quán",
+      "C": "Tính lâu dài",
+      "D": "Tính nguyên tố"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": "43",
+    "q": "SET TRANSACTION ISOLATION LEVEL READ COMMITTED",
+    "opts": {
+      "A": "Mức độ cô lập giao dịch cao nhất",
+      "B": "Mức độ cô lập giao dịch đọc dữ liệu khi commit",
+      "C": "Mức độ cô lập giao dịch đọc dữ liệu chưa commit",
+      "D": "Mức độ cô lập giao dịch dữ liệu không thể sửa"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "44",
+    "q": "Trigger dùng để:",
+    "opts": {
+      "A": "Kích hoạt update dữ liệu tự động",
+      "B": "Thêm dữ liệu vào bảng",
+      "C": "Xóa dữ liệu của bảng",
+      "D": "Tất cả đều đúng"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "45",
+    "q": "Lịch thao tác là khả tuần tự nếu",
+    "opts": {
+      "A": "đồ thị chờ có chu trình",
+      "B": "đồ thị ưu tiên có chu trình",
+      "C": "đồ thị ưu tiên không có chu trình",
+      "D": "đồ thị chờ không có chu trình"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "46",
+    "q": "Giao dịch phân tán?",
+    "opts": {
+      "A": "Giao dịch thực hiện trên 1 vị trí lưu trữ dữ liệu.",
+      "B": "1 yêu cầu thực hiện trên nhiều hơn 2 vị trí lưu trữ dữ liệu.",
+      "C": "Giao dịch thực hiện trên nhiều hơn 2 vị trí lưu trữ dữ liệu.",
+      "D": "1 yêu cầu thực hiện trên 1 vị trí lưu trữ dữ liệu."
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "47",
+    "q": "Lệnh dùng để xóa toàn bộ dữ liệu Table:",
+    "opts": {
+      "A": "DROP",
+      "B": "DELETE WHERE",
+      "C": "DROP WHERE",
+      "D": "TRUNCATE TABLE"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": "48",
+    "q": "Trong SQL ta có 3 thành phần: Column Name, Data Type, Allow Nulls để tạo cấu trúc bảng. Cho biết phương án nào dưới đây là tác dụng của Allow Nulls?",
+    "opts": {
+      "A": "Người dùng không được để trống tất cả các cột trong bảng.",
+      "B": "Không bắt buộc người dùng nhập dữ liệu.",
+      "C": "Ràng buộc người dùng bắt buộc nhập dữ liệu cho cột tương ứng hoặc không.",
+      "D": "Bắt buộc người dùng nhập dữ liệu."
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "49",
+    "q": "Tạo cấu trúc bảng trong SQL, nếu tại Data Type của cột tương ứng người dùng chọn kiểu 'Datetime' thì dữ liệu của cột đó nhận giá trị dạng thế nào trong các phương án dưới đây?",
+    "opts": {
+      "A": "Thời gian (mm/dd/yyyy)",
+      "B": "Thời gian (dd/mm/yyyy)",
+      "C": "Thời gian (mm/dd/yyyy:hh:mm:ss)",
+      "D": "Thời gian (hh:mm:ss)"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "50",
+    "q": "Trong SQL ta có 3 thành phần: Column Name, Data Type, Allow Nulls để tạo cấu trúc bảng. Cho biết phương án nào dưới đây là tác dụng của Data Type?",
+    "opts": {
+      "A": "Chọn kiểu dữ liệu cho cột tương ứng.",
+      "B": "Chọn kiểu cột tương ứng.",
+      "C": "Tạo mới kiểu cột tương ứng.",
+      "D": "Tạo mới kiểu dữ liệu cho cột tương ứng."
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "51",
+    "q": "Để xác định quý của ngày tháng năm hiện tại câu lệnh nào sau đây đúng",
+    "opts": {
+      "A": "print datepart(quarter,getdate())",
+      "B": "print datepart(getdate(),quarter)",
+      "C": "print datediff(getdate(),quarter)",
+      "D": "print datediff(quarter, getdate())"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "52",
+    "q": "Kết quả chạy đoạn code sau là gì (giả sử bảng CTHOADON đã tồn tại và đã có dữ liệu): begin tran tt update CTHOADON set DONGIA=0 save tran a rollback tran a",
+    "opts": {
+      "A": "Cập nhật DONGIA trong bảng CTHOADON về 0",
+      "B": "Không làm thay đổi dữ liệu trong bảng CTHOADON",
+      "C": "Chỉ cập nhật những DONGIA có mã hàng là a",
+      "D": "Sai cú pháp"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "53",
+    "q": "Phát biểu nào sau đây KHÔNG đúng về Transaction",
+    "opts": {
+      "A": "Nhóm các lệnh SQL thành một đơn vị thực hiện",
+      "B": "Nếu một câu lệnh không thực hiện được thì chỉ hủy câu lệnh đó.",
+      "C": "Transacsion là một phiên giao dịch",
+      "D": "Phiên giao dịch thành công khi tất cả các lệnh thực thi thành công."
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "54",
+    "q": "Tập hợp các câu lệnh sau là: BEGIN TRAN INSERT INTO Lop VALUES ('K26TPM', N'Lớp PM Khóa 26','Lê Anh'); INSERT INTO MOHOC VALUES ('HCDL', 'Hệ QT CSDL',4); COMMIT TRAN",
+    "opts": {
+      "A": "Tập hợp các lệnh đơn.",
+      "B": "Tập hợp các câu lệnh trong một bộ",
+      "C": "Tập hợp các câu lệnh trong một phiên giao dịch",
+      "D": "Tất cả đều đúng"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "55",
+    "q": "Chọn phát biểu đúng nhất về Stored Procedure:",
+    "opts": {
+      "A": "Stored Procedure trong sql server có chứa các câu trúc điều khiển (IF, FOR, WHILE, SWITCH..CASE)",
+      "B": "Stored Procedure trong sql server có các kiểu dữ liệu như trong Dec-C",
+      "C": "Stored Procedure trong sql server có thể nhận vào các tham số cũng như trả về giá trị thông qua tham số",
+      "D": "Có thể mã hóa code của Stored Procedure trong sql server để người khác có thể xem nhưng không thể chỉnh sửa"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "56",
+    "q": "Để đổi số nguyên ra chuỗi ta dùng hàm nào sau đây?",
+    "opts": {
+      "A": "convert",
+      "B": "cast",
+      "C": "str",
+      "D": "Có thể dùng tất cả các hàm trên"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": "57",
+    "q": "Từ khóa ENCRYPTION không dùng được trong đối tượng nào sau đây?",
+    "opts": {
+      "A": "Store procedure",
+      "B": "Function",
+      "C": "Trigger",
+      "D": "Tất cả đều dùng được"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": "58",
+    "q": "Theo định dạng mặc định trong SQL Server kết quả của câu lệnh sau là gì: print convert(nvarchar(1),day('05/01/20'))+convert(nvarchar(1),month('05/01/20'))+ year('05/01/20')",
+    "opts": {
+      "A": "2035",
+      "B": "26",
+      "C": "050120",
+      "D": "71"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": "59",
+    "q": "Câu lệnh truy vấn sau dùng để làm gì: SELECT hodem,ten,gioitinh, YEAR(GETDATE())-YEAR(ngaysinh) AS tuoi FROM sinhvien WHERE ten='Binh' ORDER BY 4",
+    "opts": {
+      "A": "Hiển thị Hotem, ten, giới tính và tuổi, trong đó sắp xếp tên theo thứ tự abc",
+      "B": "Hiển thị Hotem, ten, giới tính và tuổi, trong đó sắp xếp tuổi theo thứ tự giảm dần",
+      "C": "Hiển thị Hotem, ten, giới tính và tuổi, trong đó sắp xếp cả 4 cột theo thứ tự từ trái sang phải",
+      "D": "Hiển thị Hotem, ten, giới tính và tuổi, trong đó sắp xếp cột thứ tư theo thứ tự từ nhỏ đến lớn"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "60",
+    "q": "Theo DB-Engines Ranking, năm 2020 có hơn 383 hệ quản trị cơ sở dữ liệu khác nhau trong có Microsft SQL Server xếp hạng thứ:",
+    "opts": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": "61",
+    "q": "Ràng buộc cột ngày sinh (ngaysinh) phải nhỏ hơn năm hiện tại. Đáp án nào sau đây đúng?",
+    "opts": {
+      "A": "constraint aaa check(year(ngaysinh)<year(getdate()))",
+      "B": "constraint bbb check(year(ngaysinh)<year(today()))",
+      "C": "constraint ccc check(namsinh)<year(getdate()))",
+      "D": "constraint ddd check(namsinh)<year(today()))"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "62",
+    "q": "Trong các bộ sau bộ nào nằm gần CSDL nhất:",
+    "opts": {
+      "A": "Quản lý phục hồi dữ liệu",
+      "B": "Quản lý giao dịch",
+      "C": "Điều khiển tương tranh",
+      "D": "Quản lý việc lưu trữ"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": "63",
+    "q": "Phát biểu nào sau đây đúng về Trigger?",
+    "opts": {
+      "A": "Trigger tự động cập nhật dữ liệu khi được gọi",
+      "B": "Trigger với chức năng delete cho chúng ta biết số lượng bản ghi đã xóa",
+      "C": "Trigger không trả về dữ liệu cho người sử dụng",
+      "D": "Trigger chỉ áp dụng cho lệnh Delete và Insert"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": "64",
+    "q": "Theo định dạng mặc định trong SQL Server thì kết quả câu lệnh sau là gì: print convert(nvarchar(1),day('05/01/20'))",
+    "opts": {
+      "A": "1",
+      "B": "01",
+      "C": "5",
+      "D": "05"
+    },
+    "ans": "C",
+    "type": "mcq"
+  }
+]
