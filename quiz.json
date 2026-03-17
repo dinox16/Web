@@ -1198,5 +1198,353 @@
     },
     "ans": "A",
     "type": "mcq"
+  },
+  {
+    "id": 101,
+    "q": "Phép sửa đổi là phép toán?",
+    "opts": {
+      "A": "Sửa đổi giá trị của một số thuộc tính",
+      "B": "Sửa đổi mô tả các thuộc tính",
+      "C": "Sửa đổi giá trị của một quan hệ hay một nhóm các quan hệ",
+      "D": "Sửa đổi giá trị của một bộ hay một nhóm các bộ"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 102,
+    "q": "Thứ tự đúng trong câu lệnh SELECT là?",
+    "opts": {
+      "A": "SELECT, FROM, WHERE, GROUP BY HAVING, ORDER BY",
+      "B": "SELECT, FROM, GROUP BY, HAVING, ORDER BY",
+      "C": "SELECT, FROM, GROUP BY HAVING, ORDER BY",
+      "D": "SELECT, FROM, GROUP BY HAVING, WHERE, ORDER BY"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 103,
+    "q": "Phép toán tập hợp trong mệnh đề WHERE bao gồm?",
+    "opts": {
+      "A": "Các phép đại số quan hệ",
+      "B": "Các phép số học và các phép so sánh",
+      "C": "Biểu thức đại số",
+      "D": "Các phép so sánh"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 104,
+    "q": "Các phép toán gộp nhóm được sử dụng sau mệnh đề?",
+    "opts": {
+      "A": "SELECT",
+      "B": "FROM",
+      "C": "WHERE",
+      "D": "GROUP BY"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 105,
+    "q": "Phép chọn được thực hiện sau mệnh đề nào trong SELECT - FROM - WHERE?",
+    "opts": {
+      "A": "GROUP BY HAVING",
+      "B": "WHERE",
+      "C": "SELECT",
+      "D": "FROM"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 106,
+    "q": "Dạng cấp quyền truy xuất trong SQL là?",
+    "opts": {
+      "A": "GRANT ON TO ..",
+      "B": "GRANT GO TO ..",
+      "C": "GRANT TO ..",
+      "D": "GRANT READ ON .."
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 107,
+    "q": "Lịch thao tác là khả tuần tự nếu?",
+    "opts": {
+      "A": "Đồ thị chờ có chu trình",
+      "B": "Đồ thị ưu tiên có chu trìnhC. Đồ thị ưu tiên không có chu trình",
+      "C": "",
+      "D": "Đồ thị chờ không có chu trình"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 108,
+    "q": "Giao dịch từ xa là gì?",
+    "opts": {
+      "A": "Tập hợp 1 yêu cầu từ xa chỉ truy cập đến 1 database",
+      "B": "Tập hợp nhiều yêu cầu từ xa chỉ truy cập đến 1 database.",
+      "C": "Tập hợp dữ liệu chỉ xóa dữ liệu không sửa dữ liệu.",
+      "D": "Tập hợp nhiều yêu cầu từ xa chỉ truy cập đến nhiều database"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 109,
+    "q": "Hãy chọn từ/cụm từ tương ứng để hoàn thiện khẳng định sau: Nếu trong câu lệnh SELECT có chứa GROUP BY, hệ thống sẽ ... và thực hiện các phép gộp nhóm. Trong dấu \"...\" là gì?",
+    "opts": {
+      "A": "Thực hiện phép chiếu sau mệnh đề SELECT",
+      "B": "Thực hiện việc sắp xếp theo chỉ dẫn sau mệnh đề ORDER BY",
+      "C": "Thực hiện phép chọn sau mệnh đề WHERE",
+      "D": "Phân hoạch quan hệ thành nhiều nhóm tách biệt nhau"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 110,
+    "q": "Thuật toán Diewait dùng để làm gì?",
+    "opts": {
+      "A": "Kiểm tra tính khả tuần tự của lịch thao tác",
+      "B": "Ngăn ngừa lịch thao tác bị livelock",
+      "C": "Phát hiện lịch thao tác deadlock",
+      "D": "Ngăn ngừa lịch thao tác bị deadlock"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 111,
+    "q": "Các vấn đề của truy xuất đồng thời?",
+    "opts": {
+      "A": "Mất dữ liệu cập nhật, dữ liệu chưa commit, dữ lệu không thể đọc lặp lại.",
+      "B": "Mất dữ liệu cập nhật, đọc dữ liệu chưa commit, dữ lệu không thể đọc lặp lại",
+      "C": "Mất dữ liệu cập nhật, dữ liệu không thể đọc lặp lại, đọc dữ liệu commit",
+      "D": "Mất dữ liệu cập nhật, dữ lệu không thể đọc lặp lại."
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 112,
+    "q": "Các bảng ảo được tạo ra khi thực hiện update trigger?",
+    "opts": {
+      "A": "inserted",
+      "B": "inserted và deleted.",
+      "C": "deleted",
+      "D": "updated"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 113,
+    "q": "Hai thao tác thực hiện đồng thời cũng có kết quả như thực hiện tuần tự Oi , Oj hoặc Oj , Oi?",
+    "opts": {
+      "A": "Tính hoán vị",
+      "B": "Phép tính chiếu",
+      "C": "Tính tương thích",
+      "D": "Phép tính chia"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": 114,
+    "q": "Phân mảnh dọc trong dữ liệu phân tán thực hiện bằng phép toán gì?",
+    "opts": {
+      "A": "Phép giao",
+      "B": "Phép chọn",
+      "C": "Phép chiếu",
+      "D": "Phép chia"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": 115,
+    "q": "Trường khóa ngoại là trường:",
+    "opts": {
+      "A": "Single Key",
+      "B": "Foreign Key",
+      "C": "First Key",
+      "D": "Primary Key"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 116,
+    "q": "Hãy chọn phương án đúng. Hai bảng trong một CSDL quan hệ liên kết với nhau thông qua:",
+    "opts": {
+      "A": "Địa chỉ của các bảng",
+      "B": "Tên trường",
+      "C": "Thuộc tính của các trường được chọn (không nhất thiết phải là khóa)",
+      "D": "Thuộc tính khóa"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 117,
+    "q": "Câu nào trong các câu dưới đây sai khi nói về hệ CSDL cá nhân?",
+    "opts": {
+      "A": "Người dùng đóng vai trò là người quản trị CSDL",
+      "B": "Tính an toàn của hệ CSDL cá nhân rất cao",
+      "C": "Hệ CSDL cá nhân được lưu trữ trên 1 máy",
+      "D": "Hệ CSDL chỉ cho phép 1 người dùng tại một thời điểm"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 118,
+    "q": "Khẳng định nào sau đây về CSDL quan hệ là đúng?",
+    "opts": {
+      "A": "Tập hợp các bảng dữ liệu",
+      "B": "Cơ sở dữ liệu được tạo ra từ hệ QTCSDL Access",
+      "C": "Cơ sở dữ liệu mà giữa các dữ liệu có quan hệ với nhau",
+      "D": "Cơ sở dữ liệu được xây dựng trên mô hình dữ liệu quan hệ"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 119,
+    "q": "Trong các phần mềm sau đây, phần mềm nào không phải là hệ quản trị CSDL quan hệ?",
+    "opts": {
+      "A": "Microsoft Excel",
+      "B": "Microsoft AccessC. Microsoft SQL server",
+      "C": "",
+      "D": "Oracle"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 120,
+    "q": "Các bước chính để tạo CSDL:",
+    "opts": {
+      "A": "Tạo bảng; Chọn khóa chính cho bảng; Đặt tên bảng và lưu cấu trúc bảng; Tạo liên kết bảng",
+      "B": "Tạo bảng; Chọn khóa chính cho bảng; Đặt tên bảng và lưu cấu trúc bảng",
+      "C": "Tạo bảng; Chọn khóa chính cho bảng; Lưu cấu trúc bảng; Tạo liên kết bảng; cập nhật và khai thác CSDL",
+      "D": "Tạo bảng; Chọn khóa chính cho bảng; Đặt tên bảng; Tạo liên kết bảng"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 121,
+    "q": "SQL là tên viết tắt của:",
+    "opts": {
+      "A": "Structured Query Language",
+      "B": "Query Structured Language",
+      "C": "Structured Question Language",
+      "D": "Structured Query Locator"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 122,
+    "q": "An toàn dữ liệu có thể hiểu là?",
+    "opts": {
+      "A": "Dễ dàng cho công việc bảo trì dữ liệu",
+      "B": "Ngăn chặn các truy nhập trái phép, sai quy định từ trong ra hoặc từ ngoài vào",
+      "C": "Thống nhất các tiêu chuẩn, thủ tục và các biện pháp bảo vệ, an toàn dữ liệu",
+      "D": "Tính nhất quán và toàn vẹn dữ liệu"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 123,
+    "q": "Mô hình trong là?",
+    "opts": {
+      "A": "Là một trong các mô hình biểu diễn CSDL dưới dạng lưu trữ vật lý",
+      "B": "Mô hình biểu diễn cơ sở dữ liệu trừu tượng ở mức quan niệm",
+      "C": "Có nhiều cách biểu diễn CSDL dưới dạng lưu trữ vật lý",
+      "D": "Mô hình lưu trữ vật lý dữ liệu"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 124,
+    "q": "Kết quả của các phép thao tác dữ liệu là?",
+    "opts": {
+      "A": "Chuỗi dữ liệu",
+      "B": "Tệp dữ liệu",
+      "C": "Quan hệ",
+      "D": "Cơ sở dữ liệu"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": 125,
+    "q": "Giao dịch là gì?",
+    "opts": {
+      "A": "Tập các thao tác có thể chia nhỏ ra thực hiện",
+      "B": "Là mức độ cô lập giao dịch",
+      "C": "Tập các thao tác không thể chia nhỏ ra thực hiện được",
+      "D": "Mức độ cô lập giao dịch dữ liệu không thể sửa"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": 126,
+    "q": "Các bảng ảo được tạo ra khi thực hiện update trigger?",
+    "opts": {
+      "A": "inserted",
+      "B": "inserted và deleted.",
+      "C": "deleted",
+      "D": "updated"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 127,
+    "q": "Phân mảnh ngang trong dữ liệu phân tán thực hiện bằng phép toán nào?",
+    "opts": {
+      "A": "Phép giao",
+      "B": "Phép chiếu",
+      "C": "Phép chọn",
+      "D": "Phép chia"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": 128,
+    "q": "Lịch thao tác là khả tuần tự nếu?",
+    "opts": {
+      "A": "Đồ thị chờ có chu trình",
+      "B": "Đồ thị ưu tiên có chu trình",
+      "C": "Đồ thị ưu tiên không có chu trình",
+      "D": "Đồ thị chờ không có chu trình"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": 129,
+    "q": "Giao dịch phân tán?",
+    "opts": {
+      "A": "Giao dịch thực hiện trên 1 vị trí lưu trữ dữ liệu.",
+      "B": "Mô tả yêu cầu thực hiện trên nhiều hơn 2 vị trí lưu trữ dữ liệu.",
+      "C": "Giao dịch thực hiện trên nhiều hơn 2 vị trí lưu trữ dữ liệu.",
+      "D": "Mô tả yêu cầu thực hiện trên 1 vị trí lưu trữ dữ liệu."
+    },
+    "ans": "C",
+    "type": "mcq"
   }
 ]
