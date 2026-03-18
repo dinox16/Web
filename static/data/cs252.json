@@ -899,9 +899,9 @@
     "ans": "D",
     "type": "mcq",
     "imgs": [
-      "static/pic/cs252q75.png"
+      "/static/pic/cs252q75.png"
     ],
-    "img": "static/pic/cs252q75.png"
+    "img": "/static/pic/cs252q75.png"
   },
   {
     "id": 76,
@@ -1347,9 +1347,9 @@
     "ans": "C",
     "type": "mcq",
     "imgs": [
-      "static/pic/cs252q112.png"
+      "/static/pic/cs252q112.png"
     ],
-    "img": "static/pic/cs252q112.png"
+    "img": "/static/pic/cs252q112.png"
   },
   {
     "id": 113,
@@ -1363,9 +1363,9 @@
     "ans": "B",
     "type": "mcq",
     "imgs": [
-      "static/pic/cs252q113.png"
+      "/static/pic/cs252q113.png"
     ],
-    "img": "static/pic/cs252q113.png"
+    "img": "/static/pic/cs252q113.png"
   },
   {
     "id": 114,
@@ -1379,9 +1379,9 @@
     "ans": "B",
     "type": "mcq",
     "imgs": [
-      "static/pic/cs252q114.png"
+      "/static/pic/cs252q114.png"
     ],
-    "img": "static/pic/cs252q114.png"
+    "img": "/static/pic/cs252q114.png"
   },
   {
     "id": 115,
@@ -1395,9 +1395,9 @@
     "ans": "C",
     "type": "mcq",
     "imgs": [
-      "static/pic/cs252q115.png"
+      "/static/pic/cs252q115.png"
     ],
-    "img": "static/pic/cs252q115.png"
+    "img": "/static/pic/cs252q115.png"
   },
   {
     "id": 116,
@@ -1411,9 +1411,9 @@
     "ans": "A",
     "type": "mcq",
     "imgs": [
-      "static/pic/cs252q116.png"
+      "/static/pic/cs252q116.png"
     ],
-    "img": "static/pic/cs252q116.png"
+    "img": "/static/pic/cs252q116.png"
   },
   {
     "id": 117,
@@ -1427,9 +1427,9 @@
     "ans": "B",
     "type": "mcq",
     "imgs": [
-      "static/pic/cs252q117.png"
+      "/static/pic/cs252q117.png"
     ],
-    "img": "static/pic/cs252q117.png"
+    "img": "/static/pic/cs252q117.png"
   },
   {
     "id": 118,
@@ -1443,9 +1443,9 @@
     "ans": "D",
     "type": "mcq",
     "imgs": [
-      "static/pic/cs252q118.png"
+      "/static/pic/cs252q118.png"
     ],
-    "img": "static/pic/cs252q118.png"
+    "img": "/static/pic/cs252q118.png"
   },
   {
     "id": 119,
@@ -1459,9 +1459,9 @@
     "ans": "A",
     "type": "mcq",
     "imgs": [
-      "static/pic/cs252q119.png"
+      "/static/pic/cs252q119.png"
     ],
-    "img": "static/pic/cs252q119.png"
+    "img": "/static/pic/cs252q119.png"
   },
   {
     "id": 120,
@@ -1475,9 +1475,9 @@
     "ans": "A",
     "type": "mcq",
     "imgs": [
-      "static/pic/cs252q120.png"
+      "/static/pic/cs252q120.png"
     ],
-    "img": "static/pic/cs252q120.png"
+    "img": "/static/pic/cs252q120.png"
   },
   {
     "id": 121,
@@ -1491,9 +1491,9 @@
     "ans": "D",
     "type": "mcq",
     "imgs": [
-      "static/pic/cs252q121.png"
+      "/static/pic/cs252q121.png"
     ],
-    "img": "static/pic/cs252q121.png"
+    "img": "/static/pic/cs252q121.png"
   },
   {
     "id": 122,
@@ -1507,9 +1507,9 @@
     "ans": "B",
     "type": "mcq",
     "imgs": [
-      "static/pic/cs252q122.png"
+      "/static/pic/cs252q122.png"
     ],
-    "img": "static/pic/cs252q122.png"
+    "img": "/static/pic/cs252q122.png"
   },
   {
     "id": 123,
@@ -1523,9 +1523,9 @@
     "ans": "C",
     "type": "mcq",
     "imgs": [
-      "static/pic/cs252q123.png"
+      "/static/pic/cs252q123.png"
     ],
-    "img": "static/pic/cs252q123.png"
+    "img": "/static/pic/cs252q123.png"
   },
   {
     "id": 124,
@@ -1539,10 +1539,10 @@
     "ans": "B",
     "type": "mcq",
     "imgs": [
-      "static/pic/cs252q124.png",
-      "static/pic/cs252q124(1).png"
+      "/static/pic/cs252q124.png",
+      "/static/pic/cs252q124(1).png"
     ],
-    "img": "static/pic/cs252q124.png"
+    "img": "/static/pic/cs252q124.png"
   },
   {
     "id": 125,
@@ -1556,9 +1556,9 @@
     "ans": "D",
     "type": "mcq",
     "imgs": [
-      "static/pic/cs252q125.png"
+      "/static/pic/cs252q125.png"
     ],
-    "img": "static/pic/cs252q125.png"
+    "img": "/static/pic/cs252q125.png"
   },
   {
     "id": 126,
@@ -1572,9 +1572,9 @@
     "ans": "D",
     "type": "mcq",
     "imgs": [
-      "static/pic/cs252q126.png"
+      "/static/pic/cs252q126.png"
     ],
-    "img": "static/pic/cs252q126.png"
+    "img": "/static/pic/cs252q126.png"
   },
   {
     "id": 127,
@@ -1588,9 +1588,9 @@
     "ans": "D",
     "type": "mcq",
     "imgs": [
-      "static/pic/cs252q127.png"
+      "/static/pic/cs252q127.png"
     ],
-    "img": "static/pic/cs252q127.png"
+    "img": "/static/pic/cs252q127.png"
   },
   {
     "id": 128,
@@ -1604,9 +1604,9 @@
     "ans": "C",
     "type": "mcq",
     "imgs": [
-      "static/pic/cs252q128.png"
+      "/static/pic/cs252q128.png"
     ],
-    "img": "static/pic/cs252q128.png"
+    "img": "/static/pic/cs252q128.png"
   },
   {
     "id": 129,
@@ -1620,9 +1620,9 @@
     "ans": "D",
     "type": "mcq",
     "imgs": [
-      "static/pic/cs252q129.png"
+      "/static/pic/cs252q129.png"
     ],
-    "img": "static/pic/cs252q129.png"
+    "img": "/static/pic/cs252q129.png"
   },
   {
     "id": 130,
@@ -1636,8 +1636,8 @@
     "ans": "A",
     "type": "mcq",
     "imgs": [
-      "static/pic/cs252q130.png"
+      "/static/pic/cs252q130.png"
     ],
-    "img": "static/pic/cs252q130.png"
+    "img": "/static/pic/cs252q130.png"
   }
 ]
