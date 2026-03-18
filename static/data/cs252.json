@@ -1539,10 +1539,10 @@
     "ans": "B",
     "type": "mcq",
     "imgs": [
-      "static\\pic\\cs252q124(1).png",
-      "static\\pic\\cs252q124(2).png"
+      "static\\pic\\cs252q124.png",
+      "static\\pic\\cs252q124(1).png"
     ],
-    "img": "static\\pic\\cs252q124(1).png"
+    "img": "static\\pic\\cs252q124.png"
   },
   {
     "id": 125,
