@@ -567,9 +567,9 @@
     "id": 48,
     "q": "Liệt kê mahd, mahang, thanhtien từ 2 bảng",
     "opts": {
-      "A": "mahd=",
-      "B": "mahd)",
-      "C": "Select",
+      "A": "Select mahd, mahang, thanhtien … ",
+      "B": "Select mahd, mahang, soluong* dongia as thanhtien … ",
+      "C": "Select a.mahd, mahang, soluong* dongia as thanhtien from hoadon a, chitiethoadon b where (a.mahd=b.mahd)",
       "D": "Select hoadon.mahd …"
     },
     "ans": "A",
@@ -1546,5 +1546,89 @@
     },
     "ans": "C",
     "type": "mcq"
+  },
+  {
+    "id": 130,
+    "q": "Để điều khiển tương tranh thì có thể dùng cách nào?",
+    "opts": {
+      "A": "Điều khiển tương tranh dựa vào tính khả tuần tự",
+      "B": "Điều khiển tương tranh bằng cơ chế nhãn thời gian",
+      "C": "Điều khiển tương tranh dựa vào cơ chế khóa",
+      "D": "Tất cả đáp án đều đúng"
+    },
+    "ans": "D",
+     "type": "mcq"
+  },
+  {
+    "id": 131,
+    "q": "Các tính chất của giao dịch",
+    "opts": {
+      "A": "Tính nguyên tố (Atomic), tính nhất quán (Consistency), tính độc lập (Independence), tính lâu dài (Durability)",
+      "B": "Tính nguyên tố (Atomic), tính nhất quán (Consistency), tính độc lập (Independence) tính phân tán (Distribution)",
+      "C": "Tính chính xác (Accuracy), tính nhất quán (Consistency), tính cô lập (Isolation), tính bảo mật (Security)",
+      "D": "Tính nguyên tố (Atomic), tính hiệu quả (Efficiency), tính cô lập (Isolation), tính lâu dài (Durability)"
+    },
+    "ans": "A",
+     "type": "mcq"
+  },
+  {
+    "id": 132,
+    "q": "Một số vấn đề thường gặp trong việc truy xuất đồng thời",
+    "opts": {
+      "A": "Mất dữ liệu cập nhật, đọc dữ liệu chưa commit, thao tác không thể lặp lại",
+      "B": "Mất dữ liệu cập nhật, lỗi kết nối mạng, tràn bộ nhớ đệm",
+      "C": "Đọc dữ liệu chưa commit, sai lệch kiểu dữ liệu, lỗi khóa ngoại",
+      "D": "Xung đột phần mềm, mất dữ liệu vĩnh viễn, sai lệch kiểu dữ liệu"
+    },
+    "ans": "A",
+     "type": "mcq"
+  },
+  {
+    "id": 133,
+    "q": "SQL là từ viết tắt của từ gì?",
+    "opts": {
+      "A": "Server Query Language",
+      "B": "Structured Query Language",
+      "C": "Structured Question Language",
+      "D": "System Query Language"
+    },
+    "ans": "B",
+     "type": "mcq"
+  },
+  {
+    "id": 134,
+    "q": "DBMS là viết tắt của cụm từ gì",
+    "opts": {
+      "A": "Database Management System",
+      "B": "Database Management Service",
+      "C": "Database Microsoft Service",
+      "D": "Database Microsoft System"
+    },
+    "ans": "A",
+     "type": "mcq"
+  },
+  {
+    "id": 135,
+    "q": "Các loại nhân bản dữ liệu",
+    "opts": {
+      "A": "Nhân bản đầy đủ, nhân bản từng phần, nhân bản không đầy đủ",
+      "B": "Nhân bản đầy đủ, nhân bản từng phần, không nhân bản",
+      "C": "Không nhân bản, nhân bản đầy đủ, nhân bản không đầy đủ",
+      "D": "Tất cả đều đúng"
+    },
+    "ans": "B",
+     "type": "mcq"
+  },
+  {
+    "id": 136,
+    "q": "Phương pháp điều khiển tương tranh bằng cơ chế khóa thì đồ thị ưu tiên dùng để làm gì?",
+    "opts": {
+      "A": "Kiểm tra tính khả tuần tự của một lịch trình giao dịch",
+      "B": "Kiểm tra tính đúng đắn về mặt logic của từng giao dịch riêng biệt",
+      "C": "Kiểm tra xem các giao dịch có rơi vào trạng thái deadlock hay không",
+      "D": "Kiểm tra thứ tự ưu tiên xem giao dịch nào được phép thực hiện trước"
+    },
+    "ans": "A",
+     "type": "mcq"
   }
 ]

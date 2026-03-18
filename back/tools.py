@@ -5,11 +5,8 @@ DOCX -> JSON Quiz (2 mode: default / inline / auto)
 
 Đáp án đúng = option có phần chữ in đậm (bold).
 
-Cài:
-  pip install python-docx
-
 Chạy:
-  python docx_to_quiz_2mode.py input.docx --mode auto -o quiz.json --pretty
+  python tools.py input.docx --mode auto -o quiz.json --pretty
 """
 
 from __future__ import annotations
