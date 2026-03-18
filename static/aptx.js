@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* Updated quiz script with:
    - Load ALL questions from JSON (no random selection)
    - "Làm lại" button:  reloads all questions
@@ -124,23 +123,9 @@ if (dialogCloseBtn) {
         const dialog = document.getElementById('dialog');
         if (dialog) dialog.style.display = 'none';
     };
-=======
-function renderQuestionTextWithInlineImages(q) {
-    const escapedQuestion = q.q.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    const normalizedQuestion = escapedQuestion.replace(/\\/g, '/');
-    const imgRegex = /img\[(\d+)\]/g;
-    return normalizedQuestion.replace(imgRegex, (match, idx) => {
-        if (q.imgs && q.imgs[idx]) {
-            return `<img src='/${q.imgs[idx]}' alt='Image ${idx}' />`;
-        }
-        return match;
-    });
->>>>>>> f426f5bbf0e362151e4d5cf6795b716ade0ca14e
 }
 
-// Replace direct injection of q.q in renderQuestion()
 function renderQuestion() {
-<<<<<<< HEAD
     if (!questions.length) return;
 
     const q = questions[current];
@@ -418,8 +403,3 @@ async function finishQuiz() {
 }
 
 window.onload = loadQuestions;
-=======
-    const questionHtml = renderQuestionTextWithInlineImages(q);
-    // ... existing code to render the question ...
-}
->>>>>>> f426f5bbf0e362151e4d5cf6795b716ade0ca14e
