@@ -32,7 +32,7 @@ function normalizeVN(str) {
 }
 
 function isShortAnswerCorrect(question, userAnswer) {
-    if (!question.keywords || !Array. isArray(question.keywords)) return false;
+    if (!question.keywords || !Array.isArray(question.keywords)) return false;
     const answerNorm = normalizeVN(userAnswer);
     let matched = 0;
     for (let kw of question.keywords) {
@@ -42,13 +42,58 @@ function isShortAnswerCorrect(question, userAnswer) {
     return matched / question.keywords.length >= 0.8;
 }
 
+/** Escape HTML to avoid XSS (we will inject only <img> that we generate ourselves). */
+function escapeHtml(s) {
+    return String(s ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+}
+
+/**
+ * Convert JSON path (often Windows style or starts with static/) into public URL "/xx/xx"
+ * Examples:
+ *  - "static\\pic\\a.png" -> "/pic/a.png"
+ *  - "static/pic/a.png"   -> "/pic/a.png"
+ *  - "/pic/a.png"         -> "/pic/a.png"
+ */
+function toPublicUrl(p) {
+    if (!p) return "";
+    let s = String(p).trim().replace(/\\/g, "/");
+    if (s.startsWith("static/")) s = s.slice("static/".length); // -> "pic/..."
+    if (!s.startsWith("/")) s = "/" + s;
+    return s;
+}
+
+/**
+ * Render q.q with placeholders img[n] replaced by <img src="/..."> using q.imgs array.
+ * - Uses 0-based index: img[0], img[1], ...
+ */
+function renderQuestionHtml(q) {
+    const raw = String(q?.q ?? "");
+    const escaped = escapeHtml(raw);
+
+    return escaped.replace(/img\[(\d+)\]/g, (_, nStr) => {
+        const n = Number(nStr);
+        const imgs = Array.isArray(q?.imgs) ? q.imgs : [];
+        const src = imgs[n];
+
+        if (!src) return `img[${n}]`;
+
+        const url = toPublicUrl(src);
+        return `<img class="inline-q-img" src="${escapeHtml(url)}" alt="img[${n}]" style="max-width:100%;height:auto;display:block;margin:10px 0;" />`;
+    });
+}
+
 async function loadQuestions() {
     const res = await fetch(QUESTIONS_URL);
     const allQuestions = await res.json();
 
     // Load ALL questions from JSON (no filtering, no random selection)
     questions = allQuestions;
-    
+
     current = 0;
     userAnswers = [];
     quizDone = false;
@@ -72,7 +117,7 @@ function showDialog(message) {
     if (dialog) dialog.style.display = 'flex';
 }
 
-const dialogCloseBtn = document. getElementById('dialog-close');
+const dialogCloseBtn = document.getElementById('dialog-close');
 if (dialogCloseBtn) {
     dialogCloseBtn.onclick = function() {
         const dialog = document.getElementById('dialog');
@@ -88,23 +133,27 @@ function renderQuestion() {
     let inputHtml = "";
     let imageHtml = "";
 
-    if (q. img) {
+    // Keep existing single image (if present). Normalize to /xx/xx
+    if (q.img) {
+        const url = toPublicUrl(q.img);
         imageHtml = `<div class="question-img">
-            <img src="${q.img}" alt="Hình minh họa" style="max-width: 100%; height: auto; margin: 10px 0;">
+            <img src="${escapeHtml(url)}" alt="Hình minh họa" style="max-width: 100%; height: auto; margin: 10px 0;">
         </div>`;
     }
+
+    const questionTextHtml = renderQuestionHtml(q);
 
     if (q.type === "short") {
         let prev = userAnswers[current] || "";
         inputHtml = `
             <div class="short-answer">
-                <input type="text" id="short-answer" placeholder="Nhập câu trả lời..." value="${prev}" autocomplete="off">
+                <input type="text" id="short-answer" placeholder="Nhập câu trả lời..." value="${escapeHtml(prev)}" autocomplete="off">
             </div>
         `;
 
         questionArea.innerHTML = `
             <div class="question-number">Câu hỏi ${current + 1} / ${questions.length}</div>
-            <div class="question-text">${q.q}</div>
+            <div class="question-text">${questionTextHtml}</div>
             ${imageHtml}
             ${inputHtml}
         `;
@@ -121,14 +170,14 @@ function renderQuestion() {
         let optsHtml = '';
         for (const [key, value] of Object.entries(opts)) {
             optsHtml += `
-                <button class="option" data-opt="${key}">
-                    <span class="opt-key">${key}.</span> ${value}
+                <button class="option" data-opt="${escapeHtml(key)}">
+                    <span class="opt-key">${escapeHtml(key)}.</span> ${escapeHtml(value)}
                 </button>`;
         }
 
         questionArea.innerHTML = `
             <div class="question-number">Câu hỏi ${current + 1} / ${questions.length}</div>
-            <div class="question-text">${q.q}</div>
+            <div class="question-text">${questionTextHtml}</div>
             ${imageHtml}
             <div class="options">${optsHtml}</div>
         `;
@@ -136,7 +185,7 @@ function renderQuestion() {
         const userAns = userAnswers[current];
         const correct = q.ans || q.a;
 
-        document. querySelectorAll('.option').forEach(btn => {
+        document.querySelectorAll('.option').forEach(btn => {
             const optKey = btn.dataset.opt;
             btn.disabled = false;
 
@@ -153,7 +202,7 @@ function renderQuestion() {
                     }
                 }
             } else {
-                btn. onclick = () => selectOption(btn, btn.dataset.opt);
+                btn.onclick = () => selectOption(btn, btn.dataset.opt);
             }
         });
     }
@@ -165,7 +214,7 @@ function renderQuestion() {
 function selectOption(btn, opt) {
     if (quizDone) return;
     const q = questions[current];
-    if (q. type !== "mcq") return;
+    if (q.type !== "mcq") return;
     if (typeof userAnswers[current] !== "undefined") return;
 
     userAnswers[current] = opt;
@@ -189,15 +238,15 @@ function updateNav() {
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
     if (prevBtn) prevBtn.disabled = current === 0;
-    if (nextBtn) nextBtn.textContent = current === questions.length - 1 ?  "Nộp bài" : "Tiếp";
+    if (nextBtn) nextBtn.textContent = current === questions.length - 1 ? "Nộp bài" : "Tiếp";
 }
 
 function updateProgress() {
-    const progress = document.querySelector('. progress');
+    const progress = document.querySelector('.progress');
     if (progress) progress.style.width = ((current + 1) / questions.length * 100) + "%";
 }
 
-const prevBtn = document. getElementById('prevBtn');
+const prevBtn = document.getElementById('prevBtn');
 if (prevBtn) {
     prevBtn.onclick = () => {
         if (current > 0) {
@@ -207,12 +256,12 @@ if (prevBtn) {
     };
 }
 
-const nextBtn = document. getElementById('nextBtn');
+const nextBtn = document.getElementById('nextBtn');
 if (nextBtn) {
     nextBtn.onclick = () => {
         if (quizDone) return;
         const q = questions[current];
-        if (q. type === "short") {
+        if (q.type === "short") {
             if (!userAnswers[current] || userAnswers[current].trim() === "") {
                 showDialog("Bạn hãy nhập câu trả lời trước khi tiếp tục!");
                 return;
@@ -243,14 +292,14 @@ function convertAnswersToDict() {
 
 function computeLocalScoreOutOf100() {
     // Fallback scoring in case server doesn't return a score.
-    // mcq: exact match. short: use isShortAnswerCorrect. 
+    // mcq: exact match. short: use isShortAnswerCorrect.
     let correct = 0;
     questions.forEach((q, idx) => {
         const ua = userAnswers[idx];
         if (q.type === "mcq") {
-            const correctOpt = q.ans || q. a;
+            const correctOpt = q.ans || q.a;
             if (ua && ua === correctOpt) correct++;
-        } else if (q. type === "short") {
+        } else if (q.type === "short") {
             if (ua && isShortAnswerCorrect(q, ua)) correct++;
         }
     });
@@ -280,7 +329,7 @@ async function finishQuiz() {
         let scoreOutOf100 = null;
         if (data && typeof data.score === "number") {
             // assume server returned 0-100
-            scoreOutOf100 = data. score;
+            scoreOutOf100 = data.score;
         } else if (data && typeof data.correct === "number" && typeof data.total === "number") {
             scoreOutOf100 = Math.round((data.correct / data.total) * 100);
         } else {
@@ -306,7 +355,7 @@ async function finishQuiz() {
         const scoreArea = document.querySelector('.score-area');
         if (scoreArea) {
             scoreArea.innerHTML = resultHTML;
-            scoreArea. style.display = "block";
+            scoreArea.style.display = "block";
         }
 
         // hide quiz UI
@@ -326,7 +375,7 @@ async function finishQuiz() {
                 // Clear score area UI
                 if (scoreArea) {
                     scoreArea.innerHTML = '';
-                    scoreArea. style.display = "none";
+                    scoreArea.style.display = "none";
                 }
                 // show quiz UI again
                 if (qa) qa.style.display = "";
