@@ -1630,5 +1630,185 @@
     },
     "ans": "A",
      "type": "mcq"
+  },
+  {
+    "id": 137,
+    "q": "Trong phương pháp điều khiển tương tranh bằng nhãn thời gian, thuật toán nào có phân biệt nhãn đọc và nhãn ghi (viết) của cơ sở dữ liệu?",
+    "opts": {
+      "A": "Thuật toán sắp xếp từng phần",
+      "B": "Thuật toán sắp xếp toàn phần",
+      "C": "Thuật toán sắp xếp đa phần",
+      "D": "Không thuật toán nào cả"
+    },
+    "ans": "B",
+     "type": "mcq"
+  },
+  {
+    "id": 138,
+    "q": "Hãy chọn phương án đúng. Hai bảng trong một CSDL quan hệ liên kết với nhau thông qua:",
+    "opts": {
+      "A": "Địa chỉ của các bảng",
+      "B": "Tên trường",
+      "C": "Thuộc tính của các trường được chọn (không nhất thiết phải là khóa)",
+      "D": "Thuộc tính khóa"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 139,
+    "q": "Tiêu chí nào sau đây thường được dùng để chọn khóa chính?",
+    "opts": {
+      "A": "Khóa có ít thuộc tính nhất",
+      "B": "Không chứa các thuộc tính thay đổi theo thời gian",
+      "C": "Khóa bất kì",
+      "D": "Chỉ là khóa có một thuộc tính"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 140,
+    "q": "Thuật toán Diewait dùng để làm gì?",
+    "opts": {
+      "A": "Kiểm tra tính khả tuần tự của lịch thao tác",
+      "B": "Ngăn ngừa lịch thao tác bị livelock",
+      "C": "Phát hiện lịch thao tác deadlock",
+      "D": "Ngăn ngừa lịch thao tác bị deadlock"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 141,
+    "q": "Trong quá trình cập nhật dữ liệu, được hệ quản trị CSDL kiểm soát để đảm bảo tính chất nào?",
+    "opts": {
+      "A": "Tính ràng buộc toàn vẹn",
+      "B": "Tính độc lập",
+      "C": "Tính nhất quán",
+      "D": "Tính bảo mật"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": 142,
+    "q": "Với một bảng dữ liệu, HQT CSDL cho phép người dùng thấy gì?",
+    "opts": {
+      "A": "Xem nội dung các bản ghi",
+      "B": "Xem mối liên kết giữa bảng đó với các bảng khác",
+      "C": "Xem một số trường của mỗi bản ghi",
+      "D": "Tất cả đều đúng"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 143,
+    "q": "Phương pháp điều khiển tương tranh trong cơ chế khóa thì đồ thị chờ dùng để làm gì?",
+    "opts": {
+      "A": "Kiểm tra lịch thao tác có bị Livelock không",
+      "B": "Kiểm tra lịch thao tác có bị deadlock không",
+      "C": "Kiểm tra tính khả tuần tự của lịch thao tác",
+      "D": "Không có đồ thị chờ"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 144,
+    "q": "Phân mảnh ngang trong dữ liệu phân tán thực hiện bằng phép toán nào?",
+    "opts": {
+      "A": "Phép chiếu",
+      "B": "Phép chọn",
+      "C": "Phép chia",
+      "D": "Phép giao"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 145,
+    "q": "Trong các phần mềm sau, phần mềm nào không phải là hệ quản trị CSDL quan hệ?",
+    "opts": {
+      "A": "Microsoft Excel",
+      "B": "Microsoft Access",
+      "C": "DB2",
+      "D": "Oracle"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 146,
+    "q": "DBMS là viết tắt của cụm từ gì?",
+    "opts": {
+      "A": "Data Management System",
+      "B": "Database Management Style",
+      "C": "Database Management System",
+      "D": "Data Management Style"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": 147,
+    "q": "Nêu các bước chính để tạo CSDL?",
+    "opts": {
+      "A": "Tạo bảng; Chọn khóa chính cho bảng; Đặt tên bảng và lưu cấu trúc bảng;Tạo liên kết bảng",
+      "B": "Tạo bảng; Chọn khóa chính cho bảng; Đặt tên bảng và lưu cấu trúc bảng",
+      "C": "Tạo bảng; Chọn khóa chính cho bảng; Lưu cấu trúc bảng; Tạo liên kết bảng; cập nhật và khai thác CSDL",
+      "D": "Tạo bảng; Chọn khóa chính cho bảng; Đặt tên bảng; Tạo liên kết bảng"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 148,
+    "q": "An toàn dữ liệu có thể hiểu là thực hiện việc gì?",
+    "opts": {
+      "A": "Dễ dàng cho công việc bảo trì dữ liệu",
+      "B": "Ngăn chặn các truy nhập trái phép, sai quy định từ trong ra hoặc từ ngoài vào",
+      "C": "Thống nhất các tiêu chuẩn, thủ tục và các biện pháp bảo vệ, an toàn dữ liệu",
+      "D": "Tính nhất quán và toàn vẹn dữ liệu"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 149,
+    "q": "Hai thao tác khả hoán vị có nghĩa là hai thao tác có thể:",
+    "opts": {
+      "A": "Đổi vị trí cho nhau",
+      "B": "Đổi tên cho nhau",
+      "C": "Đổi giao dịch với nhau",
+      "D": "Đổi nhãn thời gian cho nhau"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 150,
+    "q": "Trong các tính chất của giao dịch, tính chất không thể chia nhỏ hơn được nữa gọi là:",
+    "opts": {
+      "A": "Tính cô lập",
+      "B": "Tính nhất quán",
+      "C": "Tính lâu dài",
+      "D": "Tính nguyên tố"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 151,
+    "q": "Chọn câu trả lời đúng nhất",
+    "opts": {
+      "A": "Dữ liệu bị mất do sự cố giao dịch",
+      "B": "Khôi phục dữ liệu bị mất do sự cố giao dịch",
+      "C": "Dữ liệu không mất do sự cố giao dịch",
+      "D": "Khôi phục dữ liệu bị mất"
+    },
+    "ans": "C",
+    "type": "mcq"
   }
 ]
