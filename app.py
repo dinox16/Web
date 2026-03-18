@@ -63,7 +63,7 @@ def submit_quiz_route(quiz_json_path):
 def quiz_page_route(quiz_json_path):
     with open(quiz_json_path, 'r', encoding='utf-8') as f:
         questions = json.load(f)
-    return render_template("quiz.html", questions=questions)
+    return render_template("quiz-form.html", questions=questions)
 # --- Quiz grading logic END ---
 
 load_dotenv()
