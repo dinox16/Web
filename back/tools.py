@@ -162,11 +162,10 @@ def extract_question_images(
             with open(save_path, "wb") as f:
                 f.write(part.blob)
 
-            rel = os.path.join("static", "pic", filename).replace("/", "\\")
+            rel = os.path.join("static", "pic", filename).replace("/", "/")
             qno_to_paths.setdefault(qno, []).append(rel)
 
     return qno_to_paths
-
 
 def attach_images(item: Dict, qno: Optional[int], qno_to_imgs: Optional[Dict[int, List[str]]]):
     if not qno_to_imgs or not qno:
