@@ -1276,8 +1276,8 @@
     "q": "Lịch thao tác là khả tuần tự nếu?",
     "opts": {
       "A": "Đồ thị chờ có chu trình",
-      "B": "Đồ thị ưu tiên có chu trìnhC. Đồ thị ưu tiên không có chu trình",
-      "C": "",
+      "B": "Đồ thị ưu tiên có chu trình",
+      "C": "Đồ thị ưu tiên không có chu trình",
       "D": "Đồ thị chờ không có chu trình"
     },
     "ans": "B",
