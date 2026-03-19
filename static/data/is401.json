@@ -1420,8 +1420,8 @@
     "q": "Trong các phần mềm sau đây, phần mềm nào không phải là hệ quản trị CSDL quan hệ?",
     "opts": {
       "A": "Microsoft Excel",
-      "B": "Microsoft AccessC. Microsoft SQL server",
-      "C": "",
+      "B": "Microsoft Access",
+      "C": "Microsoft SQL server",
       "D": "Oracle"
     },
     "ans": "A",
