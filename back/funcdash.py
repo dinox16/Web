@@ -18,7 +18,8 @@ subjects = [
     {"name": "Perl & Python", "slug": "cs466", "icon": "fa-brands fa-python"},
     {"name": "Hệ Quản Trị Cơ Sở Dữ Liệu", "slug":"is401","icon":"fa-server"},
     {"name": "Lịch Sử Đảng Cộng Sản Việt Nam", "slug":"his362","icon":"fa-solid fa-landmark"},
-    {"name": "Mạng Máy Tính", "slug":"cs252","icon":"fa-server"}
+    {"name": "Mạng Máy Tính", "slug":"cs252","icon":"fa-server"},
+    {"name": "Công Nghệ Phần Mềm","slug":"cs403","icon":"fa-laptop-code"}
 ]
 
 def nocache_response(resp):

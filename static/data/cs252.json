@@ -1529,7 +1529,7 @@
   },
   {
     "id": 124,
-    "q": "Cho sơ đồ mạng như sau:img[0] Quan sát bảng ARP của PCA ta thấy như sau: img[1]Hãy cho biết Dst IP và Dst MAC mà PCA sẽ dùng để gửi thông tin đến tất cả các máy trong mạng 192.168.1.0/24?",
+    "q": "Cho sơ đồ mạng như sau:img[0] Quan sát bảng ARP của PCA ta thấy như sau: img[1] Hãy cho biết Dst IP và Dst MAC mà PCA sẽ dùng để gửi thông tin đến tất cả các máy trong mạng 192.168.1.0/24?",
     "opts": {
       "A": "255.255.255.255/ff-ff-ff-ff-ff-ff",
       "B": "192.168.1.255/ff-ff-ff-ff-ff-ff",
