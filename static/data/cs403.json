@@ -20,7 +20,7 @@
       "C": "Đặc tả chức năng, đặc tả phần mềm, đặc tả thiết kế.",
       "D": "Định ra yêu cầu, đặc tả phần mềm, đặc tả thiết kế."
     },
-    "ans": "B",
+    "ans": "A",
     "type": "mcq"
   },
   {
@@ -32,7 +32,7 @@
       "C": "“Yêu cầu được đặc tả bởi các biểu đồ ngữ cảnh, đồ thị và các lược đồ quan hệ…”",
       "D": "“Các dịch vụ được đặc tả một cách chi tiết, chính xác để có thể dùng làm cơ sở hợp đồng giữa hai bên.”"
     },
-    "ans": "A",
+    "ans": "D",
     "type": "mcq"
   },
   {
@@ -56,7 +56,7 @@
       "C": "Thuận lợi vì ngôn ngữ tự nhiên dễ sử dụng",
       "D": "Rất khó khăn vì ngôn ngữ tự nhiên rất khó sử dụng."
     },
-    "ans": "B",
+    "ans": ["A","B"],
     "type": "mcq"
   },
   {
@@ -188,7 +188,7 @@
       "C": "Đặc biệt quan trọng bởi vì thiếu nó ta có thể phân tích ứng dụng sai.",
       "D": "Đặc biệt quan trọng bởi vì thiếu nó ta có thể cài đặt ứng dụng sai."
     },
-    "ans": "B",
+    "ans": "D",
     "type": "mcq"
   },
   {
@@ -308,7 +308,7 @@
       "C": "Tốn thời gian lựa chọn và phân tích thông tin",
       "D": "Giảm tính chủ động của người phỏng vấn"
     },
-    "ans": "A",
+    "ans": "D",
     "type": "mcq"
   },
   {
@@ -452,7 +452,7 @@
       "C": "Hệ thống các kiểu dữ liệu được sử dụng trong PM và hệ thống các hàm được sử dụng trong PM",
       "D": "Hệ thống các kiểu dữ liệu được sử dụng trong PM và hệ thống các biến được sử dụng trong PM"
     },
-    "ans": "D",
+    "ans": "C",
     "type": "mcq"
   },
   {
@@ -560,7 +560,7 @@
       "C": "Sự hiểu được",
       "D": "Sự thích nghi"
     },
-    "ans": "B",
+    "ans": "A",
     "type": "mcq"
   },
   {
@@ -584,7 +584,7 @@
       "C": "Xử lý",
       "D": "Cấu trúc"
     },
-    "ans": "A",
+    "ans": "B",
     "type": "mcq"
   },
   {
@@ -596,7 +596,7 @@
       "C": "Xử lý chi tiết của mỗi tạp module",
       "D": "Quan hệ giữa điều khiển và thủ tục"
     },
-    "ans": "A",
+    "ans": "B",
     "type": "mcq"
   },
   {
@@ -764,7 +764,7 @@
       "C": "Cách thức điều hướng (navigational) nhạy với ngữ cảnh",
       "D": "Những kỹ thuật input giữ tương tự suốt ứng dụng và mỗi ứng dụng phải có look and feel riêng biệt"
     },
-    "ans": "A",
+    "ans": "D",
     "type": "mcq"
   },
   {
@@ -788,7 +788,7 @@
       "C": "Hình ảnh hệ thống",
       "D": "Mô hình nhận thức hệ thống"
     },
-    "ans": "C",
+    "ans": "D",
     "type": "mcq"
   },
   {
@@ -896,7 +896,7 @@
       "C": "Vị trí, hình dáng, màu sắc và cách kích hoạt",
       "D": "Vị trí, ngôn ngữ, hình dáng, màu sắc cách kích hoặt và kết quả thực hiện"
     },
-    "ans": "A",
+    "ans": "D",
     "type": "mcq"
   },
   {
@@ -920,7 +920,7 @@
       "C": "Quản lý lỗi",
       "D": "Thời gian đáp ứng. Năng khiếu thẩm mỹ và kỹ năng đồ họa của người thiết kế giao diện."
     },
-    "ans": "C",
+    "ans": "B",
     "type": "mcq"
   },
   {
@@ -956,7 +956,7 @@
       "C": "Thiết kế dữ liệu",
       "D": "Thiết kế tổng quát"
     },
-    "ans": "B",
+    "ans": ["B","C"],
     "type": "mcq"
   },
   {
@@ -968,7 +968,7 @@
       "C": "Thiết kế giao diện người sử dụng.",
       "D": "Thiết kế dữ liệu"
     },
-    "ans": "B",
+    "ans": "A",
     "type": "mcq"
   },
   {
@@ -992,7 +992,7 @@
       "C": "Phát triển một tập những trừu tượng dữ liệu.",
       "D": "Tinh chế các đối tượng dữ liệu."
     },
-    "ans": "C",
+    "ans": "A",
     "type": "mcq"
   },
   {
@@ -1088,7 +1088,7 @@
       "C": "Thiết kế dữ liệu",
       "D": "Thiết kế tổng thể"
     },
-    "ans": "B",
+    "ans": ["B","C"],
     "type": "mcq"
   },
   {
@@ -1100,7 +1100,7 @@
       "C": "Thiết kế giao diện người dùng",
       "D": "Thiết kế sơ bộ"
     },
-    "ans": "B",
+    "ans": "A",
     "type": "mcq"
   },
   {
@@ -1186,5 +1186,17 @@
     },
     "ans": "A",
     "type": "mcq"
+  },
+  {
+    "id": "100",
+    "q": "Thủ tục phần mềm tập trung vào: ",
+    "opts": {
+      "A": "Cấp bậc điều khiển trong một cảm nhận trừu tượng hơn ",
+      "B": "Xử lý chi tiết của mỗi module riêng biệt ",
+      "C": "Xử lý chi tiết của mỗi tạp module ",
+      "D": "Quan hệ giữa điều khiển và thủ tục "
+    },
+    "ans": "B",
+     "type": "mcq"
   }
 ]
