@@ -2,83 +2,185 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Program For Student</title>
+    <title>Program For Student - Đăng nhập</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
-<body>
-    <div class="auth-container" id="container">
-        <!-- Đăng ký -->
-        <div class="form-container sign-up-container">
-            <form method="POST" action="{{ url_for('register_route') }}" id="signup-form">
-                <h1><i class="fas fa-user-plus"></i> Đăng ký</h1>
-                <div class="input-group">
-                    <i class="fas fa-user"></i>
-                    <input type="text" name="username" placeholder="Tên đăng nhập" required>
-                </div>
-                <div class="input-group">
-                    <i class="fas fa-envelope"></i>
-                    <input type="email" name="email" placeholder="Email" required>
-                </div>
-                <div class="input-group">
-                    <i class="fas fa-lock"></i>
-                    <input type="password" name="passwd" placeholder="Mật khẩu" required>
-                </div>
-                <button type="submit">Đăng ký</button>
-            </form>
-        </div>
-        <!-- Đăng nhập -->
-        <div class="form-container sign-in-container">
-            <form method="POST" action="{{ url_for('login_route') }}" id="signin-form">
-                <h1><i class="fas fa-sign-in-alt"></i> Đăng nhập</h1>
-                <div class="input-group">
-                    <i class="fas fa-user"></i>
-                    <input type="text" name="username" placeholder="Tên đăng nhập" required>
-                </div>
-                <div class="input-group">
-                    <i class="fas fa-lock"></i>
-                    <input type="password" name="passwd" placeholder="Mật khẩu" required>
-                </div>
-                <button type="submit">Đăng nhập</button>
-            </form>
-        </div>
-        <div class="overlay-container">
-            <div class="overlay">
-                <div class="overlay-panel overlay-left">
-                    <h2>Xin chào bạn mới</h2>
-                    <p>Đã có tài khoản? Đăng nhập ngay.</p>
-                    <button class="ghost" id="signIn"><i class="fas fa-sign-in-alt"></i> Đăng nhập</button>
-                </div>
-                <div class="overlay-panel overlay-right">
-                    <h2>Chào mừng bạn trở lại!</h2>
-                    <p>Chưa có tài khoản? Đăng ký ngay.</p>
-                    <button class="ghost" id="signUp"><i class="fas fa-user-plus"></i> Đăng ký</button>
-                </div>
-            </div>
-        </div>
-        <!-- Dialog Modal -->
-        <div id="dialog" class="dialog-backdrop" style="display:none;">
-            <div class="dialog-content">
-                <div class="dialog-message" id="dialog-message"></div>
-                <button class="dialog-btn" id="dialog-close">OK</button>
-            </div>
-        </div>
+<body class="auth-body">
+    <div class="auth-bg-shapes" aria-hidden="true">
+        <span class="shape s1"></span>
+        <span class="shape s2"></span>
+        <span class="shape s3"></span>
     </div>
-    <footer>
-        <span>© 2025 - Thiết kế bởi <b>TKMxDino</b></span>
-    </footer>
+
+    <div class="auth-shell">
+        <aside class="auth-hero">
+            <div class="hero-logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>Program For Student</span>
+            </div>
+            <h1>Học mọi lúc, <br>luyện đề mọi nơi.</h1>
+            <p>Ngân hàng câu hỏi tự cập nhật, chấm điểm tức thì,
+               chatbot tra cứu giáo trình - tất cả trong một nền tảng.</p>
+            <ul class="hero-features">
+                <li><i class="fa-solid fa-circle-check"></i> Hơn 19 môn học có sẵn đề ôn tập</li>
+                <li><i class="fa-solid fa-circle-check"></i> Xác thực OTP an toàn qua email</li>
+                <li><i class="fa-solid fa-circle-check"></i> Hỗ trợ câu hỏi nhiều đáp án</li>
+                <li><i class="fa-solid fa-circle-check"></i> Chatbot tra cứu tài liệu PDF</li>
+            </ul>
+            <div class="hero-foot">© 2025 - Thiết kế bởi <b>TKMxDino</b></div>
+        </aside>
+
+        <main class="auth-main">
+            <div class="auth-tabs" role="tablist">
+                <button class="tab active" data-tab="signin" role="tab">
+                    <i class="fa-solid fa-right-to-bracket"></i> Đăng nhập
+                </button>
+                <button class="tab" data-tab="signup" role="tab">
+                    <i class="fa-solid fa-user-plus"></i> Đăng ký
+                </button>
+                <button class="tab" data-tab="forgot" role="tab">
+                    <i class="fa-solid fa-key"></i> Quên mật khẩu
+                </button>
+            </div>
+
+            <!-- ===== ĐĂNG NHẬP ===== -->
+            <section class="panel active" data-panel="signin">
+                <h2>Chào mừng trở lại!</h2>
+                <p class="panel-sub">Đăng nhập để tiếp tục hành trình ôn tập.</p>
+                <form id="form-signin" autocomplete="off" novalidate>
+                    <label class="field">
+                        <span class="lbl"><i class="fa-solid fa-user"></i> Tên đăng nhập / Email</span>
+                        <input type="text" name="username" required placeholder="Nhập tên đăng nhập hoặc email">
+                    </label>
+                    <label class="field">
+                        <span class="lbl"><i class="fa-solid fa-lock"></i> Mật khẩu</span>
+                        <div class="pwd-wrap">
+                            <input type="password" name="passwd" required placeholder="Mật khẩu">
+                            <button type="button" class="pwd-toggle" aria-label="Hiện/Ẩn mật khẩu">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
+                    </label>
+                    <button class="btn-primary" type="submit">
+                        <i class="fa-solid fa-arrow-right-to-bracket"></i> Đăng nhập
+                    </button>
+                    <div class="alt-link">
+                        Quên mật khẩu? <a href="#" data-go="forgot">Khôi phục ngay</a>
+                    </div>
+                </form>
+            </section>
+
+            <!-- ===== ĐĂNG KÝ - bước 1 ===== -->
+            <section class="panel" data-panel="signup">
+                <h2>Tạo tài khoản mới</h2>
+                <p class="panel-sub">Chúng tôi sẽ gửi mã OTP về email để xác thực.</p>
+
+                <form id="form-signup-start" autocomplete="off" novalidate>
+                    <label class="field">
+                        <span class="lbl"><i class="fa-solid fa-user"></i> Tên đăng nhập</span>
+                        <input type="text" name="username" required placeholder="3-32 ký tự, không khoảng trắng">
+                    </label>
+                    <label class="field">
+                        <span class="lbl"><i class="fa-solid fa-envelope"></i> Email</span>
+                        <input type="email" name="email" required placeholder="you@example.com">
+                    </label>
+                    <label class="field">
+                        <span class="lbl"><i class="fa-solid fa-lock"></i> Mật khẩu</span>
+                        <div class="pwd-wrap">
+                            <input type="password" name="passwd" required placeholder="Tối thiểu 6 ký tự" minlength="6">
+                            <button type="button" class="pwd-toggle" aria-label="Hiện/Ẩn mật khẩu">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
+                    </label>
+                    <button class="btn-primary" type="submit">
+                        <i class="fa-solid fa-paper-plane"></i> Gửi mã OTP
+                    </button>
+                    <div class="alt-link">Đã có tài khoản? <a href="#" data-go="signin">Đăng nhập</a></div>
+                </form>
+
+                <!-- Đăng ký - bước 2: nhập OTP -->
+                <form id="form-signup-verify" class="hidden" autocomplete="off" novalidate>
+                    <div class="otp-info">
+                        <i class="fa-solid fa-envelope-circle-check"></i>
+                        Mã OTP đã được gửi tới <b id="signup-email-display"></b>.
+                        Vui lòng kiểm tra hộp thư (cả thư rác).
+                    </div>
+                    <label class="field">
+                        <span class="lbl"><i class="fa-solid fa-shield-halved"></i> Nhập mã OTP</span>
+                        <input type="text" name="otp" required maxlength="8" inputmode="numeric"
+                               placeholder="6 chữ số" class="otp-input">
+                    </label>
+                    <button class="btn-primary" type="submit">
+                        <i class="fa-solid fa-check"></i> Xác thực & Tạo tài khoản
+                    </button>
+                    <div class="alt-link">
+                        Chưa nhận được mã?
+                        <a href="#" id="signup-resend" class="resend-link">Gửi lại</a>
+                        <span class="resend-timer" id="signup-resend-timer"></span>
+                        &nbsp;·&nbsp; <a href="#" id="signup-back">Đổi email</a>
+                    </div>
+                </form>
+            </section>
+
+            <!-- ===== QUÊN MẬT KHẨU ===== -->
+            <section class="panel" data-panel="forgot">
+                <h2>Khôi phục mật khẩu</h2>
+                <p class="panel-sub">Nhập email đã đăng ký để nhận mã OTP đặt lại mật khẩu.</p>
+
+                <form id="form-forgot-start" autocomplete="off" novalidate>
+                    <label class="field">
+                        <span class="lbl"><i class="fa-solid fa-envelope"></i> Email</span>
+                        <input type="email" name="email" required placeholder="you@example.com">
+                    </label>
+                    <button class="btn-primary" type="submit">
+                        <i class="fa-solid fa-paper-plane"></i> Gửi mã OTP
+                    </button>
+                    <div class="alt-link">Nhớ ra rồi? <a href="#" data-go="signin">Đăng nhập</a></div>
+                </form>
+
+                <form id="form-forgot-verify" class="hidden" autocomplete="off" novalidate>
+                    <div class="otp-info">
+                        <i class="fa-solid fa-envelope-circle-check"></i>
+                        Mã OTP đã gửi tới <b id="forgot-email-display"></b>.
+                    </div>
+                    <label class="field">
+                        <span class="lbl"><i class="fa-solid fa-shield-halved"></i> Mã OTP</span>
+                        <input type="text" name="otp" required maxlength="8" inputmode="numeric"
+                               placeholder="6 chữ số" class="otp-input">
+                    </label>
+                    <label class="field">
+                        <span class="lbl"><i class="fa-solid fa-lock"></i> Mật khẩu mới</span>
+                        <div class="pwd-wrap">
+                            <input type="password" name="new_passwd" required minlength="6"
+                                   placeholder="Tối thiểu 6 ký tự">
+                            <button type="button" class="pwd-toggle" aria-label="Hiện/Ẩn mật khẩu">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                        </div>
+                    </label>
+                    <button class="btn-primary" type="submit">
+                        <i class="fa-solid fa-rotate"></i> Đặt lại mật khẩu
+                    </button>
+                    <div class="alt-link">
+                        <a href="#" id="forgot-resend" class="resend-link">Gửi lại OTP</a>
+                        <span class="resend-timer" id="forgot-resend-timer"></span>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <!-- Toast / Dialog -->
+    <div id="toast" class="toast" role="alert" aria-live="assertive"></div>
+
     <script src="{{ url_for('static', filename='script.js') }}"></script>
-    <script>
-        function showDialog(message) {
-            document.getElementById('dialog-message').textContent = message;
-            document.getElementById('dialog').style.display = 'flex';
-        }
-        document.getElementById('dialog-close').onclick = function() {
-            document.getElementById('dialog').style.display = 'none';
-        };
-        {% if error %}
-            showDialog("{{ error }}");
-        {% endif %}
-    </script>
 </body>
 </html>

@@ -8,5 +8,11 @@
         "username": "ad123",
         "email": "12312qsdasd@gmail.com",
         "passwd": "scrypt:32768:8:1$qgie9RHXoysX6HgQ$3a1ae3eac9658d7fc0ed108e1d3a6624677b1ca44890e980d22a7981eee8b39ea77ff88e96d3b64607449b36ac400330389fa30416a9d69c5d50558c2cd4eb73"
+    },
+    {
+        "username": "tester2",
+        "email": "t2@example.com",
+        "passwd": "scrypt:32768:8:1$7V3y5axW6R6vmgP0$10c172262f3425393dff15c21c2c5c33ca9aee3b367f03338f6e2996d2906a686ccabd081b2db475ff07f855c6d4753af2bccdec2a9f72e279ad35f29b6dfcf0",
+        "created_at": "2026-05-13T08:19:04.875927+00:00"
     }
 ]

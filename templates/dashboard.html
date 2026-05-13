@@ -2,51 +2,213 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>PFS-Trang chủ</title>
+    <title>Program For Student - Trang chủ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-    <style>
-        .dashboard-cards .card {
-            cursor: pointer;
-            transition: box-shadow 0.2s, transform 0.16s;
-        }
-        .dashboard-cards .card:hover {
-            box-shadow: 0 8px 32px #1976d233;
-            transform: translateY(-2px) scale(1.03);
-            background: #f3f7ff;
-        }
-        .card-icon {z
-            font-size: 2.6rem;
-            margin-bottom: 10px;
-            color: #1976d2;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
-    <div class="dashboard-container">
+    <div class="app-layout">
+
+        <!-- ============ SIDEBAR ============ -->
         <aside class="sidebar">
-            <div class="sidebar-title">Program For Student</div>
-            <ul>
-                <li class="active"><i class="fa fa-house"></i> Trang chủ</li>
-                <li onclick="window.location.href='{{ url_for('logout_route') }}'"><i class="fa fa-sign-out-alt"></i> Đăng xuất</li>
-            </ul>
+            <div class="brand">
+                <span class="brand-logo"><i class="fa-solid fa-graduation-cap"></i></span>
+                <div class="brand-text">
+                    <strong>Program</strong>
+                    <span>For Student</span>
+                </div>
+            </div>
+
+            <nav class="nav">
+                <a href="{{ url_for('dashboard') }}" class="nav-item active">
+                    <i class="fa-solid fa-house"></i> <span>Trang chủ</span>
+                </a>
+                <a href="{{ url_for('chatbot_page') }}" class="nav-item">
+                    <i class="fa-solid fa-robot"></i> <span>Chatbot AI</span>
+                </a>
+                <a href="#subjects" class="nav-item">
+                    <i class="fa-solid fa-book-open"></i> <span>Môn học</span>
+                </a>
+                <a href="#groups" class="nav-item">
+                    <i class="fa-solid fa-layer-group"></i> <span>Nhóm môn</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-foot">
+                <a href="{{ url_for('logout_route') }}" class="logout-btn">
+                    <i class="fa-solid fa-right-from-bracket"></i> Đăng xuất
+                </a>
+            </div>
         </aside>
-        <main class="dashboard-main">
-            <header class="dashboard-header">
-                <h1>Lựa chọn môn để ôn tập</h1>
-                <div class="user-info">
-                    <i class="fa fa-user-circle"></i> {{ session.get('username', 'Khách') }}
+
+        <!-- ============ MAIN ============ -->
+        <main class="main">
+
+            <!-- topbar -->
+            <header class="topbar">
+                <div class="topbar-left">
+                    <h1>Xin chào, <span class="hl">{{ session.get('username', 'Khách') }}</span> 👋</h1>
+                    <p class="topbar-sub">Chọn một môn để bắt đầu ôn tập, hoặc hỏi chatbot AI để tra cứu.</p>
+                </div>
+                <div class="topbar-right">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" id="subject-search" placeholder="Tìm môn học...">
+                    </div>
+                    <div class="user-chip">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <span>{{ session.get('username', 'Khách') }}</span>
+                    </div>
                 </div>
             </header>
-            <section class="dashboard-cards">
+
+            <!-- stats -->
+            <section class="stats">
+                <div class="stat-card">
+                    <span class="stat-icon" style="background:#dbeafe;color:#2563eb">
+                        <i class="fa-solid fa-book"></i>
+                    </span>
+                    <div>
+                        <div class="stat-value">{{ subjects|length }}</div>
+                        <div class="stat-label">Môn học</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon" style="background:#d1fae5;color:#059669">
+                        <i class="fa-solid fa-clipboard-question"></i>
+                    </span>
+                    <div>
+                        <div class="stat-value">∞</div>
+                        <div class="stat-label">Câu hỏi luyện tập</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon" style="background:#fef3c7;color:#d97706">
+                        <i class="fa-solid fa-trophy"></i>
+                    </span>
+                    <div>
+                        <div class="stat-value">10</div>
+                        <div class="stat-label">Thang điểm</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon" style="background:#fce7f3;color:#db2777">
+                        <i class="fa-solid fa-robot"></i>
+                    </span>
+                    <div>
+                        <div class="stat-value">AI</div>
+                        <div class="stat-label">Chatbot tra cứu</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- chatbot CTA card -->
+            <section class="chatbot-cta">
+                <div class="cta-content">
+                    <div class="cta-icon"><i class="fa-solid fa-comments"></i></div>
+                    <div>
+                        <h3>Chatbot tra cứu tài liệu</h3>
+                        <p>Đặt câu hỏi cho AI theo từng môn, dựa trên giáo trình PDF của bạn.</p>
+                    </div>
+                </div>
+                <a href="{{ url_for('chatbot_page') }}" class="cta-btn">
+                    Mở chatbot <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </section>
+
+            <!-- group filter chips -->
+            <section id="groups" class="filter-bar">
+                <button class="chip active" data-group="all">
+                    <i class="fa-solid fa-list"></i> Tất cả
+                </button>
+                {% set groups = subjects | map(attribute='group') | list | unique | list %}
+                {% for g in groups %}
+                    <button class="chip" data-group="{{ g }}">{{ g }}</button>
+                {% endfor %}
+            </section>
+
+            <!-- subject cards -->
+            <section id="subjects" class="subject-grid">
                 {% for mon in subjects %}
-                <a href="{{ url_for('subject_detail_route', subject_slug=mon.slug) }}" class="card" style="text-decoration:none">
-                    <div class="card-icon"><i class="{{ mon.icon }}"></i></div>
-                    <div class="card-title">{{ mon.name }}</div>
+                <a href="{{ url_for('subject_detail_route', subject_slug=mon.slug) }}"
+                   class="subject-card"
+                   data-name="{{ mon.name|lower }}"
+                   data-slug="{{ mon.slug|lower }}"
+                   data-group="{{ mon.group }}">
+                    <div class="card-top">
+                        <span class="card-icon"><i class="{{ mon.icon }}"></i></span>
+                        <span class="card-tag">{{ mon.group }}</span>
+                    </div>
+                    <div class="card-body">
+                        <h4>{{ mon.name }}</h4>
+                        <p>{{ mon.desc }}</p>
+                    </div>
+                    <div class="card-foot">
+                        <span class="slug">{{ mon.slug.upper() }}</span>
+                        <span class="go-btn">Vào ôn tập <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
                 </a>
                 {% endfor %}
             </section>
+
+            <div id="no-result" class="no-result hidden">
+                <i class="fa-solid fa-magnifying-glass-minus"></i>
+                <p>Không tìm thấy môn học phù hợp.</p>
+            </div>
+
+            <footer class="main-foot">
+                © 2025 - Thiết kế bởi <b>TKMxDino</b>
+            </footer>
         </main>
     </div>
+
+    <script>
+    (function () {
+        const search   = document.getElementById("subject-search");
+        const cards    = document.querySelectorAll(".subject-card");
+        const noResult = document.getElementById("no-result");
+        const chips    = document.querySelectorAll(".filter-bar .chip");
+
+        let currentGroup = "all";
+
+        function applyFilter() {
+            const q = (search?.value || "").toLowerCase().trim();
+            let visible = 0;
+            cards.forEach(c => {
+                const matchText = c.dataset.name.includes(q) || c.dataset.slug.includes(q);
+                const matchGroup = currentGroup === "all" || c.dataset.group === currentGroup;
+                const ok = matchText && matchGroup;
+                c.style.display = ok ? "" : "none";
+                if (ok) visible++;
+            });
+            noResult.classList.toggle("hidden", visible !== 0);
+        }
+
+        search?.addEventListener("input", applyFilter);
+        chips.forEach(ch => {
+            ch.addEventListener("click", () => {
+                chips.forEach(x => x.classList.remove("active"));
+                ch.classList.add("active");
+                currentGroup = ch.dataset.group;
+                applyFilter();
+            });
+        });
+
+        // sidebar active highlight on scroll
+        document.querySelectorAll(".sidebar .nav-item").forEach(a => {
+            a.addEventListener("click", () => {
+                document.querySelectorAll(".sidebar .nav-item")
+                    .forEach(x => x.classList.remove("active"));
+                a.classList.add("active");
+            });
+        });
+    })();
+    </script>
 </body>
 </html>

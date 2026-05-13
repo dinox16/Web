@@ -2,29 +2,83 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>{{ subject_name }}</title>
+    <title>{{ subject_name }} - Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='aptx.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
-    <div class="quiz-container">
-        <div class="quiz-title">Bài kiểm tra: <span id="subject-title">{{ subject_name }}</span></div>
-        <div class="progress-bar"><div class="progress"></div></div>
-        <div class="question-area"></div>
-        <div class="navigation">
-            <button class="nav-btn" id="prevBtn" disabled>Trước</button>
-            <button class="nav-btn" id="nextBtn">Tiếp</button>
-        </div>
-        <div class="score-area" style="display:none;"></div>
-        <div id="dialog" class="dialog-backdrop" style="display:none;">
-            <div class="dialog-content">
-                <div class="dialog-message" id="dialog-message"></div>
-                <button class="dialog-btn" id="dialog-close">OK</button>
+    <header class="quiz-topbar">
+        <div class="topbar-inner">
+            <a href="{{ url_for('dashboard') }}" class="back-btn" title="Quay về Dashboard">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <div class="quiz-meta">
+                <span class="meta-icon"><i class="{{ subject_icon }}"></i></span>
+                <div>
+                    <small>Bài kiểm tra</small>
+                    <h1 id="subject-title">{{ subject_name }}</h1>
+                </div>
+            </div>
+            <div class="topbar-actions">
+                <a href="{{ url_for('chatbot_page', subject_slug=subject_slug) }}" class="btn-ghost">
+                    <i class="fa-solid fa-robot"></i> <span>Hỏi chatbot</span>
+                </a>
             </div>
         </div>
+        <div class="progress-bar"><div class="progress"></div></div>
+    </header>
+
+    <div class="quiz-layout">
+
+        <!-- Question navigator -->
+        <aside class="q-nav">
+            <h3><i class="fa-solid fa-list-check"></i> Danh sách câu hỏi</h3>
+            <div id="q-nav-grid" class="q-nav-grid"></div>
+            <div class="q-nav-legend">
+                <span><i class="dot done"></i> Đã làm</span>
+                <span><i class="dot current"></i> Hiện tại</span>
+                <span><i class="dot pending"></i> Chưa làm</span>
+            </div>
+        </aside>
+
+        <!-- Main quiz panel -->
+        <main class="quiz-container">
+            <div class="question-area"></div>
+            <div class="navigation">
+                <button class="nav-btn ghost" id="prevBtn" disabled>
+                    <i class="fa-solid fa-chevron-left"></i> Trước
+                </button>
+                <div class="counter">
+                    <span id="counter-current">1</span> / <span id="counter-total">0</span>
+                </div>
+                <button class="nav-btn" id="nextBtn">
+                    Tiếp <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="score-area" style="display:none;"></div>
+        </main>
     </div>
-     <script>
-        let QUESTIONS_URL = "{{ json_url }}";
-        let SUBMIT_URL = "{{ submit_url }}";
+
+    <!-- dialog -->
+    <div id="dialog" class="dialog-backdrop" style="display:none;">
+        <div class="dialog-content">
+            <div class="dialog-icon"><i class="fa-solid fa-circle-info"></i></div>
+            <div class="dialog-message" id="dialog-message"></div>
+            <button class="dialog-btn" id="dialog-close">OK</button>
+        </div>
+    </div>
+
+    <script>
+        const QUESTIONS_URL = "{{ json_url }}";
+        const SUBMIT_URL    = "{{ submit_url }}";
+        const DASHBOARD_URL = "{{ url_for('dashboard') }}";
+        const CHATBOT_URL   = "{{ url_for('chatbot_page', subject_slug=subject_slug) }}";
     </script>
     <script src="{{ url_for('static', filename='aptx.js') }}"></script>
 </body>

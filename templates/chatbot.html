@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot AI - Program For Student</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='chatbot.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="app-layout">
+        <!-- Reuse the same sidebar -->
+        <aside class="sidebar">
+            <div class="brand">
+                <span class="brand-logo"><i class="fa-solid fa-graduation-cap"></i></span>
+                <div class="brand-text">
+                    <strong>Program</strong>
+                    <span>For Student</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="{{ url_for('dashboard') }}" class="nav-item">
+                    <i class="fa-solid fa-house"></i> <span>Trang chủ</span>
+                </a>
+                <a href="{{ url_for('chatbot_page') }}" class="nav-item active">
+                    <i class="fa-solid fa-robot"></i> <span>Chatbot AI</span>
+                </a>
+                <a href="{{ url_for('dashboard') }}#subjects" class="nav-item">
+                    <i class="fa-solid fa-book-open"></i> <span>Môn học</span>
+                </a>
+            </nav>
+            <div class="sidebar-foot">
+                <a href="{{ url_for('logout_route') }}" class="logout-btn">
+                    <i class="fa-solid fa-right-from-bracket"></i> Đăng xuất
+                </a>
+            </div>
+        </aside>
+
+        <main class="main chatbot-main">
+
+            <header class="topbar">
+                <div class="topbar-left">
+                    <h1><i class="fa-solid fa-robot" style="color:var(--primary)"></i> Chatbot tra cứu tài liệu</h1>
+                    <p class="topbar-sub">Đặt câu hỏi về một môn học - chatbot sẽ trả lời dựa trên giáo trình PDF / câu hỏi của bạn.</p>
+                </div>
+                <div class="topbar-right">
+                    <div class="user-chip">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <span>{{ session.get('username', 'Khách') }}</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="chatbot-shell">
+
+                <!-- Left: subject + PDF upload -->
+                <aside class="chatbot-side">
+                    <div class="side-card">
+                        <h3><i class="fa-solid fa-book"></i> Chọn môn học</h3>
+                        <select id="chat-subject" class="select-pretty">
+                            <option value="">-- Tất cả các môn --</option>
+                            {% for s in subjects %}
+                            <option value="{{ s.slug }}" {% if current_subject and current_subject.slug == s.slug %}selected{% endif %}>
+                                {{ s.name }}
+                            </option>
+                            {% endfor %}
+                        </select>
+                        <p class="side-hint">Chatbot sẽ ưu tiên dữ liệu của môn được chọn.</p>
+                    </div>
+
+                    <div class="side-card">
+                        <h3><i class="fa-solid fa-file-pdf"></i> Tài liệu PDF</h3>
+                        <label class="upload-zone" id="upload-zone">
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                            <strong>Kéo thả hoặc bấm để chọn PDF</strong>
+                            <span>Tối đa 20MB - .pdf</span>
+                            <input type="file" id="pdf-input" accept="application/pdf" hidden>
+                        </label>
+                        <ul class="file-list" id="file-list"></ul>
+                        <p class="side-hint"><i class="fa-solid fa-circle-info"></i> Hiện chỉ là giao diện - backend AI sẽ được kích hoạt sau.</p>
+                    </div>
+
+                    <div class="side-card">
+                        <h3><i class="fa-solid fa-bolt"></i> Gợi ý câu hỏi</h3>
+                        <div class="quick-tags">
+                            <button class="quick-tag" data-q="Tóm tắt chương 1 của môn này">Tóm tắt chương 1</button>
+                            <button class="quick-tag" data-q="Giải thích khái niệm chính">Khái niệm chính</button>
+                            <button class="quick-tag" data-q="Tạo 5 câu hỏi luyện tập">Tạo câu hỏi</button>
+                            <button class="quick-tag" data-q="Cho ví dụ minh hoạ">Cho ví dụ</button>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Right: chat -->
+                <section class="chat-panel">
+                    <div class="chat-header">
+                        <div class="bot-avatar"><i class="fa-solid fa-robot"></i></div>
+                        <div>
+                            <strong>Trợ lý AI</strong>
+                            <small id="chat-status">Sẵn sàng - đang ở chế độ demo</small>
+                        </div>
+                        <button class="chat-clear" id="chat-clear" title="Xoá hội thoại">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </div>
+
+                    <div class="chat-messages" id="chat-messages">
+                        <!-- welcome -->
+                        <div class="msg msg-bot">
+                            <div class="msg-avatar"><i class="fa-solid fa-robot"></i></div>
+                            <div class="msg-bubble">
+                                Xin chào <b>{{ session.get('username', 'bạn') }}</b>! 👋<br>
+                                Mình là <b>trợ lý AI</b> giúp bạn tra cứu giáo trình và câu hỏi ôn tập.
+                                <br><br>
+                                Hãy:
+                                <ul>
+                                    <li>Chọn <b>môn học</b> ở bên trái</li>
+                                    <li>(Tuỳ chọn) tải lên file <b>PDF</b> giáo trình</li>
+                                    <li>Đặt câu hỏi vào ô bên dưới</li>
+                                </ul>
+                                <span class="note">⚠ Tính năng AI hiện đang ở chế độ <b>demo</b> - sẽ được kích hoạt sau khi backend được cấu hình.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="chat-input-row" id="chat-form">
+                        <button type="button" class="icon-btn" id="attach-btn" title="Đính kèm PDF">
+                            <i class="fa-solid fa-paperclip"></i>
+                        </button>
+                        <div class="chat-textarea-wrap">
+                            <textarea id="chat-input"
+                                placeholder="Đặt câu hỏi cho chatbot... (Shift+Enter để xuống dòng)"
+                                rows="1"></textarea>
+                        </div>
+                        <button type="submit" class="send-btn" id="send-btn" disabled>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </section>
+            </div>
+
+            <footer class="main-foot">© 2025 - Thiết kế bởi <b>TKMxDino</b></footer>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='chatbot.js') }}"></script>
+</body>
+</html>

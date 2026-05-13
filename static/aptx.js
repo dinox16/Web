@@ -1,405 +1,422 @@
-/* Updated quiz script with:
-   - Load ALL questions from JSON (no random selection)
-   - "Làm lại" button:  reloads all questions
-   - "Quay về Dashboard" button: navigates to DASHBOARD_URL if defined, otherwise '/dashboard'
-   - Buttons are shown after finishing the quiz (score view)
-   - Retry restores quiz UI and resets state via loadQuestions()
-*/
+/* ============================================================
+   QUIZ ENGINE
+   - Load all questions
+   - Support single & multi-answer MCQ (cs403.json)
+     -> Multi-answer detected when q.ans is an Array
+   - Question navigator sidebar
+   - Score, retry, back to dashboard
+   ============================================================ */
 
 let questions = [];
 let current = 0;
-let userAnswers = [];
+let userAnswers = [];   // for mcq: string for single, array for multi; for short: string
 let quizDone = false;
 
-function goToQuestionById(id) {
-    const index = questions.findIndex(q => q.id == id);
-    if (index !== -1) {
-        current = index;
-        renderQuestion();
-    } else {
-        showDialog(`Không tìm thấy câu hỏi với id: ${id}`);
-    }
+/* ============ utils ============ */
+function escapeHtml(s) {
+    return String(s ?? "")
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;").replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
 }
 
 function normalizeVN(str) {
     if (!str) return "";
-    return str
-        .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-        .replace(/[.,? !;:()\[\]{}"']/g, '')
-        .replace(/\s+/g, ' ')
+    return String(str)
+        .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+        .replace(/[.,?!;:()\[\]{}"']/g, "")
+        .replace(/\s+/g, " ")
         .toLowerCase()
         .trim();
 }
 
 function isShortAnswerCorrect(question, userAnswer) {
     if (!question.keywords || !Array.isArray(question.keywords)) return false;
-    const answerNorm = normalizeVN(userAnswer);
+    const a = normalizeVN(userAnswer);
     let matched = 0;
-    for (let kw of question.keywords) {
-        const kwNorm = normalizeVN(kw);
-        if (answerNorm.includes(kwNorm)) matched++;
+    for (const kw of question.keywords) {
+        if (a.includes(normalizeVN(kw))) matched++;
     }
     return matched / question.keywords.length >= 0.8;
 }
 
-/** Escape HTML to avoid XSS (we will inject only <img> that we generate ourselves). */
-function escapeHtml(s) {
-    return String(s ?? "")
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
-}
-
-/**
- * Convert JSON path (often Windows style or starts with static/) into public URL "/xx/xx"
- * Examples:
- *  - "static\\pic\\a.png" -> "/pic/a.png"
- *  - "static/pic/a.png"   -> "/pic/a.png"
- *  - "/pic/a.png"         -> "/pic/a.png"
- */
 function toPublicUrl(p) {
     if (!p) return "";
     let s = String(p).trim().replace(/\\/g, "/");
-    if (s.startsWith("static/")) s = s.slice("static/".length); // -> "pic/..."
+    if (s.startsWith("static/")) s = s.slice("static/".length);
     if (!s.startsWith("/")) s = "/" + s;
     return s;
 }
 
-/**
- * Render q.q with placeholders img[n] replaced by <img src="/..."> using q.imgs array.
- * - Uses 0-based index: img[0], img[1], ...
- */
+/** Render question text replacing img[N] placeholders. */
 function renderQuestionHtml(q) {
-    const raw = String(q?.q ?? "");
+    const raw = String(q?.q ?? q?.question ?? "");
     const escaped = escapeHtml(raw);
-
     return escaped.replace(/img\[(\d+)\]/g, (_, nStr) => {
         const n = Number(nStr);
         const imgs = Array.isArray(q?.imgs) ? q.imgs : [];
         const src = imgs[n];
-
         if (!src) return `img[${n}]`;
-
         const url = toPublicUrl(src);
-        return `<img class="inline-q-img" src="${escapeHtml(url)}" alt="img[${n}]" style="max-width:100%;height:auto;display:block;margin:10px 0;" />`;
+        return `<img class="inline-q-img" src="${escapeHtml(url)}" alt="img[${n}]" />`;
     });
 }
 
+/** Convert answer to canonical Set<string> (uppercase). */
+function ansSet(value) {
+    if (value === null || value === undefined) return new Set();
+    if (Array.isArray(value)) {
+        return new Set(value.map(v => String(v).trim().toUpperCase()).filter(Boolean));
+    }
+    const s = String(value).trim();
+    if (!s) return new Set();
+    if (s.includes(",") || s.includes(" ")) {
+        return new Set(s.split(/[,\s]+/).map(p => p.trim().toUpperCase()).filter(Boolean));
+    }
+    // If string is "AB" treat as multi
+    if (s.length > 1 && /^[A-H]+$/i.test(s)) {
+        return new Set(s.toUpperCase().split(""));
+    }
+    return new Set([s.toUpperCase()]);
+}
+
+function isMultiAnswer(q) {
+    return Array.isArray(q?.ans) || Array.isArray(q?.a);
+}
+
+function setsEqual(a, b) {
+    if (a.size !== b.size) return false;
+    for (const x of a) if (!b.has(x)) return false;
+    return true;
+}
+
+/* ============ dialog ============ */
+function showDialog(message) {
+    const el = document.getElementById("dialog-message");
+    if (el) el.textContent = message;
+    const dialog = document.getElementById("dialog");
+    if (dialog) dialog.style.display = "flex";
+}
+const dialogCloseBtn = document.getElementById("dialog-close");
+if (dialogCloseBtn) {
+    dialogCloseBtn.onclick = () => {
+        const dialog = document.getElementById("dialog");
+        if (dialog) dialog.style.display = "none";
+    };
+}
+
+/* ============ loaders ============ */
 async function loadQuestions() {
     const res = await fetch(QUESTIONS_URL);
-    const allQuestions = await res.json();
-
-    // Load ALL questions from JSON (no filtering, no random selection)
-    questions = allQuestions;
-
+    const all = await res.json();
+    questions = Array.isArray(all) ? all : [];
     current = 0;
-    userAnswers = [];
+    userAnswers = new Array(questions.length).fill(undefined);
     quizDone = false;
 
-    // restore UI if previously hidden
-    const qa = document.querySelector('.question-area');
-    if (qa) qa.style.display = "";
-    const nav = document.querySelector('.navigation');
-    if (nav) nav.style.display = "";
-    const pb = document.querySelector('.progress-bar');
-    if (pb) pb.style.display = "";
+    document.querySelector(".question-area").style.display = "";
+    document.querySelector(".navigation").style.display = "";
+    document.querySelector(".score-area").style.display = "none";
 
+    buildNavGrid();
     renderQuestion();
     updateProgress();
 }
 
-function showDialog(message) {
-    const el = document.getElementById('dialog-message');
-    if (el) el.textContent = message;
-    const dialog = document.getElementById('dialog');
-    if (dialog) dialog.style.display = 'flex';
+/* ============ navigator grid ============ */
+function buildNavGrid() {
+    const grid = document.getElementById("q-nav-grid");
+    if (!grid) return;
+    grid.innerHTML = "";
+    questions.forEach((q, idx) => {
+        const btn = document.createElement("button");
+        btn.className = "q-num pending";
+        btn.textContent = idx + 1;
+        btn.dataset.index = idx;
+        btn.onclick = () => {
+            if (quizDone) return;
+            current = idx;
+            renderQuestion();
+        };
+        grid.appendChild(btn);
+    });
+    document.getElementById("counter-total").textContent = questions.length;
 }
 
-const dialogCloseBtn = document.getElementById('dialog-close');
-if (dialogCloseBtn) {
-    dialogCloseBtn.onclick = function() {
-        const dialog = document.getElementById('dialog');
-        if (dialog) dialog.style.display = 'none';
-    };
+function refreshNavGrid() {
+    const grid = document.getElementById("q-nav-grid");
+    if (!grid) return;
+    grid.querySelectorAll(".q-num").forEach(el => {
+        const idx = Number(el.dataset.index);
+        el.classList.remove("done", "current", "correct", "incorrect");
+        if (idx === current) el.classList.add("current");
+        else if (typeof userAnswers[idx] !== "undefined") el.classList.add("done");
+
+        if (quizDone) {
+            // After quiz: mark correct/incorrect
+            const q = questions[idx];
+            const ua = userAnswers[idx];
+            let correct = false;
+            if (q.type === "short") correct = ua && isShortAnswerCorrect(q, ua);
+            else {
+                const set = ansSet(q.ans ?? q.a);
+                const uSet = ansSet(ua);
+                correct = set.size > 0 && setsEqual(set, uSet);
+            }
+            el.classList.remove("current");
+            el.classList.add(correct ? "correct" : "incorrect");
+        }
+    });
 }
 
+/* ============ render question ============ */
 function renderQuestion() {
     if (!questions.length) return;
-
     const q = questions[current];
-    const questionArea = document.querySelector('.question-area');
-    let inputHtml = "";
-    let imageHtml = "";
+    const area = document.querySelector(".question-area");
 
-    // Keep existing single image (if present). Normalize to /xx/xx
+    let imgHtml = "";
     if (q.img) {
-        const url = toPublicUrl(q.img);
-        imageHtml = `<div class="question-img">
-            <img src="${escapeHtml(url)}" alt="Hình minh họa" style="max-width: 100%; height: auto; margin: 10px 0;">
-        </div>`;
+        imgHtml = `<div class="question-img"><img src="${escapeHtml(toPublicUrl(q.img))}" alt="img"/></div>`;
     }
 
-    const questionTextHtml = renderQuestionHtml(q);
+    const qText = renderQuestionHtml(q);
+    const multi = isMultiAnswer(q);
+    const typeBadge = q.type === "short"
+        ? `<span class="badge">Tự luận</span>`
+        : multi
+            ? `<span class="badge multi"><i class="fa-solid fa-list-check"></i> Nhiều đáp án</span>`
+            : `<span class="badge">Trắc nghiệm</span>`;
 
     if (q.type === "short") {
-        let prev = userAnswers[current] || "";
-        inputHtml = `
+        const prev = userAnswers[current] || "";
+        area.innerHTML = `
+            <div class="question-number">${typeBadge} Câu ${current + 1} / ${questions.length}</div>
+            <div class="question-text">${qText}</div>
+            ${imgHtml}
             <div class="short-answer">
                 <input type="text" id="short-answer" placeholder="Nhập câu trả lời..." value="${escapeHtml(prev)}" autocomplete="off">
             </div>
         `;
-
-        questionArea.innerHTML = `
-            <div class="question-number">Câu hỏi ${current + 1} / ${questions.length}</div>
-            <div class="question-text">${questionTextHtml}</div>
-            ${imageHtml}
-            ${inputHtml}
-        `;
-
-        const sa = document.getElementById('short-answer');
-        if (sa) {
-            sa.oninput = function () {
-                userAnswers[current] = this.value;
-            };
-        }
-
+        const inp = document.getElementById("short-answer");
+        if (inp) inp.oninput = () => { userAnswers[current] = inp.value; refreshNavGrid(); };
     } else {
-        let opts = q.opts || q.op;
-        let optsHtml = '';
-        for (const [key, value] of Object.entries(opts)) {
+        const opts = q.opts || q.op || {};
+        const correctSet = ansSet(q.ans ?? q.a);
+        const userVal = userAnswers[current];
+        const userSet = ansSet(userVal);
+        const answered = typeof userVal !== "undefined";
+
+        let optsHtml = "";
+        for (const [key, label] of Object.entries(opts)) {
+            const K = String(key).toUpperCase();
+            let cls = "option";
+            let suffix = "";
+
+            if (answered) {
+                if (correctSet.has(K)) { cls += " correct"; suffix = '<i class="ans-icon fa-solid fa-circle-check"></i>'; }
+                if (userSet.has(K) && !correctSet.has(K)) { cls += " incorrect"; suffix = '<i class="ans-icon fa-solid fa-circle-xmark"></i>'; }
+            } else if (multi && userSet.has(K)) {
+                cls += " selected";
+                suffix = '<i class="ans-icon fa-solid fa-check"></i>';
+            }
             optsHtml += `
-                <button class="option" data-opt="${escapeHtml(key)}">
-                    <span class="opt-key">${escapeHtml(key)}.</span> ${escapeHtml(value)}
+                <button class="${cls}" data-opt="${escapeHtml(K)}" ${answered ? "disabled" : ""}>
+                    <span class="opt-key">${escapeHtml(K)}</span>
+                    <span class="opt-label">${escapeHtml(label)}</span>
+                    ${suffix}
                 </button>`;
         }
 
-        questionArea.innerHTML = `
-            <div class="question-number">Câu hỏi ${current + 1} / ${questions.length}</div>
-            <div class="question-text">${questionTextHtml}</div>
-            ${imageHtml}
+        const multiHint = (multi && !answered)
+            ? `<div class="multi-hint"><i class="fa-solid fa-circle-info"></i> Câu hỏi có <b>nhiều đáp án đúng</b> - chọn tất cả các đáp án bạn cho là đúng rồi nhấn <b>Xác nhận</b>.</div>`
+            : "";
+        const submitMulti = (multi && !answered)
+            ? `<div class="multi-submit">
+                  <button id="multi-confirm-btn" disabled>
+                    <i class="fa-solid fa-check"></i> Xác nhận đáp án
+                  </button>
+               </div>`
+            : "";
+
+        area.innerHTML = `
+            <div class="question-number">${typeBadge} Câu ${current + 1} / ${questions.length}</div>
+            <div class="question-text">${qText}</div>
+            ${imgHtml}
+            ${multiHint}
             <div class="options">${optsHtml}</div>
+            ${submitMulti}
         `;
 
-        const userAns = userAnswers[current];
-        const correct = q.ans || q.a;
-
-        document.querySelectorAll('.option').forEach(btn => {
-            const optKey = btn.dataset.opt;
-            btn.disabled = false;
-
-            if (typeof userAns !== "undefined") {
-                btn.disabled = true;
-                if (optKey === correct) {
-                    btn.classList.add('correct');
-                }
-                if (optKey === userAns) {
-                    if (optKey === correct) {
-                        btn.classList.add('correct');
-                    } else {
-                        btn.classList.add('incorrect');
+        // wire up clicks
+        const optButtons = area.querySelectorAll(".option");
+        if (multi && !answered) {
+            const confirmBtn = area.querySelector("#multi-confirm-btn");
+            const updateConfirm = () => {
+                const anySelected = area.querySelectorAll(".option.selected").length > 0;
+                if (confirmBtn) confirmBtn.disabled = !anySelected;
+            };
+            optButtons.forEach(btn => {
+                btn.onclick = () => {
+                    btn.classList.toggle("selected");
+                    const icon = btn.querySelector(".ans-icon");
+                    if (btn.classList.contains("selected") && !icon) {
+                        btn.insertAdjacentHTML("beforeend", '<i class="ans-icon fa-solid fa-check"></i>');
+                    } else if (!btn.classList.contains("selected") && icon) {
+                        icon.remove();
                     }
-                }
-            } else {
-                btn.onclick = () => selectOption(btn, btn.dataset.opt);
+                    updateConfirm();
+                };
+            });
+            if (confirmBtn) {
+                confirmBtn.onclick = () => {
+                    const chosen = [...area.querySelectorAll(".option.selected")].map(b => b.dataset.opt);
+                    if (!chosen.length) return showDialog("Hãy chọn ít nhất 1 đáp án!");
+                    userAnswers[current] = chosen;
+                    renderQuestion();
+                    refreshNavGrid();
+                };
             }
-        });
+        } else if (!answered) {
+            optButtons.forEach(btn => {
+                btn.onclick = () => {
+                    userAnswers[current] = btn.dataset.opt;
+                    renderQuestion();
+                    refreshNavGrid();
+                };
+            });
+        }
     }
 
+    document.getElementById("counter-current").textContent = current + 1;
     updateProgress();
     updateNav();
-}
-
-function selectOption(btn, opt) {
-    if (quizDone) return;
-    const q = questions[current];
-    if (q.type !== "mcq") return;
-    if (typeof userAnswers[current] !== "undefined") return;
-
-    userAnswers[current] = opt;
-    const correct = q.ans || q.a;
-
-    document.querySelectorAll('.option').forEach(b => {
-        const bOpt = b.dataset.opt;
-        b.classList.remove('selected', 'correct', 'incorrect');
-        b.disabled = true;
-
-        if (bOpt === correct) {
-            b.classList.add('correct');
-        }
-        if (bOpt === opt) {
-            b.classList.add(opt === correct ? 'correct' : 'incorrect');
-        }
-    });
+    refreshNavGrid();
 }
 
 function updateNav() {
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
     if (prevBtn) prevBtn.disabled = current === 0;
-    if (nextBtn) nextBtn.textContent = current === questions.length - 1 ? "Nộp bài" : "Tiếp";
+    if (nextBtn) {
+        const isLast = current === questions.length - 1;
+        nextBtn.innerHTML = isLast
+            ? `<i class="fa-solid fa-flag-checkered"></i> Nộp bài`
+            : `Tiếp <i class="fa-solid fa-chevron-right"></i>`;
+    }
 }
 
 function updateProgress() {
-    const progress = document.querySelector('.progress');
-    if (progress) progress.style.width = ((current + 1) / questions.length * 100) + "%";
+    const answeredCount = userAnswers.filter(v => typeof v !== "undefined").length;
+    const pct = Math.round((answeredCount / questions.length) * 100);
+    const progress = document.querySelector(".progress");
+    if (progress) progress.style.width = pct + "%";
 }
 
-const prevBtn = document.getElementById('prevBtn');
-if (prevBtn) {
-    prevBtn.onclick = () => {
-        if (current > 0) {
-            current--;
-            renderQuestion();
-        }
-    };
-}
+/* ============ nav buttons ============ */
+const prevBtn = document.getElementById("prevBtn");
+if (prevBtn) prevBtn.onclick = () => { if (current > 0) { current--; renderQuestion(); } };
 
-const nextBtn = document.getElementById('nextBtn');
-if (nextBtn) {
-    nextBtn.onclick = () => {
-        if (quizDone) return;
-        const q = questions[current];
-        if (q.type === "short") {
-            if (!userAnswers[current] || userAnswers[current].trim() === "") {
-                showDialog("Bạn hãy nhập câu trả lời trước khi tiếp tục!");
-                return;
-            }
-        } else if (q.type === "mcq") {
-            if (typeof userAnswers[current] === "undefined") {
-                showDialog("Bạn hãy chọn đáp án trước khi tiếp tục!");
-                return;
-            }
-        }
-        if (current === questions.length - 1) {
-            finishQuiz();
-        } else {
-            current++;
-            renderQuestion();
-        }
-    };
-}
+const nextBtn = document.getElementById("nextBtn");
+if (nextBtn) nextBtn.onclick = () => {
+    if (quizDone) return;
+    const q = questions[current];
+    if (q.type === "short") {
+        if (!userAnswers[current] || String(userAnswers[current]).trim() === "")
+            return showDialog("Bạn hãy nhập câu trả lời trước khi tiếp tục!");
+    } else {
+        if (typeof userAnswers[current] === "undefined")
+            return showDialog("Bạn hãy chọn đáp án trước khi tiếp tục!");
+    }
+    if (current === questions.length - 1) finishQuiz();
+    else { current++; renderQuestion(); }
+};
 
+/* ============ submit / finish ============ */
 function convertAnswersToDict() {
-    // Chuyển userAnswers sang dạng {id:ans} để gửi về backend
-    let dict = {};
-    questions.forEach((q, idx) => {
-        dict[q.id] = userAnswers[idx];
-    });
+    const dict = {};
+    questions.forEach((q, idx) => { dict[q.id] = userAnswers[idx]; });
     return dict;
 }
 
-function computeLocalScoreOutOf100() {
-    // Fallback scoring in case server doesn't return a score.
-    // mcq: exact match. short: use isShortAnswerCorrect.
+function computeLocalScore() {
     let correct = 0;
     questions.forEach((q, idx) => {
         const ua = userAnswers[idx];
-        if (q.type === "mcq") {
-            const correctOpt = q.ans || q.a;
-            if (ua && ua === correctOpt) correct++;
-        } else if (q.type === "short") {
+        if (q.type === "short") {
             if (ua && isShortAnswerCorrect(q, ua)) correct++;
+        } else {
+            const cSet = ansSet(q.ans ?? q.a);
+            const uSet = ansSet(ua);
+            if (cSet.size && setsEqual(cSet, uSet)) correct++;
         }
     });
-    const total = questions.length;
-    // score out of 100
-    return Math.round((correct / total) * 100);
+    return { correct, total: questions.length, score: Math.round(correct / questions.length * 100) };
 }
 
 async function finishQuiz() {
     quizDone = true;
 
+    let score = null, correct = null, total = questions.length;
     try {
         const res = await fetch(SUBMIT_URL, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(convertAnswersToDict())
         });
+        const data = await res.json().catch(() => null);
+        if (data && typeof data.score === "number") { score = data.score; correct = data.correct; total = data.total || total; }
+    } catch (e) { /* fallback local */ }
 
-        let data;
-        try {
-            data = await res.json();
-        } catch (e) {
-            data = null;
-        }
-
-        // Determine scoreOutOf100 using server response or local fallback
-        let scoreOutOf100 = null;
-        if (data && typeof data.score === "number") {
-            // assume server returned 0-100
-            scoreOutOf100 = data.score;
-        } else if (data && typeof data.correct === "number" && typeof data.total === "number") {
-            scoreOutOf100 = Math.round((data.correct / data.total) * 100);
-        } else {
-            // fallback local scoring
-            scoreOutOf100 = computeLocalScoreOutOf100();
-        }
-
-        // Convert to scale of 10, round to one decimal place
-        let scoreOutOf10 = Math.round((scoreOutOf100 / 100) * 10 * 10) / 10;
-
-        // Show only the score on scale of 10 + buttons for retry/dashboard
-        const resultHTML = `
-            <div class="final-score-box" style="text-align:center;padding:18px;">
-                <h3>Kết quả</h3>
-                <p style="font-size:1.5rem;margin:8px 0;"><b>Điểm:</b> ${scoreOutOf10} / 10</p>
-                <div style="margin-top:14px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
-                    <button id="retryBtn" class="nav-btn" style="background:linear-gradient(180deg,var(--primary),var(--primary-700));">Làm lại</button>
-                    <button id="backBtn" class="nav-btn" style="background:#657786;">Quay về Dashboard</button>
-                </div>
-            </div>
-        `;
-
-        const scoreArea = document.querySelector('.score-area');
-        if (scoreArea) {
-            scoreArea.innerHTML = resultHTML;
-            scoreArea.style.display = "block";
-        }
-
-        // hide quiz UI
-        const qa = document.querySelector('.question-area');
-        if (qa) qa.style.display = "none";
-        const nav = document.querySelector('.navigation');
-        if (nav) nav.style.display = "none";
-        const pb = document.querySelector('.progress-bar');
-        if (pb) pb.style.display = "none";
-
-        // attach button handlers (elements just created)
-        const retryBtn = document.getElementById('retryBtn');
-        if (retryBtn) {
-            retryBtn.onclick = async function () {
-                // Reset state and reload all questions
-                quizDone = false;
-                // Clear score area UI
-                if (scoreArea) {
-                    scoreArea.innerHTML = '';
-                    scoreArea.style.display = "none";
-                }
-                // show quiz UI again
-                if (qa) qa.style.display = "";
-                if (nav) nav.style.display = "";
-                if (pb) pb.style.display = "";
-
-                // small delay so UI updates smoothly
-                setTimeout(() => {
-                    loadQuestions();
-                }, 60);
-            };
-        }
-
-        const backBtn = document.getElementById('backBtn');
-        if (backBtn) {
-            backBtn.onclick = function () {
-                const dest = (typeof DASHBOARD_URL !== 'undefined' && DASHBOARD_URL) ? DASHBOARD_URL : '/dashboard';
-                window.location.href = dest;
-            };
-        }
-
-    } catch (err) {
-        showDialog("Có lỗi khi nộp bài: " + (err && err.message ? err.message : err));
+    if (score === null) {
+        const local = computeLocalScore();
+        score = local.score; correct = local.correct; total = local.total;
     }
+
+    const scale10 = Math.round((score / 100) * 100) / 10; // 0.1 precision
+    const passing = score >= 50;
+
+    const html = `
+        <div class="final-score-box">
+            <div class="dialog-icon" style="background:${passing ? '#dcfce7' : '#fee2e2'};color:${passing ? '#16a34a' : '#dc2626'};margin:0 auto 10px;">
+                <i class="fa-solid ${passing ? 'fa-trophy' : 'fa-face-frown'}"></i>
+            </div>
+            <h3>${passing ? 'Chúc mừng!' : 'Cố gắng thêm nhé!'}</h3>
+            <div class="score-big">${scale10.toFixed(1)} / 10</div>
+            <p class="score-sub">${correct}/${total} câu đúng (${score}%)</p>
+            <div class="score-actions">
+                <button id="retryBtn" class="nav-btn">
+                    <i class="fa-solid fa-rotate"></i> Làm lại
+                </button>
+                <button id="reviewBtn" class="nav-btn ghost">
+                    <i class="fa-solid fa-list"></i> Xem lại bài
+                </button>
+                <button id="backBtn" class="nav-btn ghost">
+                    <i class="fa-solid fa-house"></i> Về Dashboard
+                </button>
+            </div>
+        </div>
+    `;
+    const scoreArea = document.querySelector(".score-area");
+    scoreArea.innerHTML = html;
+    scoreArea.style.display = "block";
+
+    // hide question / nav, show navigator with review state
+    document.querySelector(".question-area").style.display = "none";
+    document.querySelector(".navigation").style.display = "none";
+    refreshNavGrid();
+
+    document.getElementById("retryBtn").onclick = () => { loadQuestions(); };
+    document.getElementById("backBtn").onclick = () => {
+        window.location.href = (typeof DASHBOARD_URL !== "undefined") ? DASHBOARD_URL : "/dashboard";
+    };
+    document.getElementById("reviewBtn").onclick = () => {
+        scoreArea.style.display = "none";
+        document.querySelector(".question-area").style.display = "";
+        // keep navigation hidden, but allow jump via grid
+        current = 0;
+        renderQuestion();
+    };
 }
 
-window.onload = loadQuestions;
+window.addEventListener("DOMContentLoaded", loadQuestions);
