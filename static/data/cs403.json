@@ -56,7 +56,10 @@
       "C": "Thuận lợi vì ngôn ngữ tự nhiên dễ sử dụng",
       "D": "Rất khó khăn vì ngôn ngữ tự nhiên rất khó sử dụng."
     },
-    "ans": ["A","B"],
+    "ans": [
+      "A",
+      "B"
+    ],
     "type": "mcq"
   },
   {
@@ -956,7 +959,10 @@
       "C": "Thiết kế dữ liệu",
       "D": "Thiết kế tổng quát"
     },
-    "ans": ["B","C"],
+    "ans": [
+      "B",
+      "C"
+    ],
     "type": "mcq"
   },
   {
@@ -1088,7 +1094,10 @@
       "C": "Thiết kế dữ liệu",
       "D": "Thiết kế tổng thể"
     },
-    "ans": ["B","C"],
+    "ans": [
+      "B",
+      "C"
+    ],
     "type": "mcq"
   },
   {
@@ -1188,7 +1197,7 @@
     "type": "mcq"
   },
   {
-    "id": "100",
+    "id": 100,
     "q": "Thủ tục phần mềm tập trung vào: ",
     "opts": {
       "A": "Cấp bậc điều khiển trong một cảm nhận trừu tượng hơn ",
@@ -1197,7 +1206,7 @@
       "D": "Quan hệ giữa điều khiển và thủ tục "
     },
     "ans": "B",
-     "type": "mcq"
+    "type": "mcq"
   },
   {
     "id": 101,
@@ -1208,7 +1217,8 @@
       "C": "chất lượng phần mềm sẽ tăng",
       "D": "năng suất lao động sẽ tăng"
     },
-    "answer": ["B"]
+    "ans": "B",
+    "type": "mcq"
   },
   {
     "id": 102,
@@ -1219,7 +1229,8 @@
       "C": "Xác định yêu cầu phần mềm",
       "D": "Kiểm thử"
     },
-    "answer": ["C"]
+    "ans": "C",
+    "type": "mcq"
   },
   {
     "id": 103,
@@ -1230,7 +1241,8 @@
       "C": "độ tin cậy phần mềm sẽ tăng",
       "D": "độ tin cậy của phần mềm sẽ giảm"
     },
-    "answer": ["D"]
+    "ans": "D",
+    "type": "mcq"
   },
   {
     "id": 104,
@@ -1241,7 +1253,8 @@
       "C": "chất lượng phần mềm sẽ tăng",
       "D": "chất lượng phần mềm sẽ giảm"
     },
-    "answer": ["A"]
+    "ans": "A",
+    "type": "mcq"
   },
   {
     "id": 105,
@@ -1252,9 +1265,10 @@
       "C": "Yêu cầu được đặc tả bởi các biểu đồ ngữ cảnh, đồ thị và lược đồ quan hệ.",
       "D": "Yêu cầu được viết bằng ngôn ngữ tự nhiên về các dịch vụ mà hệ thống phải cung cấp."
     },
-    "answer": ["D"]
+    "ans": "D",
+    "type": "mcq"
   },
-    {
+  {
     "id": 106,
     "q": "Trong quá trình phát triển phần mềm, giai đoạn nào có thể lặp lại nhiều lần?",
     "opts": {
@@ -1263,7 +1277,8 @@
       "C": "Đặc tả, lập trình, bảo trì",
       "D": "Đặc tả, thiết kế, lập trình, kiểm định, bảo trì"
     },
-    "answer": ["D"]
+    "ans": "D",
+    "type": "mcq"
   },
   {
     "id": 107,
@@ -1274,7 +1289,8 @@
       "C": "Thiết kế hướng đối tượng có thể dùng cho cả lập trình hướng đối tượng và lập trình hướng chức năng",
       "D": "Thiết kế hướng đối tượng là lập trình hướng đối tượng"
     },
-    "answer": ["C"]
+    "ans": "C",
+    "type": "mcq"
   },
   {
     "id": 108,
@@ -1285,7 +1301,8 @@
       "C": "Xây dựng một hệ thống thử nghiệm dựa trên yêu cầu thiết kế",
       "D": "Thẩm định lại tính đúng đắn của giải pháp theo yêu cầu ban đầu đã đặt ra"
     },
-    "answer": ["D"]
+    "ans": "D",
+    "type": "mcq"
   },
   {
     "id": 109,
@@ -1296,9 +1313,10 @@
       "C": "Kiểm tra xem phần mềm có hoạt động như mong muốn không, phát hiện và sửa lỗi về chức năng như thiếu hụt, sai sót về chức năng",
       "D": "Tất cả các ý trên"
     },
-    "answer": ["D"]
+    "ans": "D",
+    "type": "mcq"
   },
-    {
+  {
     "id": 110,
     "q": "Lý do khiến người phát triển phần mềm phải tạo nguyên mẫu:",
     "opts": {
@@ -1307,7 +1325,8 @@
       "C": "Tạo nguyên mẫu giúp hạ thấp chi phí sửa lỗi",
       "D": "Tất cả đều đúng"
     },
-    "answer": ["D"]
+    "ans": "D",
+    "type": "mcq"
   },
   {
     "id": 111,
@@ -1318,7 +1337,8 @@
       "C": "Mô hình bản mẫu",
       "D": "Mô hình xoắn ốc"
     },
-    "answer": ["B"]
+    "ans": "B",
+    "type": "mcq"
   },
   {
     "id": 112,
@@ -1329,9 +1349,10 @@
       "C": "Tạo nguyên mẫu cho phép phát hiện sớm các lỗi, giúp cho việc sửa chữa diễn ra vào thời kỳ đầu của quá trình phát triển phần mềm. Vì vậy chi phí bảo trì giảm",
       "D": "Tạo nguyên mẫu dùng làm tài liệu cho người sử dụng, vì vậy không tốn kém tiền đào tạo"
     },
-    "answer": ["C"]
+    "ans": "C",
+    "type": "mcq"
   },
-    {
+  {
     "id": 113,
     "q": "Trong các mô hình sau, mô hình nào không phải là mô hình phát triển phần mềm:",
     "opts": {
@@ -1340,7 +1361,8 @@
       "C": "Mô hình song song",
       "D": "Mô hình tương tranh"
     },
-    "answer": ["D"]
+    "ans": "D",
+    "type": "mcq"
   },
   {
     "id": 114,
@@ -1351,7 +1373,8 @@
       "C": "Đặc tả tất cả các dịch vụ mà hệ thống phải cung cấp",
       "D": "Đặc tả tất cả các ràng buộc mà hệ thống phải tuân theo"
     },
-    "answer": ["D"]
+    "ans": "D",
+    "type": "mcq"
   },
   {
     "id": 115,
@@ -1362,7 +1385,8 @@
       "C": "Đặc tả tất cả các dịch vụ mà hệ thống phải cung cấp",
       "D": "Đặc tả tất cả các nhu cầu của người dùng mà hệ thống phải cung cấp"
     },
-    "answer": ["C"]
+    "ans": "C",
+    "type": "mcq"
   },
   {
     "id": 116,
@@ -1373,7 +1397,8 @@
       "C": "Các dịch vụ được đặc tả một cách chi tiết, chính xác có thể dùng làm cơ sở hợp đồng giữa hai bên",
       "D": "Yêu cầu được viết bằng ngôn ngữ tự nhiên về các dịch vụ mà hệ thống phải cung cấp"
     },
-    "answer": ["B"]
+    "ans": "B",
+    "type": "mcq"
   },
   {
     "id": 117,
@@ -1384,9 +1409,10 @@
       "C": "Xác định yêu cầu phần mềm",
       "D": "Kiểm thử"
     },
-    "answer": ["B"]
+    "ans": "B",
+    "type": "mcq"
   },
-    {
+  {
     "id": 118,
     "q": "Phát biểu: “Bao gồm các công việc sửa các lỗi phát sinh khi áp dụng chương trình hoặc chỉnh sửa những thay đổi trong môi trường bên ngoài (hệ điều hành mới, thiết bị ngoại vi mới, yêu cầu người dùng) hoặc yêu cầu bổ sung chức năng hay nâng cao hiệu năng của chương trình” là đang nói về bước:",
     "opts": {
@@ -1395,7 +1421,8 @@
       "C": "Mã hóa (lập trình)",
       "D": "Kiểm thử"
     },
-    "answer": ["B"]
+    "ans": "B",
+    "type": "mcq"
   },
   {
     "id": 119,
@@ -1406,7 +1433,8 @@
       "C": "Cách đo trực tiếp cho phần mềm và tiến trình phát triển của nó",
       "D": "Cách đo trực tiếp cho dữ liệu và tài liệu phân tích của nó"
     },
-    "answer": ["C"]
+    "ans": "C",
+    "type": "mcq"
   },
   {
     "id": 120,
@@ -1417,7 +1445,8 @@
       "C": "Cách đo gián tiếp cho dữ liệu và tài liệu phân tích của nó",
       "D": "Cách đo trực tiếp cho phần mềm và tài liệu phân tích của nó"
     },
-    "answer": ["B"]
+    "ans": "B",
+    "type": "mcq"
   },
   {
     "id": 121,
@@ -1428,10 +1457,11 @@
       "C": "Yêu cầu được đặc tả bởi các biểu đồ ngữ cảnh, đồ thị và lược đồ quan hệ",
       "D": "Các dịch vụ được đặc tả một cách chi tiết, chính xác có thể dùng làm cơ sở hợp đồng giữa hai bên"
     },
-    "answer": ["D"]
+    "ans": "D",
+    "type": "mcq"
   },
-{
-    "id": "122",
+  {
+    "id": 122,
     "q": "Trong quy trình RUP luồng công việc nào là luồng công việc hỗ trợ?",
     "opts": {
       "A": "Business modeling",
@@ -1443,7 +1473,7 @@
     "type": "mcq"
   },
   {
-    "id": "123",
+    "id": 123,
     "q": "Trong quy trình RUP luồng công việc nào là luồng công việc chính ?",
     "opts": {
       "A": "Project Management",
@@ -1455,7 +1485,7 @@
     "type": "mcq"
   },
   {
-    "id": "124",
+    "id": 124,
     "q": "Hệ thống phần mềm phải tuân thủ các ràng buộc về: thời gian, tốc độ xử lý",
     "opts": {
       "A": "Phi chức năng",
@@ -1467,7 +1497,7 @@
     "type": "mcq"
   },
   {
-    "id": "125",
+    "id": 125,
     "q": "Trong quá trình phát triển phần mềm, giai đoạn đặc tả phần mềm có nghĩa là:",
     "opts": {
       "A": "Xây dựng không gian giải pháp cho vấn đề.",
