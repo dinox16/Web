@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Chatbot AI - Program For Student</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b1437">
     <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='chatbot.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='mobile.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -115,7 +117,7 @@
                         <div class="msg msg-bot">
                             <div class="msg-avatar"><i class="fa-solid fa-robot"></i></div>
                             <div class="msg-bubble">
-                                Xin chào <b>{{ session.get('username', 'bạn') }}</b>! 👋<br>
+                                Xin chào <b>{{ session.get('username', 'bạn') }}</b>!<br>
                                 Mình là <b>trợ lý AI</b> giúp bạn tra cứu giáo trình và câu hỏi ôn tập.
                                 <br><br>
                                 Hãy:
@@ -124,7 +126,7 @@
                                     <li>(Tuỳ chọn) tải lên file <b>PDF</b> giáo trình</li>
                                     <li>Đặt câu hỏi vào ô bên dưới</li>
                                 </ul>
-                                <span class="note">⚠ Tính năng AI hiện đang ở chế độ <b>demo</b> - sẽ được kích hoạt sau khi backend được cấu hình.</span>
+                                <span class="note">Tính năng AI hiện đang ở chế độ <b>demo</b> - sẽ được kích hoạt sau khi backend được cấu hình.</span>
                             </div>
                         </div>
                     </div>
