@@ -1,1216 +1,7 @@
 [
   {
     "id": 1,
-    "q": "Công nghệ ( engineering) là :",
-    "opts": {
-      "A": "Cách sử dụng các công cụ, các kỹ thuật trong cách giải quyết một vấn đề nào đó",
-      "B": "Cách lập trình để viết một phần mềm",
-      "C": "Cách phân tích thiết kế một phần mềm",
-      "D": "Cách cài đặt một phần mềm"
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 2,
-    "q": "Các mức đặc tả yêu cầu gồm:",
-    "opts": {
-      "A": "Định ra yêu cầu, đặc tả yêu cầu, đặc tả chức năng.",
-      "B": "Định ra yêu cầu, đặc tả yêu cầu, đặc tả thiết kế.",
-      "C": "Đặc tả chức năng, đặc tả phần mềm, đặc tả thiết kế.",
-      "D": "Định ra yêu cầu, đặc tả phần mềm, đặc tả thiết kế."
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 3,
-    "q": "Khái niệm “đặc tả yêu cầu”, nghĩa là:",
-    "opts": {
-      "A": "“Yêu cầu được viết bằng ngôn ngữ tự nhiên về các dịch vụ mà hệ thống phải cung cấp”.",
-      "B": "“Yêu cầu được viết bằng ngôn ngữ chuyên ngành để mô tả chi tiết phần mềm”.",
-      "C": "“Yêu cầu được đặc tả bởi các biểu đồ ngữ cảnh, đồ thị và các lược đồ quan hệ…”",
-      "D": "“Các dịch vụ được đặc tả một cách chi tiết, chính xác để có thể dùng làm cơ sở hợp đồng giữa hai bên.”"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 4,
-    "q": "Khái niệm “Đặc tả thiết kế”, nghĩa là:",
-    "opts": {
-      "A": "“Yêu cầu được đặc tả bởi các biểu đồ ngữ cảnh, đồ thị và lược đồ quan hệ…”",
-      "B": "“Yêu cầu được viết bằng ngôn ngữ chuyên ngành để mô tả chi tiết phần mềm”.",
-      "C": "“Các dịch vụ được đặc tả một cách chi tiết, chính xác để có thể dùng làm cơ sở hợp đồng giữa hai bên.”",
-      "D": "“Yêu cầu đươc viết bằng ngôn ngữ tự nhiên về các dịch vụ mà hệ thống phải cung cấp “."
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 5,
-    "q": "Đặc tả phần mềm bằng ngôn ngữ tự nhiên là khó khăn hay thuận lợi cho các thiết kế viên hoặc các hợp đồng giữa các khách hàng và cán bộ phát triển hệ thống?",
-    "opts": {
-      "A": "Rất thuận lợi vì ngôn ngữ tự nhiên dễ hiểu, dễ diễn đạt.",
-      "B": "Không hoàn toàn thuận tiền vì có thể dẫn đến nhầm lẫn do cách hiểu các khái niệm khác nhau giữa hai bên.",
-      "C": "Thuận lợi vì ngôn ngữ tự nhiên dễ sử dụng",
-      "D": "Rất khó khăn vì ngôn ngữ tự nhiên rất khó sử dụng."
-    },
-    "ans": [
-      "A",
-      "B"
-    ],
-    "type": "mcq"
-  },
-  {
-    "id": 6,
-    "q": "Người ta không dùng cách nào để đặt tả các yêu cầu?",
-    "opts": {
-      "A": "Ngôn ngữ tự nhiên có cấu trúc",
-      "B": "Ngôn ngữ mô tả thiết kế, giống ngôn ngữ lập trình nhưng có mức trừu tượng cao hơn",
-      "C": "Ngôn ngữ đặc tả yêu cầu.",
-      "D": "Ngôn ngữ tự nhiên địa phương."
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 7,
-    "q": "Đâu không phải là thuận lợi của việc sử dụng đặc tả hình thức:",
-    "opts": {
-      "A": "Nhiều người biết và dễ diễn đạt",
-      "B": "Cho phép chúng ta thấy và hiểu được bản chất bên trong của các yêu cầu, đây là cách tốt nhất để làm giảm các lỗi, các thiếu sót có thể xảy ra và giúp cho công việc thiết kế được thuận lợi.",
-      "C": "Do chúng ta sử dụng toán học cho việc đặc tả nên có thể dựa vào các công cụ toán học khi phân tích và điều này làm tăng thêm tính chắc chắn và tính đầy đủ của hệ thống.",
-      "D": "Đặc tả hình thức, bản thân nó cho chúng ta một cách thức cho việc kiểm tra hệ thống sau này."
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 8,
-    "q": "Đâu không phải là đặc điểm của đặc tả phi hình thức?",
-    "opts": {
-      "A": "Đặc tả sử dụng ngôn ngữ tự nhiên",
-      "B": "Đặc tả được nhiều người biết",
-      "C": "Đặc tả chặt chẽ ít có hiểu lầm",
-      "D": "Đặc tả không chặc chẽ về ngữ nghĩa khoa học"
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 9,
-    "q": "Để phát triển các hệ thống tương đối phức tạp có những hướng tiếp cận đặc tả hình thức nào?",
-    "opts": {
-      "A": "Tiếp cận đại số, hệ thống được mô tả dưới dạng các toán tử và các quan hệ.",
-      "B": "Tiếp cận mô hình, mô hình hệ thống được cấu trúc sử dụng các thực thể toán học như là các tập hợp và các thứ tự.",
-      "C": "Tiếp cận đại ssoos, hệ thống được mô tả dưới dạng các toán tử, các quan hệ và tiếp cận mô hình, mô hình thệ thống được cấu trúc sử dụng các thực thể toán học như là các tập hợp, các thứ tư…",
-      "D": "Tiếp cận văn bản tự nhiên"
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 10,
-    "q": "Đâu không phải là khó khăn của đặc tả hình thức:",
-    "opts": {
-      "A": "Khách hàng không thích các đặc tả toán họ",
-      "B": "Quản lý phần mềm có tính bảo thủ cố hữu của nó, không sẵn sàng chấp nhận các kỹ thuật mới",
-      "C": "Chi phí cho việc đặc tả hình thức thường cao hơn so với các đặc tả khác (tuy phần cài đặt sẽ thấp hơn) nên khó để chứng minh rằng chi phí tương đối cao cho đặc tả sẽ làm giảm tổng chi phí dự án.",
-      "D": "Đặc tả không chặt chẽ dễ gây hiểm nhầm giữa các nhà chuyên môn."
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 11,
-    "q": "Nguyên lý 1 của đặc tả là phân tách chức năng với cài đặt có nghĩa là:",
-    "opts": {
-      "A": "Đặc tả là mô tả điều mong muốn",
-      "B": "Đặc tả là mô tả cách thức thực hiẹn",
-      "C": "Đặc tả mô tả việc cài đặt",
-      "D": "Đặc tả là mô tả điều mong muốn và cách thức thực hiện"
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 12,
-    "q": "Đâu không phải là yêu cầu cần được thỏa mãn của tài liệu yêu cầu phần mềm?",
-    "opts": {
-      "A": "Nó cần mô tả các hành vi hệ thống bên ngoài.",
-      "B": "Nó cần mô tả các ràng buộc về thực hiện",
-      "C": "Nó phải là công cụ tham chiếu cho người bảo trì hệ thống",
-      "D": "Nó cần phải cố định không được thay đổi."
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 13,
-    "q": "Khi đặc tả yêu cầu, người xây dựng hệ thống không cần quan tâm tới yêu cầu nào sau đây?",
-    "opts": {
-      "A": "Đầu ra của hệ thống là cái gì?",
-      "B": "Hệ thống sẽ phải làm cái gì để có kết quả mong muốn, nghĩa là phải xử lý những cái gì",
-      "C": "Các phương án sẽ tiếp cận hệ thống để hoàn tất sản phẩm",
-      "D": "Hệ thống sẽ phải làm cái gì để có kết quả mong muốn, nghĩa là phải xử lý những cái gì"
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 14,
-    "q": "Đâu không phải là khó khăn của đặc tả hình thức?",
-    "opts": {
-      "A": "Linh hoạt, mềm dẻo dẫn đến sự hiểu nhầm giữa hai bên",
-      "B": "Khách hàng không thích đặc tả hình thứ",
-      "C": "Quản lý phần mềm có tính bảo thủ cố hữu của nó, không sẵn sàng chấp nhận các kỹ thuật mới",
-      "D": "Chi phí cho việc đặc tả hình thức thường cao hơn so với các đặc tả khá"
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 15,
-    "q": "Đâu không phải là nguyên lý đặc tả yêu cầu phần mềm?",
-    "opts": {
-      "A": "Đặc tả phải bao gồm cả môi trường mà hệ thống vận hành.",
-      "B": "Phân tách chức năng với cài đặt",
-      "C": "Đặt tả hệ thống phải là một mô hình nhận thức",
-      "D": "Đặc tả không quan trọng môi trường mà hệ thống vận hành"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 16,
-    "q": "Tính cấu trúc của đặc tính dữ liệu:",
-    "opts": {
-      "A": "Đặc biệt quan trọng bởi vì thiếu nó ta có thể tạo ứng dụng sai.",
-      "B": "Đặc biệt quan trọng bởi vì thiếu nó ta có thể xác định yêu cầu sai.",
-      "C": "Đặc biệt quan trọng bởi vì thiếu nó ta có thể phân tích ứng dụng sai.",
-      "D": "Đặc biệt quan trọng bởi vì thiếu nó ta có thể cài đặt ứng dụng sai."
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 17,
-    "q": "Tính đầy đủ thể hiện ở chỗ các thông tin cần thiết phải được biểu diễn. Mức độ đầy đủ của các kiểu ứng dụng có giống nhau hay không?",
-    "opts": {
-      "A": "Không giống nhau, vì mỗi kiểu ứng dụng đi hỏi một mức độ đầy đủ khác nhau.",
-      "B": "Giống nhau vì ứng dụng nào cũng cần đầy đủ ở mức độ cao nhất.",
-      "C": "Không giống nhau vì mỗi kiểu ứng dụng có thể túy ý yêu cầu một mức độ đầy đủ khác nhau.",
-      "D": "Giống nhau vì ứng dụng nào cũng cần đầy đủ ở mức độ trung bình."
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 18,
-    "q": "Kỹ thuật phỏng vấn sử dụng kiểu câu hỏi cho nhiều câu trả lời khác nhau là dạng câu hỏi nào?",
-    "opts": {
-      "A": "Câu hỏi mở",
-      "B": "Câu hỏi đóng",
-      "C": "Câu hỏi khó",
-      "D": "Câu hỏi dễ"
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 19,
-    "q": "Các Câu hỏi sau: “Ông có thể nói cho tôi về…”, “Ông nghĩ thế nào về…”, “Ông có thể mô tả làm thế nào...” thuộc dạng câu hỏi nào của kỹ thuật phỏng vấn?",
-    "opts": {
-      "A": "Câu hỏi mở",
-      "B": "Câu hỏi đóng",
-      "C": "Câu hỏi khó",
-      "D": "Câu hỏi dễ"
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 20,
-    "q": "Câu hỏi mà câu trả lời là “có” hoặc “không” hoặc một câu trả lời cụ thể là dạng câu hỏi nào của kỹ thuật phỏng vấn?",
-    "opts": {
-      "A": "Câu hỏi mở",
-      "B": "Câu hỏi đóng",
-      "C": "Câu hỏi khó",
-      "D": "Câu hỏi dễ"
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 21,
-    "q": "71. Ví dụ có câu hỏi là: “Bạn có dùng các báo cáo hàng tháng không?” hay “Bạn có in hóa đơn hằng ngày không?” … thuộc dạng câu hỏi nào của kỹ thuật phỏng vấn?",
-    "opts": {
-      "A": "Câu hỏi mở",
-      "B": "Câu hỏi đóng",
-      "C": "Câu hỏi khó",
-      "D": "Câu hỏi dễ"
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 22,
-    "q": "Đâu không phải là công việc thường được tiến hành cho cuộc phỏng vấn",
-    "opts": {
-      "A": "Tiến hành đặt cuộc hẹn phù hợp với thời gian của phỏng vấn",
-      "B": "Chuẩn bị tốt, tìm hiểu kỹ về người được phỏng vấn",
-      "C": "Có kế hoạch cho cuộc phỏng vấn",
-      "D": "Ghi chép các hoạt động, các bước xử lý công việc"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 23,
-    "q": "Đâu không phải là ưu điểm của phỏng vấn có cấu trúc?",
-    "opts": {
-      "A": "Dễ quản lý và đánh giá",
-      "B": "Đánh giá được nhiều mục đích",
-      "C": "Không cần đào tạo nhiều",
-      "D": "Có khả năng mềm dẻo nhất"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 24,
-    "q": "Ưu điểm nào không phải là ưu điểm của phỏng vấn không có cấu trúc?",
-    "opts": {
-      "A": "Dùng dạng chuẩn cho nhiều câu hỏi",
-      "B": "Có khả năng mềm dẻo nhất",
-      "C": "Cần chăm chú nghe và có kỹ năng mở rộng câu hỏi",
-      "D": "Có thể bao hết các thông tin chưa biết"
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 25,
-    "q": "Nhược điểm nào không phải là của phỏng vấn có cấu trúc?",
-    "opts": {
-      "A": "Chi phí chuẩn bị lớn",
-      "B": "Tính cấu trúc có thể không thích hợp cho mọi tình huống",
-      "C": "Giảm tính chủ động của các người phỏng vấn",
-      "D": "Tốn thời gian lựa chọn và phân tích thông tin"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 26,
-    "q": "Nhược điểm nào không phải là nhược điểm của phỏng vấn không có cấu trúc?",
-    "opts": {
-      "A": "Lãng phí thời gian phỏng vấn",
-      "B": "Người phỏng vấn có thể định kiến với các câu hỏi",
-      "C": "Tốn thời gian lựa chọn và phân tích thông tin",
-      "D": "Giảm tính chủ động của người phỏng vấn"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 27,
-    "q": "Đâu không phải là nhược điểm của phương pháp phỏng vấn:",
-    "opts": {
-      "A": "Phỏng vấn và các dạng khác của thu thập dữ liệu có thể làm bạn lạc lối, thiếu chính xác hoặc thông tin không liên quan, không thích hợp.",
-      "B": "Bạn cần học cách đọc ngôn ngữ cử chỉ và thói quen để quyết định được các điều cần thiết cho cùng một thông tin",
-      "C": "Đi hỏi kỹ năng",
-      "D": "Phỏng vấn không thích hợp cho việc nhận các thông tin cần đảm bảo cả số lượng lẫn chất lượng."
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 28,
-    "q": "Đâu không phải là ưu điểm của phương pháp họp nhóm:",
-    "opts": {
-      "A": "Có thể tạo ra quyết định",
-      "B": "Nhận được cả thông tin tổng hợp và chi tiết.",
-      "C": "Phương pháp tốt cho các yêu cầu bên ngoài",
-      "D": "Kỹ sư phần mềm có thể tập trung vào vấn đề, mà không bị ảnh hưởng bởi người khác"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 29,
-    "q": "Nhược điểm nào không phải là nhược điểm của phương pháp họp nhóm:",
-    "opts": {
-      "A": "Có thể có kết quả thiên vị",
-      "B": "Các ngắt quảng làm phân tán sự chú ý",
-      "C": "Dễ chuyển sang các chủ đề không liên quan như là chính trị, thể thao…",
-      "D": "Nếu số đại biểu nhiều sẽ tốn thời gian cho việc ra quyết định."
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 30,
-    "q": "Tập hợp ba hoặc nhiều hơn một số người cho một thời hạn nhất định để thảo luận một số chủ đề là kỹ thuật thu thập dữ liệu nào?",
-    "opts": {
-      "A": "Phỏng vấn",
-      "B": "Họp nhóm",
-      "C": "Quan sát",
-      "D": "Xem xét tài liệu"
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 31,
-    "q": "Đâu là kỹ thuật để tăng độ tin cậy của sản phẩm phần mềm khi viết chương trình?",
-    "opts": {
-      "A": "An toàn phần mềm",
-      "B": "Đặc tả độ tin cậy phần mềm",
-      "C": "Xử lý bất thường",
-      "D": "Thử nghiệm khiếm khuyết"
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 32,
-    "q": "Trong thiết kế phần mêm, giai đoạn đặc tả trừu tượng là:",
-    "opts": {
-      "A": "Các dịch vụ cung cấp bởi một hệ con được phân chia qua các thành phần của hệ con đó",
-      "B": "Đối với các hệ con, đặc tả các dịch vụ mà nó phải cung cấp và các ràng buộc mà nó phải tuân theo.",
-      "C": "Các hệ con tạo nên hệ tổng thể và các quan hệ của chúng là được minh định và ghi thành tài liệu",
-      "D": "Các kiến trúc dữ liệu được dùng trong việc thực hiện hệ thống được thiết kế chi tiết và được đặc tả."
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 33,
-    "q": "Trogn thiết kế phần mềm, giai đoạn thiết kế cấu trúc dữ liệu là:",
-    "opts": {
-      "A": "Các dịch vụ cung cấp bởi một hệ con được phân chia qua các thành phần của hệ con đó",
-      "B": "Các hệ con tạo nên hệ tổng thể và các quan hệ của chúng là được minh định và ghi thành tài liệu",
-      "C": "Các cấu trúc dữ liệu được dùng trong việc thực hiện hệ thống được thiết kế chi tiết và được đặc tả",
-      "D": "Đối với các hệ con, đặc tả các dịch vụ mà nó phải cung cấp và các ràng buộc mà nó phải tuân theo."
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 34,
-    "q": "Trong thiết kế phần mềm, giai đoạn thiết kế giao diện có nội dung:",
-    "opts": {
-      "A": "Các dịch vụ cung cấp bởi một hệ cong được phân chia qua các thành phần của hệ con đó.",
-      "B": "Các hệ con tạo nên hệ tổng thể và các quan hệ của chúng là được minh định và ghi thành tài liệu",
-      "C": "Đối với các hệ con, đặc tả các dịch vụ mà nó phải cung cấp và các ràng buộc mà nó phải tuân theo.",
-      "D": "Giao diện của từng hệ con với các hệ con khác được thiết kế và ghi thành tài liệu"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 35,
-    "q": "Trong thiết kế phần mềm, giai đoạn thiết kế các thành phần có nội dung:",
-    "opts": {
-      "A": "Các hệ con tạo nên hệ thổng thể và các quan hệ của chúng là được minh định và ghi thành tài liệu",
-      "B": "Đối với các hệ con, đặc tả các dịch vụ mà nó phải cung cấp và các ràng buộc mà nó phải tuân theo",
-      "C": "Các dịch vụ cung cấp bởi một hệ con được phân chia qua cacs thành phần của hệ con đó",
-      "D": "Giao diện của từng hệ con với các hệ con khác được thiết kế và ghi thành tài liệu"
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 36,
-    "q": "Thiết kế phần mềm bao gồm những công việc chính gì?",
-    "opts": {
-      "A": "Xác định kiến trúc phần mềm",
-      "B": "Chọn lựa cách thức thực hiện của từng thành phần và mô tả lại cách thực hiện này",
-      "C": "Xác định kiến trúc phần mềm và chọn lựa cách thức thực hiện của từng thành phần và mô tả lại cách thực hiện hiện nay",
-      "D": "Xác định thời gian hoàn tất phần mềm"
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 37,
-    "q": "Bản thiết kế thành phần giao diện bao gồm:",
-    "opts": {
-      "A": "Nội dung và hình thức trình bày các màn hình giao tiếp của phần mềm",
-      "B": "Hệ thống các giao tác mà người dùng có thể thực hiện trên màn hình giao tiếp và xử lý tương ứng của PM.",
-      "C": "Nội dung và hình thức trình bày các màn hình giao tiếp của phần mềm cùng hệ thống các giao tác mà người dùng có thể thực hiện trên màn hình giao tiếp và xử lý tương ứng của PM.",
-      "D": "Hình thức các màn hình giao tiếp."
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 38,
-    "q": "Bản thiết kế thành phần xử lý bao gồm:",
-    "opts": {
-      "A": "Hệ thống các kiểu dữ liệu được sử dụng trong PM và các tham biến được sử dụng trong phần mềm",
-      "B": "Hệ thống các biến được sử dụng trong PM.",
-      "C": "Hệ thống các kiểu dữ liệu được sử dụng trong PM và hệ thống các hàm được sử dụng trong PM",
-      "D": "Hệ thống các kiểu dữ liệu được sử dụng trong PM và hệ thống các biến được sử dụng trong PM"
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 39,
-    "q": "Bản thiết kế thành phần dữ liệu không bao gồm:",
-    "opts": {
-      "A": "Nội dung của công việc ghi chép vào sổ sách trong thế giới thực hiện trên bộ nhớ phụ",
-      "B": "Dạng lưu trữ được sử dụng của PM (tập tin, cơ sở dữ liệu…)",
-      "C": "Hệ thống các thành phần lưu trữ cùng với quan hệ của chúng",
-      "D": "Hệ thống các kết quả của chương trình."
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 40,
-    "q": "Trong các phát biểu sau, phát biểu nào là đúng:",
-    "opts": {
-      "A": "Thiết kế hướng đối tượng chỉ dùng cho lập trình hướng đối tượng",
-      "B": "Thiết kế hướng đối tượng có những điểm giống lập trình hướng đối tượng",
-      "C": "Thiết kế hướng đối tượng có thể dùng cho cả lập trình hướng đối tượng và lập trình hướng chức năng",
-      "D": "Thiết kế hướng đối tượng là lập trình thướng đối tượng"
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 41,
-    "q": "Một số tiêu chí đánh giá về chất lượng thiết kế:",
-    "opts": {
-      "A": "Sự kết dính, tính đầy đủ, sự ghép nối, sự hiểu được, tính phổ dụng",
-      "B": "Sự kết dính, sự ghép nối, sự hiểu được, tính thích nghi",
-      "C": "Sự ghép nối, sự hiểu được, tính thích nghi, tính đầy đủ",
-      "D": "Sự kết dính, sự ghép nối, sự hiểu được, tính phổ dụng, tính thích nghi."
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 42,
-    "q": "Trong các tính chất sau, tính nào là đặc trưng của thiết kế hướng đối tượng:",
-    "opts": {
-      "A": "Các đối tượng liên lạc với nhau thông qua các biến dùng chung",
-      "B": "Các đối tượng liên lạc với nhau thông qua trao đổi thông báo",
-      "C": "Các đối tượng là độc lập với nhau và liên lạc thông qua các biến dùng chung.",
-      "D": "Các đối tượng chia sẻ với nhau thông qua trạng thái hệ thống tập trung"
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 43,
-    "q": "Trong các đặc điểm sau, đặc điểm nào không phải là ưu điểm của thiết kế hướng đối tượng?",
-    "opts": {
-      "A": "Dễ học và dễ sử dụng",
-      "B": "Dễ bảo trì và các đối tượng là độc lập",
-      "C": "Phản ánh một cách rõ ràng giữa các thực thể có thực",
-      "D": "Các đối tượng là các thành phần dùng lại được thích hợp"
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 44,
-    "q": "Trong thiết kế phần mềm, giai đoạn thiết kế kiến trúc là:",
-    "opts": {
-      "A": "Các kiến trúc dữ liệu được dùng trong việc thực hiện hệ thống được thiết kế chi tiết và đươc đặc tả.",
-      "B": "Các hệ con tạo nên hệ thổng thể và các quan hệ của chúng là được minh định và ghi thành tài liệu",
-      "C": "Các dịch vụ cung cấp bởi một hệ con được phân chia qua các thành phần của hệ con đó.",
-      "D": "Đối với các hệ con, đặc tả các dịch vụ mà nó phải cung cấp và các ràng buộc mà nó phải tuân theo"
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 45,
-    "q": "Thiết kế hướng đối tượng và thiết kế hướng chức năng là 2 chiến lược thiết kế:",
-    "opts": {
-      "A": "Độc lập không liên quan đến nhau",
-      "B": "Đối kháng nhau",
-      "C": "Bổ sung và hỗ trợ cho nhau",
-      "D": "Hoàn toàn giống nhau"
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 46,
-    "q": "Đâu không phải là yêu cầu thiết kế:",
-    "opts": {
-      "A": "Tính sáng sủa, dễ đọc",
-      "B": "Dễ thử nghiệm",
-      "C": "Linh hoạt đối với những yêu cầu thay đổi không định trước",
-      "D": "Kích thước của module đủ lớn"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 47,
-    "q": "Độ đo về tính khớp lại với nhau của một thành phần liên quan chủ yếu đến tiêu chuẩn nào của chất lượng thiết kế:",
-    "opts": {
-      "A": "Sự kết dính",
-      "B": "Sự ghép nối",
-      "C": "Sự hiểu được",
-      "D": "Sự thích nghi"
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 48,
-    "q": "Loại trừu tượng nào không được dùng trong thiết kế phần mềm?",
-    "opts": {
-      "A": "Điều khiển",
-      "B": "Dữ liệu",
-      "C": "Thủ tục",
-      "D": "Chương trình"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 49,
-    "q": "Loại mô hình nào không được có trong kiến trúc phần mềm:",
-    "opts": {
-      "A": "Dữ liệu",
-      "B": "Động",
-      "C": "Xử lý",
-      "D": "Cấu trúc"
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 50,
-    "q": "Cấp bậc điều khiển thể hiện:",
-    "opts": {
-      "A": "Cấp bậc điều khiển trong một cảm nhận trừu tượng hơn",
-      "B": "Xử lý chi tiết của mỗi module riêng biệt",
-      "C": "Xử lý chi tiết của mỗi tạp module",
-      "D": "Quan hệ giữa điều khiển và thủ tục"
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 51,
-    "q": "Nguyên nhân của việc sinh lỗi do thiết kế mức thành phần trước khi thiết kế dữ liệu là:",
-    "opts": {
-      "A": "Thiết kế thành phần thì phụ thuộc vào ngôn ngữ của thiết kế dữ liệu hệ thống",
-      "B": "Thiết kế dữ liệu thì dễ thực hiện hơn",
-      "C": "Thiết kế dữ liệu thì khó thực hiện hơn",
-      "D": "Cấu trúc dữ liệu thường ảnh hưởng tới cách thức mà thiết kế thành phần phải theo."
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 52,
-    "q": "Mục đích của tham chiếu chéo những yêu cầu (ma trận) trong tài liệu thiết kế là nhằm:",
-    "opts": {
-      "A": "Cho phép người quản lý theo dõi năng suất của nhóm thiết kế",
-      "B": "Xác minh là tất cả các yêu cầu đã được xem xét trong thiết kế",
-      "C": "Chỉ ra chi phí kết hợp với mỗi yêu cầu",
-      "D": "Cung cấp cho việc thực thi tên của những nhà thiết kế cho mỗi yêu cầu"
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 53,
-    "q": "Mục nào không phải là một phần của kiến trúc phần mềm:",
-    "opts": {
-      "A": "Chi tiết giải thuật",
-      "B": "Cơ sở dữ liệu",
-      "C": "Thiết kế dữ liệu",
-      "D": "Cấu trúc chương trình"
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 54,
-    "q": "Đặc trưng nào là đúng cho ckho dữ liệu, không phải là sơ sở dữ liệu đặc trưng?",
-    "opts": {
-      "A": "Hưởng mức nghiệp vụ và kích thước lớn",
-      "B": "Thông tin đúng và hợp thời",
-      "C": "Tích hợp và không thường thay đổi",
-      "D": "Hướng mức nghiệp vụ và kích thước nhỏ"
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 55,
-    "q": "Mẫu kiến trúc không quan tâm tới thành phần nào?",
-    "opts": {
-      "A": "Ràng buộc",
-      "B": "Tập hợp những thành phần",
-      "C": "Mô hình ngữ nghĩa",
-      "D": "Mô hình mô phỏng"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 56,
-    "q": "Nhằm xác định những mẫu kiến trúc hay kết hợp những mẫu phù hợp nhất cho hệ thống đề nghị, kỹ thuật yêu cầu dùng để khám phá:",
-    "opts": {
-      "A": "Giải thuật phức tạp",
-      "B": "Đặc trưng và ràng buộc",
-      "C": "Diều khiển và dữ liệu",
-      "D": "Những mẫu thiết kế"
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 57,
-    "q": "Tiêu chuẩn đánh giá chất lượng của một thiết kế kiến trúc phải dựa vào:",
-    "opts": {
-      "A": "Tính truy cập và tính tin cậy của hệ thống",
-      "B": "Dữ liệu và điều khiển của hệ thống",
-      "C": "Tính chức năng của hệ thống",
-      "D": "Những chi tiết thực thi của hệ thống"
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 58,
-    "q": "Trong phương pháp phân tích kiến trúc, mô tả mẫu kiến trúc không dùng khung nhìn nào?",
-    "opts": {
-      "A": "Dòng dữ liệu",
-      "B": "Module",
-      "C": "Tiến trình",
-      "D": "Chức năng"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 59,
-    "q": "Khi một luồng tổng thể trong một đoạn của biểu đồ luồng dữ liệu có tính trình tự cao và theo sau những dường thẳng sẽ thể hiện:",
-    "opts": {
-      "A": "Liên kết thấp",
-      "B": "Module hóa tốt",
-      "C": "Luồng giao dịch (transaction)",
-      "D": "Luồng biến đổi (transform)"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 60,
-    "q": "Khi luồng thông tin trong một đoạn của sơ đồ luồng dữ liệu thể hiện bằng một mục đơn mà bâỷ một luồng dữ liệu khác theo một trong nhiều đường sẽ thể hiện:",
-    "opts": {
-      "A": "Liên kết thấp",
-      "B": "Module hóa tốt",
-      "C": "Luồng giao dịch (transaction)",
-      "D": "Luồng biến đổi (transform)"
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 61,
-    "q": "Một bổ sung cần thiết nhằm biến đổi hay ánh xạ giao dịch để tạo một thiết kế kiến trúc đầy đủ là:",
-    "opts": {
-      "A": "Sơ đồ quan hệ - thực thể",
-      "B": "Từ điển dữ liệu",
-      "C": "Mô tả việc xử lý cho mỗi module",
-      "D": "Những test case cho mỗi module"
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 62,
-    "q": "Những nguyên lý thiết kế giao diện nào không cho phép người dùng cn điều khiển tương tác với máy tính:",
-    "opts": {
-      "A": "Cho phép được gián đoạn",
-      "B": "Cho phép tương tác có thể undo",
-      "C": "Che dấu những bản chất kỹ thuật với những người dùng thường",
-      "D": "Chỉ cung cấp một cách thức xác định cứng khi hoàn thành tác vụ"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 63,
-    "q": "Những nguyên lý thiết kế giao diện không tạo điều kiện cho người dùng ít phải nhớ?",
-    "opts": {
-      "A": "Xác định những shortcut trực quan",
-      "B": "Biểu lộ thông tin theo cách diễn tiến",
-      "C": "Thiết lập những trường hợp mặc định có ý nghĩa",
-      "D": "Thiết kế giao diện sinh động"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 64,
-    "q": "Sự toàn vẹn (consistency) giao diện ngầm định nghãi là:",
-    "opts": {
-      "A": "Những kỹ thuật output giữ tương tự suốt ứng dụng",
-      "B": "Mỗi ứng dụng không phải có look and feel riêng biệt",
-      "C": "Cách thức điều hướng (navigational) nhạy với ngữ cảnh",
-      "D": "Những kỹ thuật input giữ tương tự suốt ứng dụng và mỗi ứng dụng phải có look and feel riêng biệt"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 65,
-    "q": "Mô hình nào đưa ra hình ảnh tiền sử (profile) người dùng cuối của hệ thống dựa vào máy tính:",
-    "opts": {
-      "A": "Mô hình thiết kế",
-      "B": "Mô hình người dùng",
-      "C": "Mô hình của người dùng",
-      "D": "Mô hình nhận thức hệ thống"
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 66,
-    "q": "Mô hình nào đưa ra hình ảnh hệ thống trong đầu người dùng cuối:",
-    "opts": {
-      "A": "Mô hình thiết kế",
-      "B": "Mô hình người dùng",
-      "C": "Hình ảnh hệ thống",
-      "D": "Mô hình nhận thức hệ thống"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 67,
-    "q": "Phương pháp thiết kế nào không phải là thiết kế phần mềm?",
-    "opts": {
-      "A": "Thiết kế trực tiếp",
-      "B": "Thiết kế gián tiếp",
-      "C": "Thiết kế tổng quát",
-      "D": "Thiết kế trực tiếp, thiết kế gián tiếp"
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 68,
-    "q": "Phương pháp thiết kế phần mềm nào nhận các kết quả từ giai đoạn xác định yêu cầu?",
-    "opts": {
-      "A": "Thiết kế trực tiếp",
-      "B": "Thiết kế gián tiếp",
-      "C": "Thiết kế dữ liệu",
-      "D": "Thiết kế xử lý"
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 69,
-    "q": "Phương pháp thiết kế phần mềm trực tiếp phù hợp với những loại phần mềm nào?",
-    "opts": {
-      "A": "Phần mềm mã nguồn mỡ",
-      "B": "Phần mềm có quy mô nhỏ",
-      "C": "Phần mềm mạng",
-      "D": "Phần mềm có quy mô lớn"
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 70,
-    "q": "Với phương pháp thiết kế phần mềm gián tiếp, việc thiết kế sẽ chỉ nhận:",
-    "opts": {
-      "A": "Một phần các kết quả sẽ được chuyển giao từ giai đoạn xác định yêu cầu, phần chính yếu sẽ được nhận qua giai đoạn khảo sát.",
-      "B": "Tất cả các kết quả sẽ được từ giai đoạn xác định yêu cầu.",
-      "C": "Tất cả các kết quả sẽ được từ giai đoạn phân tích.",
-      "D": "Một phần các kết quả sẽ được chuyển giao từ giai đoạn xác định yêu cầu, phần chính yếu sẽ được nhận qua giai đoạn phân tích."
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 71,
-    "q": "Phương pháp thiết kế gián tiếp sẽ phù hợp với những phần mềm",
-    "opts": {
-      "A": "Có quy mô vừa và nhỏ",
-      "B": "Có quy mô nhỏ",
-      "C": "Có quy mô lớn",
-      "D": "Có quy mô trung bình"
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 72,
-    "q": "Trong kết quả thiết kế phần mềm, kết quả của thành phần xư rlys không bao gồm:",
-    "opts": {
-      "A": "Danh sách các kiểu dữ liệu",
-      "B": "Danh sách các hàm",
-      "C": "Mô tả chi tiết các kiểu dữ liệu",
-      "D": "Danh sách các ràng buộc"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 73,
-    "q": "Kết quả thiết kế thành phần nào gồm hệ thống các hàm cùng cấu trúc dữ liệu tương ứng:",
-    "opts": {
-      "A": "Thiết kế ứng dụng",
-      "B": "Thiết kế giao diện",
-      "C": "Thiết kế xử lý",
-      "D": "Thiết kế dữ liệu"
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 74,
-    "q": "Các thông tin cần mô tả một màn hình giao diện gồm:",
-    "opts": {
-      "A": "Tên màn hình, nội dung màn hình.",
-      "B": "Tên màn hình, nội dung, hình thức trình bày màn hình.",
-      "C": "Tên màn hình, nội dung, hình thức trình bày, các thao tác có thể thực hiện.",
-      "D": "Tên màn hình, nội dung, hình thức trình bày, các thao tác có thể thực hiện và các cấu trúc dữ liệu tương ứng."
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 75,
-    "q": "Yêu cầu tính nhất quán trong thiết kế giao diện, những thành phần tương tự nhau phải giống nhau về những mặt nào?",
-    "opts": {
-      "A": "Vị trí, ngôn ngữ, hình dáng, màu sắc và cách kích hoạt.",
-      "B": "Vị trí, ngôn ngữ, hình dáng và màu sắc.",
-      "C": "Vị trí, hình dáng, màu sắc và cách kích hoạt",
-      "D": "Vị trí, ngôn ngữ, hình dáng, màu sắc cách kích hoặt và kết quả thực hiện"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 76,
-    "q": "Điều quan trọng nhất trong thiết kế phần mềm là:",
-    "opts": {
-      "A": "Độ chính xác",
-      "B": "Độ phức tạp",
-      "C": "Tính hiệu quả",
-      "D": "Chất lượng"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 77,
-    "q": "Vấn đề nào sau đây không ảnh hưởng nhiều đến thiết kế giao diện?",
-    "opts": {
-      "A": "Thời gian đáp ứng",
-      "B": "Năng khiếu thẩm mỹ và kỹ năng đồ họa của người thiết kế giao diện",
-      "C": "Quản lý lỗi",
-      "D": "Thời gian đáp ứng. Năng khiếu thẩm mỹ và kỹ năng đồ họa của người thiết kế giao diện."
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 78,
-    "q": "Thông báo lỗi nên có tính chất nào sau đây?",
-    "opts": {
-      "A": "Nên dùng thông báo lỗi hệ thống của ngôn ngữ lập trình.",
-      "B": "Chỉ ra lỗi do người dùng mắc phải khi chạy chương trình.",
-      "C": "Nên đồng hành với các gợi ý âm thanh hay hình ảnh, như tiếng beep, thông báo nhấp nháy hoặc có màu đặc biệt (đỏ).",
-      "D": "Nên dùng thông báo lỗi hệ thống của ngôn ngữ lập trình, chỉ ra lỗi do người dùng mắc phải khi chạy chương trình và nên đồng hành với các gợi ý âm thanh hay hình ảnh như tiếng beep, thông báo nhấp nháy hoặc có màu đặc biệt (đỏ)."
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 79,
-    "q": "Mô hình thiết kế phần mềm nào sau đây tương tự như bản vẽ chi tiết cửa và bố trí nội thất trong thiết kế kiến trúc nhà cửa?",
-    "opts": {
-      "A": "Thiết kế kiến trúc",
-      "B": "Thiết kế giao diện",
-      "C": "Thiết kế các thành phần hệ thống",
-      "D": "Thiết kế dữ liệu"
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 80,
-    "q": "Các bước thiết kế phần mềm nào sau đây thuộc khía cạnh kỹ thuật?",
-    "opts": {
-      "A": "Thiết kế sơ bộ",
-      "B": "Thiết kế chi tiết",
-      "C": "Thiết kế dữ liệu",
-      "D": "Thiết kế tổng quát"
-    },
-    "ans": [
-      "B",
-      "C"
-    ],
-    "type": "mcq"
-  },
-  {
-    "id": 81,
-    "q": "Chiến lược thiết kế nào sau đây có vùng dữ liệu dùng chung?",
-    "opts": {
-      "A": "Thiết kế hướng chức năng",
-      "B": "Thiết kế hướng đối tượng.",
-      "C": "Thiết kế giao diện người sử dụng.",
-      "D": "Thiết kế dữ liệu"
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 82,
-    "q": "Mô hình nào sau đay mà mọi dữ liệu được lưu trữ tại một cơ sở dữ liệu trung tâm có thể được truy cập bởi mọi phân hệ?",
-    "opts": {
-      "A": "Mô hình kho dữ liệu",
-      "B": "Mô hình khách- phục vụ",
-      "C": "Mô hình máy trừu tượng.",
-      "D": "Mô hình mạng ngang hàng."
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 83,
-    "q": "Chỉ ra phát biểu sai. Thiết kế dữ liệu ở mức thành phần:",
-    "opts": {
-      "A": "Thiết kế cơ sở dữ liệu.",
-      "B": "Hiện thực thuộc tính dữ liệu thành cấu trúc dữ liệu.",
-      "C": "Phát triển một tập những trừu tượng dữ liệu.",
-      "D": "Tinh chế các đối tượng dữ liệu."
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 84,
-    "q": "Đặc điểm nào sau đây được sử dụng để đánh giá một bản thiết kế tốt?",
-    "opts": {
-      "A": "Thể hiện tất cả các yêu cầu trong pha phân tích, cung cấp một mô tả hoàn thiện về phần mềm",
-      "B": "Chưa cả các trường hợp kiểm thử của tất cả các thành phần.",
-      "C": "Mô tả một phần phần mềm.",
-      "D": "Mô tả chức năng phần mềm."
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 85,
-    "q": "Hướng tiếp cận nào để những phân tích tác vụ của người dùng trong thiết kế giao diện người dùng?",
-    "opts": {
-      "A": "Người dùng cho biết những ưa thích qua bản câu hỏi",
-      "B": "Dựa vào ý kiến của những lập trình viên có kinh nghiệm",
-      "C": "Nghiên cứu những hệ thống tự động liên quan",
-      "D": "Quan sát thao tác người dùng"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 86,
-    "q": "Một đặc trưng của thiết kế tốt",
-    "opts": {
-      "A": "Cho thấy sự liên kết mạnh giữa các module",
-      "B": "Thực hiện tất cả yêu cầu trong phân tích",
-      "C": "Bao gồm những testcase cho tất cả thành phần",
-      "D": "Kết hợp mã nguồn nhằm mục đích mô tả"
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 87,
-    "q": "Mục nào không là đặc trưng trong các phương pháp thiết kế?",
-    "opts": {
-      "A": "Quản lý cấu hình",
-      "B": "Ký hiệu thành phần chức năng",
-      "C": "Nguyên tắc đánh giá chất lượng",
-      "D": "Heuristic tinh chế"
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 88,
-    "q": "Những bản câu hỏi có ý nghĩa nhất đối với những người thiết kế giao diên khi được hoàn tất bởi:",
-    "opts": {
-      "A": "Khách hàng",
-      "B": "Những lập trình viên có kinh nghiệm",
-      "C": "Người dùng sản phẩm",
-      "D": "Người quản lý dự án."
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 89,
-    "q": "Sơ đồ luồng dữ liệu",
-    "opts": {
-      "A": "Đưa ra hình ảnh quan hệ giữa các đối tượng dữ liệu",
-      "B": "Đưa ra hình ảnh những chức năng biến đổi luồng dữ liệu",
-      "C": "Chỉ ra những quyết định logic chính khi chúng xuất hiện",
-      "D": "Chỉ ra sự tương tác của hệ thống với sự kiện bên ngoài."
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 90,
-    "q": "Tài liệu nào sau đây sẽ được tạo ra trong pha thiết kế hệ thống?",
-    "opts": {
-      "A": "Kế hoạch kiểm thử",
-      "B": "Mã lệnh",
-      "C": "Thiết kế chi tiết",
-      "D": "Lập kế hoạch"
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 91,
-    "q": "Các bước thiết kế phần mềm nào sau đây thuộc khía cạnh kỹ thuật?",
-    "opts": {
-      "A": "Thiết kế sơ bộ",
-      "B": "Thiết kế chi tiết",
-      "C": "Thiết kế dữ liệu",
-      "D": "Thiết kế tổng thể"
-    },
-    "ans": [
-      "B",
-      "C"
-    ],
-    "type": "mcq"
-  },
-  {
-    "id": 92,
-    "q": "Chiến lược thiết kế nào sau đây có vùng dữ liệu dùng chung?",
-    "opts": {
-      "A": "Thiết kế hướng chức năng",
-      "B": "Thiết kế hướng đối tượng",
-      "C": "Thiết kế giao diện người dùng",
-      "D": "Thiết kế sơ bộ"
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 93,
-    "q": "Mô hình nào sau đây mà mọi dữ liệu được lưu trữ tại một cơ sở dữ liệu trung tâm có thể truy cập được bởi mọi phân hệ?",
-    "opts": {
-      "A": "Mô hình kho dữ liệu",
-      "B": "Mô hình khách= dịch vụ",
-      "C": "Mô hình máy trừu tượng",
-      "D": "Mô hình ngang hàng"
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 94,
-    "q": "Nguyên nhân của việc sinh lỗi do thiết kế mức thành phần trước khi thiết kế dữ liệu là:",
-    "opts": {
-      "A": "Thiết kế thành phần thường phụ thuộc vào ngôn ngữ còn thiết kế dữ liệu thì không",
-      "B": "Thiết kế dữ liệu thường dễ thực hiện hơn",
-      "C": "Thiết kế dữ liệu thường khó thực hiện hơn",
-      "D": "Cấu trúc dữ liệu thường ảnh hưởng tới cách thức mà thiết kế thành phần phải theo"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 95,
-    "q": "Trong thiết kế cơ sở dữ liệu đâu không phải là quan hệ giữa các bảng:",
-    "opts": {
-      "A": "1-1 (một – một)",
-      "B": "1-n (một – nhiều)",
-      "C": "n-n (nhiều – nhiều)",
-      "D": "0-1 (không – một)"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 96,
-    "q": "Trong thiết kế cơ sở dữ liệu đâu không phải là quan hệ giữa các bảng:",
-    "opts": {
-      "A": "1-1 (một – một)",
-      "B": "1-n (một – nhiều)",
-      "C": "n-n (nhiều – nhiều)",
-      "D": "1-0 (một –không)"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 97,
-    "q": "Trong thiết kế cơ sở dữ liệu đâu không phải là quan hệ giữa các bảng:",
-    "opts": {
-      "A": "1-1 (một – một)",
-      "B": "1-n (một – nhiều)",
-      "C": "n-n (nhiều – nhiều)",
-      "D": "0-0 (không – không)"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 98,
-    "q": "Khi thiết kế cơ sở dữ liệu, người thiết kế cần tạo quan hệ giữa các bảng để đáp ứng?",
-    "opts": {
-      "A": "Tính rang buộc dữ liệu",
-      "B": "Tính độc lập dữ liệu",
-      "C": "Tính dễ dung",
-      "D": "Tính đơn giản hóa"
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 99,
-    "q": "Khi người thiết kế cơ sở dữ liệu cần đặt một khóa chính cho mỗi bảng (thực thể) để?",
-    "opts": {
-      "A": "Phân biệt giữa các bản ghi",
-      "B": "Nhập bản ghi trùng nhau",
-      "C": "Nhập bản ghi rỗng",
-      "D": "Nhập sai dữ liệu."
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 100,
-    "q": "Thủ tục phần mềm tập trung vào: ",
-    "opts": {
-      "A": "Cấp bậc điều khiển trong một cảm nhận trừu tượng hơn ",
-      "B": "Xử lý chi tiết của mỗi module riêng biệt ",
-      "C": "Xử lý chi tiết của mỗi tạp module ",
-      "D": "Quan hệ giữa điều khiển và thủ tục "
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 101,
-    "q": "Nếu coi thường việc tái sử dụng phần mềm (software reuse), thì ________.",
+    "q": "Nếu coi thường việc tái sử dụng phần mềm (software reuse), thì __________.",
     "opts": {
       "A": "chất lượng phần mềm sẽ giảm",
       "B": "năng suất lao động sẽ giảm",
@@ -1221,8 +12,8 @@
     "type": "mcq"
   },
   {
-    "id": 102,
-    "q": "Phát biểu “xác định khái quát phạm vi, yêu cầu cũng như tính khả thi của phần mềm” là nói về bước:",
+    "id": 2,
+    "q": "Phát biểu “xác định khái quát phạm vi, yêu cầu cũng như tính khả thi của phần mềm” là nói về bước :",
     "opts": {
       "A": "Phân tích thiết kế hệ thống",
       "B": "Xác định yêu cầu hệ thống",
@@ -1233,8 +24,8 @@
     "type": "mcq"
   },
   {
-    "id": 103,
-    "q": "Không chứng minh được tính đúng đắn của phần mềm, do vậy ________.",
+    "id": 3,
+    "q": "Không chứng minh được tính đúng đắn của phần mềm, do vậy __________.",
     "opts": {
       "A": "chất lượng phần mềm sẽ giảm",
       "B": "chất lượng phần mềm sẽ tăng",
@@ -1245,8 +36,8 @@
     "type": "mcq"
   },
   {
-    "id": 104,
-    "q": "Chuẩn về một phần mềm tốt không thể đo được một cách định lượng, do vậy ________",
+    "id": 4,
+    "q": "Chuẩn về một phần mềm tốt không thể đo được một cách định lượng, do vậy _____",
     "opts": {
       "A": "không thể đánh giá được một hệ thống đúng đắn hay không.",
       "B": "có thể đánh giá được một hệ thống đúng đắn hay không.",
@@ -1257,56 +48,56 @@
     "type": "mcq"
   },
   {
-    "id": 105,
+    "id": 5,
     "q": "Khái niệm \"Định ra yêu cầu\", nghĩa là:",
     "opts": {
-      "A": "Các dịch vụ được đặc tả bằng ngôn ngữ tự nhiên, có thể dùng làm cơ sở hợp đồng giữa hai bên.",
-      "B": "Yêu cầu được viết bằng ngôn ngữ chuyên ngành để mô tả chi tiết phần mềm.",
-      "C": "Yêu cầu được đặc tả bởi các biểu đồ ngữ cảnh, đồ thị và lược đồ quan hệ.",
-      "D": "Yêu cầu được viết bằng ngôn ngữ tự nhiên về các dịch vụ mà hệ thống phải cung cấp."
+      "A": "\"Các dịch vụ được đặc tả bằng ngôn ngữ tự nhiên, có thể dùng làm cơ sở hợp đồng giữa hai bên.\"",
+      "B": "\"Yêu cầu được viết bằng ngôn ngữ chuyên ngành để mô tả chi tiết phần mềm.\"",
+      "C": "\"Yêu cầu được đặc tả bởi các biểu đồ ngữ cảnh, đồ thị và lược đồ quan hệ,… \"",
+      "D": "\"Yêu cầu được viết bằng ngôn ngữ tự nhiên về các dịch vụ mà hệ thống phải cung cấp.\""
     },
     "ans": "D",
     "type": "mcq"
   },
   {
-    "id": 106,
+    "id": 6,
     "q": "Trong quá trình phát triển phần mềm, giai đoạn nào có thể lặp lại nhiều lần?",
     "opts": {
-      "A": "Đặc tả, thiết kế",
-      "B": "Đặc tả, thiết kế, kiểm định",
-      "C": "Đặc tả, lập trình, bảo trì",
-      "D": "Đặc tả, thiết kế, lập trình, kiểm định, bảo trì"
+      "A": "Đặc tả, thiết kế.",
+      "B": "Đặc tả, thiết kế, kiểm định.",
+      "C": "Đặc tả, lập trình, bảo trì.",
+      "D": "Đặc tả, thiết kế, lập trình, kiểm định, bảo trì."
     },
     "ans": "D",
     "type": "mcq"
   },
   {
-    "id": 107,
+    "id": 7,
     "q": "Trong các phát biểu sau, phát biểu nào là đúng:",
     "opts": {
       "A": "Thiết kế hướng đối tượng chỉ dùng cho lập trình hướng đối tượng",
       "B": "Thiết kế hướng đối tượng có những điểm giống lập trình hướng đối tượng",
-      "C": "Thiết kế hướng đối tượng có thể dùng cho cả lập trình hướng đối tượng và lập trình hướng chức năng",
+      "C": "Thiết kế hướng đối tượng có thể dùng cho cả lập trình hướng đối tượng và lập trình hướng chức năng.",
       "D": "Thiết kế hướng đối tượng là lập trình hướng đối tượng"
     },
     "ans": "C",
     "type": "mcq"
   },
   {
-    "id": 108,
+    "id": 8,
     "q": "Trong quá trình phát triển phần mềm, giai đoạn kiểm định phần mềm có nghĩa là:",
     "opts": {
-      "A": "Nhận biết vấn đề, bài toán thực tế, các yêu cầu mà người dùng đặt ra",
-      "B": "Xây dựng không gian giải pháp cho vấn đề",
-      "C": "Xây dựng một hệ thống thử nghiệm dựa trên yêu cầu thiết kế",
-      "D": "Thẩm định lại tính đúng đắn của giải pháp theo yêu cầu ban đầu đã đặt ra"
+      "A": "Nhận biết vấn đề, bài toán thực tế, các yêu cầu mà người dùng đặt ra.",
+      "B": "Xây dựng không gian giải pháp cho vấn đề.",
+      "C": "Xây dựng một hệ thống thực hiện được dựa vào thiết kế.",
+      "D": "Thẩm định lại tính đúng đắn của giải pháp theo yêu cầu ban đầu đã đặt ra."
     },
     "ans": "D",
     "type": "mcq"
   },
   {
-    "id": 109,
-    "q": "Kiểm thử là việc:",
+    "id": 9,
+    "q": "Kiểm thử là việc :",
     "opts": {
       "A": "Phát hiện và sửa lỗi phần logic bên trong chương trình hay còn gọi là lỗi lập trình",
       "B": "Kiểm tra xem phần mềm có đảm bảo tính hiệu quả trong thực hiện hay không",
@@ -1317,92 +108,92 @@
     "type": "mcq"
   },
   {
-    "id": 110,
+    "id": 10,
     "q": "Lý do khiến người phát triển phần mềm phải tạo nguyên mẫu:",
     "opts": {
-      "A": "Tạo nguyên mẫu làm sơ sở cho việc viết đặc tả cho sản phẩm",
+      "A": "Tạo nguyên mẫu làm sơ sở cho việc viết đặc tả cho sản phẩm.",
       "B": "Tạo nguyên mẫu dùng làm bản test cho phần mềm sau này",
-      "C": "Tạo nguyên mẫu giúp hạ thấp chi phí sửa lỗi",
+      "C": "Tạo nguyên mẫu giúp hạ thấp chi phí sửa lỗi.",
       "D": "Tất cả đều đúng"
     },
     "ans": "D",
     "type": "mcq"
   },
   {
-    "id": 111,
+    "id": 11,
     "q": "Trong các mô hình phát triển phần mềm sau, mô hình nào chính là mô hình thác nước:",
     "opts": {
-      "A": "Mô hình RAD",
-      "B": "Mô hình tuần tự tuyến tính",
-      "C": "Mô hình bản mẫu",
-      "D": "Mô hình xoắn ốc"
+      "A": "Mô hình RAD.",
+      "B": "Mô hình tuần tự tuyến tính.",
+      "C": "Mô hình bản mẫu.",
+      "D": "Mô hình xoáy ốc."
     },
     "ans": "B",
     "type": "mcq"
   },
   {
-    "id": 112,
+    "id": 12,
     "q": "Tạo nguyên mẫu giúp cho chi phí sửa lỗi giảm xuống, vì:",
     "opts": {
-      "A": "Nếu có bản nguyên mẫu, thì phần mềm không cần phải bảo trì",
-      "B": "Nếu khách hàng chấp nhận nguyên mẫu, thì khách hàng cũng chấp nhận phần mềm chính thức",
-      "C": "Tạo nguyên mẫu cho phép phát hiện sớm các lỗi, giúp cho việc sửa chữa diễn ra vào thời kỳ đầu của quá trình phát triển phần mềm. Vì vậy chi phí bảo trì giảm",
-      "D": "Tạo nguyên mẫu dùng làm tài liệu cho người sử dụng, vì vậy không tốn kém tiền đào tạo"
+      "A": "Nếu có bản nguyên mẫu, thì phần mềm không cần phải bảo trì.",
+      "B": "Nếu khách hàng chấp nhận nguyên mẫu, thì khách hàng cũng chấp nhận phần mềm chính thức. Nên không mất chi phí sửa lỗi.",
+      "C": "Tạo nguyên mẫu cho phép phát hiện sớm các lỗi, giúp cho việc sửa chữa diễn ra vào thời kỳ đầu của quá trình phát triển phần mềm. Vì vậy chi phí bảo trì giảm.",
+      "D": "Tạo nguyên mẫu dùng làm tài liệu cho người sử dụng, vì vậy không tốn kém tiền đào tạo."
     },
     "ans": "C",
     "type": "mcq"
   },
   {
-    "id": 113,
+    "id": 13,
     "q": "Trong các mô hình sau, mô hình nào không phải là mô hình phát triển phần mềm:",
     "opts": {
-      "A": "Mô hình tuần tự tuyến tính",
-      "B": "Mô hình bản mẫu",
-      "C": "Mô hình song song",
-      "D": "Mô hình tương tranh"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 114,
-    "q": "Xác định yêu cầu phi chức năng, nghĩa là:",
-    "opts": {
-      "A": "Đặc tả các yêu cầu của người dùng",
-      "B": "Đặc tả tất cả các nhu cầu của người dùng mà hệ thống phải cung cấp",
-      "C": "Đặc tả tất cả các dịch vụ mà hệ thống phải cung cấp",
-      "D": "Đặc tả tất cả các ràng buộc mà hệ thống phải tuân theo"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 115,
-    "q": "\"Xác định yêu cầu chức năng\", nghĩa là:",
-    "opts": {
-      "A": "Đặc tả tất cả các ràng buộc mà hệ thống phải tuân theo",
-      "B": "Đặc tả các yêu cầu của người dùng",
-      "C": "Đặc tả tất cả các dịch vụ mà hệ thống phải cung cấp",
-      "D": "Đặc tả tất cả các nhu cầu của người dùng mà hệ thống phải cung cấp"
+      "A": "Mô hình tuần tự tuyến tính.",
+      "B": "Mô hình bản mẫu.",
+      "C": "Mô hình song song.",
+      "D": "Mô hình tương tranh."
     },
     "ans": "C",
     "type": "mcq"
   },
   {
-    "id": 116,
+    "id": 14,
+    "q": "\"Xác định yêu cầu phi chức năng\", nghĩa là:",
+    "opts": {
+      "A": "Đặc tả các yêu cầu của người dùng.",
+      "B": "Đặc tả trừu tượng các nhu cầu của người dùng mà hệ thống phải cung cấp.",
+      "C": "Đặc tả trừu tượng các dịch vụ mà hệ thống phải cung cấp",
+      "D": "Đặc tả trừu tượng các ràng buộc mà hệ thống phải tuân theo."
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 15,
+    "q": "\"Xác định yêu cầu chức năng\", nghĩa là:",
+    "opts": {
+      "A": "Đặc tả trừu tượng các ràng buộc mà hệ thống phải tuân theo.",
+      "B": "Đặc tả các yêu cầu của người dùng.",
+      "C": "Đặc tả trừu tượng các dịch vụ mà hệ thống phải cung cấp.",
+      "D": "Đặc tả trừu tượng các nhu cầu của người dùng mà hệ thống phải cung cấp."
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": 16,
     "q": "Khái niệm \"Đặc tả thiết kế\", nghĩa là:",
     "opts": {
-      "A": "Yêu cầu được đặc tả bởi các biểu đồ ngữ cảnh, đồ thị và lược đồ quan hệ",
-      "B": "Yêu cầu được viết bằng ngôn ngữ chuyên ngành để mô tả chi tiết phần mềm",
-      "C": "Các dịch vụ được đặc tả một cách chi tiết, chính xác có thể dùng làm cơ sở hợp đồng giữa hai bên",
-      "D": "Yêu cầu được viết bằng ngôn ngữ tự nhiên về các dịch vụ mà hệ thống phải cung cấp"
+      "A": "\"Yêu cầu được đặc tả bởi các biểu đồ ngữ cảnh, đồ thị và lược đồ quan hệ,… \"",
+      "B": "\"Yêu cầu được viết bằng ngôn ngữ chuyên ngành để mô tả chi tiết phần mềm\".",
+      "C": "\"Các dịch vụ được đặc tả một cách chi tiết, chính xác để có thể dùng làm cơ sở hợp đồng giữa hai bên.\"",
+      "D": "\"Yêu cầu được viết bằng ngôn ngữ tự nhiên về các dịch vụ mà hệ thống phải cung cấp\"."
     },
     "ans": "B",
     "type": "mcq"
   },
   {
-    "id": 117,
-    "q": "Phát biểu: “Biểu diễn thiết kế bằng một hay một số ngôn ngữ lập trình và dịch thành mã thực hiện được. Là bước chuyển hóa thiết kế chi tiết thành chương trình mà cuối cùng được biên dịch thành các lệnh mà máy thực hiện được” là nói về bước:",
+    "id": 17,
+    "q": "Phát biểu : “ Biểu diễn thiết kế bằng một hay một số ngôn ngữ lập trình và dịch thành mã thực hiện được. Là bước chuyển hóa thiết kế chi tiết thành chương trình mà cuối cùng được biến đổi thành các lệnh mã máy thực hiện được” là nói về bước:",
     "opts": {
       "A": "Phân tích thiết kế hệ thống",
       "B": "Mã hóa (lập trình)",
@@ -1413,8 +204,8 @@
     "type": "mcq"
   },
   {
-    "id": 118,
-    "q": "Phát biểu: “Bao gồm các công việc sửa các lỗi phát sinh khi áp dụng chương trình hoặc chỉnh sửa những thay đổi trong môi trường bên ngoài (hệ điều hành mới, thiết bị ngoại vi mới, yêu cầu người dùng) hoặc yêu cầu bổ sung chức năng hay nâng cao hiệu năng của chương trình” là đang nói về bước:",
+    "id": 18,
+    "q": "Phát biểu : “Bao gồm các công việc sửa các lỗi phát sinh khi áp dụng chương trình hoặc thích ứng nó với thay đổi trong môi trường bên ngoài (hệ điều hành mới, thiết bị ngoại vi mới, yêu cầu người dùng) hoặc yêu cầu bổ sung chức năng hay nâng cao hiệu năng cần có” là đang nói về bước :",
     "opts": {
       "A": "Phân tích thiết kế hệ thống",
       "B": "Bảo trì",
@@ -1425,67 +216,67 @@
     "type": "mcq"
   },
   {
-    "id": 119,
-    "q": "Độ đo phần mềm theo kích cỡ là?",
+    "id": 19,
+    "q": "Độ đo phần mềm theo kích cỡ là ?",
     "opts": {
-      "A": "Cách đo gián tiếp cho phần mềm và tiến trình phát triển của nó",
-      "B": "Cách đo gián tiếp cho dữ liệu và tài liệu phân tích của nó",
-      "C": "Cách đo trực tiếp cho phần mềm và tiến trình phát triển của nó",
-      "D": "Cách đo trực tiếp cho dữ liệu và tài liệu phân tích của nó"
+      "A": "cách đo gián tiếp cho phần mềm và tiến trình phân tích của nó",
+      "B": "cách đo gián tiếp cho dữ liệu và tài liệu phân tích của nó",
+      "C": "cách đo trực tiếp cho phần mềm và tiến trình phân tích của nó",
+      "D": "cách đo trực tiếp cho dữ liệu và tài liệu phân tích của nó"
     },
     "ans": "C",
     "type": "mcq"
   },
   {
-    "id": 120,
-    "q": "Độ đo phần mềm theo điểm chức năng là?",
+    "id": 20,
+    "q": "Độ đo phần mềm theo điểm chức năng là ?",
     "opts": {
-      "A": "Cách đo trực tiếp cho phần mềm và tiến trình phát triển của nó",
-      "B": "Cách đo gián tiếp cho phần mềm và tiến trình phát triển của nó",
-      "C": "Cách đo gián tiếp cho dữ liệu và tài liệu phân tích của nó",
-      "D": "Cách đo trực tiếp cho phần mềm và tài liệu phân tích của nó"
+      "A": "cách đo trực tiếp cho phần mềm và tiến trình phát triển của nó",
+      "B": "cách đo gián tiếp cho phần mềm và tiến trình phát triển của nó",
+      "C": "cách đo gián tiếp cho dữ liệu và tài liệu phân tích của nó",
+      "D": "cách đo trực tiếp cho phần mềm và tài liệu phân tích của nó"
     },
     "ans": "B",
     "type": "mcq"
   },
   {
-    "id": 121,
+    "id": 21,
     "q": "Khái niệm \"Đặc tả yêu cầu\", nghĩa là:",
     "opts": {
-      "A": "Yêu cầu được viết bằng ngôn ngữ tự nhiên về các dịch vụ mà hệ thống phải cung cấp",
-      "B": "Yêu cầu được viết bằng ngôn ngữ chuyên ngành để mô tả chi tiết phần mềm",
-      "C": "Yêu cầu được đặc tả bởi các biểu đồ ngữ cảnh, đồ thị và lược đồ quan hệ",
-      "D": "Các dịch vụ được đặc tả một cách chi tiết, chính xác có thể dùng làm cơ sở hợp đồng giữa hai bên"
+      "A": "\"Yêu cầu được viết bằng ngôn ngữ tự nhiên về các dịch vụ mà hệ thống phải cung cấp\".",
+      "B": "\"Yêu cầu được viết bằng ngôn ngữ chuyên ngành để mô tả chi tiết phần mềm\".",
+      "C": "\"Yêu cầu được đặc tả bởi các biểu đồ ngữ cảnh, đồ thị và lược đồ quan hệ,… \".",
+      "D": "\"Các dịch vụ được đặc tả một cách chi tiết, chính xác để có thể dùng làm cơ sở hợp đồng giữa hai bên.\""
     },
     "ans": "D",
     "type": "mcq"
   },
   {
-    "id": 122,
+    "id": 22,
     "q": "Trong quy trình RUP luồng công việc nào là luồng công việc hỗ trợ?",
     "opts": {
       "A": "Business modeling",
       "B": "Requirement",
       "C": "Configuration and Change Management",
-      "D": "Implemention"
+      "D": "Implementation"
     },
     "ans": "C",
     "type": "mcq"
   },
   {
-    "id": 123,
+    "id": 23,
     "q": "Trong quy trình RUP luồng công việc nào là luồng công việc chính ?",
     "opts": {
       "A": "Project Management",
       "B": "Configuration and Change Management",
-      "C": "Enviroment",
+      "C": "Environment",
       "D": "Test"
     },
     "ans": "D",
     "type": "mcq"
   },
   {
-    "id": 124,
+    "id": 24,
     "q": "Hệ thống phần mềm phải tuân thủ các ràng buộc về: thời gian, tốc độ xử lý",
     "opts": {
       "A": "Phi chức năng",
@@ -1497,7 +288,19 @@
     "type": "mcq"
   },
   {
-    "id": 125,
+    "id": 25,
+    "q": "Trong quá trình phát triển phần mềm, giai đoạn đặc tả phần mềm có nghĩa là:",
+    "opts": {
+      "A": "Xây dựng không gian giải pháp cho vấn đề.",
+      "B": "Xây dựng một hệ thống thực hiện được dựa vào thiết kế.",
+      "C": "Thẩm định lại tính đúng đắn của giải pháp theo yêu cầu ban đầu đã đặt ra",
+      "D": "Nhận biết vấn đề, bài toán thực tế, các yêu cầu mà người dùng đặt ra"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 26,
     "q": "Trong quá trình phát triển phần mềm, giai đoạn đặc tả phần mềm có nghĩa là:",
     "opts": {
       "A": "Xây dựng không gian giải pháp cho vấn đề.",
@@ -1505,7 +308,439 @@
       "C": "Thẩm định lại tính đúng đắn của giải pháp theo yêu cầu ban đầu đã đặt ra",
       "D": "Nhận biết vấn đề, bài toán thực tế, các yêu cầu mà người dùng đặt ra."
     },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 27,
+    "q": "Hệ thống phần mềm phải tuân thủ các ràng buộc về: thời gian, tốc độ xử lý",
+    "opts": {
+      "A": "Phi chức năng : Là cách hệ thống hoạt động như thế nào, tức là đặc tính chất lượng, hiệu suất, độ tin cậy, bảo mật, giao diện,",
+      "B": "Chức năng : Là những gì hệ thống phải làm — tức là các hành động, tính năng, nhiệm vụ cụ thể mà hệ thống thực hiện để đáp ứng nhu cầu người dùng.",
+      "C": "Chức năng và phi chức năng",
+      "D": "Hệ thống phần cứng"
+    },
     "ans": "A",
     "type": "mcq"
+  },
+  {
+    "id": 28,
+    "q": "Trong các phát biểu sau, phát biểu nào là đúng:",
+    "opts": {
+      "A": "Thiết kế hướng đối tượng chỉ dùng cho lập trình hướng đối tượng",
+      "B": "Thiết kế hướng đối tượng có những điểm giống lập trình hướng đối tượng",
+      "C": "Thiết kế hướng đối tượng có thể dùng cho cả lập trình hướng đối tượng và lập trình hướng chức năng.",
+      "D": "Thiết kế hướng đối tượng là lập trình hướng đối tượng"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": 29,
+    "q": "Trong quá trình phát triển phần mềm, giai đoạn lập trình phần mềm có nghĩa là",
+    "opts": {
+      "A": "Nhận biết vấn đề, bài toán thực tế, các yêu cầu mà người dùng đặt ra",
+      "B": "Xây dựng một hệ thống thực hiện được dựa vào thiết kế",
+      "C": "Xây dựng không gian giải pháp cho vấn đề",
+      "D": "Thẩm định lại tính đúng đắn của giải pháp theo yêu cầu ban đầu đã đặt ra."
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 30,
+    "q": "Trong quá trình phát triển phần mềm, giai đoạn kiểm định phần mềm có nghĩa là:",
+    "opts": {
+      "A": "Nhận biết vấn đề, bài toán thực tế, các yêu cầu mà người dùng đặt ra",
+      "B": "Xây dựng không gian giải pháp cho vấn đề.",
+      "C": "Xây dựng một hệ thống thực hiện được dựa vào thiết kế.",
+      "D": "Thẩm định lại tính đúng đắn của giải pháp theo yêu cầu ban đầu đã đặt ra."
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 31,
+    "q": "Chuẩn về một phần mềm tốt không thể đo được một cách định lượng, do vậy",
+    "opts": {
+      "A": "không thể đánh giá được một hệ thống đúng đắn hay không.",
+      "B": "có thể đánh giá được một hệ thống đúng đắn hay không.",
+      "C": "chất lượng phần mềm sẽ tăng",
+      "D": "chất lượng phần mềm sẽ giảm"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 32,
+    "q": "Trong quá trình phát triển phần mềm, giai đoạn bảo trì phần mềm có nghĩa là :",
+    "opts": {
+      "A": "Thay đổi và phát triển hệ thống đã được xây dựng.",
+      "B": "Xây dựng không gian giải pháp cho vấn đề.",
+      "C": "Xây dựng một hệ thống thực hiện được dựa vào thiết kế.",
+      "D": "Thẩm định lại tính đúng đắn của giải pháp theo yêu cầu ban đầu đã đặt ra."
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 33,
+    "q": "Phát biểu : “ Biểu diễn thiết kế bằng một hay một số ngôn ngữ lập trình và dịch thành mã thực hiện được. Là bước chuyển hóa thiết kế chi tiết thành chương trình mà cuối cùng được biến đổi thành các lệnh mã máy thực hiện được” là nói về bước:",
+    "opts": {
+      "A": "Phân tích thiết kế hệ thống",
+      "B": "Mã hóa (lập trình)",
+      "C": "Xác định yêu cầu phần mềm",
+      "D": "Kiểm thử"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 34,
+    "q": "Khái niệm vòng đời phần mềm:",
+    "opts": {
+      "A": "Một vòng đời phần mềm là quá trình phát triển từ khi nhận dự án đến khi phần mềm bị loại bỏ.",
+      "B": "Một vòng đời phần mềm là quá trình phát triển theo chu kỳ từ giai đoạn đặc tả đến giai đoạn bảo trì phần mềm.",
+      "C": "Một vòng đời phần mềm là quá trình phát triển từ giai đoạn thiết kế đến bảo trì phần mềm.",
+      "D": "Một vòng đời phần mềm quá trình phát triển từ giai đoạn đặc tả đến kiểm định phần mềm."
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 35,
+    "q": "Khái niệm \"Định ra yêu cầu\", nghĩa là:",
+    "opts": {
+      "A": "\"Các dịch vụ được đặc tả bằng ngôn ngữ tự nhiên, có thể dùng làm cơ sở hợp đồng giữa hai bên.\"",
+      "B": "\"Yêu cầu được viết bằng ngôn ngữ chuyên ngành để mô tả chi tiết phần mềm.\"",
+      "C": "\"Yêu cầu được đặc tả bởi các biểu đồ ngữ cảnh, đồ thị và lược đồ quan hệ,… \"",
+      "D": "\"Yêu cầu được viết bằng ngôn ngữ tự nhiên về các dịch vụ mà hệ thống phải cung cấp.\""
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 36,
+    "q": "\"Xác định yêu cầu phi chức năng\", nghĩa là:",
+    "opts": {
+      "A": "Đặc tả các yêu cầu của người dùng.",
+      "B": "Đặc tả trừu tượng các nhu cầu của người dùng mà hệ thống phải cung cấp.",
+      "C": "Đặc tả trừu tượng các dịch vụ mà hệ thống phải cung cấp",
+      "D": "Đặc tả trừu tượng các ràng buộc mà hệ thống phải tuân theo."
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 37,
+    "q": "Hệ thống phần mềm phải tuân thủ các ràng buộc về: thời gian, tốc độ xử lý",
+    "opts": {
+      "A": "Phi chức năng",
+      "B": "Chức năng",
+      "C": "Chức năng và phi chức năng",
+      "D": "Hệ thống phần cứng"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 38,
+    "q": "Trong các phát biểu sau, phát biểu nào là đúng:",
+    "opts": {
+      "A": "Thiết kế hướng đối tượng chỉ dùng cho lập trình hướng đối tượng",
+      "B": "Thiết kế hướng đối tượng có những điểm giống lập trình hướng đối tượng",
+      "C": "Thiết kế hướng đối tượng có thể dùng cho cả lập trình hướng đối tượng và lập trình hướng chức năng.",
+      "D": "Thiết kế hướng đối tượng là lập trình hướng đối tượng"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": 39,
+    "q": "Trong quá trình phát triển phần mềm, giai đoạn kiểm định phần mềm có nghĩa là:",
+    "opts": {
+      "A": "Nhận biết vấn đề, bài toán thực tế, các yêu cầu mà người dùng đặt ra.",
+      "B": "Xây dựng không gian giải pháp cho vấn đề.",
+      "C": "Xây dựng một hệ thống thực hiện được dựa vào thiết kế.",
+      "D": "Thẩm định lại tính đúng đắn của giải pháp theo yêu cầu ban đầu đã đặt ra."
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 40,
+    "q": "Trong quá trình phát triển phần mềm, giai đoạn lập trình phần mềm có nghĩa là",
+    "opts": {
+      "A": "Nhận biết vấn đề, bài toán thực tế, các yêu cầu mà người dùng đặt ra",
+      "B": "Xây dựng một hệ thống thực hiện được dựa vào thiết kế",
+      "C": "Xây dựng không gian giải pháp cho vấn đề",
+      "D": "Thẩm định lại tính đúng đắn của giải pháp theo yêu cầu ban đầu đã đặt ra."
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 41,
+    "q": "Chuẩn về một phần mềm tốt không thể đo được một cách định lượng, do vậy",
+    "opts": {
+      "A": "không thể đánh giá được một hệ thống đúng đắn hay không.",
+      "B": "có thể đánh giá được một hệ thống đúng đắn hay không.",
+      "C": "chất lượng phần mềm sẽ tăng",
+      "D": "chất lượng phần mềm sẽ giảm"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 42,
+    "q": "Trong quá trình phát triển phần mềm, giai đoạn bảo trì phần mềm có nghĩa là :",
+    "opts": {
+      "A": "Thay đổi và phát triển hệ thống đã được xây dựng.",
+      "B": "Xây dựng không gian giải pháp cho vấn đề.",
+      "C": "Xây dựng một hệ thống thực hiện được dựa vào thiết kế.",
+      "D": "Thẩm định lại tính đúng đắn của giải pháp theo yêu cầu ban đầu đã đặt ra."
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 43,
+    "q": "Phát biểu : “ Biểu diễn thiết kế bằng một hay một số ngôn ngữ lập trình và dịch thành mã thực hiện được. Là bước chuyển hóa thiết kế chi tiết thành chương trình mà cuối cùng được biến đổi thành các lệnh mã máy thực hiện được” là nói về bước:",
+    "opts": {
+      "A": "Phân tích thiết kế hệ thống",
+      "B": "Mã hóa (lập trình)",
+      "C": "Xác định yêu cầu phần mềm",
+      "D": "Kiểm thử"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 44,
+    "q": "Phần mềm hệ thống là phần mềm:",
+    "opts": {
+      "A": "Là phần mềm có mã nguồn được cung cấp miễn phí. Việc sử dụng phải tuân theo giấy phép sử dụng kèm theo mã nguồn",
+      "B": "Cài đặt cứng trong sản phẩm",
+      "C": "Cung cấp chức năng đặc biệt được dùng bởi cộng đồng lớn như phần mềm xử lý văn bản, bảng tính, đồ họa, multimedia, giải trí…",
+      "D": "Phục vụ cho các phần mềm khác."
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 45,
+    "q": "Phần mềm nhúng (Embedded) là phần mềm:",
+    "opts": {
+      "A": "Phục vụ cho các phần mềm khác",
+      "B": "Cung cấp chức năng đặc biệt được dùng bởi cộng đồng lớn như phần mềm xử lý văn bản, bảng tính, đồ họa, multimedia, giải trí…",
+      "C": "Cài đặt cứng trong sản phẩm",
+      "D": "Là phần mềm có mã nguồn được cung cấp miễn phí. Việc sử dụng phải tuân theo giấy phép sử dụng kèm theo mã nguồn"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": 46,
+    "q": "Phần mềm mã nguồn mở là phần mềm:",
+    "opts": {
+      "A": "Phục vụ cho các phần mềm khác",
+      "B": "Cung cấp chức năng đặc biệt được dùng bởi cộng đồng lớn như phần mềm xử lý văn bản, bảng tính, đồ họa, multimedia, giải trí…",
+      "C": "Cài đặt cứng trong sản phẩm",
+      "D": "Là phần mềm có mã nguồn được cung cấp miễn phí. Việc sử dụng phải tuân theo giấy phép sử dụng kèm theo mã nguồn"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 47,
+    "q": "Phần mềm ứng dụng web là phần mềm:",
+    "opts": {
+      "A": "Cung cấp chức năng đặc biệt được dùng bởi cộng đồng lớn như phần mềm xử lý văn bản, bảng tính, đồ họa, multimedia, giải trí…",
+      "B": "Cài đặt cứng trong sản phẩm",
+      "C": "Giám sát, phân tích, điều khiển các biến cố ở thế giới thực khi chúng vừa xảy ra. Ví dụ: Nhà thông minh…",
+      "D": "Các phần mềm chạy trên mạng"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 48,
+    "q": "Trong các giai đoạn phát triển phần mềm, thứ tự kiểm thử nào sau đây phù hợp nhất?",
+    "opts": {
+      "A": "Kiểm thử hệ thống ; Kiểm thử đơn vị ; Kiểm thử tích hợp",
+      "B": "Kiểm thử đơn vị ; Kiểm thử tích hợp ; Kiểm thử hệ thống",
+      "C": "Kiểm thử hệ thống ; Kiểm thử tích hợp ; Kiểm thử đơn vị",
+      "D": "Kiểm thử đơn vị ; Kiểm thử hệ thống ; Kiểm thử tích hợp"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 49,
+    "q": "Phát biểu nào là phù hợp nhất cho use cases?",
+    "opts": {
+      "A": "Nguyên mẫu được phát triển để xác định yêu cầu tốt hơn",
+      "B": "Tập hợp các kịch bản mô tả việc sử dụng hệ thống dưới góc nhìn của tác nhân",
+      "C": "Mô tả sự biến đổi trạng thái của hệ thống.",
+      "D": "Mô tả về môi trường kĩ thuật của hệ thống"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 50,
+    "q": "Lựa chọn nào sau đây là giải thích phù hợp nhất với mô hình thác nước “WaterFall Model”?",
+    "opts": {
+      "A": "Một sản phẩm thực nghiệm được sinh ra, và việc kiểm tra các đặc tả yêu cầu và ước lượng được thực hiện trong giai đoạn sớm.",
+      "B": "Ứng dụng được chia ra thành các đơn vị nhỏ. Sau đó từng đơn vị trong chúng được thiết kế và lập trình tuần tự cái nọ tiếp cái kia",
+      "C": "Thời gian phát triển được rút ngắn bởi sự tham gia của người dùng, bằng việc phát triển với ít kĩ sư hơn và bằng việc dùng có hiệu quả các công cụ phát triển",
+      "D": "Việc phát triển hệ thống sẽ được làm theo thứ tự các pha trong tiến trình phần mềm, không quay trở lại công việc ở pha trước của tiến trình"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 51,
+    "q": "Việc kết hợp các mã nguồn chương trình, thư viện và dữ liệu, biên dịch sau đó liên kết để tạo ra một hệ thống thực thi được là",
+    "opts": {
+      "A": "Xây dựng hệ thống",
+      "B": "Quản lý phiên bản bàn giao",
+      "C": "Quản lý thay đổi",
+      "D": "Quản lý cấu hình"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 52,
+    "q": "Đáp án nào trong các đáp án sau không phải là một nhiệm vụ của quản lý cấu hình phần mềm?",
+    "opts": {
+      "A": "Xác định các thành phần cấu hình",
+      "B": "Quản lý rủi ro",
+      "C": "Quản lý phiên bản bàn giao",
+      "D": "Quản lý nhánh phát triển"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 53,
+    "q": "Lý do khiến nhóm phát triển phần mềm nên tạo nguyên mẫu (prototype)?",
+    "opts": {
+      "A": "Tạo nguyên mẫu dùng làm bản kiểm thử cho phần mềm sau này",
+      "B": "Tạo nguyên mẫu làm sơ sở cho việc viết đặc tả cho sản phẩm",
+      "C": "Tạo nguyên mẫu giúp hạ thấp chi phí sửa lỗi.",
+      "D": "Tất cả các phương án đều đúng"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 54,
+    "q": "Công ty muốn viết phần mềm quản lý sách. Theo bạn định hướng dùng loại ngôn ngữ lập trình nào?",
+    "opts": {
+      "A": "Lập trình hệ thống",
+      "B": "Lập trình ngôn ngữ máy",
+      "C": "Lập trình hướng cơ sở dữ liệu",
+      "D": "Lập trình nhúng"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": 55,
+    "q": "Độ phức tạp và việc tổ chức cấu trúc dữ liệu được xác định trong bước nào?",
+    "opts": {
+      "A": "Xác định yêu cầu phần mềm",
+      "B": "Thiết kế phần mềm",
+      "C": "Cài đặt phần mềm",
+      "D": "Bảo trì phần mềm"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 56,
+    "q": "Họ tên của sinh viên cần khai báo kiểu dữ liệu trong ngôn ngữ lập trình là:",
+    "opts": {
+      "A": "Chuỗi",
+      "B": "Logic",
+      "C": "Số nguyên",
+      "D": "Số thực"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 57,
+    "q": "Mô tả nào phù hợp nhất với mô hình Agile?",
+    "opts": {
+      "A": "Tập trung vào xây dựng các tài liệu trong tiến trình phát triển.",
+      "B": "Nhấn mạnh đặc điểm toán học của yêu cầu",
+      "C": "Công việc được thực hiện theo trình tự: lập kế hoạch cơ bản, thiết kế ngoài, thiết kế trong, thiết kế chương trình, lập trình, kiểm thử",
+      "D": "Dễ dàng thích nghi với các thay đổi xảy ra."
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 58,
+    "q": "Đáp án nào sau đây không đại diện cho thiết kế hướng đối tượng?",
+    "opts": {
+      "A": "Các thủ tục trong thiết kế cấu trúc được phân rã dưới dạng các lớp và đối tượng",
+      "B": "Chương trình được xem như là một tập hợp các đối tượng",
+      "C": "Biểu diễn bằng các biểu đồ lớp cho biết một chương trình tạo ra từ những lớp nào và quan hệ giữa chúng",
+      "D": "Phương pháp hướng đối tượng kết hợp cả phương pháp hướng cấu trúc"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 59,
+    "q": "Đâu là giải pháp cho thiết kế cấu trúc?",
+    "opts": {
+      "A": "Mô hình đặc tả theo sơ đồ luồng dữ liệu",
+      "B": "Các thủ tục được thể hiện dưới dạng các bubbles",
+      "C": "Mô hình đặc tả là biểu đồ cấu trúc hiển thị phân cấp gọi và phân luồng dữ liệu đến và đi của các thủ tục",
+      "D": "Nhấn mạnh vào phân rã các thủ tục"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": 60,
+    "q": "Trong các tính chất sau, tính chất nào là đặc trưng của thiết kế hướng đối tượng?",
+    "opts": {
+      "A": "Các đối tượng liên lạc với nhau thông qua trao đổi thông báo.",
+      "B": "Các đối tượng độc lập với nhau và không liên lạc",
+      "C": "Các đối tượng liên lạc với nhau thông qua các biến dùng chung",
+      "D": "Các đối tượng chia sẻ với nhau thông qua trạng thái hệ thống tập trung"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 61,
+    "q": "Lý do khiến nhóm phát triển phần mềm nên tạo nguyên mẫu (prototype)?",
+    "opts": {
+      "A": "Tạo nguyên mẫu dùng làm bản kiểm thử cho phần mềm sau này",
+      "B": "Tạo nguyên mẫu làm sơ sở cho việc viết đặc tả cho sản phẩm",
+      "C": "Tạo nguyên mẫu giúp hạ thấp chi phí sửa lỗi.",
+      "D": "Tất cả các phương án đều đúng"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 62,
+    "q": "Trong yêu cầu phi chức năng, phát biểu \"Yêu cầu về hệ thống được phát triển như tốc độ, bộ nhớ, độ tin cậy, tính di chuyển được, tính dùng lại được,..\" là:",
+    "opts": {
+      "A": "Các yêu cầu về kết quả",
+      "B": "Các yêu cầu ngoại lai.",
+      "C": "Các yêu cầu về sản phẩm.",
+      "D": "Yêu cầu về phương pháp lập trình"
+    },
+    "ans": "C",
+     "type": "mcq"
   }
 ]
