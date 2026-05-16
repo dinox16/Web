@@ -4,7 +4,7 @@
    - Support single & multi-answer MCQ (cs403.json)
      -> Multi-answer detected when q.ans is an Array
    - Question navigator sidebar
-   - MCQ: đáp án xáo trộn thứ tự mỗi lần làm (chấm theo mã A/B/C)
+   - MCQ: xáo nội dung các phương án giữ thứ tự A,B,C,...; chọn vẫn quy đổi về mã trong đề để chấm
    - Tiếp / Nộp: không bắt buộc trả lời trước — có thể bỏ qua
    - Score, retry, back to dashboard
    ============================================================ */
@@ -13,7 +13,7 @@ let questions = [];
 let current = 0;
 let userAnswers = [];   // for mcq: string for single, array for multi; for short: string
 let quizDone = false;
-/** Per-question shuffled [key, label][] for MCQ display (null for short). */
+/** Per-question: fixed order display A,B,… nhưng nội dung xáo; map ô hiển thị → đáp gốc trong JSON (null short). */
 let mcqOptionOrder = [];
 
 /* ============ utils ============ */
@@ -101,14 +101,46 @@ function shuffleInPlace(arr) {
     }
 }
 
-/** Randomize option order per question (new order each lần làm lại). Chấm điểm vẫn theo mã A/B/C. */
+/** Cặp [[displayKeyUpper, label], …] theo alphabet key; chỉ fallback khi không build shuffle. */
+function sortedOptionPairsFromOpts(opts) {
+    const o = opts || {};
+    return Object.keys(o)
+        .map(k => [String(k).toUpperCase(), o[k]])
+        .sort(([a], [b]) => a.localeCompare(b));
+}
+
+/** Ký tự vừa chọn trên ô A/B/C (sau shuffle) → mã trong file đề (chuẩn hoá HOA). */
+function displayLetterToStoredLetter(displayLetter) {
+    const state = mcqOptionOrder[current];
+    const map = state?.displayToOriginal;
+    const d = String(displayLetter ?? "").trim().toUpperCase();
+    if (!map || !d) return d;
+    return map[d] ?? d;
+}
+
+/** Randomize nội dung theo chỗ cố định A,B,C,... mỗi lần làm lại */
 function buildMcqOptionOrder() {
     mcqOptionOrder = questions.map(q => {
         if (q.type === "short") return null;
         const opts = q.opts || q.op || {};
-        const entries = Object.entries(opts);
-        shuffleInPlace(entries);
-        return entries;
+        const displayKeysSorted = Object.keys(opts)
+            .map(k => String(k).toUpperCase())
+            .sort((a, b) => a.localeCompare(b));
+        const pooled = displayKeysSorted.map(dk => {
+            const raw = Object.keys(opts).find(ok => String(ok).toUpperCase() === dk);
+            const label = opts[raw ?? dk];
+            return [dk, label];
+        });
+        shuffleInPlace(pooled);
+        const displayToOriginal = {};
+        const pairs = [];
+        for (let i = 0; i < displayKeysSorted.length; i++) {
+            const dk = displayKeysSorted[i];
+            const [origKey, label] = pooled[i];
+            displayToOriginal[dk] = origKey;
+            pairs.push([dk, label]);
+        }
+        return { pairs, displayToOriginal };
     });
 }
 
@@ -286,20 +318,27 @@ function renderQuestion() {
         const userVal = userAnswers[current];
         const userSet = ansSet(userVal);
         const answered = typeof userVal !== "undefined";
-        const orderedPairs = (mcqOptionOrder[current] && mcqOptionOrder[current].length)
-            ? mcqOptionOrder[current]
-            : Object.entries(q.opts || q.op || {});
+        const opts = q.opts || q.op || {};
+        const st = mcqOptionOrder[current];
+        const pairs = st?.pairs?.length
+            ? st.pairs
+            : sortedOptionPairsFromOpts(opts);
+        const dispToOrig = st?.displayToOriginal
+            ?? Object.fromEntries(pairs.map(([k]) => [k, k]));
 
         let optsHtml = "";
-        for (const [key, label] of orderedPairs) {
+        for (const [key, label] of pairs) {
             const K = String(key).toUpperCase();
+            const origLetter = dispToOrig[K] ?? K;
             let cls = "option";
             let suffix = "";
 
             if (answered) {
-                if (correctSet.has(K)) { cls += " correct"; suffix = '<i class="ans-icon fa-solid fa-circle-check"></i>'; }
-                if (userSet.has(K) && !correctSet.has(K)) { cls += " incorrect"; suffix = '<i class="ans-icon fa-solid fa-circle-xmark"></i>'; }
-            } else if (multi && userSet.has(K)) {
+                if (correctSet.has(origLetter)) { cls += " correct"; suffix = '<i class="ans-icon fa-solid fa-circle-check"></i>'; }
+                if (userSet.has(origLetter) && !correctSet.has(origLetter)) {
+                    cls += " incorrect"; suffix = '<i class="ans-icon fa-solid fa-circle-xmark"></i>';
+                }
+            } else if (multi && userSet.has(origLetter)) {
                 cls += " selected";
                 suffix = '<i class="ans-icon fa-solid fa-check"></i>';
             }
@@ -355,7 +394,7 @@ function renderQuestion() {
                 confirmBtn.onclick = () => {
                     const chosen = [...area.querySelectorAll(".option.selected")].map(b => b.dataset.opt);
                     if (!chosen.length) return showDialog("Hãy chọn ít nhất 1 đáp án!");
-                    userAnswers[current] = chosen;
+                    userAnswers[current] = chosen.map(d => displayLetterToStoredLetter(d));
                     renderQuestion();
                     refreshNavGrid();
                 };
@@ -363,7 +402,7 @@ function renderQuestion() {
         } else if (!answered) {
             optButtons.forEach(btn => {
                 btn.onclick = () => {
-                    userAnswers[current] = btn.dataset.opt;
+                    userAnswers[current] = displayLetterToStoredLetter(btn.dataset.opt);
                     renderQuestion();
                     refreshNavGrid();
                 };

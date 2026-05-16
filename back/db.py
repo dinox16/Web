@@ -20,6 +20,8 @@ USER_FILE = os.path.join(os.path.dirname(__file__), "users.json")
 _client = None
 _db = None
 _connection_error: Optional[str] = None
+_mongo_retry_after_monotonic: float = 0.0
+_MONGO_RETRY_COOLDOWN_SEC = 45.0
 
 _otp_lock = threading.Lock()
 _otp_memory: Dict[str, Dict[str, Any]] = {}
@@ -43,38 +45,58 @@ def _save_json_users(users: List[Dict[str, Any]]) -> None:
 
 
 def _connect() -> None:
-    """Kết nối MongoDB nếu có MONGODB_URI. Bỏ qua nếu chưa cấu hình."""
-    global _client, _db, _connection_error
+    """Kết nối MongoDB nếu có MONGODB_URI. Bỏ qua nếu chưa cấu hình.
 
-    if _client is not None or _connection_error is not None:
+    Lỗi mạng tạm thời không còn chặn thử lại vĩnh viễn (cooldown giữa các lần thử).
+    """
+    global _client, _db, _connection_error, _mongo_retry_after_monotonic
+
+    if _client is not None:
         return
 
     uri = (os.environ.get("MONGODB_URI") or "").strip()
     if not uri:
+        _db = None
         _connection_error = "MONGODB_URI chưa được cấu hình - dùng JSON fallback"
         return
 
+    now_m = time.monotonic()
+    if _mongo_retry_after_monotonic and now_m < _mongo_retry_after_monotonic:
+        return
+
+    client_local = None
     try:
         from pymongo import MongoClient
         from pymongo.errors import PyMongoError
 
-        _client = MongoClient(uri, serverSelectionTimeoutMS=5000)
-        _client.admin.command("ping")
+        client_local = MongoClient(uri, serverSelectionTimeoutMS=5000)
+        client_local.admin.command("ping")
         db_name = os.environ.get("MONGODB_DB", "pfs_db")
-        _db = _client[db_name]
+        db_local = client_local[db_name]
         try:
-            users = _db[os.environ.get("MONGODB_USERS_COLL", "users")]
+            users = db_local[os.environ.get("MONGODB_USERS_COLL", "users")]
             users.create_index("username", unique=True)
             users.create_index("email", unique=True)
-            otp_coll = _db[os.environ.get("MONGODB_OTP_COLL", "otp_codes")]
+            otp_coll = db_local[os.environ.get("MONGODB_OTP_COLL", "otp_codes")]
             otp_coll.create_index("expires_at", expireAfterSeconds=0)
             otp_coll.create_index([("email", 1), ("purpose", 1)])
         except PyMongoError:
             pass
+        _client = client_local
+        _db = db_local
+        client_local = None
+        _connection_error = None
+        _mongo_retry_after_monotonic = 0.0
     except Exception as e:
+        if client_local is not None:
+            try:
+                client_local.close()
+            except Exception:
+                pass
         _client = None
         _db = None
         _connection_error = f"Không kết nối được MongoDB: {e}"
+        _mongo_retry_after_monotonic = now_m + _MONGO_RETRY_COOLDOWN_SEC
 
 
 def is_using_mongo() -> bool:
@@ -139,8 +161,15 @@ def create_user(username: str, email: str, password_hash: str) -> bool:
     _connect()
     if _db is not None:
         coll = _db[os.environ.get("MONGODB_USERS_COLL", "users")]
-        coll.insert_one(dict(doc))
-        return True
+        try:
+            from pymongo.errors import DuplicateKeyError, PyMongoError
+
+            coll.insert_one(dict(doc))
+            return True
+        except DuplicateKeyError:
+            return False
+        except PyMongoError:
+            return False
     users = _load_json_users()
     users.append(doc)
     _save_json_users(users)

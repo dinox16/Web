@@ -3,6 +3,10 @@ import re
 import json
 
 from dotenv import load_dotenv
+
+# Nạp .env trước khi import module dùng os.environ (db, mailer, …)
+load_dotenv()
+
 from flask import (
     Flask, abort, jsonify, redirect, render_template, request, session, url_for
 )
@@ -15,8 +19,6 @@ from back.funclogin import (
 from back.funcdash import (
     dashboard_route, get_subject, get_subjects, quiz, subject_detail, score_answers
 )
-
-load_dotenv()
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY", "dev-secret-key-change-me")
@@ -192,4 +194,5 @@ def register_legacy():
 
 
 if __name__ == "__main__":
+    print("[db]", db.connection_status())
     app.run(debug=True)

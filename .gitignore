@@ -1,0 +1,45 @@
+# --- Secrets & môi trường local ---
+.env
+.env.local
+.env.*.local
+*.pem
+
+# --- Python / thư viện & build ---
+venv/
+.venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+pip-wheel-metadata/
+
+# --- Công cụ & IDE ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# --- Flask / cục bộ ---
+instance/
+.webassets-cache/
+*.sqlite3
+*.db
+
+# --- Người dùng đăng ký local (JSON fallback) ---
+back/users.json
+
+# --- NPM (nếu sau này thêm frontend) ---
+node_modules/
+
+# --- Hệ điều hành ---
+.DS_Store
+Thumbs.db
