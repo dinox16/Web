@@ -1493,10 +1493,130 @@
     "opts": {
       "A": "1 chiều",
       "B": "Train nhanh",
-      "C": "Nhìn cả 2 hướng",
+      "C": "2 chiềuchiều",
       "D": "Noise"
     },
     "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id":"228",
+    "q": "Attention giúp?",
+    "opts": {
+      "A": "Batch",
+      "B": "Loss",
+      "C": "Focus thông tin",
+      "D": "Noise"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id":"229",
+    "q" : "GRU update gate làm gì?",
+    "opts": {
+      "A": "Update dữ liệu",
+      "B": "Update memory",
+      "C": "Batch",
+      "D": "Delete memory"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id":"230",
+    "q" : "Reset gate trong GRU?",
+    "opts": {
+      "A": "Reset gate",
+      "B": "Update",
+      "C": "Batch",
+      "D": "Loss"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id":"231",
+    "q" : "RNN không phù hợp với?",
+    "opts": {
+      "A": "Tabgular",
+      "B": "Chuỗi dài",
+      "C": "Chuỗi ngắn",
+      "D": "None"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id":"232",
+    "q" : "LSTM tốt hơn RNN vì?",
+    "opts": {
+      "A": "None",
+      "B": "Batch",
+      "C": "Loss",
+      "D": "Memory dài hạn"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id":"233",
+    "q" : "Gradient phụ thuộc vào?",
+    "opts": {
+      "A": "Batch",
+      "B": "None",
+      "C": "Chain rule",
+      "D": "Loss"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id":"234",
+    "q" : "Sequence to sequence dùng cho?",
+    "opts": {
+      "A": "None",
+      "B": "Tabular",
+      "C": "Translate",
+      "D": "Image "
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id":"235",
+    "q" : "Hidden size là gì",
+    "opts": {
+      "A": "Batch",
+      "B": "Loss",
+      "C": "Epochs",
+      "D": "Memory size"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id":"236",
+    "q" : "Time step là?",
+    "opts": {
+      "A": "1 bước chuỗi",
+      "B": "Loss",
+      "C": "Epochs",
+      "D": "Batch"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id":"237",
+    "q" : "Teacher forcing dùng để?",
+    "opts": {
+      "A": "Train nhanh",
+      "B": "Test",
+      "C": "Batch",
+      "D": "Noise"
+    },
+    "ans": "A",
     "type": "mcq"
   },
   {
