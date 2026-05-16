@@ -249,7 +249,18 @@ a.back-btn,
         transform: scale(0.99);
     }
 
-    /* ----- QUIZ ----- */
+    /* ----- QUIZ (quiz-form.html / body.quiz-page) ----- */
+    body.quiz-page {
+        background:
+            radial-gradient(ellipse 120% 75% at 100% -25%, rgba(99, 102, 241, 0.28), transparent 58%),
+            radial-gradient(ellipse 95% 60% at -15% 10%, rgba(14, 165, 233, 0.12), transparent 52%),
+            linear-gradient(185deg, #e8ecff 0%, #f0f3fa 35%, #e6eaf3 100%);
+    }
+
+    body.quiz-page .quiz-topbar {
+        background: rgba(255, 255, 255, 0.72);
+    }
+
     .quiz-topbar {
         padding-top: var(--safe-top);
     }
@@ -295,29 +306,38 @@ a.back-btn,
         order: -1;
         position: relative;
         top: auto;
-        padding: 12px;
+        padding: 14px 12px;
         width: 100%;
+        border-radius: 18px;
     }
 
     .q-nav h3 {
-        font-size: 0.78rem;
+        font-size: 0.72rem;
+        letter-spacing: 0.06em;
     }
 
     .q-nav-grid {
         grid-template-columns: repeat(6, minmax(0, 1fr));
-        gap: 5px;
+        gap: 6px;
         max-height: none;
         padding-right: 0;
     }
 
     .q-num {
-        min-height: 38px;
-        font-size: 0.78rem;
+        min-height: 40px;
+        font-size: 0.76rem;
+        border-radius: 10px;
+        border-width: 1.5px;
+    }
+
+    body.quiz-page .q-num.current {
+        box-shadow: 0 4px 14px rgba(67, 56, 202, 0.35);
     }
 
     .quiz-container {
-        padding: 14px 12px calc(12px + var(--safe-bottom));
+        padding: 16px 14px calc(12px + var(--safe-bottom));
         min-height: 0;
+        border-radius: 20px;
     }
 
     .question-area {
@@ -325,9 +345,39 @@ a.back-btn,
         padding-bottom: 8px;
     }
 
+    .question-number {
+        flex-wrap: wrap;
+        gap: 6px 8px;
+    }
+
+    body.quiz-page .question-text {
+        font-size: 1.02rem;
+        line-height: 1.52;
+        font-weight: 650;
+        letter-spacing: -0.02em;
+    }
+
     .question-text {
         font-size: 1rem;
         line-height: 1.45;
+    }
+
+    body.quiz-page .options {
+        gap: 11px;
+    }
+
+    body.quiz-page .opt-key {
+        width: 36px;
+        height: 36px;
+        border-radius: 10px;
+        background: rgba(239, 246, 255, 1);
+        font-size: 0.82rem;
+    }
+
+    body.quiz-page .short-answer input {
+        border-radius: 14px;
+        min-height: var(--touch-min);
+        font-size: 16px;
     }
 
     .option {
@@ -356,9 +406,10 @@ a.back-btn,
         width: 100%;
         min-height: var(--touch-min);
         justify-content: center;
+        border-radius: 14px;
     }
 
-    /* Sticky điều hướng câu hỏi — dễ bấm một tay */
+    /* Sticky điều hướng — một tay */
     .navigation {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -366,33 +417,53 @@ a.back-btn,
             "ctr ctr"
             "prv nxt";
         gap: 10px;
+        align-items: stretch;
         position: sticky;
         bottom: 0;
         z-index: 30;
-        margin: 12px -12px -12px;
-        padding: 12px 12px calc(12px + var(--safe-bottom));
-        background: rgba(255, 255, 255, 0.96);
-        backdrop-filter: blur(10px);
-        border-top: 1px solid var(--border);
-        box-shadow: 0 -8px 24px rgba(15, 23, 42, 0.06);
+        margin: 14px -14px -12px;
+        padding: 14px 14px calc(12px + var(--safe-bottom));
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: saturate(140%) blur(14px);
+        border-top: 1px solid rgba(99, 102, 241, 0.12);
+        box-shadow:
+            0 -4px 24px rgba(49, 46, 129, 0.07),
+            0 -1px 0 rgba(255, 255, 255, 0.8) inset;
+        border-radius: 20px 20px 0 0;
+    }
+
+    body.quiz-page .navigation {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.94) 0%, rgba(248, 250, 255, 0.98) 100%);
     }
 
     #prevBtn {
         grid-area: prv;
         justify-content: center;
         min-height: var(--touch-min);
+        border-radius: 14px;
     }
 
     #nextBtn {
         grid-area: nxt;
         justify-content: center;
         min-height: var(--touch-min);
+        border-radius: 14px;
+        box-shadow: 0 6px 20px rgba(79, 70, 229, 0.28);
+    }
+
+    .counter-wrap {
+        grid-area: ctr;
     }
 
     .counter {
-        grid-area: ctr;
-        text-align: center;
-        font-size: 0.88rem;
+        font-size: 0.92rem;
+    }
+
+    .nav-skip-hint {
+        font-size: 0.72rem;
+        max-width: none;
+        padding: 0 4px;
+        opacity: 0.92;
     }
 
     .score-big {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>{{ subject_name }} - Quiz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#2563eb">
+    <meta name="theme-color" content="#312e81">
     <link rel="stylesheet" href="{{ url_for('static', filename='aptx.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='mobile.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +14,7 @@
           integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
           crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
-<body>
+<body class="quiz-page">
     <header class="quiz-topbar">
         <div class="topbar-inner">
             <a href="{{ url_for('dashboard') }}" class="back-btn" title="Quay về Dashboard">
@@ -45,7 +45,7 @@
             <div class="q-nav-legend">
                 <span><i class="dot done"></i> Đã làm</span>
                 <span><i class="dot current"></i> Hiện tại</span>
-                <span><i class="dot pending"></i> Chưa làm</span>
+                <span><i class="dot pending"></i> Chưa làm / bỏ qua</span>
             </div>
         </aside>
 
@@ -53,13 +53,16 @@
         <main class="quiz-container">
             <div class="question-area"></div>
             <div class="navigation">
-                <button class="nav-btn ghost" id="prevBtn" disabled>
+                <button type="button" class="nav-btn ghost" id="prevBtn" disabled>
                     <i class="fa-solid fa-chevron-left"></i> Trước
                 </button>
-                <div class="counter">
-                    <span id="counter-current">1</span> / <span id="counter-total">0</span>
+                <div class="counter-wrap">
+                    <div class="counter">
+                        <span id="counter-current">1</span> / <span id="counter-total">0</span>
+                    </div>
+                    <p class="nav-skip-hint" id="nav-skip-hint">Có thể bỏ qua câu chưa trả lời.</p>
                 </div>
-                <button class="nav-btn" id="nextBtn">
+                <button type="button" class="nav-btn" id="nextBtn">
                     Tiếp <i class="fa-solid fa-chevron-right"></i>
                 </button>
             </div>

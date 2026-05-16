@@ -34,6 +34,37 @@ body {
     min-height: 100vh;
 }
 
+/* ----- Chủ đề trang quiz (quiz-form.html): nền sóng nhẹ, thẻ có chiều sâu ----- */
+body.quiz-page {
+    background:
+        radial-gradient(ellipse 110% 70% at 100% -18%, rgba(99, 102, 241, 0.22), transparent 55%),
+        radial-gradient(ellipse 90% 55% at -5% 20%, rgba(14, 165, 233, 0.13), transparent 50%),
+        linear-gradient(178deg, #eef2ff 0%, #f4f6fb 38%, #ebeff7 100%);
+}
+
+body.quiz-page .quiz-topbar {
+    border-bottom-color: rgba(148, 163, 184, 0.4);
+    background: rgba(255, 255, 255, 0.78);
+}
+
+body.quiz-page .progress-bar {
+    background: rgba(148, 163, 184, 0.35);
+}
+
+body.quiz-page .q-nav {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    backdrop-filter: blur(12px);
+}
+
+body.quiz-page .quiz-container {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    box-shadow:
+        0 2px 4px rgba(15, 23, 42, 0.04),
+        0 22px 48px -18px rgba(49, 46, 129, 0.14);
+}
+
 /* ============ TOPBAR ============ */
 .quiz-topbar {
     position: sticky;
@@ -291,6 +322,18 @@ body {
     width: 100%;
     font-weight: 500;
 }
+body.quiz-page .option {
+    border-radius: 14px;
+    border-width: 1.5px;
+}
+body.quiz-page .option:hover:not(:disabled) {
+    border-color: rgba(99, 102, 241, 0.55);
+    box-shadow: 0 6px 20px rgba(49, 46, 129, 0.08);
+}
+body.quiz-page .option.selected {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
 .option:hover:not(:disabled) {
     background: var(--primary-50);
     border-color: var(--primary);
@@ -404,7 +447,25 @@ body {
     color: var(--muted);
     font-size: .9rem;
 }
+.counter-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    min-width: 0;
+}
 .counter span:first-child { color: var(--primary); font-weight: 800; font-size: 1.1rem; }
+.nav-skip-hint {
+    margin: 0;
+    font-size: .78rem;
+    font-weight: 500;
+    color: var(--muted);
+    line-height: 1.35;
+    text-align: center;
+    max-width: 280px;
+}
 
 .nav-btn {
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-700) 100%);

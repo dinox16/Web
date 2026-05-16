@@ -4,6 +4,8 @@
    - Support single & multi-answer MCQ (cs403.json)
      -> Multi-answer detected when q.ans is an Array
    - Question navigator sidebar
+   - MCQ: đáp án xáo trộn thứ tự mỗi lần làm (chấm theo mã A/B/C)
+   - Tiếp / Nộp: không bắt buộc trả lời trước — có thể bỏ qua
    - Score, retry, back to dashboard
    ============================================================ */
 
@@ -11,6 +13,8 @@ let questions = [];
 let current = 0;
 let userAnswers = [];   // for mcq: string for single, array for multi; for short: string
 let quizDone = false;
+/** Per-question shuffled [key, label][] for MCQ display (null for short). */
+let mcqOptionOrder = [];
 
 /* ============ utils ============ */
 function escapeHtml(s) {
@@ -90,6 +94,24 @@ function setsEqual(a, b) {
     return true;
 }
 
+function shuffleInPlace(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+}
+
+/** Randomize option order per question (new order each lần làm lại). Chấm điểm vẫn theo mã A/B/C. */
+function buildMcqOptionOrder() {
+    mcqOptionOrder = questions.map(q => {
+        if (q.type === "short") return null;
+        const opts = q.opts || q.op || {};
+        const entries = Object.entries(opts);
+        shuffleInPlace(entries);
+        return entries;
+    });
+}
+
 /* ============ dialog ============ */
 function showDialog(message) {
     const el = document.getElementById("dialog-message");
@@ -113,6 +135,7 @@ async function loadQuestions() {
     current = 0;
     userAnswers = new Array(questions.length).fill(undefined);
     quizDone = false;
+    buildMcqOptionOrder();
 
     document.querySelector(".question-area").style.display = "";
     document.querySelector(".navigation").style.display = "";
@@ -201,14 +224,16 @@ function renderQuestion() {
         const inp = document.getElementById("short-answer");
         if (inp) inp.oninput = () => { userAnswers[current] = inp.value; refreshNavGrid(); };
     } else {
-        const opts = q.opts || q.op || {};
         const correctSet = ansSet(q.ans ?? q.a);
         const userVal = userAnswers[current];
         const userSet = ansSet(userVal);
         const answered = typeof userVal !== "undefined";
+        const orderedPairs = (mcqOptionOrder[current] && mcqOptionOrder[current].length)
+            ? mcqOptionOrder[current]
+            : Object.entries(q.opts || q.op || {});
 
         let optsHtml = "";
-        for (const [key, label] of Object.entries(opts)) {
+        for (const [key, label] of orderedPairs) {
             const K = String(key).toUpperCase();
             let cls = "option";
             let suffix = "";
@@ -297,12 +322,23 @@ function renderQuestion() {
 function updateNav() {
     const prevBtn = document.getElementById("prevBtn");
     const nextBtn = document.getElementById("nextBtn");
+    const hintEl = document.getElementById("nav-skip-hint");
     if (prevBtn) prevBtn.disabled = current === 0;
+    const isLast = questions.length && current === questions.length - 1;
     if (nextBtn) {
-        const isLast = current === questions.length - 1;
         nextBtn.innerHTML = isLast
             ? `<i class="fa-solid fa-flag-checkered"></i> Nộp bài`
             : `Tiếp <i class="fa-solid fa-chevron-right"></i>`;
+    }
+    if (hintEl) {
+        if (quizDone || !questions.length) {
+            hintEl.style.display = "none";
+        } else {
+            hintEl.style.display = "";
+            hintEl.textContent = isLast
+                ? "Có thể nộp bài khi còn câu chưa trả lời."
+                : "Có thể bỏ qua câu chưa trả lời — nhấn Tiếp.";
+        }
     }
 }
 
@@ -320,14 +356,6 @@ if (prevBtn) prevBtn.onclick = () => { if (current > 0) { current--; renderQuest
 const nextBtn = document.getElementById("nextBtn");
 if (nextBtn) nextBtn.onclick = () => {
     if (quizDone) return;
-    const q = questions[current];
-    if (q.type === "short") {
-        if (!userAnswers[current] || String(userAnswers[current]).trim() === "")
-            return showDialog("Bạn hãy nhập câu trả lời trước khi tiếp tục!");
-    } else {
-        if (typeof userAnswers[current] === "undefined")
-            return showDialog("Bạn hãy chọn đáp án trước khi tiếp tục!");
-    }
     if (current === questions.length - 1) finishQuiz();
     else { current++; renderQuestion(); }
 };
