@@ -16,13 +16,13 @@ import re
 import secrets
 import time
 from datetime import datetime, timezone
-from typing import Any, Dict
+from typing import Any, Dict, Optional
 
 from flask import jsonify, redirect, request, session, url_for
 from werkzeug.security import check_password_hash, generate_password_hash
 
 from . import db
-from .mailer import send_otp_email
+from .mailer import send_otp_email, smtp_configured
 
 EMAIL_RE = re.compile(r"^[\w.+-]+@[\w-]+\.[\w.-]+$")
 USERNAME_RE = re.compile(r"^[A-Za-z0-9_.-]{3,32}$")
@@ -38,9 +38,56 @@ def _err(message: str, status: int = 400):
     return jsonify({"ok": False, "error": message}), status
 
 
-def _generate_otp(length: int = 6) -> str:
-    length = max(4, min(int(length or 6), 10))
-    return "".join(secrets.choice("0123456789") for _ in range(length))
+def _generate_otp(length: Optional[int] = None) -> str:
+    n = length if length is not None else _otp_expected_length()
+    n = max(4, min(int(n), 10))
+    return "".join(secrets.choice("0123456789") for _ in range(n))
+
+
+def _otp_expected_length() -> int:
+    try:
+        return max(4, min(int(os.environ.get("OTP_LENGTH", "6") or 6), 10))
+    except ValueError:
+        return 6
+
+
+def _normalize_otp_digits(otp_raw: str) -> tuple[Optional[str], str]:
+    """Chỉ giữ chữ số; OTP phải đúng độ dài cấu hình (OTP_LENGTH)."""
+    digits = re.sub(r"\D", "", (otp_raw or "").strip())
+    if not digits:
+        return None, "Vui lòng nhập mã OTP (chữ số) đúng như trong email đã nhận."
+    n = _otp_expected_length()
+    if len(digits) != n:
+        return None, f"Mã OTP phải đúng {n} chữ số và trùng khớp hoàn toàn với mã trong email."
+    return digits, ""
+
+
+def _resend_remaining_seconds(email: str, purpose: str) -> int:
+    cooldown = int(os.environ.get("OTP_RESEND_COOLDOWN", "60") or 60)
+    key = f"{email}|{purpose}"
+    last = _resend_cooldown.get(key, 0)
+    return max(0, int(cooldown - (time.time() - last)))
+
+
+def _note_otp_sent(email: str, purpose: str) -> None:
+    _resend_cooldown[f"{email}|{purpose}"] = time.time()
+
+
+def _send_otp_for(email: str, purpose: str) -> tuple[bool, str]:
+    """Gửi email/console trước; chỉ lưu OTP vào DB khi đã gửi thành công."""
+    remaining = _resend_remaining_seconds(email, purpose)
+    if remaining > 0:
+        return False, f"Vui lòng đợi {remaining}s trước khi yêu cầu mã mới."
+
+    code = _generate_otp()
+    sent, send_err = send_otp_email(email, code, purpose=purpose)
+    if not sent:
+        return False, f"Không gửi được email: {send_err or 'Lỗi SMTP'}"
+
+    code_hash = generate_password_hash(code)
+    db.save_otp(email=email, code_hash=code_hash, purpose=purpose, ttl_minutes=_otp_ttl_minutes())
+    _note_otp_sent(email, purpose)
+    return True, "Đã gửi mã OTP."
 
 
 def _otp_ttl_minutes() -> int:
@@ -50,44 +97,18 @@ def _otp_ttl_minutes() -> int:
         return 10
 
 
-def _check_resend(email: str, purpose: str) -> tuple[bool, int]:
-    cooldown = int(os.environ.get("OTP_RESEND_COOLDOWN", "60") or 60)
-    key = f"{email}|{purpose}"
-    last = _resend_cooldown.get(key, 0)
-    remaining = int(cooldown - (time.time() - last))
-    if remaining > 0:
-        return False, remaining
-    _resend_cooldown[key] = time.time()
-    return True, 0
-
-
 def _utcnow_naive(dt):
     """Đưa datetime về dạng aware UTC để so sánh."""
     if dt is None:
         return None
     if isinstance(dt, str):
         try:
-            return datetime.fromisoformat(dt)
+            return datetime.fromisoformat(dt.replace("Z", "+00:00"))
         except ValueError:
             return None
     if dt.tzinfo is None:
         return dt.replace(tzinfo=timezone.utc)
     return dt
-
-
-def _send_otp_for(email: str, purpose: str) -> tuple[bool, str]:
-    ok_cooldown, remaining = _check_resend(email, purpose)
-    if not ok_cooldown:
-        return False, f"Vui lòng đợi {remaining}s trước khi yêu cầu mã mới."
-
-    code = _generate_otp(int(os.environ.get("OTP_LENGTH", "6") or 6))
-    code_hash = generate_password_hash(code)
-    db.save_otp(email=email, code_hash=code_hash, purpose=purpose, ttl_minutes=_otp_ttl_minutes())
-
-    sent, err = send_otp_email(email, code, purpose=purpose)
-    if not sent:
-        return False, f"Không gửi được email: {err}"
-    return True, "Đã gửi mã OTP."
 
 
 # ============ LOGIN ============
@@ -148,7 +169,12 @@ def register_start():
     ok, msg = _send_otp_for(email, purpose="register")
     if not ok:
         return _err(msg)
-    return _ok({"message": msg, "email": email, "ttl_minutes": _otp_ttl_minutes()})
+    return _ok({
+        "message": msg,
+        "email": email,
+        "ttl_minutes": _otp_ttl_minutes(),
+        "otp_delivered_via": "smtp" if smtp_configured() else "console",
+    })
 
 
 def register_verify():
@@ -188,7 +214,12 @@ def forgot_start():
     if not ok:
         return _err(msg)
     session["pending_reset_email"] = email
-    return _ok({"message": msg, "email": email, "ttl_minutes": _otp_ttl_minutes()})
+    return _ok({
+        "message": msg,
+        "email": email,
+        "ttl_minutes": _otp_ttl_minutes(),
+        "otp_delivered_via": "smtp" if smtp_configured() else "console",
+    })
 
 
 def forgot_verify():
@@ -236,21 +267,32 @@ def otp_resend():
     ok, msg = _send_otp_for(email, purpose=purpose)
     if not ok:
         return _err(msg)
-    return _ok({"message": msg, "ttl_minutes": _otp_ttl_minutes()})
+    return _ok({
+        "message": msg,
+        "ttl_minutes": _otp_ttl_minutes(),
+        "otp_delivered_via": "smtp" if smtp_configured() else "console",
+    })
 
 
 # ============ OTP helper ============
 
 def _verify_otp(email: str, purpose: str, otp_input: str) -> str:
-    if not otp_input or not otp_input.isdigit():
-        return "Mã OTP không hợp lệ."
+    normalized, norm_err = _normalize_otp_digits(otp_input)
+    if norm_err:
+        return norm_err
+    digits = normalized  # chuỗi N chữ số
 
     record = db.get_otp(email=email, purpose=purpose)
     if not record:
-        return "Không tìm thấy mã OTP. Vui lòng yêu cầu mã mới."
+        return "Không tìm thấy mã OTP. Vui lòng nhấn Gửi mã OTP hoặc Gửi lại."
 
     expires = _utcnow_naive(record.get("expires_at"))
-    if expires and datetime.now(timezone.utc) > expires:
+    now_utc = datetime.now(timezone.utc)
+    try:
+        expired = expires and now_utc > expires
+    except TypeError:
+        expired = True
+    if expired:
         db.delete_otp(email, purpose)
         return "Mã OTP đã hết hạn. Vui lòng yêu cầu mã mới."
 
@@ -258,9 +300,10 @@ def _verify_otp(email: str, purpose: str, otp_input: str) -> str:
         db.delete_otp(email, purpose)
         return "Bạn đã nhập sai quá nhiều lần. Hãy yêu cầu mã mới."
 
-    if not check_password_hash(record.get("code_hash", ""), otp_input):
+    if not check_password_hash(record.get("code_hash", ""), digits):
         db.increment_otp_attempts(email, purpose)
-        return "Mã OTP không đúng."
+        n = _otp_expected_length()
+        return f"Mã OTP không khớp. Nhập đúng {n} chữ số giống hệt email/console đã nhận."
 
     db.delete_otp(email, purpose)
     return ""

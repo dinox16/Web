@@ -112,13 +112,16 @@
                 <form id="form-signup-verify" class="hidden" autocomplete="off" novalidate>
                     <div class="otp-info">
                         <i class="fa-solid fa-envelope-circle-check"></i>
-                        Mã OTP đã được gửi tới <b id="signup-email-display"></b>.
-                        Vui lòng kiểm tra hộp thư (cả thư rác).
+                        Mã OTP gửi tới <b id="signup-email-display"></b>
+                        — kiểm tra hộp thư (và spam). Nếu chưa cấu SMTP, mã chỉ hiện trên
+                        <strong>terminal</strong> đang chạy server.
+                        Hãy nhập <strong>đúng số chữ số và đúng thứ tự</strong> như trong mã nhận được.
                     </div>
                     <label class="field">
                         <span class="lbl"><i class="fa-solid fa-shield-halved"></i> Nhập mã OTP</span>
-                        <input type="text" name="otp" required maxlength="8" inputmode="numeric"
-                               placeholder="6 chữ số" class="otp-input">
+                        <input type="text" name="otp" required maxlength="12" inputmode="numeric"
+                               autocomplete="one-time-code"
+                               placeholder="Ví dụ: 482916" class="otp-input">
                     </label>
                     <button class="btn-primary" type="submit">
                         <i class="fa-solid fa-check"></i> Xác thực & Tạo tài khoản
@@ -151,12 +154,14 @@
                 <form id="form-forgot-verify" class="hidden" autocomplete="off" novalidate>
                     <div class="otp-info">
                         <i class="fa-solid fa-envelope-circle-check"></i>
-                        Mã OTP đã gửi tới <b id="forgot-email-display"></b>.
+                        Đã gửi mã tới <b id="forgot-email-display"></b>. Chưa SMTP thì xem
+                        <strong>terminal</strong>. Nhập mã khớp từng chữ số.
                     </div>
                     <label class="field">
                         <span class="lbl"><i class="fa-solid fa-shield-halved"></i> Mã OTP</span>
-                        <input type="text" name="otp" required maxlength="8" inputmode="numeric"
-                               placeholder="6 chữ số" class="otp-input">
+                        <input type="text" name="otp" required maxlength="12" inputmode="numeric"
+                               autocomplete="one-time-code"
+                               placeholder="Đúng số nhận được" class="otp-input">
                     </label>
                     <label class="field">
                         <span class="lbl"><i class="fa-solid fa-lock"></i> Mật khẩu mới</span>

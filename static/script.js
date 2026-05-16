@@ -144,7 +144,11 @@
             signupEmailDisplay.textContent = signupEmail;
             formSignupStart.classList.add("hidden");
             formSignupVerify.classList.remove("hidden");
-            toast("Đã gửi mã OTP đến email của bạn!", "success");
+            if (data.otp_delivered_via === "smtp") {
+                toast("Đã gửi mã OTP đến email của bạn!", "success");
+            } else {
+                toast("Đã tạo mã OTP — chưa cấu SMTP: xem mã trong terminal máy chủ (cửa sổ chạy Python).", "info");
+            }
             startResendTimer(signupResendLink, signupResendTimer, 60);
         });
     }
@@ -187,7 +191,11 @@
                     email: signupEmail, purpose: "register",
                 });
                 if (!ok) return toast(data.error || "Không gửi lại được.", "error");
-                toast("Đã gửi lại OTP!", "success");
+                if (data.otp_delivered_via === "smtp") {
+                    toast("Đã gửi lại OTP!", "success");
+                } else {
+                    toast("Đã tạo mã mới — xem terminal máy chủ (chưa cấu SMTP).", "info");
+                }
                 startResendTimer(signupResendLink, signupResendTimer, 60);
             });
         }
@@ -216,7 +224,11 @@
             forgotEmailDisplay.textContent = forgotEmail;
             formForgotStart.classList.add("hidden");
             formForgotVerify.classList.remove("hidden");
-            toast("Đã gửi mã OTP!", "success");
+            if (data.otp_delivered_via === "smtp") {
+                toast("Đã gửi mã OTP!", "success");
+            } else {
+                toast("Mã OTP nằm trên terminal máy chủ (chưa cấu SMTP).", "info");
+            }
             startResendTimer(forgotResendLink, forgotResendTimer, 60);
         });
     }
@@ -250,7 +262,11 @@
                     email: forgotEmail, purpose: "reset",
                 });
                 if (!ok) return toast(data.error || "Không gửi lại được.", "error");
-                toast("Đã gửi lại OTP!", "success");
+                if (data.otp_delivered_via === "smtp") {
+                    toast("Đã gửi lại OTP!", "success");
+                } else {
+                    toast("Đã tạo mã mới — xem terminal máy chủ (chưa cấu SMTP).", "info");
+                }
                 startResendTimer(forgotResendLink, forgotResendTimer, 60);
             });
         }

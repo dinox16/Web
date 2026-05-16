@@ -239,10 +239,12 @@ def increment_otp_attempts(email: str, purpose: str) -> int:
     _connect()
     if _db is not None:
         coll = _db[os.environ.get("MONGODB_OTP_COLL", "otp_codes")]
+        from pymongo.collection import ReturnDocument
+
         doc = coll.find_one_and_update(
             {"email": email, "purpose": purpose},
             {"$inc": {"attempts": 1}},
-            return_document=True,
+            return_document=ReturnDocument.AFTER,
         )
         return doc.get("attempts", 0) if doc else 0
     with _otp_lock:

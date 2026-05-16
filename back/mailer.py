@@ -1,6 +1,10 @@
 """Gửi email OTP qua SMTP.
 
-Khi chưa cấu hình SMTP, OTP sẽ được in ra console để dev có thể test.
+Nếu chưa điền SMTP_USERNAME / SMTP_PASSWORD, email **không** được gửi;
+mã OTP vẫn in ra terminal (chạy `python app.py`) để dev test — không dùng cho production.
+
+`funclogin._send_otp_for` chỉ lưu mã vào DB **sau** khi bước gửi thành công
+(hoặc sau khi in console ở chế độ dev).
 """
 
 from __future__ import annotations
@@ -12,12 +16,17 @@ from email.message import EmailMessage
 from typing import Optional
 
 
-def _smtp_configured() -> bool:
+def smtp_configured() -> bool:
+    """Đã có username/password SMTP để gửi mail thật."""
     return bool(os.environ.get("SMTP_USERNAME") and os.environ.get("SMTP_PASSWORD"))
 
 
 def send_otp_email(to_email: str, otp_code: str, purpose: str = "register") -> tuple[bool, Optional[str]]:
-    """Trả về (success, error_message). Nếu chưa cấu hình SMTP thì in ra console & vẫn coi là thành công."""
+    """Trả về (success, error_message).
+
+    - SMTP đủ cấu hình → gửi mail thật.
+    - Chưa có SMTP → in mã ra stdout, vẫn trả (True, None) để luồng dev tiếp tục.
+    """
     purpose_text = {
         "register": "đăng ký tài khoản",
         "reset": "đặt lại mật khẩu",
@@ -44,10 +53,10 @@ def send_otp_email(to_email: str, otp_code: str, purpose: str = "register") -> t
     </div>
     """
 
-    if not _smtp_configured():
+    if not smtp_configured():
         print("=" * 60)
         print(f"[DEV-OTP] To: {to_email} | Purpose: {purpose} | Code: {otp_code}")
-        print("(SMTP chưa cấu hình - mã OTP được in ra console)")
+        print("(Chưa cấu hình SMTP — không gửi email; chỉ có mã ở terminal này.)")
         print("=" * 60)
         return True, None
 
