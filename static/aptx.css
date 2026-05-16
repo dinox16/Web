@@ -176,7 +176,81 @@ body.quiz-page .quiz-container {
     padding: 18px;
     box-shadow: var(--shadow-soft);
 }
-.q-nav h3 {
+
+/* Thanh mở danh sách — chỉ dùng trên mobile (mobile.css bật display:flex) */
+.q-nav-pull {
+    display: none;
+    position: relative;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 12px 14px 14px;
+    margin: 0;
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    cursor: pointer;
+    color: var(--text);
+    text-align: left;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+.q-nav-handle-bar {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 36px;
+    height: 4px;
+    border-radius: 4px;
+    background: rgba(148, 163, 184, 0.55);
+    pointer-events: none;
+}
+.q-nav-pull-main {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    min-width: 0;
+}
+.q-nav-pull-main > i {
+    color: var(--primary);
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+.q-nav-pull-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+.q-nav-pull-label {
+    font-size: .68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--muted);
+}
+.q-nav-pull-meta {
+    font-size: .9rem;
+    font-weight: 800;
+    color: var(--text);
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+.q-nav-pull-chevron {
+    color: var(--muted);
+    font-size: .85rem;
+    transition: transform .28s ease;
+    flex-shrink: 0;
+}
+.q-nav.q-nav--open .q-nav-pull-chevron {
+    transform: rotate(180deg);
+}
+
+.q-nav-panel-heading {
     margin: 0 0 14px 0;
     font-size: .9rem;
     color: var(--muted);
@@ -185,7 +259,7 @@ body.quiz-page .quiz-container {
     font-weight: 700;
     display: flex; align-items: center; gap: 8px;
 }
-.q-nav h3 i { color: var(--primary); }
+.q-nav-panel-heading i { color: var(--primary); }
 
 .q-nav-grid {
     display: grid;

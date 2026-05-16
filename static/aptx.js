@@ -136,6 +136,7 @@ async function loadQuestions() {
     userAnswers = new Array(questions.length).fill(undefined);
     quizDone = false;
     buildMcqOptionOrder();
+    collapseQNavMobile();
 
     document.querySelector(".question-area").style.display = "";
     document.querySelector(".navigation").style.display = "";
@@ -160,11 +161,68 @@ function buildNavGrid() {
             if (quizDone) return;
             current = idx;
             renderQuestion();
+            collapseQNavMobile();
         };
         grid.appendChild(btn);
     });
     document.getElementById("counter-total").textContent = questions.length;
 }
+
+function updateQuizNavPullMeta() {
+    const meta = document.getElementById("q-nav-pull-meta");
+    if (!meta) return;
+    if (!questions.length) {
+        meta.textContent = "";
+        return;
+    }
+    meta.textContent = `Câu ${current + 1} / ${questions.length}`;
+}
+
+/** Thu gọn lưới câu hỏi trên điện thoại sau khi chọn số thứ tự */
+function collapseQNavMobile() {
+    const nav = document.getElementById("q-nav");
+    const pull = document.getElementById("q-nav-pull");
+    if (!nav || !pull || !window.matchMedia("(max-width: 600px)").matches) return;
+    nav.classList.remove("q-nav--open");
+    pull.setAttribute("aria-expanded", "false");
+}
+
+function initQuizNavMobile() {
+    const nav = document.getElementById("q-nav");
+    const pull = document.getElementById("q-nav-pull");
+    if (!nav || !pull) return;
+
+    const mq = window.matchMedia("(max-width: 600px)");
+
+    function setAria(open) {
+        pull.setAttribute("aria-expanded", open ? "true" : "false");
+    }
+
+    pull.addEventListener("click", () => {
+        if (!mq.matches) return;
+        const open = nav.classList.toggle("q-nav--open");
+        setAria(open);
+    });
+
+    function onBpChange() {
+        if (!mq.matches) {
+            nav.classList.remove("q-nav--open");
+            setAria(false);
+        }
+    }
+    if (mq.addEventListener) mq.addEventListener("change", onBpChange);
+    else mq.addListener(onBpChange); /* safari */
+}
+
+window.addEventListener("resize", () => {
+    if (!window.matchMedia("(max-width: 600px)").matches) {
+        const nav = document.getElementById("q-nav");
+        const pull = document.getElementById("q-nav-pull");
+        if (!nav || !pull) return;
+        nav.classList.remove("q-nav--open");
+        pull.setAttribute("aria-expanded", "false");
+    }
+});
 
 function refreshNavGrid() {
     const grid = document.getElementById("q-nav-grid");
@@ -317,6 +375,7 @@ function renderQuestion() {
     updateProgress();
     updateNav();
     refreshNavGrid();
+    updateQuizNavPullMeta();
 }
 
 function updateNav() {
@@ -433,6 +492,7 @@ async function finishQuiz() {
     document.querySelector(".question-area").style.display = "none";
     document.querySelector(".navigation").style.display = "none";
     refreshNavGrid();
+    updateQuizNavPullMeta();
 
     document.getElementById("retryBtn").onclick = () => { loadQuestions(); };
     document.getElementById("backBtn").onclick = () => {
@@ -447,4 +507,7 @@ async function finishQuiz() {
     };
 }
 
-window.addEventListener("DOMContentLoaded", loadQuestions);
+window.addEventListener("DOMContentLoaded", () => {
+    initQuizNavMobile();
+    loadQuestions();
+});
