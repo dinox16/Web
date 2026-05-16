@@ -17,8 +17,10 @@ from typing import Optional
 
 
 def smtp_configured() -> bool:
-    """Đã có username/password SMTP để gửi mail thật."""
-    return bool(os.environ.get("SMTP_USERNAME") and os.environ.get("SMTP_PASSWORD"))
+    """Đã có username/password SMTP để gửi mail thật (không rỗng / không chỉ khoảng trắng)."""
+    u = (os.environ.get("SMTP_USERNAME") or "").strip()
+    p = (os.environ.get("SMTP_PASSWORD") or "").strip()
+    return bool(u and p)
 
 
 def send_otp_email(to_email: str, otp_code: str, purpose: str = "register") -> tuple[bool, Optional[str]]:
@@ -56,7 +58,11 @@ def send_otp_email(to_email: str, otp_code: str, purpose: str = "register") -> t
     if not smtp_configured():
         print("=" * 60)
         print(f"[DEV-OTP] To: {to_email} | Purpose: {purpose} | Code: {otp_code}")
-        print("(Chưa cấu hình SMTP — không gửi email; chỉ có mã ở terminal này.)")
+        print()
+        print("  → Chưa gửi email: thiếu SMTP_USERNAME hoặc SMTP_PASSWORD trong .env")
+        print("  → Để nhận OTP qua Gmail: https://myaccount.google.com/apppasswords")
+        print("     rồi điền SMTP_USERNAME, SMTP_PASSWORD, MAIL_FROM trong .env và chạy lại app.")
+        print("  → Dùng mã trên dòng [DEV-OTP] để nhập vào trang đăng ký (chế độ dev).")
         print("=" * 60)
         return True, None
 
@@ -67,22 +73,47 @@ def send_otp_email(to_email: str, otp_code: str, purpose: str = "register") -> t
     msg.set_content(body_text)
     msg.add_alternative(body_html, subtype="html")
 
-    host = os.environ.get("SMTP_HOST", "smtp.gmail.com")
+    host = (os.environ.get("SMTP_HOST") or "smtp.gmail.com").strip()
     port = int(os.environ.get("SMTP_PORT", "587"))
-    use_tls = os.environ.get("SMTP_USE_TLS", "true").lower() == "true"
+    ctx = ssl.create_default_context()
+
+    # Cổng 465 = SMTP over SSL ngay (SMTPS). KHÔNG dùng STARTTLS sau khi đã vào plaintext.
+    # Cổng 587 (Gmail,...): plaintext → STARTTLS.
+    use_starttls = os.environ.get("SMTP_USE_TLS", "true").lower() == "true"
+    tls_mode = (os.environ.get("SMTP_TLS_MODE") or "").strip().lower()
+    if tls_mode in ("ssl", "smtps"):
+        implicit_ssl = True
+    elif tls_mode in ("starttls", "tls-upgrade"):
+        implicit_ssl = False
+    elif port == 465:
+        implicit_ssl = True
+    else:
+        implicit_ssl = not use_starttls
 
     try:
-        if use_tls:
-            with smtplib.SMTP(host, port, timeout=15) as server:
-                server.ehlo()
-                server.starttls(context=ssl.create_default_context())
-                server.ehlo()
-                server.login(os.environ["SMTP_USERNAME"], os.environ["SMTP_PASSWORD"])
+        user = os.environ["SMTP_USERNAME"].strip()
+        pwd = os.environ["SMTP_PASSWORD"].strip()
+
+        if implicit_ssl:
+            with smtplib.SMTP_SSL(host, port, timeout=20, context=ctx) as server:
+                server.login(user, pwd)
                 server.send_message(msg)
         else:
-            with smtplib.SMTP_SSL(host, port, timeout=15, context=ssl.create_default_context()) as server:
-                server.login(os.environ["SMTP_USERNAME"], os.environ["SMTP_PASSWORD"])
+            with smtplib.SMTP(host, port, timeout=20) as server:
+                server.ehlo()
+                server.starttls(context=ctx)
+                server.ehlo()
+                server.login(user, pwd)
                 server.send_message(msg)
         return True, None
+    except ssl.SSLError as e:
+        hint = ""
+        low = str(e).lower()
+        if "wrong_version" in low or "wrong_ssl" in low:
+            hint = (
+                " Kiểm tra .env: cổng 587 + SMTP_USE_TLS=true (STARTTLS); "
+                "hoặc cổng 465 — app đã dùng SMTP_SSL tự động."
+            )
+        return False, str(e) + hint
     except Exception as e:
         return False, str(e)

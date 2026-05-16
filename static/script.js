@@ -59,7 +59,13 @@
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(body || {}),
             });
-            const data = await res.json().catch(() => ({}));
+            const data = await res.json().catch(() => ({
+                error: "Không đọc được phản hồi máy chủ (JSON).",
+                ok: false,
+            }));
+            if (!res.ok && res.status !== 0) {
+                console.warn("[api]", res.status, url, data?.error || data);
+            }
             return { ok: res.ok && data.ok !== false, status: res.status, data };
         } catch (e) {
             return { ok: false, status: 0, data: { error: String(e) } };
@@ -133,9 +139,9 @@
             const btn = formSignupStart.querySelector("button[type=submit]");
             setLoading(btn, true, "Đang gửi OTP...");
             const { ok, data } = await postJson("/api/register/start", {
-                username: fd.get("username"),
-                email: fd.get("email"),
-                passwd: fd.get("passwd"),
+                username: String(fd.get("username") || "").trim(),
+                email: String(fd.get("email") || "").trim(),
+                passwd: String(fd.get("passwd") || ""),
             });
             setLoading(btn, false);
             if (!ok) return toast(data.error || "Có lỗi xảy ra.", "error");

@@ -18,7 +18,7 @@ import time
 from datetime import datetime, timezone
 from typing import Any, Dict, Optional
 
-from flask import jsonify, redirect, request, session, url_for
+from flask import jsonify, has_request_context, redirect, request, session, url_for, current_app
 from werkzeug.security import check_password_hash, generate_password_hash
 
 from . import db
@@ -35,6 +35,18 @@ def _ok(data: Dict[str, Any], status: int = 200):
 
 
 def _err(message: str, status: int = 400):
+    if status >= 400 and has_request_context():
+        try:
+            dev = getattr(current_app, "debug", False) or (
+                os.environ.get("FLASK_ENV", "").lower() == "development"
+            )
+            if dev:
+                ep = getattr(request, "endpoint", "") or ""
+                path = getattr(request, "path", "") or ""
+                tag = ep or path
+                current_app.logger.warning('HTTP %s "%s" [%s]', status, message, tag)
+        except RuntimeError:
+            pass
     return jsonify({"ok": False, "error": message}), status
 
 
@@ -143,7 +155,11 @@ def logout_view():
 # ============ REGISTER (OTP) ============
 
 def register_start():
-    data = request.get_json(silent=True) or request.form
+    data = request.get_json(silent=True)
+    if data is None and request.method == "POST" and request.form:
+        data = request.form.to_dict()
+    elif data is None:
+        data = {}
     username = (data.get("username") or "").strip()
     email = (data.get("email") or "").strip().lower()
     password = (data.get("passwd") or data.get("password") or "").strip()
