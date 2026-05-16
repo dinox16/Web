@@ -207,7 +207,14 @@ def register_verify():
         return _err(err)
 
     if not db.create_user(pending["username"], email, pending["passwd_hash"]):
-        return _err("Không tạo được tài khoản (đã tồn tại).")
+        exists = db.get_user_by_username(pending["username"]) or db.get_user_by_email(email)
+        if exists:
+            return _err("Tài khoản đã tồn tại.")
+        return _err(
+            "Không lưu được tài khoản. Trên Lambda/Vercel (ổ chỉ đọc) hãy cấu "
+            "MONGODB_URI trong env deploy — hoặc USER_JSON_PATH tới đường có thể ghi "
+            "(vd. /tmp/pfs_users.json)."
+        )
 
     session.pop("pending_register", None)
     return _ok({"message": "Đăng ký thành công! Hãy đăng nhập.", "username": pending["username"]})
