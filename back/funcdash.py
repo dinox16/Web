@@ -60,6 +60,9 @@ subjects = [
     {"name": "Deep Learning Cơ Bản", "slug": "ds371",
      "icon": "fa-solid fa-robot", "group": "Tin học",
      "desc": "Perceptron, CNN, RNN, LSTM"},
+    {"name": "Anh Văn Chuyên Ngành Cho Công Nghệ Thông Tin", "slug": "eng347",
+     "icon": "fa-solid fa-pen-fancy", "group": "Ngoại ngữ",
+     "desc": "Viết kỹ thuật, CV, thư xin việc"},
 ]
 
 
@@ -86,7 +89,7 @@ def dashboard_route():
 def logout():
     session.pop("username", None)
     session.pop("email", None)
-    return redirect(url_for("auth"))
+    return redirect(url_for("intro"))
 
 
 def quiz(subject_slug):

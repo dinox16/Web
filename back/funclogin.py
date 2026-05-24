@@ -149,7 +149,7 @@ def login():
 
 def logout_view():
     session.clear()
-    return redirect(url_for("auth"))
+    return redirect(url_for("intro"))
 
 
 # ============ REGISTER (OTP) ============

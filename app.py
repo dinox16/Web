@@ -28,7 +28,7 @@ app.secret_key = os.environ.get("SECRET_KEY", "dev-secret-key-change-me")
 
 def _require_login():
     if "username" not in session:
-        return redirect(url_for("auth"))
+        return redirect(url_for("intro"))
     return None
 
 
@@ -53,15 +53,29 @@ def inject_globals():
 @app.route("/")
 def home():
     if "username" not in session:
-        return redirect(url_for("auth"))
+        return redirect(url_for("intro"))
     return redirect(url_for("dashboard"))
+
+
+@app.route("/intro")
+def intro():
+    if "username" in session:
+        return redirect(url_for("dashboard"))
+    return render_template("intro.html", subject_count=len(get_subjects()))
 
 
 @app.route("/auth", methods=["GET"])
 def auth():
     if "username" in session:
         return redirect(url_for("dashboard"))
-    return render_template("auth.html")
+    tab = request.args.get("tab", "signin")
+    if tab not in ("signin", "signup", "forgot"):
+        tab = "signin"
+    return render_template(
+        "auth.html",
+        initial_tab=tab,
+        subjects_count=len(get_subjects()),
+    )
 
 
 @app.route("/dashboard")

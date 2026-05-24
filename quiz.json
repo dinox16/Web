@@ -1,1511 +1,1202 @@
 [
   {
     "id": 1,
-    "q": "Công nghệ ( engineering) là :",
+    "q": "When preparing the cover letter, there should be main Three Paras, what you will write in the third para:",
     "opts": {
-      "A": "Cách sử dụng các công cụ, các kỹ thuật trong cách giải quyết một vấn đề nào đó",
-      "B": "Cách lập trình để viết một phần mềm",
-      "C": "Cách phân tích thiết kế một phần mềm",
-      "D": "Cách cài đặt một phần mềm"
+      "A": "Qualifications and Achievements.",
+      "B": "Details about the position",
+      "C": "Personal Information",
+      "D": "Requesting for Interview and Contact Information"
     },
-    "ans": "A",
+    "ans": "D",
     "type": "mcq"
   },
   {
     "id": 2,
-    "q": "Các mức đặc tả yêu cầu gồm:",
+    "q": "When preparing for the Resume, what should be focused on Education Aspect:",
     "opts": {
-      "A": "Định ra yêu cầu, đặc tả yêu cầu, đặc tả chức năng.",
-      "B": "Định ra yêu cầu, đặc tả yêu cầu, đặc tả thiết kế.",
-      "C": "Đặc tả chức năng, đặc tả phần mềm, đặc tả thiết kế.",
-      "D": "Định ra yêu cầu, đặc tả phần mềm, đặc tả thiết kế."
+      "A": "Academic results, degrees, diplomas and certificates.",
+      "B": "Technical and professional qualifications",
+      "C": "Work and vocational training received",
+      "D": "All are correct"
     },
-    "ans": "A",
+    "ans": "D",
     "type": "mcq"
   },
   {
     "id": 3,
-    "q": "Khái niệm “đặc tả yêu cầu”, nghĩa là:",
+    "q": "What is the Major Goal of Technical Writing?",
     "opts": {
-      "A": "“Yêu cầu được viết bằng ngôn ngữ tự nhiên về các dịch vụ mà hệ thống phải cung cấp”.",
-      "B": "“Yêu cầu được viết bằng ngôn ngữ chuyên ngành để mô tả chi tiết phần mềm”.",
-      "C": "“Yêu cầu được đặc tả bởi các biểu đồ ngữ cảnh, đồ thị và các lược đồ quan hệ…”",
-      "D": "“Các dịch vụ được đặc tả một cách chi tiết, chính xác để có thể dùng làm cơ sở hợp đồng giữa hai bên.”"
+      "A": "Highlights your Superior cum Effective Communication Skills",
+      "B": "Stresses on Persuasive Skills",
+      "C": "Supports your Contribution and Confidence in Work Involved.",
+      "D": "All of Above"
     },
-    "ans": "D",
+    "ans": "A",
     "type": "mcq"
   },
   {
     "id": 4,
-    "q": "Khái niệm “Đặc tả thiết kế”, nghĩa là:",
+    "q": "When answering the challenging question, “tell me about yourself” you should:",
     "opts": {
-      "A": "“Yêu cầu được đặc tả bởi các biểu đồ ngữ cảnh, đồ thị và lược đồ quan hệ…”",
-      "B": "“Yêu cầu được viết bằng ngôn ngữ chuyên ngành để mô tả chi tiết phần mềm”.",
-      "C": "“Các dịch vụ được đặc tả một cách chi tiết, chính xác để có thể dùng làm cơ sở hợp đồng giữa hai bên.”",
-      "D": "“Yêu cầu đươc viết bằng ngôn ngữ tự nhiên về các dịch vụ mà hệ thống phải cung cấp “."
+      "A": "Start by telling your Previous job you have left",
+      "B": "Start by your Hobbies or Parents Introduction",
+      "C": "Discuss the company and job which is the closest or the same to this job for which you are applying for",
+      "D": "Emphasize on your Qualifications and other additional education portfolios."
     },
-    "ans": "A",
+    "ans": "C",
     "type": "mcq"
   },
   {
     "id": 5,
-    "q": "Đặc tả phần mềm bằng ngôn ngữ tự nhiên là khó khăn hay thuận lợi cho các thiết kế viên hoặc các hợp đồng giữa các khách hàng và cán bộ phát triển hệ thống?",
+    "q": "What is the Importance of References in Resume?",
     "opts": {
-      "A": "Rất thuận lợi vì ngôn ngữ tự nhiên dễ hiểu, dễ diễn đạt.",
-      "B": "Không hoàn toàn thuận tiền vì có thể dẫn đến nhầm lẫn do cách hiểu các khái niệm khác nhau giữa hai bên.",
-      "C": "Thuận lợi vì ngôn ngữ tự nhiên dễ sử dụng",
-      "D": "Rất khó khăn vì ngôn ngữ tự nhiên rất khó sử dụng."
+      "A": "Helps the recruiter to get some more information about you from the known/recognized person.",
+      "B": "Act as a Point of your contacts",
+      "C": "List your contacts known to you",
+      "D": "All of Above"
     },
-    "ans": [
-      "A",
-      "B"
-    ],
+    "ans": "A",
     "type": "mcq"
   },
   {
     "id": 6,
-    "q": "Người ta không dùng cách nào để đặt tả các yêu cầu?",
+    "q": "Which of the following is Effective Email Subject Line for Meeting?",
     "opts": {
-      "A": "Ngôn ngữ tự nhiên có cấu trúc",
-      "B": "Ngôn ngữ mô tả thiết kế, giống ngôn ngữ lập trình nhưng có mức trừu tượng cao hơn",
-      "C": "Ngôn ngữ đặc tả yêu cầu.",
-      "D": "Ngôn ngữ tự nhiên địa phương."
+      "A": "Meeting Planned on 12th June, 2023 at 7 pm",
+      "B": "Join for Meeting on 12th June, 2023 at 7 pm",
+      "C": "Meeting is Scheduled at 3 pm on 12th June, 2023 at 7 PM.",
+      "D": "Come to meeting on 12th June, 2023 at 7PM"
     },
-    "ans": "D",
+    "ans": "A",
     "type": "mcq"
   },
   {
     "id": 7,
-    "q": "Đâu không phải là thuận lợi của việc sử dụng đặc tả hình thức:",
+    "q": "Which Part of the C.V. should be Included with Professional Trainings and Certifications so that Recruiter can see, what extra you have apart from Degree from a University?",
     "opts": {
-      "A": "Nhiều người biết và dễ diễn đạt",
-      "B": "Cho phép chúng ta thấy và hiểu được bản chất bên trong của các yêu cầu, đây là cách tốt nhất để làm giảm các lỗi, các thiếu sót có thể xảy ra và giúp cho công việc thiết kế được thuận lợi.",
-      "C": "Do chúng ta sử dụng toán học cho việc đặc tả nên có thể dựa vào các công cụ toán học khi phân tích và điều này làm tăng thêm tính chắc chắn và tính đầy đủ của hệ thống.",
-      "D": "Đặc tả hình thức, bản thân nó cho chúng ta một cách thức cho việc kiểm tra hệ thống sau này."
+      "A": "Extra Trainings",
+      "B": "Additional Qualifications",
+      "C": "Certifications and Trainings",
+      "D": "Add on Qualifications"
     },
-    "ans": "A",
+    "ans": "C",
     "type": "mcq"
   },
   {
     "id": 8,
-    "q": "Đâu không phải là đặc điểm của đặc tả phi hình thức?",
+    "q": "The beginning of a presentation is the most important part. It is when you establish a rapport with the audience and when you have its.................",
     "opts": {
-      "A": "Đặc tả sử dụng ngôn ngữ tự nhiên",
-      "B": "Đặc tả được nhiều người biết",
-      "C": "Đặc tả chặt chẽ ít có hiểu lầm",
-      "D": "Đặc tả không chặc chẽ về ngữ nghĩa khoa học"
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 9,
-    "q": "Để phát triển các hệ thống tương đối phức tạp có những hướng tiếp cận đặc tả hình thức nào?",
-    "opts": {
-      "A": "Tiếp cận đại số, hệ thống được mô tả dưới dạng các toán tử và các quan hệ.",
-      "B": "Tiếp cận mô hình, mô hình hệ thống được cấu trúc sử dụng các thực thể toán học như là các tập hợp và các thứ tự.",
-      "C": "Tiếp cận đại ssoos, hệ thống được mô tả dưới dạng các toán tử, các quan hệ và tiếp cận mô hình, mô hình thệ thống được cấu trúc sử dụng các thực thể toán học như là các tập hợp, các thứ tư…",
-      "D": "Tiếp cận văn bản tự nhiên"
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 10,
-    "q": "Đâu không phải là khó khăn của đặc tả hình thức:",
-    "opts": {
-      "A": "Khách hàng không thích các đặc tả toán họ",
-      "B": "Quản lý phần mềm có tính bảo thủ cố hữu của nó, không sẵn sàng chấp nhận các kỹ thuật mới",
-      "C": "Chi phí cho việc đặc tả hình thức thường cao hơn so với các đặc tả khác (tuy phần cài đặt sẽ thấp hơn) nên khó để chứng minh rằng chi phí tương đối cao cho đặc tả sẽ làm giảm tổng chi phí dự án.",
-      "D": "Đặc tả không chặt chẽ dễ gây hiểm nhầm giữa các nhà chuyên môn."
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 11,
-    "q": "Nguyên lý 1 của đặc tả là phân tách chức năng với cài đặt có nghĩa là:",
-    "opts": {
-      "A": "Đặc tả là mô tả điều mong muốn",
-      "B": "Đặc tả là mô tả cách thức thực hiẹn",
-      "C": "Đặc tả mô tả việc cài đặt",
-      "D": "Đặc tả là mô tả điều mong muốn và cách thức thực hiện"
+      "A": "attention",
+      "B": "focus",
+      "C": "audience",
+      "D": "presentation"
     },
     "ans": "A",
     "type": "mcq"
   },
   {
-    "id": 12,
-    "q": "Đâu không phải là yêu cầu cần được thỏa mãn của tài liệu yêu cầu phần mềm?",
+    "id": 9,
+    "q": "What is the best way to rehearse for the Presentation and what to Avoid in Presentation to make it more effective?",
     "opts": {
-      "A": "Nó cần mô tả các hành vi hệ thống bên ngoài.",
-      "B": "Nó cần mô tả các ràng buộc về thực hiện",
-      "C": "Nó phải là công cụ tham chiếu cho người bảo trì hệ thống",
-      "D": "Nó cần phải cố định không được thay đổi."
+      "A": "Giving presentation to friends and Avoid Eye Contact",
+      "B": "Open SmartPhone and Record the Presentation and use this as Reference again and again to reherese and avoid: Umm and Ahh in presentation",
+      "C": "Practice with Family Members and Avoiding Grammar",
+      "D": "None of these."
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 10,
+    "q": "When writing an email to your boss, how to Address the Person?",
+    "opts": {
+      "A": "Hai Sir",
+      "B": "Hello Sir",
+      "C": "Greetings/Respected Sir",
+      "D": "Best Wishes Sir"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": 11,
+    "q": "Which of the following is a requirement that a presenter should know to prepare effectively for a presentation?",
+    "opts": {
+      "A": "Available attire",
+      "B": "Number of bullet points allowed per slide",
+      "C": "Presentation duration",
+      "D": "Foods the presenter can eat during the presentation"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": 12,
+    "q": "If you are going for interview, what following things to be cared of with Utmost Importance?",
+    "opts": {
+      "A": "Reaching the Place on time (Min 10-20 Min Before)",
+      "B": "Wear Formal Shoes, Proper Belt and White Short with Tie",
+      "C": "Proper Hair Comb with Watch with no Tatoo on Body Visibility",
+      "D": "All of above"
     },
     "ans": "D",
     "type": "mcq"
   },
   {
     "id": 13,
-    "q": "Khi đặc tả yêu cầu, người xây dựng hệ thống không cần quan tâm tới yêu cầu nào sau đây?",
+    "q": "What is Plagiarism?",
     "opts": {
-      "A": "Đầu ra của hệ thống là cái gì?",
-      "B": "Hệ thống sẽ phải làm cái gì để có kết quả mong muốn, nghĩa là phải xử lý những cái gì",
-      "C": "Các phương án sẽ tiếp cận hệ thống để hoàn tất sản phẩm",
-      "D": "Hệ thống sẽ phải làm cái gì để có kết quả mong muốn, nghĩa là phải xử lý những cái gì"
+      "A": "Act of passing or claiming the ideas of others as own.",
+      "B": "Original Work Writing.",
+      "C": "Taking partial ideas of other works",
+      "D": "None of these"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 14,
+    "q": "In order to Improve the Grammer, which among the following is the best tool to re-write the sentences in proper English or any other languages?",
+    "opts": {
+      "A": "Google Translate",
+      "B": "ChatGPT",
+      "C": "Canva",
+      "D": "Quilbot"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 15,
+    "q": "When you start the presentation, what should be the first Slide after the title slide:",
+    "opts": {
+      "A": "Summary",
+      "B": "Introduction to topic",
+      "C": "Agenda/Brief Outline of the Presentation",
+      "D": "List of References/External Sources"
     },
     "ans": "C",
     "type": "mcq"
   },
   {
-    "id": 14,
-    "q": "Đâu không phải là khó khăn của đặc tả hình thức?",
+    "id": 16,
+    "q": "Which sentence uses IT vocabulary correctly?",
     "opts": {
-      "A": "Linh hoạt, mềm dẻo dẫn đến sự hiểu nhầm giữa hai bên",
-      "B": "Khách hàng không thích đặc tả hình thứ",
-      "C": "Quản lý phần mềm có tính bảo thủ cố hữu của nó, không sẵn sàng chấp nhận các kỹ thuật mới",
-      "D": "Chi phí cho việc đặc tả hình thức thường cao hơn so với các đặc tả khá"
+      "A": "The technician upgraded the laptop's RAM to improve processing speed.",
+      "B": "The user downloaded the router to boost the internet signal.",
+      "C": "The developer installed the bandwidth on the new server.",
+      "D": "The programmer browsed the CPU to fix the display error."
     },
     "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 15,
-    "q": "Đâu không phải là nguyên lý đặc tả yêu cầu phần mềm?",
-    "opts": {
-      "A": "Đặc tả phải bao gồm cả môi trường mà hệ thống vận hành.",
-      "B": "Phân tách chức năng với cài đặt",
-      "C": "Đặt tả hệ thống phải là một mô hình nhận thức",
-      "D": "Đặc tả không quan trọng môi trường mà hệ thống vận hành"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 16,
-    "q": "Tính cấu trúc của đặc tính dữ liệu:",
-    "opts": {
-      "A": "Đặc biệt quan trọng bởi vì thiếu nó ta có thể tạo ứng dụng sai.",
-      "B": "Đặc biệt quan trọng bởi vì thiếu nó ta có thể xác định yêu cầu sai.",
-      "C": "Đặc biệt quan trọng bởi vì thiếu nó ta có thể phân tích ứng dụng sai.",
-      "D": "Đặc biệt quan trọng bởi vì thiếu nó ta có thể cài đặt ứng dụng sai."
-    },
-    "ans": "D",
     "type": "mcq"
   },
   {
     "id": 17,
-    "q": "Tính đầy đủ thể hiện ở chỗ các thông tin cần thiết phải được biểu diễn. Mức độ đầy đủ của các kiểu ứng dụng có giống nhau hay không?",
+    "q": "Identify the sentence with correct subject-verb agreement:",
     "opts": {
-      "A": "Không giống nhau, vì mỗi kiểu ứng dụng đi hỏi một mức độ đầy đủ khác nhau.",
-      "B": "Giống nhau vì ứng dụng nào cũng cần đầy đủ ở mức độ cao nhất.",
-      "C": "Không giống nhau vì mỗi kiểu ứng dụng có thể túy ý yêu cầu một mức độ đầy đủ khác nhau.",
-      "D": "Giống nhau vì ứng dụng nào cũng cần đầy đủ ở mức độ trung bình."
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 18,
-    "q": "Kỹ thuật phỏng vấn sử dụng kiểu câu hỏi cho nhiều câu trả lời khác nhau là dạng câu hỏi nào?",
-    "opts": {
-      "A": "Câu hỏi mở",
-      "B": "Câu hỏi đóng",
-      "C": "Câu hỏi khó",
-      "D": "Câu hỏi dễ"
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 19,
-    "q": "Các Câu hỏi sau: “Ông có thể nói cho tôi về…”, “Ông nghĩ thế nào về…”, “Ông có thể mô tả làm thế nào...” thuộc dạng câu hỏi nào của kỹ thuật phỏng vấn?",
-    "opts": {
-      "A": "Câu hỏi mở",
-      "B": "Câu hỏi đóng",
-      "C": "Câu hỏi khó",
-      "D": "Câu hỏi dễ"
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 20,
-    "q": "Câu hỏi mà câu trả lời là “có” hoặc “không” hoặc một câu trả lời cụ thể là dạng câu hỏi nào của kỹ thuật phỏng vấn?",
-    "opts": {
-      "A": "Câu hỏi mở",
-      "B": "Câu hỏi đóng",
-      "C": "Câu hỏi khó",
-      "D": "Câu hỏi dễ"
+      "A": "The network of computers are connected to the central server.",
+      "B": "The network of computers is connected to the central server.",
+      "C": "The networks of computer is connected to the central server.",
+      "D": "The network of computer are connected to the central servers."
     },
     "ans": "B",
     "type": "mcq"
   },
   {
-    "id": 21,
-    "q": "71. Ví dụ có câu hỏi là: “Bạn có dùng các báo cáo hàng tháng không?” hay “Bạn có in hóa đơn hằng ngày không?” … thuộc dạng câu hỏi nào của kỹ thuật phỏng vấn?",
+    "id": 18,
+    "q": "Which reading strategy is MOST helpful when looking for a specific piece of information in a long technical document?",
     "opts": {
-      "A": "Câu hỏi mở",
-      "B": "Câu hỏi đóng",
-      "C": "Câu hỏi khó",
-      "D": "Câu hỏi dễ"
+      "A": "Reading every word from the beginning of the document.",
+      "B": "Skipping all headings and reading only the body text.",
+      "C": "Scanning for keywords, headings, and highlighted terms.",
+      "D": "Only reading the conclusion of the document."
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": 19,
+    "q": "Which type of document provides a step-by-step guide for using a specific software feature?",
+    "opts": {
+      "A": "A project proposal.",
+      "B": "A tutorial or how-to guide.",
+      "C": "A system architecture diagram.",
+      "D": "A meeting agenda."
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 20,
+    "q": "What is the MOST effective way to organize information in a technical report?",
+    "opts": {
+      "A": "Write everything in one long paragraph to save space.",
+      "B": "Use random formatting to make the document visually interesting.",
+      "C": "Structure content with clear headings, sections, and a logical flow.",
+      "D": "Arrange content from least to most important with no headings."
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": 21,
+    "q": "What does \"GUI\" stand for in IT?",
+    "opts": {
+      "A": "General Utility Interface.",
+      "B": "Graphical User Interface.",
+      "C": "Global Unified Integration.",
+      "D": "Grid-based Uniform Input."
     },
     "ans": "B",
     "type": "mcq"
   },
   {
     "id": 22,
-    "q": "Đâu không phải là công việc thường được tiến hành cho cuộc phỏng vấn",
+    "q": "Which of the following best describes \"two-factor authentication\" (2FA)?",
     "opts": {
-      "A": "Tiến hành đặt cuộc hẹn phù hợp với thời gian của phỏng vấn",
-      "B": "Chuẩn bị tốt, tìm hiểu kỹ về người được phỏng vấn",
-      "C": "Có kế hoạch cho cuộc phỏng vấn",
-      "D": "Ghi chép các hoạt động, các bước xử lý công việc"
+      "A": "Using two different passwords to access the same account.",
+      "B": "A security process requiring users to verify identity with two separate methods.",
+      "C": "Logging into two accounts at the same time.",
+      "D": "Sharing login credentials between two trusted users."
     },
-    "ans": "D",
+    "ans": "B",
     "type": "mcq"
   },
   {
     "id": 23,
-    "q": "Đâu không phải là ưu điểm của phỏng vấn có cấu trúc?",
+    "q": "What is the BEST approach when writing technical documentation for an international audience?",
     "opts": {
-      "A": "Dễ quản lý và đánh giá",
-      "B": "Đánh giá được nhiều mục đích",
-      "C": "Không cần đào tạo nhiều",
-      "D": "Có khả năng mềm dẻo nhất"
+      "A": "Use idioms and cultural references to make the text engaging.",
+      "B": "Write in complex sentences to appear professional.",
+      "C": "Use clear, plain language and avoid culture-specific expressions.",
+      "D": "Translate all documentation into multiple languages without editing for clarity."
     },
-    "ans": "D",
+    "ans": "C",
     "type": "mcq"
   },
   {
     "id": 24,
-    "q": "Ưu điểm nào không phải là ưu điểm của phỏng vấn không có cấu trúc?",
+    "q": "Which of the following sentences uses the present perfect tense correctly in a technical context?",
     "opts": {
-      "A": "Dùng dạng chuẩn cho nhiều câu hỏi",
-      "B": "Có khả năng mềm dẻo nhất",
-      "C": "Cần chăm chú nghe và có kỹ năng mở rộng câu hỏi",
-      "D": "Có thể bao hết các thông tin chưa biết"
+      "A": "The system update install last night.",
+      "B": "The system update has been installed successfully.",
+      "C": "The system update is install since yesterday.",
+      "D": "The system update was install successfully last night."
     },
-    "ans": "A",
+    "ans": "B",
     "type": "mcq"
   },
   {
     "id": 25,
-    "q": "Nhược điểm nào không phải là của phỏng vấn có cấu trúc?",
+    "q": "What does the term \"latency\" refer to in networking?",
     "opts": {
-      "A": "Chi phí chuẩn bị lớn",
-      "B": "Tính cấu trúc có thể không thích hợp cho mọi tình huống",
-      "C": "Giảm tính chủ động của các người phỏng vấn",
-      "D": "Tốn thời gian lựa chọn và phân tích thông tin"
+      "A": "The total amount of data a network can store.",
+      "B": "The time delay between sending a request and receiving a response.",
+      "C": "The number of devices connected to a single network.",
+      "D": "The physical distance between two servers."
     },
-    "ans": "D",
+    "ans": "B",
     "type": "mcq"
   },
   {
     "id": 26,
-    "q": "Nhược điểm nào không phải là nhược điểm của phỏng vấn không có cấu trúc?",
+    "q": "Which of the following elements is MOST important in a software release note?",
     "opts": {
-      "A": "Lãng phí thời gian phỏng vấn",
-      "B": "Người phỏng vấn có thể định kiến với các câu hỏi",
-      "C": "Tốn thời gian lựa chọn và phân tích thông tin",
-      "D": "Giảm tính chủ động của người phỏng vấn"
+      "A": "A list of the developers' names and contact information.",
+      "B": "A description of new features, bug fixes, and known issues.",
+      "C": "Detailed source code explanations for each change.",
+      "D": "Marketing highlights of the product's most popular features."
     },
-    "ans": "D",
+    "ans": "B",
     "type": "mcq"
   },
   {
     "id": 27,
-    "q": "Đâu không phải là nhược điểm của phương pháp phỏng vấn:",
+    "q": "Which of the following is an example of POOR technical writing?",
     "opts": {
-      "A": "Phỏng vấn và các dạng khác của thu thập dữ liệu có thể làm bạn lạc lối, thiếu chính xác hoặc thông tin không liên quan, không thích hợp.",
-      "B": "Bạn cần học cách đọc ngôn ngữ cử chỉ và thói quen để quyết định được các điều cần thiết cho cùng một thông tin",
-      "C": "Đi hỏi kỹ năng",
-      "D": "Phỏng vấn không thích hợp cho việc nhận các thông tin cần đảm bảo cả số lượng lẫn chất lượng."
+      "A": "\"Press the power button on the top-right corner of the device to turn it on.\"",
+      "B": "\"The system shall process user requests within two seconds under normal load conditions.\"",
+      "C": "\"Basically, just do the stuff to make the program work. It's not that complicated.\"",
+      "D": "\"Enter your username and password, then click 'Login' to access your account.\""
     },
     "ans": "C",
     "type": "mcq"
   },
   {
     "id": 28,
-    "q": "Đâu không phải là ưu điểm của phương pháp họp nhóm:",
+    "q": "What is the main function of a \"changelog\" in software documentation?",
     "opts": {
-      "A": "Có thể tạo ra quyết định",
-      "B": "Nhận được cả thông tin tổng hợp và chi tiết.",
-      "C": "Phương pháp tốt cho các yêu cầu bên ngoài",
-      "D": "Kỹ sư phần mềm có thể tập trung vào vấn đề, mà không bị ảnh hưởng bởi người khác"
+      "A": "To list the names of all contributors to the project.",
+      "B": "To provide a chronological record of changes made to each version of the software.",
+      "C": "To describe the overall design philosophy of the software.",
+      "D": "To market the software to potential customers."
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 29,
+    "q": "In IT writing, what does the term \"scalability\" refer to?",
+    "opts": {
+      "A": "The visual size of text and images in a user interface.",
+      "B": "The ability of a system to handle increasing workloads or be expanded easily.",
+      "C": "A measurement unit used in network configuration.",
+      "D": "A feature that allows software to run on mobile devices."
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 30,
+    "q": "Which term describes software that is provided free of charge but may have limitations compared to a paid version?",
+    "opts": {
+      "A": "Open source.",
+      "B": "Proprietary.",
+      "C": "Freeware.",
+      "D": "Shareware."
     },
     "ans": "D",
     "type": "mcq"
   },
   {
-    "id": 29,
-    "q": "Nhược điểm nào không phải là nhược điểm của phương pháp họp nhóm:",
+    "id": 31,
+    "q": "Which sentence correctly uses an IT vocabulary term?",
     "opts": {
-      "A": "Có thể có kết quả thiên vị",
-      "B": "Các ngắt quảng làm phân tán sự chú ý",
-      "C": "Dễ chuyển sang các chủ đề không liên quan như là chính trị, thể thao…",
-      "D": "Nếu số đại biểu nhiều sẽ tốn thời gian cho việc ra quyết định."
+      "A": "The technician rebooted the router to resolve the connectivity issue.",
+      "B": "The developer compiled the internet to make the app work faster.",
+      "C": "The user browsed the hard drive to send an email.",
+      "D": "The programmer deleted the RAM to free up disk space."
     },
     "ans": "A",
     "type": "mcq"
   },
   {
-    "id": 30,
-    "q": "Tập hợp ba hoặc nhiều hơn một số người cho một thời hạn nhất định để thảo luận một số chủ đề là kỹ thuật thu thập dữ liệu nào?",
+    "id": 32,
+    "q": "Identify the grammatically correct sentence:",
     "opts": {
-      "A": "Phỏng vấn",
-      "B": "Họp nhóm",
-      "C": "Quan sát",
-      "D": "Xem xét tài liệu"
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 31,
-    "q": "Đâu là kỹ thuật để tăng độ tin cậy của sản phẩm phần mềm khi viết chương trình?",
-    "opts": {
-      "A": "An toàn phần mềm",
-      "B": "Đặc tả độ tin cậy phần mềm",
-      "C": "Xử lý bất thường",
-      "D": "Thử nghiệm khiếm khuyết"
+      "A": "The software have been updated by the developer.",
+      "B": "The softwares was updated by the developer.",
+      "C": "The software has been updated by the developer.",
+      "D": "The software were updated by the developer."
     },
     "ans": "C",
     "type": "mcq"
   },
   {
-    "id": 32,
-    "q": "Trong thiết kế phần mêm, giai đoạn đặc tả trừu tượng là:",
-    "opts": {
-      "A": "Các dịch vụ cung cấp bởi một hệ con được phân chia qua các thành phần của hệ con đó",
-      "B": "Đối với các hệ con, đặc tả các dịch vụ mà nó phải cung cấp và các ràng buộc mà nó phải tuân theo.",
-      "C": "Các hệ con tạo nên hệ tổng thể và các quan hệ của chúng là được minh định và ghi thành tài liệu",
-      "D": "Các kiến trúc dữ liệu được dùng trong việc thực hiện hệ thống được thiết kế chi tiết và được đặc tả."
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
     "id": 33,
-    "q": "Trogn thiết kế phần mềm, giai đoạn thiết kế cấu trúc dữ liệu là:",
+    "q": "Which of the following is the BEST strategy when reading a long technical manual?",
     "opts": {
-      "A": "Các dịch vụ cung cấp bởi một hệ con được phân chia qua các thành phần của hệ con đó",
-      "B": "Các hệ con tạo nên hệ tổng thể và các quan hệ của chúng là được minh định và ghi thành tài liệu",
-      "C": "Các cấu trúc dữ liệu được dùng trong việc thực hiện hệ thống được thiết kế chi tiết và được đặc tả",
-      "D": "Đối với các hệ con, đặc tả các dịch vụ mà nó phải cung cấp và các ràng buộc mà nó phải tuân theo."
+      "A": "Read from cover to cover without stopping.",
+      "B": "Ignore charts and focus only on paragraph text.",
+      "C": "Use the table of contents and index to locate relevant sections.",
+      "D": "Skip the introduction as it contains no useful information."
     },
     "ans": "C",
     "type": "mcq"
   },
   {
     "id": 34,
-    "q": "Trong thiết kế phần mềm, giai đoạn thiết kế giao diện có nội dung:",
+    "q": "In technical writing, what is the primary purpose of numbered steps?",
     "opts": {
-      "A": "Các dịch vụ cung cấp bởi một hệ cong được phân chia qua các thành phần của hệ con đó.",
-      "B": "Các hệ con tạo nên hệ tổng thể và các quan hệ của chúng là được minh định và ghi thành tài liệu",
-      "C": "Đối với các hệ con, đặc tả các dịch vụ mà nó phải cung cấp và các ràng buộc mà nó phải tuân theo.",
-      "D": "Giao diện của từng hệ con với các hệ con khác được thiết kế và ghi thành tài liệu"
+      "A": "To make the document appear longer and more detailed.",
+      "B": "To guide users through a sequential process in a clear order.",
+      "C": "To demonstrate the author's knowledge of the subject.",
+      "D": "To separate sections of a document visually."
     },
-    "ans": "D",
+    "ans": "B",
     "type": "mcq"
   },
   {
     "id": 35,
-    "q": "Trong thiết kế phần mềm, giai đoạn thiết kế các thành phần có nội dung:",
+    "q": "Which element is MOST important in a professional technical report?",
     "opts": {
-      "A": "Các hệ con tạo nên hệ thổng thể và các quan hệ của chúng là được minh định và ghi thành tài liệu",
-      "B": "Đối với các hệ con, đặc tả các dịch vụ mà nó phải cung cấp và các ràng buộc mà nó phải tuân theo",
-      "C": "Các dịch vụ cung cấp bởi một hệ con được phân chia qua cacs thành phần của hệ con đó",
-      "D": "Giao diện của từng hệ con với các hệ con khác được thiết kế và ghi thành tài liệu"
+      "A": "Informal language and conversational tone.",
+      "B": "Accurate, well-organized information with clear headings.",
+      "C": "A large number of images to fill the pages.",
+      "D": "Personal opinions of the author throughout."
     },
-    "ans": "C",
+    "ans": "B",
     "type": "mcq"
   },
   {
     "id": 36,
-    "q": "Thiết kế phần mềm bao gồm những công việc chính gì?",
+    "q": "What does the acronym \"API\" stand for in software development?",
     "opts": {
-      "A": "Xác định kiến trúc phần mềm",
-      "B": "Chọn lựa cách thức thực hiện của từng thành phần và mô tả lại cách thực hiện này",
-      "C": "Xác định kiến trúc phần mềm và chọn lựa cách thức thực hiện của từng thành phần và mô tả lại cách thực hiện hiện nay",
-      "D": "Xác định thời gian hoàn tất phần mềm"
+      "A": "Automated Programming Interface.",
+      "B": "Application Protocol Integration.",
+      "C": "Application Programming Interface.",
+      "D": "Advanced Process Integration."
     },
     "ans": "C",
     "type": "mcq"
   },
   {
     "id": 37,
-    "q": "Bản thiết kế thành phần giao diện bao gồm:",
+    "q": "Which of the following best describes a \"firewall\" in IT security?",
     "opts": {
-      "A": "Nội dung và hình thức trình bày các màn hình giao tiếp của phần mềm",
-      "B": "Hệ thống các giao tác mà người dùng có thể thực hiện trên màn hình giao tiếp và xử lý tương ứng của PM.",
-      "C": "Nội dung và hình thức trình bày các màn hình giao tiếp của phần mềm cùng hệ thống các giao tác mà người dùng có thể thực hiện trên màn hình giao tiếp và xử lý tương ứng của PM.",
-      "D": "Hình thức các màn hình giao tiếp."
+      "A": "A software program used to design websites.",
+      "B": "Hardware that physically protects servers from fire.",
+      "C": "A system that monitors and controls incoming and outgoing network traffic.",
+      "D": "A type of malware that spreads through email."
     },
     "ans": "C",
     "type": "mcq"
   },
   {
     "id": 38,
-    "q": "Bản thiết kế thành phần xử lý bao gồm:",
+    "q": "When writing a technical email to a non-technical manager, you should:",
     "opts": {
-      "A": "Hệ thống các kiểu dữ liệu được sử dụng trong PM và các tham biến được sử dụng trong phần mềm",
-      "B": "Hệ thống các biến được sử dụng trong PM.",
-      "C": "Hệ thống các kiểu dữ liệu được sử dụng trong PM và hệ thống các hàm được sử dụng trong PM",
-      "D": "Hệ thống các kiểu dữ liệu được sử dụng trong PM và hệ thống các biến được sử dụng trong PM"
+      "A": "Use as much technical terminology as possible to sound credible.",
+      "B": "Avoid giving details and keep the email very short.",
+      "C": "Explain concepts in plain language and avoid unnecessary jargon.",
+      "D": "Send only the technical report without any explanation."
     },
     "ans": "C",
     "type": "mcq"
   },
   {
     "id": 39,
-    "q": "Bản thiết kế thành phần dữ liệu không bao gồm:",
+    "q": "Which of the following is typically found in a software README file?",
     "opts": {
-      "A": "Nội dung của công việc ghi chép vào sổ sách trong thế giới thực hiện trên bộ nhớ phụ",
-      "B": "Dạng lưu trữ được sử dụng của PM (tập tin, cơ sở dữ liệu…)",
-      "C": "Hệ thống các thành phần lưu trữ cùng với quan hệ của chúng",
-      "D": "Hệ thống các kết quả của chương trình."
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 40,
-    "q": "Trong các phát biểu sau, phát biểu nào là đúng:",
-    "opts": {
-      "A": "Thiết kế hướng đối tượng chỉ dùng cho lập trình hướng đối tượng",
-      "B": "Thiết kế hướng đối tượng có những điểm giống lập trình hướng đối tượng",
-      "C": "Thiết kế hướng đối tượng có thể dùng cho cả lập trình hướng đối tượng và lập trình hướng chức năng",
-      "D": "Thiết kế hướng đối tượng là lập trình thướng đối tượng"
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 41,
-    "q": "Một số tiêu chí đánh giá về chất lượng thiết kế:",
-    "opts": {
-      "A": "Sự kết dính, tính đầy đủ, sự ghép nối, sự hiểu được, tính phổ dụng",
-      "B": "Sự kết dính, sự ghép nối, sự hiểu được, tính thích nghi",
-      "C": "Sự ghép nối, sự hiểu được, tính thích nghi, tính đầy đủ",
-      "D": "Sự kết dính, sự ghép nối, sự hiểu được, tính phổ dụng, tính thích nghi."
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 42,
-    "q": "Trong các tính chất sau, tính nào là đặc trưng của thiết kế hướng đối tượng:",
-    "opts": {
-      "A": "Các đối tượng liên lạc với nhau thông qua các biến dùng chung",
-      "B": "Các đối tượng liên lạc với nhau thông qua trao đổi thông báo",
-      "C": "Các đối tượng là độc lập với nhau và liên lạc thông qua các biến dùng chung.",
-      "D": "Các đối tượng chia sẻ với nhau thông qua trạng thái hệ thống tập trung"
+      "A": "Marketing slogans and promotional content.",
+      "B": "Installation instructions, dependencies, and usage examples.",
+      "C": "Detailed financial information about the project.",
+      "D": "Personal biography of the development team."
     },
     "ans": "B",
     "type": "mcq"
   },
   {
-    "id": 43,
-    "q": "Trong các đặc điểm sau, đặc điểm nào không phải là ưu điểm của thiết kế hướng đối tượng?",
+    "id": 40,
+    "q": "What does \"SaaS\" stand for in cloud computing?",
     "opts": {
-      "A": "Dễ học và dễ sử dụng",
-      "B": "Dễ bảo trì và các đối tượng là độc lập",
-      "C": "Phản ánh một cách rõ ràng giữa các thực thể có thực",
-      "D": "Các đối tượng là các thành phần dùng lại được thích hợp"
+      "A": "Software as a Service.",
+      "B": "System as a Solution.",
+      "C": "Server and Application Software.",
+      "D": "Secure Access and Storage."
     },
     "ans": "A",
     "type": "mcq"
   },
   {
-    "id": 44,
-    "q": "Trong thiết kế phần mềm, giai đoạn thiết kế kiến trúc là:",
+    "id": 41,
+    "q": "Which sentence demonstrates correct use of passive voice in technical writing?",
     "opts": {
-      "A": "Các kiến trúc dữ liệu được dùng trong việc thực hiện hệ thống được thiết kế chi tiết và đươc đặc tả.",
-      "B": "Các hệ con tạo nên hệ thổng thể và các quan hệ của chúng là được minh định và ghi thành tài liệu",
-      "C": "Các dịch vụ cung cấp bởi một hệ con được phân chia qua các thành phần của hệ con đó.",
-      "D": "Đối với các hệ con, đặc tả các dịch vụ mà nó phải cung cấp và các ràng buộc mà nó phải tuân theo"
+      "A": "The system processed the data quickly.",
+      "B": "The data were processed by the system.",
+      "C": "The system is process data quickly.",
+      "D": "The data have processed by the system quickly."
     },
     "ans": "B",
     "type": "mcq"
   },
   {
-    "id": 45,
-    "q": "Thiết kế hướng đối tượng và thiết kế hướng chức năng là 2 chiến lược thiết kế:",
+    "id": 42,
+    "q": "Which of the following is the MOST appropriate opening line for a technical bug report?",
     "opts": {
-      "A": "Độc lập không liên quan đến nhau",
-      "B": "Đối kháng nhau",
-      "C": "Bổ sung và hỗ trợ cho nhau",
-      "D": "Hoàn toàn giống nhau"
+      "A": "\"Hey, the app is totally broken and nothing works!\"",
+      "B": "\"I think maybe there might possibly be a small issue with the login.\"",
+      "C": "\"The login function fails to authenticate users when special characters are entered in the password field.\"",
+      "D": "\"Someone should check the login because users are complaining.\""
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": 43,
+    "q": "What is the purpose of version numbers (e.g., v2.1.3) in software documentation?",
+    "opts": {
+      "A": "To confuse users about which version to use.",
+      "B": "To indicate the date the software was created.",
+      "C": "To track updates, fixes, and changes made to the software over time.",
+      "D": "To show how many developers worked on the software."
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": 44,
+    "q": "In IT documentation, what does \"deprecated\" mean?",
+    "opts": {
+      "A": "A feature that has been removed and replaced with a newer alternative.",
+      "B": "A newly introduced feature that is still being tested.",
+      "C": "A feature that is available only in the premium version.",
+      "D": "A security vulnerability that needs patching."
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 45,
+    "q": "Which term describes the process of finding and fixing errors in code?",
+    "opts": {
+      "A": "Compiling.",
+      "B": "Rendering.",
+      "C": "Debugging.",
+      "D": "Encrypting."
     },
     "ans": "C",
     "type": "mcq"
   },
   {
     "id": 46,
-    "q": "Đâu không phải là yêu cầu thiết kế:",
+    "q": "Identify the correct sentence:",
     "opts": {
-      "A": "Tính sáng sủa, dễ đọc",
-      "B": "Dễ thử nghiệm",
-      "C": "Linh hoạt đối với những yêu cầu thay đổi không định trước",
-      "D": "Kích thước của module đủ lớn"
+      "A": "She don't have any books.",
+      "B": "She doesn't have any books.",
+      "C": "She don't have no books.",
+      "D": "She doesn't have books."
     },
-    "ans": "D",
+    "ans": "B",
     "type": "mcq"
   },
   {
     "id": 47,
-    "q": "Độ đo về tính khớp lại với nhau của một thành phần liên quan chủ yếu đến tiêu chuẩn nào của chất lượng thiết kế:",
+    "q": "Which of the following is a comma splice error?",
     "opts": {
-      "A": "Sự kết dính",
-      "B": "Sự ghép nối",
-      "C": "Sự hiểu được",
-      "D": "Sự thích nghi"
+      "A": "I went to the store, and I bought milk.",
+      "B": "I went to the store, I bought milk.",
+      "C": "I went to the store; I bought milk.",
+      "D": "I went to the store after work."
     },
-    "ans": "A",
+    "ans": "B",
     "type": "mcq"
   },
   {
     "id": 48,
-    "q": "Loại trừu tượng nào không được dùng trong thiết kế phần mềm?",
+    "q": "Which of the following is NOT a characteristic of good technical writing?",
     "opts": {
-      "A": "Điều khiển",
-      "B": "Dữ liệu",
-      "C": "Thủ tục",
-      "D": "Chương trình"
+      "A": "Clarity",
+      "B": "Conciseness",
+      "C": "Creativity",
+      "D": "Objectivity"
     },
-    "ans": "D",
+    "ans": "C",
     "type": "mcq"
   },
   {
     "id": 49,
-    "q": "Loại mô hình nào không được có trong kiến trúc phần mềm:",
+    "q": "What is the purpose of using headings and subheadings in technical documents?",
     "opts": {
-      "A": "Dữ liệu",
-      "B": "Động",
-      "C": "Xử lý",
-      "D": "Cấu trúc"
+      "A": "To make the document look more appealing.",
+      "B": "To break up the content into logical sections.",
+      "C": "To increase the word count.",
+      "D": "To confuse the reader."
     },
     "ans": "B",
     "type": "mcq"
   },
   {
     "id": 50,
-    "q": "Cấp bậc điều khiển thể hiện:",
+    "q": "Which of the following should NOT be included in a CV?",
     "opts": {
-      "A": "Cấp bậc điều khiển trong một cảm nhận trừu tượng hơn",
-      "B": "Xử lý chi tiết của mỗi module riêng biệt",
-      "C": "Xử lý chi tiết của mỗi tạp module",
-      "D": "Quan hệ giữa điều khiển và thủ tục"
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 51,
-    "q": "Nguyên nhân của việc sinh lỗi do thiết kế mức thành phần trước khi thiết kế dữ liệu là:",
-    "opts": {
-      "A": "Thiết kế thành phần thì phụ thuộc vào ngôn ngữ của thiết kế dữ liệu hệ thống",
-      "B": "Thiết kế dữ liệu thì dễ thực hiện hơn",
-      "C": "Thiết kế dữ liệu thì khó thực hiện hơn",
-      "D": "Cấu trúc dữ liệu thường ảnh hưởng tới cách thức mà thiết kế thành phần phải theo."
+      "A": "Work experience",
+      "B": "Educational qualifications",
+      "C": "Personal interests",
+      "D": "Irrelevant personal information"
     },
     "ans": "D",
     "type": "mcq"
   },
   {
-    "id": 52,
-    "q": "Mục đích của tham chiếu chéo những yêu cầu (ma trận) trong tài liệu thiết kế là nhằm:",
+    "id": 51,
+    "q": "What is the primary purpose of a CV?",
     "opts": {
-      "A": "Cho phép người quản lý theo dõi năng suất của nhóm thiết kế",
-      "B": "Xác minh là tất cả các yêu cầu đã được xem xét trong thiết kế",
-      "C": "Chỉ ra chi phí kết hợp với mỗi yêu cầu",
-      "D": "Cung cấp cho việc thực thi tên của những nhà thiết kế cho mỗi yêu cầu"
+      "A": "To showcase your personality.",
+      "B": "To highlight your relevant skills and experience.",
+      "C": "To entertain the reader.",
+      "D": "To demonstrate your creative writing abilities."
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 52,
+    "q": "What is the primary purpose of a CV? (Note: Question context references cloud storage)",
+    "opts": {
+      "A": "To showcase your personality.",
+      "B": "To highlight your relevant skills and experience.",
+      "C": "To entertain the reader.",
+      "D": "To demonstrate your creative writing abilities."
     },
     "ans": "B",
     "type": "mcq"
   },
   {
     "id": 53,
-    "q": "Mục nào không phải là một phần của kiến trúc phần mềm:",
+    "q": "What is the best way to avoid plagiarism?",
     "opts": {
-      "A": "Chi tiết giải thuật",
-      "B": "Cơ sở dữ liệu",
-      "C": "Thiết kế dữ liệu",
-      "D": "Cấu trúc chương trình"
+      "A": "Cite all sources, even if you're paraphrasing.",
+      "B": "Only use direct quotes from sources.",
+      "C": "Rely solely on your own knowledge and ideas.",
+      "D": "Paraphrase without citing sources."
     },
     "ans": "A",
     "type": "mcq"
   },
   {
     "id": 54,
-    "q": "Đặc trưng nào là đúng cho ckho dữ liệu, không phải là sơ sở dữ liệu đặc trưng?",
+    "q": "Which of the following is NOT a good tip for a job interview?",
     "opts": {
-      "A": "Hưởng mức nghiệp vụ và kích thước lớn",
-      "B": "Thông tin đúng và hợp thời",
-      "C": "Tích hợp và không thường thay đổi",
-      "D": "Hướng mức nghiệp vụ và kích thước nhỏ"
+      "A": "Prepare questions to ask the interviewer.",
+      "B": "Research the company and the role",
+      "C": "Dress casually and comfortably",
+      "D": "Practice answering common interview questions."
     },
     "ans": "C",
     "type": "mcq"
   },
   {
     "id": 55,
-    "q": "Mẫu kiến trúc không quan tâm tới thành phần nào?",
+    "q": "What should you do if you don't know the answer to an interview question?",
     "opts": {
-      "A": "Ràng buộc",
-      "B": "Tập hợp những thành phần",
-      "C": "Mô hình ngữ nghĩa",
-      "D": "Mô hình mô phỏng"
+      "A": "Guess an answer.",
+      "B": "Remain silent.",
+      "C": "Admit that you don't know and ask for clarification.",
+      "D": "Change the subject."
     },
-    "ans": "D",
+    "ans": "C",
     "type": "mcq"
   },
   {
     "id": 56,
-    "q": "Nhằm xác định những mẫu kiến trúc hay kết hợp những mẫu phù hợp nhất cho hệ thống đề nghị, kỹ thuật yêu cầu dùng để khám phá:",
+    "q": "Which of the following is NOT a good tip for a personal interview?",
     "opts": {
-      "A": "Giải thuật phức tạp",
-      "B": "Đặc trưng và ràng buộc",
-      "C": "Diều khiển và dữ liệu",
-      "D": "Những mẫu thiết kế"
+      "A": "Maintain eye contact.",
+      "B": "Speak clearly and confidently.",
+      "C": "Provide one-word answers.",
+      "D": "Listen attentively."
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": 57,
+    "q": "Identify the correct sentence with proper subject-verb agreement:",
+    "opts": {
+      "A": "The team of engineers are working on the project.",
+      "B": "The team of engineers is working on the project.",
+      "C": "The team of engineers were working on the project.",
+      "D": "The team of engineers has working on the project."
     },
     "ans": "B",
     "type": "mcq"
   },
   {
-    "id": 57,
-    "q": "Tiêu chuẩn đánh giá chất lượng của một thiết kế kiến trúc phải dựa vào:",
-    "opts": {
-      "A": "Tính truy cập và tính tin cậy của hệ thống",
-      "B": "Dữ liệu và điều khiển của hệ thống",
-      "C": "Tính chức năng của hệ thống",
-      "D": "Những chi tiết thực thi của hệ thống"
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
     "id": 58,
-    "q": "Trong phương pháp phân tích kiến trúc, mô tả mẫu kiến trúc không dùng khung nhìn nào?",
+    "q": "What is the best way to respond to the question \"What is your greatest weakness?\" in a job interview?",
     "opts": {
-      "A": "Dòng dữ liệu",
-      "B": "Module",
-      "C": "Tiến trình",
-      "D": "Chức năng"
+      "A": "Deny having any weaknesses.",
+      "B": "Mention a weakness that is actually a strength in disguise.",
+      "C": "Provide a genuine weakness and explain how you're working to improve it.",
+      "D": "Change the subject and avoid answering the question."
     },
-    "ans": "D",
+    "ans": "C",
     "type": "mcq"
   },
   {
     "id": 59,
-    "q": "Khi một luồng tổng thể trong một đoạn của biểu đồ luồng dữ liệu có tính trình tự cao và theo sau những dường thẳng sẽ thể hiện:",
+    "q": "Which of the following is a good way to conclude a personal interview?",
     "opts": {
-      "A": "Liên kết thấp",
-      "B": "Module hóa tốt",
-      "C": "Luồng giao dịch (transaction)",
-      "D": "Luồng biến đổi (transform)"
+      "A": "Thank the interviewer and express your interest in the opportunity.",
+      "B": "Ask the interviewer personal questions about their background.",
+      "C": "Inquire about the next steps in the hiring process.",
+      "D": "Both A and C"
     },
     "ans": "D",
     "type": "mcq"
   },
   {
     "id": 60,
-    "q": "Khi luồng thông tin trong một đoạn của sơ đồ luồng dữ liệu thể hiện bằng một mục đơn mà bâỷ một luồng dữ liệu khác theo một trong nhiều đường sẽ thể hiện:",
+    "q": "Which of the following is NOT a way in which AI can help with grammar checking?",
     "opts": {
-      "A": "Liên kết thấp",
-      "B": "Module hóa tốt",
-      "C": "Luồng giao dịch (transaction)",
-      "D": "Luồng biến đổi (transform)"
+      "A": "Identifying subject-verb agreement errors.",
+      "B": "Suggesting corrections for punctuation mistakes.",
+      "C": "Detecting errors in idioms and colloquial expressions.",
+      "D": "Providing recommendations for improving writing style."
     },
     "ans": "C",
     "type": "mcq"
   },
   {
     "id": 61,
-    "q": "Một bổ sung cần thiết nhằm biến đổi hay ánh xạ giao dịch để tạo một thiết kế kiến trúc đầy đủ là:",
+    "q": "What is the main goal of Machine Learning?",
     "opts": {
-      "A": "Sơ đồ quan hệ - thực thể",
-      "B": "Từ điển dữ liệu",
-      "C": "Mô tả việc xử lý cho mỗi module",
-      "D": "Những test case cho mỗi module"
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 62,
-    "q": "Những nguyên lý thiết kế giao diện nào không cho phép người dùng cn điều khiển tương tác với máy tính:",
-    "opts": {
-      "A": "Cho phép được gián đoạn",
-      "B": "Cho phép tương tác có thể undo",
-      "C": "Che dấu những bản chất kỹ thuật với những người dùng thường",
-      "D": "Chỉ cung cấp một cách thức xác định cứng khi hoàn thành tác vụ"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 63,
-    "q": "Những nguyên lý thiết kế giao diện không tạo điều kiện cho người dùng ít phải nhớ?",
-    "opts": {
-      "A": "Xác định những shortcut trực quan",
-      "B": "Biểu lộ thông tin theo cách diễn tiến",
-      "C": "Thiết lập những trường hợp mặc định có ý nghĩa",
-      "D": "Thiết kế giao diện sinh động"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 64,
-    "q": "Sự toàn vẹn (consistency) giao diện ngầm định nghãi là:",
-    "opts": {
-      "A": "Những kỹ thuật output giữ tương tự suốt ứng dụng",
-      "B": "Mỗi ứng dụng không phải có look and feel riêng biệt",
-      "C": "Cách thức điều hướng (navigational) nhạy với ngữ cảnh",
-      "D": "Những kỹ thuật input giữ tương tự suốt ứng dụng và mỗi ứng dụng phải có look and feel riêng biệt"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 65,
-    "q": "Mô hình nào đưa ra hình ảnh tiền sử (profile) người dùng cuối của hệ thống dựa vào máy tính:",
-    "opts": {
-      "A": "Mô hình thiết kế",
-      "B": "Mô hình người dùng",
-      "C": "Mô hình của người dùng",
-      "D": "Mô hình nhận thức hệ thống"
+      "A": "To replace all humans",
+      "B": "To allow computers to learn from data",
+      "C": "To build computer hardware",
+      "D": "To design websites"
     },
     "ans": "B",
     "type": "mcq"
   },
   {
-    "id": 66,
-    "q": "Mô hình nào đưa ra hình ảnh hệ thống trong đầu người dùng cuối:",
+    "id": 62,
+    "q": "Which of the following is a type of Machine Learning?",
     "opts": {
-      "A": "Mô hình thiết kế",
-      "B": "Mô hình người dùng",
-      "C": "Hình ảnh hệ thống",
-      "D": "Mô hình nhận thức hệ thống"
+      "A": "Supervised Learning",
+      "B": "Guided Learning",
+      "C": "Manual Learning",
+      "D": "Human Learning"
     },
-    "ans": "D",
+    "ans": "A",
     "type": "mcq"
   },
   {
-    "id": 67,
-    "q": "Phương pháp thiết kế nào không phải là thiết kế phần mềm?",
+    "id": 63,
+    "q": "In supervised learning, the model is trained using:",
     "opts": {
-      "A": "Thiết kế trực tiếp",
-      "B": "Thiết kế gián tiếp",
-      "C": "Thiết kế tổng quát",
-      "D": "Thiết kế trực tiếp, thiết kế gián tiếp"
+      "A": "Unlabeled data",
+      "B": "Random data",
+      "C": "Labeled data",
+      "D": "Encrypted data"
     },
     "ans": "C",
     "type": "mcq"
   },
   {
-    "id": 68,
-    "q": "Phương pháp thiết kế phần mềm nào nhận các kết quả từ giai đoạn xác định yêu cầu?",
+    "id": 64,
+    "q": "Which algorithm is commonly used for classification?",
     "opts": {
-      "A": "Thiết kế trực tiếp",
-      "B": "Thiết kế gián tiếp",
-      "C": "Thiết kế dữ liệu",
-      "D": "Thiết kế xử lý"
+      "A": "Linear Regression",
+      "B": "Decision Tree",
+      "C": "K-Means",
+      "D": "PCA"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 65,
+    "q": "What does AI stand for?",
+    "opts": {
+      "A": "Automatic Information",
+      "B": "Artificial Internet",
+      "C": "Automated Interaction",
+      "D": "Artificial Intelligence"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 66,
+    "q": "Which of the following is an example of AI in daily life?",
+    "opts": {
+      "A": "Voice assistants",
+      "B": "Paper books",
+      "C": "Traditional clocks",
+      "D": "Flashlights"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 67,
+    "q": "What is the purpose of training data?",
+    "opts": {
+      "A": "To test hardware",
+      "B": "To teach the model patterns",
+      "C": "To delete information",
+      "D": "To increase internet speed"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 68,
+    "q": "Which metric is commonly used to evaluate classification models?",
+    "opts": {
+      "A": "Accuracy",
+      "B": "Voltage",
+      "C": "Resolution",
+      "D": "Brightness"
     },
     "ans": "A",
     "type": "mcq"
   },
   {
     "id": 69,
-    "q": "Phương pháp thiết kế phần mềm trực tiếp phù hợp với những loại phần mềm nào?",
+    "q": "What is overfitting in Machine Learning?",
     "opts": {
-      "A": "Phần mềm mã nguồn mỡ",
-      "B": "Phần mềm có quy mô nhỏ",
-      "C": "Phần mềm mạng",
-      "D": "Phần mềm có quy mô lớn"
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 70,
-    "q": "Với phương pháp thiết kế phần mềm gián tiếp, việc thiết kế sẽ chỉ nhận:",
-    "opts": {
-      "A": "Một phần các kết quả sẽ được chuyển giao từ giai đoạn xác định yêu cầu, phần chính yếu sẽ được nhận qua giai đoạn khảo sát.",
-      "B": "Tất cả các kết quả sẽ được từ giai đoạn xác định yêu cầu.",
-      "C": "Tất cả các kết quả sẽ được từ giai đoạn phân tích.",
-      "D": "Một phần các kết quả sẽ được chuyển giao từ giai đoạn xác định yêu cầu, phần chính yếu sẽ được nhận qua giai đoạn phân tích."
+      "A": "The model learns too little",
+      "B": "The model has no data",
+      "C": "The model runs too slowly",
+      "D": "The model performs well only on training data"
     },
     "ans": "D",
     "type": "mcq"
   },
   {
-    "id": 71,
-    "q": "Phương pháp thiết kế gián tiếp sẽ phù hợp với những phần mềm",
+    "id": 70,
+    "q": "Which language is most popular for AI development?",
     "opts": {
-      "A": "Có quy mô vừa và nhỏ",
-      "B": "Có quy mô nhỏ",
-      "C": "Có quy mô lớn",
-      "D": "Có quy mô trung bình"
+      "A": "HTML",
+      "B": "CSS",
+      "C": "Python",
+      "D": "SQL"
     },
     "ans": "C",
     "type": "mcq"
   },
   {
-    "id": 72,
-    "q": "Trong kết quả thiết kế phần mềm, kết quả của thành phần xư rlys không bao gồm:",
+    "id": 71,
+    "q": "What is a neural network inspired by?",
     "opts": {
-      "A": "Danh sách các kiểu dữ liệu",
-      "B": "Danh sách các hàm",
-      "C": "Mô tả chi tiết các kiểu dữ liệu",
-      "D": "Danh sách các ràng buộc"
+      "A": "Human brain",
+      "B": "Cars",
+      "C": "Buildings",
+      "D": "Satellites"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 72,
+    "q": "Which of the following is an unsupervised learning algorithm?",
+    "opts": {
+      "A": "Logistic Regression",
+      "B": "Decision Tree",
+      "C": "Random Forest",
+      "D": "K-Means"
     },
     "ans": "D",
     "type": "mcq"
   },
   {
     "id": 73,
-    "q": "Kết quả thiết kế thành phần nào gồm hệ thống các hàm cùng cấu trúc dữ liệu tương ứng:",
+    "q": "What is the output of a classification problem?",
     "opts": {
-      "A": "Thiết kế ứng dụng",
-      "B": "Thiết kế giao diện",
-      "C": "Thiết kế xử lý",
-      "D": "Thiết kế dữ liệu"
+      "A": "A category or label",
+      "B": "A continuous value",
+      "C": "A sound file",
+      "D": "A video"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 74,
+    "q": "Which company developed ChatGPT?",
+    "opts": {
+      "A": "Google",
+      "B": "Microsoft",
+      "C": "OpenAI",
+      "D": "IBM"
     },
     "ans": "C",
     "type": "mcq"
   },
   {
-    "id": 74,
-    "q": "Các thông tin cần mô tả một màn hình giao diện gồm:",
-    "opts": {
-      "A": "Tên màn hình, nội dung màn hình.",
-      "B": "Tên màn hình, nội dung, hình thức trình bày màn hình.",
-      "C": "Tên màn hình, nội dung, hình thức trình bày, các thao tác có thể thực hiện.",
-      "D": "Tên màn hình, nội dung, hình thức trình bày, các thao tác có thể thực hiện và các cấu trúc dữ liệu tương ứng."
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
     "id": 75,
-    "q": "Yêu cầu tính nhất quán trong thiết kế giao diện, những thành phần tương tự nhau phải giống nhau về những mặt nào?",
+    "q": "What is deep learning?",
     "opts": {
-      "A": "Vị trí, ngôn ngữ, hình dáng, màu sắc và cách kích hoạt.",
-      "B": "Vị trí, ngôn ngữ, hình dáng và màu sắc.",
-      "C": "Vị trí, hình dáng, màu sắc và cách kích hoạt",
-      "D": "Vị trí, ngôn ngữ, hình dáng, màu sắc cách kích hoặt và kết quả thực hiện"
+      "A": "A type of database",
+      "B": "A web design method",
+      "C": "A network cable",
+      "D": "A subset of machine learning using neural networks"
     },
     "ans": "D",
     "type": "mcq"
   },
   {
     "id": 76,
-    "q": "Điều quan trọng nhất trong thiết kế phần mềm là:",
+    "q": "Which of the following is a regression algorithm?",
     "opts": {
-      "A": "Độ chính xác",
-      "B": "Độ phức tạp",
-      "C": "Tính hiệu quả",
-      "D": "Chất lượng"
+      "A": "Linear Regression",
+      "B": "K-Means",
+      "C": "Apriori",
+      "D": "CNN"
     },
-    "ans": "D",
+    "ans": "A",
     "type": "mcq"
   },
   {
     "id": 77,
-    "q": "Vấn đề nào sau đây không ảnh hưởng nhiều đến thiết kế giao diện?",
+    "q": "What is the role of features in Machine Learning?",
     "opts": {
-      "A": "Thời gian đáp ứng",
-      "B": "Năng khiếu thẩm mỹ và kỹ năng đồ họa của người thiết kế giao diện",
-      "C": "Quản lý lỗi",
-      "D": "Thời gian đáp ứng. Năng khiếu thẩm mỹ và kỹ năng đồ họa của người thiết kế giao diện."
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 78,
-    "q": "Thông báo lỗi nên có tính chất nào sau đây?",
-    "opts": {
-      "A": "Nên dùng thông báo lỗi hệ thống của ngôn ngữ lập trình.",
-      "B": "Chỉ ra lỗi do người dùng mắc phải khi chạy chương trình.",
-      "C": "Nên đồng hành với các gợi ý âm thanh hay hình ảnh, như tiếng beep, thông báo nhấp nháy hoặc có màu đặc biệt (đỏ).",
-      "D": "Nên dùng thông báo lỗi hệ thống của ngôn ngữ lập trình, chỉ ra lỗi do người dùng mắc phải khi chạy chương trình và nên đồng hành với các gợi ý âm thanh hay hình ảnh như tiếng beep, thông báo nhấp nháy hoặc có màu đặc biệt (đỏ)."
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 79,
-    "q": "Mô hình thiết kế phần mềm nào sau đây tương tự như bản vẽ chi tiết cửa và bố trí nội thất trong thiết kế kiến trúc nhà cửa?",
-    "opts": {
-      "A": "Thiết kế kiến trúc",
-      "B": "Thiết kế giao diện",
-      "C": "Thiết kế các thành phần hệ thống",
-      "D": "Thiết kế dữ liệu"
+      "A": "They are computer viruses",
+      "B": "They are output labels only",
+      "C": "They are input variables used for prediction",
+      "D": "They are storage devices"
     },
     "ans": "C",
     "type": "mcq"
   },
   {
-    "id": 80,
-    "q": "Các bước thiết kế phần mềm nào sau đây thuộc khía cạnh kỹ thuật?",
+    "id": 78,
+    "q": "Which field combines AI and language processing?",
     "opts": {
-      "A": "Thiết kế sơ bộ",
-      "B": "Thiết kế chi tiết",
-      "C": "Thiết kế dữ liệu",
-      "D": "Thiết kế tổng quát"
+      "A": "NLP",
+      "B": "CPU",
+      "C": "GPU",
+      "D": "API"
     },
-    "ans": [
-      "B",
-      "C"
-    ],
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 79,
+    "q": "What does NLP stand for?",
+    "opts": {
+      "A": "Neural Logic Program",
+      "B": "Numeric Learning Process",
+      "C": "Natural Light Programming",
+      "D": "Natural Language Processing"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 80,
+    "q": "Which AI application can recognize faces?",
+    "opts": {
+      "A": "Computer Vision",
+      "B": "Spreadsheet Software",
+      "C": "Word Processing",
+      "D": "Web Hosting"
+    },
+    "ans": "A",
     "type": "mcq"
   },
   {
     "id": 81,
-    "q": "Chiến lược thiết kế nào sau đây có vùng dữ liệu dùng chung?",
+    "q": "What is a dataset?",
     "opts": {
-      "A": "Thiết kế hướng chức năng",
-      "B": "Thiết kế hướng đối tượng.",
-      "C": "Thiết kế giao diện người sử dụng.",
-      "D": "Thiết kế dữ liệu"
+      "A": "A collection of data",
+      "B": "A computer monitor",
+      "C": "A mobile application",
+      "D": "A network cable"
     },
     "ans": "A",
     "type": "mcq"
   },
   {
     "id": 82,
-    "q": "Mô hình nào sau đay mà mọi dữ liệu được lưu trữ tại một cơ sở dữ liệu trung tâm có thể được truy cập bởi mọi phân hệ?",
+    "q": "What is the purpose of testing data?",
     "opts": {
-      "A": "Mô hình kho dữ liệu",
-      "B": "Mô hình khách- phục vụ",
-      "C": "Mô hình máy trừu tượng.",
-      "D": "Mô hình mạng ngang hàng."
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 83,
-    "q": "Chỉ ra phát biểu sai. Thiết kế dữ liệu ở mức thành phần:",
-    "opts": {
-      "A": "Thiết kế cơ sở dữ liệu.",
-      "B": "Hiện thực thuộc tính dữ liệu thành cấu trúc dữ liệu.",
-      "C": "Phát triển một tập những trừu tượng dữ liệu.",
-      "D": "Tinh chế các đối tượng dữ liệu."
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 84,
-    "q": "Đặc điểm nào sau đây được sử dụng để đánh giá một bản thiết kế tốt?",
-    "opts": {
-      "A": "Thể hiện tất cả các yêu cầu trong pha phân tích, cung cấp một mô tả hoàn thiện về phần mềm",
-      "B": "Chưa cả các trường hợp kiểm thử của tất cả các thành phần.",
-      "C": "Mô tả một phần phần mềm.",
-      "D": "Mô tả chức năng phần mềm."
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 85,
-    "q": "Hướng tiếp cận nào để những phân tích tác vụ của người dùng trong thiết kế giao diện người dùng?",
-    "opts": {
-      "A": "Người dùng cho biết những ưa thích qua bản câu hỏi",
-      "B": "Dựa vào ý kiến của những lập trình viên có kinh nghiệm",
-      "C": "Nghiên cứu những hệ thống tự động liên quan",
-      "D": "Quan sát thao tác người dùng"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 86,
-    "q": "Một đặc trưng của thiết kế tốt",
-    "opts": {
-      "A": "Cho thấy sự liên kết mạnh giữa các module",
-      "B": "Thực hiện tất cả yêu cầu trong phân tích",
-      "C": "Bao gồm những testcase cho tất cả thành phần",
-      "D": "Kết hợp mã nguồn nhằm mục đích mô tả"
+      "A": "To train the model",
+      "B": "To evaluate model performance",
+      "C": "To delete errors",
+      "D": "To build hardware"
     },
     "ans": "B",
     "type": "mcq"
   },
   {
-    "id": 87,
-    "q": "Mục nào không là đặc trưng trong các phương pháp thiết kế?",
+    "id": 83,
+    "q": "Which of the following is a popular Machine Learning library in Python?",
     "opts": {
-      "A": "Quản lý cấu hình",
-      "B": "Ký hiệu thành phần chức năng",
-      "C": "Nguyên tắc đánh giá chất lượng",
-      "D": "Heuristic tinh chế"
+      "A": "Photoshop",
+      "B": "AutoCAD",
+      "C": "Blender",
+      "D": "TensorFlow"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 84,
+    "q": "What is prediction in Machine Learning?",
+    "opts": {
+      "A": "Guessing without data",
+      "B": "Estimating output using a trained model",
+      "C": "Creating websites",
+      "D": "Building robots manually"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 85,
+    "q": "Which algorithm is often used for recommendation systems?",
+    "opts": {
+      "A": "Collaborative Filtering",
+      "B": "Bubble Sort",
+      "C": "Binary Search",
+      "D": "Huffman Coding"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 86,
+    "q": "What is reinforcement learning based on?",
+    "opts": {
+      "A": "Fixed instructions",
+      "B": "Manual typing",
+      "C": "Database storage",
+      "D": "Rewards and penalties"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 87,
+    "q": "Which of the following is an example of supervised learning?",
+    "opts": {
+      "A": "Spam email detection",
+      "B": "Customer grouping without labels",
+      "C": "Random clustering",
+      "D": "Data compression"
     },
     "ans": "A",
     "type": "mcq"
   },
   {
     "id": 88,
-    "q": "Những bản câu hỏi có ý nghĩa nhất đối với những người thiết kế giao diên khi được hoàn tất bởi:",
+    "q": "What is the function of a loss function?",
     "opts": {
-      "A": "Khách hàng",
-      "B": "Những lập trình viên có kinh nghiệm",
-      "C": "Người dùng sản phẩm",
-      "D": "Người quản lý dự án."
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 89,
-    "q": "Sơ đồ luồng dữ liệu",
-    "opts": {
-      "A": "Đưa ra hình ảnh quan hệ giữa các đối tượng dữ liệu",
-      "B": "Đưa ra hình ảnh những chức năng biến đổi luồng dữ liệu",
-      "C": "Chỉ ra những quyết định logic chính khi chúng xuất hiện",
-      "D": "Chỉ ra sự tương tác của hệ thống với sự kiện bên ngoài."
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 90,
-    "q": "Tài liệu nào sau đây sẽ được tạo ra trong pha thiết kế hệ thống?",
-    "opts": {
-      "A": "Kế hoạch kiểm thử",
-      "B": "Mã lệnh",
-      "C": "Thiết kế chi tiết",
-      "D": "Lập kế hoạch"
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 91,
-    "q": "Các bước thiết kế phần mềm nào sau đây thuộc khía cạnh kỹ thuật?",
-    "opts": {
-      "A": "Thiết kế sơ bộ",
-      "B": "Thiết kế chi tiết",
-      "C": "Thiết kế dữ liệu",
-      "D": "Thiết kế tổng thể"
-    },
-    "ans": [
-      "B",
-      "C"
-    ],
-    "type": "mcq"
-  },
-  {
-    "id": 92,
-    "q": "Chiến lược thiết kế nào sau đây có vùng dữ liệu dùng chung?",
-    "opts": {
-      "A": "Thiết kế hướng chức năng",
-      "B": "Thiết kế hướng đối tượng",
-      "C": "Thiết kế giao diện người dùng",
-      "D": "Thiết kế sơ bộ"
+      "A": "Measure model error",
+      "B": "Store images",
+      "C": "Increase internet speed",
+      "D": "Encrypt files"
     },
     "ans": "A",
     "type": "mcq"
   },
   {
-    "id": 93,
-    "q": "Mô hình nào sau đây mà mọi dữ liệu được lưu trữ tại một cơ sở dữ liệu trung tâm có thể truy cập được bởi mọi phân hệ?",
+    "id": 89,
+    "q": "Which hardware is important for deep learning?",
     "opts": {
-      "A": "Mô hình kho dữ liệu",
-      "B": "Mô hình khách= dịch vụ",
-      "C": "Mô hình máy trừu tượng",
-      "D": "Mô hình ngang hàng"
+      "A": "Printer",
+      "B": "Scanner",
+      "C": "GPU",
+      "D": "Speaker"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": 90,
+    "q": "What is computer vision?",
+    "opts": {
+      "A": "A camera lens",
+      "B": "A web browser",
+      "C": "A programming language",
+      "D": "AI field that helps computers understand images and videos"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 91,
+    "q": "What is the main purpose of clustering?",
+    "opts": {
+      "A": "To group similar data",
+      "B": "To delete files",
+      "C": "To print documents",
+      "D": "To increase memory"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 92,
+    "q": "Which of the following is a chatbot technology?",
+    "opts": {
+      "A": "HDMI",
+      "B": "NLP",
+      "C": "SSD",
+      "D": "BIOS"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 93,
+    "q": "What is automation in AI?",
+    "opts": {
+      "A": "Performing tasks automatically",
+      "B": "Writing books manually",
+      "C": "Drawing pictures by hand",
+      "D": "Turning off computers"
     },
     "ans": "A",
     "type": "mcq"
   },
   {
     "id": 94,
-    "q": "Nguyên nhân của việc sinh lỗi do thiết kế mức thành phần trước khi thiết kế dữ liệu là:",
+    "q": "Which algorithm is inspired by biological neurons?",
     "opts": {
-      "A": "Thiết kế thành phần thường phụ thuộc vào ngôn ngữ còn thiết kế dữ liệu thì không",
-      "B": "Thiết kế dữ liệu thường dễ thực hiện hơn",
-      "C": "Thiết kế dữ liệu thường khó thực hiện hơn",
-      "D": "Cấu trúc dữ liệu thường ảnh hưởng tới cách thức mà thiết kế thành phần phải theo"
+      "A": "Decision Tree",
+      "B": "Naive Bayes",
+      "C": "KNN",
+      "D": "Neural Network"
     },
     "ans": "D",
     "type": "mcq"
   },
   {
     "id": 95,
-    "q": "Trong thiết kế cơ sở dữ liệu đâu không phải là quan hệ giữa các bảng:",
+    "q": "What does CNN stand for in deep learning?",
     "opts": {
-      "A": "1-1 (một – một)",
-      "B": "1-n (một – nhiều)",
-      "C": "n-n (nhiều – nhiều)",
-      "D": "0-1 (không – một)"
+      "A": "Central Neural Node",
+      "B": "Computer Numeric Network",
+      "C": "Convolutional Neural Network",
+      "D": "Connected Neural Number"
     },
-    "ans": "D",
+    "ans": "C",
     "type": "mcq"
   },
   {
     "id": 96,
-    "q": "Trong thiết kế cơ sở dữ liệu đâu không phải là quan hệ giữa các bảng:",
+    "q": "Which task is suitable for AI?",
     "opts": {
-      "A": "1-1 (một – một)",
-      "B": "1-n (một – nhiều)",
-      "C": "n-n (nhiều – nhiều)",
-      "D": "1-0 (một –không)"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 97,
-    "q": "Trong thiết kế cơ sở dữ liệu đâu không phải là quan hệ giữa các bảng:",
-    "opts": {
-      "A": "1-1 (một – một)",
-      "B": "1-n (một – nhiều)",
-      "C": "n-n (nhiều – nhiều)",
-      "D": "0-0 (không – không)"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 98,
-    "q": "Khi thiết kế cơ sở dữ liệu, người thiết kế cần tạo quan hệ giữa các bảng để đáp ứng?",
-    "opts": {
-      "A": "Tính rang buộc dữ liệu",
-      "B": "Tính độc lập dữ liệu",
-      "C": "Tính dễ dung",
-      "D": "Tính đơn giản hóa"
+      "A": "Image recognition",
+      "B": "Hammering nails",
+      "C": "Painting walls manually",
+      "D": "Digging soil"
     },
     "ans": "A",
     "type": "mcq"
   },
   {
-    "id": 99,
-    "q": "Khi người thiết kế cơ sở dữ liệu cần đặt một khóa chính cho mỗi bảng (thực thể) để?",
+    "id": 97,
+    "q": "What is bias in Machine Learning?",
     "opts": {
-      "A": "Phân biệt giữa các bản ghi",
-      "B": "Nhập bản ghi trùng nhau",
-      "C": "Nhập bản ghi rỗng",
-      "D": "Nhập sai dữ liệu."
+      "A": "A computer virus",
+      "B": "A systematic error in predictions",
+      "C": "A type of hardware",
+      "D": "A database language"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 98,
+    "q": "Which of the following can be generated by AI?",
+    "opts": {
+      "A": "Only paper documents",
+      "B": "Only calculators",
+      "C": "Images and text",
+      "D": "Only keyboards"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": 99,
+    "q": "What is the benefit of Machine Learning?",
+    "opts": {
+      "A": "It allows systems to improve from experience",
+      "B": "It removes all data",
+      "C": "It stops internet access",
+      "D": "It damages hardware"
     },
     "ans": "A",
     "type": "mcq"
   },
   {
     "id": 100,
-    "q": "Thủ tục phần mềm tập trung vào: ",
+    "q": "Which of the following is a famous AI model for language tasks?",
     "opts": {
-      "A": "Cấp bậc điều khiển trong một cảm nhận trừu tượng hơn ",
-      "B": "Xử lý chi tiết của mỗi module riêng biệt ",
-      "C": "Xử lý chi tiết của mỗi tạp module ",
-      "D": "Quan hệ giữa điều khiển và thủ tục "
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 101,
-    "q": "Nếu coi thường việc tái sử dụng phần mềm (software reuse), thì ________.",
-    "opts": {
-      "A": "chất lượng phần mềm sẽ giảm",
-      "B": "năng suất lao động sẽ giảm",
-      "C": "chất lượng phần mềm sẽ tăng",
-      "D": "năng suất lao động sẽ tăng"
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 102,
-    "q": "Phát biểu “xác định khái quát phạm vi, yêu cầu cũng như tính khả thi của phần mềm” là nói về bước:",
-    "opts": {
-      "A": "Phân tích thiết kế hệ thống",
-      "B": "Xác định yêu cầu hệ thống",
-      "C": "Xác định yêu cầu phần mềm",
-      "D": "Kiểm thử"
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 103,
-    "q": "Không chứng minh được tính đúng đắn của phần mềm, do vậy ________.",
-    "opts": {
-      "A": "chất lượng phần mềm sẽ giảm",
-      "B": "chất lượng phần mềm sẽ tăng",
-      "C": "độ tin cậy phần mềm sẽ tăng",
-      "D": "độ tin cậy của phần mềm sẽ giảm"
+      "A": "USB",
+      "B": "JPEG",
+      "C": "PDF",
+      "D": "GPT"
     },
     "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 104,
-    "q": "Chuẩn về một phần mềm tốt không thể đo được một cách định lượng, do vậy ________",
-    "opts": {
-      "A": "không thể đánh giá được một hệ thống đúng đắn hay không.",
-      "B": "có thể đánh giá được một hệ thống đúng đắn hay không.",
-      "C": "chất lượng phần mềm sẽ tăng",
-      "D": "chất lượng phần mềm sẽ giảm"
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 105,
-    "q": "Khái niệm \"Định ra yêu cầu\", nghĩa là:",
-    "opts": {
-      "A": "Các dịch vụ được đặc tả bằng ngôn ngữ tự nhiên, có thể dùng làm cơ sở hợp đồng giữa hai bên.",
-      "B": "Yêu cầu được viết bằng ngôn ngữ chuyên ngành để mô tả chi tiết phần mềm.",
-      "C": "Yêu cầu được đặc tả bởi các biểu đồ ngữ cảnh, đồ thị và lược đồ quan hệ.",
-      "D": "Yêu cầu được viết bằng ngôn ngữ tự nhiên về các dịch vụ mà hệ thống phải cung cấp."
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 106,
-    "q": "Trong quá trình phát triển phần mềm, giai đoạn nào có thể lặp lại nhiều lần?",
-    "opts": {
-      "A": "Đặc tả, thiết kế",
-      "B": "Đặc tả, thiết kế, kiểm định",
-      "C": "Đặc tả, lập trình, bảo trì",
-      "D": "Đặc tả, thiết kế, lập trình, kiểm định, bảo trì"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 107,
-    "q": "Trong các phát biểu sau, phát biểu nào là đúng:",
-    "opts": {
-      "A": "Thiết kế hướng đối tượng chỉ dùng cho lập trình hướng đối tượng",
-      "B": "Thiết kế hướng đối tượng có những điểm giống lập trình hướng đối tượng",
-      "C": "Thiết kế hướng đối tượng có thể dùng cho cả lập trình hướng đối tượng và lập trình hướng chức năng",
-      "D": "Thiết kế hướng đối tượng là lập trình hướng đối tượng"
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 108,
-    "q": "Trong quá trình phát triển phần mềm, giai đoạn kiểm định phần mềm có nghĩa là:",
-    "opts": {
-      "A": "Nhận biết vấn đề, bài toán thực tế, các yêu cầu mà người dùng đặt ra",
-      "B": "Xây dựng không gian giải pháp cho vấn đề",
-      "C": "Xây dựng một hệ thống thử nghiệm dựa trên yêu cầu thiết kế",
-      "D": "Thẩm định lại tính đúng đắn của giải pháp theo yêu cầu ban đầu đã đặt ra"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 109,
-    "q": "Kiểm thử là việc:",
-    "opts": {
-      "A": "Phát hiện và sửa lỗi phần logic bên trong chương trình hay còn gọi là lỗi lập trình",
-      "B": "Kiểm tra xem phần mềm có đảm bảo tính hiệu quả trong thực hiện hay không",
-      "C": "Kiểm tra xem phần mềm có hoạt động như mong muốn không, phát hiện và sửa lỗi về chức năng như thiếu hụt, sai sót về chức năng",
-      "D": "Tất cả các ý trên"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 110,
-    "q": "Lý do khiến người phát triển phần mềm phải tạo nguyên mẫu:",
-    "opts": {
-      "A": "Tạo nguyên mẫu làm sơ sở cho việc viết đặc tả cho sản phẩm",
-      "B": "Tạo nguyên mẫu dùng làm bản test cho phần mềm sau này",
-      "C": "Tạo nguyên mẫu giúp hạ thấp chi phí sửa lỗi",
-      "D": "Tất cả đều đúng"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 111,
-    "q": "Trong các mô hình phát triển phần mềm sau, mô hình nào chính là mô hình thác nước:",
-    "opts": {
-      "A": "Mô hình RAD",
-      "B": "Mô hình tuần tự tuyến tính",
-      "C": "Mô hình bản mẫu",
-      "D": "Mô hình xoắn ốc"
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 112,
-    "q": "Tạo nguyên mẫu giúp cho chi phí sửa lỗi giảm xuống, vì:",
-    "opts": {
-      "A": "Nếu có bản nguyên mẫu, thì phần mềm không cần phải bảo trì",
-      "B": "Nếu khách hàng chấp nhận nguyên mẫu, thì khách hàng cũng chấp nhận phần mềm chính thức",
-      "C": "Tạo nguyên mẫu cho phép phát hiện sớm các lỗi, giúp cho việc sửa chữa diễn ra vào thời kỳ đầu của quá trình phát triển phần mềm. Vì vậy chi phí bảo trì giảm",
-      "D": "Tạo nguyên mẫu dùng làm tài liệu cho người sử dụng, vì vậy không tốn kém tiền đào tạo"
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 113,
-    "q": "Trong các mô hình sau, mô hình nào không phải là mô hình phát triển phần mềm:",
-    "opts": {
-      "A": "Mô hình tuần tự tuyến tính",
-      "B": "Mô hình bản mẫu",
-      "C": "Mô hình song song",
-      "D": "Mô hình tương tranh"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 114,
-    "q": "Xác định yêu cầu phi chức năng, nghĩa là:",
-    "opts": {
-      "A": "Đặc tả các yêu cầu của người dùng",
-      "B": "Đặc tả tất cả các nhu cầu của người dùng mà hệ thống phải cung cấp",
-      "C": "Đặc tả tất cả các dịch vụ mà hệ thống phải cung cấp",
-      "D": "Đặc tả tất cả các ràng buộc mà hệ thống phải tuân theo"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 115,
-    "q": "\"Xác định yêu cầu chức năng\", nghĩa là:",
-    "opts": {
-      "A": "Đặc tả tất cả các ràng buộc mà hệ thống phải tuân theo",
-      "B": "Đặc tả các yêu cầu của người dùng",
-      "C": "Đặc tả tất cả các dịch vụ mà hệ thống phải cung cấp",
-      "D": "Đặc tả tất cả các nhu cầu của người dùng mà hệ thống phải cung cấp"
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 116,
-    "q": "Khái niệm \"Đặc tả thiết kế\", nghĩa là:",
-    "opts": {
-      "A": "Yêu cầu được đặc tả bởi các biểu đồ ngữ cảnh, đồ thị và lược đồ quan hệ",
-      "B": "Yêu cầu được viết bằng ngôn ngữ chuyên ngành để mô tả chi tiết phần mềm",
-      "C": "Các dịch vụ được đặc tả một cách chi tiết, chính xác có thể dùng làm cơ sở hợp đồng giữa hai bên",
-      "D": "Yêu cầu được viết bằng ngôn ngữ tự nhiên về các dịch vụ mà hệ thống phải cung cấp"
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 117,
-    "q": "Phát biểu: “Biểu diễn thiết kế bằng một hay một số ngôn ngữ lập trình và dịch thành mã thực hiện được. Là bước chuyển hóa thiết kế chi tiết thành chương trình mà cuối cùng được biên dịch thành các lệnh mà máy thực hiện được” là nói về bước:",
-    "opts": {
-      "A": "Phân tích thiết kế hệ thống",
-      "B": "Mã hóa (lập trình)",
-      "C": "Xác định yêu cầu phần mềm",
-      "D": "Kiểm thử"
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 118,
-    "q": "Phát biểu: “Bao gồm các công việc sửa các lỗi phát sinh khi áp dụng chương trình hoặc chỉnh sửa những thay đổi trong môi trường bên ngoài (hệ điều hành mới, thiết bị ngoại vi mới, yêu cầu người dùng) hoặc yêu cầu bổ sung chức năng hay nâng cao hiệu năng của chương trình” là đang nói về bước:",
-    "opts": {
-      "A": "Phân tích thiết kế hệ thống",
-      "B": "Bảo trì",
-      "C": "Mã hóa (lập trình)",
-      "D": "Kiểm thử"
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 119,
-    "q": "Độ đo phần mềm theo kích cỡ là?",
-    "opts": {
-      "A": "Cách đo gián tiếp cho phần mềm và tiến trình phát triển của nó",
-      "B": "Cách đo gián tiếp cho dữ liệu và tài liệu phân tích của nó",
-      "C": "Cách đo trực tiếp cho phần mềm và tiến trình phát triển của nó",
-      "D": "Cách đo trực tiếp cho dữ liệu và tài liệu phân tích của nó"
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 120,
-    "q": "Độ đo phần mềm theo điểm chức năng là?",
-    "opts": {
-      "A": "Cách đo trực tiếp cho phần mềm và tiến trình phát triển của nó",
-      "B": "Cách đo gián tiếp cho phần mềm và tiến trình phát triển của nó",
-      "C": "Cách đo gián tiếp cho dữ liệu và tài liệu phân tích của nó",
-      "D": "Cách đo trực tiếp cho phần mềm và tài liệu phân tích của nó"
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 121,
-    "q": "Khái niệm \"Đặc tả yêu cầu\", nghĩa là:",
-    "opts": {
-      "A": "Yêu cầu được viết bằng ngôn ngữ tự nhiên về các dịch vụ mà hệ thống phải cung cấp",
-      "B": "Yêu cầu được viết bằng ngôn ngữ chuyên ngành để mô tả chi tiết phần mềm",
-      "C": "Yêu cầu được đặc tả bởi các biểu đồ ngữ cảnh, đồ thị và lược đồ quan hệ",
-      "D": "Các dịch vụ được đặc tả một cách chi tiết, chính xác có thể dùng làm cơ sở hợp đồng giữa hai bên"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 122,
-    "q": "Trong quy trình RUP luồng công việc nào là luồng công việc hỗ trợ?",
-    "opts": {
-      "A": "Business modeling",
-      "B": "Requirement",
-      "C": "Configuration and Change Management",
-      "D": "Implemention"
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 123,
-    "q": "Trong quy trình RUP luồng công việc nào là luồng công việc chính ?",
-    "opts": {
-      "A": "Project Management",
-      "B": "Configuration and Change Management",
-      "C": "Enviroment",
-      "D": "Test"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 124,
-    "q": "Hệ thống phần mềm phải tuân thủ các ràng buộc về: thời gian, tốc độ xử lý",
-    "opts": {
-      "A": "Phi chức năng",
-      "B": "Chức năng",
-      "C": "Chức năng và phi chức năng",
-      "D": "Hệ thống phần cứng"
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 125,
-    "q": "Trong quá trình phát triển phần mềm, giai đoạn đặc tả phần mềm có nghĩa là:",
-    "opts": {
-      "A": "Xây dựng không gian giải pháp cho vấn đề.",
-      "B": "Xây dựng một hệ thống thực hiện được dựa vào thiết kế.",
-      "C": "Thẩm định lại tính đúng đắn của giải pháp theo yêu cầu ban đầu đã đặt ra",
-      "D": "Nhận biết vấn đề, bài toán thực tế, các yêu cầu mà người dùng đặt ra."
-    },
-    "ans": "A",
     "type": "mcq"
   }
 ]

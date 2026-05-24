@@ -15,6 +15,10 @@
     }
 
     tabs.forEach(t => t.addEventListener("click", () => showTab(t.dataset.tab)));
+    const initialTab = document.body.dataset.initialTab;
+    if (initialTab && document.querySelector(`.tab[data-tab="${initialTab}"]`)) {
+        showTab(initialTab);
+    }
     document.querySelectorAll("[data-go]").forEach(a => {
         a.addEventListener("click", e => {
             e.preventDefault();

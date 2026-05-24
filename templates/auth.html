@@ -14,7 +14,7 @@
           integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
           crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
-<body class="auth-body">
+<body class="auth-body" data-initial-tab="{{ initial_tab | default('signin') }}">
     <div class="auth-bg-shapes" aria-hidden="true">
         <span class="shape s1"></span>
         <span class="shape s2"></span>
@@ -31,7 +31,7 @@
             <p>Ngân hàng câu hỏi tự cập nhật, chấm điểm tức thì,
                chatbot tra cứu giáo trình - tất cả trong một nền tảng.</p>
             <ul class="hero-features">
-                <li><i class="fa-solid fa-circle-check"></i> Hơn 19 môn học có sẵn đề ôn tập</li>
+                <li><i class="fa-solid fa-circle-check"></i> Hơn {{ subjects_count | default(20) }} môn học có sẵn đề ôn tập</li>
                 <li><i class="fa-solid fa-circle-check"></i> Xác thực OTP an toàn qua email</li>
                 <li><i class="fa-solid fa-circle-check"></i> Hỗ trợ câu hỏi nhiều đáp án</li>
                 <li><i class="fa-solid fa-circle-check"></i> Chatbot tra cứu tài liệu PDF</li>
