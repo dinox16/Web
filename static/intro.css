@@ -3,9 +3,21 @@
    ============================================================ */
 
 body.intro-body {
-    align-items: flex-start;
-    padding: 0;
+    margin: 0;
+    font-family: 'Inter', 'Segoe UI', Tahoma, sans-serif;
+    color: #f1f5f9;
+    background: linear-gradient(135deg, #0b1437 0%, #1a2872 55%, #1e40af 100%);
+    overflow-x: hidden;
     min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+}
+
+body.intro-body .auth-bg-shapes .shape {
+    opacity: 0.35;
 }
 
 .intro-page {
@@ -15,7 +27,7 @@ body.intro-body {
     max-width: 1100px;
     margin: 0 auto;
     padding: 28px 24px 48px;
-    color: #f8fafc;
+    color: #f1f5f9;
 }
 
 .intro-header {
@@ -34,6 +46,7 @@ body.intro-body {
     font-weight: 700;
     font-size: 1.05rem;
     letter-spacing: .2px;
+    color: #ffffff;
 }
 
 .intro-logo i {
@@ -80,14 +93,15 @@ body.intro-body {
 }
 
 .intro-body .btn-outline {
-    background: rgba(255, 255, 255, .1);
-    color: #f8fafc;
-    border: 1px solid rgba(255, 255, 255, .25);
+    background: rgba(15, 23, 42, 0.35);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.45);
     backdrop-filter: blur(8px);
 }
 
 .intro-body .btn-outline:hover {
-    background: rgba(255, 255, 255, .18);
+    background: rgba(15, 23, 42, 0.55);
+    border-color: rgba(255, 255, 255, 0.65);
 }
 
 .intro-body .btn-lg {
@@ -108,8 +122,9 @@ body.intro-body {
     margin: 0 0 20px;
     padding: 8px 16px;
     border-radius: 999px;
-    background: rgba(255, 255, 255, .12);
-    border: 1px solid rgba(255, 255, 255, .2);
+    background: rgba(15, 23, 42, 0.45);
+    border: 1px solid rgba(147, 197, 253, 0.45);
+    color: #e0f2fe;
     font-size: .88rem;
     font-weight: 500;
 }
@@ -120,6 +135,7 @@ body.intro-body {
     font-weight: 800;
     line-height: 1.15;
     letter-spacing: -.02em;
+    color: #ffffff;
 }
 
 .intro-lead {
@@ -127,7 +143,7 @@ body.intro-body {
     max-width: 580px;
     font-size: 1.05rem;
     line-height: 1.65;
-    color: rgba(248, 250, 252, .88);
+    color: #cbd5e1;
 }
 
 .intro-cta {
@@ -242,7 +258,11 @@ body.intro-body {
     text-align: center;
     padding-top: 8px;
     font-size: .88rem;
-    color: rgba(248, 250, 252, .75);
+    color: #94a3b8;
+}
+
+.intro-footer b {
+    color: #e2e8f0;
 }
 
 .intro-footer-actions {
@@ -250,9 +270,9 @@ body.intro-body {
 }
 
 .intro-footer-actions a {
-    color: #93c5fd;
+    color: #7dd3fc;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .intro-footer-actions a:hover {
