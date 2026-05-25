@@ -2,12 +2,11 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Program For Student - Giới thiệu</title>
+    <title>Program For Student — Ôn tập thông minh</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#0b1437">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta name="description" content="Nền tảng ôn tập trắc nghiệm, chấm điểm tức thì và chatbot tra cứu cho sinh viên.">
+    <meta name="theme-color" content="#09090b">
     <link rel="stylesheet" href="{{ url_for('static', filename='intro.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='mobile.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -16,107 +15,196 @@
           crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body class="intro-body">
-    <div class="auth-bg-shapes" aria-hidden="true">
-        <span class="shape s1"></span>
-        <span class="shape s2"></span>
-        <span class="shape s3"></span>
+    <div class="intro-bg" aria-hidden="true">
+        <div class="intro-grid"></div>
+        <div class="intro-orb intro-orb-1"></div>
+        <div class="intro-orb intro-orb-2"></div>
+        <div class="intro-orb intro-orb-3"></div>
     </div>
 
-    <div class="intro-page">
-        <header class="intro-header">
-            <div class="intro-logo">
-                <i class="fa-solid fa-graduation-cap"></i>
-                <span>Program For Student</span>
-            </div>
-            <nav class="intro-nav">
-                <a href="{{ url_for('auth', tab='signin') }}" class="btn-outline">
-                    <i class="fa-solid fa-right-to-bracket"></i> Đăng nhập
-                </a>
-                <a href="{{ url_for('auth', tab='signup') }}" class="btn-primary">
-                    <i class="fa-solid fa-user-plus"></i> Đăng ký
-                </a>
-            </nav>
-        </header>
+    <header class="intro-nav">
+        <a href="{{ url_for('intro') }}" class="intro-brand">
+            <span class="intro-brand-mark"><i class="fa-solid fa-graduation-cap"></i></span>
+            <span class="intro-brand-name">Program For Student</span>
+        </a>
+        <nav class="intro-nav-links" aria-label="Điều hướng chính">
+            <a href="#features">Tính năng</a>
+            <a href="#how">Hướng dẫn</a>
+        </nav>
+        <div class="intro-nav-actions">
+            <a href="{{ url_for('auth', tab='signin') }}" class="btn-ghost">Đăng nhập</a>
+            <a href="{{ url_for('auth', tab='signup') }}" class="btn-primary">Đăng ký miễn phí</a>
+        </div>
+    </header>
 
+    <main class="intro-main">
         <section class="intro-hero">
-            <p class="intro-badge"><i class="fa-solid fa-sparkles"></i> Nền tảng ôn tập cho sinh viên</p>
-            <h1>Học thông minh hơn,<br>luyện đề hiệu quả hơn.</h1>
-            <p class="intro-lead">
-                Program For Student tập hợp ngân hàng câu hỏi theo từng môn học,
-                chấm điểm tự động và hỗ trợ tra cứu tài liệu qua chatbot —
-                giúp bạn ôn thi mọi lúc, mọi nơi trên một giao diện thống nhất.
-            </p>
-            <div class="intro-cta">
-                <a href="{{ url_for('auth', tab='signin') }}" class="btn-primary btn-lg">
-                    <i class="fa-solid fa-arrow-right-to-bracket"></i> Bắt đầu đăng nhập
-                </a>
-                <a href="{{ url_for('auth', tab='signup') }}" class="btn-outline btn-lg">
-                    <i class="fa-solid fa-user-plus"></i> Tạo tài khoản mới
-                </a>
+            <div class="intro-hero-content">
+                <p class="intro-eyebrow">
+                    <span class="intro-eyebrow-dot"></span>
+                    Nền tảng ôn tập cho sinh viên CNTT &amp; liên quan
+                </p>
+                <h1 class="intro-title">
+                    Ôn thi nhanh hơn.<br>
+                    <span class="intro-title-gradient">Chấm điểm ngay lập tức.</span>
+                </h1>
+                <p class="intro-subtitle">
+                    Hơn {{ subject_count }} môn học, ngân hàng câu hỏi cập nhật,
+                    xác thực OTP an toàn và chatbot tra cứu — tất cả trong một trải nghiệm gọn, tập trung.
+                </p>
+                <div class="intro-hero-cta">
+                    <a href="{{ url_for('auth', tab='signup') }}" class="btn-primary btn-xl">
+                        Bắt đầu miễn phí
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="{{ url_for('auth', tab='signin') }}" class="btn-secondary btn-xl">
+                        Tôi đã có tài khoản
+                    </a>
+                </div>
+                <ul class="intro-stats" aria-label="Thống kê nền tảng">
+                    <li>
+                        <strong>{{ subject_count }}+</strong>
+                        <span>Môn học</span>
+                    </li>
+                    <li>
+                        <strong>&lt;1s</strong>
+                        <span>Chấm điểm</span>
+                    </li>
+                    <li>
+                        <strong>OTP</strong>
+                        <span>Bảo mật email</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="intro-hero-visual" aria-hidden="true">
+                <div class="intro-mockup">
+                    <div class="intro-mockup-bar">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="intro-mockup-body">
+                        <div class="mock-row mock-header"></div>
+                        <div class="mock-cards">
+                            <div class="mock-card mock-card-active">
+                                <span class="mock-icon"><i class="fa-solid fa-store"></i></span>
+                                <div>
+                                    <span class="mock-tag">Kinh tế</span>
+                                    <span class="mock-title">Kỹ thuật TMĐT</span>
+                                </div>
+                            </div>
+                            <div class="mock-card">
+                                <span class="mock-icon"><i class="fa-solid fa-robot"></i></span>
+                                <div>
+                                    <span class="mock-tag">Tin học</span>
+                                    <span class="mock-title">Deep Learning</span>
+                                </div>
+                            </div>
+                            <div class="mock-card">
+                                <span class="mock-icon"><i class="fa-solid fa-database"></i></span>
+                                <div>
+                                    <span class="mock-tag">Tin học</span>
+                                    <span class="mock-title">Cơ sở dữ liệu</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mock-quiz">
+                            <div class="mock-progress"><span style="width:72%"></span></div>
+                            <p class="mock-q">Câu 12 · Trắc nghiệm</p>
+                            <div class="mock-opts">
+                                <span class="mock-opt mock-opt-on">A</span>
+                                <span class="mock-opt">B</span>
+                                <span class="mock-opt">C</span>
+                                <span class="mock-opt">D</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="intro-features">
-            <h2>Tính năng chính</h2>
-            <div class="feature-grid">
-                <article class="feature-card">
-                    <span class="feature-icon"><i class="fa-solid fa-book-open"></i></span>
-                    <h3>{{ subject_count }}+ môn học</h3>
-                    <p>Đề ôn tập theo mã môn, cập nhật từ ngân hàng câu hỏi JSON.</p>
+        <section id="features" class="intro-section">
+            <div class="intro-section-head">
+                <p class="intro-label">Tính năng</p>
+                <h2>Mọi thứ bạn cần để ôn thi hiệu quả</h2>
+                <p>Thiết kế tối giản, tốc độ ưu tiên — lấy cảm hứng từ các nền tảng học tập và SaaS hàng đầu.</p>
+            </div>
+            <div class="intro-bento">
+                <article class="bento bento-lg">
+                    <div class="bento-icon"><i class="fa-solid fa-book-open"></i></div>
+                    <h3>{{ subject_count }}+ môn, một dashboard</h3>
+                    <p>Lọc theo nhóm, tìm theo mã học phần (IS385, CS316, ENG347…). Mỗi môn gắn bộ đề JSON riêng.</p>
                 </article>
-                <article class="feature-card">
-                    <span class="feature-icon"><i class="fa-solid fa-bolt"></i></span>
-                    <h3>Chấm điểm tức thì</h3>
-                    <p>Hỗ trợ trắc nghiệm nhiều đáp án và câu hỏi tự luận ngắn.</p>
+                <article class="bento">
+                    <div class="bento-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h3>Chấm tức thì</h3>
+                    <p>Trắc nghiệm đơn/đa đáp án và câu ngắn có từ khóa.</p>
                 </article>
-                <article class="feature-card">
-                    <span class="feature-icon"><i class="fa-solid fa-shield-halved"></i></span>
-                    <h3>Bảo mật OTP</h3>
-                    <p>Đăng ký và khôi phục mật khẩu qua xác thực email.</p>
+                <article class="bento">
+                    <div class="bento-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>OTP qua email</h3>
+                    <p>Đăng ký và khôi phục mật khẩu an toàn, không lưu mật khẩu thô.</p>
                 </article>
-                <article class="feature-card">
-                    <span class="feature-icon"><i class="fa-solid fa-robot"></i></span>
+                <article class="bento">
+                    <div class="bento-icon"><i class="fa-solid fa-robot"></i></div>
                     <h3>Chatbot AI</h3>
-                    <p>Tra cứu giáo trình và tài liệu PDF theo từng môn (sắp ra mắt).</p>
+                    <p>Tra cứu giáo trình PDF theo môn — sẵn sàng mở rộng backend.</p>
+                </article>
+                <article class="bento bento-wide">
+                    <div class="bento-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                    <h3>Responsive trên mọi thiết bị</h3>
+                    <p>Ôn trên điện thoại, tablet hay laptop với giao diện thống nhất và dễ thao tác.</p>
                 </article>
             </div>
         </section>
 
-        <section class="intro-steps">
-            <h2>Cách sử dụng</h2>
-            <ol class="steps-list">
+        <section id="how" class="intro-section intro-section-alt">
+            <div class="intro-section-head">
+                <p class="intro-label">Hướng dẫn</p>
+                <h2>Bắt đầu trong 3 bước</h2>
+            </div>
+            <ol class="intro-timeline">
                 <li>
-                    <span class="step-num">1</span>
+                    <span class="timeline-step">01</span>
                     <div>
-                        <strong>Đăng ký tài khoản</strong>
-                        <p>Xác nhận email bằng mã OTP gửi về hộp thư của bạn.</p>
+                        <h3>Tạo tài khoản</h3>
+                        <p>Đăng ký email, nhập mã OTP xác nhận — xong trong vài phút.</p>
                     </div>
                 </li>
                 <li>
-                    <span class="step-num">2</span>
+                    <span class="timeline-step">02</span>
                     <div>
-                        <strong>Chọn môn trên Dashboard</strong>
-                        <p>Lọc theo nhóm môn hoặc tìm nhanh bằng mã học phần.</p>
+                        <h3>Chọn môn trên Dashboard</h3>
+                        <p>Tìm môn theo tên hoặc mã, vào làm bài trắc nghiệm ngay.</p>
                     </div>
                 </li>
                 <li>
-                    <span class="step-num">3</span>
+                    <span class="timeline-step">03</span>
                     <div>
-                        <strong>Làm bài và xem kết quả</strong>
-                        <p>Nộp bài để nhận điểm và chi tiết từng câu ngay lập tức.</p>
+                        <h3>Nộp bài &amp; xem chi tiết</h3>
+                        <p>Điểm tổng và phân tích từng câu — biết ngay phần cần ôn thêm.</p>
                     </div>
                 </li>
             </ol>
         </section>
 
-        <footer class="intro-footer">
-            <p>© 2025 Program For Student — Thiết kế bởi <b>TKMxDino</b></p>
-            <div class="intro-footer-actions">
-                <a href="{{ url_for('auth', tab='signin') }}">Đăng nhập</a>
-                <span aria-hidden="true">·</span>
-                <a href="{{ url_for('auth', tab='signup') }}">Đăng ký</a>
+        <section class="intro-cta-band">
+            <div class="intro-cta-inner">
+                <h2>Sẵn sàng ôn tập thông minh hơn?</h2>
+                <p>Tham gia miễn phí — không cần thẻ tín dụng.</p>
+                <div class="intro-cta-actions">
+                    <a href="{{ url_for('auth', tab='signup') }}" class="btn-primary btn-xl">Tạo tài khoản</a>
+                    <a href="{{ url_for('auth', tab='signin') }}" class="btn-ghost btn-xl">Đăng nhập</a>
+                </div>
             </div>
-        </footer>
-    </div>
+        </section>
+    </main>
+
+    <footer class="intro-footer">
+        <p>© 2025 Program For Student · Thiết kế <b>TKMxDino</b></p>
+        <div class="intro-footer-links">
+            <a href="{{ url_for('auth', tab='signin') }}">Đăng nhập</a>
+            <a href="{{ url_for('auth', tab='signup') }}">Đăng ký</a>
+        </div>
+    </footer>
 </body>
 </html>

@@ -63,6 +63,9 @@ subjects = [
     {"name": "Anh Văn Chuyên Ngành Cho Công Nghệ Thông Tin", "slug": "eng347",
      "icon": "fa-solid fa-pen-fancy", "group": "Ngoại ngữ",
      "desc": "Viết kỹ thuật, CV, thư xin việc"},
+    {"name": "Kỹ thuật thương mại điện tử", "slug": "is385",
+     "icon": "fa-solid fa-store", "group": "Kinh tế",
+     "desc": "HTML, web, thương mại điện tử"},
 ]
 
 

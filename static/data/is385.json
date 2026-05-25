@@ -1,0 +1,1730 @@
+[
+    {
+      "id": 1,
+      "q": "Thế nào là ứng dụng thương mại điện tử?",
+      "opts": {
+        "A": "Là loại hình mua bán hàng hóa thông thường",
+        "B": "Là một loại ứng dụng Web",
+        "C": "Là giao dịch tiền tệ",
+        "D": "Là loại hình trao đổi thư điện tử"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 2,
+      "q": "Đâu là tag tạo ra chữ in nghiêng?",
+      "opts": {
+        "A": "`<i>`",
+        "B": "`<italics>`",
+        "C": "`<i>`",
+        "D": "`<italic>`"
+      },
+      "ans": "",
+      "type": "mcq"
+    },
+    {
+      "id": 3,
+      "q": "Trình soạn thảo nào có thể tạo trang web dạng HTML?",
+      "opts": {
+        "A": "Notepad, Wordpad, dev C, Adobe Dreamweaver",
+        "B": "Adobe Dreamweaver, Tubo C, Notepad, Sublime Text",
+        "C": "Notepad, Wordpad, Netbean, Visual Studio Code",
+        "D": "Notepad, Wordpad, Visual Studio Code, Sublime Text"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 4,
+      "q": "Từ HTML là từ viết tắt của từ nào?",
+      "opts": {
+        "A": "Hyperlinks and Text Markup Language",
+        "B": "Home Tool Markup Language",
+        "C": "Hyper Text Markup Language",
+        "D": "Tất cả đều sai"
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": 5,
+      "q": "Ai (tổ chức nào) tạo ra Web standards?",
+      "opts": {
+        "A": "The World Wide Web Consortium",
+        "B": "Microsoft",
+        "C": "Netscape",
+        "D": "Tất cả đều sai"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": 6,
+      "q": "Phát biểu nào sau đây là đúng?",
+      "opts": {
+        "A": "Web tĩnh là trang web không có hình động",
+        "B": "HTML là ngôn ngữ định dạng siêu văn bản",
+        "C": "Web động là trang web có hình động",
+        "D": "Tất cả đều sai"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 7,
+      "q": "Khi người dùng gõ từ khóa tìm kiếm trên Google, từ khóa đó được liệt kê trong thẻ nào?",
+      "opts": {
+        "A": "`<head>`",
+        "B": "`<article>`",
+        "C": "`<meta>`",
+        "D": "`<div>`"
+      },
+      "ans": "",
+      "type": "mcq"
+    },
+    {
+      "id": 8,
+      "q": "Đặc trưng của thương mại điện tử?",
+      "opts": {
+        "A": "Không tiếp xúc, có sự tham gia ít nhất 2 chủ thể, không giới hạn phạm vi.",
+        "B": "Không giới hạn biên giới, tiếp xúc trực tiếp",
+        "C": "Không tiếp xúc trực tiếp, không giới hạn phạm vi, có sự tham gia ít nhất 3 chủ thể …",
+        "D": "Không cần kho lưu trữ, thông tin chính là thị trường"
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": 9,
+      "q": "Muán liên kết HTML với 1 file định nghĩa CSS ta dùng dòng nào sau đây?",
+      "opts": {
+        "A": "`<style src=\"mystyle.css\">`",
+        "B": "`<link rel=\"stylesheet\" type=\"text/css\" href=\"mystyle.css\">`",
+        "C": "`<style href=\"mystyle.css\">`",
+        "D": "`<link rel=\"stylesheet\" type=\"text/css\" src=\"mystyle.css\">`"
+      },
+      "ans": "",
+      "type": "mcq"
+    },
+    {
+      "id": 10,
+      "q": "Đâu là tag tạo ra chữ in đậm?",
+      "opts": {
+        "A": "`<b>`",
+        "B": "`bold`",
+        "C": "`<bld>`",
+        "D": "`<bb>`"
+      },
+      "ans": "",
+      "type": "mcq"
+    },
+    {
+      "id": 11,
+      "q": "Đâu là tag tạo ra màu nền của web?",
+      "opts": {
+        "A": "`<body color=\"yellow\">`",
+        "B": "`<body bgcolor=\"yellow\">`",
+        "C": "`<background>yellow</background>`",
+        "D": "`<body background-color=\"yellow\">`"
+      },
+      "ans": "",
+      "type": "mcq"
+    },
+    {
+      "id": 12,
+      "q": "Đâu là tag tạo ra liên kết (links) trong web?",
+      "opts": {
+        "A": "`<a url=\"http://www.w3schools.com\">W3Schools.com</a>`",
+        "B": "`<a>http://www.w3schools.com</a>`",
+        "C": "`<a href=\"http://www.w3schools.com\">W3Schools</a>`",
+        "D": "`<a name=\"http://www.w3schools.com\">W3Schools.com</a>`"
+      },
+      "ans": "",
+      "type": "mcq"
+    },
+    {
+      "id": 13,
+      "q": "Các chủ thể trong loại hình giao dịch thương mại điện tử?",
+      "opts": {
+        "A": "Người tiêu dùng, Doanh nghiệp, Nhà cung cấp mạng",
+        "B": "Người tiêu dùng, Doanh nghiệp",
+        "C": "Người tiêu dùng, Doanh nghiệp, Nhà cung cấp mạng, Chính phủ",
+        "D": "Người tiêu dùng, Doanh nghiệp, Chính phủ"
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": 14,
+      "q": "Đâu là tag tạo ra tiêu đề web kích cỡ lớn nhất?",
+      "opts": {
+        "A": "`<heading>`",
+        "B": "`<h1>`",
+        "C": "`<h6>`",
+        "D": "`<head>`"
+      },
+      "ans": "",
+      "type": "mcq"
+    },
+    {
+      "id": 15,
+      "q": "Tag nào dùng để chèn 1 hình vào web?",
+      "opts": {
+        "A": "`<image src=\"image.jpg\">`",
+        "B": "`<img>image.jpg</img>`",
+        "C": "`<img src=\"image.jpg\">`",
+        "D": "`<img href=\"image.jpg\">`"
+      },
+      "ans": "",
+      "type": "mcq"
+    },
+    {
+      "id": 16,
+      "q": "Tag nào tạo ra 1 text input field?",
+      "opts": {
+        "A": "`<textfield>`",
+        "B": "`<textinput type=\"text\">`",
+        "C": "`<input type=\"text\">`",
+        "D": "`<input type=\"textfield\">`"
+      },
+      "ans": "",
+      "type": "mcq"
+    },
+    {
+      "id": 17,
+      "q": "Tag nào tạo ra 1 drop-down list?",
+      "opts": {
+        "A": "`<select>`",
+        "B": "`<list>`",
+        "C": "`<input type=\"dropdown\">`",
+        "D": "`<input type=\"list\">`"
+      },
+      "ans": "",
+      "type": "mcq"
+    },
+    {
+      "id": 18,
+      "q": "CSS là viết tắt của?",
+      "opts": {
+        "A": "Creative Style Sheets",
+        "B": "Computer Style Sheets",
+        "C": "Cascading Style Sheets",
+        "D": "Colorful Style Sheets"
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": 19,
+      "q": "Đặt dòng liên kết với file CSS ở vùng nào trong file HTML?",
+      "opts": {
+        "A": "In the `<body>` section",
+        "B": "In the `<head>` section",
+        "C": "At the top of the document",
+        "D": "At the end of the document"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 20,
+      "q": "Tag nào định nghĩa CSS ở ngay trong file HTML?",
+      "opts": {
+        "A": "`<css>`",
+        "B": "`<script>`",
+        "C": "`<style>`",
+        "D": "`<stype>`"
+      },
+      "ans": "",
+      "type": "mcq"
+    },
+    {
+      "id": 21,
+      "q": "Dòng nào tuân theo đúng cú pháp của CSS?",
+      "opts": {
+        "A": "body {color: black}",
+        "B": "{body;color:black}",
+        "C": "body:color=black",
+        "D": "{body:color=black(body}"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": 22,
+      "q": "Làm thế nào để quy định màu của chữ (text)?",
+      "opts": {
+        "A": "text-color=",
+        "B": "fgcolor:",
+        "C": "color:",
+        "D": "text-color:"
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": 23,
+      "q": "Thuộc tính nào làm chữ trong tag p trở thành chữ đậm?",
+      "opts": {
+        "A": "{text-size:bold}",
+        "B": "`<p style=\"font-size:bold\">`",
+        "C": "`<p style=\"text-size:bold\">`",
+        "D": "p {font-weight:bold}"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 24,
+      "q": "Bỏ gạch chân cho liên kết (thẻ a)?",
+      "opts": {
+        "A": "a {decoration:no underline}",
+        "B": "a {text-decoration:no underline}",
+        "C": "a {underline:none}",
+        "D": "a {text-decoration:none}"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 25,
+      "q": "JavaScript là ngôn ngữ xử lý ở:",
+      "opts": {
+        "A": "Client",
+        "B": "Server",
+        "C": "Server/client",
+        "D": "Không có dạng nào."
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": 26,
+      "q": "Javascript là ngôn ngữ thông dịch hay biên dịch?",
+      "opts": {
+        "A": "Thông dịch",
+        "B": "Biên dịch",
+        "C": "Thông dịch và Biên dịch",
+        "D": "Không có dạng nào ở trên"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": 27,
+      "q": "Phương thức viết chương trình của Javascript như thế nào?",
+      "opts": {
+        "A": "Viết riêng một trang",
+        "B": "Viết chung với HTML",
+        "C": "Cả hai dạng",
+        "D": "Không có dạng nào."
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": 28,
+      "q": "Javascript là ngôn ngữ kịch bản có giấu được mã nguồn không?",
+      "opts": {
+        "A": "Không giấu được vì các kịch bản chạy ở client.",
+        "B": "Giấu được vì chương trình hoạt động độc lập với trình duyệt",
+        "C": "Không giấu được vì các kịch bản chạy ở Server.",
+        "D": "Tất cả phát biểu trên đều sai."
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": 29,
+      "q": "Phần mở rộng của tập tin HTML là?",
+      "opts": {
+        "A": ".htm",
+        "B": ".html",
+        "C": "xhtml",
+        "D": ".htm và .html"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 30,
+      "q": "Đâu là tag để xuống dòng trong web?",
+      "opts": {
+        "A": "`<lb>`",
+        "B": "`<br>`",
+        "C": "`<break>`",
+        "D": "`<p>` --- ### PHẦN II: C# & .NET FRAMEWORK CƠ BẢN"
+      },
+      "ans": "",
+      "type": "mcq"
+    },
+    {
+      "id": 31,
+      "q": "Common Language Runtime cung cấp những tính năng nào?",
+      "opts": {
+        "A": "Quản lý bộ nhớ tự động, tương thích ngôn ngữ.",
+        "B": "Quản lý bộ nhớ tự động, tương thích ngôn ngữ, nền tảng độc lập, quản lý an ninh, cung cấp kiểu an toàn.",
+        "C": "Quản lý an ninh, cung cấp kiểu an toàn.",
+        "D": "Quản lý bộ nhớ tự động, nền tảng độc lập, quản lý an ninh, cung cấp kiểu an toàn."
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 32,
+      "q": "LINQ là tính năng xuất hiện từ phiên bản nào?",
+      "opts": {
+        "A": ".NET Framework 3.0",
+        "B": ".NET Framework 3.5",
+        "C": ".NET Framework 4.0",
+        "D": ".NET Framework 4.5"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 33,
+      "q": ".NET Framework có các thành phần nào sau đây?",
+      "opts": {
+        "A": "Common Language Runtime",
+        "B": ".NET Framework Base Classes",
+        "C": "Giao diện người dùng",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 34,
+      "q": "Phát biểu nào sau đây là đúng?",
+      "opts": {
+        "A": "Một vòng lặp là một chuỗi các sự kiện, hành động lặp lại đến khi thỏa mãn điều kiện dừng nào đó.",
+        "B": "Vòng lặp vô tận là một chuỗi các sự kiện, hành động lặp lại vô tận do không bao giờ thỏa mãn điều kiện dừng.",
+        "C": "Vòng lặp là chuỗi các sự kiện, hành động lặp đi lặp lại khi thỏa mãn điều kiện nào đó. Vòng lặp sẽ kết thúc khi không còn thỏa mãn điều kiện lặp nữa.",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": 35,
+      "q": "Khai báo tập hợp thư viện như sau: `Dictionary<int, string> thuvien = new Dictionary<int, string>();` Câu lệnh: `Console.WriteLine(thuvien.ContainsKey(4))` cho kết quả là gì?",
+      "opts": {
+        "A": "True",
+        "B": "False",
+        "C": "Không cho kết quả gì",
+        "D": "Chương trình báo lỗi"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 36,
+      "q": "Phát biểu nào sau đây là đúng?",
+      "opts": {
+        "A": "Tất cả các kiểu dữ liệu xây dựng sẵn là kiểu dữ liệu giá trị ngoại trừ các đối tượng và chuỗi?",
+        "B": "Tất cả các kiểu do người dùng định nghĩa ngoại trừ kiểu cấu trúc đều là kiểu dữ liệu tham chiếu",
+        "C": "Tất cả sai",
+        "D": "Tất cả đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 37,
+      "q": "Phát biểu nào sau đây là sai?",
+      "opts": {
+        "A": "Một lớp con chỉ có thể kế thừa từ 1 lớp cha",
+        "B": "Một lớp con có thể kế thừa từ nhiều Interface",
+        "C": "Một lớp con có thể kế thừa từ nhiều lớp cha *(Lưu ý: C# không hỗ trợ đa kế thừa lớp).*",
+        "D": "Interface có thể kế thừa từ nhiều Interface"
+      },
+      "ans": "",
+      "type": "mcq"
+    },
+    {
+      "id": 38,
+      "q": "Một ngôn ngữ được gọi là hướng đối tượng khi nó thỏa mãn đặc trưng nào sau đây?",
+      "opts": {
+        "A": "Tính đóng gói (encapsulation)",
+        "B": "Tính kế thừa (inheritance)",
+        "C": "Tính đa hình (polymorphism)",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 39,
+      "q": "Phạm vi truy cập mặc định của lớp khi chúng ta không khai báo là gì?",
+      "opts": {
+        "A": "Public",
+        "B": "Private",
+        "C": "Internal",
+        "D": "Không có phạm vi truy cập"
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": 40,
+      "q": "Giả sử ta có lớp SinhVien(), cú pháp tạo đối tượng sinh viên (sv) nào sau đây là đúng?",
+      "opts": {
+        "A": "SinhVien() sv = new SinhVien;",
+        "B": "SinhVien sv = new SinhVien();",
+        "C": "SinhVien() new sv = SinhVien;",
+        "D": "SinhVien new sv = SinhVien();"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 41,
+      "q": "Phát biểu nào sau đây sai?",
+      "opts": {
+        "A": "AbstractClass là lựa chọn thích hợp khi vừa khai báo các phương thức thông thường vừa khai báo các phương thức trừu tượng",
+        "B": "Interface thích hợp cho việc khai báo duy nhất các phương thức trừu tượng",
+        "C": "Có thể khởi tạo đối tượng từ AbstractClass và Interface",
+        "D": "AbstractClass và Interface đều khai báo các phương thức nhưng không sử dụng chúng"
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": 42,
+      "q": "Phạm vi truy cập mặc định của các thành phần trong lớp khi chúng ta không khai báo là gì?",
+      "opts": {
+        "A": "Public",
+        "B": "Private",
+        "C": "Internal",
+        "D": "Không có phạm vi truy cập"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 43,
+      "q": "Để class sử dụng interface nó phải:",
+      "opts": {
+        "A": "Kế thừa các đặc tính của interface",
+        "B": "Chứa các phương thức giống như interface",
+        "C": "Tạo một interface object",
+        "D": "Tất cả các đáp án này *(Lưu ý: Xét theo ngữ cảnh câu hỏi kiểm tra tính đúng đắn khi thực hiện mapping toàn diện).*"
+      },
+      "ans": "",
+      "type": "mcq"
+    },
+    {
+      "id": 44,
+      "q": "Mọi class đều trực tiếp hoặc gián tiếp mở rộng lớp nào sau đây:",
+      "opts": {
+        "A": "System",
+        "B": "Object",
+        "C": "Drawing",
+        "D": "Console"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 45,
+      "q": "Khái niệm composition xác định rằng bạn có thể:",
+      "opts": {
+        "A": "Biên soạn code tốt với C#.",
+        "B": "Soạn các dự án C# với những object khác nhau.",
+        "C": "Giảm lỗi bằng cách viết lại trong quá trình lập trình.",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 46,
+      "q": "Đa hình xảy ra khi các phương thức của lớp con:",
+      "opts": {
+        "A": "Ghi đè các phương thức của lớp cha nhưng vẫn duy trì việc triển khai.",
+        "B": "Duy trì cùng kiểu trả về và các tham số như lớp cha, nhưng cách thực hiện khác nhau.",
+        "C": "Có kiểu trả về và tham số khác với lớp cha.",
+        "D": "Là ảo."
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 47,
+      "q": "Một lớp trừu tượng...",
+      "opts": {
+        "A": "Có thể chứa các biến instance",
+        "B": "Có thể chứa constructor",
+        "C": "Có thể mở rộng class khác",
+        "D": "Tất cả các đáp án này."
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 48,
+      "q": "Khai báo một mảng như sau: `int[,] numbers = new int[3, 2] { { 1, 2 }, { 3, 4 }, { 5, 6 } };` câu lệnh `numbers.Length` cho kết quả là:",
+      "opts": {
+        "A": "2",
+        "B": "3",
+        "C": "5",
+        "D": "6 *(Tổng số phần tử của mảng 2 chiều là 3 * 2 = 6).*"
+      },
+      "ans": "",
+      "type": "mcq"
+    },
+    {
+      "id": 49,
+      "q": "Cho biết các lệnh rẽ nhánh có điều kiện?",
+      "opts": {
+        "A": "If, goto, switch, break",
+        "B": "If, switch, break, for",
+        "C": "Return, switch, break",
+        "D": "Tất cả đều sai *(Lưu ý: Các câu lệnh rẽ nhánh có điều kiện chuẩn bao gồm `if`, `if...else`, `switch`).*"
+      },
+      "ans": "",
+      "type": "mcq"
+    },
+    {
+      "id": 50,
+      "q": "Một khối ... kèm theo code có thể throw một ngoại lệ.",
+      "opts": {
+        "A": "Try",
+        "B": "Catch",
+        "C": "Exception",
+        "D": "Try và Catch --- ### PHẦN III: LẬP TRÌNH WEB VỚI ASP.NET"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": 51,
+      "q": "Trong .NET Framework, một Web page thuộc không gian tên nào dưới đây?",
+      "opts": {
+        "A": "System.Web.UI.Page",
+        "B": "System.Windows.Page",
+        "C": "System.Web.Page",
+        "D": "Tất cả đều sai"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": 52,
+      "q": "Phát biểu nào dưới đây là sai?",
+      "opts": {
+        "A": "IsPostBack là một phương thức của lớp System.UI.Web.Page",
+        "B": "IsPostBack là một phương thức của lớp System.Web.UI.Page",
+        "C": "IsPostBack là một thuộc tính chỉ đọc của lớp System.Web.UI.Page",
+        "D": "IsPostBack là một phương thức của lớp System.UI.Web.Page và phương thức của lớp System.Web.UI.Page *(IsPostBack thực chất là một Property).*"
+      },
+      "ans": "",
+      "type": "mcq"
+    },
+    {
+      "id": 53,
+      "q": "Các trình tự trên web form diễn ra theo trình tự nào?",
+      "opts": {
+        "A": "Page_Init, Page_Load, Page_Unload, Page_Dispose",
+        "B": "Page_Load, Page_Init, Page_Unload, Page_Dispose",
+        "C": "Page_Load, Page_Unload, Page_Init, Page_Dispose",
+        "D": "Page_Load, Page_Init, Page_Dispose, Page_Unload"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": 54,
+      "q": "Trong các biến cố Page_load (), Page_Prerender () và Click () thì thứ tự thực thi nào sau đây là sai?",
+      "opts": {
+        "A": "Page_load (), Page_Prerender () và Click ()",
+        "B": "Page_Prerender (), Page_load () và Click ()",
+        "C": "Click (), Page_load () và Page_Prerender ()",
+        "D": "Tất cả đều sai *(Thứ tự đúng là Load -> Click -> PreRender).*"
+      },
+      "ans": "",
+      "type": "mcq"
+    },
+    {
+      "id": 55,
+      "q": "Khi chọn dịch vụ Web Hosting cần lưu ý đến các tính năng mà nhà cung cấp đưa ra:",
+      "opts": {
+        "A": "Dung lượng đĩa cứng, Băng thông, UpTime.",
+        "B": "Các ngôn ngữ lập trình, Hệ quản trị Cơ sở dữ liệu hỗ trợ.",
+        "C": "Hỗ trợ kỹ thuật.",
+        "D": "Tất cả đều đúng."
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 56,
+      "q": "Trang Web động có phần mở rộng tùy theo ngôn ngữ kịch bản phía trình chủ cụ thể, nếu là trang ASP.Net thì sẽ có phần mở rộng là:",
+      "opts": {
+        "A": ".aspx",
+        "B": ".asp",
+        "C": ".php",
+        "D": "Tất cả đều sai"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": 57,
+      "q": "Phát biểu nào đúng?",
+      "opts": {
+        "A": "Phần thực thi của ứng dụng web chạy dưới sự điều khiển của web server",
+        "B": "Ứng dụng web không cần phải được cài đặt trên phía client",
+        "C": "Dịch vụ web là một loại ứng dụng Internet",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 58,
+      "q": "Ứng dụng web:",
+      "opts": {
+        "A": "Chỉ chạy trên một máy đơn",
+        "B": "Có kiến trúc Client/Server",
+        "C": "Là tất cả ứng dụng có sử dụng Internet",
+        "D": "Tất cả đều sai"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 59,
+      "q": "Để viết ASP.Net code trên cùng trang với HTML bạn đặt khối lệnh trong thẻ nào?",
+      "opts": {
+        "A": "`<Script>`",
+        "B": "`<Body>`",
+        "C": "`<Head>`",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "",
+      "type": "mcq"
+    },
+    {
+      "id": 60,
+      "q": "Sự kiện nào dưới đây phát sinh đầu tiên trong vòng đời một trang aspx?",
+      "opts": {
+        "A": "Page_Init()",
+        "B": "Page_Load()",
+        "C": "Page_click()",
+        "D": "Page_Begin()"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": 61,
+      "q": "PostBack có cho Form nào dưới đây?",
+      "opts": {
+        "A": "Winforms",
+        "B": "HTMLForms",
+        "C": "Webforms",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": 62,
+      "q": "Trang Web Asp.net có thể được soạn thảo trên phần mềm nào:",
+      "opts": {
+        "A": "MS Word",
+        "B": "Macromedia Dreamweaver",
+        "C": "MS Visual studio",
+        "D": "Visual studio code"
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": 63,
+      "q": "Tập tin code behind của trang ASP.Net có phần mở rộng tùy theo ngôn ngữ kịch bản phía trình chủ cụ thể, nếu sử dụng ngôn ngữ lập trình C# thì sẽ có phần mở rộng là:",
+      "opts": {
+        "A": "c#",
+        "B": "ascx",
+        "C": "cs",
+        "D": "aspx"
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": 64,
+      "q": ".NET Framework cung cấp một môi trường runtime được gọi là?",
+      "opts": {
+        "A": "RMT",
+        "B": "CLR",
+        "C": "RCT",
+        "D": "RC"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 65,
+      "q": "Câu nào sau đây là đúng?",
+      "opts": {
+        "A": "Các ứng dụng ASP.NET có thể chạy không cần máy chủ Web",
+        "B": "ASP.NET là nâng cấp của ASP",
+        "C": "ASP.Net là ngôn ngữ lập trình web",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 66,
+      "q": "ASP.Net là:",
+      "opts": {
+        "A": "Ngôn ngữ lập trình *(Mặc dù bản chất là một Web Framework nhưng theo đáp án key trường học).*",
+        "B": "Kỹ thuật lập trình phía server",
+        "C": "Kỹ thuật lập trình phía client",
+        "D": "Ngôn ngữ lập trình cơ sở dữ liệu tương tự như SQL"
+      },
+      "ans": "",
+      "type": "mcq"
+    },
+    {
+      "id": 67,
+      "q": "Phương thức di chuyển nào sau đây cho phép giữ lại thông tin từ webform xuất phát?",
+      "opts": {
+        "A": "Response.Redirect",
+        "B": "Server.Transfer",
+        "C": "Server.Execute",
+        "D": "Tất cả phương thức này"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 68,
+      "q": "Ứng dụng web không sử dụng các control nào?",
+      "opts": {
+        "A": "HTML controls",
+        "B": "Windows controls",
+        "C": "User controls",
+        "D": "Custom controls"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 69,
+      "q": "Control kiểm lỗi nào không có trong ASP.Net?",
+      "opts": {
+        "A": "RequiredValidation *(Tên đúng phải là RequiredFieldValidator).*",
+        "B": "CompareValidation",
+        "C": "RangeValidation",
+        "D": "CustomValidation"
+      },
+      "ans": "",
+      "type": "mcq"
+    },
+    {
+      "id": 70,
+      "q": "Đối tượng nào được sử dụng để cung cấp thông tin của Server cho ứng dụng?",
+      "opts": {
+        "A": "Request",
+        "B": "Application",
+        "C": "Server",
+        "D": "Response"
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": 71,
+      "q": "Control dùng để hiển thị và cập nhật dữ liệu kiểu ngày tên là:",
+      "opts": {
+        "A": "DateTimePicker",
+        "B": "Calendar",
+        "C": "DateTime",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 72,
+      "q": "Một textbox trong ASP.net cho phép người dùng nhập dữ liệu trên nhiều dòng thì cần thiết lập:",
+      "opts": {
+        "A": "TextMode = \"MultiText\"",
+        "B": "TextMode = \"TextArea\"",
+        "C": "TextMode = \"MultiLine\"",
+        "D": "TextMode = \"MultiRow\""
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": 73,
+      "q": "Điều khiển nào sau đây không cho chọn dữ liệu?",
+      "opts": {
+        "A": "Label",
+        "B": "CheckListBox",
+        "C": "ListBox",
+        "D": "ComboBox"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": 74,
+      "q": "Đối tượng trong asp.net cho phép gửi yêu cầu đến server thông qua sự kiện để thực hiện chức năng của người dùng?",
+      "opts": {
+        "A": "Button",
+        "B": "Submit",
+        "C": "ImageButton",
+        "D": "a và c đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 75,
+      "q": "Đối tượng thực hiện chuyển trang trong asp.net là:",
+      "opts": {
+        "A": "`<asp:HyperLink>`",
+        "B": "`<a>`",
+        "C": "`<asp:LinkButton>`",
+        "D": "a và c đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 76,
+      "q": "Các giá trị của thuộc tính TextMode của Control Textbox là:",
+      "opts": {
+        "A": "SingleLine",
+        "B": "MultiLine",
+        "C": "Password",
+        "D": "Cả 3 câu đều đúng."
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 77,
+      "q": "Dùng Asp.net server control nào dưới đây để hiển thị văn bản trên trang Web?",
+      "opts": {
+        "A": "`<asp:Label>`",
+        "B": "`<asp:Button>`",
+        "C": "`<asp:ListItem>`",
+        "D": "`<asp:TextBox>`"
+      },
+      "ans": "",
+      "type": "mcq"
+    },
+    {
+      "id": 78,
+      "q": "Thẻ `<asp:DropDownList>` thay thế thẻ HTML nào dưới đây?",
+      "opts": {
+        "A": "`<Option>`",
+        "B": "`<Select>`",
+        "C": "`<List>`",
+        "D": "`<DropDownList>`"
+      },
+      "ans": "",
+      "type": "mcq"
+    },
+    {
+      "id": 79,
+      "q": "Chọn phát biểu đúng:",
+      "opts": {
+        "A": "Master pages cho phép tạo 1 bố cục nhất quán trên các trang web trong cùng 1 website",
+        "B": "Nội dung thể hiện trên trình duyệt là sự kết hợp giữa trang master page và trang content page",
+        "C": "Thao tác thiết kế trang master page giống như trang aspx, nhưng phải bổ sung ít nhất một điều khiển ContentPlaceHolder",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 80,
+      "q": "Phần mở rộng của tập tin Master page là gì?",
+      "opts": {
+        "A": "mas",
+        "B": ".master",
+        "C": ".aspx",
+        "D": ".ascx"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 81,
+      "q": "Tệp Web User Control có đuôi gì?",
+      "opts": {
+        "A": "asmx",
+        "B": "ascx",
+        "C": "aspx",
+        "D": "uct"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 82,
+      "q": "Kéo và thả User control vào trang aspx, lúc đó trên trang aspx sẽ xuất hiện tag:",
+      "opts": {
+        "A": "`<%@ Register . . %>`",
+        "B": "`<%@ User control . . %>`",
+        "C": "`<User control> . . </User control>`",
+        "D": "Trong 3 câu a,b,c có 1 đáp án đúng"
+      },
+      "ans": "",
+      "type": "mcq"
+    },
+    {
+      "id": 83,
+      "q": "Chọn phát biểu đúng:",
+      "opts": {
+        "A": "User control là sự kết hợp các control để tạo thành một control mới",
+        "B": "Phần mở rộng của User control là .ascx",
+        "C": "Để thiết kế nội dung trên User control giống như thiết kế trang aspx",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 84,
+      "q": "Control nào sau đây được sử dụng để kiểm tra dữ liệu nhập có theo một định dạng?",
+      "opts": {
+        "A": "RequiredFieldValidator",
+        "B": "RegularExpressionValidator",
+        "C": "CompareValidator",
+        "D": "CustomValidator"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 85,
+      "q": "Control nào sau đây được sử dụng để kiểm tra dữ liệu phải được nhập?",
+      "opts": {
+        "A": "RequiredFieldValidator",
+        "B": "RangeValidator",
+        "C": "CustomValidator",
+        "D": "CompareValidator"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": 86,
+      "q": "Control nào sau đây được sử dụng để xuất hiện bảng lỗi tổng hợp?",
+      "opts": {
+        "A": "RequiredFieldValidator",
+        "B": "ValidationSummary",
+        "C": "RangeValidator",
+        "D": "Không có câu nào"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 87,
+      "q": "Điều khiển nào dùng để kiểm tra giá trị trong 2 điều khiển khác trên 1 trang có giống nhau hay không?",
+      "opts": {
+        "A": "RangeValidator",
+        "B": "GridView",
+        "C": "CompareValidator",
+        "D": "ListView"
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": 88,
+      "q": "Control nào sau đây được sử dụng để kiểm tra giá trị trong điều khiển có nằm trong đoạn [min-max]?",
+      "opts": {
+        "A": "RequiredFieldValidator",
+        "B": "ValidationSummary",
+        "C": "RangeValidator",
+        "D": "CompareValidator"
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": 89,
+      "q": "Chọn các câu đúng:",
+      "opts": {
+        "A": "RequiredFieldValidator dùng để kiểm tra giá trị trong điều khiển phải được nhập",
+        "B": "RangeValidator dùng để kiểm tra giá trị của điều khiển phải theo mẫu được qui định trước như: địa chỉ email, số điện thoại...",
+        "C": "RegularExpressionValidator dùng để kiểm tra giá trị trong điều khiển có nằm trong đoạn [min-max].",
+        "D": "CompareValidator dùng để kiểm tra giá trị của điều khiển phải theo mẫu được qui định trước như: địa chỉ email, số điện thoại..."
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": 90,
+      "q": "Các Control kiểm tra dữ liệu thuộc nhóm control nào?",
+      "opts": {
+        "A": "Standard",
+        "B": "HTML",
+        "C": "Validation",
+        "D": "Data"
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": 91,
+      "q": "Control kiểm tra dữ liệu nào có trong ASP.NET?",
+      "opts": {
+        "A": "RequiredFieldValidator",
+        "B": "RegularExpressionValidator",
+        "C": "CompareValidator",
+        "D": "Tất cả"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 92,
+      "q": "Thuộc tính nào của các control kiểm tra dữ liệu dùng để chứa câu thông báo lỗi?",
+      "opts": {
+        "A": "Messagebox",
+        "B": "ErrorMessage",
+        "C": "MessageError",
+        "D": "Cả 3 đáp án đúng"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 93,
+      "q": "Các thuộc tính của đối tượng Request là:",
+      "opts": {
+        "A": "Form",
+        "B": "Redirect",
+        "C": "QueryString",
+        "D": "Cả A và C đều đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 94,
+      "q": "Thuộc tính QueryString của đối tượng Request dùng để:",
+      "opts": {
+        "A": "Truyền thông tin từ ứng dụng này đến ứng dụng khác trên internet",
+        "B": "Truyền thông tin từ web form này đến web form khác trong một ứng dụng",
+        "C": "Lưu thông tin bí mật của người dùng, như password chẳng hạn.",
+        "D": "Lưu thông tin để các ứng dụng của tất cả mọi người truy cập tới nó sử dụng"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 95,
+      "q": "Thuộc tính QueryString của đối tượng Request dùng để nhận giá trị từ 1 chuỗi truy vấn nằm sau dấu `?` trong chuỗi URL gồm những cặp `Biến_1=Giá_trị_1&Biến_2=Giá trị_2…` Trên trang Aspx dùng ngôn ngữ C# thì sẽ nhận giá trị theo cú pháp:",
+      "opts": {
+        "A": "Request.QueryString(\"Tên_biến\")",
+        "B": "Request.QueryString[\"Tên_biến\"]",
+        "C": "QueryString(\"Tên_biến\")",
+        "D": "Cả 3 câu đều sai"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 96,
+      "q": "Hãy xác định các phương thức hay tập hợp của đối tượng Response là:",
+      "opts": {
+        "A": "Write",
+        "B": "Redirect",
+        "C": "QueryString",
+        "D": "Write và Redirect"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 97,
+      "q": "Tìm chọn đáp án đúng:",
+      "opts": {
+        "A": "Đối tượng Response được sử dụng để giao tiếp với Client, nó quản lý và điều phối thông tin từ Web Server đến các trình duyệt của người dùng.",
+        "B": "Đối tượng Application được sử dụng để quản lý tất cả các thông tin của một ứng dụng web. Thông tin được lưu trữ trong đối tượng Application có thể được xử lý trong bất kỳ trang aspx nào trong suốt chu kỳ sống của ứng dụng.",
+        "C": "Đối tượng Request được dùng để nhận thông tin từ trình duyệt của người dùng gửi về cho WebServer",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 98,
+      "q": "Đối tượng nào dùng để gửi thông tin từ server đến trình duyệt Web mà dùng đối tượng này để đưa thông tin lên màn hình?",
+      "opts": {
+        "A": "Request",
+        "B": "Application",
+        "C": "Server",
+        "D": "Response"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 99,
+      "q": "Dùng lệnh nào sau đây để di chuyển đến trang web hello.html:",
+      "opts": {
+        "A": "Server.Transfer (\"hello.html\")",
+        "B": "Response.Redirect (\"hello.html\")",
+        "C": "Tất cả đều sai",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 100,
+      "q": "Hãy xác định các thuộc tính, phương thức của đối tượng Session:",
+      "opts": {
+        "A": "Contents",
+        "B": "Timeout",
+        "C": "Abandon",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 101,
+      "q": "Mặc định một biến Session có thời hạn TimeOut là bao lâu?",
+      "opts": {
+        "A": "20 Sec",
+        "B": "20 Min",
+        "C": "1 hr",
+        "D": "Kết quả khác"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 102,
+      "q": "Session dùng để:",
+      "opts": {
+        "A": "Lưu dữ liệu cho một ứng dụng.",
+        "B": "Lưu dữ liệu cho phiên làm việc",
+        "C": "Dùng để lưu dữ liệu là các đối tượng",
+        "D": "Dùng để lưu dữ liệu là các biến cố có kiểu dữ liệu cơ bản : int, double, string,..."
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 103,
+      "q": "Các sự kiện Application và Session diễn ra theo trình tự nào:",
+      "opts": {
+        "A": "Application_Start, Application_End, Session_Start, Session_End",
+        "B": "Application_Start, Session_Start, Session_End, Application_End",
+        "C": "Session_Start, Application_Start, Application_End, Session_End",
+        "D": "Session_Start, Session_End, Application_Start, Application_End"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 104,
+      "q": "Hãy xác định các phương thức của đối tượng Server:",
+      "opts": {
+        "A": "Execute",
+        "B": "MapPath",
+        "C": "Transfer",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 105,
+      "q": "Một dự án ASP.NET có thể có bao nhiêu tập tin cấu hình `web.config` chính ở thư mục gốc?",
+      "opts": {
+        "A": "Nhiều hơn một",
+        "B": "Chỉ một",
+        "C": "Không",
+        "D": "Tất cả đều sai"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 106,
+      "q": "Tập tin Global.asax được dùng để:",
+      "opts": {
+        "A": "Cài đặt các sự kiện mức ứng dụng và mức phiên làm việc",
+        "B": "Khai báo các biến toàn cục",
+        "C": "Khai báo và khởi tạo giá trị cho các biến Application, Session.",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 107,
+      "q": "Cookie dùng để:",
+      "opts": {
+        "A": "Lưu thông tin tại phía client.",
+        "B": "Lưu thông tin tại phía server",
+        "C": "Lưu thông tin từ cả hai phía server/client",
+        "D": "Cách sử dụng giống như query string"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": 108,
+      "q": "Phương thức nào dùng để chuyển yêu cầu truy cập của máy khách đến 1 URL khác?",
+      "opts": {
+        "A": "Phương thức Redirect của đối tượng Response",
+        "B": "Phương thức Transfer của đối tượng Server",
+        "C": "Phương thức Execute của đối tượng Server",
+        "D": "Cả 2 câu a, b đều đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 109,
+      "q": "Ý nghĩa của phương thức Server.MapPath:",
+      "opts": {
+        "A": "Trả về đường dẫn tuyệt đối trên đĩa của một đường dẫn tương đối",
+        "B": "Trả về đường dẫn tương đối của một thư mục web",
+        "C": "Trả về đường dẫn ảo của một đường dẫn tuyệt đối",
+        "D": "Cả 3 câu a,b,c đều sai"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": 110,
+      "q": "Điều nào sau đây là ưu điểm của Server control so với HTML control:",
+      "opts": {
+        "A": "Duy trì dữ liệu trên control (ViewState)",
+        "B": "Hiển thị không phụ thuộc vào trình duyệt",
+        "C": "Có các sự kiện riêng biệt",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 111,
+      "q": "Khi một trang .aspx được yêu cầu, kết quả xuất ra trên trình duyệt có dạng sau:",
+      "opts": {
+        "A": "HTML",
+        "B": "XML",
+        "C": "WML",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": 112,
+      "q": "Khi biên dịch một ứng dụng ASP.Net, kết quả tạo ra ở thư mục bin có dạng nào?",
+      "opts": {
+        "A": "EXE",
+        "B": "DLL",
+        "C": "COM",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 113,
+      "q": "Ngôn ngữ kịch bản để viết cho trang Asp.Net là:",
+      "opts": {
+        "A": "PHP",
+        "B": "C#",
+        "C": "Visual Basic",
+        "D": "b và c"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 114,
+      "q": "Để chạy chương trình (ứng dụng asp.net) trong môi trường MS Visual Studio có debug ta thực hiện:",
+      "opts": {
+        "A": "Nhấn phím F5",
+        "B": "Nhấn tổ hợp phím Ctrl + F5",
+        "C": "Click biểu tượng Start debugging",
+        "D": "a và c"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 115,
+      "q": "Trong ADO.NET, không gian tên System.Data không chứa lớp nào?",
+      "opts": {
+        "A": "DataTable",
+        "B": "DataRelation",
+        "C": "DataSet",
+        "D": "Không có câu nào đúng *(Cả 3 lớp trên đều nằm trong System.Data).*"
+      },
+      "ans": "",
+      "type": "mcq"
+    },
+    {
+      "id": 116,
+      "q": "Để thực thi lấy dữ liệu giá trị đơn (như đếm số lượng, tính tổng), ta dùng phương thức nào sau đây của đối tượng command:",
+      "opts": {
+        "A": "ExecuteReader()",
+        "B": "ExecuteScalar()",
+        "C": "ExecuteXmlReader()",
+        "D": "ExecuteNonQuery()"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 117,
+      "q": "Thành phần nào không phải là thuộc tính của đối tượng DataAdapter:",
+      "opts": {
+        "A": "SQLCommand",
+        "B": "DeleteCommand",
+        "C": "UpdateCommand",
+        "D": "InsertCommand"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": 118,
+      "q": "Thành phần nào là thuộc tính của đối tượng DataAdapter:",
+      "opts": {
+        "A": "DeleteCommand",
+        "B": "UpdateCommand",
+        "C": "SelectCommand",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 119,
+      "q": "Một điều khiển DataAdapter dùng phương thức nào dưới đây để nạp một DataSet?",
+      "opts": {
+        "A": "Fill()",
+        "B": "ExecuteQuery()",
+        "C": "Read()",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": 120,
+      "q": "Phương thức nào sau đây của DataAdapter dùng để cập nhật dữ liệu từ DataSet về lại Database?",
+      "opts": {
+        "A": "Fill",
+        "B": "AcceptChanges",
+        "C": "RejectChanges",
+        "D": "Update"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 121,
+      "q": "Các phương thức của đối tượng command là:",
+      "opts": {
+        "A": "Phương thức ExecuteReader: Thực hiện câu lệnh và kết quả trả về đối tượng DataReader",
+        "B": "Phương thức ExecuteNonQuery: Thực hiện câu lệnh như Insert, Update, Delete, Create... và không cần trả về dữ liệu gì",
+        "C": "Phương thức ExecuteScalar: Trả về từ phát biểu SQL dạng Select chỉ có một giá trị đơn.",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 122,
+      "q": "Dùng phương thức nào để thực hiện lệnh thêm, xóa, sửa... dữ liệu trực tiếp?",
+      "opts": {
+        "A": "ExecuteNonQuery",
+        "B": "ExecuteReader",
+        "C": "ExecuteScalar",
+        "D": "ExecuteReadOnly"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": 123,
+      "q": "Trong một ứng dụng ASP.Net, khi dùng đối tượng SqlCommand để gọi stored procedure lấy ra danh sách các khách hàng có những đơn hàng trị giá trên 50 triệu từ CSDL trong MS SQL Server, chúng ta gọi phương thức:",
+      "opts": {
+        "A": "ExecuteReader.",
+        "B": "ExecuteNonQuery.",
+        "C": "ExecuteMyReader.",
+        "D": "ExecuteScalar."
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": 124,
+      "q": "Trong một ứng dụng ASP.Net, khi dùng đối tượng SqlCommand để gọi stored procedure tạo một bảng CSDL trong MS SQL Server (lệnh DDL), chúng ta gọi phương thức:",
+      "opts": {
+        "A": "ExecuteReader.",
+        "B": "ExecuteNonQuery. *",
+        "C": "ExecuteMyReader.",
+        "D": "ExecuteScalar."
+      },
+      "ans": "",
+      "type": "mcq"
+    },
+    {
+      "id": 125,
+      "q": "Ứng dụng ASP.NET có kết nối với SQL Server trên một máy tính có tên là MyComp. CSDL cần kết nối là myDatabase và table được sử dụng là myTable. User được phép kết nối đến CSDL này là myUser và mật khẩu là myPassword. Connection String nào sau đây có thể dùng cho kết nối SqlConnection này:",
+      "opts": {
+        "A": "\"server=myComp; source=myDatabase.myTable; uid=myUser; pwd=myPassword\".",
+        "B": "\"server=myComp; database=myDatabase; uid=myUser; pwd=myPassword\".",
+        "C": "\"server=myComp; database=myDatabase; table=myTable; uid=myUser; pwd=myPassword\".",
+        "D": "\"server=myComp; database=myDatabase/myTable; uid=myUser; pwd=myPassword\"."
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 126,
+      "q": "Ứng dụng ASP.Net có kết nối với MS SQL Server của máy tính đang chứa ứng dụng ASP.net này. CSDL cần kết nối là myDatabase. User được phép kết nối CSDL này là myUser, mật khẩu của myUser là myPassword. Connection String nào sau đây có thể dùng cho SqlConnection này:",
+      "opts": {
+        "A": "\"Data Source=(local); Initial Catalog=myDatabase; User ID=myUser; Password = myPassword\"",
+        "B": "\"server=(local); database=myDatabase; uid=myUser; pwd=myPassword\".",
+        "C": "\"server=(local); source=myDatabase.myTable; uid=myUser; pwd=myPassword\".",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": 127,
+      "q": "Trong một trang ASP.Net có đoạn code cần tính tổng số tiền nợ của khách hàng từ CSDL với đối tượng SqlCommand. Ta phải dùng phương thức nào để truy vấn CSDL có kết quả đúng và tốt nhất?",
+      "opts": {
+        "A": "Read.",
+        "B": "ExecuteNonQuery",
+        "C": "ExecuteScalar",
+        "D": "ExecuteReader"
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": 128,
+      "q": "Lệnh SQL nào dùng để thêm một dòng mới vào một bảng trong cơ sở dữ liệu?",
+      "opts": {
+        "A": "Insert New",
+        "B": "Add Row",
+        "C": "Insert Row",
+        "D": "Insert Into"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 129,
+      "q": "Đối tượng transaction được tạo bởi phương thức nào từ đối tượng Connection?",
+      "opts": {
+        "A": "NewTransaction",
+        "B": "StartTransaction",
+        "C": "BeginTransaction",
+        "D": "CreateTransaction"
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": 130,
+      "q": "Chúng ta sử dụng giao dịch (Transaction) khi:",
+      "opts": {
+        "A": "Lập trình các ứng dụng thương mại điện tử",
+        "B": "Lập trình các ứng dụng cơ sở dữ liệu phức tạp",
+        "C": "Thực hiện nhiều lệnh cơ sở dữ liệu như một khối lệnh thống nhất",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 131,
+      "q": "Lệnh dùng để hoàn tất và lưu lại một giao dịch là:",
+      "opts": {
+        "A": "Finish",
+        "B": "Commit",
+        "C": "Rollback",
+        "D": "Update"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 132,
+      "q": "Câu lệnh nào không dùng để thực thi Stored Procedure sau ```sql CREATE PROCEDURE spTest @PK_sHangID VARCHAR(20) AS SELECT * FROM tblHang WHERE PK_sHangID=@PK_sHangID GO ```",
+      "opts": {
+        "A": "Cmd.ExecuteNonQuery();",
+        "B": "Cmd.ExecuteScalar(); *(Vì hàm này chỉ lấy giá trị ở ô đầu tiên).*",
+        "C": "Cmd.ExecuteReader();",
+        "D": "Tất cả các phương án đều đúng"
+      },
+      "ans": "",
+      "type": "mcq"
+    },
+    {
+      "id": 133,
+      "q": "DataReader dùng để làm gì?",
+      "opts": {
+        "A": "Dùng để duyệt xem dữ liệu một chiều (chỉ tiến) lấy ra từ CSDL",
+        "B": "Dùng để insert dữ liệu",
+        "C": "Dùng để delete dữ liệu",
+        "D": "Dùng để update dữ liệu"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": 134,
+      "q": "Đối tượng nào sau đây trực tiếp kết nối và có tương tác với CSDL?",
+      "opts": {
+        "A": "DataAdapter",
+        "B": "DataRow",
+        "C": "DataSet",
+        "D": "DataTable"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": 135,
+      "q": "Phương thức nào sau đây của đối tượng command có thể làm thay đổi cấu trúc hoặc dữ liệu (Insert, Update, Delete)?",
+      "opts": {
+        "A": "ExecuteNonQuery",
+        "B": "ExecuteScalar",
+        "C": "ExecuteReader",
+        "D": "ExecuteReadOnly"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": 136,
+      "q": "ADO viết tắt bởi:",
+      "opts": {
+        "A": "ActiveX Data Objects",
+        "B": "Active Data Object",
+        "C": "ActiveX Database Object",
+        "D": "Tất cả đều sai"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": 137,
+      "q": "Các đặc điểm chính của ADO.NET là:",
+      "opts": {
+        "A": "Có khả năng làm việc với dữ liệu không kết nối (Disconnected), dữ liệu được lưu trữ trong bộ nhớ như một CSDL thu nhỏ (DataSet).",
+        "B": "Khả năng xử lý dữ liệu chuẩn XML dễ dàng trao đổi hệ thống.",
+        "C": "Cả 2 câu a, b đều đúng",
+        "D": "Cả 2 câu a, b đều sai"
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": 138,
+      "q": "Các đối tượng thuộc nhóm Connected (kết nối trực tiếp) của mô hình lập trình ADO.Net là:",
+      "opts": {
+        "A": "Connection",
+        "B": "Command",
+        "C": "Recordset",
+        "D": "Cả A và B đều đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 139,
+      "q": "Các bước truy xuất cơ sở dữ liệu nào sau đây là đúng trình tự?",
+      "opts": {
+        "A": "1. Chuẩn bị ConnectionString & Chuỗi truy vấn -> 2. Khai báo các đối tượng ADO.NET cần thiết (Connection, Command…) -> 3. Thiết lập các thông số cho Command -> 4. Mở kết nối -> 5. Thực thi truy vấn -> 6. Xử lý kết quả -> 7. Đóng, hủy các đối tượng.",
+        "B": "1.Chuẩn bị–ConnectionString–Truy vấn dữ liệu2.Khai báo các đối tượng ADO.NET cần thiết(Connection, Command, …)3.Thiết lập các thông số cho Command4.Mở kết nối5.Thực thi truy vấn6.[Xử lý kết quả truy vấn]",
+        "C": "1.Chuẩn bị–ConnectionString–Truy vấn dữ liệu2.Thiết lập các thông số cho Command3.Khai báo các đối tượng ADO.NET cần thiết(Connection, Command, …)4.Mở kết nối5.Thực thi truy vấn6.[Xử lý kết quả truy vấn]7.Đóng, huỷ các đối tượng",
+        "D": "1.Chuẩn bị–ConnectionString–Truy vấn dữ liệu2.Khai báo các đối tượng ADO.NET cần thiết(Connection, Command, …)3.Thiết lập các thông số cho Command4.Thực thi truy vấn5.[Xử lý kết quả truy vấn]6.Đóng, huỷ các đối tượng"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": 140,
+      "q": "Cho 1 truy vấn SQL SELECT chứa trong biến s1. Với lệnh khai báo DataAdapter như sau: `SqlDataAdapter da = new SqlDataAdapter(s1, conn);` thì giá trị của s1 sẽ được gán cho đối tượng Command nào của DataAdapter?",
+      "opts": {
+        "A": "SelectCommand",
+        "B": "DeleteCommand",
+        "C": "UpdateCommand",
+        "D": "InsertCommand"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": 141,
+      "q": "Để trả về giá trị đơn khi lấy dữ liệu, ta dùng phương thức nào sau đây của đối tượng command:",
+      "opts": {
+        "A": "ExecuteReader()",
+        "B": "ExecuteScalar()",
+        "C": "ExecuteXmlReader()",
+        "D": "ExecuteNonQuery()"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": 142,
+      "q": "Lệnh SQL nào dùng để chỉnh sửa dòng dữ liệu trong một bảng trong cơ sở dữ liệu?",
+      "opts": {
+        "A": "Update … Values",
+        "B": "Update Row",
+        "C": "Edit Row",
+        "D": "Update … Set"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 143,
+      "q": "Chọn câu trả lời đúng về các thành phần hiển thị dữ liệu (Data Controls):",
+      "opts": {
+        "A": "GridView là một điều khiển cho phép hiển thị, định dạng, và thao tác với dữ liệu. Bên cạnh đó còn có thể thực hiện sắp xếp dữ liệu, thực hiện phân trang.",
+        "B": "DataList tương tự điều khiển Gridview, được sử dụng để hiển thị dữ liệu. Tuy nhiên, đối với DataList, chúng ta phải tự thiết kế hình thức hiển thị dữ liệu.",
+        "C": "Repeater tương tự như DataList & Gridview, dùng để hiển thị dữ liệu. Tuy nhiên phải tự thiết kế hình thức hiển thị thông qua các tag HTML hoàn toàn.",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": 144,
+      "q": "Hãy xác định chức năng chính của đối tượng Connection trong ADO.NET:",
+      "opts": {
+        "A": "Dùng tạo kết nối giữa ứng dụng với cơ sở dữ liệu",
+        "B": "Là đối tượng thông dụng dùng lưu thông tin từ Table hay thi hành lệnh SQL",
+        "C": "Là đối tượng dùng để thao tác: Thêm, Xóa, Sửa dữ liệu",
+        "D": "Tất cả các câu trên đều đúng"
+      },
+      "ans": "A",
+      "type": "mcq"
+    }
+  ]

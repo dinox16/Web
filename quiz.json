@@ -1,1202 +1,1730 @@
 [
   {
     "id": 1,
-    "q": "When preparing the cover letter, there should be main Three Paras, what you will write in the third para:",
+    "q": "Thế nào là ứng dụng thương mại điện tử?",
     "opts": {
-      "A": "Qualifications and Achievements.",
-      "B": "Details about the position",
-      "C": "Personal Information",
-      "D": "Requesting for Interview and Contact Information"
+      "A": "Là loại hình mua bán hàng hóa thông thường",
+      "B": "Là một loại ứng dụng Web",
+      "C": "Là giao dịch tiền tệ",
+      "D": "Là loại hình trao đổi thư điện tử"
     },
-    "ans": "D",
+    "ans": "B",
     "type": "mcq"
   },
   {
     "id": 2,
-    "q": "When preparing for the Resume, what should be focused on Education Aspect:",
+    "q": "Đâu là tag tạo ra chữ in nghiêng?",
     "opts": {
-      "A": "Academic results, degrees, diplomas and certificates.",
-      "B": "Technical and professional qualifications",
-      "C": "Work and vocational training received",
-      "D": "All are correct"
+      "A": "`<i>`",
+      "B": "`<italics>`",
+      "C": "`<i>`",
+      "D": "`<italic>`"
+    },
+    "ans": "",
+    "type": "mcq"
+  },
+  {
+    "id": 3,
+    "q": "Trình soạn thảo nào có thể tạo trang web dạng HTML?",
+    "opts": {
+      "A": "Notepad, Wordpad, dev C, Adobe Dreamweaver",
+      "B": "Adobe Dreamweaver, Tubo C, Notepad, Sublime Text",
+      "C": "Notepad, Wordpad, Netbean, Visual Studio Code",
+      "D": "Notepad, Wordpad, Visual Studio Code, Sublime Text"
     },
     "ans": "D",
     "type": "mcq"
   },
   {
-    "id": 3,
-    "q": "What is the Major Goal of Technical Writing?",
-    "opts": {
-      "A": "Highlights your Superior cum Effective Communication Skills",
-      "B": "Stresses on Persuasive Skills",
-      "C": "Supports your Contribution and Confidence in Work Involved.",
-      "D": "All of Above"
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
     "id": 4,
-    "q": "When answering the challenging question, “tell me about yourself” you should:",
+    "q": "Từ HTML là từ viết tắt của từ nào?",
     "opts": {
-      "A": "Start by telling your Previous job you have left",
-      "B": "Start by your Hobbies or Parents Introduction",
-      "C": "Discuss the company and job which is the closest or the same to this job for which you are applying for",
-      "D": "Emphasize on your Qualifications and other additional education portfolios."
+      "A": "Hyperlinks and Text Markup Language",
+      "B": "Home Tool Markup Language",
+      "C": "Hyper Text Markup Language",
+      "D": "Tất cả đều sai"
     },
     "ans": "C",
     "type": "mcq"
   },
   {
     "id": 5,
-    "q": "What is the Importance of References in Resume?",
+    "q": "Ai (tổ chức nào) tạo ra Web standards?",
     "opts": {
-      "A": "Helps the recruiter to get some more information about you from the known/recognized person.",
-      "B": "Act as a Point of your contacts",
-      "C": "List your contacts known to you",
-      "D": "All of Above"
+      "A": "The World Wide Web Consortium",
+      "B": "Microsoft",
+      "C": "Netscape",
+      "D": "Tất cả đều sai"
     },
     "ans": "A",
     "type": "mcq"
   },
   {
     "id": 6,
-    "q": "Which of the following is Effective Email Subject Line for Meeting?",
+    "q": "Phát biểu nào sau đây là đúng?",
     "opts": {
-      "A": "Meeting Planned on 12th June, 2023 at 7 pm",
-      "B": "Join for Meeting on 12th June, 2023 at 7 pm",
-      "C": "Meeting is Scheduled at 3 pm on 12th June, 2023 at 7 PM.",
-      "D": "Come to meeting on 12th June, 2023 at 7PM"
+      "A": "Web tĩnh là trang web không có hình động",
+      "B": "HTML là ngôn ngữ định dạng siêu văn bản",
+      "C": "Web động là trang web có hình động",
+      "D": "Tất cả đều sai"
     },
-    "ans": "A",
+    "ans": "B",
     "type": "mcq"
   },
   {
     "id": 7,
-    "q": "Which Part of the C.V. should be Included with Professional Trainings and Certifications so that Recruiter can see, what extra you have apart from Degree from a University?",
+    "q": "Khi người dùng gõ từ khóa tìm kiếm trên Google, từ khóa đó được liệt kê trong thẻ nào?",
     "opts": {
-      "A": "Extra Trainings",
-      "B": "Additional Qualifications",
-      "C": "Certifications and Trainings",
-      "D": "Add on Qualifications"
+      "A": "`<head>`",
+      "B": "`<article>`",
+      "C": "`<meta>`",
+      "D": "`<div>`"
     },
-    "ans": "C",
+    "ans": "",
     "type": "mcq"
   },
   {
     "id": 8,
-    "q": "The beginning of a presentation is the most important part. It is when you establish a rapport with the audience and when you have its.................",
+    "q": "Đặc trưng của thương mại điện tử?",
     "opts": {
-      "A": "attention",
-      "B": "focus",
-      "C": "audience",
-      "D": "presentation"
+      "A": "Không tiếp xúc, có sự tham gia ít nhất 2 chủ thể, không giới hạn phạm vi.",
+      "B": "Không giới hạn biên giới, tiếp xúc trực tiếp",
+      "C": "Không tiếp xúc trực tiếp, không giới hạn phạm vi, có sự tham gia ít nhất 3 chủ thể …",
+      "D": "Không cần kho lưu trữ, thông tin chính là thị trường"
     },
-    "ans": "A",
+    "ans": "C",
     "type": "mcq"
   },
   {
     "id": 9,
-    "q": "What is the best way to rehearse for the Presentation and what to Avoid in Presentation to make it more effective?",
+    "q": "Muán liên kết HTML với 1 file định nghĩa CSS ta dùng dòng nào sau đây?",
     "opts": {
-      "A": "Giving presentation to friends and Avoid Eye Contact",
-      "B": "Open SmartPhone and Record the Presentation and use this as Reference again and again to reherese and avoid: Umm and Ahh in presentation",
-      "C": "Practice with Family Members and Avoiding Grammar",
-      "D": "None of these."
+      "A": "`<style src=\"mystyle.css\">`",
+      "B": "`<link rel=\"stylesheet\" type=\"text/css\" href=\"mystyle.css\">`",
+      "C": "`<style href=\"mystyle.css\">`",
+      "D": "`<link rel=\"stylesheet\" type=\"text/css\" src=\"mystyle.css\">`"
     },
-    "ans": "B",
+    "ans": "",
     "type": "mcq"
   },
   {
     "id": 10,
-    "q": "When writing an email to your boss, how to Address the Person?",
+    "q": "Đâu là tag tạo ra chữ in đậm?",
     "opts": {
-      "A": "Hai Sir",
-      "B": "Hello Sir",
-      "C": "Greetings/Respected Sir",
-      "D": "Best Wishes Sir"
+      "A": "`<b>`",
+      "B": "`bold`",
+      "C": "`<bld>`",
+      "D": "`<bb>`"
     },
-    "ans": "C",
+    "ans": "",
     "type": "mcq"
   },
   {
     "id": 11,
-    "q": "Which of the following is a requirement that a presenter should know to prepare effectively for a presentation?",
+    "q": "Đâu là tag tạo ra màu nền của web?",
     "opts": {
-      "A": "Available attire",
-      "B": "Number of bullet points allowed per slide",
-      "C": "Presentation duration",
-      "D": "Foods the presenter can eat during the presentation"
+      "A": "`<body color=\"yellow\">`",
+      "B": "`<body bgcolor=\"yellow\">`",
+      "C": "`<background>yellow</background>`",
+      "D": "`<body background-color=\"yellow\">`"
     },
-    "ans": "C",
+    "ans": "",
     "type": "mcq"
   },
   {
     "id": 12,
-    "q": "If you are going for interview, what following things to be cared of with Utmost Importance?",
+    "q": "Đâu là tag tạo ra liên kết (links) trong web?",
     "opts": {
-      "A": "Reaching the Place on time (Min 10-20 Min Before)",
-      "B": "Wear Formal Shoes, Proper Belt and White Short with Tie",
-      "C": "Proper Hair Comb with Watch with no Tatoo on Body Visibility",
-      "D": "All of above"
+      "A": "`<a url=\"http://www.w3schools.com\">W3Schools.com</a>`",
+      "B": "`<a>http://www.w3schools.com</a>`",
+      "C": "`<a href=\"http://www.w3schools.com\">W3Schools</a>`",
+      "D": "`<a name=\"http://www.w3schools.com\">W3Schools.com</a>`"
     },
-    "ans": "D",
+    "ans": "",
     "type": "mcq"
   },
   {
     "id": 13,
-    "q": "What is Plagiarism?",
+    "q": "Các chủ thể trong loại hình giao dịch thương mại điện tử?",
     "opts": {
-      "A": "Act of passing or claiming the ideas of others as own.",
-      "B": "Original Work Writing.",
-      "C": "Taking partial ideas of other works",
-      "D": "None of these"
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 14,
-    "q": "In order to Improve the Grammer, which among the following is the best tool to re-write the sentences in proper English or any other languages?",
-    "opts": {
-      "A": "Google Translate",
-      "B": "ChatGPT",
-      "C": "Canva",
-      "D": "Quilbot"
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 15,
-    "q": "When you start the presentation, what should be the first Slide after the title slide:",
-    "opts": {
-      "A": "Summary",
-      "B": "Introduction to topic",
-      "C": "Agenda/Brief Outline of the Presentation",
-      "D": "List of References/External Sources"
+      "A": "Người tiêu dùng, Doanh nghiệp, Nhà cung cấp mạng",
+      "B": "Người tiêu dùng, Doanh nghiệp",
+      "C": "Người tiêu dùng, Doanh nghiệp, Nhà cung cấp mạng, Chính phủ",
+      "D": "Người tiêu dùng, Doanh nghiệp, Chính phủ"
     },
     "ans": "C",
     "type": "mcq"
   },
   {
-    "id": 16,
-    "q": "Which sentence uses IT vocabulary correctly?",
+    "id": 14,
+    "q": "Đâu là tag tạo ra tiêu đề web kích cỡ lớn nhất?",
     "opts": {
-      "A": "The technician upgraded the laptop's RAM to improve processing speed.",
-      "B": "The user downloaded the router to boost the internet signal.",
-      "C": "The developer installed the bandwidth on the new server.",
-      "D": "The programmer browsed the CPU to fix the display error."
+      "A": "`<heading>`",
+      "B": "`<h1>`",
+      "C": "`<h6>`",
+      "D": "`<head>`"
     },
-    "ans": "A",
+    "ans": "",
+    "type": "mcq"
+  },
+  {
+    "id": 15,
+    "q": "Tag nào dùng để chèn 1 hình vào web?",
+    "opts": {
+      "A": "`<image src=\"image.jpg\">`",
+      "B": "`<img>image.jpg</img>`",
+      "C": "`<img src=\"image.jpg\">`",
+      "D": "`<img href=\"image.jpg\">`"
+    },
+    "ans": "",
+    "type": "mcq"
+  },
+  {
+    "id": 16,
+    "q": "Tag nào tạo ra 1 text input field?",
+    "opts": {
+      "A": "`<textfield>`",
+      "B": "`<textinput type=\"text\">`",
+      "C": "`<input type=\"text\">`",
+      "D": "`<input type=\"textfield\">`"
+    },
+    "ans": "",
     "type": "mcq"
   },
   {
     "id": 17,
-    "q": "Identify the sentence with correct subject-verb agreement:",
+    "q": "Tag nào tạo ra 1 drop-down list?",
     "opts": {
-      "A": "The network of computers are connected to the central server.",
-      "B": "The network of computers is connected to the central server.",
-      "C": "The networks of computer is connected to the central server.",
-      "D": "The network of computer are connected to the central servers."
+      "A": "`<select>`",
+      "B": "`<list>`",
+      "C": "`<input type=\"dropdown\">`",
+      "D": "`<input type=\"list\">`"
     },
-    "ans": "B",
+    "ans": "",
     "type": "mcq"
   },
   {
     "id": 18,
-    "q": "Which reading strategy is MOST helpful when looking for a specific piece of information in a long technical document?",
+    "q": "CSS là viết tắt của?",
     "opts": {
-      "A": "Reading every word from the beginning of the document.",
-      "B": "Skipping all headings and reading only the body text.",
-      "C": "Scanning for keywords, headings, and highlighted terms.",
-      "D": "Only reading the conclusion of the document."
+      "A": "Creative Style Sheets",
+      "B": "Computer Style Sheets",
+      "C": "Cascading Style Sheets",
+      "D": "Colorful Style Sheets"
     },
     "ans": "C",
     "type": "mcq"
   },
   {
     "id": 19,
-    "q": "Which type of document provides a step-by-step guide for using a specific software feature?",
+    "q": "Đặt dòng liên kết với file CSS ở vùng nào trong file HTML?",
     "opts": {
-      "A": "A project proposal.",
-      "B": "A tutorial or how-to guide.",
-      "C": "A system architecture diagram.",
-      "D": "A meeting agenda."
+      "A": "In the `<body>` section",
+      "B": "In the `<head>` section",
+      "C": "At the top of the document",
+      "D": "At the end of the document"
     },
     "ans": "B",
     "type": "mcq"
   },
   {
     "id": 20,
-    "q": "What is the MOST effective way to organize information in a technical report?",
+    "q": "Tag nào định nghĩa CSS ở ngay trong file HTML?",
     "opts": {
-      "A": "Write everything in one long paragraph to save space.",
-      "B": "Use random formatting to make the document visually interesting.",
-      "C": "Structure content with clear headings, sections, and a logical flow.",
-      "D": "Arrange content from least to most important with no headings."
+      "A": "`<css>`",
+      "B": "`<script>`",
+      "C": "`<style>`",
+      "D": "`<stype>`"
     },
-    "ans": "C",
+    "ans": "",
     "type": "mcq"
   },
   {
     "id": 21,
-    "q": "What does \"GUI\" stand for in IT?",
+    "q": "Dòng nào tuân theo đúng cú pháp của CSS?",
     "opts": {
-      "A": "General Utility Interface.",
-      "B": "Graphical User Interface.",
-      "C": "Global Unified Integration.",
-      "D": "Grid-based Uniform Input."
+      "A": "body {color: black}",
+      "B": "{body;color:black}",
+      "C": "body:color=black",
+      "D": "{body:color=black(body}"
     },
-    "ans": "B",
+    "ans": "A",
     "type": "mcq"
   },
   {
     "id": 22,
-    "q": "Which of the following best describes \"two-factor authentication\" (2FA)?",
+    "q": "Làm thế nào để quy định màu của chữ (text)?",
     "opts": {
-      "A": "Using two different passwords to access the same account.",
-      "B": "A security process requiring users to verify identity with two separate methods.",
-      "C": "Logging into two accounts at the same time.",
-      "D": "Sharing login credentials between two trusted users."
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 23,
-    "q": "What is the BEST approach when writing technical documentation for an international audience?",
-    "opts": {
-      "A": "Use idioms and cultural references to make the text engaging.",
-      "B": "Write in complex sentences to appear professional.",
-      "C": "Use clear, plain language and avoid culture-specific expressions.",
-      "D": "Translate all documentation into multiple languages without editing for clarity."
+      "A": "text-color=",
+      "B": "fgcolor:",
+      "C": "color:",
+      "D": "text-color:"
     },
     "ans": "C",
     "type": "mcq"
   },
   {
-    "id": 24,
-    "q": "Which of the following sentences uses the present perfect tense correctly in a technical context?",
+    "id": 23,
+    "q": "Thuộc tính nào làm chữ trong tag p trở thành chữ đậm?",
     "opts": {
-      "A": "The system update install last night.",
-      "B": "The system update has been installed successfully.",
-      "C": "The system update is install since yesterday.",
-      "D": "The system update was install successfully last night."
+      "A": "{text-size:bold}",
+      "B": "`<p style=\"font-size:bold\">`",
+      "C": "`<p style=\"text-size:bold\">`",
+      "D": "p {font-weight:bold}"
     },
-    "ans": "B",
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 24,
+    "q": "Bỏ gạch chân cho liên kết (thẻ a)?",
+    "opts": {
+      "A": "a {decoration:no underline}",
+      "B": "a {text-decoration:no underline}",
+      "C": "a {underline:none}",
+      "D": "a {text-decoration:none}"
+    },
+    "ans": "D",
     "type": "mcq"
   },
   {
     "id": 25,
-    "q": "What does the term \"latency\" refer to in networking?",
+    "q": "JavaScript là ngôn ngữ xử lý ở:",
     "opts": {
-      "A": "The total amount of data a network can store.",
-      "B": "The time delay between sending a request and receiving a response.",
-      "C": "The number of devices connected to a single network.",
-      "D": "The physical distance between two servers."
+      "A": "Client",
+      "B": "Server",
+      "C": "Server/client",
+      "D": "Không có dạng nào."
     },
-    "ans": "B",
+    "ans": "A",
     "type": "mcq"
   },
   {
     "id": 26,
-    "q": "Which of the following elements is MOST important in a software release note?",
+    "q": "Javascript là ngôn ngữ thông dịch hay biên dịch?",
     "opts": {
-      "A": "A list of the developers' names and contact information.",
-      "B": "A description of new features, bug fixes, and known issues.",
-      "C": "Detailed source code explanations for each change.",
-      "D": "Marketing highlights of the product's most popular features."
+      "A": "Thông dịch",
+      "B": "Biên dịch",
+      "C": "Thông dịch và Biên dịch",
+      "D": "Không có dạng nào ở trên"
     },
-    "ans": "B",
+    "ans": "A",
     "type": "mcq"
   },
   {
     "id": 27,
-    "q": "Which of the following is an example of POOR technical writing?",
+    "q": "Phương thức viết chương trình của Javascript như thế nào?",
     "opts": {
-      "A": "\"Press the power button on the top-right corner of the device to turn it on.\"",
-      "B": "\"The system shall process user requests within two seconds under normal load conditions.\"",
-      "C": "\"Basically, just do the stuff to make the program work. It's not that complicated.\"",
-      "D": "\"Enter your username and password, then click 'Login' to access your account.\""
+      "A": "Viết riêng một trang",
+      "B": "Viết chung với HTML",
+      "C": "Cả hai dạng",
+      "D": "Không có dạng nào."
     },
     "ans": "C",
     "type": "mcq"
   },
   {
     "id": 28,
-    "q": "What is the main function of a \"changelog\" in software documentation?",
+    "q": "Javascript là ngôn ngữ kịch bản có giấu được mã nguồn không?",
     "opts": {
-      "A": "To list the names of all contributors to the project.",
-      "B": "To provide a chronological record of changes made to each version of the software.",
-      "C": "To describe the overall design philosophy of the software.",
-      "D": "To market the software to potential customers."
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 29,
-    "q": "In IT writing, what does the term \"scalability\" refer to?",
-    "opts": {
-      "A": "The visual size of text and images in a user interface.",
-      "B": "The ability of a system to handle increasing workloads or be expanded easily.",
-      "C": "A measurement unit used in network configuration.",
-      "D": "A feature that allows software to run on mobile devices."
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 30,
-    "q": "Which term describes software that is provided free of charge but may have limitations compared to a paid version?",
-    "opts": {
-      "A": "Open source.",
-      "B": "Proprietary.",
-      "C": "Freeware.",
-      "D": "Shareware."
-    },
-    "ans": "D",
-    "type": "mcq"
-  },
-  {
-    "id": 31,
-    "q": "Which sentence correctly uses an IT vocabulary term?",
-    "opts": {
-      "A": "The technician rebooted the router to resolve the connectivity issue.",
-      "B": "The developer compiled the internet to make the app work faster.",
-      "C": "The user browsed the hard drive to send an email.",
-      "D": "The programmer deleted the RAM to free up disk space."
+      "A": "Không giấu được vì các kịch bản chạy ở client.",
+      "B": "Giấu được vì chương trình hoạt động độc lập với trình duyệt",
+      "C": "Không giấu được vì các kịch bản chạy ở Server.",
+      "D": "Tất cả phát biểu trên đều sai."
     },
     "ans": "A",
     "type": "mcq"
   },
   {
-    "id": 32,
-    "q": "Identify the grammatically correct sentence:",
+    "id": 29,
+    "q": "Phần mở rộng của tập tin HTML là?",
     "opts": {
-      "A": "The software have been updated by the developer.",
-      "B": "The softwares was updated by the developer.",
-      "C": "The software has been updated by the developer.",
-      "D": "The software were updated by the developer."
+      "A": ".htm",
+      "B": ".html",
+      "C": "xhtml",
+      "D": ".htm và .html"
     },
-    "ans": "C",
+    "ans": "D",
     "type": "mcq"
   },
   {
-    "id": 33,
-    "q": "Which of the following is the BEST strategy when reading a long technical manual?",
+    "id": 30,
+    "q": "Đâu là tag để xuống dòng trong web?",
     "opts": {
-      "A": "Read from cover to cover without stopping.",
-      "B": "Ignore charts and focus only on paragraph text.",
-      "C": "Use the table of contents and index to locate relevant sections.",
-      "D": "Skip the introduction as it contains no useful information."
+      "A": "`<lb>`",
+      "B": "`<br>`",
+      "C": "`<break>`",
+      "D": "`<p>` --- ### PHẦN II: C# & .NET FRAMEWORK CƠ BẢN"
     },
-    "ans": "C",
+    "ans": "",
     "type": "mcq"
   },
   {
-    "id": 34,
-    "q": "In technical writing, what is the primary purpose of numbered steps?",
+    "id": 31,
+    "q": "Common Language Runtime cung cấp những tính năng nào?",
     "opts": {
-      "A": "To make the document appear longer and more detailed.",
-      "B": "To guide users through a sequential process in a clear order.",
-      "C": "To demonstrate the author's knowledge of the subject.",
-      "D": "To separate sections of a document visually."
+      "A": "Quản lý bộ nhớ tự động, tương thích ngôn ngữ.",
+      "B": "Quản lý bộ nhớ tự động, tương thích ngôn ngữ, nền tảng độc lập, quản lý an ninh, cung cấp kiểu an toàn.",
+      "C": "Quản lý an ninh, cung cấp kiểu an toàn.",
+      "D": "Quản lý bộ nhớ tự động, nền tảng độc lập, quản lý an ninh, cung cấp kiểu an toàn."
     },
     "ans": "B",
     "type": "mcq"
   },
   {
-    "id": 35,
-    "q": "Which element is MOST important in a professional technical report?",
+    "id": 32,
+    "q": "LINQ là tính năng xuất hiện từ phiên bản nào?",
     "opts": {
-      "A": "Informal language and conversational tone.",
-      "B": "Accurate, well-organized information with clear headings.",
-      "C": "A large number of images to fill the pages.",
-      "D": "Personal opinions of the author throughout."
+      "A": ".NET Framework 3.0",
+      "B": ".NET Framework 3.5",
+      "C": ".NET Framework 4.0",
+      "D": ".NET Framework 4.5"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 33,
+    "q": ".NET Framework có các thành phần nào sau đây?",
+    "opts": {
+      "A": "Common Language Runtime",
+      "B": ".NET Framework Base Classes",
+      "C": "Giao diện người dùng",
+      "D": "Tất cả đều đúng"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 34,
+    "q": "Phát biểu nào sau đây là đúng?",
+    "opts": {
+      "A": "Một vòng lặp là một chuỗi các sự kiện, hành động lặp lại đến khi thỏa mãn điều kiện dừng nào đó.",
+      "B": "Vòng lặp vô tận là một chuỗi các sự kiện, hành động lặp lại vô tận do không bao giờ thỏa mãn điều kiện dừng.",
+      "C": "Vòng lặp là chuỗi các sự kiện, hành động lặp đi lặp lại khi thỏa mãn điều kiện nào đó. Vòng lặp sẽ kết thúc khi không còn thỏa mãn điều kiện lặp nữa.",
+      "D": "Tất cả đều đúng"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": 35,
+    "q": "Khai báo tập hợp thư viện như sau: `Dictionary<int, string> thuvien = new Dictionary<int, string>();` Câu lệnh: `Console.WriteLine(thuvien.ContainsKey(4))` cho kết quả là gì?",
+    "opts": {
+      "A": "True",
+      "B": "False",
+      "C": "Không cho kết quả gì",
+      "D": "Chương trình báo lỗi"
     },
     "ans": "B",
     "type": "mcq"
   },
   {
     "id": 36,
-    "q": "What does the acronym \"API\" stand for in software development?",
+    "q": "Phát biểu nào sau đây là đúng?",
     "opts": {
-      "A": "Automated Programming Interface.",
-      "B": "Application Protocol Integration.",
-      "C": "Application Programming Interface.",
-      "D": "Advanced Process Integration."
+      "A": "Tất cả các kiểu dữ liệu xây dựng sẵn là kiểu dữ liệu giá trị ngoại trừ các đối tượng và chuỗi?",
+      "B": "Tất cả các kiểu do người dùng định nghĩa ngoại trừ kiểu cấu trúc đều là kiểu dữ liệu tham chiếu",
+      "C": "Tất cả sai",
+      "D": "Tất cả đúng"
     },
-    "ans": "C",
+    "ans": "D",
     "type": "mcq"
   },
   {
     "id": 37,
-    "q": "Which of the following best describes a \"firewall\" in IT security?",
+    "q": "Phát biểu nào sau đây là sai?",
     "opts": {
-      "A": "A software program used to design websites.",
-      "B": "Hardware that physically protects servers from fire.",
-      "C": "A system that monitors and controls incoming and outgoing network traffic.",
-      "D": "A type of malware that spreads through email."
+      "A": "Một lớp con chỉ có thể kế thừa từ 1 lớp cha",
+      "B": "Một lớp con có thể kế thừa từ nhiều Interface",
+      "C": "Một lớp con có thể kế thừa từ nhiều lớp cha *(Lưu ý: C# không hỗ trợ đa kế thừa lớp).*",
+      "D": "Interface có thể kế thừa từ nhiều Interface"
     },
-    "ans": "C",
+    "ans": "",
     "type": "mcq"
   },
   {
     "id": 38,
-    "q": "When writing a technical email to a non-technical manager, you should:",
+    "q": "Một ngôn ngữ được gọi là hướng đối tượng khi nó thỏa mãn đặc trưng nào sau đây?",
     "opts": {
-      "A": "Use as much technical terminology as possible to sound credible.",
-      "B": "Avoid giving details and keep the email very short.",
-      "C": "Explain concepts in plain language and avoid unnecessary jargon.",
-      "D": "Send only the technical report without any explanation."
+      "A": "Tính đóng gói (encapsulation)",
+      "B": "Tính kế thừa (inheritance)",
+      "C": "Tính đa hình (polymorphism)",
+      "D": "Tất cả đều đúng"
     },
-    "ans": "C",
+    "ans": "D",
     "type": "mcq"
   },
   {
     "id": 39,
-    "q": "Which of the following is typically found in a software README file?",
+    "q": "Phạm vi truy cập mặc định của lớp khi chúng ta không khai báo là gì?",
     "opts": {
-      "A": "Marketing slogans and promotional content.",
-      "B": "Installation instructions, dependencies, and usage examples.",
-      "C": "Detailed financial information about the project.",
-      "D": "Personal biography of the development team."
+      "A": "Public",
+      "B": "Private",
+      "C": "Internal",
+      "D": "Không có phạm vi truy cập"
     },
-    "ans": "B",
+    "ans": "C",
     "type": "mcq"
   },
   {
     "id": 40,
-    "q": "What does \"SaaS\" stand for in cloud computing?",
+    "q": "Giả sử ta có lớp SinhVien(), cú pháp tạo đối tượng sinh viên (sv) nào sau đây là đúng?",
     "opts": {
-      "A": "Software as a Service.",
-      "B": "System as a Solution.",
-      "C": "Server and Application Software.",
-      "D": "Secure Access and Storage."
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 41,
-    "q": "Which sentence demonstrates correct use of passive voice in technical writing?",
-    "opts": {
-      "A": "The system processed the data quickly.",
-      "B": "The data were processed by the system.",
-      "C": "The system is process data quickly.",
-      "D": "The data have processed by the system quickly."
+      "A": "SinhVien() sv = new SinhVien;",
+      "B": "SinhVien sv = new SinhVien();",
+      "C": "SinhVien() new sv = SinhVien;",
+      "D": "SinhVien new sv = SinhVien();"
     },
     "ans": "B",
     "type": "mcq"
   },
   {
-    "id": 42,
-    "q": "Which of the following is the MOST appropriate opening line for a technical bug report?",
+    "id": 41,
+    "q": "Phát biểu nào sau đây sai?",
     "opts": {
-      "A": "\"Hey, the app is totally broken and nothing works!\"",
-      "B": "\"I think maybe there might possibly be a small issue with the login.\"",
-      "C": "\"The login function fails to authenticate users when special characters are entered in the password field.\"",
-      "D": "\"Someone should check the login because users are complaining.\""
+      "A": "AbstractClass là lựa chọn thích hợp khi vừa khai báo các phương thức thông thường vừa khai báo các phương thức trừu tượng",
+      "B": "Interface thích hợp cho việc khai báo duy nhất các phương thức trừu tượng",
+      "C": "Có thể khởi tạo đối tượng từ AbstractClass và Interface",
+      "D": "AbstractClass và Interface đều khai báo các phương thức nhưng không sử dụng chúng"
     },
     "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": 42,
+    "q": "Phạm vi truy cập mặc định của các thành phần trong lớp khi chúng ta không khai báo là gì?",
+    "opts": {
+      "A": "Public",
+      "B": "Private",
+      "C": "Internal",
+      "D": "Không có phạm vi truy cập"
+    },
+    "ans": "B",
     "type": "mcq"
   },
   {
     "id": 43,
-    "q": "What is the purpose of version numbers (e.g., v2.1.3) in software documentation?",
+    "q": "Để class sử dụng interface nó phải:",
     "opts": {
-      "A": "To confuse users about which version to use.",
-      "B": "To indicate the date the software was created.",
-      "C": "To track updates, fixes, and changes made to the software over time.",
-      "D": "To show how many developers worked on the software."
+      "A": "Kế thừa các đặc tính của interface",
+      "B": "Chứa các phương thức giống như interface",
+      "C": "Tạo một interface object",
+      "D": "Tất cả các đáp án này *(Lưu ý: Xét theo ngữ cảnh câu hỏi kiểm tra tính đúng đắn khi thực hiện mapping toàn diện).*"
     },
-    "ans": "C",
+    "ans": "",
     "type": "mcq"
   },
   {
     "id": 44,
-    "q": "In IT documentation, what does \"deprecated\" mean?",
+    "q": "Mọi class đều trực tiếp hoặc gián tiếp mở rộng lớp nào sau đây:",
     "opts": {
-      "A": "A feature that has been removed and replaced with a newer alternative.",
-      "B": "A newly introduced feature that is still being tested.",
-      "C": "A feature that is available only in the premium version.",
-      "D": "A security vulnerability that needs patching."
+      "A": "System",
+      "B": "Object",
+      "C": "Drawing",
+      "D": "Console"
     },
-    "ans": "A",
+    "ans": "B",
     "type": "mcq"
   },
   {
     "id": 45,
-    "q": "Which term describes the process of finding and fixing errors in code?",
+    "q": "Khái niệm composition xác định rằng bạn có thể:",
     "opts": {
-      "A": "Compiling.",
-      "B": "Rendering.",
-      "C": "Debugging.",
-      "D": "Encrypting."
+      "A": "Biên soạn code tốt với C#.",
+      "B": "Soạn các dự án C# với những object khác nhau.",
+      "C": "Giảm lỗi bằng cách viết lại trong quá trình lập trình.",
+      "D": "Tất cả đều đúng"
     },
-    "ans": "C",
+    "ans": "B",
     "type": "mcq"
   },
   {
     "id": 46,
-    "q": "Identify the correct sentence:",
+    "q": "Đa hình xảy ra khi các phương thức của lớp con:",
     "opts": {
-      "A": "She don't have any books.",
-      "B": "She doesn't have any books.",
-      "C": "She don't have no books.",
-      "D": "She doesn't have books."
+      "A": "Ghi đè các phương thức của lớp cha nhưng vẫn duy trì việc triển khai.",
+      "B": "Duy trì cùng kiểu trả về và các tham số như lớp cha, nhưng cách thực hiện khác nhau.",
+      "C": "Có kiểu trả về và tham số khác với lớp cha.",
+      "D": "Là ảo."
     },
     "ans": "B",
     "type": "mcq"
   },
   {
     "id": 47,
-    "q": "Which of the following is a comma splice error?",
+    "q": "Một lớp trừu tượng...",
     "opts": {
-      "A": "I went to the store, and I bought milk.",
-      "B": "I went to the store, I bought milk.",
-      "C": "I went to the store; I bought milk.",
-      "D": "I went to the store after work."
+      "A": "Có thể chứa các biến instance",
+      "B": "Có thể chứa constructor",
+      "C": "Có thể mở rộng class khác",
+      "D": "Tất cả các đáp án này."
     },
     "ans": "B",
     "type": "mcq"
   },
   {
     "id": 48,
-    "q": "Which of the following is NOT a characteristic of good technical writing?",
+    "q": "Khai báo một mảng như sau: `int[,] numbers = new int[3, 2] { { 1, 2 }, { 3, 4 }, { 5, 6 } };` câu lệnh `numbers.Length` cho kết quả là:",
     "opts": {
-      "A": "Clarity",
-      "B": "Conciseness",
-      "C": "Creativity",
-      "D": "Objectivity"
+      "A": "2",
+      "B": "3",
+      "C": "5",
+      "D": "6 *(Tổng số phần tử của mảng 2 chiều là 3 * 2 = 6).*"
     },
-    "ans": "C",
+    "ans": "",
     "type": "mcq"
   },
   {
     "id": 49,
-    "q": "What is the purpose of using headings and subheadings in technical documents?",
+    "q": "Cho biết các lệnh rẽ nhánh có điều kiện?",
     "opts": {
-      "A": "To make the document look more appealing.",
-      "B": "To break up the content into logical sections.",
-      "C": "To increase the word count.",
-      "D": "To confuse the reader."
+      "A": "If, goto, switch, break",
+      "B": "If, switch, break, for",
+      "C": "Return, switch, break",
+      "D": "Tất cả đều sai *(Lưu ý: Các câu lệnh rẽ nhánh có điều kiện chuẩn bao gồm `if`, `if...else`, `switch`).*"
     },
-    "ans": "B",
+    "ans": "",
     "type": "mcq"
   },
   {
     "id": 50,
-    "q": "Which of the following should NOT be included in a CV?",
+    "q": "Một khối ... kèm theo code có thể throw một ngoại lệ.",
     "opts": {
-      "A": "Work experience",
-      "B": "Educational qualifications",
-      "C": "Personal interests",
-      "D": "Irrelevant personal information"
+      "A": "Try",
+      "B": "Catch",
+      "C": "Exception",
+      "D": "Try và Catch --- ### PHẦN III: LẬP TRÌNH WEB VỚI ASP.NET"
     },
-    "ans": "D",
+    "ans": "A",
     "type": "mcq"
   },
   {
     "id": 51,
-    "q": "What is the primary purpose of a CV?",
+    "q": "Trong .NET Framework, một Web page thuộc không gian tên nào dưới đây?",
     "opts": {
-      "A": "To showcase your personality.",
-      "B": "To highlight your relevant skills and experience.",
-      "C": "To entertain the reader.",
-      "D": "To demonstrate your creative writing abilities."
+      "A": "System.Web.UI.Page",
+      "B": "System.Windows.Page",
+      "C": "System.Web.Page",
+      "D": "Tất cả đều sai"
     },
-    "ans": "B",
+    "ans": "A",
     "type": "mcq"
   },
   {
     "id": 52,
-    "q": "What is the primary purpose of a CV? (Note: Question context references cloud storage)",
+    "q": "Phát biểu nào dưới đây là sai?",
     "opts": {
-      "A": "To showcase your personality.",
-      "B": "To highlight your relevant skills and experience.",
-      "C": "To entertain the reader.",
-      "D": "To demonstrate your creative writing abilities."
+      "A": "IsPostBack là một phương thức của lớp System.UI.Web.Page",
+      "B": "IsPostBack là một phương thức của lớp System.Web.UI.Page",
+      "C": "IsPostBack là một thuộc tính chỉ đọc của lớp System.Web.UI.Page",
+      "D": "IsPostBack là một phương thức của lớp System.UI.Web.Page và phương thức của lớp System.Web.UI.Page *(IsPostBack thực chất là một Property).*"
     },
-    "ans": "B",
+    "ans": "",
     "type": "mcq"
   },
   {
     "id": 53,
-    "q": "What is the best way to avoid plagiarism?",
+    "q": "Các trình tự trên web form diễn ra theo trình tự nào?",
     "opts": {
-      "A": "Cite all sources, even if you're paraphrasing.",
-      "B": "Only use direct quotes from sources.",
-      "C": "Rely solely on your own knowledge and ideas.",
-      "D": "Paraphrase without citing sources."
+      "A": "Page_Init, Page_Load, Page_Unload, Page_Dispose",
+      "B": "Page_Load, Page_Init, Page_Unload, Page_Dispose",
+      "C": "Page_Load, Page_Unload, Page_Init, Page_Dispose",
+      "D": "Page_Load, Page_Init, Page_Dispose, Page_Unload"
     },
     "ans": "A",
     "type": "mcq"
   },
   {
     "id": 54,
-    "q": "Which of the following is NOT a good tip for a job interview?",
+    "q": "Trong các biến cố Page_load (), Page_Prerender () và Click () thì thứ tự thực thi nào sau đây là sai?",
     "opts": {
-      "A": "Prepare questions to ask the interviewer.",
-      "B": "Research the company and the role",
-      "C": "Dress casually and comfortably",
-      "D": "Practice answering common interview questions."
+      "A": "Page_load (), Page_Prerender () và Click ()",
+      "B": "Page_Prerender (), Page_load () và Click ()",
+      "C": "Click (), Page_load () và Page_Prerender ()",
+      "D": "Tất cả đều sai *(Thứ tự đúng là Load -> Click -> PreRender).*"
     },
-    "ans": "C",
+    "ans": "",
     "type": "mcq"
   },
   {
     "id": 55,
-    "q": "What should you do if you don't know the answer to an interview question?",
+    "q": "Khi chọn dịch vụ Web Hosting cần lưu ý đến các tính năng mà nhà cung cấp đưa ra:",
     "opts": {
-      "A": "Guess an answer.",
-      "B": "Remain silent.",
-      "C": "Admit that you don't know and ask for clarification.",
-      "D": "Change the subject."
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 56,
-    "q": "Which of the following is NOT a good tip for a personal interview?",
-    "opts": {
-      "A": "Maintain eye contact.",
-      "B": "Speak clearly and confidently.",
-      "C": "Provide one-word answers.",
-      "D": "Listen attentively."
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 57,
-    "q": "Identify the correct sentence with proper subject-verb agreement:",
-    "opts": {
-      "A": "The team of engineers are working on the project.",
-      "B": "The team of engineers is working on the project.",
-      "C": "The team of engineers were working on the project.",
-      "D": "The team of engineers has working on the project."
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 58,
-    "q": "What is the best way to respond to the question \"What is your greatest weakness?\" in a job interview?",
-    "opts": {
-      "A": "Deny having any weaknesses.",
-      "B": "Mention a weakness that is actually a strength in disguise.",
-      "C": "Provide a genuine weakness and explain how you're working to improve it.",
-      "D": "Change the subject and avoid answering the question."
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 59,
-    "q": "Which of the following is a good way to conclude a personal interview?",
-    "opts": {
-      "A": "Thank the interviewer and express your interest in the opportunity.",
-      "B": "Ask the interviewer personal questions about their background.",
-      "C": "Inquire about the next steps in the hiring process.",
-      "D": "Both A and C"
+      "A": "Dung lượng đĩa cứng, Băng thông, UpTime.",
+      "B": "Các ngôn ngữ lập trình, Hệ quản trị Cơ sở dữ liệu hỗ trợ.",
+      "C": "Hỗ trợ kỹ thuật.",
+      "D": "Tất cả đều đúng."
     },
     "ans": "D",
     "type": "mcq"
   },
   {
-    "id": 60,
-    "q": "Which of the following is NOT a way in which AI can help with grammar checking?",
+    "id": 56,
+    "q": "Trang Web động có phần mở rộng tùy theo ngôn ngữ kịch bản phía trình chủ cụ thể, nếu là trang ASP.Net thì sẽ có phần mở rộng là:",
     "opts": {
-      "A": "Identifying subject-verb agreement errors.",
-      "B": "Suggesting corrections for punctuation mistakes.",
-      "C": "Detecting errors in idioms and colloquial expressions.",
-      "D": "Providing recommendations for improving writing style."
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 61,
-    "q": "What is the main goal of Machine Learning?",
-    "opts": {
-      "A": "To replace all humans",
-      "B": "To allow computers to learn from data",
-      "C": "To build computer hardware",
-      "D": "To design websites"
-    },
-    "ans": "B",
-    "type": "mcq"
-  },
-  {
-    "id": 62,
-    "q": "Which of the following is a type of Machine Learning?",
-    "opts": {
-      "A": "Supervised Learning",
-      "B": "Guided Learning",
-      "C": "Manual Learning",
-      "D": "Human Learning"
+      "A": ".aspx",
+      "B": ".asp",
+      "C": ".php",
+      "D": "Tất cả đều sai"
     },
     "ans": "A",
     "type": "mcq"
   },
   {
-    "id": 63,
-    "q": "In supervised learning, the model is trained using:",
+    "id": 57,
+    "q": "Phát biểu nào đúng?",
     "opts": {
-      "A": "Unlabeled data",
-      "B": "Random data",
-      "C": "Labeled data",
-      "D": "Encrypted data"
+      "A": "Phần thực thi của ứng dụng web chạy dưới sự điều khiển của web server",
+      "B": "Ứng dụng web không cần phải được cài đặt trên phía client",
+      "C": "Dịch vụ web là một loại ứng dụng Internet",
+      "D": "Tất cả đều đúng"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 58,
+    "q": "Ứng dụng web:",
+    "opts": {
+      "A": "Chỉ chạy trên một máy đơn",
+      "B": "Có kiến trúc Client/Server",
+      "C": "Là tất cả ứng dụng có sử dụng Internet",
+      "D": "Tất cả đều sai"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 59,
+    "q": "Để viết ASP.Net code trên cùng trang với HTML bạn đặt khối lệnh trong thẻ nào?",
+    "opts": {
+      "A": "`<Script>`",
+      "B": "`<Body>`",
+      "C": "`<Head>`",
+      "D": "Tất cả đều đúng"
+    },
+    "ans": "",
+    "type": "mcq"
+  },
+  {
+    "id": 60,
+    "q": "Sự kiện nào dưới đây phát sinh đầu tiên trong vòng đời một trang aspx?",
+    "opts": {
+      "A": "Page_Init()",
+      "B": "Page_Load()",
+      "C": "Page_click()",
+      "D": "Page_Begin()"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 61,
+    "q": "PostBack có cho Form nào dưới đây?",
+    "opts": {
+      "A": "Winforms",
+      "B": "HTMLForms",
+      "C": "Webforms",
+      "D": "Tất cả đều đúng"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": 62,
+    "q": "Trang Web Asp.net có thể được soạn thảo trên phần mềm nào:",
+    "opts": {
+      "A": "MS Word",
+      "B": "Macromedia Dreamweaver",
+      "C": "MS Visual studio",
+      "D": "Visual studio code"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": 63,
+    "q": "Tập tin code behind của trang ASP.Net có phần mở rộng tùy theo ngôn ngữ kịch bản phía trình chủ cụ thể, nếu sử dụng ngôn ngữ lập trình C# thì sẽ có phần mở rộng là:",
+    "opts": {
+      "A": "c#",
+      "B": "ascx",
+      "C": "cs",
+      "D": "aspx"
     },
     "ans": "C",
     "type": "mcq"
   },
   {
     "id": 64,
-    "q": "Which algorithm is commonly used for classification?",
+    "q": ".NET Framework cung cấp một môi trường runtime được gọi là?",
     "opts": {
-      "A": "Linear Regression",
-      "B": "Decision Tree",
-      "C": "K-Means",
-      "D": "PCA"
+      "A": "RMT",
+      "B": "CLR",
+      "C": "RCT",
+      "D": "RC"
     },
     "ans": "B",
     "type": "mcq"
   },
   {
     "id": 65,
-    "q": "What does AI stand for?",
+    "q": "Câu nào sau đây là đúng?",
     "opts": {
-      "A": "Automatic Information",
-      "B": "Artificial Internet",
-      "C": "Automated Interaction",
-      "D": "Artificial Intelligence"
+      "A": "Các ứng dụng ASP.NET có thể chạy không cần máy chủ Web",
+      "B": "ASP.NET là nâng cấp của ASP",
+      "C": "ASP.Net là ngôn ngữ lập trình web",
+      "D": "Tất cả đều đúng"
     },
     "ans": "D",
     "type": "mcq"
   },
   {
     "id": 66,
-    "q": "Which of the following is an example of AI in daily life?",
+    "q": "ASP.Net là:",
     "opts": {
-      "A": "Voice assistants",
-      "B": "Paper books",
-      "C": "Traditional clocks",
-      "D": "Flashlights"
+      "A": "Ngôn ngữ lập trình *(Mặc dù bản chất là một Web Framework nhưng theo đáp án key trường học).*",
+      "B": "Kỹ thuật lập trình phía server",
+      "C": "Kỹ thuật lập trình phía client",
+      "D": "Ngôn ngữ lập trình cơ sở dữ liệu tương tự như SQL"
     },
-    "ans": "A",
+    "ans": "",
     "type": "mcq"
   },
   {
     "id": 67,
-    "q": "What is the purpose of training data?",
+    "q": "Phương thức di chuyển nào sau đây cho phép giữ lại thông tin từ webform xuất phát?",
     "opts": {
-      "A": "To test hardware",
-      "B": "To teach the model patterns",
-      "C": "To delete information",
-      "D": "To increase internet speed"
+      "A": "Response.Redirect",
+      "B": "Server.Transfer",
+      "C": "Server.Execute",
+      "D": "Tất cả phương thức này"
     },
     "ans": "B",
     "type": "mcq"
   },
   {
     "id": 68,
-    "q": "Which metric is commonly used to evaluate classification models?",
+    "q": "Ứng dụng web không sử dụng các control nào?",
     "opts": {
-      "A": "Accuracy",
-      "B": "Voltage",
-      "C": "Resolution",
-      "D": "Brightness"
+      "A": "HTML controls",
+      "B": "Windows controls",
+      "C": "User controls",
+      "D": "Custom controls"
     },
-    "ans": "A",
+    "ans": "B",
     "type": "mcq"
   },
   {
     "id": 69,
-    "q": "What is overfitting in Machine Learning?",
+    "q": "Control kiểm lỗi nào không có trong ASP.Net?",
     "opts": {
-      "A": "The model learns too little",
-      "B": "The model has no data",
-      "C": "The model runs too slowly",
-      "D": "The model performs well only on training data"
+      "A": "RequiredValidation *(Tên đúng phải là RequiredFieldValidator).*",
+      "B": "CompareValidation",
+      "C": "RangeValidation",
+      "D": "CustomValidation"
     },
-    "ans": "D",
+    "ans": "",
     "type": "mcq"
   },
   {
     "id": 70,
-    "q": "Which language is most popular for AI development?",
+    "q": "Đối tượng nào được sử dụng để cung cấp thông tin của Server cho ứng dụng?",
     "opts": {
-      "A": "HTML",
-      "B": "CSS",
-      "C": "Python",
-      "D": "SQL"
+      "A": "Request",
+      "B": "Application",
+      "C": "Server",
+      "D": "Response"
     },
     "ans": "C",
     "type": "mcq"
   },
   {
     "id": 71,
-    "q": "What is a neural network inspired by?",
+    "q": "Control dùng để hiển thị và cập nhật dữ liệu kiểu ngày tên là:",
     "opts": {
-      "A": "Human brain",
-      "B": "Cars",
-      "C": "Buildings",
-      "D": "Satellites"
+      "A": "DateTimePicker",
+      "B": "Calendar",
+      "C": "DateTime",
+      "D": "Tất cả đều đúng"
     },
-    "ans": "A",
+    "ans": "B",
     "type": "mcq"
   },
   {
     "id": 72,
-    "q": "Which of the following is an unsupervised learning algorithm?",
+    "q": "Một textbox trong ASP.net cho phép người dùng nhập dữ liệu trên nhiều dòng thì cần thiết lập:",
     "opts": {
-      "A": "Logistic Regression",
-      "B": "Decision Tree",
-      "C": "Random Forest",
-      "D": "K-Means"
+      "A": "TextMode = \"MultiText\"",
+      "B": "TextMode = \"TextArea\"",
+      "C": "TextMode = \"MultiLine\"",
+      "D": "TextMode = \"MultiRow\""
     },
-    "ans": "D",
+    "ans": "C",
     "type": "mcq"
   },
   {
     "id": 73,
-    "q": "What is the output of a classification problem?",
+    "q": "Điều khiển nào sau đây không cho chọn dữ liệu?",
     "opts": {
-      "A": "A category or label",
-      "B": "A continuous value",
-      "C": "A sound file",
-      "D": "A video"
+      "A": "Label",
+      "B": "CheckListBox",
+      "C": "ListBox",
+      "D": "ComboBox"
     },
     "ans": "A",
     "type": "mcq"
   },
   {
     "id": 74,
-    "q": "Which company developed ChatGPT?",
+    "q": "Đối tượng trong asp.net cho phép gửi yêu cầu đến server thông qua sự kiện để thực hiện chức năng của người dùng?",
     "opts": {
-      "A": "Google",
-      "B": "Microsoft",
-      "C": "OpenAI",
-      "D": "IBM"
+      "A": "Button",
+      "B": "Submit",
+      "C": "ImageButton",
+      "D": "a và c đúng"
     },
-    "ans": "C",
+    "ans": "D",
     "type": "mcq"
   },
   {
     "id": 75,
-    "q": "What is deep learning?",
+    "q": "Đối tượng thực hiện chuyển trang trong asp.net là:",
     "opts": {
-      "A": "A type of database",
-      "B": "A web design method",
-      "C": "A network cable",
-      "D": "A subset of machine learning using neural networks"
+      "A": "`<asp:HyperLink>`",
+      "B": "`<a>`",
+      "C": "`<asp:LinkButton>`",
+      "D": "a và c đúng"
     },
     "ans": "D",
     "type": "mcq"
   },
   {
     "id": 76,
-    "q": "Which of the following is a regression algorithm?",
+    "q": "Các giá trị của thuộc tính TextMode của Control Textbox là:",
     "opts": {
-      "A": "Linear Regression",
-      "B": "K-Means",
-      "C": "Apriori",
-      "D": "CNN"
+      "A": "SingleLine",
+      "B": "MultiLine",
+      "C": "Password",
+      "D": "Cả 3 câu đều đúng."
     },
-    "ans": "A",
+    "ans": "D",
     "type": "mcq"
   },
   {
     "id": 77,
-    "q": "What is the role of features in Machine Learning?",
+    "q": "Dùng Asp.net server control nào dưới đây để hiển thị văn bản trên trang Web?",
     "opts": {
-      "A": "They are computer viruses",
-      "B": "They are output labels only",
-      "C": "They are input variables used for prediction",
-      "D": "They are storage devices"
+      "A": "`<asp:Label>`",
+      "B": "`<asp:Button>`",
+      "C": "`<asp:ListItem>`",
+      "D": "`<asp:TextBox>`"
     },
-    "ans": "C",
+    "ans": "",
     "type": "mcq"
   },
   {
     "id": 78,
-    "q": "Which field combines AI and language processing?",
+    "q": "Thẻ `<asp:DropDownList>` thay thế thẻ HTML nào dưới đây?",
     "opts": {
-      "A": "NLP",
-      "B": "CPU",
-      "C": "GPU",
-      "D": "API"
+      "A": "`<Option>`",
+      "B": "`<Select>`",
+      "C": "`<List>`",
+      "D": "`<DropDownList>`"
     },
-    "ans": "A",
+    "ans": "",
     "type": "mcq"
   },
   {
     "id": 79,
-    "q": "What does NLP stand for?",
+    "q": "Chọn phát biểu đúng:",
     "opts": {
-      "A": "Neural Logic Program",
-      "B": "Numeric Learning Process",
-      "C": "Natural Light Programming",
-      "D": "Natural Language Processing"
+      "A": "Master pages cho phép tạo 1 bố cục nhất quán trên các trang web trong cùng 1 website",
+      "B": "Nội dung thể hiện trên trình duyệt là sự kết hợp giữa trang master page và trang content page",
+      "C": "Thao tác thiết kế trang master page giống như trang aspx, nhưng phải bổ sung ít nhất một điều khiển ContentPlaceHolder",
+      "D": "Tất cả đều đúng"
     },
     "ans": "D",
     "type": "mcq"
   },
   {
     "id": 80,
-    "q": "Which AI application can recognize faces?",
+    "q": "Phần mở rộng của tập tin Master page là gì?",
     "opts": {
-      "A": "Computer Vision",
-      "B": "Spreadsheet Software",
-      "C": "Word Processing",
-      "D": "Web Hosting"
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 81,
-    "q": "What is a dataset?",
-    "opts": {
-      "A": "A collection of data",
-      "B": "A computer monitor",
-      "C": "A mobile application",
-      "D": "A network cable"
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 82,
-    "q": "What is the purpose of testing data?",
-    "opts": {
-      "A": "To train the model",
-      "B": "To evaluate model performance",
-      "C": "To delete errors",
-      "D": "To build hardware"
+      "A": "mas",
+      "B": ".master",
+      "C": ".aspx",
+      "D": ".ascx"
     },
     "ans": "B",
     "type": "mcq"
   },
   {
-    "id": 83,
-    "q": "Which of the following is a popular Machine Learning library in Python?",
+    "id": 81,
+    "q": "Tệp Web User Control có đuôi gì?",
     "opts": {
-      "A": "Photoshop",
-      "B": "AutoCAD",
-      "C": "Blender",
-      "D": "TensorFlow"
+      "A": "asmx",
+      "B": "ascx",
+      "C": "aspx",
+      "D": "uct"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 82,
+    "q": "Kéo và thả User control vào trang aspx, lúc đó trên trang aspx sẽ xuất hiện tag:",
+    "opts": {
+      "A": "`<%@ Register . . %>`",
+      "B": "`<%@ User control . . %>`",
+      "C": "`<User control> . . </User control>`",
+      "D": "Trong 3 câu a,b,c có 1 đáp án đúng"
+    },
+    "ans": "",
+    "type": "mcq"
+  },
+  {
+    "id": 83,
+    "q": "Chọn phát biểu đúng:",
+    "opts": {
+      "A": "User control là sự kết hợp các control để tạo thành một control mới",
+      "B": "Phần mở rộng của User control là .ascx",
+      "C": "Để thiết kế nội dung trên User control giống như thiết kế trang aspx",
+      "D": "Tất cả đều đúng"
     },
     "ans": "D",
     "type": "mcq"
   },
   {
     "id": 84,
-    "q": "What is prediction in Machine Learning?",
+    "q": "Control nào sau đây được sử dụng để kiểm tra dữ liệu nhập có theo một định dạng?",
     "opts": {
-      "A": "Guessing without data",
-      "B": "Estimating output using a trained model",
-      "C": "Creating websites",
-      "D": "Building robots manually"
+      "A": "RequiredFieldValidator",
+      "B": "RegularExpressionValidator",
+      "C": "CompareValidator",
+      "D": "CustomValidator"
     },
     "ans": "B",
     "type": "mcq"
   },
   {
     "id": 85,
-    "q": "Which algorithm is often used for recommendation systems?",
+    "q": "Control nào sau đây được sử dụng để kiểm tra dữ liệu phải được nhập?",
     "opts": {
-      "A": "Collaborative Filtering",
-      "B": "Bubble Sort",
-      "C": "Binary Search",
-      "D": "Huffman Coding"
+      "A": "RequiredFieldValidator",
+      "B": "RangeValidator",
+      "C": "CustomValidator",
+      "D": "CompareValidator"
     },
     "ans": "A",
     "type": "mcq"
   },
   {
     "id": 86,
-    "q": "What is reinforcement learning based on?",
+    "q": "Control nào sau đây được sử dụng để xuất hiện bảng lỗi tổng hợp?",
     "opts": {
-      "A": "Fixed instructions",
-      "B": "Manual typing",
-      "C": "Database storage",
-      "D": "Rewards and penalties"
+      "A": "RequiredFieldValidator",
+      "B": "ValidationSummary",
+      "C": "RangeValidator",
+      "D": "Không có câu nào"
     },
-    "ans": "D",
+    "ans": "B",
     "type": "mcq"
   },
   {
     "id": 87,
-    "q": "Which of the following is an example of supervised learning?",
+    "q": "Điều khiển nào dùng để kiểm tra giá trị trong 2 điều khiển khác trên 1 trang có giống nhau hay không?",
     "opts": {
-      "A": "Spam email detection",
-      "B": "Customer grouping without labels",
-      "C": "Random clustering",
-      "D": "Data compression"
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 88,
-    "q": "What is the function of a loss function?",
-    "opts": {
-      "A": "Measure model error",
-      "B": "Store images",
-      "C": "Increase internet speed",
-      "D": "Encrypt files"
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 89,
-    "q": "Which hardware is important for deep learning?",
-    "opts": {
-      "A": "Printer",
-      "B": "Scanner",
-      "C": "GPU",
-      "D": "Speaker"
+      "A": "RangeValidator",
+      "B": "GridView",
+      "C": "CompareValidator",
+      "D": "ListView"
     },
     "ans": "C",
     "type": "mcq"
   },
   {
-    "id": 90,
-    "q": "What is computer vision?",
+    "id": 88,
+    "q": "Control nào sau đây được sử dụng để kiểm tra giá trị trong điều khiển có nằm trong đoạn [min-max]?",
     "opts": {
-      "A": "A camera lens",
-      "B": "A web browser",
-      "C": "A programming language",
-      "D": "AI field that helps computers understand images and videos"
+      "A": "RequiredFieldValidator",
+      "B": "ValidationSummary",
+      "C": "RangeValidator",
+      "D": "CompareValidator"
     },
-    "ans": "D",
+    "ans": "C",
     "type": "mcq"
   },
   {
-    "id": 91,
-    "q": "What is the main purpose of clustering?",
+    "id": 89,
+    "q": "Chọn các câu đúng:",
     "opts": {
-      "A": "To group similar data",
-      "B": "To delete files",
-      "C": "To print documents",
-      "D": "To increase memory"
+      "A": "RequiredFieldValidator dùng để kiểm tra giá trị trong điều khiển phải được nhập",
+      "B": "RangeValidator dùng để kiểm tra giá trị của điều khiển phải theo mẫu được qui định trước như: địa chỉ email, số điện thoại...",
+      "C": "RegularExpressionValidator dùng để kiểm tra giá trị trong điều khiển có nằm trong đoạn [min-max].",
+      "D": "CompareValidator dùng để kiểm tra giá trị của điều khiển phải theo mẫu được qui định trước như: địa chỉ email, số điện thoại..."
     },
     "ans": "A",
     "type": "mcq"
   },
   {
-    "id": 92,
-    "q": "Which of the following is a chatbot technology?",
+    "id": 90,
+    "q": "Các Control kiểm tra dữ liệu thuộc nhóm control nào?",
     "opts": {
-      "A": "HDMI",
-      "B": "NLP",
-      "C": "SSD",
-      "D": "BIOS"
+      "A": "Standard",
+      "B": "HTML",
+      "C": "Validation",
+      "D": "Data"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": 91,
+    "q": "Control kiểm tra dữ liệu nào có trong ASP.NET?",
+    "opts": {
+      "A": "RequiredFieldValidator",
+      "B": "RegularExpressionValidator",
+      "C": "CompareValidator",
+      "D": "Tất cả"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 92,
+    "q": "Thuộc tính nào của các control kiểm tra dữ liệu dùng để chứa câu thông báo lỗi?",
+    "opts": {
+      "A": "Messagebox",
+      "B": "ErrorMessage",
+      "C": "MessageError",
+      "D": "Cả 3 đáp án đúng"
     },
     "ans": "B",
     "type": "mcq"
   },
   {
     "id": 93,
-    "q": "What is automation in AI?",
+    "q": "Các thuộc tính của đối tượng Request là:",
     "opts": {
-      "A": "Performing tasks automatically",
-      "B": "Writing books manually",
-      "C": "Drawing pictures by hand",
-      "D": "Turning off computers"
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 94,
-    "q": "Which algorithm is inspired by biological neurons?",
-    "opts": {
-      "A": "Decision Tree",
-      "B": "Naive Bayes",
-      "C": "KNN",
-      "D": "Neural Network"
+      "A": "Form",
+      "B": "Redirect",
+      "C": "QueryString",
+      "D": "Cả A và C đều đúng"
     },
     "ans": "D",
     "type": "mcq"
   },
   {
-    "id": 95,
-    "q": "What does CNN stand for in deep learning?",
+    "id": 94,
+    "q": "Thuộc tính QueryString của đối tượng Request dùng để:",
     "opts": {
-      "A": "Central Neural Node",
-      "B": "Computer Numeric Network",
-      "C": "Convolutional Neural Network",
-      "D": "Connected Neural Number"
-    },
-    "ans": "C",
-    "type": "mcq"
-  },
-  {
-    "id": 96,
-    "q": "Which task is suitable for AI?",
-    "opts": {
-      "A": "Image recognition",
-      "B": "Hammering nails",
-      "C": "Painting walls manually",
-      "D": "Digging soil"
-    },
-    "ans": "A",
-    "type": "mcq"
-  },
-  {
-    "id": 97,
-    "q": "What is bias in Machine Learning?",
-    "opts": {
-      "A": "A computer virus",
-      "B": "A systematic error in predictions",
-      "C": "A type of hardware",
-      "D": "A database language"
+      "A": "Truyền thông tin từ ứng dụng này đến ứng dụng khác trên internet",
+      "B": "Truyền thông tin từ web form này đến web form khác trong một ứng dụng",
+      "C": "Lưu thông tin bí mật của người dùng, như password chẳng hạn.",
+      "D": "Lưu thông tin để các ứng dụng của tất cả mọi người truy cập tới nó sử dụng"
     },
     "ans": "B",
     "type": "mcq"
   },
   {
-    "id": 98,
-    "q": "Which of the following can be generated by AI?",
+    "id": 95,
+    "q": "Thuộc tính QueryString của đối tượng Request dùng để nhận giá trị từ 1 chuỗi truy vấn nằm sau dấu `?` trong chuỗi URL gồm những cặp `Biến_1=Giá_trị_1&Biến_2=Giá trị_2…` Trên trang Aspx dùng ngôn ngữ C# thì sẽ nhận giá trị theo cú pháp:",
     "opts": {
-      "A": "Only paper documents",
-      "B": "Only calculators",
-      "C": "Images and text",
-      "D": "Only keyboards"
+      "A": "Request.QueryString(\"Tên_biến\")",
+      "B": "Request.QueryString[\"Tên_biến\"]",
+      "C": "QueryString(\"Tên_biến\")",
+      "D": "Cả 3 câu đều sai"
     },
-    "ans": "C",
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 96,
+    "q": "Hãy xác định các phương thức hay tập hợp của đối tượng Response là:",
+    "opts": {
+      "A": "Write",
+      "B": "Redirect",
+      "C": "QueryString",
+      "D": "Write và Redirect"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 97,
+    "q": "Tìm chọn đáp án đúng:",
+    "opts": {
+      "A": "Đối tượng Response được sử dụng để giao tiếp với Client, nó quản lý và điều phối thông tin từ Web Server đến các trình duyệt của người dùng.",
+      "B": "Đối tượng Application được sử dụng để quản lý tất cả các thông tin của một ứng dụng web. Thông tin được lưu trữ trong đối tượng Application có thể được xử lý trong bất kỳ trang aspx nào trong suốt chu kỳ sống của ứng dụng.",
+      "C": "Đối tượng Request được dùng để nhận thông tin từ trình duyệt của người dùng gửi về cho WebServer",
+      "D": "Tất cả đều đúng"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 98,
+    "q": "Đối tượng nào dùng để gửi thông tin từ server đến trình duyệt Web mà dùng đối tượng này để đưa thông tin lên màn hình?",
+    "opts": {
+      "A": "Request",
+      "B": "Application",
+      "C": "Server",
+      "D": "Response"
+    },
+    "ans": "D",
     "type": "mcq"
   },
   {
     "id": 99,
-    "q": "What is the benefit of Machine Learning?",
+    "q": "Dùng lệnh nào sau đây để di chuyển đến trang web hello.html:",
     "opts": {
-      "A": "It allows systems to improve from experience",
-      "B": "It removes all data",
-      "C": "It stops internet access",
-      "D": "It damages hardware"
+      "A": "Server.Transfer (\"hello.html\")",
+      "B": "Response.Redirect (\"hello.html\")",
+      "C": "Tất cả đều sai",
+      "D": "Tất cả đều đúng"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 100,
+    "q": "Hãy xác định các thuộc tính, phương thức của đối tượng Session:",
+    "opts": {
+      "A": "Contents",
+      "B": "Timeout",
+      "C": "Abandon",
+      "D": "Tất cả đều đúng"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 101,
+    "q": "Mặc định một biến Session có thời hạn TimeOut là bao lâu?",
+    "opts": {
+      "A": "20 Sec",
+      "B": "20 Min",
+      "C": "1 hr",
+      "D": "Kết quả khác"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 102,
+    "q": "Session dùng để:",
+    "opts": {
+      "A": "Lưu dữ liệu cho một ứng dụng.",
+      "B": "Lưu dữ liệu cho phiên làm việc",
+      "C": "Dùng để lưu dữ liệu là các đối tượng",
+      "D": "Dùng để lưu dữ liệu là các biến cố có kiểu dữ liệu cơ bản : int, double, string,..."
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 103,
+    "q": "Các sự kiện Application và Session diễn ra theo trình tự nào:",
+    "opts": {
+      "A": "Application_Start, Application_End, Session_Start, Session_End",
+      "B": "Application_Start, Session_Start, Session_End, Application_End",
+      "C": "Session_Start, Application_Start, Application_End, Session_End",
+      "D": "Session_Start, Session_End, Application_Start, Application_End"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 104,
+    "q": "Hãy xác định các phương thức của đối tượng Server:",
+    "opts": {
+      "A": "Execute",
+      "B": "MapPath",
+      "C": "Transfer",
+      "D": "Tất cả đều đúng"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 105,
+    "q": "Một dự án ASP.NET có thể có bao nhiêu tập tin cấu hình `web.config` chính ở thư mục gốc?",
+    "opts": {
+      "A": "Nhiều hơn một",
+      "B": "Chỉ một",
+      "C": "Không",
+      "D": "Tất cả đều sai"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 106,
+    "q": "Tập tin Global.asax được dùng để:",
+    "opts": {
+      "A": "Cài đặt các sự kiện mức ứng dụng và mức phiên làm việc",
+      "B": "Khai báo các biến toàn cục",
+      "C": "Khai báo và khởi tạo giá trị cho các biến Application, Session.",
+      "D": "Tất cả đều đúng"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 107,
+    "q": "Cookie dùng để:",
+    "opts": {
+      "A": "Lưu thông tin tại phía client.",
+      "B": "Lưu thông tin tại phía server",
+      "C": "Lưu thông tin từ cả hai phía server/client",
+      "D": "Cách sử dụng giống như query string"
     },
     "ans": "A",
     "type": "mcq"
   },
   {
-    "id": 100,
-    "q": "Which of the following is a famous AI model for language tasks?",
+    "id": 108,
+    "q": "Phương thức nào dùng để chuyển yêu cầu truy cập của máy khách đến 1 URL khác?",
     "opts": {
-      "A": "USB",
-      "B": "JPEG",
-      "C": "PDF",
-      "D": "GPT"
+      "A": "Phương thức Redirect của đối tượng Response",
+      "B": "Phương thức Transfer của đối tượng Server",
+      "C": "Phương thức Execute của đối tượng Server",
+      "D": "Cả 2 câu a, b đều đúng"
     },
     "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 109,
+    "q": "Ý nghĩa của phương thức Server.MapPath:",
+    "opts": {
+      "A": "Trả về đường dẫn tuyệt đối trên đĩa của một đường dẫn tương đối",
+      "B": "Trả về đường dẫn tương đối của một thư mục web",
+      "C": "Trả về đường dẫn ảo của một đường dẫn tuyệt đối",
+      "D": "Cả 3 câu a,b,c đều sai"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 110,
+    "q": "Điều nào sau đây là ưu điểm của Server control so với HTML control:",
+    "opts": {
+      "A": "Duy trì dữ liệu trên control (ViewState)",
+      "B": "Hiển thị không phụ thuộc vào trình duyệt",
+      "C": "Có các sự kiện riêng biệt",
+      "D": "Tất cả đều đúng"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 111,
+    "q": "Khi một trang .aspx được yêu cầu, kết quả xuất ra trên trình duyệt có dạng sau:",
+    "opts": {
+      "A": "HTML",
+      "B": "XML",
+      "C": "WML",
+      "D": "Tất cả đều đúng"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 112,
+    "q": "Khi biên dịch một ứng dụng ASP.Net, kết quả tạo ra ở thư mục bin có dạng nào?",
+    "opts": {
+      "A": "EXE",
+      "B": "DLL",
+      "C": "COM",
+      "D": "Tất cả đều đúng"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 113,
+    "q": "Ngôn ngữ kịch bản để viết cho trang Asp.Net là:",
+    "opts": {
+      "A": "PHP",
+      "B": "C#",
+      "C": "Visual Basic",
+      "D": "b và c"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 114,
+    "q": "Để chạy chương trình (ứng dụng asp.net) trong môi trường MS Visual Studio có debug ta thực hiện:",
+    "opts": {
+      "A": "Nhấn phím F5",
+      "B": "Nhấn tổ hợp phím Ctrl + F5",
+      "C": "Click biểu tượng Start debugging",
+      "D": "a và c"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 115,
+    "q": "Trong ADO.NET, không gian tên System.Data không chứa lớp nào?",
+    "opts": {
+      "A": "DataTable",
+      "B": "DataRelation",
+      "C": "DataSet",
+      "D": "Không có câu nào đúng *(Cả 3 lớp trên đều nằm trong System.Data).*"
+    },
+    "ans": "",
+    "type": "mcq"
+  },
+  {
+    "id": 116,
+    "q": "Để thực thi lấy dữ liệu giá trị đơn (như đếm số lượng, tính tổng), ta dùng phương thức nào sau đây của đối tượng command:",
+    "opts": {
+      "A": "ExecuteReader()",
+      "B": "ExecuteScalar()",
+      "C": "ExecuteXmlReader()",
+      "D": "ExecuteNonQuery()"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 117,
+    "q": "Thành phần nào không phải là thuộc tính của đối tượng DataAdapter:",
+    "opts": {
+      "A": "SQLCommand",
+      "B": "DeleteCommand",
+      "C": "UpdateCommand",
+      "D": "InsertCommand"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 118,
+    "q": "Thành phần nào là thuộc tính của đối tượng DataAdapter:",
+    "opts": {
+      "A": "DeleteCommand",
+      "B": "UpdateCommand",
+      "C": "SelectCommand",
+      "D": "Tất cả đều đúng"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 119,
+    "q": "Một điều khiển DataAdapter dùng phương thức nào dưới đây để nạp một DataSet?",
+    "opts": {
+      "A": "Fill()",
+      "B": "ExecuteQuery()",
+      "C": "Read()",
+      "D": "Tất cả đều đúng"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 120,
+    "q": "Phương thức nào sau đây của DataAdapter dùng để cập nhật dữ liệu từ DataSet về lại Database?",
+    "opts": {
+      "A": "Fill",
+      "B": "AcceptChanges",
+      "C": "RejectChanges",
+      "D": "Update"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 121,
+    "q": "Các phương thức của đối tượng command là:",
+    "opts": {
+      "A": "Phương thức ExecuteReader: Thực hiện câu lệnh và kết quả trả về đối tượng DataReader",
+      "B": "Phương thức ExecuteNonQuery: Thực hiện câu lệnh như Insert, Update, Delete, Create... và không cần trả về dữ liệu gì",
+      "C": "Phương thức ExecuteScalar: Trả về từ phát biểu SQL dạng Select chỉ có một giá trị đơn.",
+      "D": "Tất cả đều đúng"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 122,
+    "q": "Dùng phương thức nào để thực hiện lệnh thêm, xóa, sửa... dữ liệu trực tiếp?",
+    "opts": {
+      "A": "ExecuteNonQuery",
+      "B": "ExecuteReader",
+      "C": "ExecuteScalar",
+      "D": "ExecuteReadOnly"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 123,
+    "q": "Trong một ứng dụng ASP.Net, khi dùng đối tượng SqlCommand để gọi stored procedure lấy ra danh sách các khách hàng có những đơn hàng trị giá trên 50 triệu từ CSDL trong MS SQL Server, chúng ta gọi phương thức:",
+    "opts": {
+      "A": "ExecuteReader.",
+      "B": "ExecuteNonQuery.",
+      "C": "ExecuteMyReader.",
+      "D": "ExecuteScalar."
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 124,
+    "q": "Trong một ứng dụng ASP.Net, khi dùng đối tượng SqlCommand để gọi stored procedure tạo một bảng CSDL trong MS SQL Server (lệnh DDL), chúng ta gọi phương thức:",
+    "opts": {
+      "A": "ExecuteReader.",
+      "B": "ExecuteNonQuery. *",
+      "C": "ExecuteMyReader.",
+      "D": "ExecuteScalar."
+    },
+    "ans": "",
+    "type": "mcq"
+  },
+  {
+    "id": 125,
+    "q": "Ứng dụng ASP.NET có kết nối với SQL Server trên một máy tính có tên là MyComp. CSDL cần kết nối là myDatabase và table được sử dụng là myTable. User được phép kết nối đến CSDL này là myUser và mật khẩu là myPassword. Connection String nào sau đây có thể dùng cho kết nối SqlConnection này:",
+    "opts": {
+      "A": "\"server=myComp; source=myDatabase.myTable; uid=myUser; pwd=myPassword\".",
+      "B": "\"server=myComp; database=myDatabase; uid=myUser; pwd=myPassword\".",
+      "C": "\"server=myComp; database=myDatabase; table=myTable; uid=myUser; pwd=myPassword\".",
+      "D": "\"server=myComp; database=myDatabase/myTable; uid=myUser; pwd=myPassword\"."
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 126,
+    "q": "Ứng dụng ASP.Net có kết nối với MS SQL Server của máy tính đang chứa ứng dụng ASP.net này. CSDL cần kết nối là myDatabase. User được phép kết nối CSDL này là myUser, mật khẩu của myUser là myPassword. Connection String nào sau đây có thể dùng cho SqlConnection này:",
+    "opts": {
+      "A": "\"Data Source=(local); Initial Catalog=myDatabase; User ID=myUser; Password = myPassword\"",
+      "B": "\"server=(local); database=myDatabase; uid=myUser; pwd=myPassword\".",
+      "C": "\"server=(local); source=myDatabase.myTable; uid=myUser; pwd=myPassword\".",
+      "D": "Tất cả đều đúng"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 127,
+    "q": "Trong một trang ASP.Net có đoạn code cần tính tổng số tiền nợ của khách hàng từ CSDL với đối tượng SqlCommand. Ta phải dùng phương thức nào để truy vấn CSDL có kết quả đúng và tốt nhất?",
+    "opts": {
+      "A": "Read.",
+      "B": "ExecuteNonQuery",
+      "C": "ExecuteScalar",
+      "D": "ExecuteReader"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": 128,
+    "q": "Lệnh SQL nào dùng để thêm một dòng mới vào một bảng trong cơ sở dữ liệu?",
+    "opts": {
+      "A": "Insert New",
+      "B": "Add Row",
+      "C": "Insert Row",
+      "D": "Insert Into"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 129,
+    "q": "Đối tượng transaction được tạo bởi phương thức nào từ đối tượng Connection?",
+    "opts": {
+      "A": "NewTransaction",
+      "B": "StartTransaction",
+      "C": "BeginTransaction",
+      "D": "CreateTransaction"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": 130,
+    "q": "Chúng ta sử dụng giao dịch (Transaction) khi:",
+    "opts": {
+      "A": "Lập trình các ứng dụng thương mại điện tử",
+      "B": "Lập trình các ứng dụng cơ sở dữ liệu phức tạp",
+      "C": "Thực hiện nhiều lệnh cơ sở dữ liệu như một khối lệnh thống nhất",
+      "D": "Tất cả đều đúng"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 131,
+    "q": "Lệnh dùng để hoàn tất và lưu lại một giao dịch là:",
+    "opts": {
+      "A": "Finish",
+      "B": "Commit",
+      "C": "Rollback",
+      "D": "Update"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 132,
+    "q": "Câu lệnh nào không dùng để thực thi Stored Procedure sau ```sql CREATE PROCEDURE spTest @PK_sHangID VARCHAR(20) AS SELECT * FROM tblHang WHERE PK_sHangID=@PK_sHangID GO ```",
+    "opts": {
+      "A": "Cmd.ExecuteNonQuery();",
+      "B": "Cmd.ExecuteScalar(); *(Vì hàm này chỉ lấy giá trị ở ô đầu tiên).*",
+      "C": "Cmd.ExecuteReader();",
+      "D": "Tất cả các phương án đều đúng"
+    },
+    "ans": "",
+    "type": "mcq"
+  },
+  {
+    "id": 133,
+    "q": "DataReader dùng để làm gì?",
+    "opts": {
+      "A": "Dùng để duyệt xem dữ liệu một chiều (chỉ tiến) lấy ra từ CSDL",
+      "B": "Dùng để insert dữ liệu",
+      "C": "Dùng để delete dữ liệu",
+      "D": "Dùng để update dữ liệu"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 134,
+    "q": "Đối tượng nào sau đây trực tiếp kết nối và có tương tác với CSDL?",
+    "opts": {
+      "A": "DataAdapter",
+      "B": "DataRow",
+      "C": "DataSet",
+      "D": "DataTable"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 135,
+    "q": "Phương thức nào sau đây của đối tượng command có thể làm thay đổi cấu trúc hoặc dữ liệu (Insert, Update, Delete)?",
+    "opts": {
+      "A": "ExecuteNonQuery",
+      "B": "ExecuteScalar",
+      "C": "ExecuteReader",
+      "D": "ExecuteReadOnly"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 136,
+    "q": "ADO viết tắt bởi:",
+    "opts": {
+      "A": "ActiveX Data Objects",
+      "B": "Active Data Object",
+      "C": "ActiveX Database Object",
+      "D": "Tất cả đều sai"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 137,
+    "q": "Các đặc điểm chính của ADO.NET là:",
+    "opts": {
+      "A": "Có khả năng làm việc với dữ liệu không kết nối (Disconnected), dữ liệu được lưu trữ trong bộ nhớ như một CSDL thu nhỏ (DataSet).",
+      "B": "Khả năng xử lý dữ liệu chuẩn XML dễ dàng trao đổi hệ thống.",
+      "C": "Cả 2 câu a, b đều đúng",
+      "D": "Cả 2 câu a, b đều sai"
+    },
+    "ans": "C",
+    "type": "mcq"
+  },
+  {
+    "id": 138,
+    "q": "Các đối tượng thuộc nhóm Connected (kết nối trực tiếp) của mô hình lập trình ADO.Net là:",
+    "opts": {
+      "A": "Connection",
+      "B": "Command",
+      "C": "Recordset",
+      "D": "Cả A và B đều đúng"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 139,
+    "q": "Các bước truy xuất cơ sở dữ liệu nào sau đây là đúng trình tự?",
+    "opts": {
+      "A": "1. Chuẩn bị ConnectionString & Chuỗi truy vấn -> 2. Khai báo các đối tượng ADO.NET cần thiết (Connection, Command…) -> 3. Thiết lập các thông số cho Command -> 4. Mở kết nối -> 5. Thực thi truy vấn -> 6. Xử lý kết quả -> 7. Đóng, hủy các đối tượng.",
+      "B": "1.Chuẩn bị–ConnectionString–Truy vấn dữ liệu2.Khai báo các đối tượng ADO.NET cần thiết(Connection, Command, …)3.Thiết lập các thông số cho Command4.Mở kết nối5.Thực thi truy vấn6.[Xử lý kết quả truy vấn]",
+      "C": "1.Chuẩn bị–ConnectionString–Truy vấn dữ liệu2.Thiết lập các thông số cho Command3.Khai báo các đối tượng ADO.NET cần thiết(Connection, Command, …)4.Mở kết nối5.Thực thi truy vấn6.[Xử lý kết quả truy vấn]7.Đóng, huỷ các đối tượng",
+      "D": "1.Chuẩn bị–ConnectionString–Truy vấn dữ liệu2.Khai báo các đối tượng ADO.NET cần thiết(Connection, Command, …)3.Thiết lập các thông số cho Command4.Thực thi truy vấn5.[Xử lý kết quả truy vấn]6.Đóng, huỷ các đối tượng"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 140,
+    "q": "Cho 1 truy vấn SQL SELECT chứa trong biến s1. Với lệnh khai báo DataAdapter như sau: `SqlDataAdapter da = new SqlDataAdapter(s1, conn);` thì giá trị của s1 sẽ được gán cho đối tượng Command nào của DataAdapter?",
+    "opts": {
+      "A": "SelectCommand",
+      "B": "DeleteCommand",
+      "C": "UpdateCommand",
+      "D": "InsertCommand"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 141,
+    "q": "Để trả về giá trị đơn khi lấy dữ liệu, ta dùng phương thức nào sau đây của đối tượng command:",
+    "opts": {
+      "A": "ExecuteReader()",
+      "B": "ExecuteScalar()",
+      "C": "ExecuteXmlReader()",
+      "D": "ExecuteNonQuery()"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 142,
+    "q": "Lệnh SQL nào dùng để chỉnh sửa dòng dữ liệu trong một bảng trong cơ sở dữ liệu?",
+    "opts": {
+      "A": "Update … Values",
+      "B": "Update Row",
+      "C": "Edit Row",
+      "D": "Update … Set"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 143,
+    "q": "Chọn câu trả lời đúng về các thành phần hiển thị dữ liệu (Data Controls):",
+    "opts": {
+      "A": "GridView là một điều khiển cho phép hiển thị, định dạng, và thao tác với dữ liệu. Bên cạnh đó còn có thể thực hiện sắp xếp dữ liệu, thực hiện phân trang.",
+      "B": "DataList tương tự điều khiển Gridview, được sử dụng để hiển thị dữ liệu. Tuy nhiên, đối với DataList, chúng ta phải tự thiết kế hình thức hiển thị dữ liệu.",
+      "C": "Repeater tương tự như DataList & Gridview, dùng để hiển thị dữ liệu. Tuy nhiên phải tự thiết kế hình thức hiển thị thông qua các tag HTML hoàn toàn.",
+      "D": "Tất cả đều đúng"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 144,
+    "q": "Hãy xác định chức năng chính của đối tượng Connection trong ADO.NET:",
+    "opts": {
+      "A": "Dùng tạo kết nối giữa ứng dụng với cơ sở dữ liệu",
+      "B": "Là đối tượng thông dụng dùng lưu thông tin từ Table hay thi hành lệnh SQL",
+      "C": "Là đối tượng dùng để thao tác: Thêm, Xóa, Sửa dữ liệu",
+      "D": "Tất cả các câu trên đều đúng"
+    },
+    "ans": "A",
     "type": "mcq"
   }
 ]

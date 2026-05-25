@@ -18,13 +18,67 @@ def is_blank(s: str) -> bool:
     return not norm(s)
 
 
+def normalize_line_for_parse(line: str) -> str:
+    """
+    Chuẩn hóa dòng DOCX trước khi parse:
+    - **Câu 10.** -> Câu 10.
+    - Câu **10.** -> Câu 10.
+    - Bỏ ** thừa trong nội dung (giữ text).
+    """
+    s = norm(line)
+    s = re.sub(
+        r"^\s*\*{1,2}\s*(Câu\s*\d+)\s*\*{1,2}\s*([.)\:\-–])",
+        r"\1\2",
+        s,
+        count=1,
+        flags=re.IGNORECASE,
+    )
+    s = re.sub(
+        r"^\s*(Câu\s*)(\d+)\s*\*{1,2}\s*([.)\:\-–])",
+        r"\1\2\3",
+        s,
+        count=1,
+        flags=re.IGNORECASE,
+    )
+    s = re.sub(r"\*{2,}", "", s)
+    return norm(s)
+
+
+def clean_question_text(s: str) -> str:
+    s = norm(s)
+    s = re.sub(r"^\*+\s*", "", s)
+    s = re.sub(r"\s*\*+$", "", s)
+    return s
+
+
+def match_question_prefix(line: str) -> Optional[re.Match]:
+    """Khớp tiền tố câu hỏi (markdown hoặc thường)."""
+    n = normalize_line_for_parse(line)
+    return RE_Q_PREFIX_MARKDOWN.match(line) or RE_Q_PREFIX.match(n)
+
+
+def question_number_from_line(line: str) -> Optional[int]:
+    m = match_question_prefix(line)
+    return int(m.group(1)) if m else None
+
+
 # Nhận diện bắt đầu câu hỏi:
 # - "Câu 1:" / "Câu 1." / "Câu 1 -"
 # - "1." / "1)" / "1 -"
+# - "**Câu 10.**" (markdown bold từ Word / copy)
 RE_Q_PREFIX = re.compile(r"^\s*(?:Câu\s*)?(\d+)\s*([.)\:\-–])\s*", re.IGNORECASE)
+RE_Q_PREFIX_MARKDOWN = re.compile(
+    r"^\s*\*{1,2}\s*(?:Câu\s*)?(\d+)\s*(?:\*{1,2}\s*)?([.)\:\-–])\s*",
+    re.IGNORECASE,
+)
 
 # Nhận diện option dạng dòng riêng
 RE_OPT_LINE = re.compile(r"^\s*([A-Da-d])\s*([.)\:\-–])\s*(.+?)\s*$")
+# Đáp án đánh dấu bằng markdown literal (không in đậm Word): **D. nội dung**
+RE_OPT_LINE_MD = re.compile(
+    r"^\s*\*{2}\s*([A-Da-d])\s*([.)\:\-–])\s*(.+?)\s*\*{2}\s*$",
+    re.IGNORECASE,
+)
 
 # Tách option trong 1 dòng inline: tìm các mốc "A." "B." "C." "D."
 RE_OPT_MARK = re.compile(r"\b([A-D])\s*([.)\:\-–])\s*", re.IGNORECASE)
@@ -66,6 +120,80 @@ def any_bold_in_range(spans: List[RunSpan], start: int, end: int) -> bool:
         if sp.bold:
             return True
     return False
+
+
+def detect_markdown_wrapped_answer_key(line: str) -> str:
+    """
+    Đáp án bọc ** ... ** (ký tự * in ra, không phải bold Word).
+    Ví dụ: **D. .htm và .html**
+    """
+    s = norm(line)
+    m = RE_OPT_LINE_MD.match(s)
+    if m:
+        return m.group(1).upper()
+    return ""
+
+
+def strip_markdown_wrapper_from_option(line: str) -> str:
+    """**D. text** -> D. text"""
+    s = norm(line)
+    m = RE_OPT_LINE_MD.match(s)
+    if not m:
+        return s
+    return norm(f"{m.group(1).upper()}. {m.group(3)}")
+
+
+def parse_option_line(raw_line: str) -> Optional[Tuple[str, str, str]]:
+    """
+    Parse một dòng đáp án từ raw text (trước khi xóa ** toàn dòng).
+    Trả về (key, text, ans_key); ans_key = key nếu dòng là **A. ...**.
+    """
+    s = norm(raw_line)
+    m_md = RE_OPT_LINE_MD.match(s)
+    if m_md:
+        key = m_md.group(1).upper()
+        return key, norm(m_md.group(3)), key
+
+    line = normalize_line_for_parse(s)
+    om = RE_OPT_LINE.match(line)
+    if om:
+        key = om.group(1).upper()
+        return key, norm(om.group(3)), ""
+    return None
+
+
+def detect_mcq_answer_from_paragraph(paragraph) -> str:
+    """
+    Đáp án trên dòng đáp án (A. / B. / ...):
+    1) **D. ...** — markdown literal (không cần in đậm Word)
+    2) In đậm Word — run.bold trên nội dung hoặc nhãn đáp án
+    """
+    raw_text, spans = paragraph_spans(paragraph)
+    text = norm(raw_text)
+
+    md_key = detect_markdown_wrapped_answer_key(text)
+    if md_key:
+        return md_key
+
+    if not any(sp.bold for sp in spans):
+        return ""
+    om = RE_OPT_LINE.match(text)
+    if not om:
+        return ""
+
+    key = om.group(1).upper()
+    m_raw = RE_OPT_LINE.match(raw_text.replace("\xa0", " "))
+    if not m_raw:
+        m_raw = RE_OPT_LINE.match(norm(raw_text))
+    if not m_raw:
+        return key
+
+    content_start = m_raw.end()
+    if any_bold_in_range(spans, content_start, len(raw_text)):
+        return key
+    if any_bold_in_range(spans, 0, content_start):
+        return key
+    return ""
 
 
 # ---------- Image extraction ----------
@@ -112,7 +240,7 @@ def extract_question_images(
         t = norm(p.text)
         if not t:
             continue
-        m = RE_Q_PREFIX.match(t)
+        m = match_question_prefix(t)
         if m:
             qno = int(m.group(1))
             q_starts.append((qno, idx))
@@ -202,17 +330,19 @@ def parse_default(doc: Document, qno_to_imgs: Optional[Dict[int, List[str]]] = N
         current_qno = None
 
     for p in doc.paragraphs:
-        line = norm(p.text)
-        if not line:
+        raw_line = norm(p.text)
+        if not raw_line:
             continue
+        line = normalize_line_for_parse(raw_line)
 
         # start new question
-        m = RE_Q_PREFIX.match(line)
+        m = match_question_prefix(raw_line)
         if m:
             finalize()
             current_qno = int(m.group(1))
-            # remove prefix
-            q_text = norm(line[m.end():])
+            nline = normalize_line_for_parse(raw_line)
+            m2 = RE_Q_PREFIX.match(nline)
+            q_text = clean_question_text(nline[m2.end():] if m2 else nline)
             current = {
                 "id": 0,
                 "q": q_text or line,
@@ -227,7 +357,7 @@ def parse_default(doc: Document, qno_to_imgs: Optional[Dict[int, List[str]]] = N
             # fallback: treat as question (no number)
             current = {
                 "id": 0,
-                "q": line,
+                "q": clean_question_text(line),
                 "opts": {"A": "", "B": "", "C": "", "D": ""},
                 "ans": "",
                 "type": "mcq",
@@ -236,22 +366,20 @@ def parse_default(doc: Document, qno_to_imgs: Optional[Dict[int, List[str]]] = N
             current_qno = None
             continue
 
-        # option line
-        om = RE_OPT_LINE.match(line)
-        if om:
+        # option line (ưu tiên raw: **D. ...** trước khi normalize xóa *)
+        opt_parsed = parse_option_line(raw_line)
+        if opt_parsed:
             in_options = True
-            key = om.group(1).upper()
-            text = norm(om.group(3))
+            key, text, md_ans = opt_parsed
             current["opts"][key] = text
-
-            # answer: if any bold run in this paragraph -> that option correct
-            if any(r.bold and norm(r.text) for r in p.runs):
-                current["ans"] = key
+            ans_key = md_ans or detect_mcq_answer_from_paragraph(p)
+            if ans_key:
+                current["ans"] = ans_key
             continue
 
         # continuation line
         if not in_options:
-            current["q"] = norm(current["q"] + " " + line)
+            current["q"] = norm(current["q"] + " " + clean_question_text(line))
         else:
             # append to last option if exists
             last_key = None
@@ -261,10 +389,12 @@ def parse_default(doc: Document, qno_to_imgs: Optional[Dict[int, List[str]]] = N
                     break
             if last_key:
                 current["opts"][last_key] = norm(current["opts"][last_key] + " " + line)
-                if any(r.bold and norm(r.text) for r in p.runs) and not current.get("ans"):
-                    current["ans"] = last_key
+                if not current.get("ans"):
+                    ans_key = detect_mcq_answer_from_paragraph(p)
+                    if ans_key:
+                        current["ans"] = ans_key
             else:
-                current["q"] = norm(current["q"] + " " + line)
+                current["q"] = norm(current["q"] + " " + clean_question_text(line))
 
     finalize()
 
@@ -387,6 +517,7 @@ def parse_inline(doc: Document, qno_to_imgs: Optional[Dict[int, List[str]]] = No
 def detect_mode(doc: Document) -> str:
     inline_hits = 0
     optline_hits = 0
+    markdown_q_hits = 0
     checked = 0
 
     for p in doc.paragraphs:
@@ -394,13 +525,19 @@ def detect_mode(doc: Document) -> str:
         if not t:
             continue
         checked += 1
-        if split_inline_question_and_options(t):
+        nt = normalize_line_for_parse(t)
+        if split_inline_question_and_options(nt):
             inline_hits += 1
-        if RE_OPT_LINE.match(t):
+        if RE_OPT_LINE.match(nt):
             optline_hits += 1
+        if RE_Q_PREFIX_MARKDOWN.match(t) or RE_Q_PREFIX_MARKDOWN.match(nt):
+            markdown_q_hits += 1
         if checked >= 50:
             break
 
+    # **Câu N.** + đáp án từng dòng -> default (multi-line)
+    if markdown_q_hits >= 1 and optline_hits >= 2:
+        return "default"
     if inline_hits >= 2 and inline_hits >= optline_hits:
         return "inline"
     return "default"
