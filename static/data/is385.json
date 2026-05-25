@@ -20,7 +20,7 @@
         "C": "`<i>`",
         "D": "`<italic>`"
       },
-      "ans": "",
+      "ans": "C",
       "type": "mcq"
     },
     {
@@ -80,7 +80,7 @@
         "C": "`<meta>`",
         "D": "`<div>`"
       },
-      "ans": "",
+      "ans": "C",
       "type": "mcq"
     },
     {
@@ -97,14 +97,14 @@
     },
     {
       "id": 9,
-      "q": "Muán liên kết HTML với 1 file định nghĩa CSS ta dùng dòng nào sau đây?",
+      "q": "Muốn liên kết HTML với 1 file định nghĩa CSS ta dùng dòng nào sau đây?",
       "opts": {
         "A": "`<style src=\"mystyle.css\">`",
         "B": "`<link rel=\"stylesheet\" type=\"text/css\" href=\"mystyle.css\">`",
         "C": "`<style href=\"mystyle.css\">`",
         "D": "`<link rel=\"stylesheet\" type=\"text/css\" src=\"mystyle.css\">`"
       },
-      "ans": "",
+      "ans": "B",
       "type": "mcq"
     },
     {
@@ -116,7 +116,7 @@
         "C": "`<bld>`",
         "D": "`<bb>`"
       },
-      "ans": "",
+      "ans": "A",
       "type": "mcq"
     },
     {
@@ -128,7 +128,7 @@
         "C": "`<background>yellow</background>`",
         "D": "`<body background-color=\"yellow\">`"
       },
-      "ans": "",
+      "ans": "B",
       "type": "mcq"
     },
     {
@@ -140,7 +140,7 @@
         "C": "`<a href=\"http://www.w3schools.com\">W3Schools</a>`",
         "D": "`<a name=\"http://www.w3schools.com\">W3Schools.com</a>`"
       },
-      "ans": "",
+      "ans": "C",
       "type": "mcq"
     },
     {
@@ -164,7 +164,7 @@
         "C": "`<h6>`",
         "D": "`<head>`"
       },
-      "ans": "",
+      "ans": "B",
       "type": "mcq"
     },
     {
@@ -176,7 +176,7 @@
         "C": "`<img src=\"image.jpg\">`",
         "D": "`<img href=\"image.jpg\">`"
       },
-      "ans": "",
+      "ans": "C",
       "type": "mcq"
     },
     {
@@ -188,7 +188,7 @@
         "C": "`<input type=\"text\">`",
         "D": "`<input type=\"textfield\">`"
       },
-      "ans": "",
+      "ans": "A",
       "type": "mcq"
     },
     {
@@ -200,7 +200,7 @@
         "C": "`<input type=\"dropdown\">`",
         "D": "`<input type=\"list\">`"
       },
-      "ans": "",
+      "ans": "A",
       "type": "mcq"
     },
     {
@@ -236,7 +236,7 @@
         "C": "`<style>`",
         "D": "`<stype>`"
       },
-      "ans": "",
+      "ans": "C",
       "type": "mcq"
     },
     {
@@ -356,7 +356,7 @@
         "C": "`<break>`",
         "D": "`<p>` --- ### PHẦN II: C# & .NET FRAMEWORK CƠ BẢN"
       },
-      "ans": "",
+      "ans": "B",
       "type": "mcq"
     },
     {
@@ -440,7 +440,7 @@
         "C": "Một lớp con có thể kế thừa từ nhiều lớp cha *(Lưu ý: C# không hỗ trợ đa kế thừa lớp).*",
         "D": "Interface có thể kế thừa từ nhiều Interface"
       },
-      "ans": "",
+      "ans": "A",
       "type": "mcq"
     },
     {
@@ -512,7 +512,7 @@
         "C": "Tạo một interface object",
         "D": "Tất cả các đáp án này *(Lưu ý: Xét theo ngữ cảnh câu hỏi kiểm tra tính đúng đắn khi thực hiện mapping toàn diện).*"
       },
-      "ans": "",
+      "ans": "B",
       "type": "mcq"
     },
     {
@@ -572,11 +572,11 @@
         "C": "5",
         "D": "6 *(Tổng số phần tử của mảng 2 chiều là 3 * 2 = 6).*"
       },
-      "ans": "",
+      "ans": "B",
       "type": "mcq"
     },
     {
-      "id": 49,
+      "id": 49, 
       "q": "Cho biết các lệnh rẽ nhánh có điều kiện?",
       "opts": {
         "A": "If, goto, switch, break",
@@ -584,7 +584,7 @@
         "C": "Return, switch, break",
         "D": "Tất cả đều sai *(Lưu ý: Các câu lệnh rẽ nhánh có điều kiện chuẩn bao gồm `if`, `if...else`, `switch`).*"
       },
-      "ans": "",
+      "ans": "A",
       "type": "mcq"
     },
     {
@@ -620,7 +620,7 @@
         "C": "IsPostBack là một thuộc tính chỉ đọc của lớp System.Web.UI.Page",
         "D": "IsPostBack là một phương thức của lớp System.UI.Web.Page và phương thức của lớp System.Web.UI.Page *(IsPostBack thực chất là một Property).*"
       },
-      "ans": "",
+      "ans": "B",
       "type": "mcq"
     },
     {
@@ -644,7 +644,7 @@
         "C": "Click (), Page_load () và Page_Prerender ()",
         "D": "Tất cả đều sai *(Thứ tự đúng là Load -> Click -> PreRender).*"
       },
-      "ans": "",
+      "ans": "A",
       "type": "mcq"
     },
     {
@@ -704,7 +704,7 @@
         "C": "`<Head>`",
         "D": "Tất cả đều đúng"
       },
-      "ans": "",
+      "ans": "A",
       "type": "mcq"
     },
     {
@@ -788,7 +788,7 @@
         "C": "Kỹ thuật lập trình phía client",
         "D": "Ngôn ngữ lập trình cơ sở dữ liệu tương tự như SQL"
       },
-      "ans": "",
+      "ans": "A",
       "type": "mcq"
     },
     {
@@ -819,12 +819,12 @@
       "id": 69,
       "q": "Control kiểm lỗi nào không có trong ASP.Net?",
       "opts": {
-        "A": "RequiredValidation *(Tên đúng phải là RequiredFieldValidator).*",
-        "B": "CompareValidation",
-        "C": "RangeValidation",
-        "D": "CustomValidation"
+        "A": "RequiredFieldValidator",
+        "B": "CompareValidator",
+        "C": "RangeValidator",
+        "D": "CustomValidator"
       },
-      "ans": "",
+      "ans": "A ",
       "type": "mcq"
     },
     {
@@ -848,7 +848,7 @@
         "C": "DateTime",
         "D": "Tất cả đều đúng"
       },
-      "ans": "B",
+      "ans": "A",
       "type": "mcq"
     },
     {
@@ -860,7 +860,7 @@
         "C": "TextMode = \"MultiLine\"",
         "D": "TextMode = \"MultiRow\""
       },
-      "ans": "C",
+      "ans": "B",
       "type": "mcq"
     },
     {
@@ -872,7 +872,7 @@
         "C": "ListBox",
         "D": "ComboBox"
       },
-      "ans": "A",
+      "ans": "B",
       "type": "mcq"
     },
     {
@@ -920,7 +920,7 @@
         "C": "`<asp:ListItem>`",
         "D": "`<asp:TextBox>`"
       },
-      "ans": "",
+      "ans": "A",
       "type": "mcq"
     },
     {
@@ -932,7 +932,7 @@
         "C": "`<List>`",
         "D": "`<DropDownList>`"
       },
-      "ans": "",
+      "ans": "B",
       "type": "mcq"
     },
     {
@@ -980,7 +980,7 @@
         "C": "`<User control> . . </User control>`",
         "D": "Trong 3 câu a,b,c có 1 đáp án đúng"
       },
-      "ans": "",
+      "ans": "A",
       "type": "mcq"
     },
     {
