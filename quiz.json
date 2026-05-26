@@ -354,7 +354,7 @@
       "A": "`<lb>`",
       "B": "`<br>`",
       "C": "`<break>`",
-      "D": "`<p>` --- ### PHẦN II: C# & .NET FRAMEWORK CƠ BẢN"
+      "D": "`<p>`"
     },
     "ans": "",
     "type": "mcq"
@@ -1725,6 +1725,126 @@
       "D": "Tất cả các câu trên đều đúng"
     },
     "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 145,
+    "q": "(0.250 Point) Namespace nào cung cấp các lớp để tạo ứng dụng Web trong .NET Framework? A. System.Windows.Forms",
+    "opts": {
+      "A": "",
+      "B": "System.Web",
+      "C": "System.Security",
+      "D": "System.Net"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 146,
+    "q": "(0.250 Point) Để thực thi giá trị đơn, ta dùng phương thức nào sao đây của đối tượng command:",
+    "opts": {
+      "A": "ExecuteReader()",
+      "B": "ExecuteScalar()",
+      "C": "ExecuteXmlReader()",
+      "D": "ExecuteNoneQuery()"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 147,
+    "q": "(0.250 Point) Đâu là một trong những tính năng nổi bật của Visual Studio Code?",
+    "opts": {
+      "A": "Hỗ trợ nhiều ngôn ngữ lập trình",
+      "B": "Chỉ chạy được trên Windows",
+      "C": "Không thể tích hợp Git",
+      "D": "Không hỗ trợ gỡ lỗi (Debugging)"
+    },
+    "ans": "A",
+    "type": "mcq"
+  },
+  {
+    "id": 148,
+    "q": "(0.250 Point) Thành phần nào của ứng dụng Web ASP.NET chứa giao diện hiển thị?",
+    "opts": {
+      "A": "Database",
+      "B": "Program logic",
+      "C": "Configuration",
+      "D": "Content"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 149,
+    "q": "(0.250 Point) Thế nào là ứng dụng thương mại điện tử",
+    "opts": {
+      "A": "Là loại hình mua bán hàng hóa thông thường",
+      "B": "Là một loại ứng dụng Web",
+      "C": "Là giao dịch tiền tệ",
+      "D": "Là loại hình trao đổi thư điện tử"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 150,
+    "q": "(0.250 Point) Điều khiển nào dùng để hiển thị dữ liệu dạng bảng trong Web Forms?",
+    "opts": {
+      "A": "TextBox",
+      "B": "CheckBoxList",
+      "C": "DropDownList",
+      "D": "GridView"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 151,
+    "q": "(0.250 Point) NET Framework có các thành phần nào sau đây?",
+    "opts": {
+      "A": "Common Language Runtime",
+      "B": "NET Framework Base Classes",
+      "C": "Giao diện người dùng",
+      "D": "Tất cả đều đúng"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 152,
+    "q": "(0.250 Point) Thành phần nào không phải là thuộc tính của đối tượng Data Adapter :",
+    "opts": {
+      "A": "InsertCommand",
+      "B": "DeleteCommand",
+      "C": "UpdateCommand",
+      "D": "SQLCommand"
+    },
+    "ans": "D",
+    "type": "mcq"
+  },
+  {
+    "id": 153,
+    "q": "(0.250 Point) Tệp Web User control có đuôi gì?",
+    "opts": {
+      "A": ".asmx",
+      "B": ".ascx",
+      "C": ".aspx",
+      "D": ".uct"
+    },
+    "ans": "B",
+    "type": "mcq"
+  },
+  {
+    "id": 154,
+    "q": "(0.250 Point) Đối tượng Page trong ASP.NET là gì?",
+    "opts": {
+      "A": "Một lớp của hệ điều hành Windows",
+      "B": "Một phần của .NET Framework để kết nối cơ sở dữ liệu",
+      "C": "Một đối tượng đại diện cho một trang Web Form trong ASP.NET",
+      "D": "Một công cụ thiết kế đồ họa"
+    },
+    "ans": "C",
     "type": "mcq"
   }
 ]
