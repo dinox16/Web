@@ -40,7 +40,7 @@
         "C": "Universal Time Coordinator",
         "D": "Coordinated Universal Time"
       },
-      "ans": "D",
+      "ans": "B",
       "type": "mcq"
     },
     {
@@ -52,7 +52,7 @@
         "C": "4 tầng",
         "D": "n tầng"
       },
-      "ans": "A",
+      "ans": "B",
       "type": "mcq"
     },
     {
@@ -86,7 +86,7 @@
         "A": "Đúng",
         "B": "Sai"
       },
-      "ans": "B",
+      "ans": "A",
       "type": "mcq"
     },
     {
@@ -146,7 +146,7 @@
         "C": "1998",
         "D": "2000"
       },
-      "ans": "B",
+      "ans": "A",
       "type": "mcq"
     },
     {
@@ -396,7 +396,7 @@
         "C": "4",
         "D": "5"
       },
-      "ans": "C",
+      "ans": "A",
       "type": "mcq"
     },
     {
@@ -420,7 +420,7 @@
         "C": "1988",
         "D": "1990"
       },
-      "ans": "B",
+      "ans": "A",
       "type": "mcq"
     },
     {
@@ -628,7 +628,7 @@
         "C": "Hoạt động quản lý bộ nhớ, viết chương trình truy cập vào RPC",
         "D": "Tất cả đều đúng"
       },
-      "ans": "A",
+      "ans": "D",
       "type": "mcq"
     },
     {
@@ -686,7 +686,7 @@
         "C": "invocation",
         "D": "Naming"
       },
-      "ans": "D",
+      "ans": "B",
       "type": "mcq"
     },
     {
@@ -782,7 +782,7 @@
         "C": "Di trú",
         "D": "Tất cả đều sai"
       },
-      "ans": "A",
+      "ans": "B",
       "type": "mcq"
     },
     {
@@ -1116,7 +1116,7 @@
         "C": "Hệ phân tán là một tập các máy tính độc lập giao tiếp với nhau như một hệ thống thống nhất và toàn vẹn",
         "D": "Hệ phân tán là một hệ thống bao gồm: phần cứng phân tán, kiểm soát phân tán, và dữ liệu phân tán"
       },
-      "ans": "C",
+      "ans": "D",
       "type": "mcq"
     },
     {
@@ -1146,7 +1146,31 @@
         "A": "Đúng",
         "B": "Sai"
       },
-      "ans": "A",
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": "101",
+      "q": "Naming là gì?",
+      "opts": {
+        "A": "Tên tham chiếu của các đối tượng",
+        "B": "Tên của các hoạt động ràng buộc của đối tượng",
+        "C": "Tên của các đối tượng hoạt động trên mạng",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": "102",
+      "q": "Các đối tượng nào sau đây là naming?",
+      "opts": {
+        "A": "Tên file, tên thiết bị",
+        "B": "Các biến của chương trình",
+        "C": "Tên các dịch vụ mạng",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "D",
       "type": "mcq"
     }
   ]
