@@ -141,7 +141,7 @@
     clearBtn.addEventListener("click", () => {
         if (!confirm("Xoá toàn bộ hội thoại?")) return;
         messagesEl.innerHTML = "";
-        addBotMessage("Đã xoá hội thoại. Bạn có thể bắt đầu chat lại từ đầu. 💬");
+        addBotMessage("Đã xoá hội thoại. Bạn có thể bắt đầu chat lại từ đầu.");
     });
 
     /* ---------- quick tags ---------- */

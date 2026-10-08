@@ -1,0 +1,1152 @@
+[
+    {
+      "id": "1",
+      "q": "Trong lập trình Socket hướng không kết nối (UDP Socket), gói tin gửi đến người nhận không tuân theo quy tắc FIFO",
+      "opts": {
+        "A": "Đúng",
+        "B": "Sai"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "2",
+      "q": "Có thể sử dụng địa chỉ của thực thể để thay thế cho tên không?",
+      "opts": {
+        "A": "Có",
+        "B": "Không"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "3",
+      "q": "Trình tự nào là đúng cho lập trình Socket ở Client",
+      "opts": {
+        "A": "Tạo socket, đặt tên socket, kết nối Server, trao đổi dữ liệu, đóng kết nối",
+        "B": "Tạo socket, kết nối Server, đặt tên socket, trao đổi dữ liệu, đóng kết nối",
+        "C": "Tạo socket, đặt tên socket, trao đổi dữ liệu, kết nối Server, đóng kết nối",
+        "D": "Tất cả A, B, C đều sai"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "4",
+      "q": "UTC viết tắt của cụm từ gì?",
+      "opts": {
+        "A": "Union Time Clock",
+        "B": "Universal Time Clock",
+        "C": "Universal Time Coordinator",
+        "D": "Coordinated Universal Time"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": "5",
+      "q": "Kiến trúc RMI dựa trên kiến trúc nào?",
+      "opts": {
+        "A": "2 tầng",
+        "B": "3 tầng",
+        "C": "4 tầng",
+        "D": "n tầng"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "6",
+      "q": "Cho biết các loại nào là Middleware (chọn nhiều phương án)",
+      "opts": {
+        "A": "Socket, RPC, RMI, DCE, DCOM, CORBA",
+        "B": "ODBC, JDBC, DB2",
+        "C": "WebSphere Portal, SharePoint, Portal",
+        "D": "MS Active Directory, LDAP"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "7",
+      "q": "Để có thể kết nối giữa 2 tiến trình, một trong 2 tiến trình phải đợi tiến trình kia kết nối, có thể liên lạc theo mô hình Client/Server, các gói tin chuyển đi tuần tự. Đó là đặc điểm của loại Socket nào?",
+      "opts": {
+        "A": "TCP Socket",
+        "B": "UDP Socket",
+        "C": "Raw Socket",
+        "D": "Không có loại nào ở trên"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "8",
+      "q": "Định hướng cho hệ phân tán trong tương lai chỉ cần quan tâm đến bảo mật và xác thực. Bởi vì khi kích thước của một hệ thống phân phối phát triển, chẳng hạn như Internet, hệ thống dễ bị tổn thương hơn là để tấn công.",
+      "opts": {
+        "A": "Đúng",
+        "B": "Sai"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": "9",
+      "q": "Có bao nhiêu cách trao đổi dữ liệu trong giao tiếp bằng socket",
+      "opts": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": "10",
+      "q": "CORBA là một kỹ thuật hỗ trợ cho việc tạo và sử dụng các đối tượng phân tán, nó là một công nghệ tích hợp ........ một ngôn ngữ lập trình",
+      "opts": {
+        "A": "với",
+        "B": "hỗ trợ cho",
+        "C": "đi kèm",
+        "D": "không phải"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "11",
+      "q": "Socket trong Java được khai báo ở",
+      "opts": {
+        "A": "java.util",
+        "B": "java.io",
+        "C": "java.net",
+        "D": "java.network"
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": "12",
+      "q": "Theo bạn lý do ra đời hệ thống phân tán là gì?",
+      "opts": {
+        "A": "Các yêu cầu càng trở khắt khe đối với các hệ thống máy tính trong tương lai",
+        "B": "Hệ tập trung không phù hợp",
+        "C": "Công nghệ thay đổi và nhu cầu của người sử dụng",
+        "D": "Phải xử lí các bài có kích thước lớn"
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": "13",
+      "q": "Remote Method Invocation (RMI) do Sun đưa ra năm nào?",
+      "opts": {
+        "A": "1995",
+        "B": "1996",
+        "C": "1998",
+        "D": "2000"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": "14",
+      "q": "Sự khác biệt của thuật toán Ricart-Agrawala với thuật toán Central Coordinator là:",
+      "opts": {
+        "A": "Tốn nhiều lưu lượng trên băng thông, do sử dụng 2(n-1) thông điệp cho mỗi tiến trình yêu cầu và phản hồi",
+        "B": "Không gây ra hiện tượng thắt nút chai",
+        "C": "Khó khắc phục hiện tượng nghẽn băng thông khi có một tiến trình thất bại",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": "15",
+      "q": "RMI lần đầu tiên được giới thiệu ở",
+      "opts": {
+        "A": "JDK1.1",
+        "B": "JDK1.2",
+        "C": "JDK1.3",
+        "D": "JDK1.4"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "16",
+      "q": "Middleware trong hệ thống phân tán là một loại phần mềm phân tán kết nối các loại ứng dụng khác nhau và cung cấp phân tán minh bạch cho các ứng dụng của nó kết nối.",
+      "opts": {
+        "A": "Đúng",
+        "B": "Sai"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "17",
+      "q": "CORBA viết tắt của từ",
+      "opts": {
+        "A": "Component Object Request Broker Application",
+        "B": "Common Object Request Broker Architecture",
+        "C": "Component Object Request Broker Application",
+        "D": "A, B, C đều sai"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": "18",
+      "q": "Hầu hết các ngôn ngữ lập trình (C, C++, Java v.v...) có khái niệm về các gọi thủ tục từ xa.",
+      "opts": {
+        "A": "Đúng",
+        "B": "Sai"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "19",
+      "q": "Các khó khăn gặp phải khi xây dựng các phần mềm phân tán:",
+      "opts": {
+        "A": "Làm thế nào điều hành hệ điều hành phân tán, sử dụng ngôn ngữ lập trình nào?",
+        "B": "Dễ bị mất kết nối, thất thoát dữ liệu, tiềm ẩn những nguy hiểm khác nhau. Có thể bị tấn công mọi lúc mọi nơi",
+        "C": "Làm thế nào để đảm bảo tính hiệu quả, tính tin cậy",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": "20",
+      "q": "Có bao nhiêu loại Socket",
+      "opts": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": "21",
+      "q": "Hệ thống phân loại theo phần mềm phân tán phải thỏa mãn các đặc tính gì?",
+      "opts": {
+        "A": "Tính minh bạch, tính di trú, tính song song, tính mở rộng",
+        "B": "Tính linh hoạt, tính toàn vẹn, tính sao chép, tính tin cậy",
+        "C": "Tính tin cậy, tính minh bạch, tính mở rộng, tính linh hoạt",
+        "D": "Tính mở rộng, tính toàn vẹn, tính sao chép, tính tin cậy"
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": "22",
+      "q": "Việc liên kết giữa tên đối tượng với đối tượng gọi là gì?",
+      "opts": {
+        "A": "Binding",
+        "B": "Lookup",
+        "C": "Bind",
+        "D": "Rebind"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "23",
+      "q": "Trong kiến trúc đa tầng (Kiến trúc N-tier), tầng logic nghiệp vụ thường đóng vai trò gì khi tương tác với tầng dữ liệu?",
+      "opts": {
+        "A": "Peer",
+        "B": "Broker",
+        "C": "Server",
+        "D": "Client"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": "24",
+      "q": "Ở trường hợp tổng quát độ phức tạp thuật toán ở Bully tốt hơn Ring trong giải thuật bầu cử",
+      "opts": {
+        "A": "Đúng",
+        "B": "Sai"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "25",
+      "q": "Các thành phần cơ bản trong mô hình Von Neumann",
+      "opts": {
+        "A": "Bộ nhớ, CPU, thiết bị vào ra",
+        "B": "Bộ nhớ, đơn vị tính toán logic, thiết bị nhập xuất",
+        "C": "Bộ nhớ, đơn vị điều khiển, thiết bị nhập xuất",
+        "D": "Bộ nhớ, đơn vị tính toán logic, đơn vị điều khiển, hệ thống vào/ra"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": "26",
+      "q": "Đơn vị dữ liệu ở tầng Presentation là",
+      "opts": {
+        "A": "Byte",
+        "B": "Data",
+        "C": "Frame",
+        "D": "Packet"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": "27",
+      "q": "Đồng hồ logic được đề xuất lần đầu tiên khi nào?",
+      "opts": {
+        "A": "1990",
+        "B": "Khi mạng máy tính ra đời",
+        "C": "1988",
+        "D": "1992"
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": "28",
+      "q": "Các đối tượng trong mô hình phân tán được gọi là",
+      "opts": {
+        "A": "Đơn vị phân tán",
+        "B": "Node trên mô hình phân tán",
+        "C": "Tài nguyên phân tán",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": "29",
+      "q": "Thuật toán loại trừ tương hỗ phải ở hệ thống tập trung không áp dụng cho hệ phân tán vì ở hệ phân tán phải đối phó với sự chậm trễ thông điệp và thiếu hoặc không đoán trước thông tin về trạng thái của hệ thống",
+      "opts": {
+        "A": "Đúng",
+        "B": "Sai"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "30",
+      "q": "Hạn chế chính của thuật toán Ring trong giải thuật bầu cử làm hệ thống mạng",
+      "opts": {
+        "A": "Phân mảnh mạng",
+        "B": "Thắt nút chai",
+        "C": "Không đảm bảo quy tắc FIFO",
+        "D": "Tất cả hạn chế trên"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": "31",
+      "q": "RPC là gì?",
+      "opts": {
+        "A": "Cơ chế để triệu gọi trên các máy tính",
+        "B": "Cơ chế kết nối 2 máy tính trên mạng",
+        "C": "Cơ chế liên lạc giữa các máy tính",
+        "D": "Cơ chế trao đổi dữ liệu giữa các máy tính"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "32",
+      "q": "Tên của đối tượng trong hệ phân tán là địa chỉ của đối tượng đó",
+      "opts": {
+        "A": "Đúng",
+        "B": "Sai"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": "33",
+      "q": "Trong quá trình kết buộc giữa tên và đối tượng theo kiểu kết buộc sớm (Early binding) thì hệ thống thực hiện lookup để ràng buộc đối tượng và sử dụng bộ nhớ Cache ràng buộc trước khi sử dụng",
+      "opts": {
+        "A": "Đúng",
+        "B": "Sai"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "34",
+      "q": "Phân giải tên (Name Resolution) là quá trình lặp đi lặp lại một tên liên tục được trình bày ngữ cảnh để đặt tên",
+      "opts": {
+        "A": "Đúng",
+        "B": "Sai"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": "35",
+      "q": "Có bao nhiêu mô hình kết nối giữa các máy tính trên mạng?",
+      "opts": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5"
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": "36",
+      "q": "ORB có các chức năng nào sau đây?",
+      "opts": {
+        "A": "Quản lý các đối tượng (tạo, kích hoạt, xóa bỏ các đối tượng)",
+        "B": "Xác định và tìm đối tượng, kết buộc Client",
+        "C": "Thực hiện các phương thức triệu gọi trên đối tượng",
+        "D": "Tất cả đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": "37",
+      "q": "Cơ chế RPC (Remote Procedure Call) được Birrell & Nelson đưa ra vào năm",
+      "opts": {
+        "A": "1980",
+        "B": "1984",
+        "C": "1988",
+        "D": "1990"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": "38",
+      "q": "Hệ thống nào sau đây là RPC",
+      "opts": {
+        "A": "Sun RPC, DCE RPC, CORBA",
+        "B": "Microsoft DCOM, Microsoft .NET Remoting",
+        "C": "Java RMI, XML RPC, SOAP",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": "39",
+      "q": "Ngôn ngữ trình biên dịch sẽ tạo ra Stubs Client và Server",
+      "opts": {
+        "A": "Đúng",
+        "B": "Sai"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "40",
+      "q": "Phát biểu nào là đúng nhất về đồng hồ logic",
+      "opts": {
+        "A": "Đồng hồ logic là một cơ chế để nắm bắt mối quan hệ thời gian và quan hệ nhân quả của các sự kiện trong một hệ thống phân phối",
+        "B": "Đồng hồ logic là một vector cho phép sắp xếp một phần của các sự kiện trong một hệ thống phân tán",
+        "C": "Đồng hồ logic là một bản sao thứ tự, theo thông tin cập nhật, trong hệ thống phân tán",
+        "D": "Đồng hồ logic là một ma trận đồng hồ chứa thông tin về những tiến trình khác của hệ thống phân tán"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "41",
+      "q": "IDL là viết tắt của cụm từ",
+      "opts": {
+        "A": "International Definition Language",
+        "B": "Interface Definition Language",
+        "C": "Interface Define Language",
+        "D": "Tất cả đều sai"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": "42",
+      "q": "Hiện tượng Drift không xảy ra với đồng hồ lý tưởng",
+      "opts": {
+        "A": "Đúng",
+        "B": "Sai"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "43",
+      "q": "Sự khác biệt cốt lõi giữa Khái niệm Sự kiện (Event) và Thông điệp (Message) là gì?",
+      "opts": {
+        "A": "Sự kiện là gói dữ liệu vật lý truyền qua card mạng, còn Thông điệp là dữ liệu nằm trong RAM",
+        "B": "Sự kiện là một phát biểu bất biến mang tính lịch sử về một sự việc đã xảy ra, còn Thông điệp là thực thể vật lý chứa đựng sự kiện đó để truyền đi bất đồng bộ",
+        "C": "Thông điệp có thể bị thay đổi nội dung tùy ý trong quá trình truyền nhận, còn Sự kiện thì có thể bị xóa bởi Broker ngay sau khi đọc",
+        "D": "Sự kiện bắt buộc phải dùng giao thức TCP, còn Thông điệp bắt buộc phải dùng giao thức UDP"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": "44",
+      "q": "Trong AMQP (RabbitMQ), thực thể nào có vai trò nhận thông điệp từ Producer và điều phối vào các hàng đợi (Queues) mà không lưu trữ thông điệp?",
+      "opts": {
+        "A": "Connection",
+        "B": "Exchange",
+        "C": "Channel",
+        "D": "Consumer Group"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": "45",
+      "q": "Để thực hiện gọi thủ tục từ xa cần có cơ chế phần cứng.",
+      "opts": {
+        "A": "Đúng",
+        "B": "Sai"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": "46",
+      "q": "Tại sao HTTP/2 giúp gRPC giải quyết hoàn toàn hiện tượng nghẽn đầu dòng (Head-of-Line Blocking) ở tầng ứng dụng của HTTP/1.1?",
+      "opts": {
+        "A": "Do HTTP/2 sử dụng giao thức UDP để truyền tải dữ liệu thay cho TCP",
+        "B": "Nhờ cơ chế Đa luồng (Multiplexing) cho phép chia nhỏ thông điệp thành các khung nhị phân và truyền xen kẽ song song trên một kết nối TCP duy nhất",
+        "C": "Vì HTTP/2 tăng kích thước bộ đệm của card mạng lên gấp nhiều lần",
+        "D": "Nhờ thuật toán nén tiêu đề HPACK giúp loại bỏ hoàn toàn các trường dữ liệu trùng lặp"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": "47",
+      "q": "Cho biết các phát biểu sau đây, phát biểu nào là không đúng về Socket",
+      "opts": {
+        "A": "Socket là một phương pháp để thiết lập kết nối truyền thông giữa một chương trình yêu cầu dịch vụ (client) và một chương trình cung cấp dịch vụ (server) trên mạng LAN, WAN hay Internet",
+        "B": "Socket là vùng nhớ trung gian giữa hai máy khi kết nối với nhau",
+        "C": "Mỗi socket có thể được xem như một điểm cuối trong một kết nối",
+        "D": "Một khi socket đã được thiết lập phù hợp, hai máy tính có thể trao đổi dịch vụ và dữ liệu"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": "48",
+      "q": "Cho biết các phát biểu sau đây, phát biểu nào là đúng về DNS (Domain Name System)",
+      "opts": {
+        "A": "DNS là một hệ thống phân tán đặt tên phân cấp cho các máy tính, dịch vụ",
+        "B": "DNS là một cơ sở dữ liệu phân tán",
+        "C": "DNS là hệ thống tên miền phân tán chịu trách nhiệm gán tên miền và lập bản đồ những tên tới địa chỉ IP bằng cách chỉ định tên các máy chủ cho mỗi tên miền",
+        "D": "A, B, C đều đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": "49",
+      "q": "Thực thể trong hệ phân tán là các loại tài nguyên (host, máy in v.v...), người dùng, các tiến trình, các trang Web, các kết nối mạng v.v...",
+      "opts": {
+        "A": "Đúng",
+        "B": "Sai"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "50",
+      "q": "Stubs tạo ra bởi trình biên dịch riêng biệt nhờ lệnh",
+      "opts": {
+        "A": "rmic",
+        "B": "rmiregistry",
+        "C": "invocation",
+        "D": "Naming"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "51",
+      "q": "Mô hình kiến trúc CORBA gồm",
+      "opts": {
+        "A": "CORBA services, CORBA facilities, Object Request Broker, CORBA Domain, Application Objects",
+        "B": "CORBA services, CORBA facilities, Object Request Broker",
+        "C": "Object Request Broker, CORBA Domain, Application Objects",
+        "D": "CORBA facilities, Object Request Broker, CORBA Domain"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "52",
+      "q": "Theo Maarten van Steen, lý do cốt lõi tạo ra sự giằng co tự nhiên (natural tension) giữa các hệ thống tính toán diện rộng và các thuật toán Trí tuệ Nhân tạo AI là gì?",
+      "opts": {
+        "A": "Các thiết bị Pervasive/IoT không có khả năng truyền nhận dữ liệu qua mạng không dây",
+        "B": "Nhiều thuật toán AI nâng cao hiện vẫn chưa có giải pháp tính toán phân tán hoàn chỉnh, tạo ra rào cản giữa nhu cầu xử lý tập trung phức tạp của AI với hạ tầng phân tán nhỏ gọn, tiết kiệm năng lượng của thiết bị Pervasive",
+        "C": "Các thuật toán AI yêu cầu tất cả thiết bị IoT phải sử dụng chung một hệ điều hành duy nhất",
+        "D": "Thuật toán AI không thể chạy trên các hệ thống có hỗ trợ kiến trúc RESTful"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": "53",
+      "q": "Điều nào sau đây là nhược điểm chính của Java RMI khi so sánh với gRPC và RESTful Services?",
+      "opts": {
+        "A": "Không hỗ trợ truyền tham số đối tượng",
+        "B": "Phụ thuộc chặt chẽ vào nền tảng Java (Java-centric), khó giao tiếp đa ngôn ngữ",
+        "C": "Tốc độ thực thi chậm hơn RESTful Services",
+        "D": "Không hỗ trợ cơ chế bẫy lỗi Exception"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": "54",
+      "q": "Trong gRPC, ngôn ngữ định nghĩa giao diện (IDL - Interface Definition Language) mặc định được sử dụng là gì?",
+      "opts": {
+        "A": "OpenAPI (Swagger)",
+        "B": "Protocol Buffers (.proto)",
+        "C": "XML Schema (XSD)",
+        "D": "GraphQL Schema"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": "55",
+      "q": "Những loại dịch vụ nào cần một hệ thống RPC?",
+      "opts": {
+        "A": "Hoạt động đặt tên dịch vụ, hoạt động ràng buộc, hoạt động đầu cuối",
+        "B": "Hoạt động bảo mật, trao đổi dữ liệu",
+        "C": "Hoạt động quản lý bộ nhớ, viết chương trình truy cập vào RPC",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "56",
+      "q": "Đồng bộ hóa đối với hệ thống PC chủ yếu dựa vào điều chỉnh thời gian ở đồng hồ CMOS",
+      "opts": {
+        "A": "Đúng",
+        "B": "Sai"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": "57",
+      "q": "Trình tự nào là đúng cho lập trình Socket ở Server",
+      "opts": {
+        "A": "Tạo socket, đặt tên socket, thực hiện lắng nghe, truy cập đối tượng, trao đổi dữ liệu, đóng kết nối",
+        "B": "Tạo socket, đặt tên socket, thực hiện lắng nghe, trao đổi dữ liệu, truy cập đối tượng, đóng kết nối",
+        "C": "Tạo socket, đặt tên socket, trao đổi dữ liệu, thực hiện lắng nghe, truy cập đối tượng, đóng kết nối",
+        "D": "Tất cả A, B, C đều sai"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "58",
+      "q": "Các thành phần RMI gồm",
+      "opts": {
+        "A": "Phương pháp Invoke trên đối tượng từ xa, tiến trình đó đang sở hữu đối tượng từ xa, trình biên dịch IDL",
+        "B": "Phương pháp Invoke trên đối tượng từ xa, tiến trình đó đang sở hữu đối tượng từ xa, bộ đăng ký tên máy chủ mà các đối tượng liên quan với tên của chúng",
+        "C": "Phương pháp Invoke trên đối tượng từ xa, trình biên dịch IDL, tên máy chủ mà các đối tượng liên quan với tên của chúng",
+        "D": "Phương pháp Invoke trên đối tượng từ xa, trình biên dịch IDL, máy chủ mà các đối tượng liên quan với tên của chúng"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": "59",
+      "q": "Trong thuật toán Central Coordinator khi điều phối bị chết, một điều phối viên mới được chọn có thể là (chọn 2 phương án)",
+      "opts": {
+        "A": "Một tiến trình cạnh tranh truy cập",
+        "B": "Chỉ có tiến trình trên hệ thống máy chủ",
+        "C": "Tất cả các tiến trình đang tham gia trên hệ thống",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "60",
+      "q": "Để thực hiện invocations đối tượng từ xa nhờ",
+      "opts": {
+        "A": "rmic",
+        "B": "rmiregistry",
+        "C": "invocation",
+        "D": "Naming"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": "61",
+      "q": "Các tiêu chuẩn để đánh giá một ứng dụng phân tán, người ta dựa vào",
+      "opts": {
+        "A": "Khả năng chịu lỗi, khả năng mở rộng, sự phân tán tài nguyên",
+        "B": "Tính mở rộng, tính toàn vẹn, tính sao chép, tính tin cậy của ứng dụng",
+        "C": "Xử lý song song và hiệu năng cao, khả năng chịu lỗi, sự phân tán tài nguyên",
+        "D": "A, B, C đều sai"
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": "62",
+      "q": "Socket thường hoạt động dựa trên các giao thức nào?",
+      "opts": {
+        "A": "TCP, UDP",
+        "B": "TCP, IP",
+        "C": "TCP/IP, UDP, ICMP",
+        "D": "A, B, C đều sai"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "63",
+      "q": "Định dạng dữ liệu nào phổ biến nhất được sử dụng trong việc trao đổi thông tin của RESTful Services hiện nay",
+      "opts": {
+        "A": "Protocol Buffers",
+        "B": "JSON",
+        "C": "HTML",
+        "D": "Custom Binary"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": "64",
+      "q": "Đơn vị của băng thông là",
+      "opts": {
+        "A": "Hertz (Hz)",
+        "B": "Volt (V)",
+        "C": "Bit/second (bps)",
+        "D": "Ohm (Ω)"
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": "65",
+      "q": "Các hoạt động chính trên RPC là",
+      "opts": {
+        "A": "Gửi thông điệp yêu cầu, lọc bản sao, truyền lại các thông điệp trả lời",
+        "B": "Tạo Stub, Skeleton",
+        "C": "Tạo ORB để liên kết các đối tượng",
+        "D": "A, B, C đều sai"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "66",
+      "q": "Socket thường hoạt động ở tầng nào ở mô hình OSI?",
+      "opts": {
+        "A": "Ở phía trên tầng 3 đến tầng Transport",
+        "B": "Chỉ hoạt động ở tầng Transport",
+        "C": "Hoạt động từ tầng 3 trở lên",
+        "D": "Chỉ hoạt động ở tầng Network"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "67",
+      "q": "Đặc điểm cấu trúc bộ nhớ chia sẻ vật lý",
+      "opts": {
+        "A": "Có một bộ nhớ chia sẻ không gian địa chỉ của tất cả các CPU, giao tiếp giữa các CPU diễn ra thông qua việc chia sẻ bằng cách sử dụng hoạt động nhớ đọc và ghi",
+        "B": "Sử dụng một bộ nhớ dùng chung kết nối các máy tính với nhau",
+        "C": "A và B đúng",
+        "D": "A và B sai"
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": "68",
+      "q": "Mạng Internet được gọi là mô hình đối tượng",
+      "opts": {
+        "A": "Tái tạo",
+        "B": "Phân mảnh",
+        "C": "Di trú",
+        "D": "Tất cả đều sai"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "69",
+      "q": "Các dạng của tên thực thể trong hệ phân tán có thể",
+      "opts": {
+        "A": "Tên thông thường, địa chỉ, định danh",
+        "B": "Tên của các hoạt động ràng buộc của đối tượng, tên các dịch vụ mạng",
+        "C": "Tên file, tên thiết bị, các biến của chương trình",
+        "D": "Tất cả A, B, C đều đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": "70",
+      "q": "Hạn chế của thuật toán Bully trong giải thuật bầu cử làm hệ thống mạng hoạt động chậm hơn khi tiến trình nhận biết có định danh thấp nhất bắt đầu cuộc bầu cử",
+      "opts": {
+        "A": "Đúng",
+        "B": "Sai"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "71",
+      "q": "Việc nhiều các gói tin bị đụng độ trên mạng sẽ không ảnh hưởng đến hiệu quả truyền thông của mạng",
+      "opts": {
+        "A": "Đúng",
+        "B": "Sai"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": "72",
+      "q": "Mục đích của đồng bộ hóa tiến trình nhằm",
+      "opts": {
+        "A": "Đồng bộ giữa việc gửi và nhận các thông điệp",
+        "B": "Điều phối các hoạt động chung cho toàn hệ thống",
+        "C": "Sắp xếp thứ tự truy cập đồng thời cho các đối tượng được chia sẻ tài nguyên",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": "73",
+      "q": "Hai tiến trình không kết nối trực tiếp, thông điệp gửi đi phải kèm địa chỉ người nhận, thông điệp gửi sau có thể đến đích trước thông điệp gửi trước. Đó là đặc điểm của loại Socket nào?",
+      "opts": {
+        "A": "TCP Socket",
+        "B": "UDP Socket",
+        "C": "Raw Socket",
+        "D": "Không có loại nào ở trên"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": "74",
+      "q": "Đồng bộ hóa đối với hệ thống PC sử dụng phương pháp bù tuyến tính bằng cách bổ sung thêm hàm bù tuyến tính vào system call của hệ điều hành",
+      "opts": {
+        "A": "Đúng",
+        "B": "Sai"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "75",
+      "q": "Hiện tượng Drift đối với đồng hồ máy tính luôn luôn xảy ra",
+      "opts": {
+        "A": "Đúng",
+        "B": "Sai"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "76",
+      "q": "Các nhân tố ảnh hưởng đến việc xây dựng và thiết kế ứng dụng phân tán",
+      "opts": {
+        "A": "Ngôn ngữ lập trình, cơ sở dữ liệu",
+        "B": "Kỹ thuật và công cụ phát triển, mô hình phát triển",
+        "C": "Bảo mật, khả năng chịu lỗi",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": "77",
+      "q": "Đồng hồ vật lý dùng để",
+      "opts": {
+        "A": "Đo thời gian trong ngày",
+        "B": "Thống nhất các hoạt động của các tiến trình, sự kiện v.v... trên toàn hệ thống",
+        "C": "Theo dõi thứ tự của các sự kiện trong hệ thống",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": "78",
+      "q": "Điểm khác nhau cơ bản giữa hệ thống cấu trúc bộ nhớ chia sẻ vật lý và cấu trúc bộ nhớ chia sẻ vật lý phân tán là",
+      "opts": {
+        "A": "Bộ nhớ đối với mỗi đơn vị xử lý cơ sở (PE) là độc lập đối với cấu trúc bộ nhớ chia sẻ vật lý phân tán nhưng chia sẻ đối với bộ nhớ chia sẻ vật lý",
+        "B": "Hoạt động trên hạ tầng mạng khác nhau",
+        "C": "Giao tiếp giữa các bộ xử lý ở bộ nhớ chia sẻ vật lý diễn ra thông qua trao đổi thông điệp trên mạng cục bộ, trong khi bộ nhớ chia sẻ vật lý phân tán thông qua trao đổi thông điệp trên mạng Internet",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "79",
+      "q": "Mục đích chính của giải thuật bầu cử là",
+      "opts": {
+        "A": "Tìm ra một tiến trình làm điều phối viên nếu điều phối bị chết",
+        "B": "Giải quyết tranh chấp tài nguyên giữa các tiến trình",
+        "C": "Hỗ trợ cho giải thuật loại trừ tương hỗ",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "80",
+      "q": "RMI hoặc thủ tục triệu gọi từ xa (RPC) là một ................... dựa trên Java",
+      "opts": {
+        "A": "Phần mềm",
+        "B": "Dịch vụ",
+        "C": "Middleware",
+        "D": "Tất cả A, B, C"
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": "81",
+      "q": "Loại trừ tương hỗ là quá trình .................................... của các tiến trình với một ........................... hoặc dữ liệu được chia sẻ, thực hiện theo cách .......................",
+      "opts": {
+        "A": "Truy cập đồng thời, tài nguyên, dữ liệu được chia sẻ, loại trừ lẫn nhau",
+        "B": "Hỗ trợ nhau, tài nguyên, dữ liệu được chia sẻ, loại trừ lẫn nhau",
+        "C": "Truy cập đồng thời, dữ liệu, dữ liệu được chia sẻ, loại trừ lẫn nhau",
+        "D": "Truy cập đồng thời, tài nguyên, tiến trình, loại trừ lẫn nhau"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "82",
+      "q": "Tên thực thể được thực hiện phân giải tên khi cần dịch ra các dữ liệu về tài nguyên được đặt tên",
+      "opts": {
+        "A": "Đúng",
+        "B": "Sai"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "83",
+      "q": "Socket có thể được phân loại theo các kiểu nào sau đây",
+      "opts": {
+        "A": "Datagram, stream, raw sockets",
+        "B": "Bytes, datagram, string",
+        "C": "Stream, raw sockets",
+        "D": "Byte, string"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "84",
+      "q": "Nguyên tắc cơ bản của thuật toán Lamport để khử độ sai lệch biên ở thuật toán Cristian là",
+      "opts": {
+        "A": "Điều chỉnh đồng hồ cục bộ tại các trạm theo thuật toán Cristian cho toàn hệ thống",
+        "B": "Chọn 1 trạm làm thời gian “kim cương” điều chỉnh các trạm còn lại theo thời gian của trạm được lấy là thời gian kim cương",
+        "C": "Điều chỉnh giá trị của các đồng hồ cục bộ tại các trạm theo giá trị thời gian trung bình của hệ thống lấy theo các trạm làm việc",
+        "D": "A, B, C sai"
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": "85",
+      "q": "Sự sai lệch biên trong quá trình trao đổi thông điệp trên mạng tập trung theo thuật toán Cristian là do",
+      "opts": {
+        "A": "Cấu trúc mạng",
+        "B": "Đồng hồ cục bộ tại mỗi trạm làm việc",
+        "C": "Thời gian xử lý của Server",
+        "D": "A, B, C đều đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": "86",
+      "q": "Microsoft xây dựng DCOM nhằm mục đích",
+      "opts": {
+        "A": "Cung cấp một framework phân tán dựa trên mô hình hướng đối tượng",
+        "B": "Cung cấp kỹ thuật lập trình hướng đối tượng cho các ứng dụng phân tán",
+        "C": "Cung cấp kỹ thuật lập trình triệu gọi từ xa",
+        "D": "Cung cấp một Middleware giữa OLE và COM"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": "87",
+      "q": "Việc phân loại hệ phân tán theo Flynn dựa vào",
+      "opts": {
+        "A": "Số lượng CPU và số lượng các thành phần kiểm soát",
+        "B": "Số lượng CPU và số hệ điều hành sử dụng",
+        "C": "Số lượng các dòng chỉ dẫn và số dòng dữ liệu",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": "88",
+      "q": "Hạn chế chính của giải thuật Token Ring là? (Chọn 2 phương án)",
+      "opts": {
+        "A": "Hiện tượng “đói - Starvation” tài nguyên khi hệ thống có nhiều tiến trình tham gia",
+        "B": "Tiến trình làm điều phối viên có thể bị chết nên hệ thống rơi vào trường hợp bế tắc",
+        "C": "Có thể dẫn hiện tượng thắt cổ chai",
+        "D": "Tất cả hạn chế nêu trên"
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": "89",
+      "q": "ORB trong hệ thống phân tán được gọi là",
+      "opts": {
+        "A": "Đối tượng môi giới yêu cầu",
+        "B": "Đối tượng tái tạo",
+        "C": "Đối tượng tự trị",
+        "D": "Đối tượng di trú"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "90",
+      "q": "Có 3 kiểu ràng buộc (binding) giữa tên và đối tượng: kết buộc tĩnh (static binding), kết buộc sớm (Early binding), kết buộc trễ (Late binding)",
+      "opts": {
+        "A": "Đúng",
+        "B": "Sai"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "91",
+      "q": "Có bao nhiêu mô hình dịch vụ cơ bản trên các hệ thống mạng máy tính?",
+      "opts": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5"
+      },
+      "ans": "B",
+      "type": "mcq"
+    },
+    {
+      "id": "92",
+      "q": "Vì sao các ứng dụng phân tán được quan tâm nhiều hơn trong phát triển ứng dụng ngày nay?",
+      "opts": {
+        "A": "Nhờ khả năng mở rộng và tùy biến của các nền tảng hệ thống",
+        "B": "Nhờ tính minh bạch vị trí các nguồn lực",
+        "C": "Khả năng chịu lỗi và chia sẻ các nguồn lực",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": "93",
+      "q": "Ngôn ngữ lập trình cho tính toán phân tán cần thỏa mãn đặc điểm gì?",
+      "opts": {
+        "A": "Xử lý song song",
+        "B": "Khả năng giao tiếp",
+        "C": "Tính chịu lỗi",
+        "D": "Tất cả các đặc điểm trên"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": "94",
+      "q": "Để đáp ứng tính sẵn sàng cao, độ tin cậy cao, khả năng mở rộng cao thì mô hình phân tán nào được lựa chọn?",
+      "opts": {
+        "A": "Client/Server",
+        "B": "Tính toán đám (Cluster computing)",
+        "C": "Tính toán lưới (Grid computing)",
+        "D": "Điện toán đám mây (Cloud computing)"
+      },
+      "ans": "D",
+      "type": "mcq"
+    },
+    {
+      "id": "95",
+      "q": "Đối với hệ thống yêu cầu xử lý lượng dữ liệu lớn, phân bổ trên môi trường rộng lớn, xử lý uyển chuyển, mô hình phân tán nào được lựa chọn?",
+      "opts": {
+        "A": "Tính toán lưới (Grid computing)",
+        "B": "Tính toán đám (Cluster computing)",
+        "C": "Điện toán đám mây (Cloud computing)",
+        "D": "Tất cả đều đúng"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "96",
+      "q": "Các hệ thống hỗ trợ file như trình download BitTorrent được xem như hệ thống phân tán",
+      "opts": {
+        "A": "Đúng",
+        "B": "Sai"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "97",
+      "q": "Phát biểu nào sau đây là đúng nhất về hệ phân tán",
+      "opts": {
+        "A": "Hệ phân tán là một hệ có chức năng và dữ liệu phân tán trên các máy trạm được kết nối với nhau qua mạng máy tính",
+        "B": "Hệ phân tán là một tập các máy tính tự trị được kết nối với nhau bởi mạng máy tính và được cài đặt phần mềm phân tán",
+        "C": "Hệ phân tán là một tập các máy tính độc lập giao tiếp với nhau như một hệ thống thống nhất và toàn vẹn",
+        "D": "Hệ phân tán là một hệ thống bao gồm: phần cứng phân tán, kiểm soát phân tán, và dữ liệu phân tán"
+      },
+      "ans": "C",
+      "type": "mcq"
+    },
+    {
+      "id": "98",
+      "q": "Có thể chỉ sử dụng thuật toán loại trừ tương hỗ mà không cần đến thuật toán bầu cử",
+      "opts": {
+        "A": "Đúng",
+        "B": "Sai"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "99",
+      "q": "Các hệ thống ứng dụng Web được xem như hệ thống phân tán",
+      "opts": {
+        "A": "Đúng",
+        "B": "Sai"
+      },
+      "ans": "A",
+      "type": "mcq"
+    },
+    {
+      "id": "100",
+      "q": "Đồng hồ lý tưởng có dC/dt(UTC) > 1 hoặc dC/dt(UTC) = 1",
+      "opts": {
+        "A": "Đúng",
+        "B": "Sai"
+      },
+      "ans": "A",
+      "type": "mcq"
+    }
+  ]
